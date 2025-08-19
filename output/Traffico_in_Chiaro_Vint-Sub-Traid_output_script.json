@@ -1,0 +1,933 @@
+[
+    {
+        "id": 101,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "presence-api-subito.trust.advgo.net"
+    },
+    {
+        "id": 102,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "eu1.clevertap-prod.com"
+    },
+    {
+        "id": 103,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "c.amazon-adsystem.com"
+    },
+    {
+        "id": 104,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "mobile-data.onetrust.io"
+    },
+    {
+        "id": 105,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "ms.applovin.com"
+    },
+    {
+        "id": 106,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "firebaseinstallations.googleapis.com"
+    },
+    {
+        "id": 108,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "firebaseinappmessaging.googleapis.com"
+    },
+    {
+        "id": 109,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "api.rlcdn.com"
+    },
+    {
+        "id": 110,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "eu-aa.online-metrix.net"
+    },
+    {
+        "id": 111,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "collector.mpianalytics.com"
+    },
+    {
+        "id": 112,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "play-fe.googleapis.com"
+    },
+    {
+        "id": 113,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "sdk-events.inner-active.mobi"
+    },
+    {
+        "id": 114,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "www.subito.it"
+    },
+    {
+        "id": 115,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "vintedapp.com"
+    },
+    {
+        "id": 116,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "graph.facebook.com"
+    },
+    {
+        "id": 117,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "sdk.privacy-center.org"
+    },
+    {
+        "id": 118,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "4dxsfv.cdn-settings.appsflyersdk.com"
+    },
+    {
+        "id": 119,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "region1.app-measurement.com"
+    },
+    {
+        "id": 120,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "sdk.fra-01.braze.eu"
+    },
+    {
+        "id": 126,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "logs-ingress.svc.vinted.com"
+    },
+    {
+        "id": 127,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "firebase-settings.crashlytics.com"
+    },
+    {
+        "id": 128,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "www.vinted.fr"
+    },
+    {
+        "id": 129,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "192.168.70.69",
+        "protocollo": "DNS",
+        "sni": "www.google.com"
+    },
+    {
+        "id": 1,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.65.64.75",
+        "protocollo": "TLS",
+        "sni": "images.sbito.it"
+    },
+    {
+        "id": 2,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.102.162.219",
+        "protocollo": "TLS",
+        "sni": "ms4.applovin.com"
+    },
+    {
+        "id": 3,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.102.162.219",
+        "protocollo": "TLS",
+        "sni": "ms4.applovin.com"
+    },
+    {
+        "id": 4,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.121.232",
+        "protocollo": "TLS",
+        "sni": "www.vinted.fr"
+    },
+    {
+        "id": 5,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.65.82.89",
+        "protocollo": "TLS",
+        "sni": "images1.vinted.net"
+    },
+    {
+        "id": 6,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "23.1.67.197",
+        "protocollo": "TLS",
+        "sni": "hades.subito.it"
+    },
+    {
+        "id": 7,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.65.82.89",
+        "protocollo": "TLS",
+        "sni": "images1.vinted.net"
+    },
+    {
+        "id": 8,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.65.82.89",
+        "protocollo": "TLS",
+        "sni": "images1.vinted.net"
+    },
+    {
+        "id": 9,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.87.42",
+        "protocollo": "TLS",
+        "sni": "cdn.cookielaw.org"
+    },
+    {
+        "id": 10,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.39.129",
+        "protocollo": "TLS",
+        "sni": "live.services.trading212.com"
+    },
+    {
+        "id": 11,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.65.82.89",
+        "protocollo": "TLS",
+        "sni": "images1.vinted.net"
+    },
+    {
+        "id": 12,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.16.207.80",
+        "protocollo": "TLS",
+        "sni": "logs-ingress.svc.vinted.com"
+    },
+    {
+        "id": 13,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.102.162.219",
+        "protocollo": "TLS",
+        "sni": "ms.applovin.com"
+    },
+    {
+        "id": 14,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.39.129",
+        "protocollo": "TLS",
+        "sni": "live.services.trading212.com"
+    },
+    {
+        "id": 15,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "172.64.155.231",
+        "protocollo": "TLS",
+        "sni": "mobile-data.onetrust.io"
+    },
+    {
+        "id": 16,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.39.129",
+        "protocollo": "TLS",
+        "sni": "live.services.trading212.com"
+    },
+    {
+        "id": 17,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.102.162.219",
+        "protocollo": "TLS",
+        "sni": "prod-mediate-events.applovin.com"
+    },
+    {
+        "id": 18,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "23.1.67.197",
+        "protocollo": "TLS",
+        "sni": "assets.subito.it"
+    },
+    {
+        "id": 19,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.87.42",
+        "protocollo": "TLS",
+        "sni": "cdn.cookielaw.org"
+    },
+    {
+        "id": 20,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "3.166.81.117",
+        "protocollo": "TLS",
+        "sni": "eu1.clevertap-prod.com"
+    },
+    {
+        "id": 21,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.39.129",
+        "protocollo": "TLS",
+        "sni": "live.services.trading212.com"
+    },
+    {
+        "id": 22,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.39.129",
+        "protocollo": "TLS",
+        "sni": "live.services.trading212.com"
+    },
+    {
+        "id": 23,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "3.166.81.115",
+        "protocollo": "TLS",
+        "sni": "sdk.privacy-center.org"
+    },
+    {
+        "id": 24,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "54.77.133.71",
+        "protocollo": "TLS",
+        "sni": "collector.mpianalytics.com"
+    },
+    {
+        "id": 25,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "91.235.133.156",
+        "protocollo": "TLS",
+        "sni": "ghisa.subito.it"
+    },
+    {
+        "id": 26,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "108.139.209.2",
+        "protocollo": "TLS",
+        "sni": "aax.amazon-adsystem.com"
+    },
+    {
+        "id": 27,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.39.129",
+        "protocollo": "TLS",
+        "sni": "live.services.trading212.com"
+    },
+    {
+        "id": 28,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "13.111.95.28",
+        "protocollo": "TLS",
+        "sni": "mcrndycn8bj4zfvcnqlh9d-pbw21.device.marketingcloudapis.com"
+    },
+    {
+        "id": 29,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "35.81.215.73",
+        "protocollo": "TLS",
+        "sni": "api2.amplitude.com"
+    },
+    {
+        "id": 30,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "3.166.81.117",
+        "protocollo": "TLS",
+        "sni": "eu1.clevertap-prod.com"
+    },
+    {
+        "id": 31,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.102.162.219",
+        "protocollo": "TLS",
+        "sni": "prod-mediate-events.applovin.com"
+    },
+    {
+        "id": 32,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.110.179.88",
+        "protocollo": "TLS",
+        "sni": "d.applovin.com"
+    },
+    {
+        "id": 33,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "91.235.133.156",
+        "protocollo": "TLS",
+        "sni": "ghisa.subito.it"
+    },
+    {
+        "id": 34,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "35.212.40.129",
+        "protocollo": "TLS",
+        "sni": "unif-id.ssp.inmobi.com"
+    },
+    {
+        "id": 35,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "3.166.81.21",
+        "protocollo": "TLS",
+        "sni": "mobile-2260.api.privacy-center.org"
+    },
+    {
+        "id": 36,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.117.147.68",
+        "protocollo": "TLS",
+        "sni": "rt.applovin.com"
+    },
+    {
+        "id": 37,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.117.147.68",
+        "protocollo": "TLS",
+        "sni": "rt.applovin.com"
+    },
+    {
+        "id": 38,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "147.75.180.89",
+        "protocollo": "TLS",
+        "sni": "mobilesdk-eu.kampyle.com"
+    },
+    {
+        "id": 39,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.102.162.219",
+        "protocollo": "TLS",
+        "sni": "prod-mediate-events.applovin.com"
+    },
+    {
+        "id": 40,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "13.217.9.97",
+        "protocollo": "TLS",
+        "sni": "mads.amazon-adsystem.com"
+    },
+    {
+        "id": 41,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "52.29.176.45",
+        "protocollo": "TLS",
+        "sni": "presence-api-subito.trust.advgo.net"
+    },
+    {
+        "id": 42,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "35.81.215.73",
+        "protocollo": "TLS",
+        "sni": "api2.amplitude.com"
+    },
+    {
+        "id": 43,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "146.75.63.52",
+        "protocollo": "TLS",
+        "sni": "cdn2.inner-active.mobi"
+    },
+    {
+        "id": 44,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.65.72.150",
+        "protocollo": "TLS",
+        "sni": "uzt46p-launches.appsflyersdk.com"
+    },
+    {
+        "id": 45,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.120.133.55",
+        "protocollo": "TLS",
+        "sni": "api.rlcdn.com"
+    },
+    {
+        "id": 46,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.65.80.154",
+        "protocollo": "TLS",
+        "sni": "uzt46p-inapps.appsflyersdk.com"
+    },
+    {
+        "id": 47,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "146.75.61.175",
+        "protocollo": "TLS",
+        "sni": "nebula-cdn.kampyle.com"
+    },
+    {
+        "id": 48,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "3.166.81.64",
+        "protocollo": "TLS",
+        "sni": "4dxsfv.launches.appsflyersdk.com"
+    },
+    {
+        "id": 49,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.35.7",
+        "protocollo": "TLS",
+        "sni": "sdk.fra-01.braze.eu"
+    },
+    {
+        "id": 50,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.154.161.55",
+        "protocollo": "TLS",
+        "sni": "4dxsfv.inapps.appsflyersdk.com"
+    },
+    {
+        "id": 51,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "52.18.55.100",
+        "protocollo": "TLS",
+        "sni": "xmpp.messaging.advgo.net"
+    },
+    {
+        "id": 52,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "108.139.229.101",
+        "protocollo": "TLS",
+        "sni": "atsod.launch.liveramp.com"
+    },
+    {
+        "id": 53,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "13.35.198.21",
+        "protocollo": "TLS",
+        "sni": "geo.privacymanager.io"
+    },
+    {
+        "id": 54,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.157.194.1",
+        "protocollo": "TLS",
+        "sni": "chat.stream-io-api.com"
+    },
+    {
+        "id": 55,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "151.101.243.52",
+        "protocollo": "TLS",
+        "sni": "auth-api.digitalturbine.com"
+    },
+    {
+        "id": 56,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.157.194.1",
+        "protocollo": "TLS",
+        "sni": "chat.stream-io-api.com"
+    },
+    {
+        "id": 57,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "23.60.189.14",
+        "protocollo": "TLS",
+        "sni": "www.subito.it"
+    },
+    {
+        "id": 58,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.111.80.193",
+        "protocollo": "TLS",
+        "sni": "sts.applovin.com"
+    },
+    {
+        "id": 59,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "108.139.234.224",
+        "protocollo": "TLS",
+        "sni": "uzt46p-cdn-settings.appsflyersdk.com"
+    },
+    {
+        "id": 60,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "108.139.224.162",
+        "protocollo": "TLS",
+        "sni": "c.amazon-adsystem.com"
+    },
+    {
+        "id": 61,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "108.139.224.162",
+        "protocollo": "TLS",
+        "sni": "c.amazon-adsystem.com"
+    },
+    {
+        "id": 62,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.65.82.82",
+        "protocollo": "TLS",
+        "sni": "4dxsfv.cdn-settings.appsflyersdk.com"
+    },
+    {
+        "id": 63,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.203.69.34",
+        "protocollo": "TLS",
+        "sni": "logs.ads.vungle.com"
+    },
+    {
+        "id": 64,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.35.7",
+        "protocollo": "TLS",
+        "sni": "sdk.fra-01.braze.eu"
+    },
+    {
+        "id": 65,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "91.235.132.130",
+        "protocollo": "TLS",
+        "sni": "h64.online-metrix.net"
+    },
+    {
+        "id": 66,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "23.1.67.197",
+        "protocollo": "TLS",
+        "sni": "hades.subito.it"
+    },
+    {
+        "id": 67,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "23.1.67.197",
+        "protocollo": "TLS",
+        "sni": "hades.subito.it"
+    },
+    {
+        "id": 68,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "23.1.67.197",
+        "protocollo": "TLS",
+        "sni": "hades.subito.it"
+    },
+    {
+        "id": 69,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "23.1.67.197",
+        "protocollo": "TLS",
+        "sni": "hades.subito.it"
+    },
+    {
+        "id": 70,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "23.1.67.197",
+        "protocollo": "TLS",
+        "sni": "hades.subito.it"
+    },
+    {
+        "id": 71,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "151.29.122.80",
+        "protocollo": "TLS",
+        "sni": "mobile-api.rokt.com"
+    },
+    {
+        "id": 72,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "108.139.229.100",
+        "protocollo": "TLS",
+        "sni": "vintedapp.com"
+    },
+    {
+        "id": 73,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "146.75.63.52",
+        "protocollo": "TLS",
+        "sni": "cdn2.inner-active.mobi"
+    },
+    {
+        "id": 74,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "151.29.122.72",
+        "protocollo": "TLS",
+        "sni": "apps.rokt.com"
+    },
+    {
+        "id": 75,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.102.184.229",
+        "protocollo": "TLS",
+        "sni": "api-sdk.datadome.co"
+    },
+    {
+        "id": 76,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.120.62.213",
+        "protocollo": "TLS",
+        "sni": "o4507345375789056.ingest.de.sentry.io"
+    },
+    {
+        "id": 77,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.49.219.143",
+        "protocollo": "TLS",
+        "sni": "init-mp.fyber.com"
+    },
+    {
+        "id": 78,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.160.136.185",
+        "protocollo": "TLS",
+        "sni": "sdk-events.inner-active.mobi"
+    },
+    {
+        "id": 79,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.36.38",
+        "protocollo": "TLS",
+        "sni": "stats.azmsoft.com"
+    },
+    {
+        "id": 80,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.35.7",
+        "protocollo": "TLS",
+        "sni": "sdk.fra-01.braze.eu"
+    },
+    {
+        "id": 81,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.157.194.1",
+        "protocollo": "TLS",
+        "sni": "chat.stream-io-api.com"
+    },
+    {
+        "id": 82,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.41.109",
+        "protocollo": "TLS",
+        "sni": "www.trading212.com"
+    },
+    {
+        "id": 83,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.65.64.75",
+        "protocollo": "TLS",
+        "sni": "images.sbito.it"
+    },
+    {
+        "id": 84,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.65.64.75",
+        "protocollo": "TLS",
+        "sni": "images.sbito.it"
+    },
+    {
+        "id": 85,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.65.64.75",
+        "protocollo": "TLS",
+        "sni": "images.sbito.it"
+    },
+    {
+        "id": 86,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "23.60.189.41",
+        "protocollo": "TLS",
+        "sni": "ads.pubmatic.com"
+    },
+    {
+        "id": 87,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.39.129",
+        "protocollo": "TLS",
+        "sni": "live.services.trading212.com"
+    },
+    {
+        "id": 88,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "18.65.64.75",
+        "protocollo": "TLS",
+        "sni": "images.sbito.it"
+    },
+    {
+        "id": 89,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "142.250.180.170",
+        "protocollo": "TLS",
+        "sni": null
+    },
+    {
+        "id": 90,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.121.232",
+        "protocollo": "TLS",
+        "sni": "www.vinted.fr"
+    },
+    {
+        "id": 91,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.121.232",
+        "protocollo": "TLS",
+        "sni": "www.vinted.fr"
+    },
+    {
+        "id": 92,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.121.232",
+        "protocollo": "TLS",
+        "sni": "www.vinted.fr"
+    },
+    {
+        "id": 93,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.121.232",
+        "protocollo": "TLS",
+        "sni": "www.vinted.fr"
+    },
+    {
+        "id": 94,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.35.7",
+        "protocollo": "TLS",
+        "sni": "sdk.fra-01.braze.eu"
+    },
+    {
+        "id": 95,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.120.62.213",
+        "protocollo": "TLS",
+        "sni": "o4507345375789056.ingest.de.sentry.io"
+    },
+    {
+        "id": 96,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.102.162.219",
+        "protocollo": "TLS",
+        "sni": "prod-mediate-events.applovin.com"
+    },
+    {
+        "id": 97,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.35.7",
+        "protocollo": "TLS",
+        "sni": "sdk.fra-01.braze.eu"
+    },
+    {
+        "id": 98,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.120.62.213",
+        "protocollo": "TLS",
+        "sni": "o4507345375789056.ingest.de.sentry.io"
+    },
+    {
+        "id": 99,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "104.18.39.129",
+        "protocollo": "TLS",
+        "sni": "live.services.trading212.com"
+    },
+    {
+        "id": 100,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "34.111.80.193",
+        "protocollo": "TLS",
+        "sni": "sts.applovin.com"
+    },
+    {
+        "id": 107,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "91.235.132.129",
+        "protocollo": "STUN",
+        "sni": null
+    },
+    {
+        "id": 121,
+        "ip_sorgente": "192.168.70.96",
+        "ip_destinazione": "98.85.103.43",
+        "protocollo": "TLS",
+        "sni": null
+    },
+    {
+        "id": 122,
+        "ip_sorgente": "142.251.209.10",
+        "ip_destinazione": "192.168.70.96",
+        "protocollo": "TLS",
+        "sni": null
+    },
+    {
+        "id": 123,
+        "ip_sorgente": "142.251.209.10",
+        "ip_destinazione": "192.168.70.96",
+        "protocollo": "TLS",
+        "sni": null
+    },
+    {
+        "id": 124,
+        "ip_sorgente": "142.251.209.10",
+        "ip_destinazione": "192.168.70.96",
+        "protocollo": "TLS",
+        "sni": null
+    },
+    {
+        "id": 125,
+        "ip_sorgente": "216.58.205.42",
+        "ip_destinazione": "192.168.70.96",
+        "protocollo": "TLS",
+        "sni": null
+    },
+    {
+        "id": 130,
+        "ip_sorgente": "216.58.205.42",
+        "ip_destinazione": "192.168.70.96",
+        "protocollo": "TLS",
+        "sni": null
+    },
+    {
+        "id": 131,
+        "ip_sorgente": "216.58.205.42",
+        "ip_destinazione": "192.168.70.96",
+        "protocollo": "TLS",
+        "sni": null
+    },
+    {
+        "id": 132,
+        "ip_sorgente": "142.250.180.170",
+        "ip_destinazione": "192.168.70.96",
+        "protocollo": "TLS",
+        "sni": null
+    },
+    {
+        "id": 133,
+        "ip_sorgente": "142.250.180.170",
+        "ip_destinazione": "192.168.70.96",
+        "protocollo": "TLS",
+        "sni": null
+    }
+]

@@ -14,7 +14,17 @@ sed -E 's/\[bytes ratio: [^]]+\]//g' output.json > output1.json
 
 FILTRO DEFINITIVO:
 
-sed -E 's/\[Goodput ratio: [^]]+\]\[[^]]+\]//g; s/\[bytes ratio: [^]]+\]//g; s/\[Plen Bins: [^]]+\]//g' input.json > output.json
+sed -E 's/\[Goodput ratio: [^]]+\]\[[^]]+\]//g; 
+s/\[bytes ratio: [^]]+\]//g;
+s/\[Plen Bins: [^]]+\]//g;
+s/\[(Encrypted|ClearText)\]//g;
+s/\[Confidence: [^]]+\]//g;
+s/\[FPC: [^]]+\]//g;
+s/\[DPI packets: [^]]+\]//g;
+s/\[PLAIN TEXT \([^]]+\)\]//g;
+s/\[IAT [^]]+\]//g;
+s/\[Pkt Len [^]]+\]//g' input.json > output.json
+
 
 3) Ho deciso di rimuovere tutti quei protocolli riconosciuti da Ndpi e per verificare questo eseguo questi due comandi:
 

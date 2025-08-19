@@ -1,25 +1,4 @@
 
------------------------------------------------------------
-* NOTE: This is demo app to show *some* nDPI features.
-* In this demo we have implemented only some basic features
-* just to show you what you can do with the library. Feel 
-* free to extend it and send us the patches for inclusion
-------------------------------------------------------------
-
-Using nDPI (4.15.0-5377-8987a2c) [1 thread(s)]
-Using libgcrypt version 1.8.6internal
-Reading packets from pcap file tesi/pcapng/Hide.me_VPN_Connection_04.pcapng...
-Running thread 0...
-
-nDPI Memory statistics:
-	nDPI Memory (once):      2.95 KB      
-	Flow Memory (per flow):  1.13 KB      
-	Actual Memory:           9.97 MB      
-	Peak Memory:             9.97 MB      
-	Setup Time:              50 msec
-	Packet Processing Time:  5 msec
-
-Traffic statistics:
 	Ethernet bytes:        2067488       (includes ethernet CRC/IFC/trailer)
 	Discarded bytes:       0            
 	IP packets:            3939          of 3947 packets total
@@ -89,17 +68,9 @@ Risk stats [found 9 (52.9 %) flows with risks]:
 	      last column can exceed the number of flows with risks.
 
 
-
-JA Host Stats: 
-		 IP Address                  	 # JA4C     
-	1	 10.231.254.96            	 3      
-
-
 	1	TCP 10.231.254.96:61269 <-> 88.99.164.231:432 [proto: 91/TLS][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][17 pkts/2148 bytes <-> 17 pkts/8749 bytes][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][IAT c2s/s2c min/avg/max/stddev: 0/0 32/35 232/146 63/49][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 126/515 738/1394 164/585][Risk: ** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **][Risk Score: 150][Risk Info: h2 / SNI should always be present / Expected on port 443][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1511h2_8daaf6152771_40271e0a5736][JA3S: f4febc55ea12b31ae17cfb7e614afda8][Safari][Cipher: TLS_AES_128_GCM_SHA256]
 	4	TCP 10.231.254.96:61268 <-> 45.76.88.89:443 [proto: 91/TLS][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][10 pkts/1577 bytes <-> 9 pkts/1293 bytes][Hostname/SNI: api.hide.me][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][IAT c2s/s2c min/avg/max/stddev: 0/0 48/48 100/93 37/38][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 158/144 583/347 162/101][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1514h2_8daaf6152771_fadfdae04b4e][JA3S: fcb2d4d0991292272fcb1e464eedfd43][Safari][Cipher: TLS_AES_128_GCM_SHA256]
 	8	UDP 10.231.254.96:52712 <-> 10.231.254.147:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 5][cat: Network/14][3 pkts/248 bytes <-> 2 pkts/178 bytes][Hostname/SNI: free-de-v4.hideservers.net][148.251.75.238][DNS Id: 0x14e7][Risk: ** Minor Issues **][Risk Score: 10][Risk Info: DNS Record with zero TTL][PLAIN TEXT (myipstack)]
 
-Undetected flows:
-	
 	1	UDP 10.231.254.96:61271 <-> 88.99.164.231:412 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 7][1690 pkts/359098 bytes <-> 2124 pkts/1587120 bytes][IAT c2s/s2c min/avg/max/stddev: 0/0 6/3 974/533 40/17][Pkt Len c2s/s2c min/avg/max/stddev: 77/75 212/747 1469/1465 232/624][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 6.169 (Executable?)][PLAIN TEXT (p@UTac)]
 	2	TCP 10.231.254.96:61270 <-> 148.251.75.238:8443 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 2][1 pkts/74 bytes <-> 1 pkts/54 bytes][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (server)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]

@@ -21,16 +21,20 @@ s/\[(Encrypted|ClearText)\]//g;
 s/\[Confidence: [^]]+\]//g;
 s/\[FPC: [^]]+\]//g;
 s/\[DPI packets: [^]]+\]//g;
-s/\[PLAIN TEXT \([^]]+\)\]//g;
 s/\[IAT [^]]+\]//g;
-s/\[Pkt Len [^]]+\]//g' input.json > output.json
+s/\[Pkt Len [^]]+\]//g';
+s/\[DNS Id: [^]]+\]//g' input.json > output.json
+
+OPZIONALE:
+
+s/\[PLAIN TEXT \([^]]+\)\]//g;
 
 
 3) Ho deciso di rimuovere tutti quei protocolli riconosciuti da Ndpi e per verificare questo eseguo questi due comandi:
 
-grep -vP '\[proto: \d+\.\d+/.+?\]' input.json > output.json
+grep -vP '(\[proto: \d+(\.\d+/.+?|/MSDO)\]|\[IP:.*(Google|Facebook|AmazonAWS|Azure).*\])' output_01/Hide.me_VPN_Connection_02_output.json > output_01/Hide.me_VPN_Connection_02_output_filtrato.json
 
-grep -P '\[proto: \d+\.\d+/.+?\]' Traffico_in_Chiaro_Vint-Sub-Traid_output.json > Traffico_in_Chiaro_Vint-Sub-Traid_output_filtrato_01.json 
+grep -P '(\[proto: \d+\.\d+/.+?\]|\[IP:.*(Google|Facebook).*\])' Traffico_in_Chiaro_Vint-Sub-Traid_output.json > Traffico_in_Chiaro_Vint-Sub-Traid_output_filtrato_01.json 
 
 4) con uno script vado a recuperare delle informazioni dei flussi sconosciuti a ndpi quali:
 

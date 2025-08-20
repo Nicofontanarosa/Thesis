@@ -15,18 +15,33 @@ output_file = args.output
 flussi = []
 counter = 1
 
+# UDP 10.231.254.96:54855 <-> 10.231.254.147:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 4][cat: Network/14][4 pkts/329 bytes <-> 4 pkts/601 bytes][Goodput ratio: 49/72][16.25 sec][Hostname/SNI: free-de-v4.hideservers.net][88.99.164.231][DNS Id: 0xcbe8][bytes ratio: -0.292 (Download)][IAT c2s/s2c min/avg/max/stddev: 18/182 5387/5415 14773/14793 6660/6646][Pkt Len c2s/s2c min/avg/max/stddev: 76/76 82/150 86/227 4/63][Risk: ** Minor Issues **][Risk Score: 10][Risk Info: DNS Record with zero TTL][PLAIN TEXT (myipstack)][Plen Bins: 0,75,0,0,12,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+# UDP 10.231.254.96:56256 <-> 10.231.254.147:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 4][cat: Network/14][2 pkts/178 bytes <-> 2 pkts/290 bytes][Goodput ratio: 53/71][1.45 sec][Hostname/SNI: gmscompliance-pa.googleapis.com][2a00:1450:4002:410::200a][DNS Id: 0x6b1f][Risk: ** Error Code **][Risk Score: 10][Risk Info: DNS Error Code NXDOMAIN][PLAIN TEXT (myipstack)][Plen Bins: 0,75,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+# UDP 10.231.254.96:54855 <-> 10.231.254.147:53 [proto: 5/DNS][IP: 0/Unknown][cat: Network/14][4 pkts/329 bytes <-> 4 pkts/601 bytes][Hostname/SNI: free-de-v4.hideservers.net][88.99.164.231][Risk: ** Minor Issues **][Risk Score: 10][Risk Info: DNS Record with zero TTL][PLAIN TEXT (myipstack)]
+# UDP 10.231.254.96:56256 <-> 10.231.254.147:53 [proto: 5/DNS][IP: 0/Unknown][cat: Network/14][2 pkts/178 bytes <-> 2 pkts/290 bytes][Hostname/SNI: gmscompliance-pa.googleapis.com][2a00:1450:4002:410::200a][Risk: ** Error Code **][Risk Score: 10][Risk Info: DNS Error Code NXDOMAIN][PLAIN TEXT (myipstack)]
+
 with open(input_file, 'r') as f_in:
     for riga in f_in:
         riga = riga.strip()
-        if not riga or not re.search(r"\d+\.\d+\.\d+\.\d+:\d+", riga):
+        # if not riga or not re.search(r"\d+\.\d+\.\d+\.\d+:\d+", riga):
+        if not riga or not re.search(r"\d+\.\d+\.\d+\.\d+", riga):
             continue
 
         flusso = {"id": counter, "riga_grezza": riga}
+
+        match_ip_only = re.match(r"^\s*\d+\s+(\d+\.\d+\.\d+\.\d+)\s+\d+\s*$", riga)
+        if match_ip_only:
+            flusso["ip_sorgente_globale"] = match_ip_only.group(1)
 
         # Protocollo
         match_proto = re.search(r"\[proto:\s*([\d\.]+\/[^\]]+)\]", riga)
         if match_proto:
             flusso["protocollo"] = match_proto.group(1)
+            if "DNS" in match_proto.group(1):
+                match_dns_ip = re.search(r"\]\[([\d]+\.[\d]+\.[\d]+\.[\d]+)\]", riga)
+                if match_dns_ip:
+                    flusso["dns_ip"] = match_dns_ip.group(1)
 
         # Categoria
         match_cat = re.search(r"\[cat:\s*([^\]]+)\]", riga)
@@ -106,7 +121,24 @@ with open(input_file, 'r') as f_in:
         flussi.append(flusso)
         counter += 1
 
-with open(output_file, 'w') as f_out:
-    json.dump(flussi, f_out, indent=4)
+# --- AGGREGAZIONE ---
+aggregati = {}
+for flusso in flussi:
+    chiave = (
+        flusso.get("ip_sorgente"),
+        flusso.get("ip_destinazione"),
+        flusso.get("porta_destinazione"),
+        flusso.get("protocollo"),
+    )
+    if chiave not in aggregati:
+        flusso["numero_flussi_simili"] = 1
+        aggregati[chiave] = flusso
+    else:
+        aggregati[chiave]["numero_flussi_simili"] += 1
 
-print(f"[OK] Estratti {len(flusso)} flussi in {output_file}")
+flussi_finali = list(aggregati.values())
+
+with open(output_file, 'w') as f_out:
+    json.dump(flussi_finali, f_out, indent=4)
+
+print(f"[OK] Estratti {len(flussi_finali)} flussi (aggregati) in {output_file}")

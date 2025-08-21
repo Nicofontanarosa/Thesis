@@ -1,0 +1,101 @@
+
+-----------------------------------------------------------
+* NOTE: This is demo app to show *some* nDPI features.
+* In this demo we have implemented only some basic features
+* just to show you what you can do with the library. Feel 
+* free to extend it and send us the patches for inclusion
+------------------------------------------------------------
+
+Using nDPI (4.15.0-5377-8987a2c) [1 thread(s)]
+Using libgcrypt version 1.8.6internal
+Reading packets from pcap file tesi/pcapng/Fire_Net_VPN_Connection_01.pcapng...
+Running thread 0...
+
+nDPI Memory statistics:
+	nDPI Memory (once):      2.95 KB      
+	Flow Memory (per flow):  1.13 KB      
+	Actual Memory:           31.93 MB     
+	Peak Memory:             31.93 MB     
+	Setup Time:              53 msec
+	Packet Processing Time:  119 msec
+
+Traffic statistics:
+	Ethernet bytes:        24548860      (includes ethernet CRC/IFC/trailer)
+	Discarded bytes:       0            
+	IP packets:            29410         of 29418 packets total
+	IP bytes:              23843020      (avg pkt size 810 bytes)
+	Unique flows:          98           
+	TCP Packets:           28216        
+	UDP Packets:           1194         
+	VLAN Packets:          0            
+	MPLS Packets:          0            
+	PPPoE Packets:         0            
+	Fragmented Packets:    0            
+	Max Packet size:       1420         
+	Packet Len < 64:       10090        
+	Packet Len 64-128:     1445         
+	Packet Len 128-256:    1681         
+	Packet Len 256-1024:   882          
+	Packet Len 1024-1500:  15312        
+	Packet Len > 1500:     0            
+	nDPI throughput:       246.50 K pps / 1.53 Gb/sec
+	Analysis begin:        21/Aug/2025 09:34:42
+	Analysis end:          21/Aug/2025 09:35:52
+	Traffic throughput:    422.01 pps / 2.69 Mb/sec
+	Traffic duration:      69.691 sec
+	Guessed flow protos:   10           
+	DPI Packets (TCP):     463           (6.09 pkts/flow)
+	DPI Packets (UDP):     49            (2.23 pkts/flow)
+	Confidence: Match by port 9             (flows)
+	Confidence: DPI        88            (flows)
+	Confidence: Match by IP 1             (flows)
+
+
+Detected protocols:
+	DNS                  packets: 72            bytes: 7858          flows: 3            
+	TLS                  packets: 842           bytes: 636346        flows: 20           
+	YouTube              packets: 2192          bytes: 1932876       flows: 4            
+	Google               packets: 3517          bytes: 2503030       flows: 47           
+	QUIC                 packets: 89            bytes: 39155         flows: 3            
+	Microsoft            packets: 23            bytes: 1996          flows: 2            
+	MS_OneDrive          packets: 25            bytes: 8450          flows: 1            
+	GoogleServices       packets: 690           bytes: 427538        flows: 17           
+	WebSocket            packets: 21960         bytes: 18285771      flows: 1            
+
+
+Protocol statistics:
+	Safe                 packets: 865           bytes: 638342        flows: 22           
+	Acceptable           packets: 26353         bytes: 21271802      flows: 72           
+	Fun                  packets: 2192          bytes: 1932876       flows: 4            
+
+
+Category statistics:
+	Media                packets: 2192          bytes: 1932876       flows: 4            
+	Web                  packets: 25127         bytes: 20457851      flows: 65           
+	Cloud                packets: 25            bytes: 8450          flows: 1            
+	Network              packets: 72            bytes: 7858          flows: 3            
+	Advertisement        packets: 1994          bytes: 1435985       flows: 25           
+
+Risk stats [found 17 (17.3 %) flows with risks]:
+	Known Proto on Non Std Port                  3 [14.3 %]
+	TLS (probably) Not Carrying HTTPS            8 [38.1 %]
+	Unidirectional Traffic                       8 [38.1 %]
+	TCP Connection Issues                        1 [ 4.8 %]
+	Probing Attempt                              1 [ 4.8 %]
+
+	NOTE: as one flow can have multiple risks set, the sum of the
+	      last column can exceed the number of flows with risks.
+
+
+
+JA Host Stats: 
+		 IP Address                  	 # JA4C     
+	1	 192.168.80.96            	 10     
+
+
+	5	TCP 192.168.80.96:62334 <-> 104.21.35.164:443 [proto: 91/TLS][IP: 220/Cloudflare][Encrypted][Confidence: DPI][FPC: 220/Cloudflare, Confidence: IP address][DPI packets: 6][cat: Web/5][103 pkts/7622 bytes <-> 168 pkts/202547 bytes][Goodput ratio: 11/95][0.59 sec][Hostname/SNI: ptisupporterteam.xyz][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.927 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 5/2 136/72 22/10][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 74/1206 583/1454 56/504][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 9,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,0,0,0,0]
+	6	TCP 192.168.80.96:62376 <-> 104.21.35.164:443 [proto: 91/TLS][IP: 220/Cloudflare][Encrypted][Confidence: DPI][FPC: 220/Cloudflare, Confidence: IP address][DPI packets: 6][cat: Web/5][88 pkts/6632 bytes <-> 167 pkts/202471 bytes][Goodput ratio: 12/95][0.54 sec][Hostname/SNI: ptisupporterteam.xyz][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.937 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 4/2 97/63 17/8][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 75/1212 583/1454 60/495][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 6,0,4,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,0,0,0,0]
+	7	TCP 192.168.80.96:62324 <-> 104.21.35.164:443 [proto: 91/TLS][IP: 220/Cloudflare][Encrypted][Confidence: DPI][FPC: 220/Cloudflare, Confidence: IP address][DPI packets: 6][cat: Web/5][88 pkts/6632 bytes <-> 163 pkts/202213 bytes][Goodput ratio: 12/95][2.33 sec][Hostname/SNI: ptisupporterteam.xyz][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.936 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 29/2 1676/95 198/11][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 75/1241 583/1454 60/474][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 6,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,89,0,0,0,0]
+	76	UDP 192.168.80.96:59735 <-> 192.168.80.68:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][12 pkts/1020 bytes <-> 12 pkts/1893 bytes][Goodput ratio: 51/73][63.24 sec][Hostname/SNI: firebaseinappmessaging.googleapis.com][142.250.180.138][DNS Id: 0x2101][bytes ratio: -0.300 (Download)][IAT c2s/s2c min/avg/max/stddev: 111/97 4273/4276 31620/31614 9675/9672][Pkt Len c2s/s2c min/avg/max/stddev: 73/91 85/158 97/227 7/48][PLAIN TEXT (firebaseinappmessaging)][Plen Bins: 4,59,4,16,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	78	UDP 192.168.80.96:55032 <-> 192.168.80.68:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][13 pkts/1050 bytes <-> 13 pkts/1593 bytes][Goodput ratio: 48/66][64.58 sec][Hostname/SNI: firebaseinstallations.googleapis.com][142.250.180.170][DNS Id: 0x8c8f][bytes ratio: -0.205 (Download)][IAT c2s/s2c min/avg/max/stddev: 114/90 5768/5766 26513/26486 9637/9653][Pkt Len c2s/s2c min/avg/max/stddev: 71/71 81/123 96/227 7/51][PLAIN TEXT (firebaseinstallations)][Plen Bins: 19,62,7,0,3,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	79	UDP 192.168.80.96:59264 <-> 192.168.80.68:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][11 pkts/952 bytes <-> 11 pkts/1350 bytes][Goodput ratio: 51/66][63.03 sec][Hostname/SNI: ptisupporterteam.xyz][104.21.35.164][DNS Id: 0x22a7][bytes ratio: -0.173 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 386/355 7653/7670 42397/42424 13458/13468][Pkt Len c2s/s2c min/avg/max/stddev: 80/82 87/123 95/214 5/36][PLAIN TEXT (ptisupporterteam)][Plen Bins: 0,73,9,13,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]

@@ -1,0 +1,45 @@
+﻿COME STO PROCEDENDO: 
+
+1) Comando per generare il JSON ndpi:
+
+nDPI/example/ndpiReader -v 2 -i tesi/Traffico_in_Chiaro.pcapng > tesi/Traffico_in_Chiaro.json
+
+2) Per una migliore leggibilità ho iniziato togliendo goodput ratio, Bytes ratio e Plen Bins
+
+FILTRI INIZIALI:
+
+sed -E 's/\[Goodput ratio: [^]]+\]\[[^]]+\]//g' Hoxx_VPN_Germany_Connection.json > output.json
+
+sed -E 's/\[bytes ratio: [^]]+\]//g' output.json > output1.json
+
+FILTRO DEFINITIVO:
+
+sed -E 's/\[Goodput ratio: [^]]+\]\[[^]]+\]//g; 
+s/\[bytes ratio: [^]]+\]//g;
+s/\[(Encrypted|ClearText)\]//g;
+s/\[Confidence: [^]]+\]//g;
+s/\[FPC: [^]]+\]//g;
+s/\[DPI packets: [^]]+\]//g;
+s/\[IAT [^]]+\]//g;
+s/\[Pkt Len [^]]+\]//g';
+s/\[DNS Id: [^]]+\]//g' input.json > output.json
+
+OPZIONALE:
+
+s/\[PLAIN TEXT \([^]]+\)\]//g;
+s/\[Plen Bins: [^]]+\]//g;
+
+
+3) Ho deciso di rimuovere tutti quei protocolli riconosciuti da Ndpi e per verificare questo eseguo un comando:
+
+filtro:
+grep -vP '(\[proto: \d+(\.\d+/.+?|/MSDO)\]|\[IP:.*(Google|Facebook|AmazonAWS|Azure).*\]|0\.0\.0\.0)|\[Plen Bins: (0,){47}0\]|\[proto: 91/TLS\](?!.*(Hostname/SNI:|ALPNs:|TLS Supported Versions:|JA3S:|JA4:|Risk:))'
+
+comando:
+grep -P '(\[proto: \d+\.\d+/.+?\]|\[IP:.*(Google|Facebook).*\])' input.json > output.json 
+
+4) con uno script vado a recuperare delle informazioni dei flussi sconosciuti a ndpi quali:
+
+- ip sorgente – destinazione
+- SNI
+

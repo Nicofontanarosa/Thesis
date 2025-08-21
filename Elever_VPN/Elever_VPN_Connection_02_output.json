@@ -1,0 +1,115 @@
+
+-----------------------------------------------------------
+* NOTE: This is demo app to show *some* nDPI features.
+* In this demo we have implemented only some basic features
+* just to show you what you can do with the library. Feel 
+* free to extend it and send us the patches for inclusion
+------------------------------------------------------------
+
+Using nDPI (4.15.0-5377-8987a2c) [1 thread(s)]
+Using libgcrypt version 1.8.6internal
+Reading packets from pcap file tesi/pcapng/Elever_VPN_Connection_02.pcapng...
+Running thread 0...
+
+nDPI Memory statistics:
+	nDPI Memory (once):      2.95 KB      
+	Flow Memory (per flow):  1.13 KB      
+	Actual Memory:           14.84 MB     
+	Peak Memory:             14.84 MB     
+	Setup Time:              52 msec
+	Packet Processing Time:  40 msec
+
+Traffic statistics:
+	Ethernet bytes:        6698455       (includes ethernet CRC/IFC/trailer)
+	Discarded bytes:       0            
+	IP packets:            8794          of 8802 packets total
+	IP bytes:              6487399       (avg pkt size 737 bytes)
+	Unique flows:          64           
+	TCP Packets:           8312         
+	UDP Packets:           482          
+	VLAN Packets:          0            
+	MPLS Packets:          0            
+	PPPoE Packets:         0            
+	Fragmented Packets:    0            
+	Max Packet size:       1420         
+	Packet Len < 64:       3126         
+	Packet Len 64-128:     316          
+	Packet Len 128-256:    607          
+	Packet Len 256-1024:   483          
+	Packet Len 1024-1500:  4262         
+	Packet Len > 1500:     0            
+	nDPI throughput:       219.07 K pps / 1.24 Gb/sec
+	Analysis begin:        21/Aug/2025 09:42:14
+	Analysis end:          21/Aug/2025 09:43:43
+	Traffic throughput:    98.28 pps / 584.83 Kb/sec
+	Traffic duration:      89.482 sec
+	Guessed flow protos:   9            
+	DPI Packets (TCP):     308           (6.04 pkts/flow)
+	DPI Packets (UDP):     26            (2.00 pkts/flow)
+	Confidence: Match by port 8             (flows)
+	Confidence: DPI        55            (flows)
+	Confidence: Match by IP 1             (flows)
+
+
+Detected protocols:
+	DNS                  packets: 22            bytes: 2623          flows: 2            
+	HTTP                 packets: 6815          bytes: 5331109       flows: 7            
+	MDNS                 packets: 12            bytes: 4172          flows: 2            
+	TLS                  packets: 441           bytes: 267997        flows: 17           
+	Facebook             packets: 53            bytes: 13391         flows: 2            
+	Google               packets: 658           bytes: 231307        flows: 20           
+	QUIC                 packets: 29            bytes: 11653         flows: 3            
+	DoH_DoT              packets: 5             bytes: 294           flows: 3            
+	Github               packets: 352           bytes: 334368        flows: 1            
+	Microsoft            packets: 135           bytes: 118091        flows: 1            
+	Microsoft365         packets: 32            bytes: 11978         flows: 1            
+	PlayStore            packets: 72            bytes: 35623         flows: 1            
+	GoogleServices       packets: 65            bytes: 22287         flows: 3            
+	FbookReelStory       packets: 103           bytes: 102506        flows: 1            
+
+
+Protocol statistics:
+	Safe                 packets: 648           bytes: 421711        flows: 19           
+	Acceptable           packets: 7990          bytes: 5949791       flows: 42           
+	Fun                  packets: 156           bytes: 115897        flows: 3            
+
+
+Category statistics:
+	Web                  packets: 7681          bytes: 5837021       flows: 39           
+	SocialNetwork        packets: 156           bytes: 115897        flows: 3            
+	Network              packets: 39            bytes: 7089          flows: 7            
+	Collaborative        packets: 384           bytes: 346346        flows: 2            
+	SoftwareUpdate       packets: 72            bytes: 35623         flows: 1            
+	ConnCheck            packets: 18            bytes: 6945          flows: 1            
+	Advertisement        packets: 444           bytes: 138478        flows: 11           
+
+Risk stats [found 19 (29.7 %) flows with risks]:
+	Known Proto on Non Std Port                  3 [10.7 %]
+	HTTP Susp User-Agent                         6 [21.4 %]
+	TLS (probably) Not Carrying HTTPS            4 [14.3 %]
+	Missing SNI TLS Extn                         1 [ 3.6 %]
+	TLS Cert Validity Too Long                   1 [ 3.6 %]
+	TLS Susp Extn                                1 [ 3.6 %]
+	Susp Entropy                                 1 [ 3.6 %]
+	Error Code                                   5 [17.9 %]
+	Crawler/Bot                                  1 [ 3.6 %]
+	Unidirectional Traffic                       5 [17.9 %]
+
+	NOTE: as one flow can have multiple risks set, the sum of the
+	      last column can exceed the number of flows with risks.
+
+
+
+JA Host Stats: 
+		 IP Address                  	 # JA4C     
+	1	 192.168.80.96            	 13     
+
+
+	1	TCP 192.168.80.96:62674 <-> 172.233.147.46:80 [proto: 7/HTTP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 12][cat: Web/5][2776 pkts/619159 bytes <-> 3957 pkts/4691443 bytes][Goodput ratio: 70/94][34.31 sec][bytes ratio: -0.767 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 8/6 2715/3039 64/59][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 223/1186 1454/1354 334/424][StatusCode: 101][Nat-IP: vm.tiktok.com
+Content-Length: 1][User-Agent: Googlebot/2.1 (+http://www.google.com/bot.html)??
+][Risk: ** Crawler/Bot **][Risk Score: 10][Risk Info: UA Googlebot/2.1 (+http://www.google.com/bot.html)??
+][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (GET /ELVER)][Plen Bins: 1,1,12,6,22,9,0,0,2,2,2,1,2,2,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,0,1,2,0,0,0,0]
+	43	TCP 192.168.80.96:65094 <-> 83.224.69.211:443 [proto: 91/TLS][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][6 pkts/1439 bytes <-> 7 pkts/1173 bytes][Goodput ratio: 77/67][0.18 sec][Hostname/SNI: dsadata.intel.com][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: 0.102 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 29/26 67/68 28/28][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 240/168 801/341 269/128][Risk: ** TLS (probably) Not Carrying HTTPS **][Risk Score: 10][Risk Info: No ALPN][TCP Fingerprint: 2_128_65535_6bb88f5575fd/Windows][TLSv1.3][JA4: t13d201200_2b729b4bf6f3_89322cc15493][JA3S: 2253c82f03b621c5144709b393fde2c9][Firefox][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 0,0,16,0,0,0,0,33,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	44	UDP 192.168.80.96:55648 <-> 192.168.80.68:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][10 pkts/846 bytes <-> 10 pkts/1459 bytes][Goodput ratio: 50/71][60.81 sec][Hostname/SNI: v10.events.data.microsoft.com][52.168.117.170][DNS Id: 0x9785][bytes ratio: -0.266 (Download)][IAT c2s/s2c min/avg/max/stddev: 205/192 7202/7198 26207/26194 9778/9770][Pkt Len c2s/s2c min/avg/max/stddev: 77/95 85/146 91/226 5/47][PLAIN TEXT (events)][Plen Bins: 0,65,15,5,5,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	46	UDP [fe80::d9a6:c8b:2523:951d]:5353 -> [ff02::fb]:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][6 pkts/2146 bytes -> 0 pkts/0 bytes][Goodput ratio: 83/0][0.77 sec][Hostname/SNI: _dosvc._tcp.local][_dosvc._tcp.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 1/0 153/0 255/0 124/0][Pkt Len c2s/s2c min/avg/max/stddev: 102/0 358/0 649/0 256/0][PLAIN TEXT (DteHHBOBO)][Plen Bins: 0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	47	UDP 192.168.80.96:5353 -> 224.0.0.251:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][6 pkts/2026 bytes -> 0 pkts/0 bytes][Goodput ratio: 88/0][0.77 sec][Hostname/SNI: _dosvc._tcp.local][_dosvc._tcp.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 1/0 153/0 255/0 124/0][Pkt Len c2s/s2c min/avg/max/stddev: 82/0 338/0 629/0 256/0][PLAIN TEXT (DteHHBOBO)][Plen Bins: 0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]

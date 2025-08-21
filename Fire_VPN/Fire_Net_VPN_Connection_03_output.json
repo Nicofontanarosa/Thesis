@@ -1,0 +1,94 @@
+
+-----------------------------------------------------------
+* NOTE: This is demo app to show *some* nDPI features.
+* In this demo we have implemented only some basic features
+* just to show you what you can do with the library. Feel 
+* free to extend it and send us the patches for inclusion
+------------------------------------------------------------
+
+Using nDPI (4.15.0-5377-8987a2c) [1 thread(s)]
+Using libgcrypt version 1.8.6internal
+Reading packets from pcap file tesi/pcapng/Fire_Net_VPN_Connection_03.pcapng...
+Running thread 0...
+
+nDPI Memory statistics:
+	nDPI Memory (once):      2.95 KB      
+	Flow Memory (per flow):  1.13 KB      
+	Actual Memory:           16.68 MB     
+	Peak Memory:             16.68 MB     
+	Setup Time:              45 msec
+	Packet Processing Time:  23 msec
+
+Traffic statistics:
+	Ethernet bytes:        8829634       (includes ethernet CRC/IFC/trailer)
+	Discarded bytes:       0            
+	IP packets:            9486          of 9486 packets total
+	IP bytes:              8601970       (avg pkt size 906 bytes)
+	Unique flows:          47           
+	TCP Packets:           9392         
+	UDP Packets:           94           
+	VLAN Packets:          0            
+	MPLS Packets:          0            
+	PPPoE Packets:         0            
+	Fragmented Packets:    0            
+	Max Packet size:       1420         
+	Packet Len < 64:       3168         
+	Packet Len 64-128:     215          
+	Packet Len 128-256:    117          
+	Packet Len 256-1024:   268          
+	Packet Len 1024-1500:  5718         
+	Packet Len > 1500:     0            
+	nDPI throughput:       400.69 K pps / 2.78 Gb/sec
+	Analysis begin:        21/Aug/2025 09:38:35
+	Analysis end:          21/Aug/2025 09:38:54
+	Traffic throughput:    493.88 pps / 3.51 Mb/sec
+	Traffic duration:      19.207 sec
+	Guessed flow protos:   5            
+	DPI Packets (TCP):     242           (5.76 pkts/flow)
+	DPI Packets (UDP):     16            (3.20 pkts/flow)
+	Confidence: Match by port 4             (flows)
+	Confidence: DPI        42            (flows)
+	Confidence: Match by IP 1             (flows)
+
+
+Detected protocols:
+	DNS                  packets: 19            bytes: 1818          flows: 2            
+	HTTP                 packets: 12            bytes: 1030          flows: 1            
+	TLS                  packets: 412           bytes: 315591        flows: 14           
+	YouTube              packets: 7770          bytes: 7485926       flows: 3            
+	Google               packets: 1109          bytes: 734108        flows: 21           
+	GoogleServices       packets: 164           bytes: 63497         flows: 6            
+
+
+Protocol statistics:
+	Safe                 packets: 412           bytes: 315591        flows: 14           
+	Acceptable           packets: 1304          bytes: 800453        flows: 30           
+	Fun                  packets: 7770          bytes: 7485926       flows: 3            
+
+
+Category statistics:
+	Media                packets: 7770          bytes: 7485926       flows: 3            
+	Web                  packets: 1270          bytes: 868527        flows: 32           
+	Network              packets: 19            bytes: 1818          flows: 2            
+	Advertisement        packets: 427           bytes: 245699        flows: 10           
+
+Risk stats [found 10 (21.3 %) flows with risks]:
+	Known Proto on Non Std Port                  2 [16.7 %]
+	TLS (probably) Not Carrying HTTPS            1 [ 8.3 %]
+	Susp Entropy                                 1 [ 8.3 %]
+	Error Code                                   2 [16.7 %]
+	Unidirectional Traffic                       6 [50.0 %]
+
+	NOTE: as one flow can have multiple risks set, the sum of the
+	      last column can exceed the number of flows with risks.
+
+
+
+JA Host Stats: 
+		 IP Address                  	 # JA4C     
+	1	 192.168.80.96            	 6      
+
+
+	2	TCP 192.168.80.96:62458 <-> 104.21.35.164:443 [proto: 91/TLS][IP: 220/Cloudflare][Encrypted][Confidence: DPI][FPC: 220/Cloudflare, Confidence: IP address][DPI packets: 6][cat: Web/5][99 pkts/7358 bytes <-> 165 pkts/202349 bytes][Goodput ratio: 11/95][0.71 sec][Hostname/SNI: ptisupporterteam.xyz][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.930 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 6/2 114/66 21/9][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 74/1226 583/1454 57/491][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 9,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,87,0,0,0,0]
+	37	UDP 192.168.80.96:60693 <-> 192.168.80.68:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 6][cat: Network/14][6 pkts/496 bytes <-> 5 pkts/491 bytes][Goodput ratio: 49/57][3.38 sec][Hostname/SNI: gsmpromax.xyz.mshome.net][0.0.0.0][DNS Id: 0x2b4f][bytes ratio: 0.005 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 6/5 676/526 1769/1567 792/736][Pkt Len c2s/s2c min/avg/max/stddev: 71/71 83/98 95/143 10/28][Risk: ** Error Code **][Risk Score: 10][Risk Info: DNS Error Code NXDOMAIN][PLAIN TEXT (online)][Plen Bins: 36,45,9,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	

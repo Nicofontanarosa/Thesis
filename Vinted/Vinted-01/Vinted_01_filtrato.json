@@ -1,0 +1,42 @@
+[H[2J[3J
+File di input: json/Vinted_01.json
+File di output: output_flussi.json
+
+
+Lista dei protocolli osservati:
+
+ - DNS
+ - ICMPV6
+ - QUIC.Google
+ - TLS
+ - TLS.Facebook
+ - TLS.Google
+ - TLS.GoogleServices
+ - TLS.YouTube
+
+Lista dei protocolli analizzati:
+
+ - DNS
+ - HTTP
+ - QUIC
+ - SMTP
+ - TLS
+ - Unknown
+
+Lista degli IP osservati:
+
+ - AmazonAWS
+ - Azure
+ - Cloudflare
+ - Facebook
+ - Google
+ - GoogleCloud
+ - Unknown
+
+Lista degli IP analizzati:
+
+ - Unknown
+
+Flussi letti: 111
+Flussi tenuti: 13
+Flussi rimossi: 98

@@ -4,6 +4,8 @@ import json
 import argparse
 import os
 
+# nDPI/example/ndpiReader -v 2 -i tesi/input.pcapng > tesi/output.json
+
 # Clear del terminale all'apertura
 os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -21,7 +23,7 @@ print(f"\nFile di input: {input_file}")
 print(f"File di output: {output_file}\n")
 
 # lista dei protocolli da mantenere
-protocols = {"DNS", "TLS", "HTTP", "QUIC", "Unknown"}
+protocols = {"DNS", "TLS", "HTTP", "QUIC", "Unknown", "SMTP"}
 # lista degli IP da mantenere
 ips = {"Unknown"}
 
@@ -85,7 +87,8 @@ pattern_general = re.compile(proto_general_pattern)
 #s/\[IAT [^]]+\]//g;
 #s/\[Pkt Len [^]]+\]//g';
 #s/\[DNS Id: [^]]+\]//g'
-#s/\[Plen Bins: [^]]+\]//g;
+#s/\[Plen Bins: [^]]+\]//g
+#s/\[PLAIN TEXT \([^]]+\)\]//g;
 
 # regex per rimuovere i campi [Goodput ratio: ...][...]
 goodput_pattern = re.compile(r"\[Goodput ratio: [^\]]+\]\[[^\]]*\]")

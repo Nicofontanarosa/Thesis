@@ -52,77 +52,78 @@ with open(input_file, 'r') as f_in:
         if match_proto:
             flusso["proto_field"] = match_proto.group(1)
         
-            if "DNS" in match_proto.group(1):
-                # DNS IP
-                match_dns_ip = re.search(r"\]\[([\d]+\.[\d]+\.[\d]+\.[\d]+)\]", riga)
-                if match_dns_ip:
-                    flusso["dns_ip"] = match_dns_ip.group(1)
+        # se mettessi degli if per protocollo, i campi TLS o HTTP per i flussi sconosciuti non verrebbero visualizzati
+        #    if "DNS" in match_proto.group(1):
+        # DNS IP
+        match_dns_ip = re.search(r"\]\[([\d]+\.[\d]+\.[\d]+\.[\d]+)\]", riga)
+        if match_dns_ip:
+            flusso["dns_ip"] = match_dns_ip.group(1)
 
-                # DNS ID
-                match_dns_id = re.search(r"\[DNS Id:\s*([^\]]+)\]", riga)
-                if match_dns_id:
-                    flusso["dns_id"] = match_dns_id.group(1)
+        # DNS ID
+        match_dns_id = re.search(r"\[DNS Id:\s*([^\]]+)\]", riga)
+        if match_dns_id:
+            flusso["dns_id"] = match_dns_id.group(1)
 
-            if "HTTP" in match_proto.group(1):
-                # URL
-                match_url = re.search(r"\[URL:\s*([^\]]+)\]", riga)
-                if match_url:
-                    flusso["url"] = match_url.group(1)
+        #    if "HTTP" in match_proto.group(1):
+        # URL
+        match_url = re.search(r"\[URL:\s*([^\]]+)\]", riga)
+        if match_url:
+            flusso["url"] = match_url.group(1)
 
-                # Content-Type
-                match_ct = re.search(r"\[Content-Type:\s*([^\]]+)\]", riga)
-                if match_ct:
-                    flusso["content_type"] = match_ct.group(1)
+        # Content-Type
+        match_ct = re.search(r"\[Content-Type:\s*([^\]]+)\]", riga)
+        if match_ct:
+            flusso["content_type"] = match_ct.group(1)
 
-                # User-Agent
-                match_ua = re.search(r"\[User-Agent:\s*([^\]]+)\]", riga)
-                if match_ua:
-                    flusso["user_agent"] = match_ua.group(1)
+        # User-Agent
+        match_ua = re.search(r"\[User-Agent:\s*([^\]]+)\]", riga)
+        if match_ua:
+            flusso["user_agent"] = match_ua.group(1)
 
-                # Status code
-                match_status = re.search(r"\[StatusCode:\s*([^\]]+)\]", riga)
-                if match_status:
-                    flusso["status_code"] = match_status.group(1)
+        # Status code
+        match_status = re.search(r"\[StatusCode:\s*([^\]]+)\]", riga)
+        if match_status:
+            flusso["status_code"] = match_status.group(1)
 
-            if "TLS" in match_proto.group(1):
-                # ALPN
-                match_alpn = re.search(r"\[\(Advertised\) ALPNs:\s*([^\]]+)\]", riga)
-                if match_alpn:
-                    flusso["alpn"] = match_alpn.group(1)
+        #    if "TLS" in match_proto.group(1):
+        # ALPN
+        match_alpn = re.search(r"\[\(Advertised\) ALPNs:\s*([^\]]+)\]", riga)
+        if match_alpn:
+            flusso["alpn"] = match_alpn.group(1)
 
-                # TLS Versions
-                match_tls = re.search(r"\[TLS Supported Versions:\s*([^\]]+)\]", riga)
-                if match_tls:
-                    flusso["tls_versions"] = match_tls.group(1)
+        # TLS Versions
+        match_tls = re.search(r"\[TLS Supported Versions:\s*([^\]]+)\]", riga)
+        if match_tls:
+            flusso["tls_versions"] = match_tls.group(1)
 
-                # Versione TLS effettiva
-                match_tls_version = re.search(r"\[(TLSv[0-9.]+)\]", riga)
-                if match_tls_version:
-                    flusso["tls_version"] = match_tls_version.group(1)
+        # Versione TLS effettiva
+        match_tls_version = re.search(r"\[(TLSv[0-9.]+)\]", riga)
+        if match_tls_version:
+            flusso["tls_version"] = match_tls_version.group(1)
 
-                # JA3/JA4
-                match_ja3 = re.search(r"\[JA3S:\s*([^\]]+)\]", riga)
-                if match_ja3:
-                    flusso["ja3s"] = match_ja3.group(1)
+        # JA3/JA4
+        match_ja3 = re.search(r"\[JA3S:\s*([^\]]+)\]", riga)
+        if match_ja3:
+            flusso["ja3s"] = match_ja3.group(1)
 
-                match_ja4 = re.search(r"\[JA4:\s*([^\]]+)\]", riga)
-                if match_ja4:
-                    flusso["ja4"] = match_ja4.group(1)
+        match_ja4 = re.search(r"\[JA4:\s*([^\]]+)\]", riga)
+        if match_ja4:
+            flusso["ja4"] = match_ja4.group(1)
 
-                # Client/Browser/OS
-                match_client = re.search(r"\[([A-Za-z0-9\s\-_]+)\]", riga)
-                if match_client:
-                    flusso["client"] = match_client.group(1)
+        # Client/Browser/OS
+        match_client = re.search(r"\[([A-Za-z0-9\s\-_]+)\]", riga)
+        if match_client:
+            flusso["client"] = match_client.group(1)
 
-                # Cipher usato
-                match_cipher = re.search(r"\[Cipher:\s*([^\]]+)\]", riga)
-                if match_cipher:
-                    flusso["cipher"] = match_cipher.group(1)
+        # Cipher usato
+        match_cipher = re.search(r"\[Cipher:\s*([^\]]+)\]", riga)
+        if match_cipher:
+            flusso["cipher"] = match_cipher.group(1)
 
-                # ECH Encrypted Client Hello
-                match_cipher = re.search(r"\[ECH:\s*([^\]]+)\]", riga)
-                if match_cipher:
-                    flusso["ech"] = match_cipher.group(1)
+        # ECH Encrypted Client Hello
+        match_cipher = re.search(r"\[ECH:\s*([^\]]+)\]", riga)
+        if match_cipher:
+            flusso["ech"] = match_cipher.group(1)
 
         # Plain Text
         match_plain = re.search(r"\[PLAIN TEXT\s*\(([^)]+)\)\]", riga)
@@ -303,6 +304,10 @@ for flusso in flussi_finali:
         porta_destinazione = flusso.get("porta_destinazione", "N/A")
         pkts_sorgente = flusso.get("pkts_sorgente", 0)
         pkts_destinazione = flusso.get("pkts_destinazione", 0)
+        ja3s = flusso.get("ja3s", "N/A")
+        ja4 = flusso.get("ja4", "N/A")
+        sni = flusso.get("sni", "N/A")
+        ech = flusso.get("ech", "N/A")
 
         print(f"{ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione} | "
               f"Pacchetti: {pkts_sorgente} -> {pkts_destinazione}")

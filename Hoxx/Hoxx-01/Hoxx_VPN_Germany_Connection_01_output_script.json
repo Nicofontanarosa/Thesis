@@ -1,0 +1,3173 @@
+[
+    {
+        "id": 1,
+        "riga_grezza": "1\t 192.168.229.96           \t 2",
+        "ip_host": "192.168.229.96",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "None <-> None"
+        ]
+    },
+    {
+        "id": 2,
+        "riga_grezza": "7\tUDP 192.168.229.96:55566 <-> 192.168.229.54:53 [proto: 5/DNS][IP: 0/Unknown][cat: Network/14][1 pkts/83 bytes <-> 1 pkts/227 bytes][Hostname/SNI: www.msftconnecttest.com][151.5.24.33][DNS Id: 0x6201][PLAIN TEXT (msftconnecttest)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "151.5.24.33",
+        "dns_id": "0x6201",
+        "plain_text": "msftconnecttest",
+        "sni": "www.msftconnecttest.com",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "55566",
+        "ip_destinazione": "192.168.229.54",
+        "porta_destinazione": "53",
+        "pkts_sorgente": 1,
+        "pkts_destinazione": 1,
+        "categoria": "Network/14",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "id": 3,
+        "riga_grezza": "1\tTCP 192.168.229.96:62400 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][649 pkts/48445 bytes <-> 1471 pkts/2042918 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.861 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (TvUzV.)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "TvUzV.",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62400",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 649,
+        "pkts_destinazione": 1471,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.861 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "649 <-> 1471"
+        ]
+    },
+    {
+        "id": 4,
+        "riga_grezza": "2\tTCP 192.168.229.96:62339 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][199 pkts/16993 bytes <-> 227 pkts/293906 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (uO24Z )]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "uO24Z ",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62339",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 199,
+        "pkts_destinazione": 227,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "199 <-> 227"
+        ]
+    },
+    {
+        "id": 5,
+        "riga_grezza": "3\tTCP 192.168.229.96:62384 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][168 pkts/15410 bytes <-> 209 pkts/266844 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.862 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (uPwNKb)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "uPwNKb",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62384",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 168,
+        "pkts_destinazione": 209,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.862 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "168 <-> 209"
+        ]
+    },
+    {
+        "id": 6,
+        "riga_grezza": "4\tTCP 192.168.229.96:62362 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][117 pkts/36402 bytes <-> 131 pkts/139064 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.864 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (Ys.WEW)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "Ys.WEW",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62362",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 117,
+        "pkts_destinazione": 131,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.864 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "117 <-> 131"
+        ]
+    },
+    {
+        "id": 7,
+        "riga_grezza": "5\tTCP 192.168.229.96:62324 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][105 pkts/9658 bytes <-> 108 pkts/141584 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.849 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (pBxyuT)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "pBxyuT",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62324",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 105,
+        "pkts_destinazione": 108,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.849 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "105 <-> 108"
+        ]
+    },
+    {
+        "id": 8,
+        "riga_grezza": "6\tTCP 192.168.229.96:62316 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][105 pkts/116397 bytes <-> 82 pkts/11504 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.846 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (XsGyz/)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "XsGyz/",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62316",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 105,
+        "pkts_destinazione": 82,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.846 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "105 <-> 82"
+        ]
+    },
+    {
+        "id": 9,
+        "riga_grezza": "7\tTCP 192.168.229.96:62382 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][52 pkts/6112 bytes <-> 84 pkts/105607 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (/gtsao)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "/gtsao",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62382",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 52,
+        "pkts_destinazione": 84,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "52 <-> 84"
+        ]
+    },
+    {
+        "id": 10,
+        "riga_grezza": "8\tTCP 192.168.229.96:62396 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][62 pkts/10815 bytes <-> 81 pkts/91569 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.850 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (4 ahWp)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "4 ahWp",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62396",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 62,
+        "pkts_destinazione": 81,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.850 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "62 <-> 81"
+        ]
+    },
+    {
+        "id": 11,
+        "riga_grezza": "9\tTCP 192.168.229.96:62374 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][47 pkts/8414 bytes <-> 63 pkts/73722 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.879 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (ruLg.7)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "ruLg.7",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62374",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 47,
+        "pkts_destinazione": 63,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.879 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "47 <-> 63"
+        ]
+    },
+    {
+        "id": 12,
+        "riga_grezza": "10\tTCP 192.168.229.96:62385 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][60 pkts/6824 bytes <-> 59 pkts/71507 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.831 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (qawoxS)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "qawoxS",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62385",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 60,
+        "pkts_destinazione": 59,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.831 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "60 <-> 59"
+        ]
+    },
+    {
+        "id": 13,
+        "riga_grezza": "11\tTCP 192.168.229.96:62323 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][64 pkts/10012 bytes <-> 62 pkts/65933 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.867 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (yLLbeJ)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "yLLbeJ",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62323",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 64,
+        "pkts_destinazione": 62,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.867 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "64 <-> 62"
+        ]
+    },
+    {
+        "id": 14,
+        "riga_grezza": "12\tTCP 192.168.229.96:62366 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][40 pkts/5707 bytes <-> 47 pkts/43181 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.869 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (ttkTXI)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "ttkTXI",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62366",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 40,
+        "pkts_destinazione": 47,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.869 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "40 <-> 47"
+        ]
+    },
+    {
+        "id": 15,
+        "riga_grezza": "13\tTCP 192.168.229.96:62293 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][59 pkts/13045 bytes <-> 38 pkts/23468 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.850 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (aLUgUp)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "aLUgUp",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62293",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 59,
+        "pkts_destinazione": 38,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.850 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "59 <-> 38"
+        ]
+    },
+    {
+        "id": 16,
+        "riga_grezza": "14\tTCP 192.168.229.96:62397 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][32 pkts/13805 bytes <-> 26 pkts/11926 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.830 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (OaHwgz)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "OaHwgz",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62397",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 32,
+        "pkts_destinazione": 26,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.830 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "32 <-> 26"
+        ]
+    },
+    {
+        "id": 17,
+        "riga_grezza": "15\tTCP 192.168.229.96:62296 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][23 pkts/7352 bytes <-> 17 pkts/11699 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.853 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (FiUchH)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "FiUchH",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62296",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 23,
+        "pkts_destinazione": 17,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.853 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "23 <-> 17"
+        ]
+    },
+    {
+        "id": 18,
+        "riga_grezza": "16\tTCP 192.168.229.96:62398 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][18 pkts/3768 bytes <-> 18 pkts/14635 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.850 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62398",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 18,
+        "pkts_destinazione": 18,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.850 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "18 <-> 18"
+        ]
+    },
+    {
+        "id": 19,
+        "riga_grezza": "17\tTCP 192.168.229.96:62391 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][21 pkts/5228 bytes <-> 19 pkts/12740 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.863 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (m@gu21)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "m@gu21",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62391",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 21,
+        "pkts_destinazione": 19,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.863 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "21 <-> 19"
+        ]
+    },
+    {
+        "id": 20,
+        "riga_grezza": "18\tTCP 192.168.229.96:62276 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][24 pkts/5411 bytes <-> 20 pkts/10801 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62276",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 24,
+        "pkts_destinazione": 20,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "24 <-> 20"
+        ]
+    },
+    {
+        "id": 21,
+        "riga_grezza": "19\tTCP 192.168.229.96:62399 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][18 pkts/3719 bytes <-> 15 pkts/11562 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.860 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (63SeXy)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "63SeXy",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62399",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 18,
+        "pkts_destinazione": 15,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.860 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "18 <-> 15"
+        ]
+    },
+    {
+        "id": 22,
+        "riga_grezza": "20\tTCP 192.168.229.96:62312 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][20 pkts/4206 bytes <-> 17 pkts/9642 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62312",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 20,
+        "pkts_destinazione": 17,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "20 <-> 17"
+        ]
+    },
+    {
+        "id": 23,
+        "riga_grezza": "21\tTCP 192.168.229.96:62297 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][19 pkts/4210 bytes <-> 14 pkts/9409 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.866 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62297",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 19,
+        "pkts_destinazione": 14,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.866 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "19 <-> 14"
+        ]
+    },
+    {
+        "id": 24,
+        "riga_grezza": "22\tTCP 192.168.229.96:62364 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][19 pkts/5156 bytes <-> 15 pkts/8124 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.840 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (MnFLOz)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "MnFLOz",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62364",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 19,
+        "pkts_destinazione": 15,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.840 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "19 <-> 15"
+        ]
+    },
+    {
+        "id": 25,
+        "riga_grezza": "23\tTCP 192.168.229.96:62377 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][19 pkts/4295 bytes <-> 16 pkts/8805 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.858 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62377",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 19,
+        "pkts_destinazione": 16,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.858 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "19 <-> 16"
+        ]
+    },
+    {
+        "id": 26,
+        "riga_grezza": "24\tTCP 192.168.229.96:62275 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][17 pkts/5394 bytes <-> 12 pkts/6602 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62275",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 17,
+        "pkts_destinazione": 12,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "17 <-> 12"
+        ]
+    },
+    {
+        "id": 27,
+        "riga_grezza": "25\tTCP 192.168.229.96:62358 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][17 pkts/4363 bytes <-> 12 pkts/7232 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (KbJAey)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "KbJAey",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62358",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 17,
+        "pkts_destinazione": 12,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "17 <-> 12"
+        ]
+    },
+    {
+        "id": 28,
+        "riga_grezza": "26\tTCP 192.168.229.96:62295 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][18 pkts/4064 bytes <-> 13 pkts/7388 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62295",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 18,
+        "pkts_destinazione": 13,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "18 <-> 13"
+        ]
+    },
+    {
+        "id": 29,
+        "riga_grezza": "27\tTCP 192.168.229.96:62404 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][17 pkts/4085 bytes <-> 13 pkts/7154 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.876 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (SalV39)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "SalV39",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62404",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 17,
+        "pkts_destinazione": 13,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.876 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "17 <-> 13"
+        ]
+    },
+    {
+        "id": 30,
+        "riga_grezza": "28\tTCP 192.168.229.96:62292 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][19 pkts/4919 bytes <-> 18 pkts/5978 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (Z LARX)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "Z LARX",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62292",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 19,
+        "pkts_destinazione": 18,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "19 <-> 18"
+        ]
+    },
+    {
+        "id": 31,
+        "riga_grezza": "29\tTCP 192.168.229.96:62392 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][14 pkts/2947 bytes <-> 13 pkts/7524 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.834 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (lWdAzLz)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "lWdAzLz",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62392",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 14,
+        "pkts_destinazione": 13,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.834 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "14 <-> 13"
+        ]
+    },
+    {
+        "id": 32,
+        "riga_grezza": "30\tTCP 192.168.229.96:62393 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][14 pkts/2947 bytes <-> 12 pkts/7457 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.884 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (dDKLAS)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "dDKLAS",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62393",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 14,
+        "pkts_destinazione": 12,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.884 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "14 <-> 12"
+        ]
+    },
+    {
+        "id": 33,
+        "riga_grezza": "31\tTCP 192.168.229.96:62407 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][13 pkts/2780 bytes <-> 10 pkts/7321 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.865 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62407",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 13,
+        "pkts_destinazione": 10,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.865 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "13 <-> 10"
+        ]
+    },
+    {
+        "id": 34,
+        "riga_grezza": "32\tTCP 192.168.229.96:62315 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][13 pkts/2858 bytes <-> 11 pkts/7145 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.846 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62315",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 13,
+        "pkts_destinazione": 11,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.846 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "13 <-> 11"
+        ]
+    },
+    {
+        "id": 35,
+        "riga_grezza": "33\tTCP 192.168.229.96:62419 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][11 pkts/2672 bytes <-> 10 pkts/7313 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.878 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62419",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 11,
+        "pkts_destinazione": 10,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.878 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "11 <-> 10"
+        ]
+    },
+    {
+        "id": 36,
+        "riga_grezza": "34\tTCP 192.168.229.96:62408 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][12 pkts/3373 bytes <-> 10 pkts/6488 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.834 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (ImyykyhQ)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "ImyykyhQ",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62408",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 12,
+        "pkts_destinazione": 10,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.834 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "12 <-> 10"
+        ]
+    },
+    {
+        "id": 37,
+        "riga_grezza": "35\tTCP 192.168.229.96:62405 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][12 pkts/3309 bytes <-> 9 pkts/6422 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.876 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62405",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 12,
+        "pkts_destinazione": 9,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.876 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "12 <-> 9"
+        ]
+    },
+    {
+        "id": 38,
+        "riga_grezza": "36\tTCP 192.168.229.96:62406 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][12 pkts/3309 bytes <-> 9 pkts/6421 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.843 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (51lMZz5)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "51lMZz5",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62406",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 12,
+        "pkts_destinazione": 9,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.843 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "12 <-> 9"
+        ]
+    },
+    {
+        "id": 39,
+        "riga_grezza": "37\tTCP 192.168.229.96:62359 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][16 pkts/4442 bytes <-> 14 pkts/5155 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.861 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62359",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 16,
+        "pkts_destinazione": 14,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.861 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "16 <-> 14"
+        ]
+    },
+    {
+        "id": 40,
+        "riga_grezza": "38\tTCP 192.168.229.96:62330 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][13 pkts/2842 bytes <-> 9 pkts/6117 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.874 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (GtguLZ)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "GtguLZ",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62330",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 13,
+        "pkts_destinazione": 9,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.874 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "13 <-> 9"
+        ]
+    },
+    {
+        "id": 41,
+        "riga_grezza": "39\tTCP 192.168.229.96:62329 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][13 pkts/2870 bytes <-> 10 pkts/5811 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62329",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 13,
+        "pkts_destinazione": 10,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "13 <-> 10"
+        ]
+    },
+    {
+        "id": 42,
+        "riga_grezza": "40\tTCP 192.168.229.96:62279 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][16 pkts/3521 bytes <-> 10 pkts/4706 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (@6bJujM)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "@6bJujM",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62279",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 16,
+        "pkts_destinazione": 10,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "16 <-> 10"
+        ]
+    },
+    {
+        "id": 43,
+        "riga_grezza": "41\tTCP 192.168.229.96:62373 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][12 pkts/2848 bytes <-> 10 pkts/5052 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.843 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62373",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 12,
+        "pkts_destinazione": 10,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.843 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "12 <-> 10"
+        ]
+    },
+    {
+        "id": 44,
+        "riga_grezza": "42\tTCP 192.168.229.96:62421 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][9 pkts/2548 bytes <-> 8 pkts/5227 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.840 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62421",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 9,
+        "pkts_destinazione": 8,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.840 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "9 <-> 8"
+        ]
+    },
+    {
+        "id": 45,
+        "riga_grezza": "43\tTCP 192.168.229.96:62420 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][9 pkts/2516 bytes <-> 8 pkts/5228 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.856 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62420",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 9,
+        "pkts_destinazione": 8,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.856 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "9 <-> 8"
+        ]
+    },
+    {
+        "id": 46,
+        "riga_grezza": "44\tTCP 192.168.229.96:62363 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][11 pkts/2670 bytes <-> 8 pkts/5053 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.835 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62363",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 11,
+        "pkts_destinazione": 8,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.835 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "11 <-> 8"
+        ]
+    },
+    {
+        "id": 47,
+        "riga_grezza": "45\tTCP 192.168.229.96:62422 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][9 pkts/2452 bytes <-> 8 pkts/5227 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.874 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (kOmKtd)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "kOmKtd",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62422",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 9,
+        "pkts_destinazione": 8,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.874 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "9 <-> 8"
+        ]
+    },
+    {
+        "id": 48,
+        "riga_grezza": "46\tTCP 192.168.229.96:62361 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][11 pkts/2606 bytes <-> 8 pkts/5053 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.849 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (.nXaaB)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": ".nXaaB",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62361",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 11,
+        "pkts_destinazione": 8,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.849 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "11 <-> 8"
+        ]
+    },
+    {
+        "id": 49,
+        "riga_grezza": "47\tTCP 192.168.229.96:62360 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][11 pkts/2574 bytes <-> 8 pkts/5053 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.873 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (WyeNxs)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "WyeNxs",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62360",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 11,
+        "pkts_destinazione": 8,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.873 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "11 <-> 8"
+        ]
+    },
+    {
+        "id": 50,
+        "riga_grezza": "48\tTCP 192.168.229.96:62310 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][14 pkts/3469 bytes <-> 12 pkts/3664 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (frOMrN)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "frOMrN",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62310",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 14,
+        "pkts_destinazione": 12,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "14 <-> 12"
+        ]
+    },
+    {
+        "id": 51,
+        "riga_grezza": "49\tTCP 192.168.229.96:62294 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][12 pkts/2754 bytes <-> 8 pkts/3953 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.885 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62294",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 12,
+        "pkts_destinazione": 8,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.885 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "12 <-> 8"
+        ]
+    },
+    {
+        "id": 52,
+        "riga_grezza": "50\tTCP 192.168.229.96:62311 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][11 pkts/2692 bytes <-> 8 pkts/3187 bytes][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.863 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62311",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 11,
+        "pkts_destinazione": 8,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.863 (Encrypted or Random?)",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "11 <-> 8"
+        ]
+    },
+    {
+        "id": 53,
+        "riga_grezza": "51\tTCP 192.168.229.96:62278 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][12 pkts/2150 bytes <-> 11 pkts/1768 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62278",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 12,
+        "pkts_destinazione": 11,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "12 <-> 11"
+        ]
+    },
+    {
+        "id": 54,
+        "riga_grezza": "52\tTCP 192.168.229.96:62383 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/2375 bytes <-> 4 pkts/272 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62383",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 4"
+        ]
+    },
+    {
+        "id": 55,
+        "riga_grezza": "53\tTCP 192.168.229.96:62413 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/1937 bytes <-> 4 pkts/284 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62413",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 56,
+        "riga_grezza": "54\tTCP 192.168.229.96:62271 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][5 pkts/1871 bytes <-> 5 pkts/338 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62271",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 5,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "5 <-> 5"
+        ]
+    },
+    {
+        "id": 57,
+        "riga_grezza": "55\tTCP 192.168.229.96:62262 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/1284 bytes <-> 6 pkts/791 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62262",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 6,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 6"
+        ]
+    },
+    {
+        "id": 58,
+        "riga_grezza": "56\tTCP 192.168.229.96:62277 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/832 bytes <-> 7 pkts/1144 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62277",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 7,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 7"
+        ]
+    },
+    {
+        "id": 59,
+        "riga_grezza": "57\tTCP 192.168.229.96:62274 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][8 pkts/782 bytes <-> 6 pkts/724 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62274",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 8,
+        "pkts_destinazione": 6,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "8 <-> 6"
+        ]
+    },
+    {
+        "id": 60,
+        "riga_grezza": "58\tTCP 192.168.229.96:62286 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/632 bytes <-> 5 pkts/715 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62286",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 61,
+        "riga_grezza": "59\tTCP 192.168.229.96:62264 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/1027 bytes <-> 5 pkts/314 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62264",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 5"
+        ]
+    },
+    {
+        "id": 62,
+        "riga_grezza": "60\tTCP 192.168.229.96:62416 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/612 bytes <-> 5 pkts/729 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62416",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 63,
+        "riga_grezza": "61\tTCP 192.168.229.96:62371 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/621 bytes <-> 5 pkts/704 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62371",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 64,
+        "riga_grezza": "62\tTCP 192.168.229.96:62356 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/620 bytes <-> 5 pkts/703 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62356",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 65,
+        "riga_grezza": "63\tTCP 192.168.229.96:62317 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/616 bytes <-> 5 pkts/699 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62317",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 66,
+        "riga_grezza": "64\tTCP 192.168.229.96:62380 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/616 bytes <-> 5 pkts/699 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62380",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 67,
+        "riga_grezza": "65\tTCP 192.168.229.96:62257 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/587 bytes <-> 5 pkts/716 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62257",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 68,
+        "riga_grezza": "66\tTCP 192.168.229.96:62357 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/608 bytes <-> 5 pkts/691 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62357",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 69,
+        "riga_grezza": "67\tTCP 192.168.229.96:62270 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][5 pkts/961 bytes <-> 5 pkts/314 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62270",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 5,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "5 <-> 5"
+        ]
+    },
+    {
+        "id": 70,
+        "riga_grezza": "68\tTCP 192.168.229.96:62259 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/863 bytes <-> 6 pkts/368 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62259",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 6,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 6"
+        ]
+    },
+    {
+        "id": 71,
+        "riga_grezza": "69\tTCP 192.168.229.96:62273 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][8 pkts/682 bytes <-> 8 pkts/536 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62273",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 8,
+        "pkts_destinazione": 8,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "8 <-> 8"
+        ]
+    },
+    {
+        "id": 72,
+        "riga_grezza": "70\tTCP 192.168.229.96:62269 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][5 pkts/943 bytes <-> 4 pkts/272 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62269",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 5,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "5 <-> 4"
+        ]
+    },
+    {
+        "id": 73,
+        "riga_grezza": "71\tTCP 192.168.229.96:62261 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/688 bytes <-> 5 pkts/497 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62261",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 74,
+        "riga_grezza": "72\tTCP 192.168.229.96:62256 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][5 pkts/513 bytes <-> 5 pkts/669 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62256",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 5,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "5 <-> 5"
+        ]
+    },
+    {
+        "id": 75,
+        "riga_grezza": "73\tTCP 192.168.229.96:62272 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/532 bytes <-> 4 pkts/649 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62272",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 76,
+        "riga_grezza": "74\tTCP 192.168.229.96:62331 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/665 bytes <-> 5 pkts/492 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62331",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 77,
+        "riga_grezza": "75\tTCP 192.168.229.96:62332 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/665 bytes <-> 5 pkts/492 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62332",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 78,
+        "riga_grezza": "76\tTCP 192.168.229.96:62333 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/665 bytes <-> 5 pkts/492 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62333",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 79,
+        "riga_grezza": "77\tTCP 192.168.229.96:62334 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/665 bytes <-> 5 pkts/492 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62334",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 80,
+        "riga_grezza": "78\tTCP 192.168.229.96:62335 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/665 bytes <-> 5 pkts/492 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62335",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 81,
+        "riga_grezza": "79\tTCP 192.168.229.96:62336 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/665 bytes <-> 5 pkts/492 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (XwTcuQG)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "XwTcuQG",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62336",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 82,
+        "riga_grezza": "80\tTCP 192.168.229.96:62345 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/520 bytes <-> 4 pkts/637 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62345",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 83,
+        "riga_grezza": "81\tTCP 192.168.229.96:62346 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/665 bytes <-> 5 pkts/492 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62346",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 84,
+        "riga_grezza": "82\tTCP 192.168.229.96:62347 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/665 bytes <-> 5 pkts/492 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62347",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 85,
+        "riga_grezza": "83\tTCP 192.168.229.96:62348 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/665 bytes <-> 5 pkts/492 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62348",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 86,
+        "riga_grezza": "84\tTCP 192.168.229.96:62349 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/665 bytes <-> 5 pkts/492 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62349",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 87,
+        "riga_grezza": "85\tTCP 192.168.229.96:62350 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/665 bytes <-> 5 pkts/492 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (Pr71TP)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "Pr71TP",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62350",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 88,
+        "riga_grezza": "86\tTCP 192.168.229.96:62351 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/665 bytes <-> 5 pkts/492 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62351",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 89,
+        "riga_grezza": "87\tTCP 192.168.229.96:62265 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][4 pkts/877 bytes <-> 4 pkts/272 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62265",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 4,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "4 <-> 4"
+        ]
+    },
+    {
+        "id": 90,
+        "riga_grezza": "88\tTCP 192.168.229.96:62287 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/632 bytes <-> 5 pkts/516 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62287",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 91,
+        "riga_grezza": "89\tTCP 192.168.229.96:62389 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/610 bytes <-> 5 pkts/533 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62389",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 92,
+        "riga_grezza": "90\tTCP 192.168.229.96:62289 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/620 bytes <-> 5 pkts/516 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62289",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 93,
+        "riga_grezza": "91\tTCP 192.168.229.96:62353 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/612 bytes <-> 5 pkts/523 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62353",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 94,
+        "riga_grezza": "92\tTCP 192.168.229.96:62390 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/630 bytes <-> 5 pkts/503 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62390",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 95,
+        "riga_grezza": "93\tTCP 192.168.229.96:62401 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/630 bytes <-> 5 pkts/503 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62401",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 96,
+        "riga_grezza": "94\tTCP 192.168.229.96:62402 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/630 bytes <-> 5 pkts/503 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62402",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 97,
+        "riga_grezza": "95\tTCP 192.168.229.96:62403 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/630 bytes <-> 5 pkts/503 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62403",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 98,
+        "riga_grezza": "96\tTCP 192.168.229.96:62417 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/630 bytes <-> 5 pkts/503 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62417",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 99,
+        "riga_grezza": "97\tTCP 192.168.229.96:62305 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/621 bytes <-> 5 pkts/505 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62305",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 100,
+        "riga_grezza": "98\tTCP 192.168.229.96:62341 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/621 bytes <-> 5 pkts/505 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62341",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 101,
+        "riga_grezza": "99\tTCP 192.168.229.96:62372 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/621 bytes <-> 5 pkts/505 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62372",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 102,
+        "riga_grezza": "100\tTCP 192.168.229.96:62388 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/630 bytes <-> 5 pkts/494 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62388",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 103,
+        "riga_grezza": "101\tTCP 192.168.229.96:62418 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/622 bytes <-> 5 pkts/496 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62418",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 104,
+        "riga_grezza": "102\tTCP 192.168.229.96:62318 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/616 bytes <-> 5 pkts/500 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62318",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 105,
+        "riga_grezza": "103\tTCP 192.168.229.96:62381 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/616 bytes <-> 5 pkts/500 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62381",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 106,
+        "riga_grezza": "104\tTCP 192.168.229.96:62394 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/622 bytes <-> 5 pkts/494 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62394",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 107,
+        "riga_grezza": "105\tTCP 192.168.229.96:62379 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/613 bytes <-> 5 pkts/497 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62379",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 108,
+        "riga_grezza": "106\tTCP 192.168.229.96:62285 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/616 bytes <-> 5 pkts/493 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62285",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 109,
+        "riga_grezza": "107\tTCP 192.168.229.96:62322 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/612 bytes <-> 5 pkts/496 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62322",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 110,
+        "riga_grezza": "108\tTCP 192.168.229.96:62395 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/610 bytes <-> 5 pkts/498 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62395",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 111,
+        "riga_grezza": "109\tTCP 192.168.229.96:62303 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/610 bytes <-> 5 pkts/496 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62303",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 112,
+        "riga_grezza": "110\tTCP 192.168.229.96:62299 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/609 bytes <-> 5 pkts/495 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62299",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 113,
+        "riga_grezza": "111\tTCP 192.168.229.96:62307 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/626 bytes <-> 5 pkts/478 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62307",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 114,
+        "riga_grezza": "112\tTCP 192.168.229.96:62288 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/620 bytes <-> 5 pkts/482 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62288",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 115,
+        "riga_grezza": "113\tTCP 192.168.229.96:62301 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/608 bytes <-> 5 pkts/494 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62301",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 116,
+        "riga_grezza": "114\tTCP 192.168.229.96:62308 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/608 bytes <-> 5 pkts/494 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62308",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 117,
+        "riga_grezza": "115\tTCP 192.168.229.96:62309 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/608 bytes <-> 5 pkts/494 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62309",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 118,
+        "riga_grezza": "116\tTCP 192.168.229.96:62326 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/608 bytes <-> 5 pkts/494 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62326",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 119,
+        "riga_grezza": "117\tTCP 192.168.229.96:62327 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/608 bytes <-> 5 pkts/494 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (xSiTmf)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "xSiTmf",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62327",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 120,
+        "riga_grezza": "118\tTCP 192.168.229.96:62338 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/624 bytes <-> 5 pkts/476 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62338",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 121,
+        "riga_grezza": "119\tTCP 192.168.229.96:62370 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/624 bytes <-> 5 pkts/476 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62370",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 122,
+        "riga_grezza": "120\tTCP 192.168.229.96:62260 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/759 bytes <-> 5 pkts/338 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62260",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 123,
+        "riga_grezza": "121\tTCP 192.168.229.96:62306 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/626 bytes <-> 5 pkts/469 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62306",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 124,
+        "riga_grezza": "122\tTCP 192.168.229.96:62283 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/604 bytes <-> 5 pkts/490 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62283",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 125,
+        "riga_grezza": "123\tTCP 192.168.229.96:62337 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/624 bytes <-> 5 pkts/467 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62337",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 126,
+        "riga_grezza": "124\tTCP 192.168.229.96:62369 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/624 bytes <-> 5 pkts/467 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62369",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 127,
+        "riga_grezza": "125\tTCP 192.168.229.96:62375 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/613 bytes <-> 5 pkts/477 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62375",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 128,
+        "riga_grezza": "126\tTCP 192.168.229.96:62386 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/623 bytes <-> 5 pkts/466 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62386",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 129,
+        "riga_grezza": "127\tTCP 192.168.229.96:62304 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/621 bytes <-> 5 pkts/464 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62304",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 130,
+        "riga_grezza": "128\tTCP 192.168.229.96:62340 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/621 bytes <-> 5 pkts/464 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62340",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 131,
+        "riga_grezza": "129\tTCP 192.168.229.96:62321 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/614 bytes <-> 5 pkts/469 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62321",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 132,
+        "riga_grezza": "130\tTCP 192.168.229.96:62284 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/616 bytes <-> 5 pkts/459 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62284",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 133,
+        "riga_grezza": "131\tTCP 192.168.229.96:62291 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/611 bytes <-> 5 pkts/463 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62291",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 134,
+        "riga_grezza": "132\tTCP 192.168.229.96:62314 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/611 bytes <-> 5 pkts/463 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62314",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 135,
+        "riga_grezza": "133\tTCP 192.168.229.96:62355 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/611 bytes <-> 5 pkts/463 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62355",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 136,
+        "riga_grezza": "134\tTCP 192.168.229.96:62319 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/614 bytes <-> 5 pkts/457 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62319",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 137,
+        "riga_grezza": "135\tTCP 192.168.229.96:62378 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/613 bytes <-> 5 pkts/456 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62378",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 138,
+        "riga_grezza": "136\tTCP 192.168.229.96:62320 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/612 bytes <-> 5 pkts/455 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62320",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 139,
+        "riga_grezza": "137\tTCP 192.168.229.96:62352 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/612 bytes <-> 5 pkts/455 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62352",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 140,
+        "riga_grezza": "138\tTCP 192.168.229.96:62258 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/577 bytes <-> 5 pkts/489 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (BdWJSR)]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "plain_text": "BdWJSR",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62258",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 141,
+        "riga_grezza": "139\tTCP 192.168.229.96:62290 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/611 bytes <-> 5 pkts/454 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62290",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 142,
+        "riga_grezza": "140\tTCP 192.168.229.96:62313 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/611 bytes <-> 5 pkts/454 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62313",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 143,
+        "riga_grezza": "141\tTCP 192.168.229.96:62354 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/611 bytes <-> 5 pkts/454 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62354",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 144,
+        "riga_grezza": "142\tTCP 192.168.229.96:62302 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/610 bytes <-> 5 pkts/453 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62302",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 145,
+        "riga_grezza": "143\tTCP 192.168.229.96:62298 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/609 bytes <-> 5 pkts/452 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62298",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 146,
+        "riga_grezza": "144\tTCP 192.168.229.96:62300 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/608 bytes <-> 5 pkts/451 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62300",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 147,
+        "riga_grezza": "145\tTCP 192.168.229.96:62267 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][5 pkts/797 bytes <-> 4 pkts/260 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62267",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 5,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "5 <-> 4"
+        ]
+    },
+    {
+        "id": 148,
+        "riga_grezza": "146\tTCP 192.168.229.96:62282 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][7 pkts/604 bytes <-> 5 pkts/447 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62282",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 7,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "id": 149,
+        "riga_grezza": "147\tTCP 192.168.229.96:62342 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/565 bytes <-> 4 pkts/426 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62342",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 150,
+        "riga_grezza": "148\tTCP 192.168.229.96:62343 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/565 bytes <-> 4 pkts/426 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62343",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 151,
+        "riga_grezza": "149\tTCP 192.168.229.96:62344 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/565 bytes <-> 4 pkts/426 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62344",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 152,
+        "riga_grezza": "150\tTCP 192.168.229.96:62365 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/565 bytes <-> 4 pkts/426 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62365",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 153,
+        "riga_grezza": "151\tTCP 192.168.229.96:62367 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/565 bytes <-> 4 pkts/426 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62367",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 154,
+        "riga_grezza": "152\tTCP 192.168.229.96:62368 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/565 bytes <-> 4 pkts/426 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62368",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 155,
+        "riga_grezza": "153\tTCP 192.168.229.96:62266 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/520 bytes <-> 4 pkts/429 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62266",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 156,
+        "riga_grezza": "154\tTCP 192.168.229.96:62268 <-> 91.99.108.40:30283 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/520 bytes <-> 4 pkts/421 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62268",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "30283",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 157,
+        "riga_grezza": "155\tTCP 192.168.229.96:62325 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/508 bytes <-> 4 pkts/428 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62325",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 158,
+        "riga_grezza": "156\tTCP 192.168.229.96:62328 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/514 bytes <-> 4 pkts/403 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62328",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 159,
+        "riga_grezza": "157\tTCP 192.168.229.96:62387 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/564 bytes <-> 5 pkts/350 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62387",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 5,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 5"
+        ]
+    },
+    {
+        "id": 160,
+        "riga_grezza": "158\tTCP 192.168.229.96:62281 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/504 bytes <-> 4 pkts/381 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62281",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 161,
+        "riga_grezza": "159\tTCP 192.168.229.96:62376 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][6 pkts/547 bytes <-> 4 pkts/272 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62376",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 6,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "6 <-> 4"
+        ]
+    },
+    {
+        "id": 162,
+        "riga_grezza": "160\tTCP 192.168.229.96:62423 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][5 pkts/458 bytes <-> 3 pkts/351 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62423",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 5,
+        "pkts_destinazione": 3,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "5 <-> 3"
+        ]
+    },
+    {
+        "id": 163,
+        "riga_grezza": "161\tTCP 192.168.229.96:62411 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][5 pkts/413 bytes <-> 4 pkts/284 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62411",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 5,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "5 <-> 4"
+        ]
+    },
+    {
+        "id": 164,
+        "riga_grezza": "162\tTCP 192.168.229.96:62412 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][5 pkts/413 bytes <-> 4 pkts/284 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62412",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 5,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "5 <-> 4"
+        ]
+    },
+    {
+        "id": 165,
+        "riga_grezza": "163\tTCP 192.168.229.96:62414 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][5 pkts/413 bytes <-> 4 pkts/284 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62414",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 5,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "5 <-> 4"
+        ]
+    },
+    {
+        "id": 166,
+        "riga_grezza": "164\tTCP 192.168.229.96:62415 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][5 pkts/413 bytes <-> 4 pkts/284 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62415",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 5,
+        "pkts_destinazione": 4,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "5 <-> 4"
+        ]
+    },
+    {
+        "id": 167,
+        "riga_grezza": "165\tTCP 192.168.229.96:62409 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][5 pkts/413 bytes <-> 3 pkts/206 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62409",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 5,
+        "pkts_destinazione": 3,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "5 <-> 3"
+        ]
+    },
+    {
+        "id": 168,
+        "riga_grezza": "166\tTCP 192.168.229.96:62410 <-> 91.99.108.40:946 [proto: 0/Unknown][IP: 0/Unknown][5 pkts/413 bytes <-> 3 pkts/206 bytes][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android]",
+        "ip_field": "0/Unknown",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_sorgente": "192.168.229.96",
+        "porta_sorgente": "62410",
+        "ip_destinazione": "91.99.108.40",
+        "porta_destinazione": "946",
+        "pkts_sorgente": 5,
+        "pkts_destinazione": 3,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "5 <-> 3"
+        ]
+    }
+]

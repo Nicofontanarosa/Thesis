@@ -113,20 +113,31 @@ flussi_rimossi = []
 host_ip_only_pattern = re.compile(r"^\s*\d+\s+([0-9a-fA-F:.]+)\s+")
 # regex per righe IPv6
 ipv6_pattern = re.compile(r"\[[0-9a-fA-F]{0,4}(:[0-9a-fA-F]{0,4}){2,7}\]")
+# regex per flussi con IP 0.0.0.0
+match_ip_zero = re.compile(r"\[0\.0\.0\.0\]")
 
 with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
     for line in fin:
         line_stripped = line.strip()
+        
         # prima controllo se è riga host puro
         if host_ip_only_pattern.match(line_stripped):
             flussi_lasciati.append(line)
             fout.write(line)
             continue
+        
         # ignoro righe che iniziano con IPv6
         if ipv6_pattern.search(line_stripped):
             flussi_rimossi.append(line)
             continue
+
+        # ignoro righe con ip 0.0.0.0
+        if match_ip_zero.search(line_stripped):
+            flussi_rimossi.append(line)
+            continue
+            
         if pattern.search(line_stripped):
+
             # rimuovo i vari campi ...
             clean_line = goodput_pattern.sub("", line)
             clean_line = bytes_pattern.sub("", clean_line)

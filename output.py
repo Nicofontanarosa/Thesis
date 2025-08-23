@@ -119,6 +119,11 @@ with open(input_file, 'r') as f_in:
                 if match_cipher:
                     flusso["cipher"] = match_cipher.group(1)
 
+                # ECH Encrypted Client Hello
+                match_cipher = re.search(r"\[ECH:\s*([^\]]+)\]", riga)
+                if match_cipher:
+                    flusso["ech"] = match_cipher.group(1)
+
         # Plain Text
         match_plain = re.search(r"\[PLAIN TEXT\s*\(([^)]+)\)\]", riga)
         if match_plain:
@@ -169,56 +174,84 @@ with open(input_file, 'r') as f_in:
         flussi.append(flusso)
         counter += 1
 
-# --- AGGREGAZIONE ---
-#aggregati = {}
-#for flusso in flussi:
-#    chiave = (
-#        flusso.get("ip_sorgente"),
-#        flusso.get("ip_destinazione"),
-#        flusso.get("porta_destinazione"),
-#        flusso.get("protocollo"),
-#    )
-#    if chiave not in aggregati:
-#        flusso["numero_flussi_simili"] = 1
-#        aggregati[chiave] = flusso
-#    else:
-#        aggregati[chiave]["numero_flussi_simili"] += 1
-#flussi_finali = list(aggregati.values())
-
-with open(output_file, 'w') as f_out:
-    json.dump(flussi, f_out, indent=4)
-
 # --- RIEPILOGO PROTOCOLLI ---
 protocol_counts = Counter()
 
+# lista dei protocolli da mantenere
+protocols = {"DNS", "TLS", "HTTP", "QUIC", "Unknown"}
+
 for flusso in flussi:
     proto = flusso.get("proto_field", "").lower()
-    if "dns" in proto:
-        protocol_counts["DNS"] += 1
-    elif "http" in proto:
-        protocol_counts["HTTP"] += 1
-    elif "tls" in proto:
-        protocol_counts["TLS"] += 1
-    elif "unknown" in proto:
+
+    # cerca se uno dei protocolli definiti è contenuto nella stringa proto
+    matched = False
+    for p in protocols:
+        if p.lower() in proto:
+            protocol_counts[p] += 1
+            matched = True
+            break
+
+    # se nessun protocollo è stato riconosciuto → conta come "Unknown"
+    if not matched:
         protocol_counts["Unknown"] += 1
 
 # Stampa riepilogo
 riepilogo = ", ".join([f"{v} flussi {k}" for k, v in protocol_counts.items()])
 print(f"\nRilevati: {riepilogo}")
 
-# --- STAMPA FLUSSI DNS ---
-print("\nFlussi DNS rilevati (SNI & IP):\n")
+# --- AGGREGAZIONE TLS ---
+aggregati = {}
+flussi_finali = []
+temp = 1
+
 for flusso in flussi:
+    # se è TLS aggrega
+    if flusso.get("proto_field") and "TLS" in flusso.get("proto_field"):
+        chiave = (
+            flusso.get("ip_sorgente"),
+            flusso.get("ip_destinazione"),
+            flusso.get("porta_destinazione"),
+            flusso.get("proto_field"),
+            flusso.get("sni"),
+            flusso.get("ja3s"),
+            flusso.get("ja4")
+        )
+
+        pacchetti = f"{flusso.get('pkts_sorgente')} <-> {flusso.get('pkts_destinazione')}"
+
+        if chiave not in aggregati:
+            flusso["numero_flussi_simili"] = 1
+            flusso["pacchetti_scambiati"] = [pacchetti]
+            aggregati[chiave] = flusso
+        else:
+            aggregati[chiave]["numero_flussi_simili"] += 1
+            aggregati[chiave]["pacchetti_scambiati"].append(pacchetti)
+    else:
+        # flussi non TLS
+        flusso["numero_flussi_simili"] = 1
+        flusso["pacchetti_scambiati"] = [f"{flusso.get('pkts_sorgente')} <-> {flusso.get('pkts_destinazione')}"]
+        flussi_finali.append(flusso)
+
+# aggiunta flussi TLS aggregati
+flussi_finali.extend(aggregati.values())
+
+with open(output_file, 'w') as f_out:
+    json.dump(flussi_finali, f_out, indent=4)
+
+# --- STAMPA FLUSSI DNS ---
+print("\nFlussi DNS rilevati (SNI, Plain Text & IP):\n")
+for flusso in flussi_finali:
     proto = flusso.get("proto_field", "").lower()
     if "dns" in proto:
         sni = flusso.get("sni", "N/A")
+        plain = flusso.get("plain_text", "N/A")
         ip = flusso.get("dns_ip", "N/A")
-        print(f"SNI: {sni} - IP: {ip}")
+        print(f"SNI: {sni:40} | Plain Text: {plain:25} | IP: {ip}")
 
 
 # --- STAMPA FLUSSI HTTP ---
 print("\nFlussi HTTP rilevati:\n")
-for flusso in flussi:
+for flusso in flussi_finali:
     proto = flusso.get("proto_field", "").lower()
     if "http" in proto:
         ip_sorgente = flusso.get("ip_sorgente", "N/A")
@@ -227,16 +260,17 @@ for flusso in flussi:
         porta_destinazione = flusso.get("porta_destinazione", "N/A")
         url = flusso.get("url", "N/A")
         sni = flusso.get("sni", "N/A")
+        plain = flusso.get("plain_text", "N/A")
         pkts_sorgente = flusso.get("pkts_sorgente", 0)
         pkts_destinazione = flusso.get("pkts_destinazione", 0)
 
         print(f"{ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione} | "
-              f"URL: {url} | SNI: {sni} | Pacchetti: {pkts_sorgente} -> {pkts_destinazione}")
+              f"URL: {url:40} | SNI: {sni:40} | Plain Text: {plain:25} | Pacchetti: {pkts_sorgente} -> {pkts_destinazione}")
 
 
 # --- STAMPA FLUSSI TLS ---
 print("\nFlussi TLS rilevati:\n")
-for flusso in flussi:
+for flusso in flussi_finali:
     proto = flusso.get("proto_field", "").lower()
     if "tls" in proto:
         ip_sorgente = flusso.get("ip_sorgente", "N/A")
@@ -246,16 +280,21 @@ for flusso in flussi:
         ja3s = flusso.get("ja3s", "N/A")
         ja4 = flusso.get("ja4", "N/A")
         sni = flusso.get("sni", "N/A")
+        ech = flusso.get("ech", "N/A")
         pkts_sorgente = flusso.get("pkts_sorgente", 0)
         pkts_destinazione = flusso.get("pkts_destinazione", 0)
+        pacchetti_scambiati = flusso.get("pacchetti_scambiati", pkts_sorgente + pkts_destinazione)
+        numero_flussi_simili = flusso.get("numero_flussi_simili", 1)
 
         print(f"{ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione} | "
-              f"JA3S: {ja3s}, JA4: {ja4}, SNI: {sni}, "
-              f"Pacchetti: {pkts_sorgente} -> {pkts_destinazione}")
+              f"JA3S: {ja3s}, JA4: {ja4}, SNI: {sni}, ECH: {ech} "
+              f"Pacchetti: {pkts_sorgente} -> {pkts_destinazione}, "
+              f"numero_flussi_simili: {numero_flussi_simili}, "
+              f"pacchetti scambiati: {pacchetti_scambiati}")
 
 # --- STAMPA FLUSSI UNKNOW ---
 print("\nFlussi Unknown rilevati:\n")
-for flusso in flussi:
+for flusso in flussi_finali:
     proto = flusso.get("proto_field", "").lower()
     if "unknown" in proto:
         ip_sorgente = flusso.get("ip_sorgente", "N/A")

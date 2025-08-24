@@ -4,18 +4,21 @@ import json
 import argparse
 from collections import Counter
 import os
+import config
 
 # Clear del terminale all'apertura
-os.system('cls' if os.name == 'nt' else 'clear')
+config.clear_terminal()
 
-# Parser per argomenti da linea di comando
-parser = argparse.ArgumentParser(description="Estrazione flussi da output nDPI")
-parser.add_argument("input_file", help="File di input con i flussi nDPI")
-parser.add_argument("-o", "--output", default="output_flussi.json", help="File JSON di output (default: output_flussi.json)")
-args = parser.parse_args()
-
+# parsing args
+args = config.get_args()
 input_file = args.input_file
 output_file = args.output
+
+# stampa dei file usati
+config.print_files(input_file, output_file)
+
+# lista dei protocolli da mantenere
+protocols = config.PROTOCOLS
 
 flussi = []
 counter = 1
@@ -143,7 +146,7 @@ with open(input_file, 'r') as f_in:
             flusso["ip_destinazione"] = match_ip.group(3)
             flusso["porta_destinazione"] = match_ip.group(4)
 
-        # Numero pacchetti sorgente e destinazione
+        # Numero pacchetti sorgente e destinazione TEMP
         match_pkts = re.search(r"\[(\d+)\s+pkts/[^<]+<->\s+(\d+)\s+pkts/", riga)
         if match_pkts:
             flusso["pkts_sorgente"] = int(match_pkts.group(1))
@@ -153,11 +156,6 @@ with open(input_file, 'r') as f_in:
         match_tcp_fp = re.search(r"\[TCP Fingerprint:\s*([^\]]+)\]", riga)
         if match_tcp_fp:
             flusso["tcp_fingerprint"] = match_tcp_fp.group(1)
-
-        # Categoria
-        match_cat = re.search(r"\[cat:\s*([^\]]+)\]", riga)
-        if match_cat:
-            flusso["categoria"] = match_cat.group(1)
 
         # Risk info
         match_risk = re.search(r"\[Risk:\s*([^\]]+)\]", riga)
@@ -178,9 +176,6 @@ with open(input_file, 'r') as f_in:
 # --- RIEPILOGO PROTOCOLLI ---
 protocol_counts = Counter()
 
-# lista dei protocolli da mantenere
-protocols = {"DNS", "TLS", "HTTP", "QUIC", "Unknown"}
-
 for flusso in flussi:
     proto = flusso.get("proto_field", "").lower()
 
@@ -193,6 +188,7 @@ for flusso in flussi:
             break
 
     # se nessun protocollo è stato riconosciuto → conta come "Unknown"
+    # 1 sarà sempre l'indirizzo ip host sorgente
     if not matched:
         protocol_counts["Unknown"] += 1
 
@@ -200,41 +196,54 @@ for flusso in flussi:
 riepilogo = ", ".join([f"{v} flussi {k}" for k, v in protocol_counts.items()])
 print(f"\nRilevati: {riepilogo}")
 
-# --- AGGREGAZIONE TLS ---
+# --- AGGREGAZIONE FLUSSI TLS ---
 aggregati = {}
 flussi_finali = []
-temp = 1
 
 for flusso in flussi:
+
+    pacchetti = f"{flusso.get('pkts_sorgente', 'N/A')} <-> {flusso.get('pkts_destinazione', 'N/A')}"
+    # rimuovo i vecchi campi
+    flusso.pop("pkts_sorgente", None)
+    flusso.pop("pkts_destinazione", None)
+
     # se è TLS aggrega
-    if flusso.get("proto_field") and "TLS" in flusso.get("proto_field"):
-        chiave = (
-            flusso.get("ip_sorgente"),
-            flusso.get("ip_destinazione"),
-            flusso.get("porta_destinazione"),
-            flusso.get("proto_field"),
-            flusso.get("sni"),
-            flusso.get("ja3s"),
-            flusso.get("ja4")
-        )
+    #if flusso.get("proto_field") and "TLS" in flusso.get("proto_field"):
+    # aggiungo tutti i campi disponibili per aggregare i flussi
+    chiave = (
+        # campi generali
+        flusso.get("ip_sorgente"),
+        flusso.get("ip_destinazione"),
+        flusso.get("porta_destinazione"),   # 192.168.1.4 -> 8.8.8.8:443
+        flusso.get("proto_field"),          # TLS / Unknow / DNS ....
+        flusso.get("protocollo_trasporto"), # TCP / UDP ...
+        flusso.get("sni"),                  # vintend.com
+        flusso.get("tcp_fingerprint"),
+        # campi per TLS
+        flusso.get("ja3s"),
+        flusso.get("ja4"),
+        flusso.get("alpn"),
+        flusso.get("tls_versions"),
+        flusso.get("tls_version"),
+        flusso.get("cipher"),
+        flusso.get("ech"),
+        # campi per HTTP
+        flusso.get("url"),
+        flusso.get("user_agent"),
+        flusso.get("content_type"),
+        # campi per DNS
+        flusso.get("dns_ip")
+    )
 
-        pacchetti = f"{flusso.get('pkts_sorgente')} <-> {flusso.get('pkts_destinazione')}"
-
-        if chiave not in aggregati:
-            flusso["numero_flussi_simili"] = 1
-            flusso["pacchetti_scambiati"] = [pacchetti]
-            aggregati[chiave] = flusso
-        else:
-            aggregati[chiave]["numero_flussi_simili"] += 1
-            aggregati[chiave]["pacchetti_scambiati"].append(pacchetti)
-    else:
-        # flussi non TLS
+    if chiave not in aggregati:
         flusso["numero_flussi_simili"] = 1
-        flusso["pacchetti_scambiati"] = [f"{flusso.get('pkts_sorgente')} <-> {flusso.get('pkts_destinazione')}"]
-        flussi_finali.append(flusso)
-
-# aggiunta flussi TLS aggregati
-flussi_finali.extend(aggregati.values())
+        flusso["pacchetti_scambiati"] = [pacchetti]
+        aggregati[chiave] = flusso
+    else:
+        aggregati[chiave]["numero_flussi_simili"] += 1
+        aggregati[chiave]["pacchetti_scambiati"].append(pacchetti)
+    
+flussi_finali = list(aggregati.values())
 
 with open(output_file, 'w') as f_out:
     json.dump(flussi_finali, f_out, indent=4)
@@ -249,7 +258,6 @@ for flusso in flussi_finali:
         ip = flusso.get("dns_ip", "N/A")
         print(f"SNI: {sni:40} | Plain Text: {plain:25} | IP: {ip}")
 
-
 # --- STAMPA FLUSSI HTTP ---
 print("\nFlussi HTTP rilevati:\n")
 for flusso in flussi_finali:
@@ -262,11 +270,10 @@ for flusso in flussi_finali:
         url = flusso.get("url", "N/A")
         sni = flusso.get("sni", "N/A")
         plain = flusso.get("plain_text", "N/A")
-        pkts_sorgente = flusso.get("pkts_sorgente", 0)
-        pkts_destinazione = flusso.get("pkts_destinazione", 0)
+        pacchetti_scambiati = flusso.get("pacchetti_scambiati", "N/A")
 
         print(f"{ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione} | "
-              f"URL: {url:40} | SNI: {sni:40} | Plain Text: {plain:25} | Pacchetti: {pkts_sorgente} -> {pkts_destinazione}")
+              f"URL: {url:40} | SNI: {sni:40} | Plain Text: {plain:25} | Pacchetti_scambiati: {pacchetti_scambiati}")
 
 
 # --- STAMPA FLUSSI TLS ---
@@ -282,16 +289,19 @@ for flusso in flussi_finali:
         ja4 = flusso.get("ja4", "N/A")
         sni = flusso.get("sni", "N/A")
         ech = flusso.get("ech", "N/A")
-        pkts_sorgente = flusso.get("pkts_sorgente", 0)
-        pkts_destinazione = flusso.get("pkts_destinazione", 0)
-        pacchetti_scambiati = flusso.get("pacchetti_scambiati", pkts_sorgente + pkts_destinazione)
-        numero_flussi_simili = flusso.get("numero_flussi_simili", 1)
+        pacchetti_scambiati = flusso.get("pacchetti_scambiati", "N/A")
+        numero_flussi_simili = flusso.get("numero_flussi_simili", "N/A")
 
-        print(f"{ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione} | "
-              f"JA3S: {ja3s}, JA4: {ja4}, SNI: {sni}, ECH: {ech} "
-              f"Pacchetti: {pkts_sorgente} -> {pkts_destinazione}, "
-              f"numero_flussi_simili: {numero_flussi_simili}, "
-              f"pacchetti scambiati: {pacchetti_scambiati}")
+        print(f"""
+                {ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione}
+                │
+                ├── JA3S: {ja3s}
+                ├── JA4: {ja4}
+                ├── SNI: {sni}
+                ├── ECH: {ech}
+                ├── Numero flussi simili: {numero_flussi_simili}
+                └── Pacchetti scambiati: {pacchetti_scambiati}
+            """)
 
 # --- STAMPA FLUSSI UNKNOW ---
 print("\nFlussi Unknown rilevati:\n")
@@ -308,9 +318,18 @@ for flusso in flussi_finali:
         ja4 = flusso.get("ja4", "N/A")
         sni = flusso.get("sni", "N/A")
         ech = flusso.get("ech", "N/A")
+        url = flusso.get("url", "N/A")
 
-        print(f"{ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione} | "
-              f"Pacchetti: {pkts_sorgente} -> {pkts_destinazione}")
-
+        print(f"""
+                {ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione}
+                │
+                ├── JA3S: {ja3s}
+                ├── JA4: {ja4}
+                ├── SNI: {sni}
+                ├── ECH: {ech}
+                ├── URL: {url}
+                ├── Numero flussi simili: {numero_flussi_simili}
+                └── Pacchetti scambiati: {pacchetti_scambiati}
+            """)
 
 

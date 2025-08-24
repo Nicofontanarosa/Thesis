@@ -66,8 +66,6 @@ for ip in sorted(all_ip_in_file):
 # regex dinamiche
 proto_pattern = r"\[proto: \d+/(" + "|".join(protocols) + r")\]"
 #ip_pattern    = r"\[IP: 0/(" + "|".join(ips) + r")\]"
-# regex per flussi privi di informazioni
-plen_bins_pattern = r"^(?!.*\[Plen Bins: (0,){47}0\])"
 # regex per contare i flussi
 proto_general_pattern = r"\[proto: [^\]]+\]"
 
@@ -77,10 +75,12 @@ host_ip_only_pattern = re.compile(r"^\s*\d+\s+([0-9a-fA-F:.]+)\s+")
 ipv6_pattern = re.compile(r"\[[0-9a-fA-F]{0,4}(:[0-9a-fA-F]{0,4}){2,7}\]")
 # regex per flussi con IP 0.0.0.0
 #match_ip_zero = re.compile(r"\[0\.0\.0\.0\]")
+# regex per flussi privi di informazioni
+plen_bins_empty_pattern = re.compile(r"\[Plen Bins: (0,){47}0\]")
 
 # costruzione dinamica della regex
 #pattern = re.compile(plen_bins_pattern + r".*" + proto_pattern + r".*" + ip_pattern)
-pattern = re.compile(plen_bins_pattern + r".*" + proto_pattern)
+pattern = re.compile(proto_pattern)
 pattern_general = re.compile(proto_general_pattern)
 
 #sed -E 's/\[Goodput ratio: [^]]+\]\[[^]]+\]//g; 
@@ -118,6 +118,8 @@ cat_pattern = re.compile(r"\[cat: [^]]+\]")
 
 flussi_lasciati = []
 flussi_rimossi = []
+flussi_vuoti_rimossi = []
+flussi_IPv6_rimossi = []
 
 with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
 
@@ -132,7 +134,12 @@ with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
         
         # ignoro righe con IPv6
         if ipv6_pattern.search(line_stripped):
-            flussi_rimossi.append(line)
+            flussi_IPv6_rimossi.append(line)
+            continue
+
+        # ignoro righe plain bins = 0
+        if plen_bins_empty_pattern.search(line_stripped):
+            flussi_vuoti_rimossi.append(line)
             continue
 
         # ignoro righe con ip 0.0.0.0
@@ -162,6 +169,9 @@ with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
             flussi_rimossi.append(line)
 
 # stampa riepilogo
-print(f"\nFlussi letti: {len(flussi_lasciati) + len(flussi_rimossi)}")
+print(f"\nFlussi letti: {len(flussi_lasciati) + len(flussi_rimossi) + len(flussi_vuoti_rimossi) + len(flussi_IPv6_rimossi)}")
 print(f"Flussi tenuti: {len(flussi_lasciati)}")
-print(f"Flussi rimossi: {len(flussi_rimossi)}")
+print(f"Flussi rimossi: {len(flussi_rimossi) + len(flussi_vuoti_rimossi) + len(flussi_IPv6_rimossi)}")
+print(f"  ├──Flussi generali rimossi: {len(flussi_rimossi)}")
+print(f"  ├──Flussi vuoti rimossi: {len(flussi_vuoti_rimossi)}")
+print(f"  └──Flussi IPv6 rimossi: {len(flussi_IPv6_rimossi)}")

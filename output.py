@@ -292,15 +292,14 @@ for flusso in flussi_finali:
         pacchetti_scambiati = flusso.get("pacchetti_scambiati", "N/A")
         numero_flussi_simili = flusso.get("numero_flussi_simili", "N/A")
 
-        print(f"""
-                {ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione}
-                │
-                ├── JA3S: {ja3s}
-                ├── JA4: {ja4}
-                ├── SNI: {sni}
-                ├── ECH: {ech}
-                ├── Numero flussi simili: {numero_flussi_simili}
-                └── Pacchetti scambiati: {pacchetti_scambiati}
+        print(f"""{ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione}
+│
+├── JA3S: {ja3s}
+├── JA4: {ja4}
+├── SNI: {sni}
+├── ECH: {ech}
+├── Numero flussi simili: {numero_flussi_simili}
+└── Pacchetti scambiati: {pacchetti_scambiati}
             """)
 
 # --- STAMPA FLUSSI UNKNOW ---
@@ -320,16 +319,15 @@ for flusso in flussi_finali:
         ech = flusso.get("ech", "N/A")
         url = flusso.get("url", "N/A")
 
-        print(f"""
-                {ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione}
-                │
-                ├── JA3S: {ja3s}
-                ├── JA4: {ja4}
-                ├── SNI: {sni}
-                ├── ECH: {ech}
-                ├── URL: {url}
-                ├── Numero flussi simili: {numero_flussi_simili}
-                └── Pacchetti scambiati: {pacchetti_scambiati}
+        print(f"""{ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione}
+│
+├── JA3S: {ja3s}
+├── JA4: {ja4}
+├── SNI: {sni}
+├── ECH: {ech}
+├── URL: {url}
+├── Numero flussi simili: {numero_flussi_simili}
+└── Pacchetti scambiati: {pacchetti_scambiati}
             """)
 
 

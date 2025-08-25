@@ -10,6 +10,61 @@
     },
     {
         "id": 2,
+        "riga_grezza": "33\tTCP 192.168.80.96:63390 <-> 18.66.210.128:443 [proto: 91/TLS][IP: 265/AmazonAWS][22 pkts/8152 bytes <-> 19 pkts/8818 bytes][Hostname/SNI: aax.amazon-adsystem.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: f4febc55ea12b31ae17cfb7e614afda8][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
+        "ip_field": "265/AmazonAWS",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "91/TLS",
+        "alpn": "http/1.1",
+        "tls_versions": "TLSv1.3;TLSv1.2;TLSv1.1;TLSv1",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "client": "Safari",
+        "cipher": "TLS_AES_128_GCM_SHA256",
+        "sni": "aax.amazon-adsystem.com",
+        "ip_sorgente": "192.168.80.96",
+        "porta_sorgente": "63390",
+        "ip_destinazione": "18.66.210.128",
+        "porta_destinazione": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 2,
+        "pacchetti_scambiati": [
+            "22 <-> 19",
+            "13 <-> 12"
+        ]
+    },
+    {
+        "id": 3,
+        "riga_grezza": "19\tTCP 192.168.80.96:63379 <-> 108.157.194.61:443 [proto: 91/TLS][IP: 265/AmazonAWS][77 pkts/5994 bytes <-> 73 pkts/97937 bytes][Hostname/SNI: images1.vinted.net][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: f4febc55ea12b31ae17cfb7e614afda8][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
+        "ip_field": "265/AmazonAWS",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "91/TLS",
+        "alpn": "http/1.1",
+        "tls_versions": "TLSv1.3;TLSv1.2;TLSv1.1;TLSv1",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "client": "Safari",
+        "cipher": "TLS_AES_128_GCM_SHA256",
+        "sni": "images1.vinted.net",
+        "ip_sorgente": "192.168.80.96",
+        "porta_sorgente": "63379",
+        "ip_destinazione": "108.157.194.61",
+        "porta_destinazione": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "numero_flussi_simili": 7,
+        "pacchetti_scambiati": [
+            "77 <-> 73",
+            "515 <-> 648",
+            "294 <-> 290",
+            "180 <-> 176",
+            "134 <-> 130",
+            "118 <-> 114",
+            "90 <-> 88"
+        ]
+    },
+    {
+        "id": 4,
         "riga_grezza": "1\tTCP 192.168.80.96:63427 <-> 108.157.194.61:443 [proto: 91/TLS][IP: 265/AmazonAWS][553 pkts/38004 bytes <-> 680 pkts/977320 bytes][Hostname/SNI: images1.vinted.net][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1714ht_5b57614c22b0_fadfdae04b4e][JA3S: f4febc55ea12b31ae17cfb7e614afda8][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
         "ip_field": "265/AmazonAWS",
         "protocollo_trasporto": "TCP",
@@ -33,37 +88,7 @@
         ]
     },
     {
-        "id": 3,
-        "riga_grezza": "2\tTCP 192.168.80.96:63426 <-> 108.157.194.61:443 [proto: 91/TLS][IP: 265/AmazonAWS][515 pkts/35499 bytes <-> 648 pkts/929188 bytes][Hostname/SNI: images1.vinted.net][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: f4febc55ea12b31ae17cfb7e614afda8][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
-        "ip_field": "265/AmazonAWS",
-        "protocollo_trasporto": "TCP",
-        "proto_field": "91/TLS",
-        "alpn": "http/1.1",
-        "tls_versions": "TLSv1.3;TLSv1.2;TLSv1.1;TLSv1",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "client": "Safari",
-        "cipher": "TLS_AES_128_GCM_SHA256",
-        "sni": "images1.vinted.net",
-        "ip_sorgente": "192.168.80.96",
-        "porta_sorgente": "63426",
-        "ip_destinazione": "108.157.194.61",
-        "porta_destinazione": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "numero_flussi_simili": 7,
-        "pacchetti_scambiati": [
-            "515 <-> 648",
-            "294 <-> 290",
-            "180 <-> 176",
-            "134 <-> 130",
-            "118 <-> 114",
-            "90 <-> 88",
-            "77 <-> 73"
-        ]
-    },
-    {
-        "id": 4,
+        "id": 6,
         "riga_grezza": "3\tTCP 192.168.80.96:63428 <-> 108.157.194.61:443 [proto: 91/TLS][IP: 265/AmazonAWS][428 pkts/29757 bytes <-> 479 pkts/685909 bytes][Hostname/SNI: images1.vinted.net][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1714ht_5b57614c22b0_fadfdae04b4e][JA3S: fcb2d4d0991292272fcb1e464eedfd43][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
         "ip_field": "265/AmazonAWS",
         "protocollo_trasporto": "TCP",
@@ -87,7 +112,7 @@
         ]
     },
     {
-        "id": 5,
+        "id": 7,
         "riga_grezza": "4\tTCP 192.168.80.96:63397 <-> 34.102.162.219:443 [proto: 91/TLS][IP: 284/GoogleCloud][197 pkts/38297 bytes <-> 301 pkts/398458 bytes][Hostname/SNI: ms4.applovin.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
         "ip_field": "284/GoogleCloud",
         "protocollo_trasporto": "TCP",
@@ -113,7 +138,7 @@
         ]
     },
     {
-        "id": 10,
+        "id": 12,
         "riga_grezza": "11\tTCP 192.168.80.96:63134 <-> 216.58.204.226:443 [proto: 91/TLS][IP: 126/Google][165 pkts/181934 bytes <-> 142 pkts/36253 bytes]",
         "ip_field": "126/Google",
         "protocollo_trasporto": "TCP",
@@ -130,7 +155,7 @@
         ]
     },
     {
-        "id": 13,
+        "id": 15,
         "riga_grezza": "15\tTCP 192.168.80.96:63354 <-> 104.18.120.232:443 [proto: 91/TLS][IP: 220/Cloudflare][158 pkts/33305 bytes <-> 172 pkts/122341 bytes][Hostname/SNI: www.vinted.fr][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1513h2_8daaf6152771_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
         "ip_field": "220/Cloudflare",
         "protocollo_trasporto": "TCP",
@@ -159,7 +184,7 @@
         ]
     },
     {
-        "id": 16,
+        "id": 17,
         "riga_grezza": "20\tTCP 192.168.80.96:63377 <-> 104.18.87.42:443 [proto: 91/TLS][IP: 220/Cloudflare][45 pkts/3806 bytes <-> 78 pkts/93786 bytes][Hostname/SNI: cdn.cookielaw.org][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1513h2_8daaf6152771_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
         "ip_field": "220/Cloudflare",
         "protocollo_trasporto": "TCP",
@@ -184,7 +209,7 @@
         ]
     },
     {
-        "id": 17,
+        "id": 18,
         "riga_grezza": "21\tTCP 192.168.80.96:63405 <-> 34.102.162.219:443 [proto: 91/TLS][IP: 284/GoogleCloud][64 pkts/50512 bytes <-> 51 pkts/14391 bytes][Hostname/SNI: prod-mediate-events.applovin.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
         "ip_field": "284/GoogleCloud",
         "protocollo_trasporto": "TCP",
@@ -211,7 +236,7 @@
         ]
     },
     {
-        "id": 19,
+        "id": 20,
         "riga_grezza": "25\tTCP 192.168.80.96:63374 <-> 34.102.162.219:443 [proto: 91/TLS][IP: 284/GoogleCloud][26 pkts/6478 bytes <-> 35 pkts/38850 bytes][Hostname/SNI: ms.applovin.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
         "ip_field": "284/GoogleCloud",
         "protocollo_trasporto": "TCP",
@@ -235,7 +260,7 @@
         ]
     },
     {
-        "id": 20,
+        "id": 21,
         "riga_grezza": "26\tTCP 192.168.80.96:63371 <-> 172.64.155.231:443 [proto: 91/TLS][IP: 220/Cloudflare][26 pkts/2704 bytes <-> 42 pkts/37444 bytes][Hostname/SNI: mobile-data.onetrust.io][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1513h2_8daaf6152771_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
         "ip_field": "220/Cloudflare",
         "protocollo_trasporto": "TCP",
@@ -259,7 +284,7 @@
         ]
     },
     {
-        "id": 21,
+        "id": 22,
         "riga_grezza": "28\tTCP 192.168.80.96:63355 <-> 104.16.207.80:443 [proto: 91/TLS][IP: 220/Cloudflare][31 pkts/18905 bytes <-> 22 pkts/7614 bytes][Hostname/SNI: logs-ingress.svc.vinted.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1513h2_8daaf6152771_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
         "ip_field": "220/Cloudflare",
         "protocollo_trasporto": "TCP",
@@ -283,7 +308,7 @@
         ]
     },
     {
-        "id": 23,
+        "id": 24,
         "riga_grezza": "30\tTCP 192.168.80.96:63412 <-> 34.160.119.165:443 [proto: 91/TLS][IP: 284/GoogleCloud][19 pkts/2090 bytes <-> 22 pkts/22418 bytes][Hostname/SNI: img.applovin.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
         "ip_field": "284/GoogleCloud",
         "protocollo_trasporto": "TCP",
@@ -307,7 +332,7 @@
         ]
     },
     {
-        "id": 24,
+        "id": 25,
         "riga_grezza": "31\tTCP 192.168.80.96:63417 <-> 34.102.162.219:443 [proto: 91/TLS][IP: 284/GoogleCloud][22 pkts/16144 bytes <-> 14 pkts/2986 bytes][Hostname/SNI: prod-mediate-events.applovin.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_352634941f3a][JA3S: 2b0648ab686ee45e0e7c35fcfb0eea7e][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
         "ip_field": "284/GoogleCloud",
         "protocollo_trasporto": "TCP",
@@ -328,31 +353,6 @@
         "numero_flussi_simili": 1,
         "pacchetti_scambiati": [
             "22 <-> 14"
-        ]
-    },
-    {
-        "id": 25,
-        "riga_grezza": "33\tTCP 192.168.80.96:63390 <-> 18.66.210.128:443 [proto: 91/TLS][IP: 265/AmazonAWS][22 pkts/8152 bytes <-> 19 pkts/8818 bytes][Hostname/SNI: aax.amazon-adsystem.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: f4febc55ea12b31ae17cfb7e614afda8][Safari][Cipher: TLS_AES_128_GCM_SHA256]",
-        "ip_field": "265/AmazonAWS",
-        "protocollo_trasporto": "TCP",
-        "proto_field": "91/TLS",
-        "alpn": "http/1.1",
-        "tls_versions": "TLSv1.3;TLSv1.2;TLSv1.1;TLSv1",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "client": "Safari",
-        "cipher": "TLS_AES_128_GCM_SHA256",
-        "sni": "aax.amazon-adsystem.com",
-        "ip_sorgente": "192.168.80.96",
-        "porta_sorgente": "63390",
-        "ip_destinazione": "18.66.210.128",
-        "porta_destinazione": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "numero_flussi_simili": 2,
-        "pacchetti_scambiati": [
-            "22 <-> 19",
-            "13 <-> 12"
         ]
     },
     {
@@ -924,6 +924,66 @@
     },
     {
         "id": 69,
+        "riga_grezza": "116\tTCP 142.250.180.170:443 <-> 192.168.80.96:56531 [proto: 91/TLS][IP: 126/Google][1 pkts/175 bytes <-> 1 pkts/54 bytes]",
+        "ip_field": "126/Google",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "91/TLS",
+        "ip_sorgente": "142.250.180.170",
+        "porta_sorgente": "443",
+        "ip_destinazione": "192.168.80.96",
+        "porta_destinazione": "56531",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "id": 70,
+        "riga_grezza": "117\tTCP 216.58.204.234:443 <-> 192.168.80.96:56317 [proto: 91/TLS][IP: 126/Google][1 pkts/160 bytes <-> 1 pkts/54 bytes]",
+        "ip_field": "126/Google",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "91/TLS",
+        "ip_sorgente": "216.58.204.234",
+        "porta_sorgente": "443",
+        "ip_destinazione": "192.168.80.96",
+        "porta_destinazione": "56317",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "id": 71,
+        "riga_grezza": "119\tTCP 216.58.204.234:443 <-> 192.168.80.96:56314 [proto: 91/TLS][IP: 126/Google][1 pkts/105 bytes <-> 1 pkts/54 bytes]",
+        "ip_field": "126/Google",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "91/TLS",
+        "ip_sorgente": "216.58.204.234",
+        "porta_sorgente": "443",
+        "ip_destinazione": "192.168.80.96",
+        "porta_destinazione": "56314",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "id": 72,
+        "riga_grezza": "120\tTCP 216.58.204.234:443 <-> 192.168.80.96:56313 [proto: 91/TLS][IP: 126/Google][1 pkts/103 bytes <-> 1 pkts/54 bytes]",
+        "ip_field": "126/Google",
+        "protocollo_trasporto": "TCP",
+        "proto_field": "91/TLS",
+        "ip_sorgente": "216.58.204.234",
+        "porta_sorgente": "443",
+        "ip_destinazione": "192.168.80.96",
+        "porta_destinazione": "56313",
+        "numero_flussi_simili": 1,
+        "pacchetti_scambiati": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "id": 73,
         "riga_grezza": "115\tUDP 192.168.80.96:60225 <-> 192.168.80.68:53 [proto: 5/DNS][IP: 0/Unknown][2 pkts/146 bytes <-> 1 pkts/137 bytes][Hostname/SNI: vintedapp.com][3.165.239.126][DNS Id: 0xdae1][PLAIN TEXT (vintedapp)]",
         "ip_field": "0/Unknown",
         "protocollo_trasporto": "UDP",
@@ -939,66 +999,6 @@
         "numero_flussi_simili": 1,
         "pacchetti_scambiati": [
             "2 <-> 1"
-        ]
-    },
-    {
-        "id": 70,
-        "riga_grezza": "116\tTCP 142.250.180.170:443 <-> 192.168.80.96:56531 [proto: 91/TLS][IP: 126/Google][1 pkts/175 bytes <-> 1 pkts/54 bytes]",
-        "ip_field": "126/Google",
-        "protocollo_trasporto": "TCP",
-        "proto_field": "91/TLS",
-        "ip_sorgente": "142.250.180.170",
-        "porta_sorgente": "443",
-        "ip_destinazione": "192.168.80.96",
-        "porta_destinazione": "56531",
-        "numero_flussi_simili": 1,
-        "pacchetti_scambiati": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "id": 71,
-        "riga_grezza": "117\tTCP 216.58.204.234:443 <-> 192.168.80.96:56317 [proto: 91/TLS][IP: 126/Google][1 pkts/160 bytes <-> 1 pkts/54 bytes]",
-        "ip_field": "126/Google",
-        "protocollo_trasporto": "TCP",
-        "proto_field": "91/TLS",
-        "ip_sorgente": "216.58.204.234",
-        "porta_sorgente": "443",
-        "ip_destinazione": "192.168.80.96",
-        "porta_destinazione": "56317",
-        "numero_flussi_simili": 1,
-        "pacchetti_scambiati": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "id": 72,
-        "riga_grezza": "119\tTCP 216.58.204.234:443 <-> 192.168.80.96:56314 [proto: 91/TLS][IP: 126/Google][1 pkts/105 bytes <-> 1 pkts/54 bytes]",
-        "ip_field": "126/Google",
-        "protocollo_trasporto": "TCP",
-        "proto_field": "91/TLS",
-        "ip_sorgente": "216.58.204.234",
-        "porta_sorgente": "443",
-        "ip_destinazione": "192.168.80.96",
-        "porta_destinazione": "56314",
-        "numero_flussi_simili": 1,
-        "pacchetti_scambiati": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "id": 73,
-        "riga_grezza": "120\tTCP 216.58.204.234:443 <-> 192.168.80.96:56313 [proto: 91/TLS][IP: 126/Google][1 pkts/103 bytes <-> 1 pkts/54 bytes]",
-        "ip_field": "126/Google",
-        "protocollo_trasporto": "TCP",
-        "proto_field": "91/TLS",
-        "ip_sorgente": "216.58.204.234",
-        "porta_sorgente": "443",
-        "ip_destinazione": "192.168.80.96",
-        "porta_destinazione": "56313",
-        "numero_flussi_simili": 1,
-        "pacchetti_scambiati": [
-            "1 <-> 1"
         ]
     }
 ]

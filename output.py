@@ -5,9 +5,7 @@ import argparse
 from collections import Counter
 import os
 import config
-
-# Clear del terminale all'apertura
-config.clear_terminal()
+from collections import defaultdict
 
 # parsing args
 args = config.get_args()
@@ -22,6 +20,7 @@ protocols = config.PROTOCOLS
 
 flussi = []
 counter = 1
+ip_host = []
 
 with open(input_file, 'r') as f_in:
     for riga in f_in:
@@ -38,6 +37,7 @@ with open(input_file, 'r') as f_in:
             flusso["ip_host"] = match_ip_only.group(1)
             flussi.append(flusso)
             counter += 1
+            ip_host.append(match_ip_only.group(1))
             continue
 
         # IP
@@ -192,10 +192,6 @@ for flusso in flussi:
     if not matched:
         protocol_counts["Unknown"] += 1
 
-# Stampa riepilogo
-riepilogo = ", ".join([f"{v} flussi {k}" for k, v in protocol_counts.items()])
-print(f"\nRilevati: {riepilogo}")
-
 # --- AGGREGAZIONE FLUSSI TLS ---
 aggregati = {}
 flussi_finali = []
@@ -210,30 +206,7 @@ for flusso in flussi:
     # se è TLS aggrega
     #if flusso.get("proto_field") and "TLS" in flusso.get("proto_field"):
     # aggiungo tutti i campi disponibili per aggregare i flussi
-    chiave = (
-        # campi generali
-        flusso.get("ip_sorgente"),
-        flusso.get("ip_destinazione"),
-        flusso.get("porta_destinazione"),   # 192.168.1.4 -> 8.8.8.8:443
-        flusso.get("proto_field"),          # TLS / Unknow / DNS ....
-        flusso.get("protocollo_trasporto"), # TCP / UDP ...
-        flusso.get("sni"),                  # vintend.com
-        flusso.get("tcp_fingerprint"),
-        # campi per TLS
-        flusso.get("ja3s"),
-        flusso.get("ja4"),
-        flusso.get("alpn"),
-        flusso.get("tls_versions"),
-        flusso.get("tls_version"),
-        flusso.get("cipher"),
-        flusso.get("ech"),
-        # campi per HTTP
-        flusso.get("url"),
-        flusso.get("user_agent"),
-        flusso.get("content_type"),
-        # campi per DNS
-        flusso.get("dns_ip")
-    )
+    chiave = tuple(flusso.get(key) for key in config.KEY)
 
     if chiave not in aggregati:
         flusso["numero_flussi_simili"] = 1
@@ -248,86 +221,181 @@ flussi_finali = list(aggregati.values())
 with open(output_file, 'w') as f_out:
     json.dump(flussi_finali, f_out, indent=4)
 
-# --- STAMPA FLUSSI DNS ---
-print("\nFlussi DNS rilevati (SNI, Plain Text & IP):\n")
-for flusso in flussi_finali:
-    proto = flusso.get("proto_field", "").lower()
-    if "dns" in proto:
-        sni = flusso.get("sni", "N/A")
-        plain = flusso.get("plain_text", "N/A")
-        ip = flusso.get("dns_ip", "N/A")
-        print(f"SNI: {sni:40} | Plain Text: {plain:25} | IP: {ip}")
+def stampa_flussi(flussi_finali):
 
-# --- STAMPA FLUSSI HTTP ---
-print("\nFlussi HTTP rilevati:\n")
-for flusso in flussi_finali:
-    proto = flusso.get("proto_field", "").lower()
-    if "http" in proto:
-        ip_sorgente = flusso.get("ip_sorgente", "N/A")
-        porta_sorgente = flusso.get("porta_sorgente", "N/A")
-        ip_destinazione = flusso.get("ip_destinazione", "N/A")
-        porta_destinazione = flusso.get("porta_destinazione", "N/A")
-        url = flusso.get("url", "N/A")
-        sni = flusso.get("sni", "N/A")
-        plain = flusso.get("plain_text", "N/A")
-        pacchetti_scambiati = flusso.get("pacchetti_scambiati", "N/A")
+    # Clear del terminale all'apertura
+    config.clear_terminal()
 
-        print(f"{ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione} | "
-              f"URL: {url:40} | SNI: {sni:40} | Plain Text: {plain:25} | Pacchetti_scambiati: {pacchetti_scambiati}")
+    # Stampa riepilogo
+    riepilogo = ", ".join([f"{v} flussi {k}" for k, v in protocol_counts.items()])
+    print(f"\nRilevati: {riepilogo}")
 
+    # --- STAMPA FLUSSI DNS ---
+    print("\nFlussi DNS rilevati (SNI, Plain Text & IP):\n")
+    for flusso in flussi_finali:
+        proto = flusso.get("proto_field", "").lower()
+        if "dns" in proto:
+            sni = flusso.get("sni", "N/A")
+            plain = flusso.get("plain_text", "N/A")
+            ip = flusso.get("dns_ip", "N/A")
+            print(f"SNI: {sni:40} | Plain Text: {plain:25} | IP: {ip}")
 
-# --- STAMPA FLUSSI TLS ---
-print("\nFlussi TLS rilevati:\n")
-for flusso in flussi_finali:
-    proto = flusso.get("proto_field", "").lower()
-    if "tls" in proto:
-        ip_sorgente = flusso.get("ip_sorgente", "N/A")
-        porta_sorgente = flusso.get("porta_sorgente", "N/A")
-        ip_destinazione = flusso.get("ip_destinazione", "N/A")
-        porta_destinazione = flusso.get("porta_destinazione", "N/A")
-        ja3s = flusso.get("ja3s", "N/A")
-        ja4 = flusso.get("ja4", "N/A")
-        sni = flusso.get("sni", "N/A")
-        ech = flusso.get("ech", "N/A")
-        pacchetti_scambiati = flusso.get("pacchetti_scambiati", "N/A")
-        numero_flussi_simili = flusso.get("numero_flussi_simili", "N/A")
+    # --- STAMPA FLUSSI HTTP ---
+    print("\nFlussi HTTP rilevati:\n")
+    for flusso in flussi_finali:
+        proto = flusso.get("proto_field", "").lower()
+        if "http" in proto:
+            ip_sorgente = flusso.get("ip_sorgente", "N/A")
+            porta_sorgente = flusso.get("porta_sorgente", "N/A")
+            ip_destinazione = flusso.get("ip_destinazione", "N/A")
+            porta_destinazione = flusso.get("porta_destinazione", "N/A")
+            url = flusso.get("url", "N/A")
+            sni = flusso.get("sni", "N/A")
+            plain = flusso.get("plain_text", "N/A")
+            pacchetti_scambiati = flusso.get("pacchetti_scambiati", "N/A")
+            ip_field = flusso.get("ip_field", "N/A")
 
-        print(f"""{ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione}
-│
-├── JA3S: {ja3s}
-├── JA4: {ja4}
-├── SNI: {sni}
-├── ECH: {ech}
-├── Numero flussi simili: {numero_flussi_simili}
-└── Pacchetti scambiati: {pacchetti_scambiati}
-            """)
+            print(f"{ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione} | "
+                f"URL: {url:40} | IP: {ip_field:25} | SNI: {sni:40} | Plain Text: {plain:25} | Pacchetti_scambiati: {pacchetti_scambiati}")
 
-# --- STAMPA FLUSSI UNKNOW ---
-print("\nFlussi Unknown rilevati:\n")
-for flusso in flussi_finali:
-    proto = flusso.get("proto_field", "").lower()
-    if "unknown" in proto:
-        ip_sorgente = flusso.get("ip_sorgente", "N/A")
-        porta_sorgente = flusso.get("porta_sorgente", "N/A")
-        ip_destinazione = flusso.get("ip_destinazione", "N/A")
-        porta_destinazione = flusso.get("porta_destinazione", "N/A")
-        pkts_sorgente = flusso.get("pkts_sorgente", 0)
-        pkts_destinazione = flusso.get("pkts_destinazione", 0)
-        ja3s = flusso.get("ja3s", "N/A")
-        ja4 = flusso.get("ja4", "N/A")
-        sni = flusso.get("sni", "N/A")
-        ech = flusso.get("ech", "N/A")
-        url = flusso.get("url", "N/A")
+    # --- STAMPA FLUSSI TLS ---
+    print("\nFlussi TLS rilevati:\n")
+    for flusso in flussi_finali:
+        proto = flusso.get("proto_field", "").lower()
+        if "tls" in proto:
+            ip_sorgente = flusso.get("ip_sorgente", "N/A")
+            porta_sorgente = flusso.get("porta_sorgente", "N/A")
+            ip_destinazione = flusso.get("ip_destinazione", "N/A")
+            porta_destinazione = flusso.get("porta_destinazione", "N/A")
+            ja3s = flusso.get("ja3s", "N/A")
+            ja4 = flusso.get("ja4", "N/A")
+            sni = flusso.get("sni", "N/A")
+            ech = flusso.get("ech", "N/A")
+            pacchetti_scambiati = flusso.get("pacchetti_scambiati", "N/A")
+            numero_flussi_simili = flusso.get("numero_flussi_simili", "N/A")
+            ip_field = flusso.get("ip_field", "N/A")
 
-        print(f"""{ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione}
-│
-├── JA3S: {ja3s}
-├── JA4: {ja4}
-├── SNI: {sni}
-├── ECH: {ech}
-├── URL: {url}
-├── Numero flussi simili: {numero_flussi_simili}
-└── Pacchetti scambiati: {pacchetti_scambiati}
-            """)
+            print(f"""{ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione}
+    │
+    ├── JA3S: {ja3s}
+    ├── JA4: {ja4}
+    ├── SNI: {sni}
+    ├── ECH: {ech}
+    ├── IP: {ip_field}
+    ├── Numero flussi simili: {numero_flussi_simili}
+    └── Pacchetti scambiati: {pacchetti_scambiati}
+                """)
 
+    # --- STAMPA FLUSSI UNKNOW ---
+    print("\nFlussi Unknown rilevati:\n")
+    for flusso in flussi_finali:
+        proto = flusso.get("proto_field", "").lower()
+        if "unknown" in proto:
+            ip_sorgente = flusso.get("ip_sorgente", "N/A")
+            porta_sorgente = flusso.get("porta_sorgente", "N/A")
+            ip_destinazione = flusso.get("ip_destinazione", "N/A")
+            porta_destinazione = flusso.get("porta_destinazione", "N/A")
+            pkts_sorgente = flusso.get("pkts_sorgente", 0)
+            pkts_destinazione = flusso.get("pkts_destinazione", 0)
+            ja3s = flusso.get("ja3s", "N/A")
+            ja4 = flusso.get("ja4", "N/A")
+            sni = flusso.get("sni", "N/A")
+            ech = flusso.get("ech", "N/A")
+            url = flusso.get("url", "N/A")
+            ip_field = flusso.get("ip_field", "N/A")
 
+            print(f"""{ip_sorgente}:{porta_sorgente} -> {ip_destinazione}:{porta_destinazione}
+    │
+    ├── JA3S: {ja3s}
+    ├── JA4: {ja4}
+    ├── SNI: {sni}
+    ├── ECH: {ech}
+    ├── URL: {url}
+    ├── IP: {ip_field}
+    ├── Numero flussi simili: {numero_flussi_simili}
+    └── Pacchetti scambiati: {pacchetti_scambiati}
+                """)
+
+    raggruppa_per_hostname(flussi_finali)
+
+def raggruppa_per_hostname(flussi):
+    gruppi = defaultdict(list)
+
+    for flusso in flussi:
+        if flusso.get("proto_field", "").upper() == "5/DNS" or flusso.get("ip_destinazione") in ip_host:
+            continue
+        hostname = flusso.get("sni") or "SNI_non_disponibile"
+        ip_dest = flusso.get("ip_destinazione")
+        if ip_dest:
+            porta_dest = flusso.get("porta_destinazione")
+            gruppi[hostname].append(f"{ip_dest}:{porta_dest}")
+        else: continue
+
+    # stampa i gruppi
+    for hostname, indirizzi in gruppi.items():
+        print(f"\nHostname/SNI: {hostname}")
+        print("Indirizzi associati:")
+        for addr in set(indirizzi):  # uso set per evitare duplicati
+            print(f"  - {addr}")
+
+def ricerca_correlata(flussi, parola):
+    # flussi è la lista di dizionari
+    risultati = []
+    visitati = set()
+
+    # coda di ricerca (BFS)
+    da_visitare = []
+
+    # fase 1: trova i flussi che contengono la parola
+    for i, flusso in enumerate(flussi):
+        if flusso.get("proto_field", "").upper() == "5/DNS":
+            continue
+        for v in flusso.values():
+            if parola.lower() in str(v).lower():
+                da_visitare.append(i)
+
+    # fase 2: BFS sugli attributi correlati
+    while da_visitare:
+        idx = da_visitare.pop(0)
+        if idx in visitati:
+            continue
+        visitati.add(idx)
+        flusso = flussi[idx]
+        if flusso.get("proto_field", "").upper() == "5/DNS":
+            continue  # scarta DNS
+        risultati.append(flusso)
+
+        correlati = [flusso.get(key) for key in config.CLUSTER_KEYS]
+
+        # cerca altri flussi che matchano questi valori
+        for j, altro in enumerate(flussi):
+            if j in visitati:
+                continue
+            for key in correlati:
+                if key and key != "N/A" and key in altro.values():
+                    da_visitare.append(j)
+
+    return risultati
+
+def ricerca_flussi(flussi_finali):
+    while True:
+
+        stampa_flussi(flussi_finali)
+
+        parola = input("\nRicerca: ").strip()
+        if not parola:
+            continue
+        else:
+            cluster = ricerca_correlata(flussi_finali, parola)
+            #flussi_da_mostrare = [
+            #    f for f in flussi_finali
+            #    if any(parola.lower() in str(v).lower() for v in f.values())
+            #]
+
+        stampa_flussi(cluster)
+
+        scelta = input("\nPremi INVIO per continuare o digita 'esci' per uscire: ").strip().lower()
+        if scelta == "esci":
+            break
+
+ricerca_flussi(flussi_finali)

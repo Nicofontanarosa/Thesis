@@ -121,6 +121,8 @@ flussi_rimossi = []
 flussi_vuoti_rimossi = []
 flussi_IPv6_rimossi = []
 
+# rimuovere flussi intermendi privi di handshake 11	TCP 192.168.80.96:63134 <-> 216.58.204.226:443 [proto: 91/TLS][IP: 126/Google][165 pkts/181934 bytes <-> 142 pkts/36253 bytes]
+
 with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
 
     for line in fin:

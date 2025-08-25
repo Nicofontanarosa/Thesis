@@ -11,6 +11,13 @@ import argparse
 # variabili globali
 PROTOCOLS = {"DNS", "TLS", "HTTP", "QUIC", "Unknown", "SMTP"}
 
+KEY = ("ip_sorgente", "ip_destinazione", "porta_destinazione", "proto_field", "protocollo_trasporto",
+       "sni", "tcp_fingerprint", "ja3s", "ja4", "alpn", "tls_versions", "tls_version", "cipher",
+       "ech", "url", "user_agent", "content_type", "dns_ip")
+
+CLUSTER_KEYS = ["ip_destinazione", "sni"]
+
+
 def clear_terminal():
     # pulizia terminale
     os.system('cls' if os.name == 'nt' else 'clear')

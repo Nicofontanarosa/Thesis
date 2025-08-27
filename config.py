@@ -8,28 +8,25 @@
 import os
 import argparse
 
-# variabili globali
+# protocols to keep
 PROTOCOLS = {"DNS", "TLS", "HTTP", "QUIC", "Unknown", "SMTP"}
-
-KEY = ("ip_sorgente", "ip_destinazione", "porta_destinazione", "proto_field", "protocollo_trasporto",
-       "sni", "tcp_fingerprint", "ja3s", "ja4", "alpn", "tls_versions", "tls_version", "cipher",
-       "ech", "url", "user_agent", "content_type", "dns_ip")
-
-CLUSTER_KEYS = ["ip_destinazione", "sni"]
+# key fields to keep in the output JSON
+KEY = ("ip_source", "ip_destination", "port_destination", "proto_field", "transport_protocol",
+    "sni", "tcp_fingerprint", "ja3s", "ja4", "alpn", "tls_versions", "tls_version", "cipher",
+    "ech", "url", "user_agent", "content_type", "dns_ip")
+# key to use for clustering flows
+CLUSTER_KEY = ["ip_destination", "sni"]
 
 
 def clear_terminal():
-    # pulizia terminale
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def get_args():
-    # creazione parser per argomenti da linea di comando
-    parser = argparse.ArgumentParser(description="Estrazione flussi da output nDPI")
-    parser.add_argument("input_file", help="File di input con i flussi nDPI")
-    parser.add_argument("-o", "--output", default="output_flussi.json", help="File JSON di output (default: output_flussi.json)")
+    parser = argparse.ArgumentParser(description="Extract nDPI flows from a pcapng file and save to JSON")
+    parser.add_argument("input_file", help="Input file in pcapng format")
+    parser.add_argument("-o", "--output", default="output_flows.json", help="Json output file (default: output_flows.json)")
     return parser.parse_args()
 
 def print_files(input_file, output_file):
-    # stampa file usati
-    print(f"\nFile di input: {input_file}")
-    print(f"File di output: {output_file}\n")
+    print(f"\nInput file: {input_file}")
+    print(f"Output file: {output_file}\n")

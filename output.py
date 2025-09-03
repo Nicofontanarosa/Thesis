@@ -159,6 +159,8 @@ def print_flows(final_flows):
     └── Packets Exchanged: {exchanged_packets}
                 """)
 
+    # MANCA OUTPUT ALTRI PROTOCOLLI (QUIC, SMTP, ...) -> CAMBIARE AFFINCHE L'OUTPUT PRENDA TUTTI I PARAMETRI DAI FLOW
+
     group_by_hostname(final_flows)
 
 # -------------------------------------------

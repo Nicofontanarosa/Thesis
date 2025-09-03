@@ -24,7 +24,7 @@ protocols = config.PROTOCOLS
 # reading all protocols present in the file
 all_protocols_in_file = set()
 # regex to extract protocol names
-proto_regex = re.compile(r"\[proto: [0-9.]+/(.+?)\]")
+proto_regex = re.compile(r"\[proto:\s*[0-9.]+/([^.\]]+)")
 # reading all IPs present in the file
 all_ip_in_file = set()
 # regex to extract IP names
@@ -35,7 +35,7 @@ with open(input_file, 'r') as fin:
     for line in fin:
         match_proto = proto_regex.search(line)
         if match_proto:
-            all_protocols_in_file.add(match_proto.group(1))
+            all_protocols_in_file.add(match_proto.group(1).strip())
         match_ip = ip_regex.search(line)
         if match_ip:
             all_ip_in_file.add(match_ip.group(1))
@@ -62,7 +62,9 @@ for ip in sorted(all_ip_in_file):
 
 # dynamic construction of the regex
 # regex to match protocols to keep
-pattern = re.compile(r"\[proto: \d+/(" + "|".join(protocols) + r")\]")
+# pattern = re.compile(r"\[proto: \d+/(" + "|".join(protocols) + r")\]")
+pattern = re.compile(r"\[proto:\s*(?:\d+(?:\.\d+)?/)?(" + "|".join(protocols) + r")[^\]]*\]")
+
 # regex to match any protocol
 pattern_general = re.compile(r"\[proto: [^\]]+\]")
 # regex to match lines with only the host IP

@@ -6,6 +6,7 @@ from collections import Counter
 import os
 import config
 from collections import defaultdict
+from rapidfuzz import fuzz, process
 
 # parsing args
 args = config.get_args()
@@ -86,79 +87,45 @@ def print_flows(final_flows):
     for flow in final_flows:
         proto = flow.get("proto_field", "").lower()
         if "http" in proto:
-            ip_source = flow.get("ip_source", "N/A")
-            port_source = flow.get("port_source", "N/A")
-            ip_destination = flow.get("ip_destination", "N/A")
-            port_destination = flow.get("port_destination", "N/A")
-            url = flow.get("url", "N/A")
-            sni = flow.get("sni", "N/A")
-            plain = flow.get("plain_text", "N/A")
-            exchanged_packets = flow.get("exchanged_packets", "N/A")
-            ip_field = flow.get("ip_field", "N/A")
-            similar_flows_count = flow.get("similar_flows_count", "N/A")
-
-            print(f"{ip_source}:{port_source} -> {ip_destination}:{port_destination} | "
-                f"URL: {url:40} | IP: {ip_field:25} | SNI: {sni:40} | Plain Text: {plain:25} | Packets Exchanged: {exchanged_packets}")
+            for k, v in flow.items():
+                print(f"  ├── {k}: {v}")
+            print("  └── END\n")
 
     # --- TLS FLOWS PRINT ---
     print("\nTLS flows detected:\n")
     for flow in final_flows:
         proto = flow.get("proto_field", "").lower()
         if "tls" in proto:
-            ip_source = flow.get("ip_source", "N/A")
-            port_source = flow.get("port_source", "N/A")
-            ip_destination = flow.get("ip_destination", "N/A")
-            port_destination = flow.get("port_destination", "N/A")
-            ja3s = flow.get("ja3s", "N/A")
-            ja4 = flow.get("ja4", "N/A")
-            sni = flow.get("sni", "N/A")
-            ech = flow.get("ech", "N/A")
-            exchanged_packets = flow.get("exchanged_packets", "N/A")
-            similar_flows_count = flow.get("similar_flows_count", "N/A")
-            ip_field = flow.get("ip_field", "N/A")
+            for k, v in flow.items():
+                print(f"  ├── {k}: {v}")
+            print("  └── END\n")
 
-            print(f"""{ip_source}:{port_source} -> {ip_destination}:{port_destination}
-    │
-    ├── JA3S: {ja3s}
-    ├── JA4: {ja4}
-    ├── SNI: {sni}
-    ├── ECH: {ech}
-    ├── IP: {ip_field}
-    ├── Similar Flows Count: {similar_flows_count}
-    └── Packets Exchanged: {exchanged_packets}
-                """)
+    # --- QUIC FLOWS PRINT ---
+    print("\nQUIC flows detected:\n")
+    for flow in final_flows:
+        proto = flow.get("proto_field", "").lower()
+        if "quic" in proto:
+            for k, v in flow.items():
+                print(f"  ├── {k}: {v}")
+            print("  └── END\n")
+
+    # --- SMTP FLOWS PRINT ---
+    print("\nSMTP flows detected:\n")
+    for flow in final_flows:
+        proto = flow.get("proto_field", "").lower()
+        if "smtp" in proto:
+            for k, v in flow.items():
+                print(f"  ├── {k}: {v}")
+            print("  └── END\n")
 
     # --- UNKNOWN FLOWS PRINT ---
     print("\nUnknown flows detected:\n")
     for flow in final_flows:
         proto = flow.get("proto_field", "").lower()
         if "unknown" in proto:
-            ip_source = flow.get("ip_source", "N/A")
-            port_source = flow.get("port_source", "N/A")
-            ip_destination = flow.get("ip_destination", "N/A")
-            port_destination = flow.get("port_destination", "N/A")
-            exchanged_packets = flow.get("exchanged_packets", "N/A")
-            ja3s = flow.get("ja3s", "N/A")
-            ja4 = flow.get("ja4", "N/A")
-            sni = flow.get("sni", "N/A")
-            ech = flow.get("ech", "N/A")
-            url = flow.get("url", "N/A")
-            ip_field = flow.get("ip_field", "N/A")
-            similar_flows_count = flow.get("similar_flows_count", "N/A")
-
-            print(f"""{ip_source}:{port_source} -> {ip_destination}:{port_destination}
-    │
-    ├── JA3S: {ja3s}
-    ├── JA4: {ja4}
-    ├── SNI: {sni}
-    ├── ECH: {ech}
-    ├── URL: {url}
-    ├── IP: {ip_field}
-    ├── Similar Flows Count: {similar_flows_count}
-    └── Packets Exchanged: {exchanged_packets}
-                """)
-
-    # MANCA OUTPUT ALTRI PROTOCOLLI (QUIC, SMTP, ...) -> CAMBIARE AFFINCHE L'OUTPUT PRENDA TUTTI I PARAMETRI DAI FLOW
+            for k, v in flow.items():
+                print(f"  ├── {k}: {v}")
+            print("  └── END\n")
 
     #group_by_hostname(final_flows)
 
@@ -389,7 +356,7 @@ def search_flows_cluster(final_flows):
         if not word:
             continue
         else:
-            cluster = search_flows(final_flows, word)
+            cluster = clustering(final_flows, word)
 
         print_flows(cluster)
 
@@ -398,5 +365,21 @@ def search_flows_cluster(final_flows):
             break
 
 # -------------------------------------------
+
+def clustering(final_flows, word):
+
+    #clusters = {word: [], "Other": []}
+    clusters = {word: []}
+
+    # soglia di similarità
+    THRESHOLD = 80
+
+    for domain in final_flows:
+        best_match, score, _ = process.extractOne(domain, keywords, scorer=fuzz.partial_ratio)
+        if best_match == word and score >= THRESHOLD:
+            clusters[word].append(domain)
+
+    return clusters
+
 
 search_flows_cluster(final_flows)

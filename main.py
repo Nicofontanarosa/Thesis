@@ -34,7 +34,7 @@ def run_pipeline(pcap_file, ndpi_path, output_dir):
     return final_output
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Pipeline to process PCAP via nDPI, filtro, clustering")
+    parser = argparse.ArgumentParser(description="Pipeline to process PCAP via nDPI, filter, clustering")
     parser.add_argument("-p", "--pcap", required=True, help="Input PCAP file")
     parser.add_argument("-n", "--ndpi", required=True, help="Path to nDPI folder")
     parser.add_argument("-o", "--output", required=True, help="Output folder for results")

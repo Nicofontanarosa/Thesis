@@ -10,13 +10,20 @@ import argparse
 
 # protocols to keep
 PROTOCOLS = {"DNS", "TLS", "HTTP", "QUIC", "Unknown", "SMTP"}
-# key fields to keep in the output JSON
+
+# Aggregation key: flows with identical values for all these fields are merged into a single entry
 KEY = ("ip_source", "ip_destination", "port_destination", "proto_field", "transport_protocol",
     "sni", "tcp_fingerprint", "ja3s", "ja4", "alpn", "tls_versions", "tls_version", "cipher",
     "ech", "url", "user_agent", "content_type", "dns_ip")
-# key to use for clustering flows
-CLUSTER_KEY = ["ip_destination", "sni"]
 
+# Minimum cosine similarity value: flows with similarity >= 10% are considered relevant
+THRESHOLD = 0.1  
+# Minimum length of character n-grams used in TF-IDF
+N_MIN = 2
+# Maximum length of character n-grams used in TF-IDF
+N_MAX = 3
+
+# -------------------------------------------
 
 def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -30,3 +37,5 @@ def get_args():
 def print_files(input_file, output_file):
     print(f"\nInput file: {input_file}")
     print(f"Output file: {output_file}\n")
+
+# -------------------------------------------

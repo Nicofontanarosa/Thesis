@@ -1,12 +1,10 @@
 
 import re
 import json
-import argparse
-from collections import Counter
-import os
+# -------------------------------------------
 import config
-from collections import defaultdict
-from rapidfuzz import fuzz, process
+import functions
+# -------------------------------------------
 
 # parsing args
 args = config.get_args()
@@ -16,123 +14,10 @@ output_file = args.output
 # print files used
 config.print_files(input_file, output_file)
 
-# protocols to keep
-protocols = config.PROTOCOLS
-
-# -------------------------------------------
-
-def group_by_hostname(flows):
-
-    groups = defaultdict(list)
-
-    for flow in flows:
-        if flow.get("proto_field", "").upper() == "5/DNS" or flow.get("ip_destination") in ip_host:
-            continue
-        hostname = flow.get("sni") or "SNI_non_disponibile"
-        ip_dest = flow.get("ip_destination")
-        if ip_dest:
-            port_dest = flow.get("port_destination")
-            groups[hostname].append(f"{ip_dest}:{port_dest}")
-        else: continue
-
-    # printing grouped results
-    for hostname, addresses in groups.items():
-        print(f"\nHostname/SNI: {hostname}")
-        print("Associated addresses:")
-        for addr in set(addresses):
-            print(f"  - {addr}")
-
-def protocols_summary(flows):
-
-    protocol_cou = Counter()
-
-    for flow in flows:
-        proto = flow.get("proto_field", "").lower()
-
-        # search for known protocols
-        matched = False
-        for p in protocols:
-            if p.lower() in proto:
-                protocol_cou[p] += 1
-                matched = True
-                break
-
-        # if no known protocol matched, count as Unknown
-        # 1 flow will be counted as Unknown for sure
-        if not matched:
-            protocol_cou["Unknown"] += 1
-
-    return protocol_cou
-
-def print_flows(final_flows):
-
-    # Clear del terminale all'apertura
-    config.clear_terminal()
-
-    # printing summary
-    summary = ", ".join([f"{v} flows {k}" for k, v in protocol_counts.items()])
-    print(f"\nDetected: {summary}")
-
-    # --- DNS FLOWS PRINT ---
-    print("\nDNS flows detected (SNI, Plain Text & IP):\n")
-    for flow in final_flows:
-        proto = flow.get("proto_field", "").lower()
-        if "dns" in proto:
-            for k, v in flow.items():
-                print(f"  ├── {k}: {v}")
-            print("  └── END\n")
-
-    # --- HTTP FLOWS PRINT ---
-    print("\nHTTP flows detected:\n")
-    for flow in final_flows:
-        proto = flow.get("proto_field", "").lower()
-        if "http" in proto:
-            for k, v in flow.items():
-                print(f"  ├── {k}: {v}")
-            print("  └── END\n")
-
-    # --- TLS FLOWS PRINT ---
-    print("\nTLS flows detected:\n")
-    for flow in final_flows:
-        proto = flow.get("proto_field", "").lower()
-        if "tls" in proto:
-            for k, v in flow.items():
-                print(f"  ├── {k}: {v}")
-            print("  └── END\n")
-
-    # --- QUIC FLOWS PRINT ---
-    print("\nQUIC flows detected:\n")
-    for flow in final_flows:
-        proto = flow.get("proto_field", "").lower()
-        if "quic" in proto:
-            for k, v in flow.items():
-                print(f"  ├── {k}: {v}")
-            print("  └── END\n")
-
-    # --- SMTP FLOWS PRINT ---
-    print("\nSMTP flows detected:\n")
-    for flow in final_flows:
-        proto = flow.get("proto_field", "").lower()
-        if "smtp" in proto:
-            for k, v in flow.items():
-                print(f"  ├── {k}: {v}")
-            print("  └── END\n")
-
-    # --- UNKNOWN FLOWS PRINT ---
-    print("\nUnknown flows detected:\n")
-    for flow in final_flows:
-        proto = flow.get("proto_field", "").lower()
-        if "unknown" in proto:
-            for k, v in flow.items():
-                print(f"  ├── {k}: {v}")
-            print("  └── END\n")
-
-    #group_by_hostname(final_flows)
-
 # -------------------------------------------
 
 flows = []
-counter = 1
+#counter = 1
 ip_host = []
 
 # 1° file open
@@ -142,14 +27,14 @@ with open(input_file, 'r') as f_in:
         if not line or not re.search(r"\d+\.\d+\.\d+\.\d+", line):
             continue
 
-        flow = {"id": counter, "raw line": line}
+        #flow = {"id": counter, "raw line": line}
+        flow = {}
 
         # Host
         match_ip_only = re.match(r"^\s*\d+\s+(\d+\.\d+\.\d+\.\d+)\s+\d+\s*$", line)
         if match_ip_only:
             flow["ip_host"] = match_ip_only.group(1)
             flows.append(flow)
-            counter += 1
             ip_host.append(match_ip_only.group(1))
             continue
 
@@ -275,9 +160,6 @@ with open(input_file, 'r') as f_in:
             flow["risk_info"] = match_risk_info.group(1)
 
         flows.append(flow)
-        counter += 1
-
-protocol_counts = protocols_summary(flows)
 
 # flows aggregation
 aggregated = {}
@@ -308,78 +190,4 @@ with open(output_file, 'w') as f_out:
 
 # -------------------------------------------
 
-def search_flows(flows, word):
-
-    results = []
-    visited = set()
-
-    # BFS
-    to_visit = []
-
-    # phase 1: find initial matches
-    for i, flow in enumerate(flows):
-        if flow.get("proto_field", "").upper() == "5/DNS":
-            continue
-        for v in flow.values():
-            if word.lower() in str(v).lower():
-                to_visit.append(i)
-
-    # phase 2: BFS on related attributes
-    while to_visit:
-        idx = to_visit.pop(0)
-        if idx in visited:
-            continue
-        visited.add(idx)
-        flow = flows[idx]
-        if flow.get("proto_field", "").upper() == "5/DNS":
-            continue
-        results.append(flow)
-
-        related = [flow.get(key) for key in config.CLUSTER_KEY]
-
-        # find other flows with related attributes
-        for j, other in enumerate(flows):
-            if j in visited:
-                continue
-            for key in related:
-                if key and key != "N/A" and key in other.values():
-                    to_visit.append(j)
-
-    return results
-
-def search_flows_cluster(final_flows):
-    
-    while True:
-        print_flows(final_flows)
-
-        word = input("\nSearch: ").strip()
-        if not word:
-            continue
-        else:
-            cluster = clustering(final_flows, word)
-
-        print_flows(cluster)
-
-        choice = input("\nPress ENTER to continue or type 'exit' to quit: ").strip().lower()
-        if choice == "exit":
-            break
-
-# -------------------------------------------
-
-def clustering(final_flows, word):
-
-    #clusters = {word: [], "Other": []}
-    clusters = {word: []}
-
-    # soglia di similarità
-    THRESHOLD = 80
-
-    for domain in final_flows:
-        best_match, score, _ = process.extractOne(domain, keywords, scorer=fuzz.partial_ratio)
-        if best_match == word and score >= THRESHOLD:
-            clusters[word].append(domain)
-
-    return clusters
-
-
-search_flows_cluster(final_flows)
+functions.search_flows(final_flows)

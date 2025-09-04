@@ -90,9 +90,6 @@ def search_flows(final_flows):
 
 def print_flows(final_flows):
 
-    # Clear del terminale all'apertura
-    config.clear_terminal()
-
     protocol_counts = protocols_summary(final_flows)
 
     # printing summary

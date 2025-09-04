@@ -5,7 +5,6 @@
 # /home/keiyukensei/nDPI/src/lib/ndpi_content_match.c.inc
 # nDPI/src/include/ndpi_typedefs.h
 
-import os
 import argparse
 
 # protocols to keep
@@ -24,9 +23,6 @@ N_MIN = 2
 N_MAX = 3
 
 # -------------------------------------------
-
-def clear_terminal():
-    os.system('cls' if os.name == 'nt' else 'clear')
 
 def get_args():
     parser = argparse.ArgumentParser(description="Extract nDPI flows from a pcapng file and save to JSON")

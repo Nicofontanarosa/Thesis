@@ -4,9 +4,6 @@ import json
 # my file
 import config
 
-# Clear of terminal at start
-config.clear_terminal()
-
 # parsing args
 args = config.get_args()
 input_file = args.input_file

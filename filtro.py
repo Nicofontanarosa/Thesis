@@ -93,7 +93,7 @@ bytes_pattern = re.compile(r"\[bytes ratio: [^\]]+\]")
 # regex to remove the fields [Encrypted] or [ClearText]                 [Encrypted]
 text_pattern = re.compile(r"\[(Encrypted|ClearText)\]")
 # regex to remove the fields [Safari] or [Chrome]                       [Safari]
-host_pattern = re.compile(r"\[(Safari|Chrome)\]")
+host_pattern = re.compile(r"\[(Safari|Chrome|Firefox)\]")
 # regex to remove the fields [Confidence: ...]                          [Confidence: DPI]
 confidence_pattern = re.compile(r"\[Confidence: [^]]+\]")
 # regex to remove the fields [FPC: ...]                                 [FPC: 126/Google, Confidence: IP address]                             

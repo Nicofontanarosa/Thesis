@@ -117,6 +117,36 @@ with open(input_file, 'r') as f_in:
         if match_cipher:
             flow["ech"] = match_cipher.group(1)
 
+        # TLS Info
+        match_alpn_neg = re.search(r"\[\(Negotiated\) ALPN:\s*([^\]]+)\]", line)
+        if match_alpn_neg:
+            flow["alpn_negotiated"] = match_alpn_neg.group(1)
+
+        match_servernames = re.search(r"\[ServerNames:\s*([^\]]+)\]", line)
+        if match_servernames:
+            flow["servernames"] = match_servernames.group(1)
+
+        match_issuer = re.search(r"\[Issuer:\s*([^\]]+)\]", line)
+        if match_issuer:
+            flow["issuer"] = match_issuer.group(1)
+
+        match_subject = re.search(r"\[Subject:\s*([^\]]+)\]", line)
+        if match_subject:
+            flow["subject"] = match_subject.group(1)
+
+        match_certificate = re.search(r"\[Certificate\s*([^\]]+)\]", line)
+        if match_certificate:
+            flow["certificate"] = match_certificate.group(1)
+
+        match_validity = re.search(r"\[Validity:\s*([^\]]+)\]", line)
+        if match_validity:
+            flow["validity"] = match_validity.group(1)
+
+        # QUIC Version
+        match_quic = re.search(r"\[QUIC ver:\s*([^\]]+)\]", line)
+        if match_quic:
+            flow["quic_version"] = match_quic.group(1)
+
         # Plain Text
         match_plain = re.search(r"\[PLAIN TEXT\s*\(([^)]+)\)\]", line)
         if match_plain:

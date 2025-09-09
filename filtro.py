@@ -72,6 +72,8 @@ ipv6_pattern = re.compile(r"\[[0-9a-fA-F]{0,4}(:[0-9a-fA-F]{0,4}){2,7}\]")
 plen_bins_empty_pattern = re.compile(r"\[Plen Bins: (0,){47}0\]")
 # regex to match incomplete TLS flows (no handshake)
 tls_incomplete_pattern = re.compile(r"^\s*\d+\s+(?:TCP|UDP)\s+\d+\.\d+\.\d+\.\d+:\d+\s+(?:<->|->|<-)\s+\d+\.\d+\.\d+\.\d+:\d+\s+\[proto:\s*\d+/(?:TLS|QUIC)\]\[IP:\s*[^\]]+\]\[(\d+)\s+pkts\s*[^\]]+\]")
+# regex to match lines without SNI/Hostname
+sni_pattern = re.compile(r"\[Hostname/SNI:\s*[^\]]+\]")
 
 # 1° version of the filtering script using regex
 #sed -E 's/\[Goodput ratio: [^]]+\]\[[^]]+\]//g; 
@@ -108,6 +110,9 @@ pktlen_pattern = re.compile(r"\[Pkt Len [^]]+\]")
 plen_bins_pattern = re.compile(r"\[Plen Bins: [^]]+\]")
 # regex to remove the fields [cat: ...]                                 [cat: Advertisement/101]
 cat_pattern = re.compile(r"\[cat: [^]]+\]")
+
+# -------------------------------------------
+
 # regex to remove the fields [Cipher: ...]                              [Cipher: TLS_AES_256_GCM_SHA384]
 cipher_pattern = re.compile(r"\[Cipher: [^]]+\]")
 # regex to remove the fields [ECH: ...]                                 [ECH: Encrypted Client Hello]
@@ -124,6 +129,7 @@ remove_flows = []
 empty_flows = []
 ipv6_flows = []
 incomplete_tls_flows = []
+no_sni_flows = []
 
 # 2° - 3° file open
 with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
@@ -171,6 +177,10 @@ with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
                 incomplete_tls_flows.append(line)
                 continue
 
+            if not sni_pattern.search(clean_line):
+                no_sni_flows.append(line)
+                continue
+
             # add good flows
             keep_flows.append(line)
             fout.write(clean_line)
@@ -180,13 +190,14 @@ with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
             remove_flows.append(line)
 
 # Print summary
-print(f"\nFlows read: {len(keep_flows) + len(remove_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows)}")
+print(f"\nFlows read: {len(keep_flows) + len(remove_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows) + len(no_sni_flows)}")
 print(f"Flows kept: {len(keep_flows)}")
-print(f"Flows removed: {len(remove_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows)}")
+print(f"Flows removed: {len(remove_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows) + len(no_sni_flows)}")
 print(f"  ├── General flows removed: {len(remove_flows)}")
 print(f"  ├── Empty flows removed: {len(empty_flows)}")
 print(f"  ├── IPv6 flows removed: {len(ipv6_flows)}")
 print(f"  └── Incomplete TLS flows removed: {len(incomplete_tls_flows)}")
+print(f"  └── No SNI flows removed: {len(no_sni_flows)}")
 
 # ---------------------------------------------------
 # Print removed flows (with categories)
@@ -210,3 +221,10 @@ if incomplete_tls_flows:
     print("\n--- Incomplete TLS flows removed ---")
     for f in incomplete_tls_flows:
         print(f.strip())
+
+if no_sni_flows:
+    print("\n--- No SNI flows removed ---")
+    for f in no_sni_flows:
+        print(f.strip())
+        
+# ---------------------------------------------------

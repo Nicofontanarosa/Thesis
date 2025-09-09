@@ -206,80 +206,21 @@ for flow in flows:
 
 final_flows = list(aggregated.values())
 
+# FILTRO SNI > 4 livelli
+filtered_flows = []
+for flow in final_flows:
+    sni = flow.get("sni", "")
+    if not sni or len(sni.split(".")) <= 4:
+        filtered_flows.append(flow)
+    else:
+        print(f"[RIMOSSO] SNI con più di 4 livelli: {sni}")
+
+final_flows = filtered_flows
+
 with open(output_file, 'w') as f_out:
     json.dump(final_flows, f_out, indent=4)
 
 # -------------------------------------------
 
-functions.search_flows(final_flows)
-
-
-
-#  ├── app.adjust.com                                                                -> Advertising
-#  ├── firebase-settings.crashlytics.com                                             -> Crashlytics
-#  ├── firebaselogging-pa.googleapis.com                                             -> Googleapis
-#  ├── graph.facebook.com                                                            -> Facebook
-#  ├── aggregator.service.usercentrics.eu | api.usercentrics.eu | app.usercentrics.eu
-#  ├── api.glovoapp.com
-#  ├── glovo.dhmedia.io
-#  ├── cluster-active-gate-lb.dynatrace.stackit.zone
-#  ├── live.ravelin.click
-#  ├── nativesdks.mparticle.com | identity.mparticle.com | config2.mparticle.com
-#  ├── perseus-productanalytics.deliveryhero.net
-#  ├── sdk.fra-01.braze.eu
-
-# DA FARE: elimina i www noti tipo google, youtube etc ...
-# e le cdn con più di 4 ( > ) sottodomini ed ecd note tipo *.cloudfront.net, *.akamai.net, *.cloudflare.net, e domini generici "flussi di sistema OS SDK" tipo youtube.com, google.com
-# facebook etc .....
-
-#  ├── android.apis.google.com |
-
-#  ├── app-measurement.com | region1.app-measurement.com
-
-#  ├── gz0.googleusercontent.com | lh3.googleusercontent.com
-
-#  ├── i.ytimg.com
-
-#  ├── people-pa.googleapis.com | semanticlocation-pa.googleapis.com | notifications-pa.googleapis.com |
-#   mobilemaps.googleapis.com | mobilemaps-pa-gz.googleapis.com | geomobileservices-pa.googleapis.com | geller-pa.googleapis.com |
-#   feedback-pa.googleapis.com | android.googleapis.com | youtubei.googleapis.com
-
-#  ├── r4---sn-hpa7znz6.googlevideo.com
-#  ├── s.youtube.com
-#  ├── sgepodownload.mediatek.com
-
-# -------------------------------------------
-
-
-#  android.googleapis.com | feedback-pa.googleapis.com | geller-pa.googleapis.com | mobilemaps-pa-gz.googleapis.com | 
-#  mobilemaps.googleapis.com | ogads-pa.googleapis.com
-
-# se prendessi i flussi comuni avrei cmq dei falsi positivi,
-# android.googleapis.com | feedback-pa.googleapis.com | geller-pa.googleapis.com | mobilemaps-pa-gz.googleapis.com | mobilemaps.googleapis.com
-
-# -------------------------------------------
-
-# android.googleapis.com | drivefrontend-pa.googleapis.com | feedback-pa.googleapis.com | firebaselogging.googleapis.com | geller-pa.googleapis.com
-# notifications-pa.googleapis.com | op-de.storage.googleapis.com | or-se.storage.googleapis.com | play.googleapis.com
-# signaler-pa.googleapis.com
-
-# dsadata.intel.com
-# encrypted-tbn0.gstatic.com | encrypted-tbn2.gstatic.com | t0.gstatic.com | t2.gstatic.com
-# fonts.gstatic.com
-# gz0.googleusercontent.com | lh3.googleusercontent.com
-# rr1---sn-uv2pm-ugol.offline-maps.gvt1.com | rr2---sn-uv2pm-ugol.offline-maps.gvt1.com | rr4---sn-hpa7kn76.offline-maps.gvt1.com
-
-# -------------------------------------------
-
-# android.googleapis.com | feedback-pa.googleapis.com | mobilemaps-pa-gz.googleapis.com
-# ├── op-de.storage.googleapis.com
-# ├── or-se.storage.googleapis.com
-# ├── os-de.storage.googleapis.com
-
-# gz0.googleusercontent.com | lh3.googleusercontent.com
-# ├── rr1---sn-hpa7zn6s.offline-maps.gvt1.com
-# ├── rr1---sn-uv2pm-ugol.offline-maps.gvt1.com
-# ├── rr2---sn-uv2pm-ugol.offline-maps.gvt1.com
-
-
-
+functions.print_flows(final_flows)
+functions.clean_flows(final_flows)

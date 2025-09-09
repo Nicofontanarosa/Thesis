@@ -664,25 +664,9 @@
         "port_source": "55099",
         "ip_destination": "10.131.200.79",
         "port_destination": "53",
-        "similar_flows_count": 1,
+        "similar_flows_count": 2,
         "exchanged_packets": [
-            "6 <-> 6"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "216.58.204.228",
-        "dns_id": "0x2102",
-        "plain_text": "gstatic",
-        "sni": "t2.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "52238",
-        "ip_destination": "10.131.200.79",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
+            "6 <-> 6",
             "4 <-> 4"
         ]
     },

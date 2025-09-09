@@ -3,6 +3,8 @@
 from collections import Counter
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import json
+import re
 # -------------------------------------------
 import config
 
@@ -110,25 +112,6 @@ def print_flows(final_flows):
     summary = ", ".join([f"{v} flows {k}" for k, v in protocol_counts.items()])
     print(f"\nDetected: {summary}")
 
-    # --- ALL SNIs SEEN (by levels) ---
-    sni_list = [flow.get("sni") for flow in final_flows if "sni" in flow and flow["sni"]]
-    unique_sni = sorted(set(sni_list))
-
-    # Organized by levels
-    levels = {}
-    for sni in unique_sni:
-        parts = sni.split(".")
-        parts_rev = list(reversed(parts))
-        for i in range(1, len(parts_rev) + 1):
-            dom = ".".join(reversed(parts_rev[:i]))
-            levels.setdefault(i, set()).add(dom)
-
-    print("\nAll SNIs seen (by domain levels):")
-    for level in sorted(levels.keys()):
-        print(f"\n--- Level {level} ---")
-        for dom in sorted(levels[level]):
-            print(f"  ├── \033[1;32m{dom}\033[0m")
-
     # --- DNS FLOWS PRINT ---
     print("\nDNS flows detected:\n")
     print_flow("dns", final_flows)
@@ -174,5 +157,81 @@ def print_rules(flows, protocol_name):
     rule = f"{host_entries}@{protocol_name.capitalize()}"
 
     print(f"\033[1m{rule}\033[0m")
+
+# -------------------------------------------
+
+def clean_flows(final_flows, dataset_file="dataset.json"):
+
+    # --- ALL SNIs SEEN (by levels) ---
+    sni_list = [flow.get("sni") for flow in final_flows if "sni" in flow and flow["sni"]]
+    unique_sni = sorted(set(sni_list))
+
+    # Organized by levels
+    levels = {}
+    for sni in unique_sni:
+        parts = sni.split(".")
+        parts_rev = list(reversed(parts))
+        for i in range(1, len(parts_rev) + 1):
+            dom = ".".join(reversed(parts_rev[:i]))
+            levels.setdefault(i, set()).add(dom)
+
+    print("\nAll SNIs seen (by domain levels):")
+    for level in sorted(levels.keys()):
+        print(f"\n--- Level {level} ---")
+        for dom in sorted(levels[level]):
+            print(f"  ├── \033[1;32m{dom}\033[0m")
+
+# carico dataset.json
+    with open(dataset_file, "r") as f:
+        dataset = json.load(f)
+
+    dataset_domains = {d.lower() for d in dataset.get("domains", [])}
+
+    cleaned_flows = []
+    cleaned_snis = set()
+    unchanged_snis = set()
+
+    for flow in final_flows:
+        sni = flow.get("sni", "")
+        if not sni:
+            continue
+
+        sni_lower = sni.lower()
+
+        # caso 1: rimuovere se esatto
+        if sni_lower in dataset_domains:
+            continue
+
+        # caso 2: se finisce con un dominio noto → tronca il dominio
+        modified = False
+        for d in dataset_domains:
+            if sni_lower.endswith("." + d):
+                prefix = sni_lower[: -(len(d) + 1)]
+                if prefix:
+                    cleaned_snis.add(prefix)
+                    modified = True
+                break
+
+        # caso 3: SNI non modificato
+        if not modified:
+            cleaned_snis.add(sni_lower)
+            unchanged_snis.add(sni_lower)
+
+    # ricrea i flussi puliti con SNI validi
+    for flow in final_flows:
+        sni = flow.get("sni", "")
+        if sni and sni.lower() in cleaned_snis:
+            cleaned_flows.append(flow)
+
+    # stampa SNIs modificati
+    print("\nSNIs rimasti dopo clean_flows:")
+    for s in sorted(cleaned_snis - unchanged_snis):
+        print(f"  ├── \033[1;32m{s}\033[0m (modificato)")
+
+    # stampa SNIs non modificati
+    if unchanged_snis:
+        print("\nSNIs non modificati:")
+        for s in sorted(unchanged_snis):
+            print(f"  ├── \033[1;34m{s}\033[0m")
 
 # -------------------------------------------

@@ -438,25 +438,9 @@
         "port_source": "49665",
         "ip_destination": "10.131.200.79",
         "port_destination": "53",
-        "similar_flows_count": 1,
+        "similar_flows_count": 2,
         "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "142.250.180.187",
-        "dns_id": "0xf269",
-        "plain_text": "storage",
-        "sni": "or-se.storage.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "52899",
-        "ip_destination": "10.131.200.79",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
+            "1 <-> 1",
             "1 <-> 1"
         ]
     },
@@ -472,25 +456,9 @@
         "port_source": "55885",
         "ip_destination": "10.131.200.79",
         "port_destination": "53",
-        "similar_flows_count": 1,
+        "similar_flows_count": 2,
         "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "142.250.180.155",
-        "dns_id": "0x48bd",
-        "plain_text": "storage",
-        "sni": "os-de.storage.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "59682",
-        "ip_destination": "10.131.200.79",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
+            "1 <-> 1",
             "1 <-> 1"
         ]
     }

@@ -45,20 +45,6 @@
     {
         "ip_field": "126/Google",
         "transport_protocol": "UDP",
-        "proto_field": "188/QUIC",
-        "plain_text": "WkFyhy",
-        "ip_source": "10.131.200.96",
-        "port_source": "61922",
-        "ip_destination": "216.239.38.135",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "2606 <-> 2588"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
         "proto_field": "188.239/QUIC.GoogleServices",
         "tls_version": "TLSv1.3",
         "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
@@ -376,20 +362,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "11 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "risk": "** Unidirectional Traffic **",
-        "risk_score": "10",
-        "risk_info": "No client to server traffic",
-        "similar_flows_count": 3,
-        "exchanged_packets": [
-            "9 <-> 0",
-            "9 <-> 0",
-            "9 <-> 0"
         ]
     },
     {

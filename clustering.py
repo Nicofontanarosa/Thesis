@@ -83,16 +83,6 @@ with open(input_file, 'r') as f_in:
         if match_status:
             flow["status_code"] = match_status.group(1)
 
-        # ALPN
-        match_alpn = re.search(r"\[\(Advertised\) ALPNs:\s*([^\]]+)\]", line)
-        if match_alpn:
-            flow["alpn"] = match_alpn.group(1)
-
-        # TLS Versions
-        match_tls = re.search(r"\[TLS Supported Versions:\s*([^\]]+)\]", line)
-        if match_tls:
-            flow["tls_versions"] = match_tls.group(1)
-
         # TLS Version used
         match_tls_version = re.search(r"\[(TLSv[0-9.]+)\]", line)
         if match_tls_version:
@@ -107,20 +97,7 @@ with open(input_file, 'r') as f_in:
         if match_ja4:
             flow["ja4"] = match_ja4.group(1)
 
-        # Cipher
-        match_cipher = re.search(r"\[Cipher:\s*([^\]]+)\]", line)
-        if match_cipher:
-            flow["cipher"] = match_cipher.group(1)
-
-        # ECH Encrypted Client Hello
-        match_cipher = re.search(r"\[ECH:\s*([^\]]+)\]", line)
-        if match_cipher:
-            flow["ech"] = match_cipher.group(1)
-
         # TLS Info
-        match_alpn_neg = re.search(r"\[\(Negotiated\) ALPN:\s*([^\]]+)\]", line)
-        if match_alpn_neg:
-            flow["alpn_negotiated"] = match_alpn_neg.group(1)
 
         match_servernames = re.search(r"\[ServerNames:\s*([^\]]+)\]", line)
         if match_servernames:
@@ -202,8 +179,22 @@ for flow in flows:
     flow.pop("pkts_source", None)
     flow.pop("pkts_destination", None)
 
-    # create key for aggregation
+    proto = flow.get("proto_field", "").lower()
+
     key = tuple(flow.get(k) for k in config.KEY)
+    # create key for aggregation
+    if "tls" in proto:
+        key = tuple(flow.get(k) for k in config.KEYS_BY_PROTOCOL["TLS"])
+    elif "http" in proto:
+        key = tuple(flow.get(k) for k in config.KEYS_BY_PROTOCOL["HTTP"])
+    elif "dns" in proto:
+        key = tuple(flow.get(k) for k in config.KEYS_BY_PROTOCOL["DNS"])
+    elif "quic" in proto:    
+        key = tuple(flow.get(k) for k in config.KEYS_BY_PROTOCOL["QUIC"])
+    elif "smtp" in proto:
+        key = tuple(flow.get(k) for k in config.KEYS_BY_PROTOCOL["SMTP"])
+    else:
+        key = tuple(flow.get(k) for k in config.KEYS_BY_PROTOCOL["Unknown"])
 
     if key not in aggregated:
         flow["similar_flows_count"] = 1
@@ -221,3 +212,74 @@ with open(output_file, 'w') as f_out:
 # -------------------------------------------
 
 functions.search_flows(final_flows)
+
+
+
+#  ├── app.adjust.com                                                                -> Advertising
+#  ├── firebase-settings.crashlytics.com                                             -> Crashlytics
+#  ├── firebaselogging-pa.googleapis.com                                             -> Googleapis
+#  ├── graph.facebook.com                                                            -> Facebook
+#  ├── aggregator.service.usercentrics.eu | api.usercentrics.eu | app.usercentrics.eu
+#  ├── api.glovoapp.com
+#  ├── glovo.dhmedia.io
+#  ├── cluster-active-gate-lb.dynatrace.stackit.zone
+#  ├── live.ravelin.click
+#  ├── nativesdks.mparticle.com | identity.mparticle.com | config2.mparticle.com
+#  ├── perseus-productanalytics.deliveryhero.net
+#  ├── sdk.fra-01.braze.eu
+
+# DA FARE: elimina i www noti tipo google, youtube etc ...
+# e le cdn con più di 4 ( > ) sottodomini ed ecd note tipo *.cloudfront.net, *.akamai.net, *.cloudflare.net, e domini generici "flussi di sistema OS SDK" tipo youtube.com, google.com
+# facebook etc .....
+
+#  ├── android.apis.google.com |
+
+#  ├── app-measurement.com | region1.app-measurement.com
+
+#  ├── gz0.googleusercontent.com | lh3.googleusercontent.com
+
+#  ├── i.ytimg.com
+
+#  ├── people-pa.googleapis.com | semanticlocation-pa.googleapis.com | notifications-pa.googleapis.com |
+#   mobilemaps.googleapis.com | mobilemaps-pa-gz.googleapis.com | geomobileservices-pa.googleapis.com | geller-pa.googleapis.com |
+#   feedback-pa.googleapis.com | android.googleapis.com | youtubei.googleapis.com
+
+#  ├── r4---sn-hpa7znz6.googlevideo.com
+#  ├── s.youtube.com
+#  ├── sgepodownload.mediatek.com
+
+# -------------------------------------------
+
+
+#  android.googleapis.com | feedback-pa.googleapis.com | geller-pa.googleapis.com | mobilemaps-pa-gz.googleapis.com | 
+#  mobilemaps.googleapis.com | ogads-pa.googleapis.com
+
+# se prendessi i flussi comuni avrei cmq dei falsi positivi,
+# android.googleapis.com | feedback-pa.googleapis.com | geller-pa.googleapis.com | mobilemaps-pa-gz.googleapis.com | mobilemaps.googleapis.com
+
+# -------------------------------------------
+
+# android.googleapis.com | drivefrontend-pa.googleapis.com | feedback-pa.googleapis.com | firebaselogging.googleapis.com | geller-pa.googleapis.com
+# notifications-pa.googleapis.com | op-de.storage.googleapis.com | or-se.storage.googleapis.com | play.googleapis.com
+# signaler-pa.googleapis.com
+
+# dsadata.intel.com
+# encrypted-tbn0.gstatic.com | encrypted-tbn2.gstatic.com | t0.gstatic.com | t2.gstatic.com
+# fonts.gstatic.com
+# gz0.googleusercontent.com | lh3.googleusercontent.com
+# rr1---sn-uv2pm-ugol.offline-maps.gvt1.com | rr2---sn-uv2pm-ugol.offline-maps.gvt1.com | rr4---sn-hpa7kn76.offline-maps.gvt1.com
+
+# -------------------------------------------
+
+# android.googleapis.com | feedback-pa.googleapis.com | mobilemaps-pa-gz.googleapis.com
+# ├── op-de.storage.googleapis.com
+# ├── or-se.storage.googleapis.com
+# ├── os-de.storage.googleapis.com
+
+# gz0.googleusercontent.com | lh3.googleusercontent.com
+# ├── rr1---sn-hpa7zn6s.offline-maps.gvt1.com
+# ├── rr1---sn-uv2pm-ugol.offline-maps.gvt1.com
+# ├── rr2---sn-uv2pm-ugol.offline-maps.gvt1.com
+
+
+

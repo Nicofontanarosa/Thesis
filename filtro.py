@@ -108,6 +108,14 @@ pktlen_pattern = re.compile(r"\[Pkt Len [^]]+\]")
 plen_bins_pattern = re.compile(r"\[Plen Bins: [^]]+\]")
 # regex to remove the fields [cat: ...]                                 [cat: Advertisement/101]
 cat_pattern = re.compile(r"\[cat: [^]]+\]")
+# regex to remove the fields [Cipher: ...]                              [Cipher: TLS_AES_256_GCM_SHA384]
+cipher_pattern = re.compile(r"\[Cipher: [^]]+\]")
+# regex to remove the fields [ECH: ...]                                 [ECH: Encrypted Client Hello]
+ech_pattern = re.compile(r"\[ECH: [^]]+\]")
+# regex to remove the fields [(Negotiated) ALPN: ...]                   [(Negotiated) ALPNs: h2,http/1.1]
+alpn_pattern = re.compile(r"\[\((Negotiated|Advertised)\) (ALPNs|ALPN): [^]]+\]")
+# regex to remove the fields [TLS Supported Versions: ...]              [TLS Supported Versions: TLSv1.3,TLSv1.2]
+tls_versions_pattern = re.compile(r"\[TLS Supported Versions: [^]]+\]")
 
 # -------------------------------------------
 
@@ -153,6 +161,10 @@ with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
             clean_line = plen_bins_pattern.sub("", clean_line)
             clean_line = cat_pattern.sub("", clean_line)
             clean_line = host_pattern.sub("", clean_line)
+            clean_line = cipher_pattern.sub("", clean_line)
+            clean_line = ech_pattern.sub("", clean_line)
+            clean_line = alpn_pattern.sub("", clean_line)
+            clean_line = tls_versions_pattern.sub("", clean_line)
 
             # check for incomplete TLS flows
             if tls_incomplete_pattern.fullmatch(clean_line.strip()):
@@ -175,3 +187,26 @@ print(f"  ├── General flows removed: {len(remove_flows)}")
 print(f"  ├── Empty flows removed: {len(empty_flows)}")
 print(f"  ├── IPv6 flows removed: {len(ipv6_flows)}")
 print(f"  └── Incomplete TLS flows removed: {len(incomplete_tls_flows)}")
+
+# ---------------------------------------------------
+# Print removed flows (with categories)
+# ---------------------------------------------------
+if remove_flows:
+    print("\n--- General flows removed ---")
+    for f in remove_flows:
+        print(f.strip())
+
+if empty_flows:
+    print("\n--- Empty flows removed ---")
+    for f in empty_flows:
+        print(f.strip())
+
+if ipv6_flows:
+    print("\n--- IPv6 flows removed ---")
+    for f in ipv6_flows:
+        print(f.strip())
+
+if incomplete_tls_flows:
+    print("\n--- Incomplete TLS flows removed ---")
+    for f in incomplete_tls_flows:
+        print(f.strip())

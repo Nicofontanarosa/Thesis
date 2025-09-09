@@ -1,9 +1,0 @@
-	1	 10.131.200.96            	 6      
-	6	UDP 10.131.200.96:61781 <-> 216.239.38.135:443 [proto: 188/QUIC][IP: 126/Google][2327 pkts/2535737 bytes <-> 1746 pkts/1640086 bytes][PLAIN TEXT (bwAHTf)]
-	45	TCP 10.131.200.96:52030 <-> 83.224.69.211:443 [proto: 91/TLS][IP: 0/Unknown][6 pkts/1385 bytes <-> 6 pkts/1463 bytes][Hostname/SNI: dsadata.intel.com][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][Risk: ** TLS (probably) Not Carrying HTTPS **][Risk Score: 10][Risk Info: No ALPN][TCP Fingerprint: 2_128_65535_6bb88f5575fd/Windows][TLSv1.3][JA4: t13d201200_2b729b4bf6f3_89322cc15493][JA3S: 2253c82f03b621c5144709b393fde2c9][Firefox][Cipher: TLS_AES_256_GCM_SHA384]
-	47	UDP 10.131.200.96:55257 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][7 pkts/645 bytes <-> 6 pkts/992 bytes][Hostname/SNI: notifications-pa.googleapis.com][216.58.204.138][DNS Id: 0x164f][PLAIN TEXT (notifications)]
-	48	UDP 10.131.200.96:55099 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][6 pkts/546 bytes <-> 6 pkts/1010 bytes][Hostname/SNI: t0.gstatic.com][216.58.204.228][DNS Id: 0x1ae7][PLAIN TEXT (gstatic)]
-	50	UDP 10.131.200.96:52238 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][4 pkts/333 bytes <-> 4 pkts/749 bytes][Hostname/SNI: t2.gstatic.com][216.58.204.228][DNS Id: 0x2102][PLAIN TEXT (gstatic)]
-	52	UDP 10.131.200.96:58879 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][4 pkts/339 bytes <-> 3 pkts/504 bytes][Hostname/SNI: encrypted-tbn2.gstatic.com][142.250.180.174][DNS Id: 0xf33b][PLAIN TEXT (encrypted)]
-	56	UDP 10.131.200.96:57773 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][2 pkts/180 bytes <-> 1 pkts/202 bytes][Hostname/SNI: firebaselogging.googleapis.com][216.58.205.42][DNS Id: 0xb068][PLAIN TEXT (firebaselogging)]
-	65	UDP 10.131.200.96:55885 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][1 pkts/77 bytes <-> 1 pkts/93 bytes][Hostname/SNI: fonts.gstatic.com][142.250.180.131][DNS Id: 0xc35a][PLAIN TEXT (gstatic)]

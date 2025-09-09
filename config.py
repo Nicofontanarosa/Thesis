@@ -11,9 +11,17 @@ import argparse
 PROTOCOLS = {"DNS", "TLS", "HTTP", "QUIC", "Unknown", "SMTP"}
 
 # Aggregation key: flows with identical values for all these fields are merged into a single entry
+KEYS_BY_PROTOCOL = {
+    "DNS": ["ip_source", "dns_ip"],
+    "TLS": ["ip_source", "tcp_fingerprint", "sni", "ja3s", "ja4", "tls_version"],
+    "HTTP": ["ip_source", "tcp_fingerprint", "url", "user_agent", "content_type"],
+    "QUIC": ["ip_source", "tcp_fingerprint", "sni", "ja3s", "ja4", "quic_version"],
+    "Unknown": ["ip_source", "tcp_fingerprint", "sni", "ja3s", "ja4", "url", "user_agent", "content_type"],
+    "SMTP": ["ip_source", "tcp_fingerprint"]
+}
+
 KEY = ("ip_source", "ip_destination", "port_destination", "proto_field", "transport_protocol",
-    "sni", "tcp_fingerprint", "ja3s", "ja4", "alpn", "tls_versions", "tls_version", "cipher",
-    "ech", "url", "user_agent", "content_type", "dns_ip")
+    "sni", "tcp_fingerprint", "ja3s", "ja4", "tls_version", "quic_version", "url", "user_agent", "content_type", "dns_ip")
 
 # Minimum cosine similarity value: flows with similarity >= 10% are considered relevant
 THRESHOLD = 0.1  

@@ -110,12 +110,24 @@ def print_flows(final_flows):
     summary = ", ".join([f"{v} flows {k}" for k, v in protocol_counts.items()])
     print(f"\nDetected: {summary}")
 
-    # --- ALL SNIs SEEN ---
+    # --- ALL SNIs SEEN (by levels) ---
     sni_list = [flow.get("sni") for flow in final_flows if "sni" in flow and flow["sni"]]
     unique_sni = sorted(set(sni_list))
-    print("\nAll SNIs seen:")
+
+    # Organized by levels
+    levels = {}
     for sni in unique_sni:
-        print(f"  ├── \033[1;32m{sni}\033[0m")
+        parts = sni.split(".")
+        parts_rev = list(reversed(parts))
+        for i in range(1, len(parts_rev) + 1):
+            dom = ".".join(reversed(parts_rev[:i]))
+            levels.setdefault(i, set()).add(dom)
+
+    print("\nAll SNIs seen (by domain levels):")
+    for level in sorted(levels.keys()):
+        print(f"\n--- Level {level} ---")
+        for dom in sorted(levels[level]):
+            print(f"  ├── \033[1;32m{dom}\033[0m")
 
     # --- DNS FLOWS PRINT ---
     print("\nDNS flows detected:\n")

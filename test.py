@@ -7,3 +7,5 @@ prompt = f"Dimmi solo i nomi dei processi che generano questi domini: {', '.join
 
 response = llm(prompt, max_tokens=50)
 print(response['choices'][0]['text'])
+
+PROVA SINCO

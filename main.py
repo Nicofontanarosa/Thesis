@@ -34,15 +34,18 @@ def run_pipeline(pcap_file, ndpi_path, output_dir):
             subprocess.run(ndpi_cmd, stdout=f_out, check=True)
         print(f"nDPI JSON saved to: {json_ndpi}")
 
+    # Determine python command depending on OS
+    python_cmd = "py" if os.name == "nt" else "python3"
+
     # Step 2: filter.py
     filtered_json = os.path.join(output_dir, os.path.basename(json_ndpi).replace(".json", "_filtered.json"))
-    filter_cmd = ["python3", "filter.py", json_ndpi, "-o", filtered_json]
+    filter_cmd = [python_cmd, "filter.py", json_ndpi, "-o", filtered_json]
     print(f"\nRunning filter.py: {' '.join(filter_cmd)}")
     subprocess.run(filter_cmd, check=True)
 
     # Step 3: flow_processor.py
     final_output = os.path.join(output_dir, os.path.basename(json_ndpi).replace(".json", "_output.json"))
-    flow_processor_cmd = ["python3", "flow_processor.py", filtered_json, "-o", final_output]
+    flow_processor_cmd = [python_cmd, "flow_processor.py", filtered_json, "-o", final_output]
     print(f"\nRunning flow_processor.py: {' '.join(flow_processor_cmd)}")
     subprocess.run(flow_processor_cmd, check=True)
 

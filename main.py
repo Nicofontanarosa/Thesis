@@ -22,7 +22,7 @@ def run_pipeline(pcap_file, ndpi_path, output_dir):
     json_ndpi = os.path.join(output_dir, os.path.basename(pcap_file).replace(".pcapng", ".json"))
 
     # Check if on Windows ( you can delete this part if you have nDPI installed on Windows)
-    if os.name == 'nt':
+    if ndpi_path == 'None':
         if not os.path.exists(json_ndpi):
             raise FileNotFoundError(f"JSON file from nDPI not found: {json_ndpi}")
         else:

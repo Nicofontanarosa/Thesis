@@ -1,0 +1,1 @@
+host:"api.telegra.ph",host:"app.adjust.com",host:"app.adjust.io",host:"assets.remerge.io",host:"fuck.rkn",host:"us8.remerge.events"@Unknown

@@ -1,0 +1,5 @@
+host:"config2.mparticle.com",host:"identity.mparticle.com",host:"nativesdks.mparticle.com"@Domains by proxy, llc
+host:"api.glovoapp.com"@Glovoapp23 s.a.
+host:"live.ravelin.click"@Ravelin technology
+host:"perseus-productanalytics.deliveryhero.net"@Delivery hero se
+host:"aggregator.service.usercentrics.eu",host:"api.usercentrics.eu",host:"app.usercentrics.eu",host:"cluster-active-gate-lb.dynatrace.stackit.zone",host:"glovo.dhmedia.io",host:"sdk.fra-01.braze.eu"@Unknown

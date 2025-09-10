@@ -1,0 +1,2 @@
+host:"ptisupporterteam.xyz",host:"ptitunnel.ptisupporterteam.xyz"@Unknown
+host:"client.wns.windows.com"@Microsoft corporation

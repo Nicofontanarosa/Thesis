@@ -1,0 +1,3 @@
+host:"crashlyticsreports-pa.googleapis.com"@Unknown
+host:"api.phantom.avira-vpn.com",host:"de.phantom.avira-vpn.com"@Gen digital, inc
+host:"www.recaptcha.net"@Google llc

@@ -1,0 +1,3 @@
+host:"free-de-v4.hideservers.net"@Domains by proxy, llc
+host:"api.hide.me",host:"www.msftncsi.com"@Unknown
+host:"displaycatalog.mp.microsoft.com"@Microsoft corporation

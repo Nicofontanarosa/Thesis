@@ -1,12 +1,5 @@
 [
     {
-        "ip_host": "10.131.200.96",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "N/A <-> N/A"
-        ]
-    },
-    {
         "ip_field": "126/Google",
         "transport_protocol": "UDP",
         "proto_field": "188.239/QUIC.GoogleServices",
@@ -305,22 +298,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "5 <-> 5"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "ip_source": "74.125.143.188",
-        "port_source": "5228",
-        "ip_destination": "10.131.200.96",
-        "port_destination": "61692",
-        "risk": "** Known Proto on Non Std Port **",
-        "risk_score": "50",
-        "risk_info": "Expected on port 443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "2 <-> 1"
         ]
     },
     {

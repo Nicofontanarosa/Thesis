@@ -109,7 +109,7 @@ def print_flows(final_flows):
 
 # -------------------------------------------
 
-def generate_rules(final_flows, dataset_file="dataset.json", datasetTLD_file="datasetTLD.json"):
+def generate_rules(final_flows, output_file, dataset_file="dataset.json", datasetTLD_file="datasetTLD.json"):
 
     # load the main dataset of known domains
     with open(dataset_file, "r") as f:
@@ -118,7 +118,7 @@ def generate_rules(final_flows, dataset_file="dataset.json", datasetTLD_file="da
     # sort the dataset by length in descending order to match longer suffixes first
     sorted_dataset = sorted(dataset_domains, key=len, reverse=True)
 
-    # load the TLD dataset
+    # load the TLD dataset already ordered
     with open(datasetTLD_file, "r") as f:
         datasetTLD = json.load(f)
     datasetTLD_domains = {d.lower() for d in datasetTLD.get("domains", [])}
@@ -134,11 +134,25 @@ def generate_rules(final_flows, dataset_file="dataset.json", datasetTLD_file="da
 
     cleaned_snis = set()
 
+    # remove flows with SNIs containing excluded words or present in the main dataset
+    removed_flows = [
+        flow for flow in final_flows
+        if not flow.get("sni") 
+        or any(word in flow.get("sni").lower() for word in config.EXCLUDE_WORDS) 
+        or flow.get("sni").lower() in sorted_dataset
+    ]
+
+    print("\nRemoved flows:")
+    for flow in removed_flows:
+        print(f"  ├── {flow.get('sni', '<no SNI>')}")
+
+    final_flows = [
+        flow for flow in final_flows
+        if flow not in removed_flows
+    ]
+
     for flow in final_flows:
         sni = flow.get("sni", "").lower()
-        if not sni or any(word in sni for word in config.EXCLUDE_WORDS) or sni in sorted_dataset:
-            # skip empty SNIs or SNIs containing excluded words
-            continue
 
         # initialize sni_proc
         sni_proc = sni
@@ -170,10 +184,9 @@ def generate_rules(final_flows, dataset_file="dataset.json", datasetTLD_file="da
         # add the cleaned SNI to the set
         cleaned_snis.add(sni_proc)
 
-
         print(f"[DEBUG] After second dataset cut: {sni_proc}")
 
-    #print(f"\nCleaned SNIs: {cleaned_snis}")
+    print(f"\nCleaned SNIs: {cleaned_snis}")
 
     # print SNIs mapped back to original flows
     print("\nSNIs remaining after clean_flows:")
@@ -188,7 +201,9 @@ def generate_rules(final_flows, dataset_file="dataset.json", datasetTLD_file="da
         sni_norm = re.sub(r"-+", ".", sni_orig.lower())
         # check if any cleaned SNI is contained in the normalized original
         for sni_clean in cleaned_snis:
-            if sni_clean in sni_norm:
+            parts = sni_clean.split(".")
+            # check if all parts are present in the normalized original SNI
+            if all(part in sni_norm for part in parts):
                 # store original SNI
                 printed_snis.add(sni_orig)
                 break
@@ -198,7 +213,7 @@ def generate_rules(final_flows, dataset_file="dataset.json", datasetTLD_file="da
     for sni in sorted(printed_snis):
         print(f"  ├── \033[1;32m{sni}\033[0m")
 
-    get_info.classify_domains(printed_snis)
+    get_info.classify_domains(printed_snis, output_file)
 
 #################################################################
 # End of functions.py

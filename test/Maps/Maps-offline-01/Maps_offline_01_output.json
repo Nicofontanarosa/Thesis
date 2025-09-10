@@ -1,12 +1,5 @@
 [
     {
-        "ip_host": "10.131.200.96",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "N/A <-> N/A"
-        ]
-    },
-    {
         "ip_field": "126/Google",
         "transport_protocol": "UDP",
         "proto_field": "188.239/QUIC.GoogleServices",
@@ -94,20 +87,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "3099 <-> 5742"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188/QUIC",
-        "plain_text": "bwAHTf",
-        "ip_source": "10.131.200.96",
-        "port_source": "61781",
-        "ip_destination": "216.239.38.135",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "2327 <-> 1746"
         ]
     },
     {
@@ -664,9 +643,25 @@
         "port_source": "55099",
         "ip_destination": "10.131.200.79",
         "port_destination": "53",
-        "similar_flows_count": 2,
+        "similar_flows_count": 1,
         "exchanged_packets": [
-            "6 <-> 6",
+            "6 <-> 6"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "216.58.204.228",
+        "dns_id": "0x2102",
+        "plain_text": "gstatic",
+        "sni": "t2.gstatic.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "52238",
+        "ip_destination": "10.131.200.79",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
             "4 <-> 4"
         ]
     },

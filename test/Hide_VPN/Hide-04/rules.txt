@@ -1,0 +1,2 @@
+host:"api.hide.me",host:"www.msftncsi.com"@Unknown
+host:"free-de-v4.hideservers.net"@Domains by proxy, llc

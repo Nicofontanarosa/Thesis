@@ -1,0 +1,84 @@
+[
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "f33734dfbbff29f68bcde052e523c287",
+        "ja4": "t13d171000_5b57614c22b0_78e6aca7449b",
+        "servernames": "*.hoxx.com,hoxx.com",
+        "issuer": "C=US, O=Let's Encrypt, CN=E6",
+        "subject": "CN=hoxx.com",
+        "certificate": "SHA-1: 00:D5:6D:7C:1E:1F:6E:1D:4E:5C:72:C8:27:00:F4:D1:6D:46:C6:22",
+        "validity": "2025-07-23 05:30:48 - 2025-10-21 05:30:47",
+        "sni": "account2.hoxx.com",
+        "ip_source": "192.168.95.96",
+        "port_source": "63745",
+        "ip_destination": "54.145.205.221",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "9 <-> 7",
+            "9 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "t13d171200_5b57614c22b0_352634941f3a",
+        "sni": "mtalk.google.com",
+        "ip_source": "192.168.95.96",
+        "port_source": "63748",
+        "ip_destination": "108.177.127.188",
+        "port_destination": "5228",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "60",
+        "risk_info": "No ALPN / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "8 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x271c",
+        "plain_text": "account",
+        "sni": "account2.hoxx.com",
+        "ip_source": "192.168.95.96",
+        "port_source": "58656",
+        "ip_destination": "192.168.95.205",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "54.145.205.221",
+        "dns_id": "0xf775",
+        "plain_text": "account",
+        "sni": "account2.hoxx.com",
+        "ip_source": "192.168.95.96",
+        "port_source": "65242",
+        "ip_destination": "192.168.95.205",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    }
+]

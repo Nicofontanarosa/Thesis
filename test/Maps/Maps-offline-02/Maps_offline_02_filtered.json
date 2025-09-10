@@ -1,4 +1,3 @@
-	1	 10.131.200.96            	 3      
 	1	UDP 10.131.200.96:61936 <-> 194.116.104.8:443 [proto: 188.126/QUIC.Google][IP: 0/Unknown][715 pkts/57001 bytes <-> 6134 pkts/7914429 bytes][Hostname/SNI: rr1---sn-uv2pm-ugol.offline-maps.gvt1.com][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][PLAIN TEXT (juiW/2)]
 	2	UDP 10.131.200.96:61941 <-> 74.125.13.134:443 [proto: 188.126/QUIC.Google][IP: 126/Google][507 pkts/41479 bytes <-> 4132 pkts/5330315 bytes][Hostname/SNI: rr1---sn-hpa7zn6s.offline-maps.gvt1.com][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][PLAIN TEXT (yWPomS)]
 	4	UDP 10.131.200.96:61938 <-> 216.58.204.155:443 [proto: 188.239/QUIC.GoogleServices][IP: 126/Google][491 pkts/41534 bytes <-> 3838 pkts/4937545 bytes][Hostname/SNI: or-se.storage.googleapis.com][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][PLAIN TEXT (gKirrJ)]

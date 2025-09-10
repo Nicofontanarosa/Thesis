@@ -1,0 +1,630 @@
+[
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.233/TLS.LinkedIn",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1517h2_8daaf6152771_b1ff8ab2d16f",
+        "sni": "dms.licdn.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63594",
+        "ip_destination": "151.101.243.42",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2447 <-> 4283"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "UDP",
+        "proto_field": "188.233/QUIC.LinkedIn",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_5a1f323ef56d",
+        "quic_version": "V-1",
+        "plain_text": "TAOHGKy",
+        "sni": "media.licdn.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63587",
+        "ip_destination": "172.64.154.50",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "668 <-> 4566",
+            "85 <-> 261"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "UDP",
+        "proto_field": "188.233/QUIC.LinkedIn",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_5a1f323ef56d",
+        "quic_version": "V-1",
+        "plain_text": "sEOMPw",
+        "sni": "www.linkedin.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63584",
+        "ip_destination": "104.18.41.41",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "833 <-> 955"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91.233/TLS.LinkedIn",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_02713d6af862",
+        "sni": "media.licdn.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63586",
+        "ip_destination": "172.64.154.50",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "414 <-> 492",
+            "100 <-> 130",
+            "9 <-> 6",
+            "9 <-> 6"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "a885fb01204bc11cc58efc02fe640899",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "servernames": "*.protechts.net,protechts.net",
+        "issuer": "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=GeoTrust RSA CA 2018",
+        "subject": "C=US, ST=California, L=San Mateo, O=PerimeterX, Inc., CN=*.protechts.net",
+        "certificate": "SHA-1: B0:06:10:9D:D6:6B:75:19:AB:17:9F:FB:46:92:17:F9:EA:18:E8:A4",
+        "validity": "2024-09-18 00:00:00 - 2025-10-17 23:59:59",
+        "sni": "li.protechts.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63601",
+        "ip_destination": "151.101.242.133",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "73 <-> 75"
+        ]
+    },
+    {
+        "ip_field": "142/WhatsApp",
+        "transport_protocol": "TCP",
+        "proto_field": "91.242/TLS.WhatsAppFiles",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t00d0110ht_0f2cb44170f4_89a75ed8100b",
+        "sni": "media-fco2-1.cdn.whatsapp.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63619",
+        "ip_destination": "157.240.231.60",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "44 <-> 43"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "UDP",
+        "proto_field": "188.233/QUIC.LinkedIn",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "pcBpRe",
+        "sni": "www.linkedin.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63599",
+        "ip_destination": "104.18.41.41",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "43 <-> 35"
+        ]
+    },
+    {
+        "ip_field": "21/Outlook",
+        "transport_protocol": "TCP",
+        "proto_field": "91.219/TLS.Microsoft365",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2013h2_2b729b4bf6f3_e24568c0d440",
+        "sni": "substrate.office.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "56761",
+        "ip_destination": "52.98.237.146",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "44 <-> 62"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91.233/TLS.LinkedIn",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "www.linkedin.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63593",
+        "ip_destination": "104.18.41.41",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "24 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.228/TLS.PlayStore",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f590053ff246338aff7c203dbe7164d6",
+        "ja4": "t13d201300_2b729b4bf6f3_1ea369dc5faa",
+        "sni": "play.googleapis.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "56751",
+        "ip_destination": "216.239.34.223",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "22 <-> 14",
+            "9 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "276/Azure",
+        "transport_protocol": "TCP",
+        "proto_field": "91.233/TLS.LinkedIn",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "merchantpool1.linkedin.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63600",
+        "ip_destination": "20.86.88.94",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "26 <-> 28",
+            "10 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91.233/TLS.LinkedIn",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "www.linkedin.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63596",
+        "ip_destination": "104.18.41.41",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "31 <-> 27"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "collector-pxdojv695v.protechts.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63605",
+        "ip_destination": "34.120.250.63",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "27 <-> 25"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "cs.ns1p.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63608",
+        "ip_destination": "52.28.35.4",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "27 <-> 27"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.233/TLS.LinkedIn",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "static.licdn.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63598",
+        "ip_destination": "151.101.243.42",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "26 <-> 30",
+            "10 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.233/TLS.LinkedIn",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "rum20.perf.linkedin.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63610",
+        "ip_destination": "144.2.14.25",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "19 <-> 17",
+            "13 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "276/Azure",
+        "transport_protocol": "TCP",
+        "proto_field": "91.212/TLS.Microsoft",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "fpt.dfp.microsoft.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63615",
+        "ip_destination": "20.86.88.94",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.233/TLS.LinkedIn",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "static-akam.licdn.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63612",
+        "ip_destination": "83.224.69.211",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "20 <-> 21"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "ur39na",
+        "sni": "google-ohttp-relay-safebrowsing.fastly-edge.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63607",
+        "ip_destination": "151.101.241.91",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "12 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "sni": "collector-pxdojv695v.protechts.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63614",
+        "ip_destination": "34.120.250.63",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "10 <-> 12",
+            "5 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.233/QUIC.LinkedIn",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "sni": "static-akam.licdn.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63613",
+        "ip_destination": "83.224.69.211",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "s.ns1p.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63609",
+        "ip_destination": "3.127.164.96",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "174a48523e8f428b7e9132e81e6ccf9f",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "servernames": "tzm.protechts.net,www.tzm.protechts.net",
+        "issuer": "C=AE, O=SSL2BUY EMEA LLC, CN=SSL2BUY EMEA ECC Domain Validation Secure Server CA",
+        "subject": "CN=tzm.protechts.net",
+        "certificate": "SHA-1: 0D:70:08:FC:58:33:83:12:76:EA:5B:DF:3C:BC:94:C7:0F:CE:CB:AC",
+        "validity": "2025-07-30 00:00:00 - 2026-08-29 23:59:59",
+        "sni": "tzm.protechts.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63604",
+        "ip_destination": "34.36.73.246",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91.233/TLS.LinkedIn",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_02713d6af862",
+        "sni": "www.linkedin.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63585",
+        "ip_destination": "104.18.41.41",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "8 <-> 6"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91.233/TLS.LinkedIn",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1517h2_8daaf6152771_b1ff8ab2d16f",
+        "sni": "media.licdn.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63588",
+        "ip_destination": "172.64.154.50",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "9 <-> 6",
+            "9 <-> 6"
+        ]
+    },
+    {
+        "ip_field": "119/Facebook",
+        "transport_protocol": "TCP",
+        "proto_field": "91.119/TLS.Facebook",
+        "tls_version": "TLSv1.3",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1714ht_5b57614c22b0_fadfdae04b4e",
+        "sni": "graph.facebook.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63616",
+        "ip_destination": "157.240.203.14",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "8 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "ja4": "t13d201200_2b729b4bf6f3_89322cc15493",
+        "sni": "dsadata.intel.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "56742",
+        "ip_destination": "23.41.187.29",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "6 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "151.101.243.42",
+        "dns_id": "0xcddd",
+        "plain_text": "cedexis",
+        "sni": "dms.licdn.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "49964",
+        "ip_destination": "192.168.80.68",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "7 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "151.101.243.42",
+        "dns_id": "0x0517",
+        "plain_text": "static",
+        "sni": "static.licdn.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "58769",
+        "ip_destination": "192.168.80.68",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "8 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "151.101.242.133",
+        "dns_id": "0xf1db",
+        "plain_text": "protechts",
+        "sni": "li.protechts.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "61737",
+        "ip_destination": "192.168.80.68",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "6 <-> 6"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "20.86.88.94",
+        "dns_id": "0xd57c",
+        "plain_text": "merchantpool1",
+        "sni": "merchantpool1.linkedin.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "59254",
+        "ip_destination": "192.168.80.68",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2 <-> 2"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "172.64.154.50",
+        "dns_id": "0x5caa",
+        "plain_text": "cedexis",
+        "sni": "media.licdn.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "59342",
+        "ip_destination": "192.168.80.68",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "3 <-> 2"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "104.18.41.41",
+        "dns_id": "0x6c86",
+        "plain_text": "linkedin",
+        "sni": "www.linkedin.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "49753",
+        "ip_destination": "192.168.80.68",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "3 <-> 2"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "23.41.187.29",
+        "dns_id": "0x8135",
+        "plain_text": "dsadata",
+        "sni": "dsadata.intel.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "61678",
+        "ip_destination": "192.168.80.68",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2 <-> 1"
+        ]
+    }
+]

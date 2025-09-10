@@ -1,0 +1,78 @@
+[
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "t13d171200_5b57614c22b0_352634941f3a",
+        "sni": "mtalk.google.com",
+        "ip_source": "192.168.70.96",
+        "port_source": "61816",
+        "ip_destination": "172.217.218.188",
+        "port_destination": "5228",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "60",
+        "risk_info": "No ALPN / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 10"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
+        "sni": "api.hide.me",
+        "ip_source": "192.168.70.96",
+        "port_source": "61811",
+        "ip_destination": "45.76.88.89",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "12 <-> 11",
+            "10 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0xf1d6",
+        "plain_text": "myipstack",
+        "sni": "v6.myipstack.com",
+        "ip_source": "192.168.70.96",
+        "port_source": "53248",
+        "ip_destination": "192.168.70.69",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "4 <-> 3"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "7/HTTP",
+        "url": "www.msftncsi.com/ncsi.txt",
+        "content_type": "text/plain",
+        "user_agent": "okhttp/4.11.0",
+        "status_code": "200",
+        "plain_text": "GET /ncsi.t",
+        "sni": "www.msftncsi.com",
+        "ip_source": "192.168.70.96",
+        "port_source": "61786",
+        "ip_destination": "151.5.24.33",
+        "port_destination": "80",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2 <-> 2"
+        ]
+    }
+]

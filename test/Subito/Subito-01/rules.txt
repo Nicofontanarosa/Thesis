@@ -1,0 +1,7 @@
+host:"assets.subito.it",host:"collector.subito.it",host:"hades.subito.it"@Subito.it srl
+host:"mobile-2260.api.privacy-center.org"@Domains by proxy, llc
+host:"images.sbito.it"@Subito.it s.r.l
+host:"mobilesdk-eu.kampyle.com"@Medallia inc.
+host:"atsod.launch.liveramp.com",host:"geo.privacymanager.io"@Unknown
+host:"presence-api-subito.trust.advgo.net",host:"profile-api-subito.trust.advgo.net",host:"xmpp.messaging.advgo.net"@Identity protection service
+host:"mcrndycn8bj4zfvcnqlh9d-pbw21.device.marketingcloudapis.com"@Salesforce.com, inc.

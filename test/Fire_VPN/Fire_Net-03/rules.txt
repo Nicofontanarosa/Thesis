@@ -1,0 +1,2 @@
+host:"ptisupporterteam.xyz",host:"www.msftncsi.com"@Unknown
+host:"gsmpromax.xyz.mshome.net"@Microsoft corporation

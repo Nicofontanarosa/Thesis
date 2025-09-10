@@ -1,0 +1,1 @@
+host:"api.hide.me",host:"www.msftncsi.com"@Unknown

@@ -31,9 +31,11 @@ KEYS_BY_PROTOCOL = {
 # filter SNIs with more than 4 domain levels
 SNI_MAX_DOMAIN = 4
 # SNIs containing any word in this list will be excluded
-EXCLUDE_WORDS = ["cdn"]
+EXCLUDE_WORDS = ["cdn", "amazonaws"]
 # remove all SNI parts shorter than 3 characters
 N_MIN = 3
+# redacted organization names for whois
+REDACTED_ORGS = {"redacted for privacy", "data redacted", "hidden", "not disclosed"}
 
 # Minimum cosine similarity value: flows with similarity >= 10% are considered relevant
 #THRESHOLD = 0.1  

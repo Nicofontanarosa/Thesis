@@ -1,0 +1,5 @@
+
+host:"api.statsig.com",host:"exp.notion.so",host:"identity.notion.so",host:"msgstore.www.notion.so",host:"o324374.ingest.sentry.io",host:"www.notion.so"@Unknown
+host:"login.microsoftonline.com"@Microsoft corporation
+host:"http-inputs-notion.splunkcloud.com"@Cisco technology inc.
+host:"img.notionusercontent.com"@Identity protection service

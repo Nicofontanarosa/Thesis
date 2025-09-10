@@ -226,7 +226,7 @@ with open(output_file, 'w') as f_out:
 # -------------------------------------------
 
 functions.print_flows(final_flows)
-functions.generate_rules(final_flows)
+functions.generate_rules(final_flows, output_file)
 
 #################################################################
 # End of flow_processor.py

@@ -1,8 +1,14 @@
 
+#################################################################
+# File: filter.py to filter nDPI output
+# Keeps only relevant flows based on protocol and content
+#################################################################
+
 import re
 import json
 # my file
 import config
+# -------------------------------------------
 
 # parsing args
 args = config.get_args()
@@ -65,7 +71,7 @@ pattern = re.compile(r"\[proto:\s*(?:\d+(?:\.\d+)?/)?(" + "|".join(protocols) + 
 # regex to match any protocol
 pattern_general = re.compile(r"\[proto: [^\]]+\]")
 # regex to match lines with only the host IP
-host_ip_only_pattern = re.compile(r"^\s*\d+\s+([0-9a-fA-F:.]+)\s+")
+#host_ip_only_pattern = re.compile(r"^\s*\d+\s+([0-9a-fA-F:.]+)\s+")
 # regex to match lines with IPv6 addresses
 ipv6_pattern = re.compile(r"\[[0-9a-fA-F]{0,4}(:[0-9a-fA-F]{0,4}){2,7}\]")
 # regex to match lines with plen bins all zero
@@ -138,10 +144,10 @@ with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
         line_stripped = line.strip()
         
         # check for lines with only the host IP
-        if host_ip_only_pattern.match(line_stripped):
-            keep_flows.append(line)
-            fout.write(line)
-            continue
+        #if host_ip_only_pattern.match(line_stripped):
+        #    keep_flows.append(line)
+        #    fout.write(line)
+        #    continue
         
         # check for lines with IPv6 addresses
         if ipv6_pattern.search(line_stripped):
@@ -177,6 +183,7 @@ with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
                 incomplete_tls_flows.append(line)
                 continue
 
+            # check for flows without SNI/Hostname
             if not sni_pattern.search(clean_line):
                 no_sni_flows.append(line)
                 continue
@@ -200,7 +207,7 @@ print(f"  └── Incomplete TLS flows removed: {len(incomplete_tls_flows)}")
 print(f"  └── No SNI flows removed: {len(no_sni_flows)}")
 
 # ---------------------------------------------------
-# Print removed flows (with categories)
+# Print removed flows ( with categories )
 # ---------------------------------------------------
 if remove_flows:
     print("\n--- General flows removed ---")
@@ -227,4 +234,6 @@ if no_sni_flows:
     for f in no_sni_flows:
         print(f.strip())
         
-# ---------------------------------------------------
+#################################################################
+# End of filter.py
+#################################################################

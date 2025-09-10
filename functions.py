@@ -1,12 +1,14 @@
 
+#################################################################
+# File: functions.py
+#################################################################
 
 from collections import Counter
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
 import json
 import re
-# -------------------------------------------
+# my file
 import config
+import get_info
 
 # protocols to keep
 protocols = config.PROTOCOLS
@@ -29,7 +31,6 @@ def protocols_summary(flows):
                 break
 
         # if no known protocol matched, count as Unknown
-        # 1 flow will be counted as Unknown for sure
         if not matched:
             protocol_cou["Unknown"] += 1
 
@@ -37,56 +38,23 @@ def protocols_summary(flows):
 
 # -------------------------------------------
 
-# Vector Space Similarity Search using TF-IDF Term Frequency Inverse Document Frequency -> transform SNI in number vector
-# Cosine Similarity -> similarity of flows
-# Thresholding of flows
-# Clustering with modified K-Means -> 1 group
-def clustering(final_flows, word):
+def print_risky_flows(final_flows):
 
-    # Cosine similarity threshold
-    # 0.1 = flows with similarity >= 10% are considered relevant
-    threshold = config.THRESHOLD
-    n_min = config.N_MIN
-    n_max = config.N_MAX
+    for flow in final_flows:
+        # check if the flow has any key containing "risk"
+        risk_keys = [k for k in flow.keys() if "risk" in k.lower()]
+        if not risk_keys:
+            continue  # skip flows without risk
 
-    # Extract all SNIs from the flows
-    sni_list = [str(flow.get("sni", "")).lower() for flow in final_flows]
-
-    # TF-IDF on character n-grams of length 2 and 3
-    vectorizer = TfidfVectorizer(analyzer="char", ngram_range=(n_min,n_max))
-    # TF-IDF matrix for all SNIs in the list
-    # Each row represents an SNI and each column an n-gram
-    X = vectorizer.fit_transform(sni_list)
-    # TF-IDF vector of the target word
-    word_vec = vectorizer.transform([word])
-    # Cosine similarity between the target word and all SNIs
-    sims = cosine_similarity(word_vec, X).flatten()
-    
-    # Select flows above the threshold
-    # zip pairs each flow with its similarity value
-    cluster_flows = [flow for flow, sim in zip(final_flows, sims) if sim >= threshold]
-    
-    return {word: cluster_flows}
-
-# -------------------------------------------
-
-def search_flows(final_flows):
-    
-    while True:
-        print_flows(final_flows)
-
-        word = input("\nSearch: ").strip()
-        if not word:
-            continue
-        else:
-            cluster = clustering(final_flows, word)
-
-        print_flows(cluster[word])
-        print_rules(cluster[word], word)
-
-        choice = input("\nPress ENTER to continue or type 'exit' to quit: ").strip().lower()
-        if choice == "exit":
-            break
+        print("--- Risky Flow ---")
+        for k, v in flow.items():
+            if k in risk_keys:
+                print(f"  ├── \033[1;31m{k}: {v}\033[0m")  # red for risk
+            elif "sni" in k.lower() or "hostname" in k.lower():
+                print(f"  ├── \033[1;32m{k}: {v}\033[0m")  # green for SNI/hostname
+            else:
+                print(f"  ├── {k}: {v}")
+        print("\n")
 
 # -------------------------------------------
 
@@ -96,10 +64,10 @@ def print_flow(prot, final_flows):
         proto = flow.get("proto_field", "").lower()
         if prot in proto:
             for k, v in flow.items():
-                if "risk" in k.lower():  # se riguarda il rischio
-                    print(f"  ├── \033[1;31m{k}: {v}\033[0m")  # rosso grassetto
+                if "risk" in k.lower():
+                    print(f"  ├── \033[1;31m{k}: {v}\033[0m")
                 elif "sni" in k.lower() or "hostname" in k.lower():
-                    print(f"  ├── \033[1;32m{k}: {v}\033[0m")  # verde grassetto
+                    print(f"  ├── \033[1;32m{k}: {v}\033[0m")
                 else:
                     print(f"  ├── {k}: {v}")
             print("\n")
@@ -110,10 +78,13 @@ def print_flows(final_flows):
 
     # printing summary
     summary = ", ".join([f"{v} flows {k}" for k, v in protocol_counts.items()])
-    print(f"\nDetected: {summary}")
+    print(f"\nDetected: {summary}\n")
+
+    # printing flows with risk
+    print_risky_flows(final_flows)
 
     # --- DNS FLOWS PRINT ---
-    print("\nDNS flows detected:\n")
+    print("DNS flows detected:\n")
     print_flow("dns", final_flows)
 
     # --- HTTP FLOWS PRINT ---
@@ -138,100 +109,97 @@ def print_flows(final_flows):
 
 # -------------------------------------------
 
-def print_rules(flows, protocol_name):
+def generate_rules(final_flows, dataset_file="dataset.json", datasetTLD_file="datasetTLD.json"):
 
-    # Set to keep unique SNI values
-    sni_set = set()
+    # load the main dataset of known domains
+    with open(dataset_file, "r") as f:
+        dataset = json.load(f)
+    dataset_domains = {d.lower() for d in dataset.get("domains", [])}
+    # sort the dataset by length in descending order to match longer suffixes first
+    sorted_dataset = sorted(dataset_domains, key=len, reverse=True)
 
-    for flow in flows:
-        sni = flow.get("sni", "")
-        if sni:
-            sni_set.add(sni.lower())
+    # load the TLD dataset
+    with open(datasetTLD_file, "r") as f:
+        datasetTLD = json.load(f)
+    datasetTLD_domains = {d.lower() for d in datasetTLD.get("domains", [])}
 
-    # No SNI found
-    if not sni_set:
-        return None
-
-    # Build nDPI rule
-    host_entries = ",".join([f'host:"{sni}"' for sni in sorted(sni_set)])
-    rule = f"{host_entries}@{protocol_name.capitalize()}"
-
-    print(f"\033[1m{rule}\033[0m")
-
-# -------------------------------------------
-
-def clean_flows(final_flows, dataset_file="dataset.json"):
-
-    # --- ALL SNIs SEEN (by levels) ---
+    # collect all SNIs seen
     sni_list = [flow.get("sni") for flow in final_flows if "sni" in flow and flow["sni"]]
     unique_sni = sorted(set(sni_list))
 
-    # Organized by levels
-    levels = {}
+    # print all SNIs detected in the flows
+    print("\nAll SNIs seen:")
     for sni in unique_sni:
-        parts = sni.split(".")
-        parts_rev = list(reversed(parts))
-        for i in range(1, len(parts_rev) + 1):
-            dom = ".".join(reversed(parts_rev[:i]))
-            levels.setdefault(i, set()).add(dom)
+        print(f"  ├── \033[1;32m{sni}\033[0m")
 
-    print("\nAll SNIs seen (by domain levels):")
-    for level in sorted(levels.keys()):
-        print(f"\n--- Level {level} ---")
-        for dom in sorted(levels[level]):
-            print(f"  ├── \033[1;32m{dom}\033[0m")
-
-# carico dataset.json
-    with open(dataset_file, "r") as f:
-        dataset = json.load(f)
-
-    dataset_domains = {d.lower() for d in dataset.get("domains", [])}
-
-    cleaned_flows = []
     cleaned_snis = set()
-    unchanged_snis = set()
 
     for flow in final_flows:
-        sni = flow.get("sni", "")
-        if not sni:
+        sni = flow.get("sni", "").lower()
+        if not sni or any(word in sni for word in config.EXCLUDE_WORDS) or sni in sorted_dataset:
+            # skip empty SNIs or SNIs containing excluded words
             continue
 
-        sni_lower = sni.lower()
+        # initialize sni_proc
+        sni_proc = sni
 
-        # caso 1: rimuovere se esatto
-        if sni_lower in dataset_domains:
+        # 1) Truncate known suffixes from the main dataset ( longest first )
+        for d in sorted_dataset:
+            if sni_proc.endswith("." + d):
+                prefix = sni_proc[: -(len(d) + 1)]
+                # if nothing left, discard
+                sni_proc = prefix if prefix else ""
+                break
+        if not sni_proc:
             continue
 
-        # caso 2: se finisce con un dominio noto → tronca il dominio
-        modified = False
-        for d in dataset_domains:
-            if sni_lower.endswith("." + d):
-                prefix = sni_lower[: -(len(d) + 1)]
-                if prefix:
-                    cleaned_snis.add(prefix)
-                    modified = True
+        print(f"[DEBUG] After main dataset cut: {sni} -> {sni_proc}")
+
+        # 2) Replace multiple consecutive hyphens with a single dot
+        sni_proc = re.sub(r"-+", ".", sni_proc)
+        # split the remaining SNI into parts
+        parts = sni_proc.split(".")
+        # 3) Remove unwanted parts: numbers, too short, or present in datasetTLD
+        parts = [p for p in parts if len(p) > config.N_MIN and not re.search(r"\d", p) and p not in datasetTLD_domains]
+
+        if not parts:
+            continue
+
+        # rejoin the cleaned parts
+        sni_proc = ".".join(parts)
+        # add the cleaned SNI to the set
+        cleaned_snis.add(sni_proc)
+
+
+        print(f"[DEBUG] After second dataset cut: {sni_proc}")
+
+    #print(f"\nCleaned SNIs: {cleaned_snis}")
+
+    # print SNIs mapped back to original flows
+    print("\nSNIs remaining after clean_flows:")
+    # use a set to avoid duplicates
+    printed_snis = set()  
+
+    for flow in final_flows:
+        sni_orig = flow.get("sni", "")
+        if not sni_orig:
+            continue
+        # normalize original SNI
+        sni_norm = re.sub(r"-+", ".", sni_orig.lower())
+        # check if any cleaned SNI is contained in the normalized original
+        for sni_clean in cleaned_snis:
+            if sni_clean in sni_norm:
+                # store original SNI
+                printed_snis.add(sni_orig)
                 break
 
-        # caso 3: SNI non modificato
-        if not modified:
-            cleaned_snis.add(sni_lower)
-            unchanged_snis.add(sni_lower)
+    # print all unique SNIs after cleaning
+    print("\nSNIs remaining (without duplicates):")
+    for sni in sorted(printed_snis):
+        print(f"  ├── \033[1;32m{sni}\033[0m")
 
-    # ricrea i flussi puliti con SNI validi
-    for flow in final_flows:
-        sni = flow.get("sni", "")
-        if sni and sni.lower() in cleaned_snis:
-            cleaned_flows.append(flow)
+    get_info.classify_domains(printed_snis)
 
-    # stampa SNIs modificati
-    print("\nSNIs rimasti dopo clean_flows:")
-    for s in sorted(cleaned_snis - unchanged_snis):
-        print(f"  ├── \033[1;32m{s}\033[0m (modificato)")
-
-    # stampa SNIs non modificati
-    if unchanged_snis:
-        print("\nSNIs non modificati:")
-        for s in sorted(unchanged_snis):
-            print(f"  ├── \033[1;34m{s}\033[0m")
-
-# -------------------------------------------
+#################################################################
+# End of functions.py
+#################################################################

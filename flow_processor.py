@@ -1,7 +1,11 @@
 
+#################################################################
+# File: flow_processor.py to process filtered nDPI JSON and save final output
+#################################################################
+
 import re
 import json
-# -------------------------------------------
+# my file
 import config
 import functions
 # -------------------------------------------
@@ -24,6 +28,7 @@ ip_host = []
 with open(input_file, 'r') as f_in:
     for line in f_in:
         line = line.strip()
+        # skip empty lines or lines without IP ( further but not necessary check )
         if not line or not re.search(r"\d+\.\d+\.\d+\.\d+", line):
             continue
 
@@ -31,12 +36,12 @@ with open(input_file, 'r') as f_in:
         flow = {}
 
         # Host
-        match_ip_only = re.match(r"^\s*\d+\s+(\d+\.\d+\.\d+\.\d+)\s+\d+\s*$", line)
-        if match_ip_only:
-            flow["ip_host"] = match_ip_only.group(1)
-            flows.append(flow)
-            ip_host.append(match_ip_only.group(1))
-            continue
+        #match_ip_only = re.match(r"^\s*\d+\s+(\d+\.\d+\.\d+\.\d+)\s+\d+\s*$", line)
+        #if match_ip_only:
+        #    flow["ip_host"] = match_ip_only.group(1)
+        #    flows.append(flow)
+        #    ip_host.append(match_ip_only.group(1))
+        #    continue
 
         # IP
         match_ip_field = re.search(r"\[IP:\s*([^\]]+)\]", line)
@@ -97,8 +102,7 @@ with open(input_file, 'r') as f_in:
         if match_ja4:
             flow["ja4"] = match_ja4.group(1)
 
-        # TLS Info
-
+        # TLS certificate details
         match_servernames = re.search(r"\[ServerNames:\s*([^\]]+)\]", line)
         if match_servernames:
             flow["servernames"] = match_servernames.group(1)
@@ -181,7 +185,6 @@ for flow in flows:
 
     proto = flow.get("proto_field", "").lower()
 
-    key = tuple(flow.get(k) for k in config.KEY)
     # create key for aggregation
     if "tls" in proto:
         key = tuple(flow.get(k) for k in config.KEYS_BY_PROTOCOL["TLS"])
@@ -206,14 +209,14 @@ for flow in flows:
 
 final_flows = list(aggregated.values())
 
-# FILTRO SNI > 4 livelli
+# filtering SNIs with more than 4 domains
 filtered_flows = []
 for flow in final_flows:
     sni = flow.get("sni", "")
-    if not sni or len(sni.split(".")) <= 4:
+    if not sni or len(sni.split(".")) <= config.SNI_MAX_DOMAIN:
         filtered_flows.append(flow)
     else:
-        print(f"[RIMOSSO] SNI con più di 4 livelli: {sni}")
+        print(f"\033[1;35m[REMOVED] SNI with more than 4 domains: {sni}\033[0m")
 
 final_flows = filtered_flows
 
@@ -223,4 +226,8 @@ with open(output_file, 'w') as f_out:
 # -------------------------------------------
 
 functions.print_flows(final_flows)
-functions.clean_flows(final_flows)
+functions.generate_rules(final_flows)
+
+#################################################################
+# End of flow_processor.py
+#################################################################

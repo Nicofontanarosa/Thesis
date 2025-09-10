@@ -1,12 +1,5 @@
 [
     {
-        "ip_host": "192.168.80.96",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "N/A <-> N/A"
-        ]
-    },
-    {
         "ip_field": "284/GoogleCloud",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",

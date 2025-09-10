@@ -1,12 +1,5 @@
 [
     {
-        "ip_host": "192.168.80.96",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "N/A <-> N/A"
-        ]
-    },
-    {
         "ip_field": "126/Google",
         "transport_protocol": "UDP",
         "proto_field": "188.239/QUIC.GoogleServices",

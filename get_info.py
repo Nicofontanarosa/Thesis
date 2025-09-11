@@ -94,10 +94,11 @@ def classify_domains(domains, output_file):
             else:
                 print(f"{d} → whois: {org}")
         except Exception as e:
-            print(f"{d} → errore whois")
-            if "unknown" not in org_to_snis:
-                org_to_snis["unknown"] = []
-            org_to_snis["unknown"].append(d)
+            org = classify_domain_AI(d)
+            print(f"{d} → AI: {org}")
+            if org not in org_to_snis:
+                org_to_snis[org] = []
+            org_to_snis[org].append(d)
 
     print("\n")
     for org, snis in org_to_snis.items():

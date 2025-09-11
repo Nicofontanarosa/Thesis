@@ -20,41 +20,43 @@ config.print_files(input_file, output_file)
 
 def extract_domains(input_file, output_file):
 
-    # Regex pattern to match domain strings inside braces
-    domain_pattern = re.compile(r'^\s*\{\s*"([^"]+)"\s*,')
+    if input_file == 'None':
 
-    domains = []
-    inside_block = False  
-    # Track if we're inside the relevant static array
+        # Regex pattern to match domain strings inside braces
+        domain_pattern = re.compile(r'^\s*\{\s*"([^"]+)"\s*,')
 
-    with open(input_file, 'r') as fin:
-        for line in fin:
-            # Detect the start of the host_match or category_match arrays
-            if "static ndpi_protocol_match host_match[]" in line or "static ndpi_category_match category_match[]" in line:
-                inside_block = True
-                continue
+        domains = []
+        inside_block = False  
+        # Track if we're inside the relevant static array
 
-            # Process lines inside the block
-            if inside_block:
-                # Detect the end of the array
-                if line.strip().startswith("};"):
-                    inside_block = False
+        with open(input_file, 'r') as fin:
+            for line in fin:
+                # Detect the start of the host_match or category_match arrays
+                if "static ndpi_protocol_match host_match[]" in line or "static ndpi_category_match category_match[]" in line:
+                    inside_block = True
                     continue
 
-                # Match domain strings
-                match = domain_pattern.match(line)
-                if match:
-                    domains.append(match.group(1))
+                # Process lines inside the block
+                if inside_block:
+                    # Detect the end of the array
+                    if line.strip().startswith("};"):
+                        inside_block = False
+                        continue
 
-    # Remove duplicates and sort the domains
-    unique_domains = sorted(set(domains))
+                    # Match domain strings
+                    match = domain_pattern.match(line)
+                    if match:
+                        domains.append(match.group(1))
 
-    # Save domains to JSON
-    data = {"domains": unique_domains}
-    with open(output_file, 'w') as fout:
-        json.dump(data, fout, indent=2)
+        # Remove duplicates and sort the domains
+        unique_domains = sorted(set(domains))
 
-    print(f"[+] Extracted {len(domains)} domains, wrote {len(unique_domains)} unique domains to {output_file}")
+        # Save domains to JSON
+        data = {"domains": unique_domains}
+        with open(output_file, 'w') as fout:
+            json.dump(data, fout, indent=2)
+
+        print(f"[+] Extracted {len(domains)} domains, wrote {len(unique_domains)} unique domains to {output_file}")
 
 # -------------------------------------------
 
@@ -77,6 +79,8 @@ data["domains"] = domains_sorted
 # Write the cleaned dataset to datasetTLD.json
 with open(output_file, "w") as f:
     json.dump(data, f, indent=2)
+
+print("Done")
 
 #################################################################
 # End of dataset.py

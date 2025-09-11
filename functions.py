@@ -133,6 +133,7 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
         print(f"  ├── \033[1;32m{sni}\033[0m")
 
     cleaned_snis = set()
+    removed_TLD_parts = []
 
     # remove flows with SNIs containing excluded words or present in the main dataset
     removed_flows = [
@@ -173,8 +174,20 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
         sni_proc = re.sub(r"-+", ".", sni_proc)
         # split the remaining SNI into parts
         parts = sni_proc.split(".")
+        new_parts = []
         # 3) Remove unwanted parts: numbers, too short, or present in datasetTLD
-        parts = [p for p in parts if len(p) > config.N_MIN and not re.search(r"\d", p) and p not in datasetTLD_domains]
+        for p in parts:
+            if len(p) <= config.N_MIN or re.search(r"\d", p) or p in datasetTLD_domains:
+                if p in datasetTLD_domains:
+                    removed_TLD_parts.append(p)
+                continue
+            new_parts.append(p)
+        parts = new_parts
+
+        if removed_TLD_parts:
+            print("\nDomains removed because in datasetTLD:")
+            for dom in sorted(set(removed_TLD_parts)):
+                print(f"  ├── {dom}")
 
         if not parts:
             continue

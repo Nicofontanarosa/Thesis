@@ -1,3 +1,10 @@
 host:"hero-hero-clicker-default-rtdb.firebaseio.com",host:"hero-hero-clicker-other-multiplayer-settings.firebaseio.com",host:"hero-hero-clicker-runtime-server.firebaseio.com",host:"hero-hero-clicker09450452989.firebaseio.com",host:"hero-hero-clicker33657791000186.firebaseio.com",host:"hero-hero-clicker41984967923.firebaseio.com",host:"hero-hero-clicker49988805973.firebaseio.com",host:"s-usc1a-nss-2020.firebaseio.com"@Google llc
 host:"firebasestorage.googleapis.com",host:"report.appmetrica.yandex.net"@Unknown
 host:"api16-access-ttp.tiktokpangle.us"@Tiktok inc.
+host:"hero-hero-clicker-default-rtdb.firebaseio.com",host:"hero-hero-clicker-other-multiplayer-settings.firebaseio.com",host:"hero-hero-clicker-runtime-server.firebaseio.com",host:"hero-hero-clicker09450452989.firebaseio.com",host:"hero-hero-clicker33657791000186.firebaseio.com",host:"hero-hero-clicker41984967923.firebaseio.com",host:"hero-hero-clicker49988805973.firebaseio.com",host:"s-usc1a-nss-2020.firebaseio.com"@Google llc
+host:"api16-access-ttp.tiktokpangle.us"@Tiktok inc.
+host:"firebasestorage.googleapis.com"@Firebase storage
+host:"report.appmetrica.yandex.net"@Appmetrica report
+host:"report.appmetrica.yandex.net"@Appmetrica report
+host:"api16-access-ttp.tiktokpangle.us"@Tiktok inc.
+host:"hero-hero-clicker-default-rtdb.firebaseio.com",host:"hero-hero-clicker-other-multiplayer-settings.firebaseio.com",host:"hero-hero-clicker-runtime-server.firebaseio.com",host:"hero-hero-clicker09450452989.firebaseio.com",host:"hero-hero-clicker33657791000186.firebaseio.com",host:"hero-hero-clicker41984967923.firebaseio.com",host:"hero-hero-clicker49988805973.firebaseio.com"@Google llc

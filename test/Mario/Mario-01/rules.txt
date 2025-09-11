@@ -1,2 +1,4 @@
-host:"a6913b7b80402974409b47079c29d775.baas.nintendo.com",host:"api.mariokarttour.com",host:"pubsub.googleapis.com"@Unknown
+host:"pubsub.googleapis.com"@Unknown
+host:"api.mariokarttour.com"@Mario kart tour api
+host:"a6913b7b80402974409b47079c29d775.baas.nintendo.com"@Nintendo traffic monitor
 host:"sessions.bugsnag.com"@Bugsnag inc.

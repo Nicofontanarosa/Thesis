@@ -1,1 +1,3 @@
 host:"notebooklm-pa.googleapis.com"@Unknown
+host:"notebooklm-pa.googleapis.com"@Unknown
+host:"notebooklm-pa.googleapis.com"@Google notebooklm

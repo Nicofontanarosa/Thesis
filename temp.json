@@ -1,6 +1,11 @@
 {
   "domains": [
     "accounts",
+    "firebaseio",
+    "default",
+    "report",
+    "server",
+    "firebasestorage",
     "add",
     "adds",
     "adsystem",

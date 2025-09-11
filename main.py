@@ -19,7 +19,8 @@ def run_pipeline(pcap_file, ndpi_path, output_dir):
     os.makedirs(output_dir, exist_ok=True)
 
     # Step 1: nDPI
-    json_ndpi = os.path.join(output_dir, os.path.basename(pcap_file).replace(".pcapng", ".json"))
+    base, _ = os.path.splitext(os.path.basename(pcap_file))
+    json_ndpi = os.path.join(output_dir, base + ".json")
 
     # Check if on Windows ( you can delete this part if you have nDPI installed on Windows)
     if ndpi_path == 'None':

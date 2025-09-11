@@ -1,0 +1,107 @@
+
+-----------------------------------------------------------
+* NOTE: This is demo app to show *some* nDPI features.
+* In this demo we have implemented only some basic features
+* just to show you what you can do with the library. Feel 
+* free to extend it and send us the patches for inclusion
+------------------------------------------------------------
+
+Using nDPI (4.15.0-5377-8987a2c) [1 thread(s)]
+Using libgcrypt version 1.8.6internal
+Reading packets from pcap file pcapng/Notebook_llm_01.pcap...
+Running thread 0...
+
+nDPI Memory statistics:
+	nDPI Memory (once):      2.95 KB      
+	Flow Memory (per flow):  1.13 KB      
+	Actual Memory:           8.27 MB      
+	Peak Memory:             8.27 MB      
+	Setup Time:              49 msec
+	Packet Processing Time:  3 msec
+
+Traffic statistics:
+	Ethernet bytes:        108840        (includes ethernet CRC/IFC/trailer)
+	Discarded bytes:       0            
+	IP packets:            335           of 335 packets total
+	IP bytes:              100800        (avg pkt size 300 bytes)
+	Unique flows:          23           
+	TCP Packets:           327          
+	UDP Packets:           8            
+	VLAN Packets:          0            
+	MPLS Packets:          0            
+	PPPoE Packets:         0            
+	Fragmented Packets:    0            
+	Max Packet size:       6463         
+	Packet Len < 64:       222          
+	Packet Len 64-128:     47           
+	Packet Len 128-256:    7            
+	Packet Len 256-1024:   43           
+	Packet Len 1024-1500:  3            
+	Packet Len > 1500:     13           
+	nDPI throughput:       96.24 K pps / 238.55 Mb/sec
+	Analysis begin:        11/Sep/2025 08:39:59
+	Analysis end:          11/Sep/2025 08:40:19
+	Traffic throughput:    16.48 pps / 41.83 Kb/sec
+	Traffic duration:      20.329 sec
+	Guessed flow protos:   9            
+	DPI Packets (TCP):     96            (5.05 pkts/flow)
+	DPI Packets (UDP):     8             (2.00 pkts/flow)
+	Confidence: Match by port 9             (flows)
+	Confidence: DPI        14            (flows)
+
+
+Detected protocols:
+	DNS                  packets: 8             bytes: 922           flows: 4            
+	TLS                  packets: 36            bytes: 1692          flows: 9            
+	Google               packets: 19            bytes: 13374         flows: 1            
+	GoogleServices       packets: 272           bytes: 84812         flows: 9            
+
+
+Protocol statistics:
+	Safe                 packets: 36            bytes: 1692          flows: 9            
+	Acceptable           packets: 299           bytes: 99108         flows: 14           
+
+
+Category statistics:
+	Web                  packets: 327           bytes: 99878         flows: 19           
+	Network              packets: 8             bytes: 922           flows: 4            
+
+Risk stats [found 19 (82.6 %) flows with risks]:
+	TLS (probably) Not Carrying HTTPS            1 [ 3.6 %]
+	Uncommon TLS ALPN                            9 [32.1 %]
+	TCP Connection Issues                        9 [32.1 %]
+	Probing Attempt                              9 [32.1 %]
+
+	NOTE: as one flow can have multiple risks set, the sum of the
+	      last column can exceed the number of flows with risks.
+
+
+
+JA Host Stats: 
+		 IP Address                  	 # JA4C     
+	1	 10.215.173.1             	 2      
+
+
+	1	TCP 10.215.173.1:39138 <-> 216.58.204.138:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][31 pkts/7771 bytes <-> 35 pkts/10441 bytes][Goodput ratio: 84/87][20.20 sec][Hostname/SNI: notebooklm-pa.googleapis.com][(Advertised) ALPNs: grpc-exp;h2][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.147 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 726/718 7860/7860 1790/1712][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 251/298 1036/4540 349/821][Risk: ** Uncommon TLS ALPN **][Risk Score: 50][Risk Info: grpc-ex][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][TLSv1.3][JA4: t13d1712gr_5b57614c22b0_ef7df7f74e48][JA3S: d75f9129bb5d05492a65ff78e081bcb2][Safari][Cipher: TLS_CHACHA20_POLY1305_SHA256][Plen Bins: 8,39,5,5,5,5,0,0,0,0,0,0,0,0,0,0,2,2,0,2,0,0,2,0,0,0,0,0,0,0,12,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5]
+	2	TCP 10.215.173.1:36754 <-> 216.58.204.225:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: DNS][DPI packets: 6][cat: Web/5][9 pkts/1151 bytes <-> 10 pkts/12223 bytes][Goodput ratio: 67/97][15.41 sec][Hostname/SNI: lh3.googleusercontent.com][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.828 (Download)][IAT c2s/s2c min/avg/max/stddev: 2/0 2190/2184 15002/15002 5231/5234][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 128/1222 557/6483 163/1965][Risk: ** TLS (probably) Not Carrying HTTPS **][Risk Score: 10][Risk Info: No ALPN][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][TLSv1.3][JA4: t13d171100_5b57614c22b0_ef7df7f74e48][JA3S: d75f9129bb5d05492a65ff78e081bcb2][Safari][Cipher: TLS_CHACHA20_POLY1305_SHA256][Plen Bins: 0,0,14,0,0,14,0,0,0,0,0,0,0,0,0,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,0,0,0,0,0,14,0,0,0,28]
+	3	TCP 10.215.173.1:39122 <-> 216.58.204.138:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][14 pkts/2416 bytes <-> 14 pkts/6002 bytes][Goodput ratio: 76/91][2.84 sec][Hostname/SNI: notebooklm-pa.googleapis.com][(Advertised) ALPNs: grpc-exp;h2][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.426 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 257/252 1750/1794 528/543][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 173/429 1011/2816 266/803][Risk: ** Uncommon TLS ALPN **][Risk Score: 50][Risk Info: grpc-ex][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][TLSv1.3][JA4: t13d1712gr_5b57614c22b0_ef7df7f74e48][JA3S: d75f9129bb5d05492a65ff78e081bcb2][Safari][Cipher: TLS_CHACHA20_POLY1305_SHA256][Plen Bins: 15,24,7,7,0,0,0,0,7,0,0,0,0,0,0,0,7,0,0,7,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15]
+	4	TCP 10.215.173.1:39160 <-> 216.58.204.138:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][14 pkts/2416 bytes <-> 14 pkts/5997 bytes][Goodput ratio: 76/91][2.79 sec][Hostname/SNI: notebooklm-pa.googleapis.com][(Advertised) ALPNs: grpc-exp;h2][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.426 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 253/249 1751/1793 526/540][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 173/428 1011/4204 266/1063][Risk: ** Uncommon TLS ALPN **][Risk Score: 50][Risk Info: grpc-ex][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][TLSv1.3][JA4: t13d1712gr_5b57614c22b0_ef7df7f74e48][JA3S: d75f9129bb5d05492a65ff78e081bcb2][Safari][Cipher: TLS_CHACHA20_POLY1305_SHA256][Plen Bins: 15,24,7,7,0,0,0,0,7,0,7,0,0,0,0,0,7,0,0,7,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7]
+	5	TCP 10.215.173.1:39124 <-> 216.58.204.138:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][13 pkts/2376 bytes <-> 14 pkts/5999 bytes][Goodput ratio: 77/91][2.83 sec][Hostname/SNI: notebooklm-pa.googleapis.com][(Advertised) ALPNs: grpc-exp;h2][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.433 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 282/251 1794/1794 560/542][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 183/428 1011/3152 273/844][Risk: ** Uncommon TLS ALPN **][Risk Score: 50][Risk Info: grpc-ex][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][TLSv1.3][JA4: t13d1712gr_5b57614c22b0_ef7df7f74e48][JA3S: d75f9129bb5d05492a65ff78e081bcb2][Safari][Cipher: TLS_CHACHA20_POLY1305_SHA256][Plen Bins: 15,24,7,7,0,0,0,0,7,0,0,0,0,0,0,0,7,0,0,7,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,7]
+	6	TCP 10.215.173.1:39144 <-> 216.58.204.138:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][13 pkts/2376 bytes <-> 13 pkts/5958 bytes][Goodput ratio: 77/91][2.83 sec][Hostname/SNI: notebooklm-pa.googleapis.com][(Advertised) ALPNs: grpc-exp;h2][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.430 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 194/193 1745/1792 518/533][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 183/458 1011/4539 273/1191][Risk: ** Uncommon TLS ALPN **][Risk Score: 50][Risk Info: grpc-ex][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][TLSv1.3][JA4: t13d1712gr_5b57614c22b0_ef7df7f74e48][JA3S: d75f9129bb5d05492a65ff78e081bcb2][Safari][Cipher: TLS_CHACHA20_POLY1305_SHA256][Plen Bins: 16,25,8,8,0,0,0,0,8,0,0,0,0,0,0,0,8,0,0,8,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8]
+	7	TCP 10.215.173.1:39146 <-> 216.58.204.138:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][13 pkts/2376 bytes <-> 13 pkts/5958 bytes][Goodput ratio: 77/91][2.82 sec][Hostname/SNI: notebooklm-pa.googleapis.com][(Advertised) ALPNs: grpc-exp;h2][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.430 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 195/194 1747/1794 518/534][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 183/458 1011/4539 273/1191][Risk: ** Uncommon TLS ALPN **][Risk Score: 50][Risk Info: grpc-ex][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][TLSv1.3][JA4: t13d1712gr_5b57614c22b0_ef7df7f74e48][JA3S: d75f9129bb5d05492a65ff78e081bcb2][Safari][Cipher: TLS_CHACHA20_POLY1305_SHA256][Plen Bins: 16,25,8,8,0,0,0,0,8,0,0,0,0,0,0,0,8,0,0,8,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8]
+	8	TCP 10.215.173.1:39186 <-> 216.58.204.138:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][13 pkts/2376 bytes <-> 13 pkts/5958 bytes][Goodput ratio: 77/91][2.81 sec][Hostname/SNI: notebooklm-pa.googleapis.com][(Advertised) ALPNs: grpc-exp;h2][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.430 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 194/194 1750/1797 519/535][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 183/458 1011/4539 273/1191][Risk: ** Uncommon TLS ALPN **][Risk Score: 50][Risk Info: grpc-ex][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][TLSv1.3][JA4: t13d1712gr_5b57614c22b0_ef7df7f74e48][JA3S: d75f9129bb5d05492a65ff78e081bcb2][Safari][Cipher: TLS_CHACHA20_POLY1305_SHA256][Plen Bins: 16,25,8,8,0,0,0,0,8,0,0,0,0,0,0,0,8,0,0,8,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8]
+	9	TCP 10.215.173.1:39178 <-> 216.58.204.138:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][11 pkts/2296 bytes <-> 12 pkts/5918 bytes][Goodput ratio: 80/92][2.82 sec][Hostname/SNI: notebooklm-pa.googleapis.com][(Advertised) ALPNs: grpc-exp;h2][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.441 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 345/307 1797/1797 612/587][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 209/493 1011/4539 289/1234][Risk: ** Uncommon TLS ALPN **][Risk Score: 50][Risk Info: grpc-ex][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][TLSv1.3][JA4: t13d1712gr_5b57614c22b0_ef7df7f74e48][JA3S: d75f9129bb5d05492a65ff78e081bcb2][Safari][Cipher: TLS_CHACHA20_POLY1305_SHA256][Plen Bins: 9,27,9,9,0,0,0,0,9,0,0,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9]
+	10	TCP 10.215.173.1:39164 <-> 216.58.204.138:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][11 pkts/2296 bytes <-> 11 pkts/5882 bytes][Goodput ratio: 80/92][2.19 sec][Hostname/SNI: notebooklm-pa.googleapis.com][(Advertised) ALPNs: grpc-exp;h2][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.438 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/1 268/267 1802/1802 584/584][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 209/535 1011/4539 289/1281][Risk: ** Uncommon TLS ALPN **][Risk Score: 50][Risk Info: grpc-ex][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][TLSv1.3][JA4: t13d1712gr_5b57614c22b0_ef7df7f74e48][JA3S: d75f9129bb5d05492a65ff78e081bcb2][Safari][Cipher: TLS_CHACHA20_POLY1305_SHA256][Plen Bins: 9,27,9,9,0,0,0,0,9,0,0,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9]
+	11	UDP 10.215.173.1:15961 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/74 bytes <-> 1 pkts/202 bytes][Goodput ratio: 61/86][0.11 sec][Hostname/SNI: notebooklm-pa.googleapis.com][216.58.204.138][DNS Id: 0xf0b6][PLAIN TEXT (notebooklm)][Plen Bins: 0,50,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	12	UDP 10.215.173.1:19212 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/74 bytes <-> 1 pkts/186 bytes][Goodput ratio: 61/84][0.13 sec][Hostname/SNI: notebooklm-pa.googleapis.com][2a00:1450:4002:402::200a][DNS Id: 0xa18b][PLAIN TEXT (notebooklm)][Plen Bins: 0,50,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	13	UDP 10.215.173.1:27457 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/71 bytes <-> 1 pkts/128 bytes][Goodput ratio: 60/78][0.06 sec][Hostname/SNI: lh3.googleusercontent.com][2a00:1450:4002:415::2001][DNS Id: 0x3628][PLAIN TEXT (googleusercontent)][Plen Bins: 0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	14	TCP 10.215.173.1:32798 <-> 216.58.204.234:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 4][cat: Web/5][2 pkts/100 bytes <-> 2 pkts/88 bytes][Goodput ratio: 0/0][0.05 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (server)][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	15	TCP 10.215.173.1:32810 <-> 216.58.204.234:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 4][cat: Web/5][2 pkts/100 bytes <-> 2 pkts/88 bytes][Goodput ratio: 0/0][0.05 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (server)][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	16	TCP 10.215.173.1:32814 <-> 216.58.204.234:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 4][cat: Web/5][2 pkts/100 bytes <-> 2 pkts/88 bytes][Goodput ratio: 0/0][0.05 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (server)][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	17	TCP 10.215.173.1:32830 <-> 216.58.204.234:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 4][cat: Web/5][2 pkts/100 bytes <-> 2 pkts/88 bytes][Goodput ratio: 0/0][0.05 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (server)][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	18	TCP 10.215.173.1:32842 <-> 216.58.204.234:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 4][cat: Web/5][2 pkts/100 bytes <-> 2 pkts/88 bytes][Goodput ratio: 0/0][0.05 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (server)][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	19	TCP 10.215.173.1:32850 <-> 216.58.204.234:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 4][cat: Web/5][2 pkts/100 bytes <-> 2 pkts/88 bytes][Goodput ratio: 0/0][0.06 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (server)][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	20	TCP 10.215.173.1:32856 <-> 216.58.204.234:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 4][cat: Web/5][2 pkts/100 bytes <-> 2 pkts/88 bytes][Goodput ratio: 0/0][0.06 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (server)][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	21	TCP 10.215.173.1:32862 <-> 216.58.204.234:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 4][cat: Web/5][2 pkts/100 bytes <-> 2 pkts/88 bytes][Goodput ratio: 0/0][0.05 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (server)][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	22	TCP 10.215.173.1:32868 <-> 216.58.204.234:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 4][cat: Web/5][2 pkts/100 bytes <-> 2 pkts/88 bytes][Goodput ratio: 0/0][0.05 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (server)][TCP Fingerprint: 2_64_65535_b8d6cf600040/Unknown][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	23	UDP 10.215.173.1:36742 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/71 bytes <-> 1 pkts/116 bytes][Goodput ratio: 60/75][0.08 sec][Hostname/SNI: lh3.googleusercontent.com][216.58.204.225][DNS Id: 0x2e74][PLAIN TEXT (googleusercontent)][Plen Bins: 0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]

@@ -1,0 +1,2 @@
+host:"a6913b7b80402974409b47079c29d775.baas.nintendo.com",host:"api.mariokarttour.com",host:"pubsub.googleapis.com"@Unknown
+host:"sessions.bugsnag.com"@Bugsnag inc.

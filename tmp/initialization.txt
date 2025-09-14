@@ -1,5 +1,5 @@
-- Using existing nDPI JSON: .\test\Maps\Maps-01\Maps_01.json
+- Using existing nDPI JSON: test/Vinted/Vinted-01\Vinted_01.json
 
-- Running initial filtering: input file (.\test\Maps\Maps-01\Maps_01.json | output file (.\test\Maps\Maps-01\Maps_01_filtered.json)
+- Running initial filtering: input file (test/Vinted/Vinted-01\Vinted_01.json | output file (test/Vinted/Vinted-01\Vinted_01_filtered.json)
 
-- Running initial filtering: input file (.\test\Maps\Maps-01\Maps_01_filtered.json | output file (.\test\Maps\Maps-01\Maps_01_output.json)
+- Running initial filtering: input file (test/Vinted/Vinted-01\Vinted_01_filtered.json | output file (test/Vinted/Vinted-01\Vinted_01_output.json)

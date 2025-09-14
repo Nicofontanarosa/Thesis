@@ -4,12 +4,9 @@ from textual.containers import Vertical, Horizontal
 import json
 import os
 import constants_textual as constant
-
-# Simula l'esecuzione della pipeline e restituisce testo per i pannelli
-def main(pcap_file: str, ndpi_path: str, output_dir: str):
-    text_output = f"📂 Input Files\n- PCAP: {pcap_file}\n- nDPI: {ndpi_path}\n- Output Dir: {output_dir}"
-    right_output_file = "tmp/general_flows.json"
-    return text_output, right_output_file
+import main
+import asyncio
+from functools import partial
 
 class PipelineInputs(App):
 
@@ -24,7 +21,13 @@ class PipelineInputs(App):
         self.right_panel = None
         self.statistics_select = None
         self.flows_select = None
+        self.current_stats_file = "tmp/initialization.txt"
         self.current_flow_file = "tmp/filtered_flows.json"
+    
+    async def run_main_in_background(self):
+        loop = asyncio.get_running_loop()
+        # esegue main.main in un thread separato, così non blocca la UI
+        await loop.run_in_executor(None, partial(main.main_pipeline, self.paths["pcap"], self.paths["ndpi"], self.paths["output"]))
 
     def compose(self) -> ComposeResult:
         
@@ -38,7 +41,7 @@ class PipelineInputs(App):
         pcap_input.styles.height = "auto"
         yield pcap_input
 
-        ndpi_input = Input(placeholder="Enter nDPI path and press Enter", id="ndpi_input")
+        ndpi_input = Input(placeholder="Enter nDPI folder path and press Enter", id="ndpi_input")
         ndpi_input.styles.padding = (0, 5)
         ndpi_input.styles.margin = (1, 20)
         ndpi_input.styles.min_height = 1
@@ -59,10 +62,13 @@ class PipelineInputs(App):
         # Salva il percorso inserito
         if event.input.id == "pcap_input":
             self.paths["pcap"] = event.value.strip()
+            self.notify(f"PCAP file set: {event.value.strip()}", severity="information")
         elif event.input.id == "ndpi_input":
             self.paths["ndpi"] = event.value.strip()
+            self.notify(f"nDPI directory set: {event.value.strip()}", severity="information")
         elif event.input.id == "output_input":
             self.paths["output"] = event.value.strip()
+            self.notify(f"Output folder set: {event.value.strip()}", severity="information")
 
         # Se tutti e tre i percorsi sono presenti
         if all(self.paths.values()):
@@ -76,7 +82,11 @@ class PipelineInputs(App):
             self.display_panels()
 
     def display_panels(self):
-        
+
+        # Lancia main.main in background (thread-safe)
+        asyncio.create_task(self.run_main_in_background())
+        #main.main_pipeline(self.paths["pcap"], self.paths["ndpi"], self.paths["output"])
+
         main_container = self.query_one("#main_panel", Vertical)
 
         select_container = Horizontal(id="select_container")
@@ -87,7 +97,7 @@ class PipelineInputs(App):
         select_container.styles.height = "auto"
 
         main_container.mount(select_container)
-        self.statistics_select = Select([(title, key) for key, (title, _) in constant.GROUPS["statistics"].items()], id="statistics_select", prompt="Statistics of Fows")
+        self.statistics_select = Select([(title, key) for key, (title, _) in constant.GROUPS["statistics"].items()], id="statistics_select", prompt="Statistics of Flows")
         self.flows_select = Select([(title, key) for key, (title, _) in constant.GROUPS["flows"].items()], id="flows_select", prompt="Flows")
 
         self.statistics_select.styles.padding = (0, 0)
@@ -104,18 +114,37 @@ class PipelineInputs(App):
         # --- Container orizzontale per i pannelli ---
 
         panels_container = Horizontal(id="panels_container")
-
         main_container.mount(panels_container)
 
-        left_text, _ = main(self.paths["pcap"], self.paths["ndpi"], self.paths["output"])
-        self.left_panel = Vertical(Static(left_text, id="left_text"))
+        self.left_panel = Vertical(Static(self.current_stats_file, id="left_text"))
+        #self.left_panel.styles.width = 70
+        self.left_panel.styles.margin = (1, 3)
         self.right_panel = Vertical(DataTable(zebra_stripes=True, id="json_table"))
+        self.right_panel.styles.margin = (1, 3)
         panels_container.mount(self.left_panel, self.right_panel)
 
         # Aggiornamento periodico
         self.set_interval(1, self.refresh_panels)
 
     def refresh_panels(self):
+
+        # --- Aggiornamento pannello sinistro ---
+        left_widget = self.left_panel.query_one("#left_text", Static)
+        stats_file = getattr(self, "current_stats_file", "tmp/initialization.txt")
+
+        if os.path.exists(stats_file) and os.path.getsize(stats_file) > 0:
+            try:
+                with open(stats_file, "r", encoding="utf-8") as f:
+                    stats_content = f.read()
+            except Exception:
+                stats_content = "⚠ Error reading file"
+        else:
+            stats_content = "⚠ File not found or empty"
+
+        # Aggiorna solo se il contenuto è cambiato
+        if getattr(self, "_last_stats_content", None) != stats_content:
+            left_widget.update(stats_content)
+            self._last_stats_content = stats_content
 
         # Aggiorna pannello destro (tabella JSON)
         table = self.right_panel.query_one("#json_table", DataTable)
@@ -159,6 +188,7 @@ class PipelineInputs(App):
         if select_id == "statistics_select":
             # Prendi il path del file selezionato per il pannello destro
             _, file_path = constant.GROUPS["statistics"][key]
+            self.current_stats_file = file_path
             self.update_left_panel(file_path)
 
         elif select_id == "flows_select":

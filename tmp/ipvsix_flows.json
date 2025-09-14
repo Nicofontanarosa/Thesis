@@ -1,0 +1,1 @@
+110	ICMPV6 [fe80::fc9a:4fff:feec:94fd]:0 -> [ff02::2]:0 [proto: 102/ICMPV6][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 102/ICMPV6, Confidence: DPI][DPI packets: 1][cat: Network/14][2 pkts/140 bytes -> 0 pkts/0 bytes][Goodput ratio: 11/0][8.40 sec][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]

@@ -11,6 +11,9 @@ import os
 import constants
 import config
 
+log_file_rules = "tmp/rules.txt"
+config.clear_log(log_file_rules)
+
 def classify_domain_AI(domain):
 
     # Set up the base URL for the local Ollama API
@@ -59,6 +62,8 @@ def print_rules(flows, protocol_name, rules_file):
 
     with open(rules_file, "a") as f:
         f.write(f"{rule}\n")
+    
+    config.log_message(rule, log_file_rules)
 
     print(f"\nRules saved to {rules_file}:\n{rule}\n")
 
@@ -101,7 +106,6 @@ def classify_domains(domains, output_file):
                 org_to_snis[org] = []
             org_to_snis[org].append(d)
 
-    print("\n")
     for org, snis in org_to_snis.items():
         print_rules(snis, org, rules_file)
 

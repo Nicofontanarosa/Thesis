@@ -1,11 +1,9 @@
 
-[bold cyan]Input Files:[/bold cyan]\n- PCAP: file.pcap\n- nDPI: /usr/bin/ndpi
-
-- Flows read: 73
-- Flows kept: 61
+- Flows read: 110
+- Flows kept: 98
 - Flows removed: 12
 ----- General flows removed: 0
------ Empty flows removed: 3
------- IPv6 flows removed: 0
------- Incomplete TLS flows removed: 8
------- No SNI flows removed: 1
+----- Empty flows removed: 0
+------ IPv6 flows removed: 1
+------ Incomplete TLS flows removed: 11
+------ No SNI flows removed: 0

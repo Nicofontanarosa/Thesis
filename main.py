@@ -5,7 +5,6 @@
 
 import os
 import subprocess
-import argparse
 # -------------------------------------------
 import config
 import filter
@@ -16,7 +15,7 @@ import flow_processor
 
 # cambiare il tutto e chiamare solo funzioni
 
-def run_pipeline(pcap_file, ndpi_path, output_dir):
+def run_pipeline(pcap_file, ndpi_path, output_dir, log_file):
     
     # clear of terminal at start
     config.clear_terminal()
@@ -50,26 +49,34 @@ def run_pipeline(pcap_file, ndpi_path, output_dir):
     config.log_message(f"\n- Running initial filtering: input file ({filtered_json} | output file ({final_output})", log_file)
     final_flows = flow_processor.flow_processor(filtered_json, final_output)
 
-    functions.print_flows(final_flows)
+    #functions.print_flows(final_flows)
     functions.generate_rules(final_flows, final_output)
     
-if __name__ == "__main__":
+def main_pipeline(pcap, ndpi, output):
 
     # At the beginning of run_pipeline or right after the imports
     log_file = "tmp/initialization.txt"
     config.clear_log(log_file)
 
-    parser = argparse.ArgumentParser(description="Pipeline to process PCAP via nDPI, filter, flow_processor")
-    parser.add_argument("-p", "--pcap", required=True, help="Input PCAP file")
-    parser.add_argument("-n", "--ndpi", required=True, help="Path to nDPI folder")
-    parser.add_argument("-o", "--output", required=True, help="Output folder for results")
-    args = parser.parse_args()
+    run_pipeline(pcap, ndpi, output, log_file)
+
+#if __name__ == "__main__":
+
+    # At the beginning of run_pipeline or right after the imports
+#    log_file = "tmp/initialization.txt"
+#    config.clear_log(log_file)
+
+#    parser = argparse.ArgumentParser(description="Pipeline to process PCAP via nDPI, filter, flow_processor")
+#    parser.add_argument("-p", "--pcap", required=True, help="Input PCAP file")
+#    parser.add_argument("-n", "--ndpi", required=True, help="Path to nDPI folder")
+#    parser.add_argument("-o", "--output", required=True, help="Output folder for results")
+#    args = parser.parse_args()
     
     # Determine python command depending on OS
-    python_cmd = "py" if os.name == "nt" else "python3"
+#    python_cmd = "py" if os.name == "nt" else "python3"
 
     #subprocess.Popen([python_cmd, "flow_viewer_textual.py"])
-    run_pipeline(args.pcap, args.ndpi, args.output)
+#    run_pipeline(args.pcap, args.ndpi, args.output)
 
 #################################################################
 # End of main.py

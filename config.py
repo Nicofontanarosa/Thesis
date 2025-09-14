@@ -4,6 +4,7 @@
 #################################################################
 
 import os
+import json
 
 def clear_log(log_file):
     os.makedirs(os.path.dirname(log_file), exist_ok=True)
@@ -14,7 +15,10 @@ def clear_log(log_file):
 # Then modify the log_message function to use log_file
 def log_message(message, log_file):
     with open(log_file, "a") as f:  # append mode after clearing the file
-        f.write(message + "\n")
+        if isinstance(message, str):
+            f.write(message + "\n")
+        else:
+            json.dump(message, f, indent=4)
 
 def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')

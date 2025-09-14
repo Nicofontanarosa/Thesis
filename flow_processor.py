@@ -10,8 +10,10 @@ import config
 import constants
 # -------------------------------------------
 
-log_file_removed_flows_maxsni = "tmp/removed_flows_maxsni.txt"
+log_file_removed_flows_maxsni = "tmp/removed_flows_maxsni.json"
 config.clear_log(log_file_removed_flows_maxsni)
+log_file_filtered_flows = "tmp/filtered_flows.json"
+config.clear_log(log_file_filtered_flows)
 
 # -------------------------------------------
 
@@ -214,6 +216,8 @@ def flow_processor(input_file, output_file):
 
     with open(output_file, 'w') as f_out:
         json.dump(final_flows, f_out, indent=4)
+    
+    config.log_message(final_flows, log_file_filtered_flows)
 
     return final_flows
 

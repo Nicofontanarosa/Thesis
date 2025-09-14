@@ -18,7 +18,7 @@ log_file_stats = "tmp/stats.txt"
 log_file_flows = "tmp/flows.txt"
 log_file_incomplete_flows = "tmp/incomplete_flows.json"
 log_file_general_flows = "tmp/general_flows.json"
-log_file_empyt_flows = "tmp/empyt_flows.json"
+log_file_empyt_flows = "tmp/empty_flows.json"
 log_file_nosni_flows = "tmp/nosni_flows.json"
 log_file_ipvsix_flows = "tmp/ipvsix_flows.json"
 config.clear_log(log_file_stats)

@@ -14,7 +14,8 @@ GROUPS = {
     "statistics": {
         "path": ("Path-file", "tmp/initialization.txt"),
         "flowsnumber": ("Flows-Number","tmp/flows.txt"),
-        "stats":("Stats", "tmp/stats.txt")
+        "stats": ("Stats", "tmp/stats.txt"),
+        "rule": ("Custom-Rules-nDPI", "tmp/rules.txt")
     }
 }
 

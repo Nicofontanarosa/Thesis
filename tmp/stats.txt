@@ -1,4 +1,29 @@
-📂 Input Files
-- PCAP: ciccio
-- nDPI: caio
-- Output Dir: sembronio
+- Lists of protocols read:
+
+ - DNS
+ - ICMPV6
+ - QUIC
+ - TLS
+
+- Lists of protocols analyzed:
+
+ - DNS
+ - HTTP
+ - QUIC
+ - SMTP
+ - TLS
+ - Unknown
+
+- !WARNING! PROTOCOLLS NOT ANALYZED:
+
+ - ICMPV6
+
+- List of IP read:
+
+ - AmazonAWS
+ - Azure
+ - Cloudflare
+ - Facebook
+ - Google
+ - GoogleCloud
+ - Unknown

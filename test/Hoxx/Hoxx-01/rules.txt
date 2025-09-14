@@ -1,1 +1,2 @@
 host:"account2.hoxx.com"@Not disclosed
+host:"account2.hoxx.com"@Hoxx traffic

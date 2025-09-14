@@ -8,6 +8,7 @@ import whois as whois
 import json
 import os
 # my file
+import constants
 import config
 
 def classify_domain_AI(domain):
@@ -77,7 +78,7 @@ def classify_domains(domains, output_file):
             w = whois.whois(d)
             org = w.get("registrant_organization") or w.get("admin_organization") or w.get("org")
             
-            if org is None or org.lower() in config.REDACTED_ORGS:
+            if org is None or org.lower() in constants.REDACTED_ORGS:
                 if os.name == 'nt':
                     org = classify_domain_AI(d)
                 else: org = "unknown"

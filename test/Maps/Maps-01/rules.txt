@@ -1,1 +1,29 @@
 host:"mobilemaps-pa-gz.googleapis.com",host:"mobilemaps.googleapis.com",host:"sgepodownload.mediatek.com"@Unknown
+host:"sgepodownload.mediatek.com"@Mediatek download
+host:"mobilemaps-pa-gz.googleapis.com",host:"mobilemaps.googleapis.com"@Google maps traffic
+host:"mobilemaps-pa-gz.googleapis.com",host:"mobilemaps.googleapis.com"@Google maps traffic
+host:"sgepodownload.mediatek.com"@Mediatek download
+host:"mobilemaps-pa-gz.googleapis.com",host:"mobilemaps.googleapis.com"@Google maps traffic
+host:"sgepodownload.mediatek.com"@Mediatek download
+
+host:"sgepodownload.mediatek.com"@Mediatek download
+host:"mobilemaps-pa-gz.googleapis.com",host:"mobilemaps.googleapis.com"@Google maps traffic
+host:"mobilemaps-pa-gz.googleapis.com",host:"mobilemaps.googleapis.com"@Google maps traffic
+host:"sgepodownload.mediatek.com"@Mediatek download
+host:"sgepodownload.mediatek.com"@Mediatek download
+host:"mobilemaps-pa-gz.googleapis.com",host:"mobilemaps.googleapis.com"@Google maps traffic
+host:"mobilemaps-pa-gz.googleapis.com"@Mobilemapspagz
+
+host:"sgepodownload.mediatek.com"@Mediatek
+
+host:"mobilemaps.googleapis.com"@Mobilemaps
+
+host:"sgepodownload.mediatek.com"@Mediatekdownload
+
+host:"mobilemaps-pa-gz.googleapis.com"@Mobilemapspagz
+
+host:"mobilemaps.googleapis.com"@Mobilemaps
+
+host:"mobilemaps-pa-gz.googleapis.com"@Mobilemapspagz
+host:"sgepodownload.mediatek.com"@Mediatekdownload
+host:"mobilemaps.googleapis.com"@Google maps

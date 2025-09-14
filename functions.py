@@ -8,10 +8,11 @@ import json
 import re
 # my file
 import config
+import constants
 import get_info
 
 # protocols to keep
-protocols = config.PROTOCOLS
+protocols = constants.PROTOCOLS
 
 # -------------------------------------------
 
@@ -139,7 +140,7 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
     removed_flows = [
         flow for flow in final_flows
         if not flow.get("sni") 
-        or any(word in flow.get("sni").lower() for word in config.EXCLUDE_WORDS) 
+        or any(word in flow.get("sni").lower() for word in constants.EXCLUDE_WORDS) 
         or flow.get("sni").lower() in sorted_dataset
     ]
 
@@ -177,17 +178,17 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
         new_parts = []
         # 3) Remove unwanted parts: numbers, too short, or present in datasetTLD
         for p in parts:
-            if len(p) <= config.N_MIN or re.search(r"\d", p) or p in datasetTLD_domains:
+            if len(p) <= constants.N_MIN or re.search(r"\d", p) or p in datasetTLD_domains:
                 if p in datasetTLD_domains:
                     removed_TLD_parts.append(p)
                 continue
             new_parts.append(p)
         parts = new_parts
 
-        if removed_TLD_parts:
-            print("\nDomains removed because in datasetTLD:")
-            for dom in sorted(set(removed_TLD_parts)):
-                print(f"  ├── {dom}")
+        #if removed_TLD_parts:
+        #    print("\nDomains removed because in datasetTLD:")
+        #    for dom in sorted(set(removed_TLD_parts)):
+        #        print(f"  ├── {dom}")
 
         if not parts:
             continue

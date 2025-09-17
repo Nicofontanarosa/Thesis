@@ -63,7 +63,7 @@ def print_rules(flows, protocol_name, rules_file):
     with open(rules_file, "a") as f:
         f.write(f"{rule}\n")
     
-    config.log_message(rule, log_file_rules)
+    config.log_message(f"{rule}\n", log_file_rules)
 
     print(f"\nRules saved to {rules_file}:\n{rule}\n")
 

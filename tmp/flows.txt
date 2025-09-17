@@ -1,9 +1,2 @@
 
-- Flows read: 110
-- Flows kept: 98
-- Flows removed: 12
------ General flows removed: 0
------ Empty flows removed: 0
------- IPv6 flows removed: 1
------- Incomplete TLS flows removed: 11
------- No SNI flows removed: 0
+- Flows read: 110- Flows kept: 98- Flows removed: 12----- General flows removed: 0----- Empty flows removed: 0------ IPv6 flows removed: 1------ Incomplete TLS flows removed: 11------ No SNI flows removed: 0

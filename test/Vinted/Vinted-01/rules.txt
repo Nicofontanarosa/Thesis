@@ -1,23 +1,283 @@
+host:"www.vinted.fr"@Vinted marketplace
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"sdk.fra-01.braze.eu"@Braze sdk
+
+host:"api-sdk.datadome.co"@Datadome
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"images1.vinted.net"@Vinted images
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"api-sdk.datadome.co"@Datadome
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"www.vinted.fr"@Vinted marketplace
+host:"images1.vinted.net"@Vinted images
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"images1.vinted.net"@Vinted images
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"api-sdk.datadome.co"@Datadome
+host:"vintedapp.com"@Vinted app
+host:"socket.vinted.net"@Vinted traffic
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"www.vinted.fr"@Vinted marketplace
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"api-sdk.datadome.co"@Datadome
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"www.vinted.fr"@Vinted marketplace
+host:"images1.vinted.net"@Vinted images
+host:"www.vinted.fr"@Vinted marketplace
+host:"api-sdk.datadome.co"@Datadome
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"vintedapp.com"@Vinted app
+host:"socket.vinted.net"@Vinted traffic
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"images1.vinted.net"@Vinted images
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"api-sdk.datadome.co"@Datadome
+host:"images1.vinted.net"@Vinted images
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"www.vinted.fr"@Vinted marketplace
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"images1.vinted.net"@Vinted images
+host:"www.vinted.fr"@Vinted marketplace
+host:"api-sdk.datadome.co"@Datadome
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"vintedapp.com"@Vinted app
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"socket.vinted.net"@Vinted traffic monitoring
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"api-sdk.datadome.co"@Datadome
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"images1.vinted.net"@Vinted images
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"www.vinted.fr"@Vinted marketplace
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"api-sdk.datadome.co"@Datadome
+host:"www.vinted.fr"@Vinted marketplace
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"images1.vinted.net"@Vinted images
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"images1.vinted.net"@Vinted images
+host:"www.vinted.fr"@Vinted marketplace
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"api-sdk.datadome.co"@Datadome
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"images1.vinted.net"@Vinted images
+host:"www.vinted.fr"@Vinted marketplace
+host:"logs-ingress.svc.vinted.com"@Vinted logs
 host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
 host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"api-sdk.datadome.co"@Datadome
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"images1.vinted.net"@Vinted images
+host:"www.vinted.fr"@Vinted marketplace
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"api-sdk.datadome.co"@Datadome
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"vintedapp.com"@Vinted app
+host:"www.vinted.fr"@Vinted marketplace
+host:"images1.vinted.net"@Vinted images
+host:"socket.vinted.net"@Vinted socket
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"api-sdk.datadome.co"@Datadome
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"socket.vinted.net"@Vinted traffic monitor
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"www.vinted.fr"@Vinted marketplace
+host:"api-sdk.datadome.co"@Datadome
+host:"images1.vinted.net"@Vinted images
+host:"vintedapp.com"@Vinted app
+host:"images1.vinted.net"@Vinted images
+host:"www.vinted.fr"@Vinted marketplace
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"socket.vinted.net"@Vinted traffic monitoring
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"api-sdk.datadome.co"@Datadome
+host:"vintedapp.com"@Vinted app
+host:"api-sdk.datadome.co"@Datadome
+host:"images1.vinted.net"@Vinted images
+host:"vintedapp.com"@Vinted app
 host:"logs-ingress.svc.vinted.com"@Vinted logs
 host:"sdk.fra-01.braze.eu"@Braze sdk
 host:"www.vinted.fr"@Vinted marketplace
-host:"images1.vinted.net"@Vinted images
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"socket.vinted.net"@Vinted traffic monitor
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"logs-ingress.svc.vinted.com"@Vinted logs
 host:"api-sdk.datadome.co"@Datadome
+host:"www.vinted.fr"@Vinted marketplace
+host:"images1.vinted.net"@Vinted images
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"images1.vinted.net"@Vinted images
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"www.vinted.fr"@Vinted marketplace
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"api-sdk.datadome.co"@Datadome
+host:"images1.vinted.net"@Vinted images
 host:"socket.vinted.net"@Vinted traffic
 host:"www.vinted.fr"@Vinted marketplace
 host:"vintedapp.com"@Vinted app
-host:"sdk.fra-01.braze.eu"@Braze sdk
-host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
-host:"logs-ingress.svc.vinted.com"@Vinted logs
 host:"api-sdk.datadome.co"@Datadome
-host:"images1.vinted.net"@Vinted images
 host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
-host:"www.vinted.fr"@Vinted marketplace
-host:"images1.vinted.net"@Vinted images
-host:"api-sdk.datadome.co"@Datadome
-host:"vintedapp.com"@Vinted app
 host:"logs-ingress.svc.vinted.com"@Vinted logs
 host:"sdk.fra-01.braze.eu"@Braze sdk
 host:"socket.vinted.net"@Vinted traffic monitoring
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"www.vinted.fr"@Vinted marketplace
+host:"api-sdk.datadome.co"@Datadome
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"images1.vinted.net"@Vinted images
+host:"vintedapp.com"@Vinted app
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"api-sdk.datadome.co"@Datadome
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"socket.vinted.net"@Vinted traffic
+host:"www.vinted.fr"@Vinted marketplace
+host:"images1.vinted.net"@Vinted images
+host:"vintedapp.com"@Vinted app
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"api-sdk.datadome.co"@Datadome
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"socket.vinted.net"@Vinted traffic
+host:"vintedapp.com"@Vinted app
+host:"images1.vinted.net"@Vinted images
+host:"www.vinted.fr"@Vinted marketplace
+host:"sdk.fra-01.braze.eu"@Braze sdk
+
+host:"images1.vinted.net"@Vinted images
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"www.vinted.fr"@Vinted marketplace
+host:"api-sdk.datadome.co"@Datadome
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"images1.vinted.net"@Vinted images
+host:"api-sdk.datadome.co"@Datadome
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"www.vinted.fr"@Vinted marketplace
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"api-sdk.datadome.co"@Datadome
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"socket.vinted.net"@Vinted socket
+host:"images1.vinted.net"@Vinted images
+host:"vintedapp.com"@Vinted app
+host:"www.vinted.fr"@Vinted marketplace
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"images1.vinted.net"@Vinted images
+host:"www.vinted.fr"@Vinted marketplace
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"api-sdk.datadome.co"@Datadome
+host:"api-sdk.datadome.co"@Datadome
+host:"images1.vinted.net"@Vinted images
+host:"www.vinted.fr"@Vinted marketplace
+host:"sdk.fra-01.braze.eu"@Braze sdk
+
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"www.vinted.fr"@Vinted marketplace
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"images1.vinted.net"@Vinted images
+host:"api-sdk.datadome.co"@Datadome
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"images1.vinted.net"@Vinted images
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"api-sdk.datadome.co"@Datadome
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"www.vinted.fr"@Vinted marketplace
+host:"images1.vinted.net"@Vinted images
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"www.vinted.fr"@Vinted marketplace
+host:"socket.vinted.net"@Vinted traffic
+host:"vintedapp.com"@Vinted app
+host:"sdk.fra-01.braze.eu"@Braze sdk
+
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"api-sdk.datadome.co"@Datadome
+host:"vintedapp.com"@Vinted app
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"socket.vinted.net"@Vinted socket
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"www.vinted.fr"@Vinted marketplace
+host:"images1.vinted.net"@Vinted images
+host:"api-sdk.datadome.co"@Datadome
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"vintedapp.com"@Vinted app
+host:"images1.vinted.net"@Vinted images
+host:"www.vinted.fr"@Vinted marketplace
+host:"socket.vinted.net"@Vinted traffic monitoring
+host:"api-sdk.datadome.co"@Datadome
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"sdk.fra-01.braze.eu"@Braze sdk
+
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"images1.vinted.net"@Vinted images
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"www.vinted.fr"@Vinted marketplace
+host:"api-sdk.datadome.co"@Datadome
+host:"vintedapp.com"@Vinted app
+host:"sdk.fra-01.braze.eu"@Braze sdk
+
+host:"www.vinted.fr"@Vinted marketplace
+host:"socket.vinted.net"@Vinted traffic monitoring
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"api-sdk.datadome.co"@Datadome
+host:"images1.vinted.net"@Vinted images
+host:"www.vinted.fr"@Vinted marketplace
+host:"socket.vinted.net",host:"vintedapp.com"@Vinted app
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"api-sdk.datadome.co"@Datadome
+host:"images1.vinted.net"@Vinted images
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"vintedapp.com"@Vinted app
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"api-sdk.datadome.co"@Datadome
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"www.vinted.fr"@Vinted marketplace
+host:"socket.vinted.net"@Vinted traffic monitor
+host:"images1.vinted.net"@Vinted images
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"images1.vinted.net"@Vinted images
+host:"socket.vinted.net"@Vinted traffic
+host:"logs-ingress.svc.vinted.com"@Vinted logs
+host:"api-sdk.datadome.co"@Datadome
+host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
+host:"vintedapp.com"@Vinted app
+host:"www.vinted.fr"@Vinted marketplace

@@ -14,9 +14,9 @@ def clear_log(log_file):
 
 # Then modify the log_message function to use log_file
 def log_message(message, log_file):
-    with open(log_file, "a") as f:  # append mode after clearing the file
+    with open(log_file, "a", encoding="utf-8") as f:  # append mode after clearing the file
         if isinstance(message, str):
-            f.write(message + "\n")
+            f.write(message)
         else:
             json.dump(message, f, indent=4)
 

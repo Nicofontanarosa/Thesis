@@ -16,18 +16,8 @@ protocols = constants.PROTOCOLS
 # At the beginning of run_pipeline or right after the imports
 log_file_stats = "tmp/stats.txt"
 log_file_flows = "tmp/flows.txt"
-log_file_incomplete_flows = "tmp/incomplete_flows.json"
-log_file_general_flows = "tmp/general_flows.json"
-log_file_empyt_flows = "tmp/empty_flows.json"
-log_file_nosni_flows = "tmp/nosni_flows.json"
-log_file_ipvsix_flows = "tmp/ipvsix_flows.json"
 config.clear_log(log_file_stats)
 config.clear_log(log_file_flows)
-config.clear_log(log_file_incomplete_flows)
-config.clear_log(log_file_general_flows)
-config.clear_log(log_file_empyt_flows)
-config.clear_log(log_file_nosni_flows)
-config.clear_log(log_file_ipvsix_flows)
 
 def flow_filter(input_file, output_file):
     
@@ -58,20 +48,25 @@ def flow_filter(input_file, output_file):
             if match_ip:
                 all_ip_in_file.add(match_ip.group(1))
             
-    # printing protocols and ip read and analyzed
-    config.log_message("- Lists of protocols read:\n", log_file_stats)
+    # printing protocols and IPs read/analyzed
+
+    config.log_message(">> Lists of protocols read:\n\n", log_file_stats)
     for proto in sorted(all_protocols_in_file):
-        config.log_message(f" - {proto}", log_file_stats)
-    config.log_message("\n- Lists of protocols analyzed:\n", log_file_stats)
+        config.log_message(f"   + {proto}\n", log_file_stats)
+
+    config.log_message("\n>> Lists of protocols supported:\n\n", log_file_stats)
     for proto in sorted(protocols):
-        config.log_message(f" - {proto}", log_file_stats)
-    config.log_message("\n- !WARNING! PROTOCOLLS NOT ANALYZED:\n", log_file_stats)
-    for proto in sorted(all_protocols_in_file - protocols):
-        config.log_message(f" - { proto}", log_file_stats)
-    # printing IPs read
-    config.log_message("\n- List of IP read:\n", log_file_stats)
-    for ip in sorted(all_ip_in_file):
-        config.log_message(f" - {ip}", log_file_stats)
+        config.log_message(f"   + {proto}\n", log_file_stats)
+
+    #config.log_message("\n>> List of IPs read:\n\n", log_file_stats)
+    #for ip in sorted(all_ip_in_file):
+    #    config.log_message(f"   + {ip}", log_file_stats)
+
+    not_analyzed = all_protocols_in_file - protocols
+    if not_analyzed:
+        config.log_message("\n[red]>> WARNING PROTOCOLS NOT ANALYZED[/red]\n\n", log_file_stats)
+        for proto in sorted(not_analyzed):
+            config.log_message(f"   [red]+ {proto}[/red]\n", log_file_stats)
         
     # -------------------------------------------
 
@@ -219,29 +214,29 @@ def flow_filter(input_file, output_file):
     # Print removed flows ( with categories )
     # ---------------------------------------------------
     if removed_flows:
-        #print("\n> --- General flows removed ---")
+        print("\n> --- General flows removed ---")
         for f in removed_flows:
-            config.log_message(f.strip(), log_file_general_flows)
+            print(f.strip())
 
     if empty_flows:
-        #print("\n> --- Empty flows removed ---")
+        print("\n> --- Empty flows removed ---")
         for f in empty_flows:
-            config.log_message(f.strip(), log_file_empyt_flows)
+            print(f.strip())
 
     if ipv6_flows:
-        #print("\n--- IPv6 flows removed ---")
+        print("\n--- IPv6 flows removed ---")
         for f in ipv6_flows:
-            config.log_message(f.strip(), log_file_ipvsix_flows)
+            print(f.strip())
 
     if incomplete_tls_flows:
-        #print("\n--- Incomplete TLS flows removed ---")
+        print("\n--- Incomplete TLS flows removed ---")
         for f in incomplete_tls_flows:
-            config.log_message(f.strip(), log_file_incomplete_flows)
+            print(f.strip())
 
     if no_sni_flows:
-        #print("\n--- No SNI flows removed ---")
+        print("\n--- No SNI flows removed ---")
         for f in no_sni_flows:
-            config.log_message(f.strip(), log_file_nosni_flows)
+            print(f.strip())
             
 #################################################################
 # End of filter.py

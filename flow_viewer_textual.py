@@ -1,6 +1,7 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer, Static, Input, DataTable, Select
+from textual.widgets import Header, Footer, Static, LoadingIndicator, Input, DataTable, Select
 from textual.containers import Vertical, Horizontal
+
 import json
 import os
 import constants_textual as constant
@@ -16,7 +17,7 @@ class PipelineInputs(App):
 
     def __init__(self):
         super().__init__()
-        self.paths = {"pcap": None, "ndpi": None, "output": None}
+        self.paths = {"pcap": "pcapng/Vinted_01.pcapng", "ndpi": "None", "output": "test/Vinted/Vinted-01"}
         self.left_panel = None
         self.right_panel = None
         self.statistics_select = None
@@ -61,8 +62,8 @@ class PipelineInputs(App):
     def on_input_submitted(self, event: Input.Submitted) -> None:
         # Salva il percorso inserito
         if event.input.id == "pcap_input":
-            self.paths["pcap"] = event.value.strip()
-            self.notify(f"PCAP file set: {event.value.strip()}", severity="information")
+            self.paths["pcap"] = "pcapng/Vinted_01.pcapng"
+            self.notify(f"PCAP file set: pcapng/Vinted_01.pcapng", severity="information")
         elif event.input.id == "ndpi_input":
             self.paths["ndpi"] = event.value.strip()
             self.notify(f"nDPI directory set: {event.value.strip()}", severity="information")
@@ -101,12 +102,12 @@ class PipelineInputs(App):
         self.flows_select = Select([(title, key) for key, (title, _) in constant.GROUPS["flows"].items()], id="flows_select", prompt="Flows")
 
         self.statistics_select.styles.padding = (0, 0)
-        self.statistics_select.styles.margin = (1, 10)
+        self.statistics_select.styles.margin = (1, 5, 1, 5)
         self.statistics_select.styles.min_height = 1
         self.statistics_select.styles.height = "auto"
 
         self.flows_select.styles.padding = (0, 0)
-        self.flows_select.styles.margin = (1, 10)
+        self.flows_select.styles.margin = (1, 20, 1, 20)
         self.flows_select.styles.min_height = 1
         self.flows_select.styles.height = "auto"
 
@@ -117,29 +118,39 @@ class PipelineInputs(App):
         main_container.mount(panels_container)
 
         self.left_panel = Vertical(Static(self.current_stats_file, id="left_text"))
-        #self.left_panel.styles.width = 70
+        self.left_panel.styles.width = 70
+        self.left_panel.styles.border = ("round", "#5280FF")
         self.left_panel.styles.margin = (1, 3)
+        self.left_panel.styles.padding = (1, 3)
         self.right_panel = Vertical(DataTable(zebra_stripes=True, id="json_table"))
+        self.right_panel.styles.border = ("round", "#5280FF")
         self.right_panel.styles.margin = (1, 3)
+        self.right_panel.styles.padding = (1, 2)
         panels_container.mount(self.left_panel, self.right_panel)
 
         # Aggiornamento periodico
         self.set_interval(1, self.refresh_panels)
 
     def refresh_panels(self):
-
-        # --- Aggiornamento pannello sinistro ---
         left_widget = self.left_panel.query_one("#left_text", Static)
         stats_file = getattr(self, "current_stats_file", "tmp/initialization.txt")
 
-        if os.path.exists(stats_file) and os.path.getsize(stats_file) > 0:
-            try:
-                with open(stats_file, "r", encoding="utf-8") as f:
-                    stats_content = f.read()
-            except Exception:
-                stats_content = "⚠ Error reading file"
-        else:
-            stats_content = "⚠ File not found or empty"
+        if not os.path.exists(stats_file) or os.path.getsize(stats_file) == 0:
+            # Mostra animazione solo se non esiste o è vuoto
+            if not hasattr(self, "_loading_widget") or self._loading_widget is None:
+                self._loading_widget = LoadingIndicator(id="loading")
+                self.left_panel.mount(self._loading_widget)
+                left_widget.update("")
+            return   # ⬅ interrompi qui, NON vai avanti a usare stats_content
+
+        # Se siamo qui, il file esiste ed è pieno
+        with open(stats_file, "r", encoding="utf-8") as f:
+            stats_content = f.read()
+
+        # Rimuovo il loader se c’è
+        if hasattr(self, "_loading_widget") and self._loading_widget:
+            self._loading_widget.remove()
+            self._loading_widget = None
 
         # Aggiorna solo se il contenuto è cambiato
         if getattr(self, "_last_stats_content", None) != stats_content:
@@ -199,6 +210,7 @@ class PipelineInputs(App):
 
     def update_left_panel(self, file_path):
         left_widget = self.left_panel.query_one("#left_text", Static)
+        left_widget.styles.max_height = 30
         if os.path.exists(file_path):
             with open(file_path, "r", encoding="utf-8") as f:
                 left_widget.update(f.read())

@@ -221,6 +221,10 @@ def flow_processor(input_file, output_file):
 
     return final_flows
 
+
+# mettere controllo che se l'sni appare nel domain prendere il plein text per visualizzare il nome del protocollo
+
+
 #################################################################
 # End of flow_processor.py
 #################################################################

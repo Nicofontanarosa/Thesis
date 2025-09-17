@@ -72,6 +72,7 @@ def classify_domains(domains, output_file):
     output_folder = os.path.dirname(output_file)
     # make the complete path for the rules file
     rules_file = os.path.join(output_folder, "rules.txt")
+    config.clear_log(rules_file)
 
     org_to_snis = {}
 

@@ -11,30 +11,40 @@ from functools import partial
 
 class PipelineInputs(App):
 
+    # Bindings, title, subtitle come from constants_textual
     BINDINGS = constant.BINDINGS
     TITLE = constant.TITLE
     SUB_TITLE = constant.SUB_TITLE
 
     def __init__(self):
         super().__init__()
+        # Default paths
         self.paths = {"pcap": "pcapng/Vinted_01.pcapng", "ndpi": "None", "output": "test/Vinted/Vinted-01"}
         self.left_panel = None
         self.right_panel = None
         self.statistics_select = None
         self.flows_select = None
+        # Currently selected files for left/right panels
         self.current_stats_file = "tmp/initialization.txt"
         self.current_flow_file = "tmp/filtered_flows.json"
     
     async def run_main_in_background(self):
+        # Run main.main_pipeline asynchronously in a separate thread (UI non-blocking)
         loop = asyncio.get_running_loop()
-        # esegue main.main in un thread separato, così non blocca la UI
         await loop.run_in_executor(None, partial(main.main_pipeline, self.paths["pcap"], self.paths["ndpi"], self.paths["output"]))
 
     def compose(self) -> ComposeResult:
         
+        # Build initial UI layout
         yield Header(show_clock=True)
-        yield Static("Please provide the required paths and press Enter after each one ...", id="banner")
+        banner = Static("Please provide the required paths and press Enter after each one ...", id="banner")
+        banner.styles.margin = (5, 50, 0, 50)
+        banner.styles.width = 80
+        banner.styles.border = ("round", "#5AC5FF")
+        banner.styles.padding = (1, 3)
+        yield banner
 
+        # Input for PCAP
         pcap_input = Input(placeholder="Enter PCAP file path and press Enter", id="pcap_input")
         pcap_input.styles.padding = (0, 5)
         pcap_input.styles.margin = (10, 20, 1, 20)
@@ -42,6 +52,7 @@ class PipelineInputs(App):
         pcap_input.styles.height = "auto"
         yield pcap_input
 
+        # Input for nDPI path
         ndpi_input = Input(placeholder="Enter nDPI folder path and press Enter", id="ndpi_input")
         ndpi_input.styles.padding = (0, 5)
         ndpi_input.styles.margin = (1, 20)
@@ -49,6 +60,7 @@ class PipelineInputs(App):
         ndpi_input.styles.height = "auto"
         yield ndpi_input
 
+        # Input for output folder
         output_input = Input(placeholder="Enter output folder path and press Enter", id="output_input")
         output_input.styles.padding = (0, 5)
         output_input.styles.margin = (1, 20)
@@ -56,12 +68,14 @@ class PipelineInputs(App):
         output_input.styles.height = "auto"
         yield output_input
 
+        # Empty vertical container for panels
         yield Vertical(id="main_panel")
         yield Footer()
 
     def on_input_submitted(self, event: Input.Submitted) -> None:
-        # Salva il percorso inserito
+        # Save path entered by user
         if event.input.id == "pcap_input":
+            # Hardcoded PCAP path
             self.paths["pcap"] = "pcapng/Vinted_01.pcapng"
             self.notify(f"PCAP file set: pcapng/Vinted_01.pcapng", severity="information")
         elif event.input.id == "ndpi_input":
@@ -71,33 +85,29 @@ class PipelineInputs(App):
             self.paths["output"] = event.value.strip()
             self.notify(f"Output folder set: {event.value.strip()}", severity="information")
 
-        # Se tutti e tre i percorsi sono presenti
+        # If all three are provided, remove inputs and show panels
         if all(self.paths.values()):
-            # Rimuovi input e banner
             self.query_one("#pcap_input").remove()
             self.query_one("#ndpi_input").remove()
             self.query_one("#output_input").remove()
             self.query_one("#banner").remove()
-
-            # Mostra pannelli
             self.display_panels()
 
     def display_panels(self):
-
-        # Lancia main.main in background (thread-safe)
+        # Run main() asynchronously in background (thread-safe)
         asyncio.create_task(self.run_main_in_background())
-        #main.main_pipeline(self.paths["pcap"], self.paths["ndpi"], self.paths["output"])
 
         main_container = self.query_one("#main_panel", Vertical)
 
+        # Dropdowns (statistics / flows)
         select_container = Horizontal(id="select_container")
-        
         select_container.styles.padding = (0, 0)
         select_container.styles.margin = (0, 0)
         select_container.styles.min_height = 0
         select_container.styles.height = "auto"
 
         main_container.mount(select_container)
+        
         self.statistics_select = Select([(title, key) for key, (title, _) in constant.GROUPS["statistics"].items()], id="statistics_select", prompt="Statistics of Flows")
         self.flows_select = Select([(title, key) for key, (title, _) in constant.GROUPS["flows"].items()], id="flows_select", prompt="Flows")
 
@@ -112,8 +122,9 @@ class PipelineInputs(App):
         self.flows_select.styles.height = "auto"
 
         select_container.mount(self.statistics_select, self.flows_select)
-        # --- Container orizzontale per i pannelli ---
+        # ---------------------
 
+        # Left panel (statistics) and right panel (flows table)
         panels_container = Horizontal(id="panels_container")
         main_container.mount(panels_container)
 
@@ -122,44 +133,63 @@ class PipelineInputs(App):
         self.left_panel.styles.border = ("round", "#5280FF")
         self.left_panel.styles.margin = (1, 3)
         self.left_panel.styles.padding = (1, 3)
+
         self.right_panel = Vertical(DataTable(zebra_stripes=True, id="json_table"))
         self.right_panel.styles.border = ("round", "#5280FF")
         self.right_panel.styles.margin = (1, 3)
         self.right_panel.styles.padding = (1, 2)
+
         panels_container.mount(self.left_panel, self.right_panel)
 
-        # Aggiornamento periodico
+        # Keep track of last contents for updates
+        self._last_error_content = None
+
+        # Auto refresh every second
         self.set_interval(1, self.refresh_panels)
 
     def refresh_panels(self):
+
+        # --- Error allert ---
+        errors_file = "tmp/errors.txt"
+        error_content = None
+        if os.path.exists(errors_file) and os.path.getsize(errors_file) > 0:
+            with open(errors_file, "r", encoding="utf-8") as f:
+                error_content = f.read()
+
+        # Notify only if content changed and is not empty
+        if error_content and self._last_error_content != error_content:
+            self.notify(f"❌ Error: {error_content.strip()}", severity="error")
+            self._last_error_content = error_content
+
+        # --- LEFT PANEL: stats file ---
         left_widget = self.left_panel.query_one("#left_text", Static)
         stats_file = getattr(self, "current_stats_file", "tmp/initialization.txt")
 
         if not os.path.exists(stats_file) or os.path.getsize(stats_file) == 0:
-            # Mostra animazione solo se non esiste o è vuoto
+            # Show loading animation if empty
             if not hasattr(self, "_loading_widget") or self._loading_widget is None:
                 self._loading_widget = LoadingIndicator(id="loading")
                 self.left_panel.mount(self._loading_widget)
                 left_widget.update("")
-            return   # ⬅ interrompi qui, NON vai avanti a usare stats_content
+            return
 
-        # Se siamo qui, il file esiste ed è pieno
         with open(stats_file, "r", encoding="utf-8") as f:
             stats_content = f.read()
 
-        # Rimuovo il loader se c’è
+        # Remove loader if present
         if hasattr(self, "_loading_widget") and self._loading_widget:
             self._loading_widget.remove()
             self._loading_widget = None
 
-        # Aggiorna solo se il contenuto è cambiato
+        # Update only if content changed
         if getattr(self, "_last_stats_content", None) != stats_content:
             left_widget.update(stats_content)
             self._last_stats_content = stats_content
 
-        # Aggiorna pannello destro (tabella JSON)
+        # --- RIGHT PANEL: flows JSON file ---
         table = self.right_panel.query_one("#json_table", DataTable)
-        table.styles.max_height = 30   # 30 righe circa
+        table.styles.max_height = 30
+        table.header_height = 2
 
         json_file = getattr(self, "current_flow_file", "tmp/filtered_flows.json")
         if os.path.exists(json_file) and os.path.getsize(json_file) > 0:
@@ -171,14 +201,14 @@ class PipelineInputs(App):
         else:
             flows = []
 
-        # Se i dati non sono cambiati, non toccare la tabella
+        # Skip update if unchanged
         if getattr(self, "_last_flows", None) == flows:
             return  
         self._last_flows = flows
 
         table.clear()
         if not table.columns:
-            for col in ["Protocol", "Source IP", "Destination IP", "SNI/URL", "Risk"]:
+            for col in ["\nProtocol", "\nSource IP", "\nDestination IP", "\nSNI/URL", "\nRisk"]:
                 table.add_column(col)
 
         if flows:
@@ -193,8 +223,13 @@ class PipelineInputs(App):
             table.add_row("N/A", "N/A", "N/A", "No data", "None")
 
     def on_select_changed(self, event: Select.Changed) -> None:
+        # Handle dropdown change (statistics or flows)
         key = event.value
         select_id = event.select.id
+
+        # Ignore blank selections
+        if key == Select.BLANK:
+            return
 
         if select_id == "statistics_select":
             # Prendi il path del file selezionato per il pannello destro
@@ -219,7 +254,8 @@ class PipelineInputs(App):
 
     def update_right_panel(self, file_path):
         table = self.right_panel.query_one("#json_table", DataTable)
-        table.styles.max_height = 30   # 30 righe circa
+        table.styles.max_height = 30
+        table.header_height = 2
         table.clear()
         if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
             try:

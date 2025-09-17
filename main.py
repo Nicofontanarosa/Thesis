@@ -11,11 +11,7 @@ import filter
 import functions
 import flow_processor
 
-# mettere controllo che se l'sni appare nel domain prendere il plein text per visualizzare il nome del protocollo
-
-# cambiare il tutto e chiamare solo funzioni
-
-def run_pipeline(pcap_file, ndpi_path, output_dir, log_file):
+def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
     
     # clear of terminal at start
     config.clear_terminal()
@@ -29,7 +25,7 @@ def run_pipeline(pcap_file, ndpi_path, output_dir, log_file):
     # check if on Windows ( you can delete this part if you have nDPI installed on Windows)
     if ndpi_path == 'None':
         if not os.path.exists(json_ndpi):
-            raise FileNotFoundError(f"JSON file from nDPI not found: {json_ndpi}")
+            config.log_message(f"JSON file from nDPI not found: {json_ndpi}", log_file_error)
         else:
             config.log_message(f"- Using existing nDPI JSON: {json_ndpi}", log_file)
     else:
@@ -56,27 +52,11 @@ def main_pipeline(pcap, ndpi, output):
 
     # At the beginning of run_pipeline or right after the imports
     log_file = "tmp/initialization.txt"
+    log_file_error = "tmp/errors.txt"
     config.clear_log(log_file)
+    config.clear_log(log_file_error)
 
-    run_pipeline(pcap, ndpi, output, log_file)
-
-#if __name__ == "__main__":
-
-    # At the beginning of run_pipeline or right after the imports
-#    log_file = "tmp/initialization.txt"
-#    config.clear_log(log_file)
-
-#    parser = argparse.ArgumentParser(description="Pipeline to process PCAP via nDPI, filter, flow_processor")
-#    parser.add_argument("-p", "--pcap", required=True, help="Input PCAP file")
-#    parser.add_argument("-n", "--ndpi", required=True, help="Path to nDPI folder")
-#    parser.add_argument("-o", "--output", required=True, help="Output folder for results")
-#    args = parser.parse_args()
-    
-    # Determine python command depending on OS
-#    python_cmd = "py" if os.name == "nt" else "python3"
-
-    #subprocess.Popen([python_cmd, "flow_viewer_textual.py"])
-#    run_pipeline(args.pcap, args.ndpi, args.output)
+    run_pipeline(pcap, ndpi, output, log_file, log_file_error)
 
 #################################################################
 # End of main.py

@@ -1,0 +1,3 @@
+host:"app.lefrecce.it"@Trenitalia s.p.a.
+host:"dpm.demdex.net",host:"fstechnologyspa.data.adobedc.net"@Adobe inc.
+host:"tr81qim-push.oraclersys.com"@Oracle corporation

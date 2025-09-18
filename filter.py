@@ -131,6 +131,8 @@ def flow_filter(input_file, output_file):
     alpn_pattern = re.compile(r"\[\((Negotiated|Advertised)\) (ALPNs|ALPN): [^]]+\]")
     # regex to remove the fields [TLS Supported Versions: ...]              [TLS Supported Versions: TLSv1.3,TLSv1.2]
     tls_versions_pattern = re.compile(r"\[TLS Supported Versions: [^]]+\]")
+    # regex to remove the fileds [Validity: ...]                            [Validity: 2024-11-27 00:00:00 - 2025-11-30 23:59:59]
+    validity_pattern = re.compile(r"\[Validity: [^]]+\]")
 
     # -------------------------------------------
 
@@ -183,6 +185,7 @@ def flow_filter(input_file, output_file):
                 clean_line = tls_versions_pattern.sub("", clean_line)
                 clean_line = status_pattern.sub("", clean_line)
                 clean_line = ct_pattern.sub("", clean_line)
+                clean_line = validity_pattern.sub("", clean_line)
 
                 # check for incomplete TLS flows
                 if tls_incomplete_pattern.fullmatch(clean_line.strip()):

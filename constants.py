@@ -10,6 +10,8 @@
 # -------------------------------------------
 # parameters used by all scripts 
 
+SHOW_NDPI_PROTOCOLS = False
+
 # protocols to keep
 PROTOCOLS = {"DNS", "TLS", "HTTP", "QUIC", "Unknown", "SMTP"}
 

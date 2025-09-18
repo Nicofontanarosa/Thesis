@@ -75,9 +75,11 @@ def flow_filter(input_file, output_file):
 
     # dynamic construction of the regex
     # regex to match protocols to keep nDPI not recognized
-    # pattern_all = re.compile(r"\[proto: \d+/(" + "|".join(protocols) + r")\]")
-    # regex to match protocols to keep
-    pattern = re.compile(r"\[proto:\s*(?:\d+(?:\.\d+)?/)?(" + "|".join(protocols) + r")[^\]]*\]")
+    if constants.SHOW_NDPI_PROTOCOLS:
+        pattern = re.compile(r"\[proto:\s*(?:\d+(?:\.\d+)?/)?(" + "|".join(protocols) + r")[^\]]*\]")
+    else:
+        # regex to match protocols to keep
+        pattern = re.compile(r"\[proto: \d+/(" + "|".join(protocols) + r")\]")
     # regex to match any protocol
     pattern_general = re.compile(r"\[proto: [^\]]+\]")
     # regex to match lines with only the host IP

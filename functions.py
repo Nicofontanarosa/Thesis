@@ -10,6 +10,7 @@ import re
 import config
 import constants
 import get_info
+from collections import defaultdict
 
 # protocols to keep
 protocols = constants.PROTOCOLS
@@ -110,6 +111,52 @@ def print_flows(final_flows):
 
 # -------------------------------------------
 
+def raggruppa_sni(sni_list):
+
+    gruppi = []
+
+    # SNI unici ordinati per consistenza
+    sni_unici = sorted(set(sni_list))
+
+    while sni_unici:
+        base = sni_unici.pop(0)
+        base_parts = base.split(".")
+        comuni = [base]
+
+        restanti = []
+        for sni in sni_unici:
+            parts = sni.split(".")
+
+            # trova prefisso comune dal fondo
+            i = 1
+            while i <= min(len(base_parts), len(parts)) and base_parts[-i] == parts[-i]:
+                i += 1
+            comune = ".".join(base_parts[-(i-1):]) if i > 1 else None
+
+            # se hanno almeno 2 parti in comune (es: gvt1.com, intel.com ecc.)
+            if comune and comune.count(".") >= 1:
+                comuni.append(sni)
+            else:
+                restanti.append(sni)
+
+        # prendo il dominio base comune se trovato
+        if len(comuni) > 1:
+            # ricalcolo il suffisso comune effettivo
+            parts_comuni = [c.split(".") for c in comuni]
+            min_len = min(len(p) for p in parts_comuni)
+            i = 1
+            while i <= min_len and all(p[-i] == parts_comuni[0][-i] for p in parts_comuni):
+                i += 1
+            dominio_base = ".".join(parts_comuni[0][-(i-1):])
+            gruppi.append(dominio_base)
+        else:
+            gruppi.append(base)
+
+        sni_unici = restanti
+
+    return gruppi
+
+
 def generate_rules(final_flows, output_file, dataset_file="dataset.json", datasetTLD_file="datasetTLD.json"):
 
     # load the main dataset of known domains
@@ -206,28 +253,57 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
     print("\nSNIs remaining after clean_flows:")
     # use a set to avoid duplicates
     printed_snis = set()  
+    clusters = defaultdict(list)
 
     for flow in final_flows:
         sni_orig = flow.get("sni", "")
-        if not sni_orig:
-            continue
-        # normalize original SNI
-        sni_norm = re.sub(r"-+", ".", sni_orig.lower())
-        # check if any cleaned SNI is contained in the normalized original
-        for sni_clean in cleaned_snis:
-            parts = sni_clean.split(".")
-            # check if all parts are present in the normalized original SNI
-            if all(part in sni_norm for part in parts):
-                # store original SNI
-                printed_snis.add(sni_orig)
-                break
+        if sni_orig:
+            # normalize original SNI
+            sni_norm = re.sub(r"-+", ".", sni_orig.lower())
+            # check if any cleaned SNI is contained in the normalized original
+            for sni_clean in cleaned_snis:
+                parts = sni_clean.split(".")
+                # check if all parts are present in the normalized original SNI
+                if all(part in sni_norm for part in parts):
+                    # store original SNI
+                    printed_snis.add(sni_orig)
+
+                    ja3s = flow.get("ja3s")
+                    ja4 = flow.get("ja4")
+                    if ja4:
+                        # prendo solo le ultime 2 parti
+                        parts = ja4.split("_")
+                        if len(parts) >= 2:
+                            ja4 = "_".join(parts[-2:])
+                    chiave = (ja3s, ja4)
+                    clusters[chiave].append(flow)
+
+                    break
+
+    risultato = []
+    for (ja3s, ja4), elementi in clusters.items():
+        sni_list = sorted({e.get("sni") for e in elementi if e.get("sni")})
+        risultato.append({
+            "ja3s": ja3s,
+            "ja4": ja4,
+            "sni_list": sni_list,  # elenco unico e ordinato
+            "flows_count": len(elementi)
+        })
+
+    # salvo su file
+    with open("test.json", "w", encoding="utf-8") as f:
+        json.dump(risultato, f, indent=4)
+
+    sni_da_usare = raggruppa_sni(printed_snis)
+
+    print(f"\n{sni_da_usare}\n")
 
     # print all unique SNIs after cleaning
     print("\nSNIs remaining (without duplicates):")
     for sni in sorted(printed_snis):
         print(f"  ├── \033[1;32m{sni}\033[0m")
 
-    get_info.classify_domains(printed_snis, output_file)
+    get_info.classify_domains(sni_da_usare, output_file)
 
 #################################################################
 # End of functions.py

@@ -1,7 +1,6 @@
 >> Lists of protocols read:
 
    + DNS
-   + ICMPV6
    + QUIC
    + TLS
 
@@ -13,7 +12,3 @@
    + SMTP
    + TLS
    + Unknown
-
-[red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
-
-   [red]+ ICMPV6[/red]

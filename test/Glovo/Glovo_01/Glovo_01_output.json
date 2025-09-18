@@ -29,7 +29,6 @@
         "issuer": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2",
         "subject": "CN=config2.mparticle.com",
         "certificate": "SHA-1: EC:06:DC:52:B6:CC:CC:A9:B9:B9:62:63:00:73:5C:79:27:74:93:6C",
-        "validity": "2024-08-06 15:03:25 - 2025-09-07 15:03:25",
         "sni": "config2.mparticle.com",
         "ip_source": "192.168.80.96",
         "port_source": "63654",
@@ -74,7 +73,6 @@
         "issuer": "C=US, O=Google Trust Services, CN=WE1",
         "subject": "CN=deliveryhero.net",
         "certificate": "SHA-1: C7:B6:00:34:5D:18:2F:1C:B4:8A:E0:70:CE:2B:A0:24:C4:18:6C:E0",
-        "validity": "2025-07-14 11:12:20 - 2025-10-12 12:12:15",
         "sni": "perseus-productanalytics.deliveryhero.net",
         "ip_source": "192.168.80.96",
         "port_source": "63671",
@@ -97,7 +95,6 @@
         "issuer": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2",
         "subject": "CN=nativesdks.mparticle.com",
         "certificate": "SHA-1: 39:FE:13:30:9D:62:4D:B9:96:28:35:53:59:C1:CE:D2:0D:F4:75:7B",
-        "validity": "2025-02-08 14:12:39 - 2026-03-12 14:12:39",
         "sni": "nativesdks.mparticle.com",
         "ip_source": "192.168.80.96",
         "port_source": "63677",
@@ -241,25 +238,6 @@
         ]
     },
     {
-        "ip_field": "119/Facebook",
-        "transport_protocol": "TCP",
-        "proto_field": "91.119/TLS.Facebook",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "graph.facebook.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63652",
-        "ip_destination": "157.240.203.14",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "15 <-> 15",
-            "15 <-> 14"
-        ]
-    },
-    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -270,7 +248,6 @@
         "issuer": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2",
         "subject": "CN=identity.mparticle.com",
         "certificate": "SHA-1: EA:B6:B2:3E:C1:F0:FF:49:71:DE:EC:B8:27:EA:09:3B:D5:10:80:04",
-        "validity": "2025-05-08 18:36:10 - 2026-06-09 18:36:10",
         "sni": "identity.mparticle.com",
         "ip_source": "192.168.80.96",
         "port_source": "63663",
@@ -280,41 +257,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "15 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "119/Facebook",
-        "transport_protocol": "UDP",
-        "proto_field": "188.119/QUIC.Facebook",
-        "tls_version": "TLSv1.3",
-        "ja4": "q00d0111h3_0f2cb44170f4_5e55ee982306",
-        "quic_version": "MVFST-27",
-        "sni": "graph.facebook.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63667",
-        "ip_destination": "157.240.203.14",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "9 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "firebaselogging-pa.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63656",
-        "ip_destination": "216.58.204.234",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 11"
         ]
     },
     {
@@ -333,25 +275,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "12 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.275/TLS.Crashlytics",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "firebase-settings.crashlytics.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63648",
-        "ip_destination": "142.250.180.131",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "15 <-> 13",
-            "15 <-> 12"
         ]
     },
     {

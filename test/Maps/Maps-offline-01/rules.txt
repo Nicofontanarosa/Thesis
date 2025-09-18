@@ -1,6 +1,2 @@
-host:"dsadata.intel.com"@Intel corporation
-host:"rr1---sn-uv2pm-ugol.offline-maps.gvt1.com",host:"rr2---sn-uv2pm-ugol.offline-maps.gvt1.com",host:"rr4---sn-hpa7kn76.offline-maps.gvt1.com"@Google llc
 host:"rr1---sn-uv2pm-ugol.offline-maps.gvt1.com",host:"rr2---sn-uv2pm-ugol.offline-maps.gvt1.com",host:"rr4---sn-hpa7kn76.offline-maps.gvt1.com"@Google llc
 host:"dsadata.intel.com"@Intel corporation
-host:"dsadata.intel.com"@Intel corporation
-host:"rr1---sn-uv2pm-ugol.offline-maps.gvt1.com",host:"rr2---sn-uv2pm-ugol.offline-maps.gvt1.com",host:"rr4---sn-hpa7kn76.offline-maps.gvt1.com"@Google llc

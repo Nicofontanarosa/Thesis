@@ -9,8 +9,6 @@ import json
 import config
 import constants
 
-from collections import defaultdict
-
 # -------------------------------------------
 
 log_file_removed_flows_maxsni = "tmp/removed_flows_maxsni.json"
@@ -181,27 +179,6 @@ def flow_processor(input_file, output_file):
                 flow["risk_info"] = match_risk_info.group(1)
 
             flows.append(flow)
-
-    clusters = defaultdict(list)
-
-    for flusso in flows:
-        # Chiave di clustering = tripla (ja3s, ja4, sni)
-        chiave = (flusso.get("ja3s"), flusso.get("ja4"))
-        clusters[chiave].append(flusso)
-
-    risultato = []
-    for (ja3s, ja4), elementi in clusters.items():
-        sni_list = {f.get("sni") for f in elementi if f.get("sni")}  # set degli SNI
-        risultato.append({
-            "ja3s": ja3s,
-            "ja4": ja4,
-            "sni_list": sorted(sni_list),  # elenco unico e ordinato
-            "flows_count": len(elementi)
-        })
-
-    # salvo su file
-    with open("test.json", "w", encoding="utf-8") as f:
-        json.dump(risultato, f, indent=4)
 
     for flow in flows:
 

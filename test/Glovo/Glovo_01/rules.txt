@@ -1,0 +1,10 @@
+host:"config2.mparticle.com",host:"identity.mparticle.com",host:"nativesdks.mparticle.com"@Domains by proxy, llc
+host:"sdk.fra-01.braze.eu"@Braze sdk
+host:"perseus-productanalytics.deliveryhero.net"@Delivery hero se
+host:"api.usercentrics.eu"@Usercentrics api
+host:"live.ravelin.click"@Ravelin technology
+host:"glovo.dhmedia.io"@Dhmedia traffic
+host:"aggregator.service.usercentrics.eu"@Usercentrics aggregator
+host:"api.glovoapp.com"@Glovoapp23 s.a.
+host:"app.usercentrics.eu"@Usercentrics app
+host:"cluster-active-gate-lb.dynatrace.stackit.zone"@Dynatrace stackit

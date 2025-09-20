@@ -1,10 +1,9 @@
 >> Lists of protocols read:
 
    + DNS
-   + MDNS
+   + ICMPV6
    + QUIC
    + TLS
-   + WhatsApp
 
 >> Lists of protocols supported:
 
@@ -15,7 +14,16 @@
    + TLS
    + Unknown
 
+>> List of IPs read:
+
+   + AmazonAWS
+   + Azure
+   + Cloudflare
+   + Facebook
+   + Google
+   + GoogleCloud
+   + Unknown
+
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
-   [red]+ MDNS[/red]
-   [red]+ WhatsApp[/red]
+   [red]+ ICMPV6[/red]

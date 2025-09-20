@@ -1,6 +1,6 @@
 host:"api.glovoapp.com",host:"glovo.dhmedia.io"@whois: glovoapp23 s.a. & AI: DHMedia Traffic, Glovo API
 host:"sdk.fra-01.braze.eu",host:"usercentrics.eu"@whois:  & AI: Braze SDK, Usercentrics Dashboard
 host:"mparticle.com"@whois: domains by proxy, llc & AI: Mobile Measurement Partner
-host:"perseus-productanalytics.deliveryhero.net"@whois: delivery hero se & AI: Delivery Hero Analytics
+host:"perseus-productanalytics.deliveryhero.net"@whois: delivery hero se & AI: DeliveryHero Analytics
 host:"live.ravelin.click"@whois: ravelin technology & AI: Ravelin Traffic
 host:"cluster-active-gate-lb.dynatrace.stackit.zone"@whois:  & AI: Dynatrace StackIT

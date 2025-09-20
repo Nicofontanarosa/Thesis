@@ -8,13 +8,13 @@ import json
 # my file
 import config
 import constants
+import functions
 
 # -------------------------------------------
 
-log_file_removed_flows_maxsni = "tmp/removed_flows_maxsni.json"
-config.clear_log(log_file_removed_flows_maxsni)
 log_file_filtered_flows = "tmp/filtered_flows.json"
 config.clear_log(log_file_filtered_flows)
+log_file_flows = "tmp/flows.txt"
 
 # -------------------------------------------
 
@@ -27,7 +27,7 @@ def remove_flows_maxsin(final_flows):
         if not sni or len(sni.split(".")) <= constants.SNI_MAX_DOMAIN:
             filtered_flows.append(flow)
         else:
-            config.log_message(f"[REMOVED] SNI with more than 4 domains: {sni}", log_file_removed_flows_maxsni)
+            print(f"[REMOVED] SNI with more than 4 domains: {sni}")
 
     return  filtered_flows
 
@@ -219,6 +219,11 @@ def flow_processor(input_file, output_file):
         json.dump(final_flows, f_out, indent=4)
     
     config.log_message(final_flows, log_file_filtered_flows)
+
+    protocol_counts = functions.protocols_summary(final_flows)
+    # printing summary
+    summary = ", ".join([f"{v} flows {k}" for k, v in protocol_counts.items()])
+    config.log_message(f"\n\n>> Flows detected after aggregation:\n\n + {summary}", log_file_flows)
 
     return final_flows
 

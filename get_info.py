@@ -61,9 +61,9 @@ def print_rules(flows, protocol_name, rules_file):
     rule = f"{host_entries}@{protocol_name.capitalize()}"
 
     with open(rules_file, "a") as f:
-        f.write(f"{rule}\n")
+        f.write(f"{rule}\n\n")
     
-    config.log_message(f"{rule}\n", log_file_rules)
+    config.log_message(f"{rule}\n\n", log_file_rules)
 
     print(f"\nRules saved to {rules_file}:\n{rule}\n")
 
@@ -124,4 +124,3 @@ def classify_domains(clusters, output_file):
 #################################################################
 # End of get_info.py
 #################################################################
-

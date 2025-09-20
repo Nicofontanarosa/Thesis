@@ -58,9 +58,9 @@ def flow_filter(input_file, output_file):
     for proto in sorted(protocols):
         config.log_message(f"   + {proto}\n", log_file_stats)
 
-    #config.log_message("\n>> List of IPs read:\n\n", log_file_stats)
-    #for ip in sorted(all_ip_in_file):
-    #    config.log_message(f"   + {ip}", log_file_stats)
+    config.log_message("\n>> List of IPs read:\n\n", log_file_stats)
+    for ip in sorted(all_ip_in_file):
+        config.log_message(f"   + {ip}\n", log_file_stats)
 
     not_analyzed = all_protocols_in_file - protocols
     if not_analyzed:
@@ -206,14 +206,14 @@ def flow_filter(input_file, output_file):
                 removed_flows.append(line)
 
     # Print summary
-    config.log_message(f"\n- Flows read: {len(keep_flows) + len(removed_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows) + len(no_sni_flows)}", log_file_flows)
-    config.log_message(f"- Flows kept: {len(keep_flows)}", log_file_flows)
-    config.log_message(f"- Flows removed: {len(removed_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows) + len(no_sni_flows)}", log_file_flows)
-    config.log_message(f"----- General flows removed: {len(removed_flows)}", log_file_flows)
-    config.log_message(f"----- Empty flows removed: {len(empty_flows)}", log_file_flows)
-    config.log_message(f"------ IPv6 flows removed: {len(ipv6_flows)}", log_file_flows)
-    config.log_message(f"------ Incomplete TLS flows removed: {len(incomplete_tls_flows)}", log_file_flows)
-    config.log_message(f"------ No SNI flows removed: {len(no_sni_flows)}", log_file_flows)
+    config.log_message(f">> Flows read: {len(keep_flows) + len(removed_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows) + len(no_sni_flows)}", log_file_flows)
+    config.log_message(f"\n\n + Flows kept: {len(keep_flows)}", log_file_flows)
+    config.log_message(f"\n\n + Flows removed: {len(removed_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows) + len(no_sni_flows)}", log_file_flows)
+    config.log_message(f"\n\n   + General flows removed: {len(removed_flows)}", log_file_flows)
+    config.log_message(f"\n   + Empty flows removed: {len(empty_flows)}", log_file_flows)
+    config.log_message(f"\n   + IPv6 flows removed: {len(ipv6_flows)}", log_file_flows)
+    config.log_message(f"\n   + Incomplete TLS flows removed: {len(incomplete_tls_flows)}", log_file_flows)
+    config.log_message(f"\n   + No SNI flows removed: {len(no_sni_flows)}", log_file_flows)
 
     # ---------------------------------------------------
     # Print removed flows ( with categories )

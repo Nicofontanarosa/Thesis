@@ -1,0 +1,89 @@
+>> Temporal ranking:
+
+
+ + SNI: update.googleapis.com
+  + first_seen:2025-08-23 14:42:11
+
+ + SNI: graph.facebook.com
+  + first_seen:2025-08-23 14:42:11
+
+ + SNI: vintedapp.com
+  + first_seen:2025-08-23 14:42:11
+
+ + SNI: www.vinted.fr
+  + first_seen:2025-08-23 14:42:11
+
+ + SNI: sdk.fra-01.braze.eu
+  + first_seen:2025-08-23 14:42:11
+
+ + SNI: api-sdk.datadome.co
+  + first_seen:2025-08-23 14:42:11
+
+ + SNI: logs-ingress.svc.vinted.com
+  + first_seen:2025-08-23 14:42:11
+
+ + SNI: mobile-data.onetrust.io
+  + first_seen:2025-08-23 14:42:13
+
+ + SNI: c.amazon-adsystem.com
+  + first_seen:2025-08-23 14:42:13
+
+ + SNI: mobile-api.rokt.com
+  + first_seen:2025-08-23 14:42:13
+
+ + SNI: ms.applovin.com
+  + first_seen:2025-08-23 14:42:13
+
+ + SNI: cdn.cookielaw.org
+  + first_seen:2025-08-23 14:42:13
+
+ + SNI: mads.amazon-adsystem.com
+  + first_seen:2025-08-23 14:42:14
+
+ + SNI: apps.rokt.com
+  + first_seen:2025-08-23 14:42:14
+
+ + SNI: images1.vinted.net
+  + first_seen:2025-08-23 14:42:14
+
+ + SNI: aax.amazon-adsystem.com
+  + first_seen:2025-08-23 14:42:16
+
+ + SNI: d.applovin.com
+  + first_seen:2025-08-23 14:42:16
+
+ + SNI: rt.applovin.com
+  + first_seen:2025-08-23 14:42:16
+
+ + SNI: cdn2.inner-active.mobi
+  + first_seen:2025-08-23 14:42:16
+
+ + SNI: ads.pubmatic.com
+  + first_seen:2025-08-23 14:42:16
+
+ + SNI: logs.ads.vungle.com
+  + first_seen:2025-08-23 14:42:16
+
+ + SNI: unif-id.ssp.inmobi.com
+  + first_seen:2025-08-23 14:42:16
+
+ + SNI: prod-mediate-events.applovin.com
+  + first_seen:2025-08-23 14:42:16
+
+ + SNI: init-mp.fyber.com
+  + first_seen:2025-08-23 14:42:16
+
+ + SNI: sts.applovin.com
+  + first_seen:2025-08-23 14:42:17
+
+ + SNI: ms4.applovin.com
+  + first_seen:2025-08-23 14:42:17
+
+ + SNI: socket.vinted.net
+  + first_seen:2025-08-23 14:42:18
+
+ + SNI: config.inmobi.com
+  + first_seen:2025-08-23 14:42:19
+
+ + SNI: view.adjust.com
+  + first_seen:2025-08-23 14:42:20

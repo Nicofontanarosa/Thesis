@@ -7,7 +7,10 @@ import json
 import config
 from datetime import datetime
 
-def rank_sni(flows, times_file, log_file_time, log_file_rank):
+def rank_sni(flows, times_file, log_file_time="tmp/rank_time_sni.txt", log_file_rank="tmp/rank_sni.txt"):
+
+    config.clear_log(log_file_time)
+    config.clear_log(log_file_rank)
 
     # Dictionary to store statistics for each SNI
     sni_stats = {}   
@@ -56,13 +59,13 @@ def rank_sni(flows, times_file, log_file_time, log_file_rank):
     frequency_ranking = sorted(sni_stats.keys(), key=lambda x: sni_stats[x]["count"], reverse=True)
 
     # Print temporal ranking
-    config.log_message(f"\n>> Temporal ranking:\n\n {sni_times}", log_file_time)    
+    config.log_message(f">> Temporal ranking:\n\n", log_file_time)    
     for sni in temporal_ranking:
         ts = sni_stats[sni]['first_seen']
         ts_str = datetime.fromtimestamp(ts).strftime("%Y-%m-%d %H:%M:%S") if ts else "Unknown"
-        config.log_message(f" + SNI: {sni}\n  + first_seen:{ts_str}\n", log_file_time)
+        config.log_message(f"\n + SNI: {sni}\n  + first_seen:{ts_str}\n", log_file_time)
 
     # Print frequency ranking
-    config.log_message(f"\n>> Frequency ranking:\n\n {sni_times}", log_file_rank)
+    config.log_message(f">> Frequency ranking:\n\n", log_file_rank)
     for sni in frequency_ranking:
-        config.log_message(f" + SNI: {sni}\n  + count: {sni_stats[sni]['count']}", log_file_rank)
+        config.log_message(f"\n + SNI: {sni}\n  + count: {sni_stats[sni]['count']}\n", log_file_rank)

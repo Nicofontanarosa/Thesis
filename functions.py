@@ -6,12 +6,14 @@
 from collections import Counter
 import json
 import re
+import os
+from collections import defaultdict
 # my file
 import config
 import constants
 import get_info
-from collections import defaultdict
 import rank_sni
+import group_sni
 
 # protocols to keep
 protocols = constants.PROTOCOLS
@@ -41,7 +43,9 @@ def protocols_summary(flows):
 
 # -------------------------------------------
 
-def print_risky_flows(final_flows):
+def print_risky_flows(final_flows, log_risky_flows="tmp/log_risky_flows.txt"):
+
+    config.clear_log(log_risky_flows)
 
     for flow in final_flows:
         # check if the flow has any key containing "risk"
@@ -49,198 +53,43 @@ def print_risky_flows(final_flows):
         if not risk_keys:
             continue  # skip flows without risk
 
-        print("--- Risky Flow ---")
+        config.log_message("\n\n>> Risky Flow:\n\n", log_risky_flows)
         for k, v in flow.items():
             if k in risk_keys:
-                print(f"  ├── \033[1;31m{k}: {v}\033[0m")  # red for risk
+                config.log_message(f"  + [red]{k}: {v}[/red]\n", log_risky_flows)  # red for risk
             elif "sni" in k.lower() or "hostname" in k.lower():
-                print(f"  ├── \033[1;32m{k}: {v}\033[0m")  # green for SNI/hostname
+                config.log_message(f"  + [green]{k}: {v}[/green]\n", log_risky_flows)  # green for SNI/hostname
             else:
-                print(f"  ├── {k}: {v}")
-        print("\n")
+                config.log_message(f"  + {k}: {v}\n", log_risky_flows)
 
 # -------------------------------------------
-
-def print_flow(prot, final_flows):
-
-    for flow in final_flows:
-        proto = flow.get("proto_field", "").lower()
-        if prot in proto:
-            for k, v in flow.items():
-                if "risk" in k.lower():
-                    print(f"  ├── \033[1;31m{k}: {v}\033[0m")
-                elif "sni" in k.lower() or "hostname" in k.lower():
-                    print(f"  ├── \033[1;32m{k}: {v}\033[0m")
-                else:
-                    print(f"  ├── {k}: {v}")
-            print("\n")
-
-def print_flows(final_flows):
-
-    protocol_counts = protocols_summary(final_flows)
-
-    # printing summary
-    summary = ", ".join([f"{v} flows {k}" for k, v in protocol_counts.items()])
-    print(f"\nDetected: {summary}\n")
-
-    # printing flows with risk
-    print_risky_flows(final_flows)
-
-    # --- DNS FLOWS PRINT ---
-    print("DNS flows detected:\n")
-    print_flow("dns", final_flows)
-
-    # --- HTTP FLOWS PRINT ---
-    print("\nHTTP flows detected:\n")
-    print_flow("http", final_flows)
-
-    # --- TLS FLOWS PRINT ---
-    print("\nTLS flows detected:\n")
-    print_flow("tls", final_flows)
-
-    # --- QUIC FLOWS PRINT ---
-    print("\nQUIC flows detected:\n")
-    print_flow("quic", final_flows)
-
-    # --- SMTP FLOWS PRINT ---
-    print("\nSMTP flows detected:\n")
-    print_flow("smtp", final_flows)
-
-    # --- UNKNOWN FLOWS PRINT ---
-    print("\nUnknown flows detected:\n")
-    print_flow("unknown", final_flows)
-
-# -------------------------------------------
-
-def raggruppa_sni(cluster):
-
-    sni_list = cluster["sni_list"]
-
-    if not sni_list:
-        return cluster
-    
-    gruppi = []
-    sni_unici = sorted(set(sni_list))
-
-    while sni_unici:
-        base = sni_unici.pop(0)
-        base_parts = base.split(".")
-        comuni = [base]
-        restanti = []
-
-        for sni in sni_unici:
-            parts = sni.split(".")
-
-            # trova suffisso comune dal fondo
-            i = 1
-            while i <= min(len(base_parts), len(parts)) and base_parts[-i] == parts[-i]:
-                i += 1
-            comune = ".".join(base_parts[-(i-1):]) if i > 1 else None
-
-            # se hanno almeno dominio + TLD in comune
-            if comune and comune.count(".") >= 1:
-                comuni.append(sni)
-            else:
-                restanti.append(sni)
-
-        # calcolo dominio base effettivo
-        if len(comuni) > 1:
-            parts_comuni = [c.split(".") for c in comuni]
-            min_len = min(len(p) for p in parts_comuni)
-            i = 1
-            while i <= min_len and all(p[-i] == parts_comuni[0][-i] for p in parts_comuni):
-                i += 1
-            dominio_base = ".".join(parts_comuni[0][-(i-1):])
-            gruppi.append(dominio_base)
-        else:
-            gruppi.append(base)
-
-        sni_unici = restanti
-
-    cluster["sni_list"] = gruppi
-    return cluster
-
-def unisci_cluster(clusters: list) -> list:
-
-    clusters = [
-        c for c in clusters
-        if not (c.get("ja3s") is None and c.get("ja4") is None)
-    ]
-
-    print(f"\n{clusters}\n")
-
-    clusters = [raggruppa_sni(c) for c in clusters]
-
-    # ordina i cluster in base alla lunghezza decrescente della sni_list
-    clusters.sort(key=lambda c: len(c["sni_list"]), reverse=True)
-
-    i = 0
-    while i < len(clusters):
-        cluster_grande = clusters[i]
-        j = i + 1
-        while j < len(clusters):
-            cluster_piccolo = clusters[j]
-
-            # lista combinata
-            unione = {
-                "sni_list": cluster_grande["sni_list"] + cluster_piccolo["sni_list"]
-            }
-            unione_raggr = raggruppa_sni(unione)
-
-            if len(unione_raggr["sni_list"]) < (
-                len(cluster_grande["sni_list"]) + len(cluster_piccolo["sni_list"])
-            ):
-                # SNI ridotti dalla raggruppa
-                ridotti = set(unione_raggr["sni_list"])
-
-                print(f"\n{ridotti}\n\n{cluster_grande["sni_list"]}\n\n{cluster_piccolo["sni_list"]}\n\n")
-
-                nuovo_grande = []
-                for s in cluster_grande["sni_list"]:
-                    # per ogni sni del grande, vedi se è stato ridotto
-                    corrispondenze = [r for r in ridotti if s.endswith(r)]
-                    if corrispondenze:
-                        # sostituisco con il ridotto corrispondente
-                        nuovo_grande.append(corrispondenze[0])
-                    else:
-                        # mantengo l'originale
-                        nuovo_grande.append(s)
-                cluster_grande["sni_list"] = sorted(set(nuovo_grande))
-
-                # il piccolo perde solo ciò che è stato assorbito nel grande
-                cluster_piccolo["sni_list"] = [
-                    s for s in cluster_piccolo["sni_list"]
-                    if not any(r in ridotti and s.endswith(r) for r in ridotti)
-                ]
-
-            j += 1
-        i += 1
-
-    # rimuovo cluster vuoti
-    clusters = [c for c in clusters if c["sni_list"]]
-    return clusters
 
 def generate_rules(final_flows, output_file, dataset_file="dataset.json", datasetTLD_file="datasetTLD.json"):
+    # Create the complete path for the intermediate JSON file
+    output_folder = os.path.dirname(output_file)
+    base, _ = os.path.splitext(os.path.basename(output_file))
+    json_time_ndpi = os.path.join(output_folder, base + "_k.json")
 
-    #rank_sni.rank_sni(final_flows, "Maps_offline_01_vk.json")
+    # Rank SNIs in final_flows and output ranking to json_time_ndpi
+    rank_sni.rank_sni(final_flows, json_time_ndpi)
 
-    # load the main dataset of known domains
+    # Load the main dataset of known domains
     with open(dataset_file, "r") as f:
         dataset = json.load(f)
     dataset_domains = {d.lower() for d in dataset.get("domains", [])}
-    # sort the dataset by length in descending order to match longer suffixes first
+    # Sort dataset domains by length descending to match longer suffixes first
     sorted_dataset = sorted(dataset_domains, key=len, reverse=True)
 
-    # load the TLD dataset already ordered
+    # Load the TLD dataset, assumed to be pre-sorted
     with open(datasetTLD_file, "r") as f:
         datasetTLD = json.load(f)
     datasetTLD_domains = {d.lower() for d in datasetTLD.get("domains", [])}
 
-    # collect all SNIs seen
+    # Collect all SNIs seen in the final flows
     sni_list = [flow.get("sni") for flow in final_flows if "sni" in flow and flow["sni"]]
     unique_sni = sorted(set(sni_list))
 
-    # print all SNIs detected in the flows
+    # Print all SNIs detected in the flows
     print("\nAll SNIs seen:")
     for sni in unique_sni:
         print(f"  ├── \033[1;32m{sni}\033[0m")
@@ -248,7 +97,7 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
     cleaned_snis = set()
     removed_TLD_parts = []
 
-    # remove flows with SNIs containing excluded words or present in the main dataset
+    # Remove flows with SNIs containing excluded words or present in the main dataset
     removed_flows = [
         flow for flow in final_flows
         if not flow.get("sni") 
@@ -260,6 +109,7 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
     for flow in removed_flows:
         print(f"  ├── {flow.get('sni', '<no SNI>')}")
 
+    # Keep only flows that are not removed
     final_flows = [
         flow for flow in final_flows
         if flow not in removed_flows
@@ -268,27 +118,25 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
     for flow in final_flows:
         sni = flow.get("sni", "").lower()
 
-        # initialize sni_proc
+        # Initialize a processed SNI variable
         sni_proc = sni
 
-        # 1) Truncate known suffixes from the main dataset ( longest first )
+        # 1) Remove known suffixes from the main dataset (longest first)
         for d in sorted_dataset:
             if sni_proc.endswith("." + d):
-                prefix = sni_proc[: -(len(d) + 1)]
-                # if nothing left, discard
+                prefix = sni_proc[:-(len(d) + 1)]
+                # If nothing left after removal, discard
                 sni_proc = prefix if prefix else ""
                 break
         if not sni_proc:
             continue
 
-        #print(f"[DEBUG] After main dataset cut: {sni} -> {sni_proc}")
-
         # 2) Replace multiple consecutive hyphens with a single dot
         sni_proc = re.sub(r"-+", ".", sni_proc)
-        # split the remaining SNI into parts
         parts = sni_proc.split(".")
         new_parts = []
-        # 3) Remove unwanted parts: numbers, too short, or present in datasetTLD
+
+        # 3) Remove unwanted parts: numeric, too short, or present in datasetTLD
         for p in parts:
             if len(p) <= constants.N_MIN or re.search(r"\d", p) or p in datasetTLD_domains:
                 if p in datasetTLD_domains:
@@ -297,72 +145,66 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
             new_parts.append(p)
         parts = new_parts
 
-        #if removed_TLD_parts:
-        #    print("\nDomains removed because in datasetTLD:")
-        #    for dom in sorted(set(removed_TLD_parts)):
-        #        print(f"  ├── {dom}")
-
         if not parts:
             continue
 
-        # rejoin the cleaned parts
+        # Rejoin cleaned parts into the processed SNI
         sni_proc = ".".join(parts)
-        # add the cleaned SNI to the set
+        # Add cleaned SNI to the set
         cleaned_snis.add(sni_proc)
-
-        #print(f"[DEBUG] After second dataset cut: {sni_proc}")
 
     print(f"\nCleaned SNIs: {cleaned_snis}")
 
-    # use a set to avoid duplicates
-    printed_snis = set()  
+    # Prepare to collect clusters grouped by (ja3s, ja4) keys
+    printed_snis = set()
     clusters = defaultdict(list)
 
     for flow in final_flows:
         sni_orig = flow.get("sni", "")
         if sni_orig:
-            # normalize original SNI
+            # Normalize the original SNI by replacing multiple hyphens with dots
             sni_norm = re.sub(r"-+", ".", sni_orig.lower())
-            # check if any cleaned SNI is contained in the normalized original
+            # Check if any cleaned SNI parts are contained in the normalized original SNI
             for sni_clean in cleaned_snis:
                 parts = sni_clean.split(".")
-                # check if all parts are present in the normalized original SNI
                 if all(part in sni_norm for part in parts):
-                    # store original SNI
+                    # Add original SNI to printed set
                     printed_snis.add(sni_orig)
 
                     ja3s = flow.get("ja3s")
                     ja4 = flow.get("ja4")
                     if ja4:
-                        # prendo solo le ultime 2 parti
+                        # Keep only the last 2 parts of ja4
                         parts = ja4.split("_")
                         if len(parts) >= 2:
                             ja4 = "_".join(parts[-2:])
-                    chiave = (ja3s, ja4)
-                    clusters[chiave].append(flow)
+                    key = (ja3s, ja4)
+                    clusters[key].append(flow)
                     break
 
     risultato = []
-    for (ja3s, ja4), elementi in clusters.items():
-        sni_list = sorted({e.get("sni") for e in elementi if e.get("sni")})
+    for (ja3s, ja4), elements in clusters.items():
+        sni_list = sorted({e.get("sni") for e in elements if e.get("sni")})
         risultato.append({
             "ja3s": ja3s,
             "ja4": ja4,
             "sni_list": sni_list,
         })
 
-    sni_da_usare = unisci_cluster(risultato)
+    # Merge clusters using the previously defined merging function
+    sni_to_use = group_sni.merge_clusters(risultato)
 
-    # salvo su file
+    # Save the final merged data to a JSON file
     with open("test.json", "w", encoding="utf-8") as f:
-        json.dump(sni_da_usare, f, indent=4)
+        json.dump(sni_to_use, f, indent=4)
 
-    # print all unique SNIs after cleaning
+    # Print all unique SNIs remaining after cleaning
     print("\nSNIs remaining (without duplicates):")
     for sni in sorted(printed_snis):
         print(f"  ├── \033[1;32m{sni}\033[0m")
 
-    #get_info.classify_domains(sni_da_usare, output_file)
+    # Call classification on the cleaned and merged SNIs outputting to the specified file
+    get_info.classify_domains(sni_to_use, output_file)
 
 #################################################################
 # End of functions.py

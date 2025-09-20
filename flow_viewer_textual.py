@@ -7,6 +7,7 @@
 from textual.app import App, ComposeResult
 from textual.widgets import Header, Footer, Static, LoadingIndicator, Input, DataTable, Select
 from textual.containers import Vertical, Horizontal
+from textual.containers import VerticalScroll
 # standard libraries
 import json
 import os
@@ -27,7 +28,7 @@ class PipelineInputs(App):
         super().__init__()
         
         # Default paths
-        self.paths = {"pcap": "pcapng/Vinted_01.pcapng", "ndpi": "None", "output": "test/Vinted/Vinted-01"}
+        self.paths = {"pcap": "pcapng/Glovo_01.pcapng", "ndpi": "None", "output": "test/Glovo/Glovo_01"}
         self.left_panel = None
         self.right_panel = None
         self.statistics_select = None
@@ -79,15 +80,15 @@ class PipelineInputs(App):
         yield output_input
 
         # Empty vertical container for panels
-        yield Vertical(id="main_panel")
+        yield VerticalScroll(id="main_panel")
         yield Footer()
 
     def on_input_submitted(self, event: Input.Submitted) -> None:
 
         # Save path entered by user
         if event.input.id == "pcap_input":
-            self.paths["pcap"] = "pcapng/Vinted_01.pcapng"
-            self.notify(f"PCAP file set: pcapng/Vinted_01.pcapng", severity="information")
+            self.paths["pcap"] = "pcapng/Glovo_01.pcapng"
+            self.notify(f"PCAP file set: pcapng/Glovo_01.pcapng", severity="information")
         elif event.input.id == "ndpi_input":
             self.paths["ndpi"] = event.value.strip()
             self.notify(f"nDPI directory set: {event.value.strip()}", severity="information")
@@ -109,7 +110,7 @@ class PipelineInputs(App):
         # Run main() asynchronously in background (thread-safe)
         asyncio.create_task(self.run_main_in_background())
 
-        main_container = self.query_one("#main_panel", Vertical)
+        main_container = self.query_one("#main_panel", VerticalScroll)
 
         # Dropdowns (statistics / flows)
         select_container = Horizontal(id="select_container")
@@ -140,13 +141,13 @@ class PipelineInputs(App):
         panels_container = Horizontal(id="panels_container")
         main_container.mount(panels_container)
 
-        self.left_panel = Vertical(Static(self.current_stats_file, id="left_text"))
+        self.left_panel = VerticalScroll(Static("", id="left_text"))
         self.left_panel.styles.width = 70
         self.left_panel.styles.border = ("round", "#5280FF")
         self.left_panel.styles.margin = (1, 3)
         self.left_panel.styles.padding = (1, 3)
 
-        self.right_panel = Vertical(DataTable(zebra_stripes=True, id="json_table"))
+        self.right_panel = VerticalScroll(DataTable(zebra_stripes=True, id="json_table"))
         self.right_panel.styles.border = ("round", "#5280FF")
         self.right_panel.styles.margin = (1, 3)
         self.right_panel.styles.padding = (1, 2)
@@ -175,6 +176,8 @@ class PipelineInputs(App):
 
         # --- LEFT PANEL: stats file ---
         left_widget = self.left_panel.query_one("#left_text", Static)
+        left_widget.styles.text_wrap = "wrap"
+        left_widget.styles.text_overflow = "fold"
         stats_file = getattr(self, "current_stats_file", "tmp/initialization.txt")
 
         if not os.path.exists(stats_file) or os.path.getsize(stats_file) == 0:
@@ -186,17 +189,13 @@ class PipelineInputs(App):
             return
 
         with open(stats_file, "r", encoding="utf-8") as f:
-            stats_content = f.read()
+            content = f.read()
+        left_widget.update(content)
 
         # Remove loader if present
         if hasattr(self, "_loading_widget") and self._loading_widget:
             self._loading_widget.remove()
             self._loading_widget = None
-
-        # Update only if content changed
-        if getattr(self, "_last_stats_content", None) != stats_content:
-            left_widget.update(stats_content)
-            self._last_stats_content = stats_content
 
         # --- RIGHT PANEL: flows JSON file ---
         table = self.right_panel.query_one("#json_table", DataTable)
@@ -257,12 +256,12 @@ class PipelineInputs(App):
     def update_left_panel(self, file_path):
         
         left_widget = self.left_panel.query_one("#left_text", Static)
-        left_widget.styles.max_height = 30
+        left_widget.styles.text_wrap = "wrap"
+        left_widget.styles.text_overflow = "fold"
         if os.path.exists(file_path):
             with open(file_path, "r", encoding="utf-8") as f:
-                left_widget.update(f.read())
-        else:
-            left_widget.update("⚠ File not found or empty")
+                content = f.read()
+            left_widget.update(content)
 
     def update_right_panel(self, file_path):
 

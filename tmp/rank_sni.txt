@@ -1,0 +1,89 @@
+>> Frequency ranking:
+
+
+ + SNI: www.vinted.fr
+  + count: 7
+
+ + SNI: images1.vinted.net
+  + count: 4
+
+ + SNI: prod-mediate-events.applovin.com
+  + count: 4
+
+ + SNI: sdk.fra-01.braze.eu
+  + count: 4
+
+ + SNI: ms4.applovin.com
+  + count: 3
+
+ + SNI: aax.amazon-adsystem.com
+  + count: 3
+
+ + SNI: unif-id.ssp.inmobi.com
+  + count: 3
+
+ + SNI: cdn.cookielaw.org
+  + count: 2
+
+ + SNI: sts.applovin.com
+  + count: 2
+
+ + SNI: cdn2.inner-active.mobi
+  + count: 2
+
+ + SNI: api-sdk.datadome.co
+  + count: 2
+
+ + SNI: vintedapp.com
+  + count: 2
+
+ + SNI: logs-ingress.svc.vinted.com
+  + count: 1
+
+ + SNI: ms.applovin.com
+  + count: 1
+
+ + SNI: mobile-data.onetrust.io
+  + count: 1
+
+ + SNI: config.inmobi.com
+  + count: 1
+
+ + SNI: d.applovin.com
+  + count: 1
+
+ + SNI: rt.applovin.com
+  + count: 1
+
+ + SNI: view.adjust.com
+  + count: 1
+
+ + SNI: mads.amazon-adsystem.com
+  + count: 1
+
+ + SNI: c.amazon-adsystem.com
+  + count: 1
+
+ + SNI: init-mp.fyber.com
+  + count: 1
+
+ + SNI: logs.ads.vungle.com
+  + count: 1
+
+ + SNI: mobile-api.rokt.com
+  + count: 1
+
+ + SNI: apps.rokt.com
+  + count: 1
+
+ + SNI: socket.vinted.net
+  + count: 1
+
+ + SNI: ads.pubmatic.com
+  + count: 1
+
+ + SNI: update.googleapis.com
+  + count: 1
+
+ + SNI: graph.facebook.com
+  + count: 1

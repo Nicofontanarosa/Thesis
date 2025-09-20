@@ -11,6 +11,7 @@ import config
 import constants
 import get_info
 from collections import defaultdict
+from datetime import datetime
 
 # protocols to keep
 protocols = constants.PROTOCOLS
@@ -219,6 +220,64 @@ def unisci_cluster(clusters: list) -> list:
     clusters = [c for c in clusters if c["sni_list"]]
     return clusters
 
+def classifiche_sni(flussi, file_tempi):
+
+    sni_stats = {}
+
+    # --- carica i tempi dal file ---
+    tempi_sni = {}
+    with open(file_tempi, "r") as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+                sni = rec.get("ndpi", {}).get("hostname") or rec.get("ndpi", {}).get("domainname")
+                if not sni:
+                    continue
+                ts = rec.get("first_seen")
+                if sni not in tempi_sni or (ts is not None and ts < tempi_sni[sni]):
+                    tempi_sni[sni] = ts
+            except Exception:
+                continue
+
+    print(f"\n{tempi_sni}\n")
+
+    # --- analizza i flussi ---
+    seen_order = []
+    for f in flussi:
+        sni = f.get("sni")
+        if not sni:
+            continue
+
+        peso = f.get("similar_flows_count", 1)
+
+        if sni not in sni_stats:
+            sni_stats[sni] = {"count": 0, "first_seen": tempi_sni.get(sni)}
+            seen_order.append(sni)
+
+        sni_stats[sni]["count"] += peso
+
+    # classifica 1: ordine di prima apparizione
+    classifica_temporale = sorted(
+        seen_order,
+        key=lambda x: (sni_stats[x]["first_seen"] or float("inf"))
+    )
+
+    # classifica 2: ordine di occorrenze (più viste prima)
+    classifica_frequenza = sorted(
+        sni_stats.keys(),
+        key=lambda x: sni_stats[x]["count"],
+        reverse=True
+    )
+
+    print("\n📌 Classifica temporale (ordine di prima apparizione):")
+    for sni in classifica_temporale:
+        ts = sni_stats[sni]['first_seen']
+        ts_str = datetime.fromtimestamp(ts).strftime("%Y-%m-%d %H:%M:%S") if ts else "Unknown"
+        print(f"{sni}: first_seen={ts_str}")
+
+    print("\n📌 Classifica per frequenza (più viste prima):")
+    for sni in classifica_frequenza:
+        print(f"{sni}: {sni_stats[sni]['count']}")
 
 def generate_rules(final_flows, output_file, dataset_file="dataset.json", datasetTLD_file="datasetTLD.json"):
 
@@ -360,7 +419,9 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
     for sni in sorted(printed_snis):
         print(f"  ├── \033[1;32m{sni}\033[0m")
 
-    get_info.classify_domains(sni_da_usare, output_file)
+    classifiche_sni(final_flows, "Maps_offline_01_vk.json")
+
+    #get_info.classify_domains(sni_da_usare, output_file)
 
 #################################################################
 # End of functions.py

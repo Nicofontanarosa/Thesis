@@ -1,5 +1,4 @@
-host:"logs-ingress.svc.vinted.com",host:"vinted.net",host:"www.vinted.fr"@whois:  & AI: Vinted Logs, Vinted Marketplace
-host:"api-sdk.datadome.co",host:"vintedapp.com"@whois: datadome & AI: DataDome API
-, Vinted App
-host:"sdk.fra-01.braze.eu"@whois:  & AI: Braze SDK
-host:"rokt.com"@whois: rokt pte. ltd. & AI: Roako Traffic
+host:"logs-ingress.svc.vinted.com",host:"vinted.net",host:"www.vinted.fr"@whois: unknown & AI: unknown
+host:"api-sdk.datadome.co",host:"vintedapp.com"@whois: datadome, unknown & AI: unknown
+host:"sdk.fra-01.braze.eu"@whois: unknown & AI: unknown
+host:"rokt.com"@whois: rokt pte. ltd. & AI: unknown

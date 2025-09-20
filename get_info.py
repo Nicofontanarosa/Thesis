@@ -61,9 +61,9 @@ def print_rules(flows, protocol_name, rules_file):
     rule = f"{host_entries}@{protocol_name.capitalize()}"
 
     with open(rules_file, "a") as f:
-        f.write(f"{rule}\n\n")
+        f.write(f"{rule}\n\n\n")
     
-    config.log_message(f"{rule}\n\n", log_file_rules)
+    config.log_message(f"{rule}\n\n\n", log_file_rules)
 
     print(f"\nRules saved to {rules_file}:\n{rule}\n")
 
@@ -95,8 +95,11 @@ def classify_domains(clusters, output_file):
                         whois_orgs.add(org)
                         ai_orgs.add(orgai)
                 else:
+                    if os.name == 'nt':
+                        orgai = classify_domain_AI(d)
+                    else:
+                        orgai = "unknown"
                     org = org.lower()
-                    orgai = classify_domain_AI(d)
                     whois_orgs.add(org)
                     ai_orgs.add(orgai)
 

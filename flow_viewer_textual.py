@@ -28,7 +28,8 @@ class PipelineInputs(App):
         super().__init__()
         
         # Default paths
-        self.paths = {"pcap": "pcapng/Glovo_01.pcapng", "ndpi": "None", "output": "test/Glovo/Glovo_01"}
+        #self.paths = {"pcap": "pcapng/Glovo_01.pcapng", "ndpi": "None", "output": "test/Glovo/Glovo_01"}
+        self.paths = {"pcap": None, "ndpi": None, "output": None}
         self.left_panel = None
         self.right_panel = None
         self.statistics_select = None
@@ -87,8 +88,9 @@ class PipelineInputs(App):
 
         # Save path entered by user
         if event.input.id == "pcap_input":
-            self.paths["pcap"] = "pcapng/Glovo_01.pcapng"
-            self.notify(f"PCAP file set: pcapng/Glovo_01.pcapng", severity="information")
+            #self.paths["pcap"] = "pcapng/Glovo_01.pcapng"
+            self.paths["pcap"] = event.value.strip()
+            self.notify(f"PCAP file set: {event.value.strip()}", severity="information")
         elif event.input.id == "ndpi_input":
             self.paths["ndpi"] = event.value.strip()
             self.notify(f"nDPI directory set: {event.value.strip()}", severity="information")

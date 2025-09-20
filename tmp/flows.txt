@@ -1,14 +1,5 @@
->> Flows read: 110
 
- + Flows kept: 56
-
- + Flows removed: 54
-
-   + General flows removed: 42
-   + Empty flows removed: 0
-   + IPv6 flows removed: 1
-   + Incomplete TLS flows removed: 11
-   + No SNI flows removed: 0
+- Flows read: 110- Flows kept: 56- Flows removed: 54----- General flows removed: 42----- Empty flows removed: 0------ IPv6 flows removed: 1------ Incomplete TLS flows removed: 11------ No SNI flows removed: 0
 
 >> Flows detected after aggregation:
 

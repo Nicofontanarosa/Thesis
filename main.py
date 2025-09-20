@@ -10,6 +10,14 @@ import config
 import filter
 import functions
 import flow_processor
+import threading
+
+def run_ndpi_command(cmd, output_file=None):
+    if output_file:
+        with open(output_file, "w") as f_out:
+            subprocess.run(cmd, stdout=f_out, stderr=subprocess.DEVNULL, check=True)
+    else:
+        subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
 
 def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
     
@@ -36,13 +44,20 @@ def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
     else:
         ndpi_cmd = [os.path.join(ndpi_path, "example/ndpiReader"), "-v", "2", "-i", pcap_file]
         ndpi_time_cmd = [os.path.join(ndpi_path, "example/ndpiReader"), "-i", pcap_file, "-k", json_time_ndpi]
-        config.log_message(f"\n>> Running nDPI:\n\n + {' '.join(ndpi_cmd)}\n", log_file)
-        with open(json_ndpi, "w") as f_out:
-            subprocess.run(ndpi_cmd, stdout=f_out, check=True)
-        config.log_message(f"\n>> nDPI JSON saved to:\n\n + {json_ndpi}\n", log_file)
-        config.log_message(f"\n>> Running nDPI:\n\n + {' '.join(ndpi_time_cmd)}\n", log_file)
-        subprocess.run(ndpi_time_cmd)
-        config.log_message(f"\n>> nDPI JSON saved to:\n\n + {json_time_ndpi}\n", log_file)
+        
+        config.log_message(f"\n>> Running nDPI first command:\n\n + {' '.join(ndpi_cmd)}\n", log_file)
+        thread1 = threading.Thread(target=run_ndpi_command, args=(ndpi_cmd, json_ndpi))
+        thread1.start()
+
+        config.log_message(f"\n>> Running nDPI second command:\n\n + {' '.join(ndpi_time_cmd)}\n", log_file)
+        thread2 = threading.Thread(target=run_ndpi_command, args=(ndpi_time_cmd, None))
+        thread2.start()
+
+        thread1.join()
+        thread2.join()
+
+        config.log_message(f"\n>> First nDPI JSON saved to:\n\n + {json_ndpi}\n", log_file)
+        config.log_message(f"\n>> Second nDPI JSON saved to:\n\n + {json_time_ndpi}\n", log_file)
 
     # Step 2: filter.py
     filtered_json = os.path.join(output_dir, os.path.basename(json_ndpi).replace(".json", "_filtered.json"))

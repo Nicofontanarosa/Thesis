@@ -60,6 +60,7 @@ def print_risky_flows(final_flows, log_risky_flows="tmp/log_risky_flows.txt"):
             elif "sni" in k.lower() or "hostname" in k.lower():
                 config.log_message(f"  + [green]{k}: {v}[/green]\n", log_risky_flows)  # green for SNI/hostname
             else:
+                v = str(v).replace('[', '\\[').replace(']', '\\]')
                 config.log_message(f"  + {k}: {v}\n", log_risky_flows)
 
 # -------------------------------------------

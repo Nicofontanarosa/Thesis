@@ -14,16 +14,6 @@
    + TLS
    + Unknown
 
->> List of IPs read:
-
-   + AmazonAWS
-   + Azure
-   + Cloudflare
-   + Facebook
-   + Google
-   + GoogleCloud
-   + Unknown
-
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
    [red]+ ICMPV6[/red]

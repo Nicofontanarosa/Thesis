@@ -8,7 +8,7 @@
 
 Using nDPI (4.15.0-5377-8987a2c) [1 thread(s)]
 Using libgcrypt version 1.8.6internal
-Reading packets from pcap file tesi/pcapng/Alza-01.pcapng...
+Reading packets from pcap file pcapng/Alza-01.pcapng...
 Running thread 0...
 
 nDPI Memory statistics:
@@ -16,8 +16,8 @@ nDPI Memory statistics:
 	Flow Memory (per flow):  1.13 KB      
 	Actual Memory:           13.72 MB     
 	Peak Memory:             13.72 MB     
-	Setup Time:              74 msec
-	Packet Processing Time:  29 msec
+	Setup Time:              47 msec
+	Packet Processing Time:  27 msec
 
 Traffic statistics:
 	Ethernet bytes:        4986859       (includes ethernet CRC/IFC/trailer)
@@ -38,7 +38,7 @@ Traffic statistics:
 	Packet Len 256-1024:   456          
 	Packet Len 1024-1500:  2982         
 	Packet Len > 1500:     0            
-	nDPI throughput:       232.18 K pps / 1.24 Gb/sec
+	nDPI throughput:       255.33 K pps / 1.36 Gb/sec
 	Analysis begin:        18/Sep/2025 20:19:47
 	Analysis end:          18/Sep/2025 20:20:38
 	Traffic throughput:    134.74 pps / 754.98 Kb/sec

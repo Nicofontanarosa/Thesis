@@ -1,0 +1,544 @@
+[
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "1161575864.rsc.cdn77.org",
+        "ip_source": "192.168.1.84",
+        "port_source": "62644",
+        "ip_destination": "84.17.59.9",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "503 <-> 859"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "image.alza.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "62628",
+        "ip_destination": "84.17.59.115",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "368 <-> 567",
+            "13 <-> 10",
+            "12 <-> 10",
+            "11 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "cdn.alza.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "62640",
+        "ip_destination": "84.17.59.10",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 5,
+        "exchanged_packets": [
+            "313 <-> 386",
+            "15 <-> 12",
+            "15 <-> 12",
+            "15 <-> 12",
+            "16 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "www.alza.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "62617",
+        "ip_destination": "172.64.155.86",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "214 <-> 223",
+            "11 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "www.googleoptimize.com",
+        "ip_source": "192.168.1.84",
+        "port_source": "62638",
+        "ip_destination": "142.250.180.174",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "54 <-> 86"
+        ]
+    },
+    {
+        "ip_field": "276/Azure",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "d154fcfa5bb4f0748e1dd1992c681104",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "servernames": "b.clarity.ms,d.clarity.ms,e.clarity.ms,f.clarity.ms,g.clarity.ms,h.clarity.ms,i.clarity.ms,j.clarity.ms,k.clarity.ms,l.clarity.ms,m.clarity.ms,n.clarity.ms,o.clarity.ms,p.clarity.ms,q.clarity.ms,r.clarity.ms,s.clarity.ms,t.clarity.ms,u.clarity.ms,v.clarity.ms,w.clarity.ms,x.clarity.ms,y.clarity.ms,z.clarity.ms,a.clarity.ms",
+        "issuer": "C=US, O=Microsoft Corporation, CN=Microsoft Azure RSA TLS Issuing CA 08",
+        "subject": "C=US, ST=WA, L=Redmond, O=Microsoft Corporation, CN=a.clarity.ms",
+        "certificate": "SHA-1: 03:4A:9C:82:85:BF:29:34:D9:AC:3A:4C:CA:43:B6:8F:B2:13:57:AA",
+        "sni": "d.clarity.ms",
+        "ip_source": "192.168.1.84",
+        "port_source": "62649",
+        "ip_destination": "57.151.77.234",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "81 <-> 47",
+            "40 <-> 22",
+            "14 <-> 11",
+            "13 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "webapi.alza.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "62634",
+        "ip_destination": "172.64.155.86",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "63 <-> 68"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "cdn.alza.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "62624",
+        "ip_destination": "212.102.55.182",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "31 <-> 38",
+            "14 <-> 12",
+            "14 <-> 12",
+            "14 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "i18n.alza.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "62656",
+        "ip_destination": "212.102.55.183",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "23 <-> 27",
+            "12 <-> 10",
+            "11 <-> 8",
+            "11 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "static.cloudflareinsights.com",
+        "ip_source": "192.168.1.84",
+        "port_source": "62648",
+        "ip_destination": "104.16.80.73",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "alza-tm.addai.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "62650",
+        "ip_destination": "159.122.113.22",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 21"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "1502848971.rsc.cdn77.org",
+        "ip_source": "192.168.1.84",
+        "port_source": "62645",
+        "ip_destination": "84.17.59.10",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 18"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "logapi.alza.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "62665",
+        "ip_destination": "185.181.177.78",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "21 <-> 19",
+            "9 <-> 7",
+            "9 <-> 7",
+            "8 <-> 5"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "m.alza.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "62669",
+        "ip_destination": "172.64.155.86",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "websocket-assistant-alza.addai.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "62651",
+        "ip_destination": "159.122.113.22",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "22 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "276/Azure",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "d154fcfa5bb4f0748e1dd1992c681104",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "servernames": "a.tag.clarity.ms,b.tag.clarity.ms,c.tag.clarity.ms,d.tag.clarity.ms,e.tag.clarity.ms,f.tag.clarity.ms,tag.clarity.ms,www.clarity.ms",
+        "issuer": "C=US, O=Microsoft Corporation, CN=Microsoft Azure RSA TLS Issuing CA 08",
+        "subject": "C=US, ST=WA, L=Redmond, O=Microsoft Corporation, CN=a.tag.clarity.ms",
+        "certificate": "SHA-1: F7:B3:5C:2B:F3:6E:1F:75:5E:04:45:D3:F8:73:AF:90:B4:D8:5E:63",
+        "sni": "www.clarity.ms",
+        "ip_source": "192.168.1.84",
+        "port_source": "62622",
+        "ip_destination": "20.250.198.32",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "logapi.alza.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "62658",
+        "ip_destination": "185.181.177.78",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "15 <-> 14",
+            "11 <-> 8",
+            "10 <-> 7",
+            "9 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
+        "sni": "webapi.alza.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "62633",
+        "ip_destination": "172.64.155.86",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 4"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "84.17.59.9",
+        "dns_id": "0xf171",
+        "plain_text": "1161575864",
+        "sni": "1161575864.rsc.cdn77.org",
+        "ip_source": "192.168.1.84",
+        "port_source": "49153",
+        "ip_destination": "192.168.1.254",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "5 <-> 5"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "212.102.55.182",
+        "dns_id": "0x68d6",
+        "plain_text": "1575730577",
+        "sni": "cdn.alza.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "49152",
+        "ip_destination": "192.168.1.254",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "5 <-> 5"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "84.17.59.115",
+        "dns_id": "0x6729",
+        "plain_text": "1575730577",
+        "sni": "image.alza.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "65327",
+        "ip_destination": "192.168.1.254",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "4 <-> 4"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "142.251.143.195",
+        "dns_id": "0xa46d",
+        "plain_text": "crashlyticsreports",
+        "sni": "crashlyticsreports-pa.googleapis.com",
+        "ip_source": "192.168.1.84",
+        "port_source": "51361",
+        "ip_destination": "192.168.1.254",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "3 <-> 3"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "142.251.209.10",
+        "dns_id": "0xaa10",
+        "plain_text": "firebaselogging",
+        "sni": "firebaselogging-pa.googleapis.com",
+        "ip_source": "192.168.1.84",
+        "port_source": "50335",
+        "ip_destination": "192.168.1.254",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2 <-> 2"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "84.17.59.10",
+        "dns_id": "0x5b0a",
+        "plain_text": "1502848971",
+        "sni": "1502848971.rsc.cdn77.org",
+        "ip_source": "192.168.1.84",
+        "port_source": "54032",
+        "ip_destination": "192.168.1.254",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "3 <-> 3"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "142.250.180.142",
+        "dns_id": "0xa355",
+        "plain_text": "google",
+        "sni": "play.google.com",
+        "ip_source": "192.168.1.84",
+        "port_source": "50903",
+        "ip_destination": "192.168.1.254",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "3 <-> 3"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "159.122.113.22",
+        "dns_id": "0x3ec5",
+        "plain_text": "addaiplatform",
+        "sni": "alza-tm.addai.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "57517",
+        "ip_destination": "192.168.1.254",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2 <-> 2"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "20.250.198.32",
+        "dns_id": "0xa2ff",
+        "plain_text": "clarity",
+        "sni": "www.clarity.ms",
+        "ip_source": "192.168.1.84",
+        "port_source": "53636",
+        "ip_destination": "192.168.1.254",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "142.250.27.81",
+        "dns_id": "0x9419",
+        "plain_text": "sandbox",
+        "sni": "pay.sandbox.google.com",
+        "ip_source": "192.168.1.84",
+        "port_source": "58940",
+        "ip_destination": "192.168.1.254",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2 <-> 2"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "185.181.177.78",
+        "dns_id": "0x1009",
+        "plain_text": "logapi",
+        "sni": "logapi.alza.cz",
+        "ip_source": "192.168.1.84",
+        "port_source": "65041",
+        "ip_destination": "192.168.1.254",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2 <-> 1"
+        ]
+    }
+]

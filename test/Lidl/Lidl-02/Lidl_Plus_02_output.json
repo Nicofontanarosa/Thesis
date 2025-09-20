@@ -1,44 +1,5 @@
 [
     {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f590053ff246338aff7c203dbe7164d6",
-        "ja4": "t13d201300_2b729b4bf6f3_1ea369dc5faa",
-        "sni": "www.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "56777",
-        "ip_destination": "216.58.205.42",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
-        "risk": "** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "10",
-        "risk_info": "No ALPN",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "7611 <-> 3250"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91.266/TLS.Salesforce",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "lidleu.my.salesforce.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63637",
-        "ip_destination": "85.222.142.10",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "113 <-> 116"
-        ]
-    },
-    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -328,24 +289,6 @@
         ]
     },
     {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "UDP",
-        "proto_field": "188.233/QUIC.LinkedIn",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0312h0_55b375c5d22e_06cda9e17597",
-        "quic_version": "V-1",
-        "plain_text": ".UhUcMW",
-        "sni": "www.linkedin.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63644",
-        "ip_destination": "104.18.41.41",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 9"
-        ]
-    },
-    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -356,7 +299,6 @@
         "issuer": "C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1",
         "subject": "C=US, ST=California, L=San Francisco, O=Salesforce, Inc., CN=*.device.marketingcloudapis.com",
         "certificate": "SHA-1: A9:34:8E:BF:10:07:B5:BA:E7:10:A7:80:2A:74:60:A4:67:38:47:54",
-        "validity": "2025-03-11 00:00:00 - 2026-04-11 23:59:59",
         "sni": "mcf4wh-jdfmxrzzzttwqcrf-d3b4.device.marketingcloudapis.com",
         "ip_source": "192.168.80.96",
         "port_source": "63626",
@@ -401,24 +343,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "10 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "TCP",
-        "proto_field": "91.233/TLS.LinkedIn",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d1517h2_8daaf6152771_b0da82dd1658",
-        "sni": "www.linkedin.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63646",
-        "ip_destination": "104.18.41.41",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "6 <-> 4"
         ]
     },
     {

@@ -8,7 +8,7 @@
 
 Using nDPI (4.15.0-5377-8987a2c) [1 thread(s)]
 Using libgcrypt version 1.8.6internal
-Reading packets from pcap file tesi/pcapng/Trenitalia_01_pcapandroid.pcap...
+Reading packets from pcap file pcapng/Trenitalia_01_pcapandroid.pcap...
 Running thread 0...
 
 nDPI Memory statistics:
@@ -16,8 +16,8 @@ nDPI Memory statistics:
 	Flow Memory (per flow):  1.13 KB      
 	Actual Memory:           8.53 MB      
 	Peak Memory:             8.53 MB      
-	Setup Time:              83 msec
-	Packet Processing Time:  4 msec
+	Setup Time:              69 msec
+	Packet Processing Time:  5 msec
 
 Traffic statistics:
 	Ethernet bytes:        370740        (includes ethernet CRC/IFC/trailer)
@@ -38,7 +38,7 @@ Traffic statistics:
 	Packet Len 256-1024:   117          
 	Packet Len 1024-1500:  33           
 	Packet Len > 1500:     52           
-	nDPI throughput:       129.18 K pps / 577.25 Mb/sec
+	nDPI throughput:       109.52 K pps / 489.36 Mb/sec
 	Analysis begin:        18/Sep/2025 09:48:33
 	Analysis end:          18/Sep/2025 09:49:11
 	Traffic throughput:    16.76 pps / 76.67 Kb/sec

@@ -35,15 +35,14 @@ def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
             config.log_message(f">> Using existing nDPI JSON:\n\n + {json_time_ndpi}\n", log_file)
     else:
         ndpi_cmd = [os.path.join(ndpi_path, "example/ndpiReader"), "-v", "2", "-i", pcap_file]
-        ndpi_time_cmd = [os.path.join(ndpi_path, "example/ndpiReader"), "-k", "-i", pcap_file]
+        ndpi_time_cmd = [os.path.join(ndpi_path, "example/ndpiReader"), "-i", pcap_file, "-k", json_time_ndpi]
         config.log_message(f"\n>> Running nDPI:\n\n + {' '.join(ndpi_cmd)}\n", log_file)
         with open(json_ndpi, "w") as f_out:
             subprocess.run(ndpi_cmd, stdout=f_out, check=True)
-        config.log_message(f">> nDPI JSON saved to:\n\n + {json_ndpi}\n", log_file)
+        config.log_message(f"\n>> nDPI JSON saved to:\n\n + {json_ndpi}\n", log_file)
         config.log_message(f"\n>> Running nDPI:\n\n + {' '.join(ndpi_time_cmd)}\n", log_file)
-        with open(json_time_ndpi, "w") as f_out:
-            subprocess.run(ndpi_cmd, stdout=f_out, check=True)
-        config.log_message(f">> nDPI JSON saved to:\n\n + {json_time_ndpi}\n", log_file)
+        subprocess.run(ndpi_time_cmd)
+        config.log_message(f"\n>> nDPI JSON saved to:\n\n + {json_time_ndpi}\n", log_file)
 
     # Step 2: filter.py
     filtered_json = os.path.join(output_dir, os.path.basename(json_ndpi).replace(".json", "_filtered.json"))
@@ -52,7 +51,7 @@ def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
 
     # Step 3: flow_processor.py
     final_output = os.path.join(output_dir, os.path.basename(json_ndpi).replace(".json", "_output.json"))
-    config.log_message(f"\n\n>> Running initial filtering ...\n\n + input file: {filtered_json}\n + output file: {final_output}", log_file)
+    config.log_message(f"\n\n>> Running flows filtering ...\n\n + input file: {filtered_json}\n + output file: {final_output}", log_file)
     final_flows = flow_processor.flow_processor(filtered_json, final_output)
 
     #functions.print_flows(final_flows)

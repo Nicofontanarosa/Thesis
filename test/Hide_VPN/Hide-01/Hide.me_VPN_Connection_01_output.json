@@ -1,102 +1,5 @@
 [
     {
-        "ip_field": "276/Azure",
-        "transport_protocol": "TCP",
-        "proto_field": "91.212/TLS.Microsoft",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d2013h2_2b729b4bf6f3_e24568c0d440",
-        "sni": "displaycatalog.mp.microsoft.com",
-        "ip_source": "192.168.70.96",
-        "port_source": "50815",
-        "ip_destination": "20.82.154.241",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "62 <-> 119",
-            "13 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1712h0_5b57614c22b0_3f5d972527c0",
-        "sni": "people-pa.googleapis.com",
-        "ip_source": "192.168.70.96",
-        "port_source": "61759",
-        "ip_destination": "142.250.180.138",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "21 <-> 23"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d171200_5b57614c22b0_eca864cca44a",
-        "sni": "mtalk.google.com",
-        "ip_source": "192.168.70.96",
-        "port_source": "61767",
-        "ip_destination": "142.250.145.188",
-        "port_destination": "5228",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "60",
-        "risk_info": "No ALPN / Expected on port 443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "15 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "firebaselogging.googleapis.com",
-        "ip_source": "192.168.70.96",
-        "port_source": "61764",
-        "ip_destination": "216.58.204.138",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.228/TLS.PlayStore",
-        "tls_version": "TLSv1.3",
-        "ja3s": "907bf3ecef1c987c889946b737b43de8",
-        "ja4": "t13d201200_2b729b4bf6f3_e24568c0d440",
-        "sni": "play.googleapis.com",
-        "ip_source": "192.168.70.96",
-        "port_source": "50824",
-        "ip_destination": "216.239.34.223",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
-        "risk": "** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "10",
-        "risk_info": "No ALPN",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "9 <-> 11"
-        ]
-    },
-    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -138,31 +41,9 @@
     {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "7.212/HTTP.Microsoft",
-        "url": "www.msftconnecttest.com/connecttest.txt",
-        "content_type": "text/plain",
-        "user_agent": "Microsoft NCSI",
-        "status_code": "200",
-        "plain_text": "GET /connecttest.txt HTTP/1.1",
-        "sni": "www.msftconnecttest.com",
-        "ip_source": "192.168.70.96",
-        "port_source": "50813",
-        "ip_destination": "151.5.24.33",
-        "port_destination": "80",
-        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "5 <-> 5"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
         "proto_field": "7/HTTP",
         "url": "www.msftncsi.com/ncsi.txt",
-        "content_type": "text/plain",
         "user_agent": "okhttp/4.11.0",
-        "status_code": "200",
         "plain_text": "GET /ncsi.t",
         "sni": "www.msftncsi.com",
         "ip_source": "192.168.70.96",

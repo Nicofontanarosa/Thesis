@@ -10,7 +10,6 @@
         "issuer": "C=US, O=Let's Encrypt, CN=R11",
         "subject": "CN=api.doctorapp.it",
         "certificate": "SHA-1: 1B:A7:2E:19:CA:C7:BA:00:32:6D:C0:9E:9C:F4:AE:FC:8E:D3:54:E0",
-        "validity": "2025-07-28 13:06:17 - 2025-10-26 13:06:16",
         "sni": "api.doctorapp.it",
         "ip_source": "192.168.80.96",
         "port_source": "63812",
@@ -34,7 +33,6 @@
         "issuer": "C=US, O=Let's Encrypt, CN=R11",
         "subject": "CN=www.doctorapp.it",
         "certificate": "SHA-1: 82:13:F0:33:95:8F:B0:A6:5A:2D:86:BF:E9:A9:58:A7:BF:2D:10:0B",
-        "validity": "2025-08-18 13:51:33 - 2025-11-16 13:51:32",
         "sni": "doctorapp.it",
         "ip_source": "192.168.80.96",
         "port_source": "63813",
@@ -44,150 +42,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "634 <-> 866"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "fonts.gstatic.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63805",
-        "ip_destination": "142.251.209.3",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "62 <-> 68"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.239/QUIC.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "plain_text": "EOOQLi",
-        "sni": "optimizationguide-pa.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63818",
-        "ip_destination": "142.250.180.170",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "32 <-> 41"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "plain_text": "xdu OO",
-        "sni": "clients4.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63822",
-        "ip_destination": "142.250.180.142",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "22 <-> 25"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "plain_text": "93aehJ",
-        "sni": "accounts.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63807",
-        "ip_destination": "74.125.206.84",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "20 <-> 19"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "fonts.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63802",
-        "ip_destination": "142.251.209.10",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "17 <-> 17",
-            "13 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.228/QUIC.PlayStore",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
-        "quic_version": "V-1",
-        "sni": "play-fe.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63808",
-        "ip_destination": "216.58.204.142",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "13 <-> 18"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "safebrowsing.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63820",
-        "ip_destination": "216.58.204.238",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "19 <-> 18"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.239/QUIC.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "plain_text": "71XLMY",
-        "sni": "content-autofill.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63824",
-        "ip_destination": "216.58.209.42",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 13"
         ]
     },
     {
@@ -209,59 +63,6 @@
         ]
     },
     {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "content-autofill.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63814",
-        "ip_destination": "216.58.209.42",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "20 <-> 20"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "clients4.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63823",
-        "ip_destination": "142.250.180.142",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "13 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
-        "quic_version": "V-1",
-        "sni": "android.apis.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63803",
-        "ip_destination": "142.250.180.142",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 18"
-        ]
-    },
-    {
         "ip_field": "220/Cloudflare",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -278,60 +79,6 @@
         "exchanged_packets": [
             "15 <-> 14",
             "15 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "optimizationguide-pa.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63819",
-        "ip_destination": "142.250.180.170",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "accounts.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63809",
-        "ip_destination": "74.125.206.84",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 7"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "firebaseinstallations.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63800",
-        "ip_destination": "216.58.204.234",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 11"
         ]
     },
     {

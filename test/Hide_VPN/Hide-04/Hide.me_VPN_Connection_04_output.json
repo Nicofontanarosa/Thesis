@@ -1,26 +1,5 @@
 [
     {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d171200_5b57614c22b0_352634941f3a",
-        "sni": "mtalk.google.com",
-        "ip_source": "10.231.254.96",
-        "port_source": "61272",
-        "ip_destination": "108.177.96.188",
-        "port_destination": "5228",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "60",
-        "risk_info": "No ALPN / Expected on port 443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 9"
-        ]
-    },
-    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -41,31 +20,9 @@
     {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "7.212/HTTP.Microsoft",
-        "url": "www.msftconnecttest.com/connecttest.txt",
-        "content_type": "text/plain",
-        "user_agent": "Microsoft NCSI",
-        "status_code": "200",
-        "plain_text": "GET /connecttest.txt HTTP/1.1",
-        "sni": "www.msftconnecttest.com",
-        "ip_source": "10.231.254.96",
-        "port_source": "58074",
-        "ip_destination": "151.5.18.105",
-        "port_destination": "80",
-        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "6 <-> 5"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
         "proto_field": "7/HTTP",
         "url": "www.msftncsi.com/ncsi.txt",
-        "content_type": "text/plain",
         "user_agent": "okhttp/4.11.0",
-        "status_code": "200",
         "plain_text": "GET /ncsi.t",
         "sni": "www.msftncsi.com",
         "ip_source": "10.231.254.96",

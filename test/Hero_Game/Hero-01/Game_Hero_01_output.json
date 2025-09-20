@@ -21,81 +21,6 @@
         ]
     },
     {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "fundingchoicesmessages.google.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "41846",
-        "ip_destination": "142.251.209.46",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "28 <-> 50"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "firebasestorage.googleapis.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "37952",
-        "ip_destination": "142.250.180.138",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
-        "sni": "firebasestorage.googleapis.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "50570",
-        "ip_destination": "142.250.180.138",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
-        "similar_flows_count": 4,
-        "exchanged_packets": [
-            "13 <-> 13",
-            "12 <-> 12",
-            "8 <-> 8",
-            "8 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "plain_text": ".tYFsfY",
-        "sni": "csi.gstatic.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "48166",
-        "ip_destination": "142.251.223.131",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "13 <-> 18"
-        ]
-    },
-    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -112,108 +37,6 @@
         "exchanged_packets": [
             "20 <-> 24",
             "8 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.2",
-        "ja3s": "187380bdca925da6fbafacf0d356d2fe",
-        "ja4": "t12d800700_ee0b5a6c69b8_7b0ba9b4cf08",
-        "servernames": "upload.video.google.com,*.clients.google.com,*.docs.google.com,*.drive.google.com,*.gdata.youtube.com,*.googleapis.com,*.photos.google.com,*.youtube-3rd-party.com,upload.google.com,*.upload.google.com,upload.youtube.com,*.upload.youtube.com,uploads.stage.gdata.youtube.com,bg-call-donation.goog,bg-call-donation-alpha.goog,bg-call-donation-canary.goog,bg-call-donation-dev.goog",
-        "issuer": "C=US, O=Google Trust Services, CN=WR2",
-        "subject": "CN=upload.video.google.com",
-        "certificate": "SHA-1: 74:C1:9B:D3:5D:65:CE:2E:7C:CC:41:C0:7C:F9:2C:AB:41:A3:EC:AA",
-        "validity": "2025-08-18 08:41:11 - 2025-11-10 08:41:10",
-        "sni": "firebasestorage.googleapis.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "36352",
-        "ip_destination": "142.250.180.138",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
-        "risk": "** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "10",
-        "risk_info": "No ALPN",
-        "similar_flows_count": 3,
-        "exchanged_packets": [
-            "11 <-> 13",
-            "11 <-> 12",
-            "10 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "csi.gstatic.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "44052",
-        "ip_destination": "142.251.223.131",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
-        "similar_flows_count": 4,
-        "exchanged_packets": [
-            "21 <-> 20",
-            "7 <-> 7",
-            "6 <-> 6",
-            "6 <-> 4"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "googleads.g.doubleclick.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "55166",
-        "ip_destination": "142.250.180.130",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "sni": "pagead2.googlesyndication.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "60761",
-        "ip_destination": "216.58.209.34",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "7 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "plain_text": "NTbNQQ",
-        "sni": "googleads.g.doubleclick.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "46788",
-        "ip_destination": "142.250.180.130",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "7 <-> 11"
         ]
     },
     {
@@ -248,7 +71,6 @@
         "issuer": "C=US, O=Google Trust Services, CN=WR1",
         "subject": "CN=thind.0.gusc1.prd.data.unity3d.com",
         "certificate": "SHA-1: CF:D2:0F:97:4F:2D:F7:FC:1C:F6:46:FF:19:7C:19:15:52:2D:49:A0",
-        "validity": "2025-07-18 15:45:47 - 2025-10-16 15:45:46",
         "sni": "cdp.cloud.unity3d.com",
         "ip_source": "10.215.173.1",
         "port_source": "57864",
@@ -261,48 +83,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "10 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "pagead2.googlesyndication.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "43966",
-        "ip_destination": "216.58.209.34",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "16 <-> 13",
-            "8 <-> 6"
-        ]
-    },
-    {
-        "ip_field": "25/Yandex",
-        "transport_protocol": "TCP",
-        "proto_field": "91.25/TLS.Yandex",
-        "tls_version": "TLSv1.2",
-        "ja3s": "6e15a5bf660856fa03186247ca41d059",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "servernames": "*.report.appmetrica.yandex.net,analytics.mobile.yandex.net,appmetrica.ios.mobile.yandex.net,eu.report.appmetrica.yandex.net,report-1.appmetrica.webvisor.com,report-2.appmetrica.webvisor.com,report-partners.appmetrica.webvisor.com,report-partners.appmetrica.yandex.net,report.appmetrica.test.yandex.net,report.appmetrica.webvisor.com,zen.report.appmetrica.yandex.net,report.ap.yandex-net.ru,report.appmetrica.yandex.net",
-        "issuer": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign ECC OV SSL CA 2018",
-        "subject": "C=RU, ST=Moscow, L=Moscow, O=YANDEX LLC, CN=*.report.appmetrica.yandex.net",
-        "certificate": "SHA-1: A2:5F:D7:52:22:E0:42:2D:36:69:7A:74:81:7B:E3:13:22:4F:53:EE",
-        "validity": "2025-06-16 15:08:09 - 2025-12-14 20:59:59",
-        "sni": "report.appmetrica.yandex.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "39142",
-        "ip_destination": "213.180.193.226",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 14"
         ]
     },
     {
@@ -347,42 +127,6 @@
             "18 <-> 21",
             "18 <-> 21",
             "15 <-> 18"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "googleads.g.doubleclick.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "55170",
-        "ip_destination": "142.250.180.130",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "7 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "fonts.gstatic.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "49202",
-        "ip_destination": "142.250.180.131",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "8 <-> 7"
         ]
     },
     {

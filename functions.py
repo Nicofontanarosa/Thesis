@@ -222,7 +222,7 @@ def unisci_cluster(clusters: list) -> list:
 
 def generate_rules(final_flows, output_file, dataset_file="dataset.json", datasetTLD_file="datasetTLD.json"):
 
-    rank_sni.rank_sni(final_flows, "Maps_offline_01_vk.json")
+    #rank_sni.rank_sni(final_flows, "Maps_offline_01_vk.json")
 
     # load the main dataset of known domains
     with open(dataset_file, "r") as f:

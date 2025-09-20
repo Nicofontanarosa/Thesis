@@ -16,7 +16,7 @@ nDPI Memory statistics:
 	Flow Memory (per flow):  1.13 KB      
 	Actual Memory:           8.64 MB      
 	Peak Memory:             8.64 MB      
-	Setup Time:              69 msec
+	Setup Time:              73 msec
 	Packet Processing Time:  6 msec
 
 Traffic statistics:
@@ -38,7 +38,7 @@ Traffic statistics:
 	Packet Len 256-1024:   64           
 	Packet Len 1024-1500:  292          
 	Packet Len > 1500:     0            
-	nDPI throughput:       109.85 K pps / 563.35 Mb/sec
+	nDPI throughput:       118.75 K pps / 609.03 Mb/sec
 	Analysis begin:        23/Aug/2025 14:55:21
 	Analysis end:          23/Aug/2025 14:55:41
 	Traffic throughput:    37.54 pps / 197.14 Kb/sec

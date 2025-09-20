@@ -1,13 +1,26 @@
->> Using existing nDPI JSON:
 
- + test/Vinted/Vinted-01\Vinted_01.json
+>> Running nDPI:
+
+ + /home/keiyukensei/nDPI/example/ndpiReader -v 2 -i pcapng/Vinted_02.pcapng
+
+>> nDPI JSON saved to:
+
+ + test/Vinted/Vinted-02/Vinted_02.json
+
+>> Running nDPI:
+
+ + /home/keiyukensei/nDPI/example/ndpiReader -i pcapng/Vinted_02.pcapng -k test/Vinted/Vinted-02/Vinted_02_k.json
+
+>> nDPI JSON saved to:
+
+ + test/Vinted/Vinted-02/Vinted_02_k.json
 
 >> Running initial filtering ...
 
- + input file: test/Vinted/Vinted-01\Vinted_01.json
- + output file: test/Vinted/Vinted-01\Vinted_01_filtered.json
+ + input file: test/Vinted/Vinted-02/Vinted_02.json
+ + output file: test/Vinted/Vinted-02/Vinted_02_filtered.json
 
->> Running initial filtering ...
+>> Running flows filtering ...
 
- + input file: test/Vinted/Vinted-01\Vinted_01_filtered.json
- + output file: test/Vinted/Vinted-01\Vinted_01_output.json
+ + input file: test/Vinted/Vinted-02/Vinted_02_filtered.json
+ + output file: test/Vinted/Vinted-02/Vinted_02_output.json

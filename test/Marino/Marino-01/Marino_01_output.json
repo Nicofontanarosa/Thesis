@@ -1,23 +1,5 @@
 [
     {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.228/TLS.PlayStore",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "play.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63749",
-        "ip_destination": "142.250.180.174",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "132 <-> 141"
-        ]
-    },
-    {
         "ip_field": "276/Azure",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -35,41 +17,6 @@
             "119 <-> 143",
             "11 <-> 9",
             "11 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
-        "quic_version": "V-1",
-        "plain_text": "/vZIfgI",
-        "sni": "android.apis.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63747",
-        "ip_destination": "142.250.180.142",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "18 <-> 21"
-        ]
-    },
-    {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "UDP",
-        "proto_field": "188.233/QUIC.LinkedIn",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0312h0_55b375c5d22e_06cda9e17597",
-        "quic_version": "V-1",
-        "sni": "www.linkedin.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63753",
-        "ip_destination": "172.64.146.215",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 9"
         ]
     },
     {
@@ -109,24 +56,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "8 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "TCP",
-        "proto_field": "91.233/TLS.LinkedIn",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_02713d6af862",
-        "sni": "www.linkedin.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63754",
-        "ip_destination": "172.64.146.215",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "8 <-> 6"
         ]
     },
     {

@@ -8,7 +8,7 @@
 
 Using nDPI (4.15.0-5377-8987a2c) [1 thread(s)]
 Using libgcrypt version 1.8.6internal
-Reading packets from pcap file tesi/pcapng/Mapy-01.pcapng...
+Reading packets from pcap file pcapng/Mapy-01.pcapng...
 Running thread 0...
 
 nDPI Memory statistics:
@@ -16,7 +16,7 @@ nDPI Memory statistics:
 	Flow Memory (per flow):  1.13 KB      
 	Actual Memory:           62.94 MB     
 	Peak Memory:             62.94 MB     
-	Setup Time:              50 msec
+	Setup Time:              48 msec
 	Packet Processing Time:  81 msec
 
 Traffic statistics:
@@ -38,7 +38,7 @@ Traffic statistics:
 	Packet Len 256-1024:   548          
 	Packet Len 1024-1500:  42331        
 	Packet Len > 1500:     0            
-	nDPI throughput:       760.21 K pps / 5.33 Gb/sec
+	nDPI throughput:       761.22 K pps / 5.34 Gb/sec
 	Analysis begin:        18/Sep/2025 20:21:25
 	Analysis end:          18/Sep/2025 20:22:13
 	Traffic throughput:    1.29 K pps / 9.28 Mb/sec

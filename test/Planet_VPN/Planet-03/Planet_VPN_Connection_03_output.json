@@ -239,25 +239,6 @@
         ]
     },
     {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "fundingchoicesmessages.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63695",
-        "ip_destination": "216.58.204.238",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "99 <-> 104",
-            "59 <-> 101"
-        ]
-    },
-    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -384,99 +365,6 @@
         ]
     },
     {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91.265/TLS.AmazonAWS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "s3.amazonaws.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63694",
-        "ip_destination": "54.231.200.248",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "21 <-> 20"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91.265/TLS.AmazonAWS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "s3.amazonaws.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63729",
-        "ip_destination": "16.182.100.32",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "21 <-> 20"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "pagead2.googleadservices.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63745",
-        "ip_destination": "142.251.209.34",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "15 <-> 12",
-            "13 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
-        "quic_version": "V-1",
-        "plain_text": "zlTnIX",
-        "sni": "android.apis.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63930",
-        "ip_destination": "142.250.180.142",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "pagead2.googlesyndication.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63760",
-        "ip_destination": "142.250.180.162",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 3,
-        "exchanged_packets": [
-            "18 <-> 16",
-            "14 <-> 11",
-            "14 <-> 11"
-        ]
-    },
-    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -517,83 +405,6 @@
         ]
     },
     {
-        "ip_field": "185/Telegram",
-        "transport_protocol": "TCP",
-        "proto_field": "91.185/TLS.Telegram",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "api.telegra.ph",
-        "ip_source": "192.168.80.96",
-        "port_source": "63725",
-        "ip_destination": "149.154.164.13",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "16 <-> 13",
-            "16 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1517h2_8daaf6152771_b6f405a00624",
-        "sni": "android.apis.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63931",
-        "ip_destination": "142.250.180.142",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d171200_5b57614c22b0_352634941f3a",
-        "sni": "mtalk.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63927",
-        "ip_destination": "142.250.145.188",
-        "port_destination": "5228",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "60",
-        "risk_info": "No ALPN / Expected on port 443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "tpc.googlesyndication.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63714",
-        "ip_destination": "216.58.205.33",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "12 <-> 9",
-            "10 <-> 8"
-        ]
-    },
-    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -610,25 +421,6 @@
         "exchanged_packets": [
             "18 <-> 16",
             "18 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "fonts.gstatic.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63701",
-        "ip_destination": "142.251.209.3",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "12 <-> 9",
-            "10 <-> 7"
         ]
     },
     {
@@ -670,25 +462,6 @@
             "14 <-> 12",
             "15 <-> 11",
             "16 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "googleads.g.doubleclick.net",
-        "ip_source": "192.168.80.96",
-        "port_source": "63743",
-        "ip_destination": "216.58.209.34",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "11 <-> 10",
-            "11 <-> 10"
         ]
     },
     {
@@ -800,86 +573,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "10 <-> 7"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
-        "sni": "googleads.g.doubleclick.net",
-        "ip_source": "192.168.80.96",
-        "port_source": "63715",
-        "ip_destination": "216.58.209.34",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 3,
-        "exchanged_packets": [
-            "9 <-> 7",
-            "8 <-> 7",
-            "8 <-> 7"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f590053ff246338aff7c203dbe7164d6",
-        "ja4": "t13d201300_2b729b4bf6f3_1ea369dc5faa",
-        "sni": "signaler-pa.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "65439",
-        "ip_destination": "142.250.180.170",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
-        "risk": "** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "10",
-        "risk_info": "No ALPN",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "119/Facebook",
-        "transport_protocol": "TCP",
-        "proto_field": "91.119/TLS.Facebook",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d0207h0_ec078ce24869_e918dd3cc848",
-        "sni": "z-m-gateway.facebook.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63933",
-        "ip_destination": "31.13.86.40",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "3 <-> 5"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d171200_5b57614c22b0_352634941f3a",
-        "sni": "mtalk.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63769",
-        "ip_destination": "142.250.145.188",
-        "port_destination": "5228",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "60",
-        "risk_info": "No ALPN / Expected on port 443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 9"
         ]
     },
     {

@@ -238,25 +238,6 @@
         ]
     },
     {
-        "ip_field": "119/Facebook",
-        "transport_protocol": "TCP",
-        "proto_field": "91.119/TLS.Facebook",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "graph.facebook.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63652",
-        "ip_destination": "157.240.203.14",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "15 <-> 15",
-            "15 <-> 14"
-        ]
-    },
-    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -279,41 +260,6 @@
         ]
     },
     {
-        "ip_field": "119/Facebook",
-        "transport_protocol": "UDP",
-        "proto_field": "188.119/QUIC.Facebook",
-        "tls_version": "TLSv1.3",
-        "ja4": "q00d0111h3_0f2cb44170f4_5e55ee982306",
-        "quic_version": "MVFST-27",
-        "sni": "graph.facebook.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63667",
-        "ip_destination": "157.240.203.14",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "9 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "firebaselogging-pa.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63656",
-        "ip_destination": "216.58.204.234",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 11"
-        ]
-    },
-    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -329,25 +275,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "12 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.275/TLS.Crashlytics",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "firebase-settings.crashlytics.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63648",
-        "ip_destination": "142.250.180.131",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "15 <-> 13",
-            "15 <-> 12"
         ]
     },
     {

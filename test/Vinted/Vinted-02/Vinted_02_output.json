@@ -762,7 +762,6 @@
         "issuer": "C=US, O=DigiCert Inc, CN=DigiCert TLS RSA SHA256 2020 CA1",
         "subject": "C=US, ST=California, L=Redwood City, O=PubMatic, Inc., CN=*.pubmatic.com",
         "certificate": "SHA-1: 2D:55:F3:5F:0A:C0:AB:23:58:FD:83:F1:25:70:E5:64:58:AA:C0:4A",
-        "validity": "2024-11-27 00:00:00 - 2025-11-30 23:59:59",
         "sni": "ads.pubmatic.com",
         "ip_source": "192.168.80.96",
         "port_source": "63386",

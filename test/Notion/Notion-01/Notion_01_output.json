@@ -202,7 +202,6 @@
         "issuer": "C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1",
         "subject": "C=US, ST=California, L=San Francisco, O=Splunk Inc., CN=*.notion.splunkcloud.com",
         "certificate": "SHA-1: 14:22:EA:7A:36:23:47:CF:56:EB:55:2F:88:61:48:B8:FC:61:1E:5A",
-        "validity": "2025-08-17 00:00:00 - 2026-08-18 23:59:59",
         "sni": "http-inputs-notion.splunkcloud.com",
         "ip_source": "192.168.80.96",
         "port_source": "63472",

@@ -1,9 +1,4 @@
-host:"logs-ingress.svc.vinted.com"@Vinted logs
-host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
-host:"vintedapp.com"@Vinted app
-host:"sdk.fra-01.braze.eu"@Braze sdk
-host:"images1.vinted.net"@Vinted images
-host:"socket.vinted.net"@Vinted traffic 
-
-host:"www.vinted.fr"@Vinted marketplace
-host:"api-sdk.datadome.co"@Datadome
+host:"logs-ingress.svc.vinted.com",host:"vinted.net",host:"www.vinted.fr"@whois:  & AI: Online Marketplace, Vinted Logs, Vinted Marketplace
+host:"api-sdk.datadome.co",host:"vintedapp.com"@whois: datadome & AI: DataDome API, Vinted App
+host:"sdk.fra-01.braze.eu"@whois:  & AI: Braze SDK
+host:"rokt.com"@whois: rokt pte. ltd. & AI: RoK Traffic Systems

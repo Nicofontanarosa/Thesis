@@ -1,10 +1,11 @@
 host:"api-sdk.datadome.co"@Datadome
 host:"vinted.com"@Online marketplace
 host:"rokt.com"@Rokt pte. ltd.
-host:"i.sng.link"@Singular
-host:"vinted.net",host:"www.vinted.fr"@Vinted marketplace
+host:"i.sng.link"@Traffic signal now
+host:"vinted.net"@Online marketplace
 host:"sdk-events.inner-active.mobi"@Inner active sdk
 host:"sdk.fra-01.braze.eu"@Braze sdk
 host:"stage-mediate-events.applovin.com"@Applovin stage
 host:"telemetry.sdk.inmobi.com"@Identity protection service
 host:"vintedapp.com"@Vinted app
+host:"www.vinted.fr"@Vinted marketplace

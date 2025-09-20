@@ -1,8 +1,10 @@
 >> Lists of protocols read:
 
    + DNS
+   + NTP
    + QUIC
    + TLS
+   + WhatsApp
 
 >> Lists of protocols supported:
 
@@ -12,3 +14,8 @@
    + SMTP
    + TLS
    + Unknown
+
+[red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
+
+   [red]+ NTP[/red]
+   [red]+ WhatsApp[/red]

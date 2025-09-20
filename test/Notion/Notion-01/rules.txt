@@ -1,5 +1,4 @@
-
-host:"api.statsig.com",host:"exp.notion.so",host:"identity.notion.so",host:"msgstore.www.notion.so",host:"o324374.ingest.sentry.io",host:"www.notion.so"@Unknown
-host:"login.microsoftonline.com"@Microsoft corporation
-host:"http-inputs-notion.splunkcloud.com"@Cisco technology inc.
-host:"img.notionusercontent.com"@Identity protection service
+host:"img.notionusercontent.com",host:"notion.so",host:"o324374.ingest.sentry.io"@whois: identity protection service & AI: Notion Images, Notion Workspace, Sentry Ingest
+host:"api.statsig.com"@whois:  & AI: Statsig API
+host:"http-inputs-notion.splunkcloud.com"@whois: cisco technology inc. & AI: Splunk Cloud
+host:"login.microsoftonline.com"@whois: microsoft corporation & AI: Microsoft Azure AD

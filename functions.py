@@ -111,37 +111,39 @@ def print_flows(final_flows):
 
 # -------------------------------------------
 
-def raggruppa_sni(sni_list):
+def raggruppa_sni(cluster):
 
+    sni_list = cluster["sni_list"]
+
+    if not sni_list:
+        return cluster
+    
     gruppi = []
-
-    # SNI unici ordinati per consistenza
     sni_unici = sorted(set(sni_list))
 
     while sni_unici:
         base = sni_unici.pop(0)
         base_parts = base.split(".")
         comuni = [base]
-
         restanti = []
+
         for sni in sni_unici:
             parts = sni.split(".")
 
-            # trova prefisso comune dal fondo
+            # trova suffisso comune dal fondo
             i = 1
             while i <= min(len(base_parts), len(parts)) and base_parts[-i] == parts[-i]:
                 i += 1
             comune = ".".join(base_parts[-(i-1):]) if i > 1 else None
 
-            # se hanno almeno 2 parti in comune (es: gvt1.com, intel.com ecc.)
+            # se hanno almeno dominio + TLD in comune
             if comune and comune.count(".") >= 1:
                 comuni.append(sni)
             else:
                 restanti.append(sni)
 
-        # prendo il dominio base comune se trovato
+        # calcolo dominio base effettivo
         if len(comuni) > 1:
-            # ricalcolo il suffisso comune effettivo
             parts_comuni = [c.split(".") for c in comuni]
             min_len = min(len(p) for p in parts_comuni)
             i = 1
@@ -154,7 +156,68 @@ def raggruppa_sni(sni_list):
 
         sni_unici = restanti
 
-    return gruppi
+    cluster["sni_list"] = gruppi
+    return cluster
+
+def unisci_cluster(clusters: list) -> list:
+
+    clusters = [
+        c for c in clusters
+        if not (c.get("ja3s") is None and c.get("ja4") is None)
+    ]
+
+    print(f"\n{clusters}\n")
+
+    clusters = [raggruppa_sni(c) for c in clusters]
+
+    # ordina i cluster in base alla lunghezza decrescente della sni_list
+    clusters.sort(key=lambda c: len(c["sni_list"]), reverse=True)
+
+    i = 0
+    while i < len(clusters):
+        cluster_grande = clusters[i]
+        j = i + 1
+        while j < len(clusters):
+            cluster_piccolo = clusters[j]
+
+            # lista combinata
+            unione = {
+                "sni_list": cluster_grande["sni_list"] + cluster_piccolo["sni_list"]
+            }
+            unione_raggr = raggruppa_sni(unione)
+
+            if len(unione_raggr["sni_list"]) < (
+                len(cluster_grande["sni_list"]) + len(cluster_piccolo["sni_list"])
+            ):
+                # SNI ridotti dalla raggruppa
+                ridotti = set(unione_raggr["sni_list"])
+
+                print(f"\n{ridotti}\n\n{cluster_grande["sni_list"]}\n\n{cluster_piccolo["sni_list"]}\n\n")
+
+                nuovo_grande = []
+                for s in cluster_grande["sni_list"]:
+                    # per ogni sni del grande, vedi se è stato ridotto
+                    corrispondenze = [r for r in ridotti if s.endswith(r)]
+                    if corrispondenze:
+                        # sostituisco con il ridotto corrispondente
+                        nuovo_grande.append(corrispondenze[0])
+                    else:
+                        # mantengo l'originale
+                        nuovo_grande.append(s)
+                cluster_grande["sni_list"] = sorted(set(nuovo_grande))
+
+                # il piccolo perde solo ciò che è stato assorbito nel grande
+                cluster_piccolo["sni_list"] = [
+                    s for s in cluster_piccolo["sni_list"]
+                    if not any(r in ridotti and s.endswith(r) for r in ridotti)
+                ]
+
+            j += 1
+        i += 1
+
+    # rimuovo cluster vuoti
+    clusters = [c for c in clusters if c["sni_list"]]
+    return clusters
 
 
 def generate_rules(final_flows, output_file, dataset_file="dataset.json", datasetTLD_file="datasetTLD.json"):
@@ -216,7 +279,7 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
         if not sni_proc:
             continue
 
-        print(f"[DEBUG] After main dataset cut: {sni} -> {sni_proc}")
+        #print(f"[DEBUG] After main dataset cut: {sni} -> {sni_proc}")
 
         # 2) Replace multiple consecutive hyphens with a single dot
         sni_proc = re.sub(r"-+", ".", sni_proc)
@@ -245,12 +308,10 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
         # add the cleaned SNI to the set
         cleaned_snis.add(sni_proc)
 
-        print(f"[DEBUG] After second dataset cut: {sni_proc}")
+        #print(f"[DEBUG] After second dataset cut: {sni_proc}")
 
     print(f"\nCleaned SNIs: {cleaned_snis}")
 
-    # print SNIs mapped back to original flows
-    print("\nSNIs remaining after clean_flows:")
     # use a set to avoid duplicates
     printed_snis = set()  
     clusters = defaultdict(list)
@@ -277,7 +338,6 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
                             ja4 = "_".join(parts[-2:])
                     chiave = (ja3s, ja4)
                     clusters[chiave].append(flow)
-
                     break
 
     risultato = []
@@ -286,17 +346,14 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
         risultato.append({
             "ja3s": ja3s,
             "ja4": ja4,
-            "sni_list": sni_list,  # elenco unico e ordinato
-            "flows_count": len(elementi)
+            "sni_list": sni_list,
         })
+
+    sni_da_usare = unisci_cluster(risultato)
 
     # salvo su file
     with open("test.json", "w", encoding="utf-8") as f:
-        json.dump(risultato, f, indent=4)
-
-    sni_da_usare = raggruppa_sni(printed_snis)
-
-    print(f"\n{sni_da_usare}\n")
+        json.dump(sni_da_usare, f, indent=4)
 
     # print all unique SNIs after cleaning
     print("\nSNIs remaining (without duplicates):")

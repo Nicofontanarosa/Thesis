@@ -67,48 +67,59 @@ def print_rules(flows, protocol_name, rules_file):
 
     print(f"\nRules saved to {rules_file}:\n{rule}\n")
 
-def classify_domains(domains, output_file):
+def classify_domains(clusters, output_file):
 
     output_folder = os.path.dirname(output_file)
     # make the complete path for the rules file
     rules_file = os.path.join(output_folder, "rules.txt")
     config.clear_log(rules_file)
 
-    org_to_snis = {}
+    for cluster in clusters:
+        snis = cluster.get("sni_list", [])
+        
+        whois_orgs = set()
+        ai_orgs = set()
 
-    for d in domains:
+        for d in snis:
+            try:
+                w = whois.whois(d)
+                org = w.get("registrant_organization") or w.get("admin_organization") or w.get("org")
+                
+                if org is None or org.lower() in constants.REDACTED_ORGS:
+                    if os.name == 'nt':
+                        orgai = classify_domain_AI(d)
+                        ai_orgs.add(orgai)
+                    else: 
+                        orgai = "unknown"
+                        org = "unknown"
+                        whois_orgs.add(org)
+                        ai_orgs.add(orgai)
+                else:
+                    org = org.lower()
+                    orgai = classify_domain_AI(d)
+                    whois_orgs.add(org)
+                    ai_orgs.add(orgai)
 
-        ai = False
+                print(f"{d} → AI: {orgai} & whois: {org}")
 
-        try:
-            w = whois.whois(d)
-            org = w.get("registrant_organization") or w.get("admin_organization") or w.get("org")
-            
-            if org is None or org.lower() in constants.REDACTED_ORGS:
-                if os.name == 'nt':
-                    org = classify_domain_AI(d)
-                else: org = "unknown"
-                ai = True
-            else:
-                org = org.lower()
+            except Exception as e:
+                orgai = classify_domain_AI(d)
+                ai_orgs.add(orgai)
+                print(f"{d} → AI: {orgai}")
 
-            if org not in org_to_snis:
-                org_to_snis[org] = []
-            org_to_snis[org].append(d)
+        # genera chiave combinata: whois + AI se entrambi presenti
+        whois_str = ", ".join(sorted(whois_orgs)) if whois_orgs else ""
+        ai_str = ", ".join(sorted(ai_orgs)) if ai_orgs else "unknown"
 
-            if ai:
-                print(f"{d} → AI: {org}")
-            else:
-                print(f"{d} → whois: {org}")
-        except Exception as e:
-            org = classify_domain_AI(d)
-            print(f"{d} → AI: {org}")
-            if org not in org_to_snis:
-                org_to_snis[org] = []
-            org_to_snis[org].append(d)
+        # regola host
+        host_entries = ",".join([f'host:"{sni}"' for sni in sorted(snis)])
+        rule = f"{host_entries}@whois: {whois_str} & AI: {ai_str}"
 
-    for org, snis in org_to_snis.items():
-        print_rules(snis, org, rules_file)
+        with open(rules_file, "a") as f:
+            f.write(f"{rule}\n")
+        config.log_message(f"{rule}\n", log_file_rules)
+
+        print(f"\nRules saved to {rules_file}:\n{rule}\n")
 
 #################################################################
 # End of get_info.py

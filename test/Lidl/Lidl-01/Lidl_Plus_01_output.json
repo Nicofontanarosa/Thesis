@@ -30,9 +30,10 @@
         "ip_destination": "91.236.122.85",
         "port_destination": "443",
         "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
+        "similar_flows_count": 2,
         "exchanged_packets": [
-            "170 <-> 312"
+            "170 <-> 312",
+            "20 <-> 19"
         ]
     },
     {
@@ -405,24 +406,6 @@
         ]
     },
     {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "lidl.leaflets.schwarz",
-        "ip_source": "192.168.80.96",
-        "port_source": "63536",
-        "ip_destination": "91.236.122.85",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "20 <-> 19"
-        ]
-    },
-    {
         "ip_field": "126/Google",
         "transport_protocol": "UDP",
         "proto_field": "188.239/QUIC.GoogleServices",
@@ -685,7 +668,6 @@
         "issuer": "C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1",
         "subject": "C=US, ST=California, L=San Francisco, O=Salesforce, Inc., CN=*.device.marketingcloudapis.com",
         "certificate": "SHA-1: A9:34:8E:BF:10:07:B5:BA:E7:10:A7:80:2A:74:60:A4:67:38:47:54",
-        "validity": "2025-03-11 00:00:00 - 2026-04-11 23:59:59",
         "sni": "mcf4wh-jdfmxrzzzttwqcrf-d3b4.device.marketingcloudapis.com",
         "ip_source": "192.168.80.96",
         "port_source": "63505",

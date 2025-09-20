@@ -1,9 +1,9 @@
 >> Lists of protocols read:
 
    + DNS
-   + ICMPV6
    + QUIC
    + TLS
+   + WhatsApp
 
 >> Lists of protocols supported:
 
@@ -16,4 +16,4 @@
 
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
-   [red]+ ICMPV6[/red]
+   [red]+ WhatsApp[/red]

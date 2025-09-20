@@ -1,0 +1,37 @@
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + tls_version: TLSv1.3
+  + ja3s: 15af977ce25de452b96affa2addb1036
+  + ja4: t13d1713ht_5b57614c22b0_eca864cca44a
+  + [green]sni: cluster-active-gate-lb.dynatrace.stackit.zone[/green]
+  + ip_source: 192.168.80.96
+  + port_source: 63500
+  + ip_destination: 45.135.246.47
+  + port_destination: 9999
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Known Proto on Non Std Port **[/red]
+  + [red]risk_score: 50[/red]
+  + [red]risk_info: Expected on port 443[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['18 <-> 17'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: UDP
+  + proto_field: 188/QUIC
+  + tls_version: TLSv1.3
+  + ja4: q13d0311h0_55b375c5d22e_653d80c3fe9d
+  + quic_version: V-1
+  + [green]sni: www.lidl.it[/green]
+  + [red]risk: ** Unidirectional Traffic **[/red]
+  + [red]risk_score: 10[/red]
+  + [red]risk_info: No server to client traffic[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['6 <-> 0'\]

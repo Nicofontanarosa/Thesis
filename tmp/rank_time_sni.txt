@@ -1,89 +1,74 @@
 >> Temporal ranking:
 
 
- + SNI: update.googleapis.com
-  + first_seen:2025-08-23 14:42:11
-
- + SNI: graph.facebook.com
-  + first_seen:2025-08-23 14:42:11
-
- + SNI: vintedapp.com
-  + first_seen:2025-08-23 14:42:11
-
- + SNI: www.vinted.fr
-  + first_seen:2025-08-23 14:42:11
-
- + SNI: sdk.fra-01.braze.eu
-  + first_seen:2025-08-23 14:42:11
-
- + SNI: api-sdk.datadome.co
-  + first_seen:2025-08-23 14:42:11
-
- + SNI: logs-ingress.svc.vinted.com
-  + first_seen:2025-08-23 14:42:11
+ + SNI: cluster-active-gate-lb.dynatrace.stackit.zone
+  + first_seen:2025-08-23 14:49:04
 
  + SNI: mobile-data.onetrust.io
-  + first_seen:2025-08-23 14:42:13
+  + first_seen:2025-08-23 14:49:04
 
- + SNI: c.amazon-adsystem.com
-  + first_seen:2025-08-23 14:42:13
+ + SNI: accounts.lidl.com
+  + first_seen:2025-08-23 14:49:04
 
- + SNI: mobile-api.rokt.com
-  + first_seen:2025-08-23 14:42:13
+ + SNI: localization.lidlplus.com
+  + first_seen:2025-08-23 14:49:04
 
- + SNI: ms.applovin.com
-  + first_seen:2025-08-23 14:42:13
+ + SNI: mcf4wh-jdfmxrzzzttwqcrf-d3b4.device.marketingcloudapis.com
+  + first_seen:2025-08-23 14:49:04
+
+ + SNI: segments.lidlplus.com
+  + first_seen:2025-08-23 14:49:05
+
+ + SNI: personalized-campaigns.lidlplus.com
+  + first_seen:2025-08-23 14:49:05
+
+ + SNI: appgateway.lidlplus.com
+  + first_seen:2025-08-23 14:49:06
+
+ + SNI: shopping-list.lidlplus.com
+  + first_seen:2025-08-23 14:49:06
+
+ + SNI: shortcuts.lidlplus.com
+  + first_seen:2025-08-23 14:49:06
+
+ + SNI: surveys.lidlplus.com
+  + first_seen:2025-08-23 14:49:07
+
+ + SNI: clickandpick.lidlplus.com
+  + first_seen:2025-08-23 14:49:08
+
+ + SNI: alerts.lidlplus.com
+  + first_seen:2025-08-23 14:49:08
+
+ + SNI: static-coupons.lidlplus.com
+  + first_seen:2025-08-23 14:49:08
+
+ + SNI: lidleu.my.salesforce.com
+  + first_seen:2025-08-23 14:49:08
+
+ + SNI: opengift.lidlplus.com
+  + first_seen:2025-08-23 14:49:08
+
+ + SNI: brochures.lidlplus.com
+  + first_seen:2025-08-23 14:49:18
+
+ + SNI: www.lidl.it
+  + first_seen:2025-08-23 14:49:18
+
+ + SNI: lidl.leaflets.schwarz
+  + first_seen:2025-08-23 14:49:21
+
+ + SNI: clients4.google.com
+  + first_seen:2025-08-23 14:49:21
+
+ + SNI: endpoints.leaflets.schwarz
+  + first_seen:2025-08-23 14:49:22
 
  + SNI: cdn.cookielaw.org
-  + first_seen:2025-08-23 14:42:13
+  + first_seen:2025-08-23 14:49:22
 
- + SNI: mads.amazon-adsystem.com
-  + first_seen:2025-08-23 14:42:14
+ + SNI: asset.schwarz
+  + first_seen:2025-08-23 14:49:22
 
- + SNI: apps.rokt.com
-  + first_seen:2025-08-23 14:42:14
-
- + SNI: images1.vinted.net
-  + first_seen:2025-08-23 14:42:14
-
- + SNI: aax.amazon-adsystem.com
-  + first_seen:2025-08-23 14:42:16
-
- + SNI: d.applovin.com
-  + first_seen:2025-08-23 14:42:16
-
- + SNI: rt.applovin.com
-  + first_seen:2025-08-23 14:42:16
-
- + SNI: cdn2.inner-active.mobi
-  + first_seen:2025-08-23 14:42:16
-
- + SNI: ads.pubmatic.com
-  + first_seen:2025-08-23 14:42:16
-
- + SNI: logs.ads.vungle.com
-  + first_seen:2025-08-23 14:42:16
-
- + SNI: unif-id.ssp.inmobi.com
-  + first_seen:2025-08-23 14:42:16
-
- + SNI: prod-mediate-events.applovin.com
-  + first_seen:2025-08-23 14:42:16
-
- + SNI: init-mp.fyber.com
-  + first_seen:2025-08-23 14:42:16
-
- + SNI: sts.applovin.com
-  + first_seen:2025-08-23 14:42:17
-
- + SNI: ms4.applovin.com
-  + first_seen:2025-08-23 14:42:17
-
- + SNI: socket.vinted.net
-  + first_seen:2025-08-23 14:42:18
-
- + SNI: config.inmobi.com
-  + first_seen:2025-08-23 14:42:19
-
- + SNI: view.adjust.com
-  + first_seen:2025-08-23 14:42:20
+ + SNI: imgproxy.leaflets.schwarz
+  + first_seen:2025-08-23 14:49:22

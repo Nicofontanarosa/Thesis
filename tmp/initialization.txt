@@ -1,26 +1,26 @@
 
 >> Running nDPI first command:
 
- + /home/keiyukensei/nDPI/example/ndpiReader -v 2 -i pcapng/Vinted_01.pcapng
+ + /home/keiyukensei/nDPI/example/ndpiReader -v 2 -i pcapng/Lidl_Plus_01.pcapng
 
 >> Running nDPI second command:
 
- + /home/keiyukensei/nDPI/example/ndpiReader -i pcapng/Vinted_01.pcapng -k test/Vinted/Vinted-01/Vinted_01_output_k.json
+ + /home/keiyukensei/nDPI/example/ndpiReader -i pcapng/Lidl_Plus_01.pcapng -k test/Lidl/Lidl-01/Lidl_Plus_01_output_k.json
 
 >> First nDPI JSON saved to:
 
- + test/Vinted/Vinted-01/Vinted_01.json
+ + test/Lidl/Lidl-01/Lidl_Plus_01.json
 
 >> Second nDPI JSON saved to:
 
- + test/Vinted/Vinted-01/Vinted_01_output_k.json
+ + test/Lidl/Lidl-01/Lidl_Plus_01_output_k.json
 
 >> Running initial filtering ...
 
- + input file: test/Vinted/Vinted-01/Vinted_01.json
- + output file: test/Vinted/Vinted-01/Vinted_01_filtered.json
+ + input file: test/Lidl/Lidl-01/Lidl_Plus_01.json
+ + output file: test/Lidl/Lidl-01/Lidl_Plus_01_filtered.json
 
 >> Running flows filtering ...
 
- + input file: test/Vinted/Vinted-01/Vinted_01_filtered.json
- + output file: test/Vinted/Vinted-01/Vinted_01_output.json
+ + input file: test/Lidl/Lidl-01/Lidl_Plus_01_filtered.json
+ + output file: test/Lidl/Lidl-01/Lidl_Plus_01_output.json

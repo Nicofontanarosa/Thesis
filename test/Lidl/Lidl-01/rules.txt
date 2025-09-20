@@ -1,4 +1,5 @@
-host:"alerts.lidlplus.com",host:"appgateway.lidlplus.com",host:"brochures.lidlplus.com",host:"clickandpick.lidlplus.com",host:"localization.lidlplus.com",host:"personalized-campaigns.lidlplus.com",host:"segments.lidlplus.com",host:"shopping-list.lidlplus.com",host:"shortcuts.lidlplus.com",host:"static-coupons.lidlplus.com",host:"surveys.lidlplus.com",host:"www.lidl.it"@Lidl stiftung u. co. kg
-host:"asset.schwarz",host:"endpoints.leaflets.schwarz",host:"imgproxy.leaflets.schwarz",host:"lidl.leaflets.schwarz"@Schwarz it kg
-host:"lidleu.my.salesforce.com",host:"mcf4wh-jdfmxrzzzttwqcrf-d3b4.device.marketingcloudapis.com"@Salesforce.com, inc.
-host:"accounts.lidl.com",host:"cluster-active-gate-lb.dynatrace.stackit.zone",host:"opengift.lidlplus.com"@Unknown
+host:"lidlplus.com",host:"www.lidl.it"@whois: lidl stiftung u. co. kg & AI: unknown
+host:"accounts.lidl.com",host:"cluster-active-gate-lb.dynatrace.stackit.zone"@whois: unknown & AI: unknown
+host:"asset.schwarz"@whois: schwarz it kg & AI: unknown
+host:"mcf4wh-jdfmxrzzzttwqcrf-d3b4.device.marketingcloudapis.com"@whois: salesforce.com, inc. & AI: unknown
+host:"lidl.leaflets.schwarz"@whois: schwarz it kg & AI: unknown

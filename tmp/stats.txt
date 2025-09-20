@@ -1,10 +1,9 @@
 >> Lists of protocols read:
 
    + DNS
-   + HTTP
+   + ICMPV6
    + QUIC
    + TLS
-   + Telegram
 
 >> Lists of protocols supported:
 
@@ -17,4 +16,4 @@
 
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
-   [red]+ Telegram[/red]
+   [red]+ ICMPV6[/red]

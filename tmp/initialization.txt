@@ -1,3 +1,13 @@
-- Using existing nDPI JSON: .\test\Maps\Maps-offline-01\Maps_offline_01.json
-- Running initial filtering: input file (.\test\Maps\Maps-offline-01\Maps_offline_01.json | output file (.\test\Maps\Maps-offline-01\Maps_offline_01_filtered.json)
-- Running initial filtering: input file (.\test\Maps\Maps-offline-01\Maps_offline_01_filtered.json | output file (.\test\Maps\Maps-offline-01\Maps_offline_01_output.json)
+>> Using existing nDPI JSON:
+
+ + test/Vinted/Vinted-01\Vinted_01.json
+
+>> Running initial filtering ...
+
+ + input file: test/Vinted/Vinted-01\Vinted_01.json
+ + output file: test/Vinted/Vinted-01\Vinted_01_filtered.json
+
+>> Running initial filtering ...
+
+ + input file: test/Vinted/Vinted-01\Vinted_01_filtered.json
+ + output file: test/Vinted/Vinted-01\Vinted_01_output.json

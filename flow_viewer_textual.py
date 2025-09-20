@@ -1,13 +1,20 @@
+
+#################################################################
+# File: flow_viewer_textual.py - used to run the GUI interface
+#################################################################
+
+# libraries from textual
 from textual.app import App, ComposeResult
 from textual.widgets import Header, Footer, Static, LoadingIndicator, Input, DataTable, Select
 from textual.containers import Vertical, Horizontal
-
+# standard libraries
 import json
 import os
-import constants_textual as constant
-import main
 import asyncio
 from functools import partial
+# my files
+import constants_textual as constant
+import main
 
 class PipelineInputs(App):
 
@@ -18,23 +25,26 @@ class PipelineInputs(App):
 
     def __init__(self):
         super().__init__()
+        
         # Default paths
         self.paths = {"pcap": "pcapng/Vinted_01.pcapng", "ndpi": "None", "output": "test/Vinted/Vinted-01"}
         self.left_panel = None
         self.right_panel = None
         self.statistics_select = None
         self.flows_select = None
+
         # Currently selected files for left/right panels
         self.current_stats_file = "tmp/initialization.txt"
         self.current_flow_file = "tmp/filtered_flows.json"
     
     async def run_main_in_background(self):
+
         # Run main.main_pipeline asynchronously in a separate thread (UI non-blocking)
         loop = asyncio.get_running_loop()
         await loop.run_in_executor(None, partial(main.main_pipeline, self.paths["pcap"], self.paths["ndpi"], self.paths["output"]))
 
     def compose(self) -> ComposeResult:
-        
+
         # Build initial UI layout
         yield Header(show_clock=True)
         banner = Static("Please provide the required paths and press Enter after each one ...", id="banner")
@@ -73,9 +83,9 @@ class PipelineInputs(App):
         yield Footer()
 
     def on_input_submitted(self, event: Input.Submitted) -> None:
+
         # Save path entered by user
         if event.input.id == "pcap_input":
-            # Hardcoded PCAP path
             self.paths["pcap"] = "pcapng/Vinted_01.pcapng"
             self.notify(f"PCAP file set: pcapng/Vinted_01.pcapng", severity="information")
         elif event.input.id == "ndpi_input":
@@ -91,9 +101,11 @@ class PipelineInputs(App):
             self.query_one("#ndpi_input").remove()
             self.query_one("#output_input").remove()
             self.query_one("#banner").remove()
+            # Start program
             self.display_panels()
 
     def display_panels(self):
+
         # Run main() asynchronously in background (thread-safe)
         asyncio.create_task(self.run_main_in_background())
 
@@ -158,7 +170,7 @@ class PipelineInputs(App):
 
         # Notify only if content changed and is not empty
         if error_content and self._last_error_content != error_content:
-            self.notify(f"❌ Error: {error_content.strip()}", severity="error")
+            self.notify(f"Error: {error_content.strip()}", severity="error")
             self._last_error_content = error_content
 
         # --- LEFT PANEL: stats file ---
@@ -204,25 +216,24 @@ class PipelineInputs(App):
         # Skip update if unchanged
         if getattr(self, "_last_flows", None) == flows:
             return  
+        
         self._last_flows = flows
-
         table.clear()
         if not table.columns:
-            for col in ["\nProtocol", "\nSource IP", "\nDestination IP", "\nSNI/URL", "\nRisk"]:
-                table.add_column(col)
+            for col in constant.COLUMNS:
+                table.add_column(f"\n{col}")
 
         if flows:
             for flow in flows:
-                proto = flow.get("proto_field", "N/A")
-                src = flow.get("ip_source", "N/A")
-                dst = flow.get("ip_destination", "N/A")
+                row = [flow.get(key, "N/A") for key in constant.COLUMNS_FROM_FILE]
                 sni = flow.get("sni") or flow.get("url", "N/A")
-                risk = flow.get("risk", "None")
-                table.add_row(proto, src, dst, sni, risk)
+                row[3] = sni  
+                table.add_row(*row)
         else:
-            table.add_row("N/A", "N/A", "N/A", "No data", "None")
+            table.add_row(*constant.EMPTY_ROW)
 
     def on_select_changed(self, event: Select.Changed) -> None:
+
         # Handle dropdown change (statistics or flows)
         key = event.value
         select_id = event.select.id
@@ -232,18 +243,19 @@ class PipelineInputs(App):
             return
 
         if select_id == "statistics_select":
-            # Prendi il path del file selezionato per il pannello destro
+            # Get the path of the selected file for the left panel
             _, file_path = constant.GROUPS["statistics"][key]
             self.current_stats_file = file_path
             self.update_left_panel(file_path)
 
         elif select_id == "flows_select":
-            # Prendi il path del file selezionato per il pannello sinistro
+            # Get the path of the selected file for the right panel
             _, file_path = constant.GROUPS["flows"][key]
-            self.current_flow_file = file_path  # aggiorna il file corrente
+            self.current_flow_file = file_path  # update the current file
             self.update_right_panel(file_path)
 
     def update_left_panel(self, file_path):
+        
         left_widget = self.left_panel.query_one("#left_text", Static)
         left_widget.styles.max_height = 30
         if os.path.exists(file_path):
@@ -253,6 +265,8 @@ class PipelineInputs(App):
             left_widget.update("⚠ File not found or empty")
 
     def update_right_panel(self, file_path):
+
+        # Same of refresh
         table = self.right_panel.query_one("#json_table", DataTable)
         table.styles.max_height = 30
         table.header_height = 2
@@ -266,21 +280,18 @@ class PipelineInputs(App):
         else:
             flows = []
 
-        columns = ["Protocol", "Source IP", "Destination IP", "SNI/URL", "Risk"]
         if not table.columns:
-            for col in columns:
+            for col in constant.COLUMNS:
                 table.add_column(col)
 
         if flows:
             for flow in flows:
-                proto = flow.get("proto_field", "N/A")
-                src = flow.get("ip_source", "N/A")
-                dst = flow.get("ip_destination", "N/A")
+                row = [flow.get(key, "N/A") for key in constant.COLUMNS_FROM_FILE]
                 sni = flow.get("sni") or flow.get("url", "N/A")
-                risk = flow.get("risk", "None")
-                table.add_row(proto, src, dst, sni, risk)
+                row[3] = sni
+                table.add_row(*row)
         else:
-            table.add_row("N/A", "N/A", "N/A", "No data", "None")
+            table.add_row(*constant.EMPTY_ROW)
 
 if __name__ == "__main__":
     PipelineInputs().run()

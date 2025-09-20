@@ -1,74 +1,32 @@
 >> Frequency ranking:
 
 
- + SNI: static-coupons.lidlplus.com
-  + count: 6
+ + SNI: www.notion.so
+  + count: 10
 
- + SNI: lidl.leaflets.schwarz
-  + count: 4
+ + SNI: img.notionusercontent.com
+  + count: 5
 
- + SNI: www.lidl.it
+ + SNI: api.statsig.com
   + count: 3
 
- + SNI: asset.schwarz
-  + count: 3
-
- + SNI: cdn.cookielaw.org
+ + SNI: exp.notion.so
   + count: 2
 
- + SNI: mobile-data.onetrust.io
+ + SNI: msgstore.www.notion.so
   + count: 2
 
- + SNI: cluster-active-gate-lb.dynatrace.stackit.zone
+ + SNI: identity.notion.so
   + count: 2
 
- + SNI: mcf4wh-jdfmxrzzzttwqcrf-d3b4.device.marketingcloudapis.com
+ + SNI: http-inputs-notion.splunkcloud.com
   + count: 2
 
- + SNI: clients4.google.com
+ + SNI: o324374.ingest.sentry.io
   + count: 2
 
- + SNI: imgproxy.leaflets.schwarz
-  + count: 1
+ + SNI: g.whatsapp.net
+  + count: 2
 
- + SNI: localization.lidlplus.com
-  + count: 1
-
- + SNI: personalized-campaigns.lidlplus.com
-  + count: 1
-
- + SNI: endpoints.leaflets.schwarz
-  + count: 1
-
- + SNI: opengift.lidlplus.com
-  + count: 1
-
- + SNI: accounts.lidl.com
-  + count: 1
-
- + SNI: brochures.lidlplus.com
-  + count: 1
-
- + SNI: segments.lidlplus.com
-  + count: 1
-
- + SNI: surveys.lidlplus.com
-  + count: 1
-
- + SNI: shopping-list.lidlplus.com
-  + count: 1
-
- + SNI: appgateway.lidlplus.com
-  + count: 1
-
- + SNI: shortcuts.lidlplus.com
-  + count: 1
-
- + SNI: alerts.lidlplus.com
-  + count: 1
-
- + SNI: clickandpick.lidlplus.com
-  + count: 1
-
- + SNI: lidleu.my.salesforce.com
+ + SNI: firebase-settings.crashlytics.com
   + count: 1

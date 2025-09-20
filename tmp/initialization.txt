@@ -1,26 +1,17 @@
+>> Using existing nDPI JSON:
 
->> Running nDPI first command:
+ + test/Notion/Notion-01\Notion_01.json
 
- + /home/keiyukensei/nDPI/example/ndpiReader -v 2 -i pcapng/Lidl_Plus_01.pcapng
+>> Using existing nDPI JSON:
 
->> Running nDPI second command:
-
- + /home/keiyukensei/nDPI/example/ndpiReader -i pcapng/Lidl_Plus_01.pcapng -k test/Lidl/Lidl-01/Lidl_Plus_01_output_k.json
-
->> First nDPI JSON saved to:
-
- + test/Lidl/Lidl-01/Lidl_Plus_01.json
-
->> Second nDPI JSON saved to:
-
- + test/Lidl/Lidl-01/Lidl_Plus_01_output_k.json
+ + test/Notion/Notion-01\Notion_01_output_k.json
 
 >> Running initial filtering ...
 
- + input file: test/Lidl/Lidl-01/Lidl_Plus_01.json
- + output file: test/Lidl/Lidl-01/Lidl_Plus_01_filtered.json
+ + input file: test/Notion/Notion-01\Notion_01.json
+ + output file: test/Notion/Notion-01\Notion_01_filtered.json
 
 >> Running flows filtering ...
 
- + input file: test/Lidl/Lidl-01/Lidl_Plus_01_filtered.json
- + output file: test/Lidl/Lidl-01/Lidl_Plus_01_output.json
+ + input file: test/Notion/Notion-01\Notion_01_filtered.json
+ + output file: test/Notion/Notion-01\Notion_01_output.json

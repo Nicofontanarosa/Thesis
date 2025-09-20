@@ -1,74 +1,32 @@
 >> Temporal ranking:
 
 
- + SNI: cluster-active-gate-lb.dynatrace.stackit.zone
-  + first_seen:2025-08-23 14:49:04
+ + SNI: firebase-settings.crashlytics.com
+  + first_seen:2025-08-23 14:47:02
 
- + SNI: mobile-data.onetrust.io
-  + first_seen:2025-08-23 14:49:04
+ + SNI: www.notion.so
+  + first_seen:2025-08-23 14:47:02
 
- + SNI: accounts.lidl.com
-  + first_seen:2025-08-23 14:49:04
+ + SNI: api.statsig.com
+  + first_seen:2025-08-23 14:47:03
 
- + SNI: localization.lidlplus.com
-  + first_seen:2025-08-23 14:49:04
+ + SNI: msgstore.www.notion.so
+  + first_seen:2025-08-23 14:47:03
 
- + SNI: mcf4wh-jdfmxrzzzttwqcrf-d3b4.device.marketingcloudapis.com
-  + first_seen:2025-08-23 14:49:04
+ + SNI: http-inputs-notion.splunkcloud.com
+  + first_seen:2025-08-23 14:47:04
 
- + SNI: segments.lidlplus.com
-  + first_seen:2025-08-23 14:49:05
+ + SNI: exp.notion.so
+  + first_seen:2025-08-23 14:47:04
 
- + SNI: personalized-campaigns.lidlplus.com
-  + first_seen:2025-08-23 14:49:05
+ + SNI: o324374.ingest.sentry.io
+  + first_seen:2025-08-23 14:47:05
 
- + SNI: appgateway.lidlplus.com
-  + first_seen:2025-08-23 14:49:06
+ + SNI: g.whatsapp.net
+  + first_seen:2025-08-23 14:47:11
 
- + SNI: shopping-list.lidlplus.com
-  + first_seen:2025-08-23 14:49:06
+ + SNI: img.notionusercontent.com
+  + first_seen:2025-08-23 14:47:11
 
- + SNI: shortcuts.lidlplus.com
-  + first_seen:2025-08-23 14:49:06
-
- + SNI: surveys.lidlplus.com
-  + first_seen:2025-08-23 14:49:07
-
- + SNI: clickandpick.lidlplus.com
-  + first_seen:2025-08-23 14:49:08
-
- + SNI: alerts.lidlplus.com
-  + first_seen:2025-08-23 14:49:08
-
- + SNI: static-coupons.lidlplus.com
-  + first_seen:2025-08-23 14:49:08
-
- + SNI: lidleu.my.salesforce.com
-  + first_seen:2025-08-23 14:49:08
-
- + SNI: opengift.lidlplus.com
-  + first_seen:2025-08-23 14:49:08
-
- + SNI: brochures.lidlplus.com
-  + first_seen:2025-08-23 14:49:18
-
- + SNI: www.lidl.it
-  + first_seen:2025-08-23 14:49:18
-
- + SNI: lidl.leaflets.schwarz
-  + first_seen:2025-08-23 14:49:21
-
- + SNI: clients4.google.com
-  + first_seen:2025-08-23 14:49:21
-
- + SNI: endpoints.leaflets.schwarz
-  + first_seen:2025-08-23 14:49:22
-
- + SNI: cdn.cookielaw.org
-  + first_seen:2025-08-23 14:49:22
-
- + SNI: asset.schwarz
-  + first_seen:2025-08-23 14:49:22
-
- + SNI: imgproxy.leaflets.schwarz
-  + first_seen:2025-08-23 14:49:22
+ + SNI: identity.notion.so
+  + first_seen:2025-08-23 14:47:12

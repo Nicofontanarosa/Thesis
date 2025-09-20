@@ -1,39 +1,25 @@
 [
     {
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "8daaf6152771_eca864cca44a",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "8daaf6152771_d8a2da3f94cd",
         "sni_list": [
-            "lidlplus.com",
-            "www.lidl.it"
+            "img.notionusercontent.com",
+            "notion.so",
+            "o324374.ingest.sentry.io"
         ]
     },
     {
-        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
         "ja4": "5b57614c22b0_eca864cca44a",
         "sni_list": [
-            "accounts.lidl.com",
-            "cluster-active-gate-lb.dynatrace.stackit.zone"
+            "api.statsig.com"
         ]
     },
     {
-        "ja3s": null,
-        "ja4": "55b375c5d22e_5a06198afb93",
+        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
+        "ja4": "8daaf6152771_d8a2da3f94cd",
         "sni_list": [
-            "asset.schwarz"
-        ]
-    },
-    {
-        "ja3s": "e54965894d6b45ecb4323c7ea3d6c115",
-        "ja4": "5b57614c22b0_eca864cca44a",
-        "sni_list": [
-            "mcf4wh-jdfmxrzzzttwqcrf-d3b4.device.marketingcloudapis.com"
-        ]
-    },
-    {
-        "ja3s": "2253c82f03b621c5144709b393fde2c9",
-        "ja4": "8daaf6152771_b6f405a00624",
-        "sni_list": [
-            "lidl.leaflets.schwarz"
+            "http-inputs-notion.splunkcloud.com"
         ]
     }
 ]

@@ -1,6 +1,7 @@
 >> Lists of protocols read:
 
    + DNS
+   + ICMP
    + QUIC
    + TLS
    + WhatsApp
@@ -16,4 +17,5 @@
 
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
+   [red]+ ICMP[/red]
    [red]+ WhatsApp[/red]

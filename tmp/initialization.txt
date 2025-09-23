@@ -1,17 +1,13 @@
 >> Using existing nDPI JSON:
 
- + test/Notion/Notion-01\Notion_01.json
-
->> Using existing nDPI JSON:
-
- + test/Notion/Notion-01\Notion_01_output_k.json
+ + test/Fire_VPN/Fire_Net-02\Fire_Net_VPN_Connection_02.json
 
 >> Running initial filtering ...
 
- + input file: test/Notion/Notion-01\Notion_01.json
- + output file: test/Notion/Notion-01\Notion_01_filtered.json
+ + input file: test/Fire_VPN/Fire_Net-02\Fire_Net_VPN_Connection_02.json
+ + output file: test/Fire_VPN/Fire_Net-02\Fire_Net_VPN_Connection_02_filtered.json
 
 >> Running flows filtering ...
 
- + input file: test/Notion/Notion-01\Notion_01_filtered.json
- + output file: test/Notion/Notion-01\Notion_01_output.json
+ + input file: test/Fire_VPN/Fire_Net-02\Fire_Net_VPN_Connection_02_filtered.json
+ + output file: test/Fire_VPN/Fire_Net-02\Fire_Net_VPN_Connection_02_output.json

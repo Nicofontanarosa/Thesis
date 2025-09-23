@@ -1,0 +1,189 @@
+
+
+>> Risky Flow:
+
+  + ip_field: 126/Google
+  + transport_protocol: TCP
+  + proto_field: 91.239/TLS.GoogleServices
+  + tls_version: TLSv1.3
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+  + ja4: t13d171200_5b57614c22b0_352634941f3a
+  + [green]sni: mtalk.google.com[/green]
+  + ip_source: 192.168.80.96
+  + port_source: 62434
+  + ip_destination: 108.177.96.188
+  + port_destination: 5228
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **[/red]
+  + [red]risk_score: 60[/red]
+  + [red]risk_info: No ALPN / Expected on port 443[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['11 <-> 12'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 276/Azure
+  + transport_protocol: TCP
+  + proto_field: 91.212/TLS.Microsoft
+  + tls_version: TLSv1.2
+  + ja3s: 2fe9b0e731d3d41b2b84e8e1d6186836
+  + ja4: t12d1809h2_4b22cbed5bed_7af1ed941c26
+  + servernames: settings-win.data.microsoft.com
+  + issuer: C=US, ST=Washington, L=Redmond, O=Microsoft Corporation, CN=Microsoft Secure Server CA 2011
+  + subject: C=US, ST=WA, L=Redmond, O=Microsoft, OU=WSE, CN=settings-win.data.microsoft.com
+  + certificate: SHA-1: 52:45:6F:E0:66:8B:7A:A9:AE:FE:2B:39:BC:14:3D:D6:76:96:DE:C9
+  + [green]sni: settings-win.data.microsoft.com[/green]
+  + ip_source: 192.168.80.96
+  + port_source: 64928
+  + ip_destination: 51.104.136.2
+  + port_destination: 443
+  + tcp_fingerprint: 2_128_65535_6bb88f5575fd/Windows
+  + [red]risk: ** TLS Cert Validity Too Long **[/red]
+  + [red]risk_score: 50[/red]
+  + [red]risk_info: TLS Cert lasts 457 days[/red]
+  + similar_flows_count: 5
+  + exchanged_packets: \['15 <-> 11', '16 <-> 12', '12 <-> 11', '12 <-> 11', '12 <-> 11'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 126/Google
+  + transport_protocol: TCP
+  + proto_field: 91.239/TLS.GoogleServices
+  + tls_version: TLSv1.3
+  + ja3s: 907bf3ecef1c987c889946b737b43de8
+  + ja4: t13d201200_2b729b4bf6f3_e24568c0d440
+  + [green]sni: signaler-pa.googleapis.com[/green]
+  + ip_source: 192.168.80.96
+  + port_source: 64940
+  + ip_destination: 142.251.209.42
+  + port_destination: 443
+  + tcp_fingerprint: 2_128_65535_6bb88f5575fd/Windows
+  + [red]risk: ** TLS (probably) Not Carrying HTTPS **[/red]
+  + [red]risk_score: 10[/red]
+  + [red]risk_info: No ALPN[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['11 <-> 13', '7 <-> 9'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 126/Google
+  + transport_protocol: TCP
+  + proto_field: 91.239/TLS.GoogleServices
+  + tls_version: TLSv1.3
+  + ja3s: 907bf3ecef1c987c889946b737b43de8
+  + ja4: t13d201200_2b729b4bf6f3_e24568c0d440
+  + [green]sni: drivefrontend-pa.googleapis.com[/green]
+  + ip_source: 192.168.80.96
+  + port_source: 64948
+  + ip_destination: 216.58.204.234
+  + port_destination: 443
+  + tcp_fingerprint: 2_128_65535_6bb88f5575fd/Windows
+  + [red]risk: ** TLS (probably) Not Carrying HTTPS **[/red]
+  + [red]risk_score: 10[/red]
+  + [red]risk_info: No ALPN[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['8 <-> 9'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 126/Google
+  + transport_protocol: TCP
+  + proto_field: 91.239/TLS.GoogleServices
+  + tls_version: TLSv1.3
+  + ja3s: f590053ff246338aff7c203dbe7164d6
+  + ja4: t13d201300_2b729b4bf6f3_1ea369dc5faa
+  + [green]sni: drivefrontend-pa.googleapis.com[/green]
+  + ip_source: 192.168.80.96
+  + port_source: 64947
+  + ip_destination: 216.58.204.234
+  + port_destination: 443
+  + tcp_fingerprint: 2_128_65535_6bb88f5575fd/Windows
+  + [red]risk: ** TLS (probably) Not Carrying HTTPS **[/red]
+  + [red]risk_score: 10[/red]
+  + [red]risk_info: No ALPN[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['6 <-> 6'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: UDP
+  + proto_field: 5/DNS
+  + dns_ip: 0.0.0.0
+  + dns_id: 0x5f32
+  + plain_text: online
+  + [green]sni: ptitunnel.ptisupporterteam.xyz[/green]
+  + ip_source: 192.168.80.96
+  + port_source: 61541
+  + ip_destination: 192.168.80.68
+  + port_destination: 53
+  + [red]risk: ** Error Code **[/red]
+  + [red]risk_score: 10[/red]
+  + [red]risk_info: DNS Error Code NXDOMAIN[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['4 <-> 3'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: UDP
+  + proto_field: 5/DNS
+  + dns_ip: 216.58.204.227
+  + dns_id: 0x9ace
+  + plain_text: online
+  + [green]sni: www.gstatic.com[/green]
+  + ip_source: 192.168.80.96
+  + port_source: 54347
+  + ip_destination: 192.168.80.68
+  + port_destination: 53
+  + [red]risk: ** Error Code **[/red]
+  + [red]risk_score: 10[/red]
+  + [red]risk_info: DNS Error Code NXDOMAIN[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['3 <-> 3'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: UDP
+  + proto_field: 5/DNS
+  + dns_ip: 0.0.0.0
+  + dns_id: 0x8684
+  + plain_text: gsmpromax
+  + [green]sni: gsmpromax.xyz.mshome.net[/green]
+  + ip_source: 192.168.80.96
+  + port_source: 51871
+  + ip_destination: 192.168.80.68
+  + port_destination: 53
+  + [red]risk: ** Error Code **[/red]
+  + [red]risk_score: 10[/red]
+  + [red]risk_info: DNS Error Code NXDOMAIN[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['1 <-> 1'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: UDP
+  + proto_field: 5/DNS
+  + dns_ip: 0.0.0.0
+  + dns_id: 0xed1b
+  + plain_text: gsmpromax
+  + [green]sni: gsmpromax.xyz[/green]
+  + ip_source: 192.168.80.96
+  + port_source: 51722
+  + ip_destination: 192.168.80.68
+  + port_destination: 53
+  + [red]risk: ** Error Code **[/red]
+  + [red]risk_score: 10[/red]
+  + [red]risk_info: DNS Error Code NXDOMAIN[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['1 <-> 1'\]

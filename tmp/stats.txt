@@ -1,10 +1,11 @@
 >> Lists of protocols read:
 
    + DNS
+   + Google
+   + HTTP
    + ICMP
    + QUIC
    + TLS
-   + WhatsApp
 
 >> Lists of protocols supported:
 
@@ -17,5 +18,5 @@
 
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
+   [red]+ Google[/red]
    [red]+ ICMP[/red]
-   [red]+ WhatsApp[/red]

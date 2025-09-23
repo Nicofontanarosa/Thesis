@@ -1,0 +1,1 @@
+--cfg=lru.ookla.size,0 --cfg=lru.msteams.ttl,1

@@ -1,0 +1,31 @@
+Guessed flow protos:	1
+
+DPI Packets (UDP):	2	(2.00 pkts/flow)
+Confidence Match by IP      : 1 (flows)
+Num dissector calls: 160 (160.00 diss/flow)
+LRU cache ookla:      0/0/0 (insert/search/found)
+LRU cache bittorrent: 0/3/0 (insert/search/found)
+LRU cache stun:       0/0/0 (insert/search/found)
+LRU cache tls_cert:   0/0/0 (insert/search/found)
+LRU cache mining:     0/1/0 (insert/search/found)
+LRU cache msteams:    0/0/0 (insert/search/found)
+LRU cache fpc_dns:    0/1/0 (insert/search/found)
+Automa host:          0/0 (search/found)
+Automa domain:        0/0 (search/found)
+Automa tls cert:      0/0 (search/found)
+Automa risk mask:     0/0 (search/found)
+Automa common alpns:  0/0 (search/found)
+Patricia risk mask:   0/0 (search/found)
+Patricia risk mask IPv6: 0/0 (search/found)
+Patricia risk:        0/0 (search/found)
+Patricia risk IPv6:   0/0 (search/found)
+Patricia protocols:   1/1 (search/found)
+Patricia protocols IPv6: 0/0 (search/found)
+
+Google	2	262	1
+
+Acceptable                       2 262           1            
+
+Web                              2 262           1            
+
+	1	UDP 192.168.1.168:65311 <-> 8.8.8.8:53 [proto: 126/Google][Stack: Google][IP: 126/Google][Encrypted][Confidence: Match by IP][FPC: 126/Google, Confidence: IP address][DPI packets: 2][cat: Web/5][Breed: Acceptable][1 pkts/103 bytes <-> 1 pkts/159 bytes][Goodput ratio: 59/73][0.02 sec][PLAIN TEXT (fhkfhsdkfhsk)][Plen Bins: 0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]

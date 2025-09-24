@@ -1,6 +1,17 @@
-<form id="pcapForm">
-  <input type="file" id="pcapFile" accept=".pcap" />
-  <button type="submit">Analizza</button>
-</form>
-<pre id="output"></pre>
-<script src="script.js"></script>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>PCAP -> nDPI</title>
+</head>
+<body>
+  <h2>Carica un file PCAP</h2>
+  <form id="form">
+    <input type="file" id="pcap" accept=".pcap" required />
+    <button type="submit">Analizza</button>
+  </form>
+  <pre id="output"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>

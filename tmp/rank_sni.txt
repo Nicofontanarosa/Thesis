@@ -1,0 +1,23 @@
+>> Frequency ranking:
+
+
+ + SNI: docs.google.com
+  + count: 4
+
+ + SNI: ssl.gstatic.com
+  + count: 4
+
+ + SNI: accounts.google.com
+  + count: 3
+
+ + SNI: safebrowsing.googleapis.com
+  + count: 3
+
+ + SNI: www.youtube.com
+  + count: 3
+
+ + SNI: edge-026.sgsin8.icloud-content.com
+  + count: 2
+
+ + SNI: p101-content.icloud.com
+  + count: 2

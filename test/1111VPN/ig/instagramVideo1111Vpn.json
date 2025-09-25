@@ -1,0 +1,150 @@
+
+-----------------------------------------------------------
+* NOTE: This is demo app to show *some* nDPI features.
+* In this demo we have implemented only some basic features
+* just to show you what you can do with the library. Feel 
+* free to extend it and send us the patches for inclusion
+------------------------------------------------------------
+
+Using nDPI (4.15.0-5377-8987a2c) [1 thread(s)]
+Using libgcrypt version 1.8.6internal
+Reading packets from pcap file /media/keiyukensei/6584e824-46dd-406a-8bab-0766cbad8fed/pcaps/1111Vpn/instagram/instagramVideo1111Vpn.pcap...
+Running thread 0...
+
+nDPI Memory statistics:
+	nDPI Memory (once):      2.95 KB      
+	Flow Memory (per flow):  1.13 KB      
+	Actual Memory:           68.82 MB     
+	Peak Memory:             68.82 MB     
+	Setup Time:              47 msec
+	Packet Processing Time:  260 msec
+
+Traffic statistics:
+	Ethernet bytes:        65265456      (includes ethernet CRC/IFC/trailer)
+	Discarded bytes:       0            
+	IP packets:            81349         of 81407 packets total
+	IP bytes:              63313080      (avg pkt size 777 bytes)
+	Unique flows:          41           
+	TCP Packets:           2628         
+	UDP Packets:           78675        
+	VLAN Packets:          0            
+	MPLS Packets:          0            
+	PPPoE Packets:         0            
+	Fragmented Packets:    0            
+	Max Packet size:       1472         
+	Packet Len < 64:       27005        
+	Packet Len 64-128:     1736         
+	Packet Len 128-256:    8154         
+	Packet Len 256-1024:   1771         
+	Packet Len 1024-1500:  42683        
+	Packet Len > 1500:     0            
+	nDPI throughput:       312.02 K pps / 1.87 Gb/sec
+	Analysis begin:        06/Sep/2025 00:16:27
+	Analysis end:          06/Sep/2025 00:22:38
+	Traffic throughput:    219.10 pps / 1.34 Mb/sec
+	Traffic duration:      371.285 sec
+	Guessed flow protos:   4            
+	DPI Packets (TCP):     106           (7.57 pkts/flow)
+	DPI Packets (UDP):     53            (2.21 pkts/flow)
+	DPI Packets (other):   3             (1.00 pkts/flow)
+	Confidence: Unknown    1             (flows)
+	Confidence: Match by port 2             (flows)
+	Confidence: DPI        36            (flows)
+	Confidence: Match by IP 2             (flows)
+
+
+Detected protocols:
+	Unknown              packets: 6             bytes: 360           flows: 1            
+	DNS                  packets: 28            bytes: 3181          flows: 14           
+	ICMP                 packets: 2             bytes: 140           flows: 2            
+	TLS                  packets: 1628          bytes: 699040        flows: 7            
+	SSH                  packets: 14            bytes: 1368          flows: 1            
+	ICMPV6               packets: 44            bytes: 3608          flows: 1            
+	YouTube              packets: 24            bytes: 12785         flows: 1            
+	Google               packets: 91            bytes: 36387         flows: 4            
+	WhatsApp             packets: 424           bytes: 56608         flows: 1            
+	AppleiCloud          packets: 82            bytes: 45804         flows: 2            
+	QUIC                 packets: 78436         bytes: 62015982      flows: 2            
+	ApplePush            packets: 458           bytes: 373767        flows: 1            
+	GoogleServices       packets: 25            bytes: 14190         flows: 1            
+	GoogleDocs           packets: 52            bytes: 24461         flows: 2            
+	WhatsAppFiles        packets: 35            bytes: 25399         flows: 1            
+
+
+Protocol statistics:
+	Safe                 packets: 1628          bytes: 699040        flows: 7            
+	Acceptable           packets: 79691         bytes: 62600895      flows: 32           
+	Fun                  packets: 24            bytes: 12785         flows: 1            
+	Unrated              packets: 6             bytes: 360           flows: 1            
+
+
+Category statistics:
+	Unspecified          packets: 6             bytes: 360           flows: 1            
+	Media                packets: 24            bytes: 12785         flows: 1            
+	Web                  packets: 80262         bytes: 62811403      flows: 16           
+	Download             packets: 35            bytes: 25399         flows: 1            
+	Chat                 packets: 424           bytes: 56608         flows: 1            
+	RemoteAccess         packets: 14            bytes: 1368          flows: 1            
+	Cloud                packets: 458           bytes: 373767        flows: 1            
+	Network              packets: 74            bytes: 6929          flows: 17           
+	Collaborative        packets: 52            bytes: 24461         flows: 2            
+
+Risk stats [found 7 (17.1 %) flows with risks]:
+	Known Proto on Non Std Port                  3 [37.5 %]
+	Susp Entropy                                 2 [25.0 %]
+	Unidirectional Traffic                       3 [37.5 %]
+
+	NOTE: as one flow can have multiple risks set, the sum of the
+	      last column can exceed the number of flows with risks.
+
+
+
+JA Host Stats: 
+		 IP Address                  	 # JA4C     
+	1	 192.168.50.96            	 3      
+
+
+	1	UDP 162.159.198.1:443 <-> 192.168.50.22:65080 [proto: 188/QUIC][IP: 220/Cloudflare][Encrypted][Confidence: DPI][FPC: 220/Cloudflare, Confidence: IP address][DPI packets: 7][cat: Web/5][50334 pkts/57215525 bytes <-> 28101 pkts/4800373 bytes][Goodput ratio: 96/75][371.28 sec][bytes ratio: 0.845 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 6/12 4000/4000 72/113][Pkt Len c2s/s2c min/avg/max/stddev: 86/84 1137/171 1374/1375 469/240][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 5.232 (Executable?)][PLAIN TEXT (azDQC/ M)][Plen Bins: 0,35,0,0,7,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,4,0,0,0,0,0,0]
+	2	TCP 17.57.145.136:5223 <-> 192.168.50.22:58818 [proto: 91/TLS][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 140/Apple, Confidence: IP address][DPI packets: 3][cat: Web/5][333 pkts/32417 bytes <-> 623 pkts/586442 bytes][Goodput ratio: 32/93][280.13 sec][bytes ratio: -0.895 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 329/469 33171/40143 2438/3101][Pkt Len c2s/s2c min/avg/max/stddev: 66/54 97/941 1506/1506 140/677][Risk: ** Known Proto on Non Std Port **][Risk Score: 50][Risk Info: Expected on port 443][Plen Bins: 10,10,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,68,0,0]
+	3	TCP 17.57.145.134:5223 <-> 192.168.50.96:64943 [proto: 238/ApplePush][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 238/ApplePush, Confidence: DPI][DPI packets: 1][cat: Cloud/13][280 pkts/360814 bytes <-> 178 pkts/12953 bytes][Goodput ratio: 95/9][199.39 sec][bytes ratio: 0.931 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 820/1 65151/59 5486/7][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 1289/73 1506/523 488/36][PLAIN TEXT (IIPeGa)][Plen Bins: 0,9,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,88,0,0]
+	4	TCP 157.240.13.55:5222 <-> 192.168.50.96:65171 [proto: 142/WhatsApp][IP: 142/WhatsApp][Encrypted][Confidence: Match by IP][FPC: 142/WhatsApp, Confidence: IP address][DPI packets: 21][cat: Chat/9][215 pkts/37004 bytes <-> 209 pkts/19604 bytes][Goodput ratio: 62/30][317.29 sec][bytes ratio: 0.307 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 1583/1620 38892/38973 4084/4174][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 172/94 1446/501 221/39][PLAIN TEXT (/XCUpUE)][Plen Bins: 0,73,9,0,3,0,0,0,0,6,1,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	5	TCP [fe80::83c:323f:53e4:ec81]:53111 <-> [fe80::14b0:a46e:c90d:c76]:51567 [proto: 91/TLS][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 3][cat: Web/5][105 pkts/21908 bytes <-> 105 pkts/18306 bytes][Goodput ratio: 61/50][365.76 sec][bytes ratio: 0.090 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 6/6 3572/3575 10802/10928 4618/4624][Pkt Len c2s/s2c min/avg/max/stddev: 74/86 209/174 435/350 171/124][Risk: ** Known Proto on Non Std Port **][Risk Score: 50][Risk Info: Expected on port 443][Plen Bins: 0,0,0,0,0,0,0,0,47,0,52,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	6	TCP 192.168.50.96:65287 <-> 17.248.164.45:443 [proto: 91.143/TLS.AppleiCloud][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 140/Apple, Confidence: IP address][DPI packets: 6][cat: Web/5][27 pkts/4351 bytes <-> 26 pkts/28958 bytes][Goodput ratio: 59/94][31.09 sec][Hostname/SNI: edge-026.sgsin8.icloud-content.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.739 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 1478/4 30865/42 6571/10][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 161/1114 1506/1506 295/593][TCP Fingerprint: 194_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014h2_a09f3c656075_e42f34c56612][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 3,0,3,3,0,0,0,0,0,7,0,0,0,0,0,3,3,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,70,0,0]
+	7	UDP 192.168.50.96:52689 <-> 222.165.165.224:443 [proto: 188.242/QUIC.WhatsAppFiles][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 188.242/QUIC.WhatsAppFiles, Confidence: DPI][DPI packets: 1][cat: Download/7][15 pkts/5266 bytes <-> 20 pkts/20133 bytes][Goodput ratio: 88/96][120.30 sec][Hostname/SNI: media.fcmb2-2.fna.whatsapp.net][(Advertised) ALPNs: h3][TLS Supported Versions: GREASE;TLSv1.3][bytes ratio: -0.585 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 10935/0 120274/2 34576/0][Pkt Len c2s/s2c min/avg/max/stddev: 72/81 351/1007 1294/1274 472/452][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_f2a83c8e78ae][Safari][PLAIN TEXT (DibnpG)][Plen Bins: 5,30,5,0,0,0,0,0,0,0,2,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,5,40,2,0,0,0,0,0,0,0,0]
+	8	TCP 192.168.50.22:53113 <-> 57.144.124.144:443 [proto: 91/TLS][IP: 119/Facebook][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 3][cat: Web/5][136 pkts/10454 bytes <-> 134 pkts/12116 bytes][Goodput ratio: 19/27][352.88 sec][bytes ratio: -0.074 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 2774/2818 27081/27080 5106/5142][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 77/90 146/1446 26/144][Plen Bins: 84,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0]
+	9	UDP 192.168.50.96:64626 <-> 172.217.194.84:443 [proto: 188.126/QUIC.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][13 pkts/8011 bytes <-> 15 pkts/6590 bytes][Goodput ratio: 93/90][0.25 sec][Hostname/SNI: accounts.google.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: 0.097 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 17/14 69/72 25/23][Pkt Len c2s/s2c min/avg/max/stddev: 73/66 616/439 1292/1292 570/486][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][PLAIN TEXT (NEXiF )][Plen Bins: 29,10,7,7,0,0,0,0,3,3,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,7,22,0,0,0,0,0,0,0,0]
+	10	UDP 192.168.50.96:49333 <-> 64.233.170.95:443 [proto: 188.239/QUIC.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 3][cat: Web/5][11 pkts/5445 bytes <-> 14 pkts/8745 bytes][Goodput ratio: 91/93][0.12 sec][Hostname/SNI: safebrowsing.googleapis.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.233 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 9/0 40/2 15/1][Pkt Len c2s/s2c min/avg/max/stddev: 73/65 495/625 1292/1292 547/547][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][Plen Bins: 16,24,8,4,0,0,0,0,0,4,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,4,28,0,0,0,0,0,0,0,0]
+	11	UDP 192.168.50.96:53535 <-> 74.125.130.93:443 [proto: 188.124/QUIC.YouTube][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Media/1][11 pkts/7734 bytes <-> 13 pkts/5051 bytes][Goodput ratio: 94/89][0.22 sec][Hostname/SNI: www.youtube.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: 0.210 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 15/12 61/84 26/26][Pkt Len c2s/s2c min/avg/max/stddev: 73/66 703/389 1292/1292 572/454][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][PLAIN TEXT (rXwwkI)][Plen Bins: 25,12,8,4,0,0,0,8,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,4,0,0,0,0,0,0,0,0,8,20,0,0,0,0,0,0,0,0]
+	12	TCP 192.168.50.96:65288 <-> 17.248.224.69:443 [proto: 91.143/TLS.AppleiCloud][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 143/AppleiCloud, Confidence: DNS][DPI packets: 6][cat: Web/5][16 pkts/4771 bytes <-> 13 pkts/7724 bytes][Goodput ratio: 78/89][30.81 sec][Hostname/SNI: p101-content.icloud.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.236 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 2369/3403 30369/30435 8083/9557][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 298/594 1506/1506 468/604][TCP Fingerprint: 194_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014h2_a09f3c656075_e42f34c56612][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 7,0,7,0,0,0,0,7,0,15,0,0,0,0,0,0,7,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,7,7,24,0,0]
+	13	UDP 192.168.50.96:50861 <-> 142.251.12.102:443 [proto: 188.241/QUIC.GoogleDocs][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Collaborative/15][13 pkts/6751 bytes <-> 14 pkts/5525 bytes][Goodput ratio: 92/89][0.41 sec][Hostname/SNI: docs.google.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: 0.100 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 1/0 6/32 57/207 17/59][Pkt Len c2s/s2c min/avg/max/stddev: 71/64 519/395 1292/1292 551/442][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][PLAIN TEXT (Cd5419)][Plen Bins: 30,11,11,7,0,0,0,0,0,3,3,0,0,0,3,0,0,0,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,3,19,0,0,0,0,0,0,0,0]
+	14	UDP 192.168.50.96:60030 <-> 142.251.12.102:443 [proto: 188.241/QUIC.GoogleDocs][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Collaborative/15][12 pkts/6675 bytes <-> 13 pkts/5510 bytes][Goodput ratio: 92/90][0.32 sec][Hostname/SNI: docs.google.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: 0.096 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 1/0 4/28 37/203 12/60][Pkt Len c2s/s2c min/avg/max/stddev: 73/64 556/424 1292/1292 558/446][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][PLAIN TEXT (@A/.c.)][Plen Bins: 24,12,12,4,4,0,0,0,0,4,4,0,0,0,4,0,0,0,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0,0,0,0,4,20,0,0,0,0,0,0,0,0]
+	15	UDP 192.168.50.96:56419 <-> 172.217.194.94:443 [proto: 188.126/QUIC.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 3][cat: Web/5][12 pkts/5374 bytes <-> 15 pkts/6595 bytes][Goodput ratio: 91/90][25.16 sec][Hostname/SNI: ssl.gstatic.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.102 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 28/0 2779/2093 24943/25013 7836/6911][Pkt Len c2s/s2c min/avg/max/stddev: 73/64 448/440 1292/1292 518/491][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][Plen Bins: 22,22,7,11,0,0,0,0,0,3,0,0,0,0,0,0,3,0,0,0,0,3,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,22,0,0,0,0,0,0,0,0]
+	16	TCP 192.168.50.96:51493 <-> 52.8.16.38:443 [proto: 91/TLS][IP: 265/AmazonAWS][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 3][cat: Web/5][59 pkts/5319 bytes <-> 60 pkts/5115 bytes][Goodput ratio: 27/23][354.54 sec][bytes ratio: 0.020 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 6429/5787 25007/24732 10071/9632][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 90/85 122/108 25/19][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	17	UDP 192.168.50.96:59916 <-> 172.217.194.94:443 [proto: 188.126/QUIC.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][9 pkts/3863 bytes <-> 11 pkts/4994 bytes][Goodput ratio: 90/91][0.18 sec][Hostname/SNI: ssl.gstatic.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.128 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 1/2 14/12 47/48 21/19][Pkt Len c2s/s2c min/avg/max/stddev: 73/64 429/454 1292/1292 503/480][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][PLAIN TEXT (XPU/Cd)][Plen Bins: 30,15,10,5,0,0,0,0,0,5,0,0,0,0,0,0,5,0,0,0,0,5,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,20,0,0,0,0,0,0,0,0]
+	18	TCP 192.168.50.96:51561 <-> 18.155.68.76:443 [proto: 91/TLS][IP: 265/AmazonAWS][Encrypted][Confidence: DPI][FPC: 265/AmazonAWS, Confidence: IP address][DPI packets: 5][cat: Web/5][24 pkts/1932 bytes <-> 24 pkts/1878 bytes][Goodput ratio: 22/16][314.90 sec][bytes ratio: 0.014 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 11032/13407 45043/45062 16031/17477][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 80/78 101/115 21/21][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	19	ICMPV6 [fe80::83c:323f:53e4:ec81]:0 <-> [fe80::14b0:a46e:c90d:c76]:0 [proto: 102/ICMPV6][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 102/ICMPV6, Confidence: DPI][DPI packets: 1][cat: Network/14][22 pkts/1804 bytes <-> 22 pkts/1804 bytes][Goodput ratio: 24/24][322.06 sec][bytes ratio: 0.000 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 24/6 15201/15203 32227/32247 15246/15264][Pkt Len c2s/s2c min/avg/max/stddev: 78/78 82/82 86/86 4/4][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	20	TCP [fe80::83c:323f:53e4:ec81]:53122 <-> [fe80::14b0:a46e:c90d:c76]:51620 [proto: 91/TLS][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 12][cat: Web/5][6 pkts/1653 bytes <-> 6 pkts/516 bytes][Goodput ratio: 69/0][180.07 sec][bytes ratio: 0.524 (Upload)][IAT c2s/s2c min/avg/max/stddev: 40/16 45001/45004 99960/100039 45489/45545][Pkt Len c2s/s2c min/avg/max/stddev: 119/86 276/86 432/86 156/0][Risk: ** Known Proto on Non Std Port **][Risk Score: 50][Risk Info: Expected on port 443][Plen Bins: 0,50,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	21	TCP 192.168.50.1:22 <-> 192.168.50.96:51071 [proto: 92/SSH][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 14][cat: RemoteAccess/12][7 pkts/594 bytes <-> 7 pkts/774 bytes][Goodput ratio: 22/40][343.90 sec][bytes ratio: -0.132 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 43917/43872 56781/56781 60014/60014 6432/6454][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 85/111 198/118 46/18][PLAIN TEXT (Y y.hY)][Plen Bins: 0,85,0,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	22	TCP 17.138.175.254:443 <-> 192.168.50.96:65286 [proto: 91/TLS][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 140/Apple, Confidence: IP address][DPI packets: 7][cat: Web/5][7 pkts/525 bytes <-> 6 pkts/459 bytes][Goodput ratio: 12/14][85.75 sec][bytes ratio: 0.067 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 17099/21374 85496/85497 34198/37021][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 75/76 105/105 15/15][Plen Bins: 50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	23	TCP 192.168.50.96:51496 <-> 142.250.4.188:5228 [proto: 126/Google][IP: 126/Google][Encrypted][Confidence: Match by IP][FPC: 126/Google, Confidence: IP address][DPI packets: 16][cat: Web/5][8 pkts/432 bytes <-> 8 pkts/528 bytes][Goodput ratio: 0/0][316.09 sec][bytes ratio: -0.100 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 45059/45058 45157/45157 45493/45493 153/153][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 54/66 54/66 0/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	24	UDP 192.168.50.96:65116 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/75 bytes <-> 1 pkts/365 bytes][Goodput ratio: 43/88][0.06 sec][Hostname/SNI: www.youtube.com][74.125.130.93][DNS Id: 0xf057][PLAIN TEXT (youtube)][Plen Bins: 0,50,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	25	UDP 192.168.50.96:65364 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/83 bytes <-> 1 pkts/186 bytes][Goodput ratio: 49/77][0.09 sec][Hostname/SNI: p101-content.icloud.com][17.248.224.13][DNS Id: 0x4eb1][PLAIN TEXT (content)][Plen Bins: 0,50,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	26	UDP 192.168.50.96:63774 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/94 bytes <-> 1 pkts/156 bytes][Goodput ratio: 55/73][0.06 sec][Hostname/SNI: edge-026.sgsin8.icloud-content.com][17.248.164.45][DNS Id: 0xdd6b][PLAIN TEXT (icloud)][Plen Bins: 0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	27	UDP 192.168.50.96:35711 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/75 bytes <-> 1 pkts/171 bytes][Goodput ratio: 43/75][0.06 sec][Hostname/SNI: docs.google.com][142.251.12.102][DNS Id: 0xdf81][PLAIN TEXT (google)][Plen Bins: 0,50,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	28	UDP 192.168.50.96:42864 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/87 bytes <-> 1 pkts/144 bytes][Goodput ratio: 51/70][0.06 sec][Hostname/SNI: safebrowsing.googleapis.com][0.0.0.0][DNS Id: 0x8471][PLAIN TEXT (safebrowsing)][Plen Bins: 0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	29	UDP 192.168.50.96:4780 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/79 bytes <-> 1 pkts/129 bytes][Goodput ratio: 46/67][0.04 sec][Hostname/SNI: accounts.google.com][0.0.0.0][DNS Id: 0xadcf][PLAIN TEXT (accounts)][Plen Bins: 0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	30	UDP 192.168.50.96:12592 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/75 bytes <-> 1 pkts/132 bytes][Goodput ratio: 43/68][0.08 sec][Hostname/SNI: ssl.gstatic.com][0.0.0.0][DNS Id: 0x5686][PLAIN TEXT (gstatic)][Plen Bins: 0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	31	UDP 192.168.50.96:56007 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/90 bytes <-> 1 pkts/115 bytes][Goodput ratio: 53/63][0.04 sec][Hostname/SNI: media.fcmb2-2.fna.whatsapp.net][0.0.0.0][DNS Id: 0x44c3][PLAIN TEXT (whatsapp)][Plen Bins: 0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	32	UDP 192.168.50.96:20526 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/75 bytes <-> 1 pkts/125 bytes][Goodput ratio: 43/66][0.06 sec][Hostname/SNI: docs.google.com][0.0.0.0][DNS Id: 0x5079][PLAIN TEXT (google)][Plen Bins: 0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	33	UDP 192.168.50.96:33239 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/75 bytes <-> 1 pkts/124 bytes][Goodput ratio: 43/66][0.04 sec][Hostname/SNI: www.youtube.com][0.0.0.0][DNS Id: 0xeceb][PLAIN TEXT (youtube)][Plen Bins: 0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	34	UDP 192.168.50.96:59447 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/90 bytes <-> 1 pkts/106 bytes][Goodput ratio: 53/60][0.06 sec][Hostname/SNI: media.fcmb2-2.fna.whatsapp.net][222.165.165.224][DNS Id: 0xe14a][PLAIN TEXT (whatsapp)][Plen Bins: 0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	35	UDP 192.168.50.96:39429 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/87 bytes <-> 1 pkts/103 bytes][Goodput ratio: 51/59][0.06 sec][Hostname/SNI: safebrowsing.googleapis.com][64.233.170.95][DNS Id: 0x631c][PLAIN TEXT (safebrowsing)][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	36	UDP 192.168.50.96:31959 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/79 bytes <-> 1 pkts/95 bytes][Goodput ratio: 46/55][0.05 sec][Hostname/SNI: accounts.google.com][172.217.194.84][DNS Id: 0x4b7a][PLAIN TEXT (accounts)][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	37	UDP 192.168.50.96:15263 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/75 bytes <-> 1 pkts/91 bytes][Goodput ratio: 43/53][0.06 sec][Hostname/SNI: ssl.gstatic.com][172.217.194.94][DNS Id: 0xb2a1][PLAIN TEXT (gstatic)][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	38	UDP 157.240.13.14:443 -> 192.168.50.22:53442 [proto: 188/QUIC][IP: 119/Facebook][Encrypted][Confidence: Match by port][FPC: 119/Facebook, Confidence: IP address][DPI packets: 1][cat: Web/5][1 pkts/84 bytes -> 0 pkts/0 bytes][Goodput ratio: 49/0][< 1 sec][Risk: ** Susp Entropy **** Unidirectional Traffic **][Risk Score: 20][Risk Info: No client to server traffic / Entropy: 5.011 (Executable?)][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	39	ICMP 192.168.50.22:0 -> 157.240.13.14:0 [proto: 81/ICMP][IP: 119/Facebook][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/70 bytes -> 0 pkts/0 bytes][Goodput ratio: 39/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	40	ICMP 192.168.50.96:0 -> 192.168.50.1:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/70 bytes -> 0 pkts/0 bytes][Goodput ratio: 39/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+
+Undetected flows:
+	1	TCP 192.168.50.22:52780 <-> 192.168.50.96:51495 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][3 pkts/162 bytes <-> 3 pkts/198 bytes][Goodput ratio: 0/0][300.45 sec][bytes ratio: -0.100 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 150110/150118 150174/150170 150239/150221 64/64][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 54/66 54/66 0/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]

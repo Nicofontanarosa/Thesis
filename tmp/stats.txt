@@ -1,11 +1,15 @@
 >> Lists of protocols read:
 
+   + ApplePush
    + DNS
    + Google
-   + HTTP
    + ICMP
+   + ICMPV6
    + QUIC
+   + SSH
    + TLS
+   + Unknown
+   + WhatsApp
 
 >> Lists of protocols supported:
 
@@ -18,5 +22,9 @@
 
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
+   [red]+ ApplePush[/red]
    [red]+ Google[/red]
    [red]+ ICMP[/red]
+   [red]+ ICMPV6[/red]
+   [red]+ SSH[/red]
+   [red]+ WhatsApp[/red]

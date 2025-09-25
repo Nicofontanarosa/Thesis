@@ -1,0 +1,23 @@
+>> Temporal ranking:
+
+
+ + SNI: safebrowsing.googleapis.com
+  + first_seen:2025-09-06 00:16:38
+
+ + SNI: www.youtube.com
+  + first_seen:2025-09-06 00:16:58
+
+ + SNI: edge-026.sgsin8.icloud-content.com
+  + first_seen:2025-09-06 00:18:37
+
+ + SNI: p101-content.icloud.com
+  + first_seen:2025-09-06 00:18:37
+
+ + SNI: accounts.google.com
+  + first_seen:2025-09-06 00:19:04
+
+ + SNI: ssl.gstatic.com
+  + first_seen:2025-09-06 00:19:51
+
+ + SNI: docs.google.com
+  + first_seen:2025-09-06 00:19:54

@@ -1,0 +1,1025 @@
+[
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314ht_f57a46bbacb6_e42f34c56612",
+        "sni": "js.ad-score.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58889",
+        "ip_destination": "13.35.37.27",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "84 <-> 88",
+            "33 <-> 35",
+            "29 <-> 36"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h0_55b375c5d22e_cd85d2d88918",
+        "quic_version": "V-1",
+        "plain_text": "BHDKTzs",
+        "sni": "media.tenor.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53999",
+        "ip_destination": "142.250.4.95",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "35 <-> 64"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "js.ad-score.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58826",
+        "ip_destination": "13.35.37.88",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "35 <-> 35"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314ht_f57a46bbacb6_e42f34c56612",
+        "sni": "js.ad-score.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58860",
+        "ip_destination": "13.35.37.11",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "33 <-> 36"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314ht_f57a46bbacb6_e42f34c56612",
+        "sni": "js.ad-score.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58869",
+        "ip_destination": "13.35.37.21",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "32 <-> 36"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "app-analytics-services.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58846",
+        "ip_destination": "142.250.4.102",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "22 <-> 33",
+            "19 <-> 19"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314ht_f57a46bbacb6_e42f34c56612",
+        "sni": "data.ad-score.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58890",
+        "ip_destination": "130.211.115.4",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 23,
+        "exchanged_packets": [
+            "35 <-> 27",
+            "30 <-> 23",
+            "24 <-> 21",
+            "24 <-> 21",
+            "22 <-> 20",
+            "16 <-> 16",
+            "18 <-> 15",
+            "17 <-> 16",
+            "17 <-> 15",
+            "16 <-> 15",
+            "16 <-> 14",
+            "17 <-> 16",
+            "17 <-> 15",
+            "18 <-> 15",
+            "16 <-> 15",
+            "14 <-> 16",
+            "15 <-> 14",
+            "13 <-> 14",
+            "15 <-> 15",
+            "15 <-> 15",
+            "14 <-> 14",
+            "13 <-> 14",
+            "13 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "plain_text": "VOEsSC",
+        "sni": "app-analytics-services-att.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52010",
+        "ip_destination": "172.217.194.100",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "sni": "app-analytics-services.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "59615",
+        "ip_destination": "142.250.4.138",
+        "port_destination": "443",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "18 <-> 12",
+            "7 <-> 7",
+            "7 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "sni": "app-analytics-services.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "54809",
+        "ip_destination": "142.250.4.102",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "10 <-> 15",
+            "8 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "afbc203706421f15554867b55caf16d6",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "acjs.aliyun.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52893",
+        "ip_destination": "203.119.145.38",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1517h2_8daaf6152771_6cdcb247c39b",
+        "sni": "streaming.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "51561",
+        "ip_destination": "18.155.68.76",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "53 <-> 52"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "media.tenor.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53028",
+        "ip_destination": "142.250.4.95",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "data.ad-score.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58827",
+        "ip_destination": "130.211.115.4",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "20 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "roovza-launches.appsflyersdk.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58845",
+        "ip_destination": "3.171.197.44",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "roovza-launches.appsflyersdk.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58868",
+        "ip_destination": "3.170.230.85",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 19"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "roovza-launches.appsflyersdk.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58822",
+        "ip_destination": "3.171.197.188",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "20 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "roovza-launches.appsflyersdk.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58875",
+        "ip_destination": "3.165.92.207",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "roovza-launches.appsflyersdk.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58881",
+        "ip_destination": "3.165.92.8",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "roovza-launches.appsflyersdk.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58885",
+        "ip_destination": "3.165.92.124",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "roovza-launches.appsflyersdk.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58895",
+        "ip_destination": "13.35.226.88",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "17 <-> 16",
+            "16 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "roovza-launches.appsflyersdk.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58882",
+        "ip_destination": "3.165.92.97",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "engagements.appsflyer.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52986",
+        "ip_destination": "108.156.144.107",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "20 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "sni": "app-analytics-services.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "60942",
+        "ip_destination": "142.250.4.101",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "8 <-> 7",
+            "8 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "sni": "app-analytics-services.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "55201",
+        "ip_destination": "142.250.4.139",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "8 <-> 7",
+            "7 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "plain_text": "Hl@l9.",
+        "sni": "app-analytics-services.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "63992",
+        "ip_destination": "142.250.4.100",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "8 <-> 7",
+            "6 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "sni": "app-analytics-services.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "63271",
+        "ip_destination": "142.250.4.113",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "7 <-> 7",
+            "6 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "sdk.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "51558",
+        "ip_destination": "151.101.195.9",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "44 <-> 45"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "ade.clmbtech.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52897",
+        "ip_destination": "23.59.168.107",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "contextual.media.net",
+        "ip_source": "192.168.50.22",
+        "port_source": "52900",
+        "ip_destination": "23.218.108.28",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "26 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "ad.yieldlab.net",
+        "ip_source": "192.168.50.22",
+        "port_source": "52865",
+        "ip_destination": "23.42.180.174",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "26 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "pixel.tapad.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52887",
+        "ip_destination": "34.111.113.62",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "exchange.mediavine.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52879",
+        "ip_destination": "54.251.107.10",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "criteo-partners.tremorhub.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52888",
+        "ip_destination": "3.220.124.240",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "servernames": "*.postrelease.com,postrelease.com,*.ntv.io,ntv.io",
+        "issuer": "C=US, O=Amazon, CN=Amazon RSA 2048 M04",
+        "subject": "CN=*.postrelease.com",
+        "certificate": "SHA-1: CB:2A:66:63:84:03:20:21:FB:31:0F:28:5B:0F:AC:75:78:1A:4C:62",
+        "sni": "jadserve.postrelease.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52871",
+        "ip_destination": "18.236.47.21",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "12 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "sf16-website-login.neutral.ttwstatic.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52927",
+        "ip_destination": "23.58.144.178",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "12 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "rtb-csync.smartadserver.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52889",
+        "ip_destination": "23.106.127.56",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "26 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "b898351eb5e266aefd3723d466935494",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "servernames": "*.ucweb.com,ucweb.com",
+        "issuer": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign GCC R3 OV TLS CA 2024",
+        "subject": "C=CN, ST=ZheJiang, L=HangZhou, O=Alibaba (China) Technology Co., Ltd., CN=*.ucweb.com",
+        "certificate": "SHA-1: 7D:15:0E:24:C1:D7:05:C0:8A:85:D3:6D:2D:56:DE:98:71:03:69:39",
+        "sni": "px-intl.ucweb.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52881",
+        "ip_destination": "157.185.188.1",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 10"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "eb2.3lift.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52874",
+        "ip_destination": "35.71.178.8",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 10"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "ads.stickyadstv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52863",
+        "ip_destination": "104.75.84.10",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "simage2.pubmatic.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52876",
+        "ip_destination": "207.65.33.82",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "12 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "app-analytics-services.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58848",
+        "ip_destination": "142.250.4.139",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "9 <-> 8",
+            "9 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "app-analytics-services.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58851",
+        "ip_destination": "142.250.4.138",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "9 <-> 8",
+            "9 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "static.criteo.net",
+        "ip_source": "192.168.50.22",
+        "port_source": "52890",
+        "ip_destination": "182.161.73.173",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "23 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "sslwidget.criteo.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52883",
+        "ip_destination": "182.161.73.175",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "22 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "d154fcfa5bb4f0748e1dd1992c681104",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "servernames": "*.360yield.com,360yield.com",
+        "issuer": "C=GB, ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Domain Validation Secure Server CA",
+        "subject": "CN=*.360yield.com",
+        "certificate": "SHA-1: 25:65:E3:63:9C:09:DE:1B:4D:7C:23:5B:67:12:34:2C:38:B4:85:CA",
+        "sni": "ad.360yield.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52896",
+        "ip_destination": "119.8.187.97",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "criteo-sync.teads.tv",
+        "ip_source": "192.168.50.22",
+        "port_source": "52894",
+        "ip_destination": "151.101.2.132",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "10 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "x.bidswitch.net",
+        "ip_source": "192.168.50.22",
+        "port_source": "52880",
+        "ip_destination": "35.213.7.90",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "sf16-short-sg.bytedapm.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52930",
+        "ip_destination": "104.75.84.17",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "gum.criteo.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52868",
+        "ip_destination": "182.161.73.136",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "10 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "6da3d3d0a98c7d4d4822c1f2429a720b",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "servernames": "*.rubiconproject.com,rubiconproject.com",
+        "issuer": "C=US, O=DigiCert Inc, CN=DigiCert TLS RSA SHA256 2020 CA1",
+        "subject": "C=US, ST=California, L=Los Angeles, O=Magnite, Inc., CN=*.rubiconproject.com",
+        "certificate": "SHA-1: 44:35:02:EE:29:78:CD:93:5A:60:14:B7:A0:FE:3E:BD:27:0E:52:13",
+        "sni": "pixel.rubiconproject.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52867",
+        "ip_destination": "69.173.158.64",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "10 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "d52e85b996ca133fa608c8b9b9d2fe92",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "servernames": "*.taboola.com,taboola.com,taboolasyndication.com,trc.taboola.com,*.trc.taboola.com,*.taboolasyndication.com",
+        "issuer": "C=US, O=DigiCert Inc, CN=DigiCert Global G3 TLS ECC SHA384 2020 CA1",
+        "subject": "C=IL, L=Ramat Gan, O=TABOOLA.COM LTD, CN=*.taboola.com",
+        "certificate": "SHA-1: 2D:DE:18:44:C1:9C:81:B0:A4:74:BB:A3:9E:C7:5A:50:35:1F:19:C6",
+        "sni": "sync-t1.taboola.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52884",
+        "ip_destination": "141.226.229.48",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "9dd9697e41bf4842b13869ec64041126",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "auth.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "51559",
+        "ip_destination": "54.157.194.5",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "14 <-> 14",
+            "9 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "r.casalemedia.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52885",
+        "ip_destination": "104.18.26.193",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "10 <-> 7"
+        ]
+    }
+]

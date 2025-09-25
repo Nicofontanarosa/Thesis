@@ -1,1 +1,0 @@
---cfg=hostname_dns_check,1

@@ -1,1 +1,0 @@
-SELECT 1 + binary 2 + 3;

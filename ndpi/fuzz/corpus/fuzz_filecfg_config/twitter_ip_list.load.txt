@@ -1,1 +1,0 @@
-twitter,ip_list.load,1

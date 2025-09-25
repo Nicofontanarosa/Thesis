@@ -1,1 +1,0 @@
-filename.config,foo/bar

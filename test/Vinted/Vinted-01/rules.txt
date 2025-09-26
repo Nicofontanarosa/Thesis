@@ -1,4 +1,4 @@
-host:"logs-ingress.svc.vinted.com",host:"vinted.net",host:"www.vinted.fr"@whois: unknown & AI: unknown
-host:"api-sdk.datadome.co",host:"vintedapp.com"@whois: datadome, unknown & AI: unknown
-host:"sdk.fra-01.braze.eu"@whois: unknown & AI: unknown
-host:"rokt.com"@whois: rokt pte. ltd. & AI: unknown
+host:"logs-ingress.svc.vinted.com",host:"vinted.fr",host:"vinted.net"@
+host:"api-sdk.datadome.co",host:"vintedapp.com"@
+host:"sdk.fra-01.braze.eu"@
+host:"rokt.com"@

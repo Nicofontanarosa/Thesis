@@ -194,12 +194,8 @@ def flow_processor(input_file, output_file):
             key = tuple(flow.get(k) for k in constants.KEYS_BY_PROTOCOL["TLS"])
         elif "http" in proto:
             key = tuple(flow.get(k) for k in constants.KEYS_BY_PROTOCOL["HTTP"])
-        elif "dns" in proto:
-            key = tuple(flow.get(k) for k in constants.KEYS_BY_PROTOCOL["DNS"])
         elif "quic" in proto:    
             key = tuple(flow.get(k) for k in constants.KEYS_BY_PROTOCOL["QUIC"])
-        elif "smtp" in proto:
-            key = tuple(flow.get(k) for k in constants.KEYS_BY_PROTOCOL["SMTP"])
         else:
             key = tuple(flow.get(k) for k in constants.KEYS_BY_PROTOCOL["Unknown"])
 
@@ -226,10 +222,6 @@ def flow_processor(input_file, output_file):
     config.log_message(f"\n\n>> Flows detected after aggregation:\n\n + {summary}", log_file_flows)
 
     return final_flows
-
-
-# mettere controllo che se l'sni appare nel domain prendere il plein text per visualizzare il nome del protocollo
-
 
 #################################################################
 # End of flow_processor.py

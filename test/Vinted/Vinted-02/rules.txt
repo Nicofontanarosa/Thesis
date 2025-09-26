@@ -1,3 +1,5 @@
-host:"images1.vinted.net",host:"logs-ingress.svc.vinted.com",host:"sdk.fra-01.braze.eu",host:"vintedapp.com",host:"www.vinted.fr"@Unknown
-host:"apps.rokt.com",host:"mobile-api.rokt.com"@Rokt pte. ltd.
-host:"api-sdk.datadome.co"@Datadome
+host:"logs-ingress.svc.vinted.com",host:"vinted.fr"@
+host:"api-sdk.datadome.co",host:"vintedapp.com"@
+host:"vinted.net"@
+host:"sdk.fra-01.braze.eu"@
+host:"rokt.com"@

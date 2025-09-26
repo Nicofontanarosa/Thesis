@@ -7,17 +7,71 @@
  + SNI: ssl.gstatic.com
   + count: 4
 
- + SNI: accounts.google.com
-  + count: 3
-
- + SNI: safebrowsing.googleapis.com
-  + count: 3
+ + SNI: dns.google
+  + count: 4
 
  + SNI: www.youtube.com
   + count: 3
 
- + SNI: edge-026.sgsin8.icloud-content.com
+ + SNI: media-sin6-2.cdn.whatsapp.net
   + count: 2
 
- + SNI: p101-content.icloud.com
+ + SNI: client-api.itunes.apple.com
   + count: 2
+
+ + SNI: graph.facebook.com
+  + count: 2
+
+ + SNI: auth.split.io
+  + count: 2
+
+ + SNI: gateway.instagram.com
+  + count: 1
+
+ + SNI: mail-attachment.googleusercontent.com
+  + count: 1
+
+ + SNI: edge-mqtt.facebook.com
+  + count: 1
+
+ + SNI: media1.giphy.com
+  + count: 1
+
+ + SNI: yt3.ggpht.com
+  + count: 1
+
+ + SNI: safebrowsing.googleapis.com
+  + count: 1
+
+ + SNI: accounts.google.com
+  + count: 1
+
+ + SNI: web.facebook.com
+  + count: 1
+
+ + SNI: mail.google.com
+  + count: 1
+
+ + SNI: mtalk.google.com
+  + count: 1
+
+ + SNI: api.termius.com
+  + count: 1
+
+ + SNI: googleads.g.doubleclick.net
+  + count: 1
+
+ + SNI: www.instagram.com
+  + count: 1
+
+ + SNI: clientservices.googleapis.com
+  + count: 1
+
+ + SNI: streaming.split.io
+  + count: 1
+
+ + SNI: sdk.split.io
+  + count: 1
+
+ + SNI: dit.whatsapp.net
+  + count: 1

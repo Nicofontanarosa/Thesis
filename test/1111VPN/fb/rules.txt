@@ -1,2 +1,1 @@
-host:"edge-031.sgsin8.icloud-content.com",host:"icloud.com"@whois: apple inc. & AI: unknown
-host:"split.io"@whois: unknown & AI: unknown
+host:"split.io"@

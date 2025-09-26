@@ -1,12 +1,11 @@
-host:"ad.yieldlab.net",host:"ade.clmbtech.com",host:"ads.stickyadstv.com",host:"contextual.media.net",host:"rtb-csync.smartadserver.com",host:"sf16-short-sg.bytedapm.com",host:"sf16-website-login.neutral.ttwstatic.com"@whois: lemon inc, media.net advertising fz-llc, tiktok technology limited, unknown, yieldlab ag & AI: unknown
-host:"media.tenor.com",host:"pixel.tapad.com",host:"r.casalemedia.com",host:"x.bidswitch.net"@whois: criteo technology, domains by proxy, llc, google llc, tapad, inc. & AI: unknown
-host:"criteo-partners.tremorhub.com",host:"criteo-sync.teads.tv",host:"engagements.appsflyer.com",host:"exchange.mediavine.com"@whois: domains by proxy, llc, mediavine, inc., teads sa & AI: unknown
-host:"ad-score.com",host:"roovza-launches.appsflyersdk.com"@whois: appsflyer, domains by proxy, llc & AI: unknown
-host:"app-analytics-services-att.com",host:"app-analytics-services.com"@whois: google llc & AI: unknown
-host:"sslwidget.criteo.com",host:"static.criteo.net"@whois: criteo technology & AI: unknown
-host:"acjs.aliyun.com"@whois: unknown & AI: unknown
-host:"split.io"@whois: unknown & AI: unknown
-host:"jadserve.postrelease.com"@whois: nativo, inc & AI: unknown
-host:"px-intl.ucweb.com"@whois: unknown & AI: unknown
-host:"pixel.rubiconproject.com"@whois: domains by proxy, llc & AI: unknown
-host:"sync-t1.taboola.com"@whois: unknown & AI: unknown
+host:"ad.yieldlab.net",host:"ade.clmbtech.com",host:"ads.stickyadstv.com",host:"analytics.tiktok.com",host:"bytedapm.com",host:"contextual.media.net",host:"log-global.aliyuncs.com",host:"mc.yandex.ru",host:"neutral.ttwstatic.com",host:"rtb-csync.smartadserver.com"@
+host:"app-analytics-services-att.com",host:"app-analytics-services.com",host:"gateway-asset.icloud-content.com"@
+host:"criteo-partners.tremorhub.com",host:"criteo-sync.teads.tv",host:"engagements.appsflyer.com",host:"exchange.mediavine.com"@
+host:"ad-score.com",host:"roovza-launches.appsflyersdk.com"@
+host:"sslwidget.criteo.com",host:"static.criteo.net"@
+host:"split.io"@
+host:"ssl.gstatic.com"@
+host:"graph.whatsapp.com"@
+host:"jadserve.postrelease.com"@
+host:"px-intl.ucweb.com"@
+host:"pixel.rubiconproject.com"@

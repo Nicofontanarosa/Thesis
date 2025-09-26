@@ -65,6 +65,38 @@ def print_risky_flows(final_flows, log_risky_flows="tmp/log_risky_flows.txt"):
 
 # -------------------------------------------
 
+def normalize_sni_clusters(clusters, sorted_dataset):
+    
+    def normalize_sni(sni):
+        # Remove 'www.' prefix
+        if sni.lower().startswith("www."):
+            sni = sni[4:]
+
+        # Split by '.' and remove parts with numbers until we find a "clean" part
+        parts = sni.split(".")
+        for i, part in enumerate(parts):
+            if not any(char.isdigit() for char in part):
+                sni = ".".join(parts[i:])
+                break
+        return sni
+
+    normalized_clusters = []
+    for cluster in clusters:
+        # Normalize each SNI
+        cluster["sni_list"] = [normalize_sni(sni) for sni in cluster["sni_list"]]
+
+        # Remove SNIs present in sorted_dataset
+        cluster["sni_list"] = [
+            sni for sni in cluster["sni_list"]
+            if sni.lower() not in sorted_dataset
+        ]
+
+        # Keep only non-empty clusters
+        if cluster["sni_list"]:
+            normalized_clusters.append(cluster)
+
+    return normalized_clusters
+
 def generate_rules(final_flows, output_file, dataset_file="dataset.json", datasetTLD_file="datasetTLD.json"):
     # Create the complete path for the intermediate JSON file
     output_folder = os.path.dirname(output_file)
@@ -187,26 +219,46 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
                     clusters[key].append(flow)
                     break
 
-    risultato = []
-    for (ja3s, ja4), elements in clusters.items():
-        sni_list = sorted({e.get("sni") for e in elements if e.get("sni")})
-        risultato.append({
-            "ja3s": ja3s,
-            "ja4": ja4,
-            "sni_list": sni_list,
-        })
-
-    # Merge clusters using the previously defined merging function
-    sni_to_use = group_sni.merge_clusters(risultato)
-
-    # Save the final merged data to a JSON file
-    with open("test.json", "w", encoding="utf-8") as f:
-        json.dump(sni_to_use, f, indent=4)
-
     # Print all unique SNIs remaining after cleaning
     print("\nSNIs remaining (without duplicates):")
     for sni in sorted(printed_snis):
         print(f"  ├── \033[1;32m{sni}\033[0m")
+
+    risultato = []
+
+    for (ja3s, ja4), elements in clusters.items():
+
+        # Collect all unique SNI values
+        sni_list = sorted({e.get("sni") for e in elements if e.get("sni")})
+
+        # Case 1: TLS flows → use JA3S + JA4 + SNI
+        if ja3s or ja4:
+            risultato.append({
+                "ja3s": ja3s,
+                "ja4": ja4,
+                "sni_list": sni_list,
+            })
+
+        # Case 2: Non-TLS → cluster only by SNI
+        else:
+            for sni in sni_list:
+                risultato.append({
+                    "ja3s": None,
+                    "ja4": None,
+                    "sni_list": [sni],
+                })
+
+    #print(f"\nClusters before merging:\n{risultato}\n")
+
+    # Merge clusters with the existing merging function
+    sni_to_use = group_sni.merge_clusters(risultato)
+    sni_to_use = normalize_sni_clusters(sni_to_use, sorted_dataset)
+
+    #print(f"\nClusters after merging:\n{sni_to_use}\n")
+
+    # Save the final merged data to a JSON file
+    with open("test.json", "w", encoding="utf-8") as f:
+        json.dump(sni_to_use, f, indent=4)
 
     # Call classification on the cleaned and merged SNIs outputting to the specified file
     get_info.classify_domains(sni_to_use, output_file)

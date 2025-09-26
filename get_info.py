@@ -47,26 +47,6 @@ def classify_domain_AI(domain):
 
     return message
 
-def print_rules(flows, protocol_name, rules_file):
-
-    # set to keep unique SNI values
-    sni_set = set(flows)
-
-    # no SNI found
-    if not sni_set:
-        return None
-    
-    # build nDPI rule
-    host_entries = ",".join([f'host:"{sni}"' for sni in sorted(sni_set)])
-    rule = f"{host_entries}@{protocol_name.capitalize()}"
-
-    with open(rules_file, "a") as f:
-        f.write(f"{rule}\n\n\n")
-    
-    config.log_message(f"{rule}\n\n\n", log_file_rules)
-
-    print(f"\nRules saved to {rules_file}:\n{rule}\n")
-
 def classify_domains(clusters, output_file):
 
     output_folder = os.path.dirname(output_file)
@@ -77,46 +57,70 @@ def classify_domains(clusters, output_file):
     for cluster in clusters:
         snis = cluster.get("sni_list", [])
         
-        whois_orgs = set()
-        ai_orgs = set()
+        if constants.SHOW_NAME_HINT:
 
-        for d in snis:
-            try:
-                w = whois.whois(d)
-                org = w.get("registrant_organization") or w.get("admin_organization") or w.get("org")
-                
-                if org is None or org.lower() in constants.REDACTED_ORGS:
-                    if os.name == 'nt':
-                        orgai = classify_domain_AI(d)
-                        ai_orgs.add(orgai)
-                    else: 
-                        orgai = "unknown"
-                        org = "unknown"
-                        whois_orgs.add(org)
-                        ai_orgs.add(orgai)
-                else:
-                    if os.name == 'nt':
-                        orgai = classify_domain_AI(d)
+            whois_orgs = set()
+            ai_orgs = set()
+
+            for d in snis:
+                try:
+                    w = whois.whois(d)
+                    org = w.get("registrant_organization") or w.get("admin_organization") or w.get("org")
+                    #print(f"\n---{org.lower()}---{ 'true' if org.lower() in constants.REDACTED_ORGS else 'false'}----")
+
+                    if org is None or org.lower() in constants.REDACTED_ORGS:
+                        if os.name == 'nt':
+                            org = "unknown"
+                            orgai = classify_domain_AI(d)
+                        else: 
+                            orgai = "unknown"
+                            org = "unknown"
                     else:
-                        orgai = "unknown"
-                    org = org.lower()
+                        if os.name == 'nt':
+                            orgai = classify_domain_AI(d)
+                        else:
+                            orgai = "unknown"
+                        org = org.lower()
+
                     whois_orgs.add(org)
                     ai_orgs.add(orgai)
 
-                print(f"{d} → AI: {orgai} & whois: {org}")
+                    print(f"{d} → AI: {orgai} & whois: {org}")
 
-            except Exception as e:
-                orgai = classify_domain_AI(d)
-                ai_orgs.add(orgai)
-                print(f"{d} → AI: {orgai}")
+                except Exception as e:
+                    orgai = classify_domain_AI(d)
+                    ai_orgs.add(orgai)
+                    print(f"{d} → AI: {orgai}")
 
-        # genera chiave combinata: whois + AI se entrambi presenti
-        whois_str = ", ".join(sorted(whois_orgs)) if whois_orgs else ""
-        ai_str = ", ".join(sorted(ai_orgs)) if ai_orgs else "unknown"
+            org = org.split()[0] if org else org
+            orgai = orgai.split()[0] if orgai else orgai
+            #print(f"Classified orgs for cluster {snis} → AI: {orgai} & whois: {org}")
+            host_entries = ",".join([f'host:"{sni}"' for sni in sorted(snis)])
 
-        # regola host
-        host_entries = ",".join([f'host:"{sni}"' for sni in sorted(snis)])
-        rule = f"{host_entries}@whois: {whois_str} & AI: {ai_str}"
+            if constants.SHOW_GUESS_SNI:
+
+                if (org != "unknown" and org):
+                    proto = org
+                elif (orgai != "unknown" and orgai):
+                    proto = orgai
+                else:
+                    proto = "unknown"
+
+                # regola host
+                rule = f"{host_entries}@{proto}"
+
+            else:
+                # genera chiave combinata: whois + AI se entrambi presenti
+                whois_str = ", ".join(sorted(whois_orgs)) if whois_orgs else ""
+                ai_str = ", ".join(sorted(ai_orgs)) if ai_orgs else "unknown"
+
+                # regola host
+                rule = f"{host_entries}@whois: {whois_str} & AI: {ai_str}"
+
+        else:
+            # genera regola solo con host
+            host_entries = ",".join([f'host:"{sni}"' for sni in sorted(snis)])
+            rule = f"{host_entries}@"
 
         with open(rules_file, "a") as f:
             f.write(f"{rule}\n")

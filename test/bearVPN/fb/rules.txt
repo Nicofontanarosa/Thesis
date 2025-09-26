@@ -1,2 +1,2 @@
-host:"edge-174.sgsin8.icloud-content.com",host:"icloud.com",host:"update.code.visualstudio.com"@whois: apple inc., microsoft corporation & AI: unknown
-host:"split.io"@whois: unknown & AI: unknown
+host:"update.code.visualstudio.com"@
+host:"split.io"@

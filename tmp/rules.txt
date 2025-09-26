@@ -1,1 +1,8 @@
-host:"edge-026.sgsin8.icloud-content.com",host:"p101-content.icloud.com"@whois: apple inc. & AI: unknown
+host:"instagram.com",host:"mail-attachment.googleusercontent.com"@
+host:"giphy.com"@
+host:"client-api.itunes.apple.com"@
+host:"mail.google.com"@
+host:"api.termius.com"@
+host:"split.io"@
+host:"clientservices.googleapis.com"@
+host:"dit.whatsapp.net"@

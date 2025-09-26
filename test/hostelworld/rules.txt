@@ -1,0 +1,15 @@
+host:"a.hwstatic.com"@
+host:"sendbird.com"@
+host:"api.iterable.com"@
+host:"api.segment.io"@
+host:"mobileapi.usebutton.com"@
+host:"app-analytics-services.com"@
+host:"app.biziday.ro"@
+host:"apps.mzstatic.com"@
+host:"eu.auth0.com"@
+host:"prod.apigee.hostelworld.com"@
+host:"app-analytics-services-att.com"@
+host:"google-analytics.com"@
+host:"res.cloudinary.com"@
+host:"s.gravatar.com"@
+host:"survey.survicate.com"@

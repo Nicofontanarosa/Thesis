@@ -1,0 +1,42 @@
+
+
+>> Risky Flow:
+
+  + ip_field: 119/Facebook
+  + transport_protocol: TCP
+  + proto_field: 91.157/TLS.FacebookMessenger
+  + tls_version: TLSv1.3
+  + ja3s: fcb2d4d0991292272fcb1e464eedfd43
+  + ja4: t00d030800_55b375c5d22e_566d5108064c
+  + [green]sni: edge-mqtt.facebook.com[/green]
+  + ip_source: 192.168.50.22
+  + port_source: 54906
+  + ip_destination: 157.240.13.10
+  + port_destination: 443
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** TLS (probably) Not Carrying HTTPS **[/red]
+  + [red]risk_score: 10[/red]
+  + [red]risk_info: No ALPN[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['48 <-> 45'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 126/Google
+  + transport_protocol: TCP
+  + proto_field: 91.239/TLS.GoogleServices
+  + tls_version: TLSv1.3
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+  + ja4: t13d151400_8daaf6152771_0a20fe35d3a5
+  + [green]sni: mtalk.google.com[/green]
+  + ip_source: 192.168.50.96
+  + port_source: 53173
+  + ip_destination: 142.251.10.188
+  + port_destination: 5228
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **[/red]
+  + [red]risk_score: 60[/red]
+  + [red]risk_info: No ALPN / Expected on port 443[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['21 <-> 21'\]

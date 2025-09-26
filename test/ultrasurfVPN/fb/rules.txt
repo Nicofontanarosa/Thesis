@@ -1,4 +1,3 @@
-host:"edge-089.sgsin8.icloud-content.com",host:"icloud.com"@whois: apple inc. & AI: unknown
-host:"courier.push.apple.com"@whois: apple inc. & AI: unknown
-host:"api.termius.com"@whois: identity protection service & AI: unknown
-host:"split.io"@whois: unknown & AI: unknown
+host:"courier.push.apple.com"@
+host:"api.termius.com"@
+host:"split.io"@

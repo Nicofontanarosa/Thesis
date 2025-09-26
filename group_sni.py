@@ -1,6 +1,4 @@
 
-
-
 def group_sni(cluster):
     # Extract the SNI list from the cluster
     sni_list = cluster["sni_list"]
@@ -54,15 +52,7 @@ def group_sni(cluster):
     cluster["sni_list"] = groups
     return cluster
 
-
 def merge_clusters(clusters: list) -> list:
-    # Filter out clusters that have both ja3s and ja4 as None
-    clusters = [
-        c for c in clusters
-        if not (c.get("ja3s") is None and c.get("ja4") is None)
-    ]
-
-    print(f"\n{clusters}\n")
 
     # Group SNIs within each cluster
     clusters = [group_sni(c) for c in clusters]
@@ -77,6 +67,11 @@ def merge_clusters(clusters: list) -> list:
         while j < len(clusters):
             small_cluster = clusters[j]
 
+            # Try merging only if both clusters have SNIs
+            if not large_cluster["sni_list"] or not small_cluster["sni_list"]:
+                j += 1
+                continue
+
             # Combine the SNI lists from the large and small clusters
             union = {
                 "sni_list": large_cluster["sni_list"] + small_cluster["sni_list"]
@@ -90,7 +85,7 @@ def merge_clusters(clusters: list) -> list:
             ):
                 reduced = set(grouped_union["sni_list"])
 
-                print(f"\n{reduced}\n\n{large_cluster['sni_list']}\n\n{small_cluster['sni_list']}\n\n")
+                #print(f"\n{reduced}\n\n{large_cluster['sni_list']}\n\n{small_cluster['sni_list']}\n\n")
 
                 new_large = []
                 for s in large_cluster["sni_list"]:

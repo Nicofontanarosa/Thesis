@@ -206,14 +206,14 @@ def flow_filter(input_file, output_file):
                 removed_flows.append(line)
 
     # Print summary
-    config.log_message(f"\n- Flows read: {len(keep_flows) + len(removed_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows) + len(no_sni_flows)}", log_file_flows)
-    config.log_message(f"- Flows kept: {len(keep_flows)}", log_file_flows)
-    config.log_message(f"- Flows removed: {len(removed_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows) + len(no_sni_flows)}", log_file_flows)
-    config.log_message(f"----- General flows removed: {len(removed_flows)}", log_file_flows)
-    config.log_message(f"----- Empty flows removed: {len(empty_flows)}", log_file_flows)
-    config.log_message(f"------ IPv6 flows removed: {len(ipv6_flows)}", log_file_flows)
-    config.log_message(f"------ Incomplete TLS flows removed: {len(incomplete_tls_flows)}", log_file_flows)
-    config.log_message(f"------ No SNI flows removed: {len(no_sni_flows)}", log_file_flows)
+    config.log_message(f">> Flows read: {len(keep_flows) + len(removed_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows) + len(no_sni_flows)}", log_file_flows)
+    config.log_message(f"\n>> Flows kept: {len(keep_flows)}", log_file_flows)
+    config.log_message(f"\n>> Flows removed: {len(removed_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows) + len(no_sni_flows)}", log_file_flows)
+    config.log_message(f"\n\n   + General flows removed: {len(removed_flows)}", log_file_flows)
+    config.log_message(f"\n\n   + Empty flows removed: {len(empty_flows)}", log_file_flows)
+    config.log_message(f"\n\n   + IPv6 flows removed: {len(ipv6_flows)}", log_file_flows)
+    config.log_message(f"\n\n   + Incomplete TLS flows removed: {len(incomplete_tls_flows)}", log_file_flows)
+    config.log_message(f"\n\n   + No SNI flows removed: {len(no_sni_flows)}", log_file_flows)
 
     # ---------------------------------------------------
     # Print removed flows ( with categories )

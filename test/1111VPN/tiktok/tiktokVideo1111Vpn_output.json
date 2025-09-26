@@ -1,5 +1,730 @@
 [
     {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "v77.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52980",
+        "ip_destination": "207.211.208.181",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "2950 <-> 9935",
+            "750 <-> 1900",
+            "81 <-> 87",
+            "11 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "v77.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53017",
+        "ip_destination": "207.211.208.175",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "2362 <-> 9248",
+            "12 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "v16m.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53061",
+        "ip_destination": "23.58.144.35",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 15,
+        "exchanged_packets": [
+            "2154 <-> 5311",
+            "1255 <-> 3520",
+            "868 <-> 2052",
+            "462 <-> 1607",
+            "673 <-> 1533",
+            "669 <-> 1532",
+            "610 <-> 1529",
+            "590 <-> 1531",
+            "488 <-> 1277",
+            "447 <-> 728",
+            "149 <-> 162",
+            "105 <-> 103",
+            "72 <-> 70",
+            "11 <-> 9",
+            "9 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "v77.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52830",
+        "ip_destination": "207.211.208.177",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 6,
+        "exchanged_packets": [
+            "1327 <-> 4816",
+            "642 <-> 1367",
+            "11 <-> 9",
+            "11 <-> 10",
+            "11 <-> 9",
+            "5 <-> 3"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "v77.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53062",
+        "ip_destination": "207.211.208.180",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 6,
+        "exchanged_packets": [
+            "1330 <-> 4103",
+            "381 <-> 796",
+            "312 <-> 651",
+            "11 <-> 10",
+            "11 <-> 10",
+            "9 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "v77.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53030",
+        "ip_destination": "207.211.208.178",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 7,
+        "exchanged_packets": [
+            "1562 <-> 4088",
+            "1122 <-> 2707",
+            "12 <-> 11",
+            "11 <-> 10",
+            "11 <-> 10",
+            "11 <-> 10",
+            "11 <-> 10"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "v16m.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52964",
+        "ip_destination": "23.54.155.174",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "1381 <-> 4096",
+            "1151 <-> 3092",
+            "11 <-> 10",
+            "10 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "v77.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52965",
+        "ip_destination": "207.211.208.171",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "992 <-> 3345",
+            "1011 <-> 2795"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "v16m.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53000",
+        "ip_destination": "222.165.168.200",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 16,
+        "exchanged_packets": [
+            "1124 <-> 3319",
+            "1064 <-> 2507",
+            "857 <-> 2063",
+            "636 <-> 1656",
+            "497 <-> 1413",
+            "384 <-> 1209",
+            "427 <-> 1008",
+            "350 <-> 905",
+            "367 <-> 897",
+            "355 <-> 861",
+            "342 <-> 723",
+            "311 <-> 596",
+            "86 <-> 86",
+            "12 <-> 9",
+            "12 <-> 10",
+            "12 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "v16m.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52978",
+        "ip_destination": "222.165.168.202",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "1013 <-> 2597",
+            "206 <-> 344"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h3_55b375c5d22e_b064f0e3421d",
+        "quic_version": "Draft-29",
+        "plain_text": "z./Y a",
+        "sni": "api22-normal-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "63993",
+        "ip_destination": "34.102.164.249",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1448 <-> 3274"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "v77.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53046",
+        "ip_destination": "207.211.208.172",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "901 <-> 2129",
+            "349 <-> 720"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h3_55b375c5d22e_b064f0e3421d",
+        "quic_version": "Draft-29",
+        "plain_text": "PJrjfH",
+        "sni": "p16-sign-va.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "61641",
+        "ip_destination": "23.58.144.166",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "773 <-> 2521"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "sf16-teko.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53027",
+        "ip_destination": "23.58.144.229",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "654 <-> 1793"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "v16m.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53041",
+        "ip_destination": "23.58.144.51",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "544 <-> 1350",
+            "11 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h3_55b375c5d22e_b064f0e3421d",
+        "quic_version": "Draft-29",
+        "plain_text": " yNoib",
+        "sni": "search22-normal-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "64263",
+        "ip_destination": "34.96.106.127",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "678 <-> 563"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.238/TLS.ApplePush",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d0311ap_55b375c5d22e_81719d8ccb8b",
+        "sni": "courier.push.apple.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58818",
+        "ip_destination": "17.57.145.136",
+        "port_destination": "5223",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **",
+        "risk_score": "50",
+        "risk_info": "Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1061 <-> 622"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d181100_e8a523a41297_ef7df7f74e48",
+        "sni": "v58.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52917",
+        "ip_destination": "92.223.116.253",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "246 <-> 616",
+            "12 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h3_55b375c5d22e_b064f0e3421d",
+        "quic_version": "Draft-29",
+        "plain_text": "PrmUDm",
+        "sni": "p16-sign-sg.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "63965",
+        "ip_destination": "23.58.144.178",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "153 <-> 636"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "sf16-ies-music-sg.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53056",
+        "ip_destination": "23.58.144.169",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "218 <-> 512",
+            "11 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "mon31-normal-useast1a.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52925",
+        "ip_destination": "71.18.37.193",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 5,
+        "exchanged_packets": [
+            "483 <-> 481",
+            "257 <-> 468",
+            "153 <-> 468",
+            "33 <-> 29",
+            "29 <-> 26"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.2",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "libra32-normal-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53071",
+        "ip_destination": "71.18.37.212",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "495 <-> 463"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "p16-comment-sign-sg.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52800",
+        "ip_destination": "104.75.84.18",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "227 <-> 419"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h3_55b375c5d22e_b064f0e3421d",
+        "quic_version": "Draft-29",
+        "plain_text": "lGWpF.",
+        "sni": "api22-core-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "55432",
+        "ip_destination": "34.117.67.69",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "317 <-> 522"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "v58.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53066",
+        "ip_destination": "92.223.116.253",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 7,
+        "exchanged_packets": [
+            "171 <-> 336",
+            "109 <-> 244",
+            "135 <-> 178",
+            "11 <-> 8",
+            "11 <-> 8",
+            "10 <-> 7",
+            "10 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d181100_e8a523a41297_ef7df7f74e48",
+        "sni": "sf16-ies-music-sg.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52959",
+        "ip_destination": "23.58.144.170",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "170 <-> 296",
+            "48 <-> 48"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "p16-ttam-va.ibyteimg.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52933",
+        "ip_destination": "23.58.144.166",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "133 <-> 299"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway-asset.icloud-content.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58817",
+        "ip_destination": "17.248.224.11",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "277 <-> 134"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway-asset.icloud-content.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58883",
+        "ip_destination": "17.248.224.6",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "280 <-> 126"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014ht_a09f3c656075_e42f34c56612",
+        "sni": "edge-026.sgsin8.icloud-content.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65280",
+        "ip_destination": "17.248.164.45",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 7,
+        "exchanged_packets": [
+            "141 <-> 257",
+            "134 <-> 257",
+            "72 <-> 106",
+            "28 <-> 27",
+            "28 <-> 27",
+            "26 <-> 27",
+            "14 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "sf16-ies-music-sg.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53014",
+        "ip_destination": "23.58.144.170",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "131 <-> 189",
+            "11 <-> 7",
+            "10 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway-asset.icloud-content.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58859",
+        "ip_destination": "17.248.224.4",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "116 <-> 55"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "p16-pu-sign-useast8.tiktokcdn-us.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52826",
+        "ip_destination": "184.30.148.204",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "100 <-> 123",
+            "12 <-> 12"
+        ]
+    },
+    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -20,6 +745,118 @@
         ]
     },
     {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "p16-sign.tiktokcdn-us.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52970",
+        "ip_destination": "184.30.148.203",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "151 <-> 140"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h3_55b375c5d22e_b064f0e3421d",
+        "quic_version": "Draft-29",
+        "plain_text": "t@BiOWJ",
+        "sni": "log22-normal-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "54246",
+        "ip_destination": "34.107.238.235",
+        "port_destination": "443",
+        "similar_flows_count": 5,
+        "exchanged_packets": [
+            "88 <-> 51",
+            "71 <-> 47",
+            "35 <-> 22",
+            "22 <-> 16",
+            "13 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "p16-pu-sign-no.tiktokcdn-eu.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52961",
+        "ip_destination": "23.58.144.167",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "88 <-> 88"
+        ]
+    },
+    {
+        "ip_field": "119/Facebook",
+        "transport_protocol": "UDP",
+        "proto_field": "188.119/QUIC.Facebook",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "plain_text": "PbOYOv",
+        "sni": "graph.facebook.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "62213",
+        "ip_destination": "157.240.13.14",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "39 <-> 77"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "ad-instantpage-sg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52926",
+        "ip_destination": "23.58.144.146",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "66 <-> 66"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "p16-sg.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52966",
+        "ip_destination": "23.58.144.172",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "110 <-> 107"
+        ]
+    },
+    {
         "ip_field": "126/Google",
         "transport_protocol": "UDP",
         "proto_field": "188/QUIC",
@@ -35,6 +872,170 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "35 <-> 64"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "sf19-teko.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52919",
+        "ip_destination": "199.232.46.73",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "59 <-> 67"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "p16-sg.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53021",
+        "ip_destination": "23.58.144.164",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "112 <-> 105"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1517ht_8daaf6152771_6cdcb247c39b",
+        "sni": "frontier.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52788",
+        "ip_destination": "71.18.253.64",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "187 <-> 167"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "p19-sign.tiktokcdn-us.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52971",
+        "ip_destination": "151.101.198.73",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "128 <-> 129",
+            "9 <-> 9",
+            "10 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "sf-static-sg.tiktokcdn-us.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53012",
+        "ip_destination": "104.75.84.9",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "52 <-> 53"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.239/QUIC.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "plain_text": "EZyp g",
+        "sni": "youtubei-att.googleapis.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "49744",
+        "ip_destination": "74.125.200.95",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "54 <-> 59"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h3_55b375c5d22e_b064f0e3421d",
+        "quic_version": "Draft-29",
+        "plain_text": "lC.OpD",
+        "sni": "webcast22-normal-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "63779",
+        "ip_destination": "34.160.231.76",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "111 <-> 108"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "p19-common-sign-useastred.tiktokcdn-eu.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52962",
+        "ip_destination": "199.232.46.73",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "52 <-> 52"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "p16-pu-sign-no.tiktokcdn-eu.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53023",
+        "ip_destination": "23.58.144.167",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "47 <-> 44"
         ]
     },
     {
@@ -92,6 +1093,80 @@
         ]
     },
     {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "p16-sign.tiktokcdn-us.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53059",
+        "ip_destination": "184.30.148.197",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "63 <-> 53",
+            "10 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "mon31-normal-useast1a.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52838",
+        "ip_destination": "71.18.222.1",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "43 <-> 42"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "pitaya-sg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52829",
+        "ip_destination": "71.18.37.212",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "45 <-> 45"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "plain_text": "eQ.WLf",
+        "sni": "www.google.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "59338",
+        "ip_destination": "74.125.24.103",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "20 <-> 31",
+            "14 <-> 14"
+        ]
+    },
+    {
         "ip_field": "126/Google",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -108,6 +1183,228 @@
         "exchanged_packets": [
             "22 <-> 33",
             "19 <-> 19"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway-asset.icloud-content.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58886",
+        "ip_destination": "17.248.224.2",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "35 <-> 29"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway-asset.icloud-content.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58836",
+        "ip_destination": "17.248.224.5",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "37 <-> 25"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway-asset.icloud-content.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58865",
+        "ip_destination": "17.248.224.3",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "33 <-> 28"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "p16-pu-sign-useast8.tiktokcdn-us.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52972",
+        "ip_destination": "184.30.148.203",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "27 <-> 30",
+            "10 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0312h3_55b375c5d22e_f3854ce178b3",
+        "quic_version": "Draft-29",
+        "plain_text": "TZI/pu",
+        "sni": "gecko31-normal-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "60579",
+        "ip_destination": "71.18.134.250",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "32 <-> 29",
+            "19 <-> 19"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h3_55b375c5d22e_b064f0e3421d",
+        "quic_version": "Draft-29",
+        "plain_text": "tepjPs",
+        "sni": "rtlog22-normal-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58245",
+        "ip_destination": "34.96.106.127",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "22 <-> 21",
+            "13 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.145/TLS.AppleiTunes",
+        "tls_version": "TLSv1.2",
+        "ja3s": "492aea5433fd053665b82c465eaf01c4",
+        "ja4": "t13d2014ht_a09f3c656075_e42f34c56612",
+        "servernames": "sandbox.itunes.apple.com,p29-buy.itunes.apple.com,p44-buy.itunes.apple.com,p45-buy.itunes.apple.com,p34-buy.itunes.apple.com,p48-buy.itunes.apple.com,p53-buy.itunes.apple.com,p38-buy.itunes.apple.com,p40-buy.itunes.apple.com,p2-buy.itunes.apple.com,p19-buy.itunes.apple.com,p27-buy.itunes.apple.com,buy.podcasts.apple.com,p15-buy.itunes.apple.com,p6-buy.itunes.apple.com,p14-buy.itunes.apple.com,buy.tv.apple.com,p37-buy.itunes.apple.com,p11-buy.itunes.apple.com,p56-buy.itunes.apple.com,inappcheck.itunes.apple.com,p20-buy.itunes.apple.com,p8-buy.itunes.apple.com,p31-buy.itunes.apple.com,p32-buy.itunes.apple.com,p24-buy.itunes.apple.com,p54-buy.itunes.apple.com,p52-buy.itunes.apple.com,p16-buy.itunes.apple.com,p60-buy.itunes.apple.com,p73-buy.itunes.apple.com,p17-buy.itunes.apple.com,p71-buy.itunes.apple.com,buy.itunes.apple.com,volume.itunes.apple.com,p10-buy.itunes.apple.com,buy.books.apple.com,p43-buy.itunes.apple.com,p12-buy.itunes.apple.com,p39-buy.itunes.apple.com,p59-buy.itunes.apple.com,partner.itunes.apple.com,p70-buy.itunes.apple.com,buy.link.apple.com,p49-buy.itunes.apple.com,p35-buy.itunes.apple.com,p36-buy.itunes.apple.com,p55-buy.itunes.apple.com,p3-buy.itunes.apple.com,p7-buy.itunes.apple.com,p72-buy.itunes.apple.com,buy.podcastsconnect.apple.com,p33-buy.itunes.apple.com,p50-buy.itunes.apple.com,p58-buy.itunes.apple.com,p1-buy.itunes.apple.com,p30-buy.itunes.apple.com,p26-buy.itunes.apple.com,p46-buy.itunes.apple.com,p9-buy.itunes.apple.com,p57-buy.itunes.apple.com,p41-buy.itunes.apple.com,p18-buy.itunes.apple.com,p47-buy.itunes.apple.com,buy.music.apple.com,vpp.itunes.apple.com,p22-buy.itunes.apple.com,buy.apps.apple.com,p42-buy.itunes.apple.com,p51-buy.itunes.apple.com,group.itunes.apple.com,p21-buy.itunes.apple.com,p28-buy.itunes.apple.com,p100-sandbox.itunes.apple.com,p25-buy.itunes.apple.com,p23-buy.itunes.apple.com",
+        "issuer": "C=US, O=Apple Inc., CN=Apple Public EV Server RSA CA 2 - G1",
+        "subject": "C=US, ST=California, L=Cupertino, O=Apple Inc., CN=buy.itunes.apple.com",
+        "certificate": "SHA-1: 5C:03:2C:91:31:32:E0:A6:2F:59:81:53:FE:33:EC:74:50:01:83:4F",
+        "sni": "sandbox.itunes.apple.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58833",
+        "ip_destination": "17.156.129.37",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "20 <-> 24"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.140/TLS.Apple",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "pancake.apple.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65261",
+        "ip_destination": "17.253.118.202",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 21"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway.icloud.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58858",
+        "ip_destination": "17.248.224.69",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "25 <-> 27"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.145/QUIC.AppleiTunes",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "plain_text": "TkqASNK",
+        "sni": "bag.itunes.apple.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "49960",
+        "ip_destination": "151.101.3.6",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "15 <-> 18"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.124/QUIC.YouTube",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "sni": "www.youtube.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "64988",
+        "ip_destination": "74.125.24.91",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "25 <-> 32"
+        ]
+    },
+    {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "app.alibaba.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52846",
+        "ip_destination": "47.246.174.20",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "20 <-> 20"
         ]
     },
     {
@@ -151,6 +1448,263 @@
         ]
     },
     {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "buyercentral.alibaba.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52847",
+        "ip_destination": "47.246.173.91",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "connectkeyword.alibaba.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52899",
+        "ip_destination": "47.246.174.152",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "acs.h.alibaba.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52898",
+        "ip_destination": "47.246.165.30",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "3bdmjf.tdum.alibaba.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52877",
+        "ip_destination": "47.246.165.151",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "passport.alibaba.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52875",
+        "ip_destination": "47.246.174.20",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "us.ynuf.aliapp.org",
+        "ip_source": "192.168.50.22",
+        "port_source": "52844",
+        "ip_destination": "47.246.110.144",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "p16-sg.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52859",
+        "ip_destination": "23.58.144.167",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "40 <-> 37"
+        ]
+    },
+    {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.2",
+        "ja3s": "afbc203706421f15554867b55caf16d6",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "servernames": "*.alibaba.com,gw.api.alibaba.com,m.dutch.alibaba.com,m.indonesian.alibaba.com,service.blue.alibaba.com,*.100x100w.com,*.10e.alibaba-inc.com,*.4.alibaba-inc.com,*.aas-ehp-data-service.amap.com,*.ad.alibaba-inc.com,*.ade.taobao.org,*.admin.alibaba.com,*.admin.shejijia.com,*.ae.alibaba-inc.com,*.agtech-develop.cn,*.ai.alibaba.com,*.aicloud.alibaba.com,*.aid.alibaba.com,*.ailabs.alibaba.com,*.algo-serverless.cainiao-inc.com,*.ali-health.com,*.alibaba.org,*.alicom-mcm.alibaba-inc.com,*.aliexpress.alibaba.com,*.alihealth.alibaba-inc.com,*.alijk.com,*.alimebot.alibaba.com,*.alinode-pre.alibaba-inc.com,*.alinode.alibaba-inc.com,*.alipay.keruyun.com,*.alipsports.alibaba-inc.com,*.alisports.alibaba.com,*.alitalk.alibaba.com,*.alivecdn.com,*.aliwx.alibaba.com,*.aliyundrive.com,*.alog.cc,*.alog.com,*.alsc.alibaba.com,*.alsc.ele.me,*.alta.elenet.me,*.alwx.alibaba.com,*.amap.alibaba-inc.com,*.ams.taobao.org,*.analysis.alibaba.com,*.apollo.alibaba.com,*.apsaraun.com,*.arabic.alibaba.com,*.arrival.sm.cn,*.art.alibaba.com,*.ascp.alibaba.com,*.ascp.hemaos.com,*.asi.yushanfang.com,*.atom-polymer.alibaba-inc.com,*.auto-rtti.amap.com,*.auwms.com,*.b.keruyun.com,*.baidu.keruyun.com,*.bcp.alibaba-inc.com,*.bid.cainiao.com,*.bifrost.alibaba-inc.com,*.bops.alibaba.com,*.boss.alog.cc,*.boss.alog.com,*.botframework.alibaba.com,*.bpaas.alibaba-inc.com,*.brain.alibaba-inc.com,*.budao.alibaba-inc.com,*.buyermaket.alibaba.com,*.c2m.alibaba-inc.com,*.cacheadmin.taobao.org,*.cangjie-test.alibaba-inc.com,*.cangyibao.com,*.car.amap.com,*.cashier.keruyun.com,*.cc-schedule.alibaba-inc.com,*.cdnfc.alibaba-inc.com,*.cdnsreportal.alibaba-inc.com,*.center.opens.alios.cn,*.cf.alibaba-inc.com,*.cgame.alibaba.com,*.chaoniu.alibaba-inc.com,*.chaos.alibaba-inc.com,*.china.alibaba.com,*.chinasuppliers.alibaba.com,*.chinese.alibaba.com,*.client.alibaba.com,*.cloud-ide.alibaba-inc.com,*.cloud.alibaba.com,*.cloudavn.zebred.com,*.cloudgame.alibaba-inc.com,*.cloudsinger.alibaba-inc.com,*.cmc.cainiao.com,*.cmns.yunos-inc.com,*.cmt.sm.cn,*.cntec.cainiao.com,*.como.alibaba-inc.com,*.company.alibaba.com,*.cone.alibaba-inc.com,*.content.alibaba-inc.com,*.corona-web.alibaba-inc.com,*.corp.alibaba-inc.com,*.corp.taobao.org,*.coverage.alibaba-inc.com,*.creation.alibaba.com,*.crm.alibaba.com,*.crm.koubei.com,*.crmweb.alibaba.com,*.cro.alibaba-inc.com,*.cs.shejijia.com,*.cse.alibaba-inc.com,*.cus.dingtalk.com,*.customize.alibaba.com,*.cw-inbound.cainiao.com,*.d.alibaba.com,*.daisy.alibaba.com,*.damo.alibaba.com,*.data.taobao.org,*.datav-app.alibaba-inc.com,*.datax.alibaba-inc.com,*.dayu.alibaba.com,*.dazlogistics-mm.com,*.dazlogistics-np.com,*.dazlogistics.com.bd,*.dazlogistics.lk,*.dazlogistics.pk,*.de.alibaba-inc.com,*.delivery.quality.alibaba-inc.com,*.delivery.report.alibaba-inc.com,*.developers.alios.cn,*.dg-work.cn,*.diamond.alibaba-inc.com,*.dianwoda.cn,*.dianwoda.com,*.dingding.xin,*.directory.alibaba.com,*.dlportal-mm.com,*.dlportal-np.com,*.dlportal.com.bd,*.dlportal.lk,*.dlportal.pk,*.dm.alibaba-inc.com,*.dm.taobao.org,*.do.elenet.me,*.dolphin.alimama.com,*.download.alibaba.com,*.drds-histore-manager.alibaba.com,*.dryrun.alibaba-inc.com,*.drzpcb.alibaba.com,*.dwms.cainiao.com,*.e2d.alibaba.com,*.edi.alibaba.com,*.edi.hemaos.com,*.ei.alibaba.com,*.eiworkspace.com,*.ele-finnet.alibaba.com,*.ele.alibaba.com,*.en.alibaba.com,*.enasa.alibaba-inc.com,*.engine.alibaba-inc.com,*.erp.keruyun.com,*.f2e.alibaba-inc.com,*.faas.elenet.me,*.fbi.alibaba.com,*.fe.uczzd.cn,*.finance.alibaba.com,*.find.alibaba-inc.com,*.finnet.alibaba.com,*.fita.alibaba.com,*.fm.alibaba.com,*.french.alibaba.com,*.friday123.alibaba-inc.com,*.fs-proxy.alibaba-inc.com,*.fx.alibaba.com,*.gamenow.club,*.gateway.koubei.com,*.gdb.amap.com,*.gds.alibaba-inc.com,*.gds.alibaba.com,*.gds.amap.com,*.german.alibaba.com,*.ggp.alibaba-inc.com,*.global.alibaba-inc.com,*.goc-ding-isv.alibaba-inc.com,*.goc.alibaba-inc.com,*.goofish.com,*.gov-deliver.alibaba-inc.com,*.gov-devops.alibaba.com,*.gray.amap.com,*.green.alibaba-inc.com,*.gts-x.alibaba.com,*.gts.work,*.guobei.alibaba.com,*.h.alibaba.com,*.halo.alibaba-inc.com,*.hangzhou.myalicdn.com,*.hanoi.alibaba-inc.com,*.hbase.alibaba-inc.com,*.hdfs.amap.com,*.heartbeat.alibaba.com,*.hebrew.alibaba.com,*.hindi.alibaba.com,*.holoweb.alibaba-inc.com,*.homelab.alibaba-inc.com,*.hospital.ali-health.com,*.hr.cainiao.com,*.huichuan.sm.cn,*.huikuanbao.alibaba.com,*.hz-productposting.alibaba.com,*.icbu-uic-ops.alibaba-inc.com,*.icbu.alibaba.com,*.idcenvinspect.alibaba-inc.com,*.idst-open.alibaba.com,*.iflow.sm.cn,*.importer.alibaba.com,*.impp.alibaba-inc.com,*.inc.alibaba.com,*.india.alibaba.com,*.inner.alicdn.com,*.insights.alibaba.com,*.inspection.alibaba.com,*.instar.elenet.me,*.invoice.alibaba.com,*.invoice.kaola.com,*.iot.aligenie.com,*.iot.cainiao.com,*.irs.alibaba-inc.com,*.italian.alibaba.com,*.japanese.alibaba.com,*.keruyun.com,*.koala-id.alibaba-inc.com,*.koala-sg.alibaba-inc.com,*.korean.alibaba.com,*.kun-sit.ejoy.com,*.kun.ejoy.com,*.labs.alibaba-inc.com,*.lakers.hupan.com,*.lazadapcb.alibaba.com,*.lena.alibaba-inc.com,*.loginx.alibaba.com,*.loginx.cainiao-inc.com,*.loginx.cainiao.com,*.lsy.alibaba.com,*.m.alibaba.com,*.m.en.alibaba.com,*.m.fm.alibaba.com,*.m.kaola.com,*.m.trustpass.alibaba.com,*.manager.amap.com,*.masp.alibaba-inc.com,*.master.alibaba-inc.com,*.mcu.alibaba.com,*.mds.alibaba.com,*.mechanism.alibaba-inc.com,*.media.alimama.com,*.message.amap.com,*.metric-gateway.alibaba.com,*.mid.ejoy.com,*.mini.alibaba.com,*.miniapp.alibaba-inc.com,*.model-construction2.alibaba-inc.com,*.monitor.dingtalk.com,*.mos.alibaba.com,*.mw.alibaba-inc.com,*.my.alibaba.com,*.myalicdn.com,*.nb.cainiao-inc.com,*.nls-domo.alibaba-inc.com,*.notebook.alibaba-inc.com,*.notebook1.alibaba-inc.com,*.o2o.ele.me,*.o2oclick.alibaba.com,*.offer.alibaba.com,*.ok.alibaba-inc.com,*.olympic.alimebot.com,*.omni.alibaba-inc.com,*.oms.hemaos.com,*.one-voice-platform.alibaba-inc.com,*.onebox.alibaba-inc.com,*.oneops.alibaba-inc.com,*.onepub.alibaba-inc.com,*.onesite.alibaba.com,*.online.alibaba.com,*.open.alimama.com,*.opens.alios.cn,*.opensearch-cn-shanghai-in.alibaba-inc.com,*.operation.alibaba-inc.com,*.orch.alibaba.com,*.orchestration.alibaba.com,*.orchestrator.alibaba.com,*.orion-api.sm.cn,*.oversea.amap.com,*.package.alibaba-inc.com,*.partner.keruyun.com,*.pay.keruyun.com,*.philstone.client.alibaba-inc.com,*.philstone.server.alibaba-inc.com,*.photostore-admin.yunos.com,*.piao.cn,*.piao.com.cn,*.pinpoint.alibaba-inc.com,*.platform.cainiao.com,*.porschemaster.alibaba-inc.com,*.portuguese.alibaba.com,*.ppc.alibaba.com,*.pre-chaos.alibaba-inc.com,*.pre-corona-web.alibaba-inc.com,*.pre-seller.fliggy.com,*.pre-test.alibaba-inc.com,*.pre.ele.me,*.pre.gamenow.club,*.prepub.alibaba.com,*.prepub.ele.me,*.preview.alibaba.com,*.product.alibaba-inc.com,*.productdict.alibaba.com,*.profile.alibaba.com,*.proxy.sm.cn,*.pts.alibaba.com,*.qatool.amap.com,*.qd.alibaba.com,*.qookkagames.com,*.quark.alibaba.com,*.quark.cn,*.rec.alibaba.com,*.recmd.alibaba.com,*.resources.alibaba.com,*.rest.alibaba.com,*.rfq.alibaba.com,*.riskflow.alibaba-inc.com,*.roadline.amap.com,*.rtp.alibaba.com,*.ru-inc.cainiao.com,*.ru.cainiao-inc.com,*.russian.alibaba.com,*.sa.alibaba.com,*.sec-ops.alibaba.com,*.security.alibaba.com,*.seenew.alibaba-inc.com,*.seller.fliggy.com,*.shadow-caijing.alibaba-inc.com,*.shield-alisports.alibaba-inc.com,*.shippingma.alibaba.com,*.shishike.com,*.shujupie.com,*.skywalker-manager.alibaba-inc.com,*.sm.alibaba.com,*.solar-id.alibaba-inc.com,*.solar-sg.alibaba-inc.com,*.solr.yunos-inc.com,*.solr.yunos.com,*.sourcing.alibaba.com,*.sp.sm.cn,*.sp.yisou.com,*.sp2.sm.cn,*.spanish.alibaba.com,*.sqlflow.alibaba-inc.com,*.staging-sg.alibaba-inc.com,*.static.keruyun.com,*.structure.alibaba-inc.com,*.studio.alibaba-inc.com,*.surge.alibaba.com,*.t.alibaba.com,*.tae.taobao.org,*.tag.xiami.com,*.taohuazg.com,*.tbpw.alibaba-inc.com,*.tdum.alibaba.com,*.teamix.alibaba-inc.com,*.telematics.alibaba.com,*.telematics.amap.com,*.test1.alibaba-inc.com,*.testaone.alibaba-inc.com,*.thai.alibaba.com,*.themis.alibaba-inc.com,*.thor.amap.com,*.tiddo.alibaba-inc.com,*.tinya1.cn,*.tiyan.plus,*.tools.elenet.me,*.touch.umeng.com,*.tpp.taobao.org,*.tq-meta.alibaba-inc.com,*.translate.alibaba-inc.com,*.trustpass.alibaba.com,*.tsp.alibaba-inc.com,*.tuipre.alibaba.com,*.turkish.alibaba.com,*.tvos.alibaba.com,*.uat-caijing.alibaba-inc.com,*.umstest.hemaos.com,*.unicorn.alibaba.com,*.union.alibaba.com,*.university.alibaba-inc.com,*.ups.alibaba-inc.com,*.upush.umeng.com,*.us.alibaba.com,*.vertical.freshhema.com,*.video.alibaba.com,*.vidmagic.alibaba-inc.com,*.vietnamese.alibaba.com,*.vip.alibaba.com,*.vipprod.alibaba.com,*.virtual.alibaba-inc.com,*.vmac.yunos.com,*.vs.cainiao-inc.com,*.vscode.alibaba-inc.com,*.w.alibaba-inc.com,*.waimai.alibaba-inc.com,*.wap.alibaba.com,*.wap2.alibaba.com,*.wapa.alibaba.com,*.wapa.gamenow.club,*.wapseo.alibaba.com,*.web.taobao.org,*.weixin.keruyun.com,*.weixin.static.keruyun.com,*.wing.alibaba-inc.com,*.workbench.alibaba-inc.com,*.wscrosstool-bops.alibaba.com,*.x-medic.alibaba-inc.com,*.xnet2-model.alibaba-inc.com,*.xnet2-service.alibaba-inc.com,*.xunxi.alibaba.com,*.yamp.alibaba-inc.com,*.youku.alibaba.com,*.yp.alibaba.com,*.yuekeyun.cn,*.zaihuadong.alibaba.com,*.zebred.com,*.zeus.alibaba.com,*.zhanzhang.sm.cn,*.zzd.alibaba-inc.com,*.zzd.sm.cn,alibabadesign.com,alibabaued.com,alidns.com,dcdcrm.com,ewtp.com,gamenow.club,goofish.com,keruyun.com,myquark.cn,quark.cn,shishike.com,sm.cn,tiyan.plus,uc-engine.cn,yisou.com,yunshangzhipian.com,alibaba.com",
+        "issuer": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign GCC R3 OV TLS CA 2024",
+        "subject": "C=CN, ST=ZheJiang, L=HangZhou, O=Alibaba (China) Technology Co., Ltd., CN=*.alibaba.com",
+        "certificate": "SHA-1: 5D:34:66:EE:A8:8C:B2:D4:AF:90:98:90:65:36:B3:C7:5F:E8:4D:5B",
+        "sni": "fourier.alibaba.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52850",
+        "ip_destination": "47.246.167.158",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "15 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "webcast16-ws-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52802",
+        "ip_destination": "23.54.118.53",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "22 <-> 18"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.145/TLS.AppleiTunes",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "client-api.itunes.apple.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58835",
+        "ip_destination": "222.165.168.201",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "21 <-> 18"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.241/QUIC.GoogleDocs",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "ITtdTT",
+        "sni": "docs.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "54565",
+        "ip_destination": "64.233.170.101",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "17 <-> 16",
+            "13 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "OynE ABy",
+        "sni": "accounts.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65467",
+        "ip_destination": "172.217.70.84",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0312h3_55b375c5d22e_f3854ce178b3",
+        "quic_version": "Draft-29",
+        "sni": "gecko31-normal-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "62920",
+        "ip_destination": "71.18.37.193",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "25 <-> 28",
+            "17 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "p16-useast2a.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52982",
+        "ip_destination": "23.54.155.71",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "24 <-> 19"
+        ]
+    },
+    {
         "ip_field": "126/Google",
         "transport_protocol": "UDP",
         "proto_field": "188/QUIC",
@@ -188,6 +1742,42 @@
         ]
     },
     {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65266",
+        "ip_destination": "17.248.224.65",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_0_d29295416479/iOS/iPad",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "27 <-> 22"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "sf16-sg.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52932",
+        "ip_destination": "23.58.144.171",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "20 <-> 19"
+        ]
+    },
+    {
         "ip_field": "126/Google",
         "transport_protocol": "UDP",
         "proto_field": "188/QUIC",
@@ -203,6 +1793,78 @@
         "exchanged_packets": [
             "10 <-> 15",
             "8 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.436/TLS.Taobao",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "fourier.taobao.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52849",
+        "ip_destination": "124.239.14.250",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "15 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.140/TLS.Apple",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "apps.apple.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52857",
+        "ip_destination": "23.222.108.34",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "21 <-> 19"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway-asset.icloud-content.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58866",
+        "ip_destination": "17.248.224.1",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "21 <-> 24"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.145/TLS.AppleiTunes",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "fpinit.itunes.apple.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58834",
+        "ip_destination": "23.58.144.221",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "21 <-> 20"
         ]
     },
     {
@@ -224,6 +1886,255 @@
         ]
     },
     {
+        "ip_field": "142/WhatsApp",
+        "transport_protocol": "UDP",
+        "proto_field": "188.242/QUIC.WhatsAppFiles",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "plain_text": "LjPIfO",
+        "sni": "media-sin6-2.cdn.whatsapp.net",
+        "ip_source": "192.168.50.22",
+        "port_source": "49966",
+        "ip_destination": "157.240.13.54",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "30 <-> 27"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "sni": "pagead2.googlesyndication.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "57944",
+        "ip_destination": "74.125.68.155",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.124/QUIC.YouTube",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "sni": "www.youtube.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "60171",
+        "ip_destination": "142.251.10.93",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "p77-sign-va.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52985",
+        "ip_destination": "138.199.37.41",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "20 <-> 19"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "webcast22-ws-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52801",
+        "ip_destination": "34.104.30.1",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "24 <-> 22"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "p176-content.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65281",
+        "ip_destination": "17.248.224.66",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "p180-content.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65279",
+        "ip_destination": "17.248.224.67",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014ht_a09f3c656075_e42f34c56612",
+        "sni": "p176-content.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65283",
+        "ip_destination": "17.248.224.66",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.241/QUIC.GoogleDocs",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "sni": "docs.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51304",
+        "ip_destination": "142.251.12.139",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "13 <-> 14",
+            "12 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "p174-content.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65268",
+        "ip_destination": "17.248.224.67",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "15 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014ht_a09f3c656075_e42f34c56612",
+        "sni": "p174-content.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65277",
+        "ip_destination": "17.248.224.67",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "p166-content.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65265",
+        "ip_destination": "17.248.224.67",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014ht_a09f3c656075_e42f34c56612",
+        "sni": "p166-content.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65275",
+        "ip_destination": "17.248.224.67",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.241/QUIC.GoogleDocs",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "sni": "docs.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51258",
+        "ip_destination": "74.125.130.100",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 12"
+        ]
+    },
+    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -239,6 +2150,26 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "53 <-> 52"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "130.239/HTTP_Connect.GoogleServices",
+        "url": "proxy-safebrowsing.googleapis.com:443",
+        "plain_text": "CONNECT proxy",
+        "sni": "proxy-safebrowsing.googleapis.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58825",
+        "ip_destination": "17.253.61.219",
+        "port_destination": "80",
+        "tcp_fingerprint": "194_64_0_d29295416479/iOS/iPad",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "21 <-> 17"
         ]
     },
     {
@@ -260,6 +2191,60 @@
         ]
     },
     {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway.icloud.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58821",
+        "ip_destination": "17.248.224.64",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_0_d29295416479/iOS/iPad",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "sni": "ssl.gstatic.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "49827",
+        "ip_destination": "74.125.130.94",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "10 <-> 14",
+            "11 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "p21-ad-sg.ibyteimg.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53011",
+        "ip_destination": "199.232.46.73",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 18"
+        ]
+    },
+    {
         "ip_field": "284/GoogleCloud",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -275,6 +2260,24 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "20 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.122/TLS.GMail",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "mail.google.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58855",
+        "ip_destination": "74.125.200.17",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "20 <-> 21"
         ]
     },
     {
@@ -368,6 +2371,24 @@
         ]
     },
     {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "rtlog16-normal-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52786",
+        "ip_destination": "23.54.118.38",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "38 <-> 33"
+        ]
+    },
+    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -405,6 +2426,24 @@
         ]
     },
     {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0312h3_55b375c5d22e_f3854ce178b3",
+        "quic_version": "Draft-29",
+        "sni": "gecko31-normal-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58322",
+        "ip_destination": "71.18.74.192",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "19 <-> 19",
+            "18 <-> 18"
+        ]
+    },
+    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -423,6 +2462,205 @@
         ]
     },
     {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d181100_e8a523a41297_ef7df7f74e48",
+        "sni": "api16-normal-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52910",
+        "ip_destination": "23.54.118.47",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "16 <-> 14",
+            "12 <-> 10"
+        ]
+    },
+    {
+        "ip_field": "276/Azure",
+        "transport_protocol": "TCP",
+        "proto_field": "91.219/TLS.Microsoft365",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "c.bing.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52892",
+        "ip_destination": "150.171.29.10",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h0_55b375c5d22e_cd85d2d88918",
+        "quic_version": "V-1",
+        "plain_text": "ND/FtU",
+        "sni": "webcast16-normal-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "59080",
+        "ip_destination": "23.54.118.34",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h0_55b375c5d22e_cd85d2d88918",
+        "quic_version": "V-1",
+        "sni": "webcast16-normal-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "61811",
+        "ip_destination": "23.201.107.56",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "285/Tencent",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "quic_version": "Q043",
+        "plain_text": "sg01.tiktokcdn.comn",
+        "sni": "pull-flv-l11-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53570",
+        "ip_destination": "101.33.27.120",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "5 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h0_55b375c5d22e_cd85d2d88918",
+        "quic_version": "V-1",
+        "plain_text": "GB 6NR",
+        "sni": "search16-normal-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "63090",
+        "ip_destination": "23.54.118.35",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h0_55b375c5d22e_cd85d2d88918",
+        "quic_version": "V-1",
+        "plain_text": "je luDh",
+        "sni": "search16-normal-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "62379",
+        "ip_destination": "23.54.155.9",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "img.alicdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52860",
+        "ip_destination": "163.181.42.181",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.140/TLS.Apple",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2015h2_a09f3c656075_c258b721e490",
+        "sni": "gsp-ssl.ls.apple.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58824",
+        "ip_destination": "17.253.61.213",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.140/TLS.Apple",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2015h2_a09f3c656075_c258b721e490",
+        "sni": "gsp-ssl.ls.apple.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58843",
+        "ip_destination": "17.253.61.220",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway.icloud.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58831",
+        "ip_destination": "17.248.224.67",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "20 <-> 17"
+        ]
+    },
+    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -438,6 +2676,42 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "20 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.238/TLS.ApplePush",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "init.push.apple.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65262",
+        "ip_destination": "17.188.182.68",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "12 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65269",
+        "ip_destination": "17.248.224.68",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 15"
         ]
     },
     {
@@ -496,6 +2770,24 @@
         ]
     },
     {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "p77-sign-va.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52833",
+        "ip_destination": "138.199.37.41",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 18"
+        ]
+    },
+    {
         "ip_field": "126/Google",
         "transport_protocol": "UDP",
         "proto_field": "188/QUIC",
@@ -511,6 +2803,115 @@
         "exchanged_packets": [
             "7 <-> 7",
             "6 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "bagLYfG",
+        "sni": "ssl.gstatic.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "56476",
+        "ip_destination": "74.125.68.94",
+        "port_destination": "443",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "11 <-> 14",
+            "10 <-> 12",
+            "9 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "aeis.alicdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52841",
+        "ip_destination": "118.215.82.61",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "26 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "u.alicdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52843",
+        "ip_destination": "118.215.82.61",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "26 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "ynuf.aliapp.org",
+        "ip_source": "192.168.50.22",
+        "port_source": "52901",
+        "ip_destination": "59.82.121.39",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.239/QUIC.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "sni": "youtubei-att.googleapis.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "59238",
+        "ip_destination": "172.253.118.95",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "5 <-> 5"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "assets.alicdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52842",
+        "ip_destination": "118.215.82.61",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "25 <-> 12"
         ]
     },
     {
@@ -534,6 +2935,208 @@
     {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "login.alibaba.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52853",
+        "ip_destination": "118.215.82.83",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "26 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "air.alibaba.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52870",
+        "ip_destination": "104.69.162.99",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "26 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "video.alibaba.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52872",
+        "ip_destination": "118.215.82.83",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "26 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "insights.alibaba.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52854",
+        "ip_destination": "104.69.162.99",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "26 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.2",
+        "ja3s": "afbc203706421f15554867b55caf16d6",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "servernames": "*.aliexpress.com,*.acs.aliexpress.com,*.acs.aliexpress.ru,*.ae.alibaba.com,*.ae.aliexpress.com,*.aecategoryadmin.aliexpress.com,*.aliexpress-media.com,*.aliexpress-service.com,*.aliexpress-tech-open.com,*.aliexpress.ge,*.aliexpress.ru,*.aliexpress.us,*.alimebot.aliexpress.com,*.allinone.aliexpress.com,*.ar.aliexpress.com,*.ascp.aliexpress.com,*.ascp.aliexpress.ru,*.bops.aliexpress.ru,*.br-learning.aliexpress.com,*.br.aliexpress.com,*.cainiao.aliexpress.com,*.cdn.aliexpress-media.com,*.chuangyi.aliexpress.com,*.click.aliexpress.com,*.click.aliexpress.ru,*.click.aliexpress.us,*.cobra.aliexpress.com,*.componentlibs.aliexpress.com,*.connect.aliexpress.com,*.crm.aliexpress.com,*.csp.aliexpress.com,*.datamatrix.aliexpress.com,*.de.aliexpress.com,*.dev.aliexpress.ru,*.dispute.aliexpress.com,*.dos.aliexpress.com,*.es-university.aliexpress.com,*.es.aliexpress.com,*.finnet.aliexpress.com,*.fortress.aliexpress.ru,*.fr-learning.aliexpress.com,*.fr.aliexpress.com,*.fuwu.aliexpress.com,*.gds.aliexpress.com,*.gearbox.aliexpress.com,*.global.aliexpress.com,*.he.aliexpress.com,*.id.aliexpress.com,*.interactive.aliexpress.com,*.it-university.aliexpress.com,*.it.aliexpress.com,*.ja.aliexpress.com,*.ko.aliexpress.com,*.m.aliexpress.com,*.media.aliexpress.com,*.member.aliexpress.com,*.mixer-pre.aliexpress.ru,*.nl.aliexpress.com,*.origin.aliexpress.com,*.payment.aliexpress.com,*.pl.aliexpress.com,*.posting.aliexpress.com,*.pre-datamatrix.aliexpress.com,*.pre-sycm.aliexpress.com,*.prepub.aliexpress.com,*.pt.aliexpress.com,*.ru-university.aliexpress.com,*.ru.aliexpress.com,*.russia-university.aliexpress.com,*.russia.aliexpress.com,*.seller.aliexpress.com,*.seo.aliexpress.ru,*.siteadmin.aliexpress.com,*.src.aliexpress-media.com,*.sycm.aliexpress.com,*.th.aliexpress.com,*.tmall.ru,*.tr-university.aliexpress.com,*.tr.aliexpress.com,*.trendyol-university.aliexpress.com,*.trendyol.aliexpress.com,*.university.aliexpress.com,*.us.aliexpress.com,*.vi.aliexpress.com,*.wapa.aliexpress.com,*.workstation.aliexpress.com,aliexpress.fr,aliexpress.ge,aliexpress.ru,aliexpress.us,tmall.ru,www.aliexpress.fr,aliexpress.com",
+        "issuer": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign GCC R3 OV TLS CA 2024",
+        "subject": "C=CN, ST=ZheJiang, L=HangZhou, O=Alibaba (China) Technology Co., Ltd., CN=*.aliexpress.com",
+        "certificate": "SHA-1: 32:59:24:0C:B0:DF:02:84:AF:2D:BF:46:36:BF:59:96:C8:42:F9:6B",
+        "sni": "de-wum.aliexpress.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52891",
+        "ip_destination": "47.246.146.105",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "sc02.alicdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52866",
+        "ip_destination": "163.181.81.230",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "15 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "g.alicdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52848",
+        "ip_destination": "163.181.228.137",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "gw.alicdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52856",
+        "ip_destination": "163.181.201.179",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "s.alicdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52861",
+        "ip_destination": "163.181.81.230",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "15 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "x.alicdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52869",
+        "ip_destination": "163.181.228.137",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "sc01.alicdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52895",
+        "ip_destination": "163.181.81.230",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
         "ja3s": "475c9302dc42b2751db9edcac3b74891",
@@ -547,6 +3150,77 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "14 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "lf16-gecko-source.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52983",
+        "ip_destination": "222.165.168.202",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "28 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.140/TLS.Apple",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014ht_a09f3c656075_e42f34c56612",
+        "sni": "iphone-ld.apple.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58856",
+        "ip_destination": "23.54.155.68",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0312h3_55b375c5d22e_f3854ce178b3",
+        "quic_version": "Draft-29",
+        "sni": "bsync31-normal-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58565",
+        "ip_destination": "71.18.222.1",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "m.alibaba.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52852",
+        "ip_destination": "104.69.162.99",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "15 <-> 12"
         ]
     },
     {
@@ -583,6 +3257,141 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "26 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.140/TLS.Apple",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "configuration.ls.apple.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58823",
+        "ip_destination": "17.253.61.198",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "15 <-> 12",
+            "15 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "api16-normal-c-useast1a.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52935",
+        "ip_destination": "23.54.155.31",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "17 <-> 11",
+            "10 <-> 7",
+            "10 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "142/WhatsApp",
+        "transport_protocol": "TCP",
+        "proto_field": "91.142/TLS.WhatsApp",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "graph.whatsapp.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58887",
+        "ip_destination": "157.240.13.54",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 5,
+        "exchanged_packets": [
+            "19 <-> 14",
+            "18 <-> 14",
+            "18 <-> 14",
+            "17 <-> 14",
+            "16 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "cm.g.doubleclick.net",
+        "ip_source": "192.168.50.22",
+        "port_source": "52878",
+        "ip_destination": "142.251.10.157",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "lf-main-gecko-source.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52928",
+        "ip_destination": "104.75.84.19",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h0_55b375c5d22e_cd85d2d88918",
+        "quic_version": "V-1",
+        "sni": "search16-normal-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "59194",
+        "ip_destination": "23.201.107.99",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2 <-> 4"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "accounts.google.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52886",
+        "ip_destination": "74.125.200.84",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 9"
         ]
     },
     {
@@ -637,6 +3446,46 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "13 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.140/TLS.Apple",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2015h2_a09f3c656075_c258b721e490",
+        "sni": "gsp85-ssl.ls.apple.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "58816",
+        "ip_destination": "17.167.200.10",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.2",
+        "ja3s": "00447ab319e9d94ba2b4c1248e155917",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "servernames": "*.aplus.hzshudian.com,*.aplus.taobao.com,*.aplus.dingtalk.com,*.aplus.ele.me,*.aplus.aliyun.com,aplus.qwen.ai,aplus.qwenlm.ai,aplus.qwenchat.com,aplus.wan.video,aplus.aliexpress.com,aplus.aliexpress.us,aplus.ihuiwa.com,aplus.icirena.ai,aplus.alibaba.com,aplus.accio.com,aplus.hzshudian.com",
+        "issuer": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign GCC R3 OV TLS CA 2024",
+        "subject": "C=CN, ST=ZheJiang, L=HangZhou, O=Alibaba (China) Technology Co., Ltd., CN=*.aplus.hzshudian.com",
+        "certificate": "SHA-1: F5:F7:CD:52:77:40:EE:64:07:5E:AD:8F:03:49:9A:AF:BB:19:77:AA",
+        "sni": "aplus.alibaba.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52845",
+        "ip_destination": "47.246.136.160",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 10"
         ]
     },
     {
@@ -698,6 +3547,50 @@
         ]
     },
     {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.2",
+        "ja3s": "00447ab319e9d94ba2b4c1248e155917",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "servernames": "*.mmstat.com,mmstat.com",
+        "issuer": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign GCC R3 OV TLS CA 2024",
+        "subject": "C=CN, ST=ZheJiang, L=HangZhou, O=Alibaba (China) Technology Co., Ltd., CN=*.mmstat.com",
+        "certificate": "SHA-1: 7C:13:25:46:2F:64:13:1E:A7:7B:50:51:78:5D:DD:1B:46:AD:92:45",
+        "sni": "log.mmstat.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52855",
+        "ip_destination": "140.205.151.4",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.2",
+        "ja3s": "00447ab319e9d94ba2b4c1248e155917",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "servernames": "*.mmstat.com,mmstat.com",
+        "issuer": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign GCC R3 OV TLS CA 2024",
+        "subject": "C=CN, ST=ZheJiang, L=HangZhou, O=Alibaba (China) Technology Co., Ltd., CN=*.mmstat.com",
+        "certificate": "SHA-1: 7C:13:25:46:2F:64:13:1E:A7:7B:50:51:78:5D:DD:1B:46:AD:92:45",
+        "sni": "gm.mmstat.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52862",
+        "ip_destination": "140.205.151.6",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 11"
+        ]
+    },
+    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -738,6 +3631,66 @@
         ]
     },
     {
+        "ip_field": "274/Alibaba",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.2",
+        "ja3s": "00447ab319e9d94ba2b4c1248e155917",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "servernames": "*.mmstat.com,mmstat.com",
+        "issuer": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign GCC R3 OV TLS CA 2024",
+        "subject": "C=CN, ST=ZheJiang, L=HangZhou, O=Alibaba (China) Technology Co., Ltd., CN=*.mmstat.com",
+        "certificate": "SHA-1: 7C:13:25:46:2F:64:13:1E:A7:7B:50:51:78:5D:DD:1B:46:AD:92:45",
+        "sni": "gj.mmstat.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52873",
+        "ip_destination": "47.246.136.160",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 10"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.196/TLS.DoH_DoT",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2014h0_a09f3c656075_e42f34c56612",
+        "sni": "dns.google",
+        "ip_source": "192.168.50.22",
+        "port_source": "58815",
+        "ip_destination": "8.8.8.8",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "10 <-> 8",
+            "10 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.196/TLS.DoH_DoT",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2014h0_a09f3c656075_e42f34c56612",
+        "sni": "dns.google",
+        "ip_source": "192.168.50.96",
+        "port_source": "65272",
+        "ip_destination": "8.8.8.8",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "10 <-> 8",
+            "9 <-> 8"
+        ]
+    },
+    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -757,6 +3710,41 @@
     },
     {
         "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h3_55b375c5d22e_b064f0e3421d",
+        "quic_version": "Draft-29",
+        "sni": "p16-sign-sg.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "55858",
+        "ip_destination": "96.16.204.194",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2 <-> 3"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h3_55b375c5d22e_b064f0e3421d",
+        "quic_version": "Draft-29",
+        "plain_text": "pzKnhW",
+        "sni": "p16-sign-va.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "64252",
+        "ip_destination": "96.16.204.178",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2 <-> 3"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
@@ -771,6 +3759,22 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "12 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "quic_version": "Q043",
+        "plain_text": "tt04.tiktokcdn.comQ",
+        "sni": "pull-flv-l77-tt04.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "57712",
+        "ip_destination": "79.127.213.229",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "5 <-> 4"
         ]
     },
     {
@@ -830,6 +3834,24 @@
         ]
     },
     {
+        "ip_field": "25/Yandex",
+        "transport_protocol": "TCP",
+        "proto_field": "91.25/TLS.Yandex",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "mc.yandex.ru",
+        "ip_source": "192.168.50.22",
+        "port_source": "52858",
+        "ip_destination": "87.250.251.119",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 11"
+        ]
+    },
+    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -845,6 +3867,44 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "22 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.196/TLS.DoH_DoT",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2014do_a09f3c656075_e42f34c56612",
+        "sni": "dns.google",
+        "ip_source": "192.168.50.22",
+        "port_source": "58819",
+        "ip_destination": "8.8.8.8",
+        "port_destination": "853",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "10 <-> 8",
+            "9 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.196/TLS.DoH_DoT",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2014do_a09f3c656075_e42f34c56612",
+        "sni": "dns.google",
+        "ip_source": "192.168.50.96",
+        "port_source": "65273",
+        "ip_destination": "8.8.8.8",
+        "port_destination": "853",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "9 <-> 8",
+            "9 <-> 8"
         ]
     },
     {
@@ -888,6 +3948,27 @@
         ]
     },
     {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "api-h2.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53038",
+        "ip_destination": "23.54.118.52",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 11"
+        ]
+    },
+    {
         "ip_field": "284/GoogleCloud",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -926,6 +4007,24 @@
     {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "analytics.tiktok.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52929",
+        "ip_destination": "23.54.118.39",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
@@ -939,6 +4038,24 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "10 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h3_55b375c5d22e_b064f0e3421d",
+        "quic_version": "Draft-29",
+        "sni": "search22-normal-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52619",
+        "ip_destination": "34.107.238.235",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "3 <-> 3",
+            "3 <-> 3"
         ]
     },
     {
@@ -966,6 +4083,66 @@
     {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "p16-pu-sign-useast8.tiktokcdn-us.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52976",
+        "ip_destination": "184.30.148.203",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "10 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "api-h2.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52996",
+        "ip_destination": "23.54.118.46",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "12 <-> 10"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "api16-normal-c-useast1a.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52906",
+        "ip_destination": "23.201.107.80",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "12 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.2",
         "ja3s": "d52e85b996ca133fa608c8b9b9d2fe92",
@@ -983,6 +4160,24 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "11 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "119/Facebook",
+        "transport_protocol": "TCP",
+        "proto_field": "91.119/TLS.Facebook",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "www.facebook.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52851",
+        "ip_destination": "157.240.13.35",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 11"
         ]
     },
     {
@@ -1020,6 +4215,229 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "10 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "UDP",
+        "proto_field": "188.143/QUIC.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "plain_text": "vR@3XT",
+        "sni": "gateway-asset.icloud-content.com",
+        "risk": "** Unidirectional Traffic **",
+        "risk_score": "10",
+        "risk_info": "No server to client traffic",
+        "similar_flows_count": 11,
+        "exchanged_packets": [
+            "3 <-> 0",
+            "1 <-> 0",
+            "1 <-> 0",
+            "1 <-> 0",
+            "1 <-> 0",
+            "1 <-> 0",
+            "1 <-> 0",
+            "1 <-> 0",
+            "1 <-> 0",
+            "1 <-> 0",
+            "1 <-> 0"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.274/TLS.Alibaba",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "hub-plan-log-1.log-global.aliyuncs.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52882",
+        "ip_destination": "163.181.81.238",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "7 <-> 6"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.238/TLS.ApplePush",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "init.push.apple.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65263",
+        "ip_destination": "17.188.183.4",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "7 <-> 5"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "v16m.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52907",
+        "ip_destination": "104.93.25.208",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "quic_version": "Q043",
+        "plain_text": "sg01.tiktokcdn.comyD",
+        "sni": "pull-f5-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "50337",
+        "ip_destination": "129.227.94.196",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "4 <-> 3"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "api16-normal-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52987",
+        "ip_destination": "23.54.118.47",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "api16-normal-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53067",
+        "ip_destination": "23.54.155.11",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "api-h2.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "52912",
+        "ip_destination": "184.51.195.217",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "10 <-> 7",
+            "10 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "api-h2.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53010",
+        "ip_destination": "23.54.118.49",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "10 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d181100_e8a523a41297_d5fe2c511efa",
+        "sni": "api-h2.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "53086",
+        "ip_destination": "23.54.118.40",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "quic_version": "Q043",
+        "plain_text": "normal",
+        "sni": "jsb31-normal-alisg.tiktokv.com",
+        "ip_source": "192.168.50.22",
+        "port_source": "51064",
+        "ip_destination": "71.18.37.212",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "1 <-> 1",
+            "1 <-> 1"
         ]
     }
 ]

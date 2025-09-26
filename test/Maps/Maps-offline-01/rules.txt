@@ -1,2 +1,2 @@
-host:"offline-maps.gvt1.com"@whois: google llc & AI: Google Offline Maps
-host:"dsadata.intel.com"@whois: intel corporation & AI: DataScale Monitor
+host:"offline-maps.gvt1.com"@
+host:"dsadata.intel.com"@

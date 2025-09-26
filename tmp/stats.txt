@@ -2,10 +2,14 @@
 
    + ApplePush
    + DNS
-   + Google
    + ICMP
    + ICMPV6
+   + IMAPS
+   + MDNS
+   + NTP
+   + NetBIOS
    + QUIC
+   + SOAP
    + SSH
    + TLS
    + Unknown
@@ -13,18 +17,22 @@
 
 >> Lists of protocols supported:
 
-   + DNS
    + HTTP
+   + HTTP_Connect
    + QUIC
-   + SMTP
    + TLS
    + Unknown
 
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
    [red]+ ApplePush[/red]
-   [red]+ Google[/red]
+   [red]+ DNS[/red]
    [red]+ ICMP[/red]
    [red]+ ICMPV6[/red]
+   [red]+ IMAPS[/red]
+   [red]+ MDNS[/red]
+   [red]+ NTP[/red]
+   [red]+ NetBIOS[/red]
+   [red]+ SOAP[/red]
    [red]+ SSH[/red]
    [red]+ WhatsApp[/red]

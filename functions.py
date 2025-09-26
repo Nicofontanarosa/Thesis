@@ -132,6 +132,8 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
         if not sni_proc:
             continue
 
+        print(f"\n[DEBUG] Original SNI: {sni} → After removing dataset suffix: {sni_proc}")
+
         # 2) Replace multiple consecutive hyphens with a single dot
         sni_proc = re.sub(r"-+", ".", sni_proc)
         parts = sni_proc.split(".")
@@ -145,6 +147,8 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
                 continue
             new_parts.append(p)
         parts = new_parts
+
+        print(f"\n[DEBUG] After removing numeric/short/TLD parts: {parts}")
 
         if not parts:
             continue

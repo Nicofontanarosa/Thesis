@@ -1,0 +1,4 @@
+host:"edge-089.sgsin8.icloud-content.com",host:"icloud.com"@whois: apple inc. & AI: unknown
+host:"split.io"@whois: unknown & AI: unknown
+host:"raw.githubusercontent.com"@whois:  & AI: unknown
+host:"releases.obsidian.md"@whois: unknown & AI: unknown

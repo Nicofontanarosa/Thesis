@@ -1,0 +1,734 @@
+[
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.140/TLS.Apple",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "api.apple-cloudkit.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "59741",
+        "ip_destination": "17.248.224.69",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1173 <-> 868"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "59745",
+        "ip_destination": "17.248.224.64",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_0_d29295416479/iOS/iPad",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "36 <-> 33"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "t13d1516ht_8daaf6152771_0d365e64def3",
+        "sni": "ws.chatgpt.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51035",
+        "ip_destination": "172.64.148.235",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "34 <-> 22",
+            "17 <-> 13",
+            "23 <-> 18"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "t13d1517h2_8daaf6152771_b6f405a00624",
+        "sni": "chatgpt.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51029",
+        "ip_destination": "172.64.155.209",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "21 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d151400_8daaf6152771_0a20fe35d3a5",
+        "sni": "mtalk.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51032",
+        "ip_destination": "74.125.68.188",
+        "port_destination": "5228",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "60",
+        "risk_info": "No ALPN / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "23 <-> 21"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d151400_8daaf6152771_0a20fe35d3a5",
+        "sni": "mtalk.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51099",
+        "ip_destination": "172.217.194.188",
+        "port_destination": "5228",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "60",
+        "risk_info": "No ALPN / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "p167-caldav.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "59743",
+        "ip_destination": "17.248.224.68",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "15 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "p167-caldav.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "59742",
+        "ip_destination": "17.248.224.68",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_0_d29295416479/iOS/iPad",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.140/TLS.Apple",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2015h2_a09f3c656075_c258b721e490",
+        "sni": "gsp-ssl.ls.apple.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "59744",
+        "ip_destination": "17.253.61.213",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.140/TLS.Apple",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2015h2_a09f3c656075_c258b721e490",
+        "sni": "gsp-ssl.ls.apple.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "59748",
+        "ip_destination": "17.253.61.214",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "11 <-> 9",
+            "7 <-> 6"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1517h2_8daaf6152771_6cdcb247c39b",
+        "sni": "streaming.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "51098",
+        "ip_destination": "13.35.37.22",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "21 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "sdk.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "51031",
+        "ip_destination": "151.101.3.9",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "32 <-> 33"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.140/TLS.Apple",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2015h2_a09f3c656075_c258b721e490",
+        "sni": "gsp-ssl.ls.apple.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "59747",
+        "ip_destination": "17.253.61.218",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "9dd9697e41bf4842b13869ec64041126",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "auth.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "51033",
+        "ip_destination": "44.197.221.236",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "8 <-> 18",
+            "7 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "sdk.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "51100",
+        "ip_destination": "151.101.67.9",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "9dd9697e41bf4842b13869ec64041126",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "auth.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "51101",
+        "ip_destination": "54.157.194.5",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "8 <-> 7",
+            "5 <-> 5"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "23.217.112.24",
+        "dns_id": "0x6d36",
+        "plain_text": "itunes",
+        "sni": "itunes.apple.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "57908",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "2 <-> 1",
+            "1 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "17.248.224.13",
+        "dns_id": "0xfb04",
+        "plain_text": "gateway",
+        "sni": "gateway.fe2.apple-dns.net",
+        "ip_source": "192.168.50.96",
+        "port_source": "62743",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "2 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "23.217.112.210",
+        "dns_id": "0x078e",
+        "plain_text": "aaplimg",
+        "sni": "www.apple.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51306",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "2 <-> 1",
+            "2 <-> 1",
+            "1 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "13.35.37.22",
+        "dns_id": "0xbb83",
+        "plain_text": "streaming",
+        "sni": "streaming.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "19006",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x4044",
+        "plain_text": "caldav",
+        "sni": "p167-caldav.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "54523",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "17.248.224.67",
+        "dns_id": "0x4d5c",
+        "plain_text": "cloudkit",
+        "sni": "api.apple-cloudkit.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65525",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "23.217.112.24",
+        "dns_id": "0xf81d",
+        "plain_text": "akamaiedge",
+        "sni": "e673.dsce9.akamaiedge.net",
+        "ip_source": "192.168.50.96",
+        "port_source": "56163",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "2 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "17.248.224.68",
+        "dns_id": "0x3bf8",
+        "plain_text": "caldav",
+        "sni": "p167-caldav.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "50958",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x5863",
+        "plain_text": "gateway",
+        "sni": "gateway.fe2.apple-dns.net",
+        "ip_source": "192.168.50.96",
+        "port_source": "53357",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x8e94",
+        "plain_text": "caldav",
+        "sni": "caldav.fe2.apple-dns.net",
+        "ip_source": "192.168.50.96",
+        "port_source": "54119",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "17.248.224.64",
+        "dns_id": "0xee74",
+        "plain_text": "gateway",
+        "sni": "gateway.fe2.apple-dns.net",
+        "ip_source": "192.168.50.96",
+        "port_source": "59589",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "74.125.200.104",
+        "dns_id": "0x762b",
+        "plain_text": "google",
+        "sni": "www.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "53857",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "151.101.3.9",
+        "dns_id": "0xfbed",
+        "plain_text": "fastly",
+        "sni": "sdk.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "44927",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "151.101.67.9",
+        "dns_id": "0x5e6a",
+        "plain_text": "fastly",
+        "sni": "sdk.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "53345",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "17.253.144.10",
+        "dns_id": "0xb7c5",
+        "sni": "apple.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "50183",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "2 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0xfd51",
+        "plain_text": "chatgpt",
+        "sni": "ws.chatgpt.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "21275",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "1 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x3c27",
+        "plain_text": "aaplimg",
+        "sni": "get-bx.g.aaplimg.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51721",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "1 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "17.253.60.253",
+        "dns_id": "0xff0a",
+        "plain_text": "aaplimg",
+        "sni": "time-ios.g.aaplimg.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "63491",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "44.197.221.236",
+        "dns_id": "0xc47a",
+        "sni": "auth.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "34170",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "54.157.194.5",
+        "dns_id": "0x7326",
+        "sni": "auth.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "36984",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x7ecb",
+        "plain_text": "chatgpt",
+        "sni": "chatgpt.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "45483",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "172.217.194.188",
+        "dns_id": "0x5f50",
+        "plain_text": "google",
+        "sni": "mtalk.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "41190",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "74.125.68.188",
+        "dns_id": "0xac66",
+        "plain_text": "google",
+        "sni": "mtalk.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "64633",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "172.64.148.235",
+        "dns_id": "0xecb6",
+        "plain_text": "chatgpt",
+        "sni": "ws.chatgpt.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "7392",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "1 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "172.64.155.209",
+        "dns_id": "0xd161",
+        "plain_text": "chatgpt",
+        "sni": "chatgpt.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "33863",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    }
+]

@@ -1,0 +1,4 @@
+host:"apple.com"@whois: apple inc. & AI: unknown
+host:"rupload.facebook.com"@whois: meta platforms, inc. & AI: unknown
+host:"api.termius.com"@whois: identity protection service & AI: unknown
+host:"split.io"@whois: unknown & AI: unknown

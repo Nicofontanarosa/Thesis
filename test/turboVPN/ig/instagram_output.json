@@ -1,0 +1,3536 @@
+[
+    {
+        "ip_field": "119/Facebook",
+        "transport_protocol": "UDP",
+        "proto_field": "188.119/QUIC.Facebook",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "plain_text": "@ssrlg",
+        "sni": "graph.facebook.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "55393",
+        "ip_destination": "157.240.13.14",
+        "port_destination": "443",
+        "similar_flows_count": 13,
+        "exchanged_packets": [
+            "70 <-> 113",
+            "53 <-> 81",
+            "49 <-> 80",
+            "49 <-> 78",
+            "48 <-> 75",
+            "51 <-> 80",
+            "48 <-> 78",
+            "51 <-> 76",
+            "50 <-> 76",
+            "45 <-> 76",
+            "40 <-> 75",
+            "45 <-> 73",
+            "43 <-> 74"
+        ]
+    },
+    {
+        "ip_field": "276/Azure",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "main.vscode-cdn.net",
+        "ip_source": "192.168.50.96",
+        "port_source": "62870",
+        "ip_destination": "13.107.253.59",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "53 <-> 60"
+        ]
+    },
+    {
+        "ip_field": "276/Azure",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1517h2_8daaf6152771_b6f405a00624",
+        "sni": "main.vscode-cdn.net",
+        "ip_source": "192.168.50.96",
+        "port_source": "63019",
+        "ip_destination": "13.107.253.59",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "48 <-> 56",
+            "19 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.140/TLS.Apple",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2015h2_a09f3c656075_c258b721e490",
+        "sni": "gspe79-ssl.ls.apple.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "61590",
+        "ip_destination": "17.253.61.201",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "23 <-> 24"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.124/QUIC.YouTube",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "sni": "www.youtube.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "63532",
+        "ip_destination": "74.125.200.136",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 26"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310h3_55b375c5d22e_b064f0e3421d",
+        "quic_version": "Draft-29",
+        "plain_text": "YFzt/q",
+        "sni": "api22-normal-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "61752",
+        "ip_destination": "34.102.164.249",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.145/TLS.AppleiTunes",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "client-api.itunes.apple.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "61592",
+        "ip_destination": "104.75.84.17",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "24 <-> 20",
+            "19 <-> 18"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d151400_8daaf6152771_0a20fe35d3a5",
+        "sni": "mtalk.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "63039",
+        "ip_destination": "142.251.12.188",
+        "port_destination": "5228",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "60",
+        "risk_info": "No ALPN / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "21 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h3_55b375c5d22e_deaa40128ffb",
+        "quic_version": "Draft-29",
+        "plain_text": "HuhbIi",
+        "sni": "hotapi22-normal-alisg.tiktokv.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "60913",
+        "ip_destination": "34.96.106.127",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.241/QUIC.GoogleDocs",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "sni": "docs.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "63621",
+        "ip_destination": "172.253.118.113",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "15 <-> 15",
+            "14 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "sni": "accounts.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "59042",
+        "ip_destination": "142.250.4.84",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "142/WhatsApp",
+        "transport_protocol": "UDP",
+        "proto_field": "188.242/QUIC.WhatsAppFiles",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "plain_text": "gG48kr",
+        "sni": "media-sin6-2.cdn.whatsapp.net",
+        "ip_source": "192.168.50.96",
+        "port_source": "56790",
+        "ip_destination": "157.240.13.54",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "17 <-> 12",
+            "13 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.239/QUIC.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "WsL xH",
+        "sni": "safebrowsing.googleapis.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "53716",
+        "ip_destination": "74.125.200.95",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "12 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.241/QUIC.GoogleDocs",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "AO7@p@",
+        "sni": "docs.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "57172",
+        "ip_destination": "64.233.170.100",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "15 <-> 13",
+            "14 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.241/QUIC.GoogleDocs",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "alFhGE",
+        "sni": "docs.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "52941",
+        "ip_destination": "172.217.194.102",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d151400_8daaf6152771_0a20fe35d3a5",
+        "sni": "mtalk.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "63240",
+        "ip_destination": "142.251.10.188",
+        "port_destination": "5228",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "60",
+        "risk_info": "No ALPN / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.49/QUIC.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0312h3_55b375c5d22e_f3854ce178b3",
+        "quic_version": "Draft-29",
+        "sni": "bsync31-normal-alisg.tiktokv.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "51750",
+        "ip_destination": "147.50.207.114",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "sni": "ssl.gstatic.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "56464",
+        "ip_destination": "142.250.4.94",
+        "port_destination": "443",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "12 <-> 16",
+            "9 <-> 12",
+            "11 <-> 12",
+            "9 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "276/Azure",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1812ht_5d04281c6031_ef7df7f74e48",
+        "sni": "default.exp-tas.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "63197",
+        "ip_destination": "13.107.5.93",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "14 <-> 15",
+            "13 <-> 14",
+            "13 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "haO.c ",
+        "sni": "ssl.gstatic.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "61534",
+        "ip_destination": "64.233.170.94",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.49/TLS.TikTok",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d1517ht_8daaf6152771_6cdcb247c39b",
+        "sni": "frontier.tiktokv.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "57091",
+        "ip_destination": "71.18.253.215",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "142/WhatsApp",
+        "transport_protocol": "TCP",
+        "proto_field": "91.142/TLS.WhatsApp",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "dit.whatsapp.net",
+        "ip_source": "192.168.50.87",
+        "port_source": "61593",
+        "ip_destination": "157.240.13.54",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.239/QUIC.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "SrksnyMv",
+        "sni": "clientservices.googleapis.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "63108",
+        "ip_destination": "172.253.118.94",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "2ab44dd8c27bdce434a961463587356a",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "servernames": "*.split.io",
+        "issuer": "C=US, O=Amazon, CN=Amazon RSA 2048 M03",
+        "subject": "CN=*.split.io",
+        "certificate": "SHA-1: DC:4D:63:73:63:8A:E1:0B:61:25:43:E8:19:60:5E:BD:63:6E:A3:51",
+        "sni": "auth.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "63242",
+        "ip_destination": "44.197.221.236",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "10 <-> 12",
+            "11 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.124/QUIC.YouTube",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "bixu.p",
+        "sni": "yt3.ggpht.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "53100",
+        "ip_destination": "64.233.170.132",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1517h2_8daaf6152771_6cdcb247c39b",
+        "sni": "streaming.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "63152",
+        "ip_destination": "3.165.102.77",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "23 <-> 21"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "sdk.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "63038",
+        "ip_destination": "151.101.195.9",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "35 <-> 34"
+        ]
+    },
+    {
+        "ip_field": "142/WhatsApp",
+        "transport_protocol": "TCP",
+        "proto_field": "91.142/TLS.WhatsApp",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "graph.whatsapp.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "61587",
+        "ip_destination": "157.240.13.54",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "9dd9697e41bf4842b13869ec64041126",
+        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+        "sni": "auth.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "63040",
+        "ip_destination": "35.170.228.5",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "15 <-> 14",
+            "9 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
+        "sni": "sdk.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "63241",
+        "ip_destination": "151.101.67.9",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "119/Facebook",
+        "transport_protocol": "TCP",
+        "proto_field": "91.119/TLS.Facebook",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_e42f34c56612",
+        "sni": "graph.facebook.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "61589",
+        "ip_destination": "157.240.13.14",
+        "port_destination": "443",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "6 <-> 5"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.204",
+        "dns_id": "0x1e2b",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-f5-tt04.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "58299",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2 <-> 2"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "138.113.197.42",
+        "dns_id": "0x2dc5",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l16-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "62833",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2 <-> 2"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "43.175.140.148",
+        "dns_id": "0x6738",
+        "plain_text": "tiktokcdn",
+        "sni": "push-rtmp-l11-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "52582",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "101.33.26.81",
+        "dns_id": "0x6ddb",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-lls-l11-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "51101",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "43.152.25.191",
+        "dns_id": "0xe44d",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-lls-l11-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "61749",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "104.251.234.45",
+        "dns_id": "0x65f6",
+        "plain_text": "tiktokcdn",
+        "sni": "push-rtmp-l10-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "60771",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x2ed5",
+        "plain_text": "vscode",
+        "sni": "main.vscode-cdn.net",
+        "ip_source": "192.168.50.96",
+        "port_source": "47901",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "1 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "101.33.26.118",
+        "dns_id": "0xff50",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f11-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "61262",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "101.33.26.137",
+        "dns_id": "0xb4ea",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l11-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "60674",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "101.33.26.196",
+        "dns_id": "0xf735",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f11-tt01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "52022",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "101.33.27.61",
+        "dns_id": "0x172a",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l11-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "52305",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "101.33.27.58",
+        "dns_id": "0x4a71",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-w11-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "55255",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "101.33.27.120",
+        "dns_id": "0xdcd1",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f11-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "55584",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "101.33.27.120",
+        "dns_id": "0x1204",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l11-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "55988",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "101.33.27.120",
+        "dns_id": "0x143d",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f11-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "57437",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "101.33.27.120",
+        "dns_id": "0xed75",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-o11-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "57579",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "101.33.27.61",
+        "dns_id": "0x6c03",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f11-tt03.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "57607",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "101.33.26.137",
+        "dns_id": "0x1264",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-o11-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "57998",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "74.125.200.136",
+        "dns_id": "0x6c84",
+        "plain_text": "youtube",
+        "sni": "www.youtube.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "10146",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "13.107.253.59",
+        "dns_id": "0x85b6",
+        "plain_text": "vscode",
+        "sni": "main.vscode-cdn.net",
+        "ip_source": "192.168.50.96",
+        "port_source": "19395",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 5,
+        "exchanged_packets": [
+            "1 <-> 1",
+            "1 <-> 1",
+            "1 <-> 1",
+            "1 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.196",
+        "dns_id": "0x9f14",
+        "plain_text": "ttlivecdn",
+        "sni": "pull-f5-sg01.ttlivecdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "52759",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0xfbd0",
+        "plain_text": "client",
+        "sni": "client-api.itunes.apple.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "53055",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "115.108.61.35",
+        "dns_id": "0x72bf",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-lls-l10-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "61147",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "115.108.61.39",
+        "dns_id": "0x6d2f",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-lls-l10-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "62879",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "42.99.128.160",
+        "dns_id": "0x8a36",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-f16-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "65261",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "104.251.234.25",
+        "dns_id": "0x0496",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-l10-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "51899",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "148.153.241.25",
+        "dns_id": "0xf473",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f10-tt03.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "50218",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "104.251.234.23",
+        "dns_id": "0x69bc",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f10-tt01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "50890",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "104.251.234.26",
+        "dns_id": "0x9a0a",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f10-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "54644",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "104.251.234.26",
+        "dns_id": "0xf809",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-q10-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "55233",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "148.153.241.20",
+        "dns_id": "0x267f",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f10-tt04.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "56408",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "148.153.241.20",
+        "dns_id": "0xdc66",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-w10-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "56771",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "104.251.234.25",
+        "dns_id": "0x649c",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f10-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "58761",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "148.153.241.25",
+        "dns_id": "0x9c8a",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-q10-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "63190",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "148.153.241.25",
+        "dns_id": "0xa980",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f10-tt02.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "63260",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "104.251.234.24",
+        "dns_id": "0xf671",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l10-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "57560",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "103.137.168.58",
+        "dns_id": "0x7add",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f64-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "52142",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "103.137.168.57",
+        "dns_id": "0xd25e",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f64-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "60596",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "103.137.168.60",
+        "dns_id": "0x1c54",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f9-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "61204",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "149.102.250.155",
+        "dns_id": "0x5756",
+        "plain_text": "tiktokcdn",
+        "sni": "push-rtmp-f5-vr-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "62346",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x3a5b",
+        "plain_text": "5281DFA",
+        "sni": "e86a2b50-f3d9-4b31-8d62-5281dfa4ebc0-netseer-ipaddr-assoc.xz.fbcdn.net",
+        "ip_source": "192.168.50.87",
+        "port_source": "58692",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "risk": "** Susp DNS Traffic **** Susp Entropy **",
+        "risk_score": "60",
+        "risk_info": "Entropy: 4.962 (Executable?) / Long DNS host name",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x8213",
+        "plain_text": "5281DFA",
+        "sni": "e86a2b50-f3d9-4b31-8d62-5281dfa4ebc0-netseer-ipaddr-assoc.xy.fbcdn.net",
+        "ip_source": "192.168.50.87",
+        "port_source": "65475",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "risk": "** Susp DNS Traffic **",
+        "risk_score": "50",
+        "risk_info": "Long DNS host name",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "149.102.250.155",
+        "dns_id": "0xb89c",
+        "plain_text": "tiktokcdn",
+        "sni": "push-rtmp-f5-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "61374",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "46.151.192.192",
+        "dns_id": "0x20d4",
+        "plain_text": "tiktokrow",
+        "sni": "pull-f5-tt04.tiktokrow-cdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "50354",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.204",
+        "dns_id": "0xda08",
+        "plain_text": "tiktokrow",
+        "sni": "pull-f5-va01.tiktokrow-cdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "51259",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.197",
+        "dns_id": "0x2796",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-f5-vr-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "54389",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.204",
+        "dns_id": "0x79ba",
+        "plain_text": "tiktokrow",
+        "sni": "pull-q5-sg01.tiktokrow-cdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "56968",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "42.99.128.163",
+        "dns_id": "0x6f78",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-f16-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "60049",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "42.99.128.160",
+        "dns_id": "0xd44c",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-l16-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "63125",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "23.32.1.101",
+        "dns_id": "0x5e16",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-f16-tt01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "50813",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "23.32.1.138",
+        "dns_id": "0x8054",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-f16-tt02.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "52818",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "42.99.128.155",
+        "dns_id": "0xb39b",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-f16-tt03.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "54340",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "42.99.128.160",
+        "dns_id": "0xdb13",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-f16-tt04.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "56713",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "42.99.128.160",
+        "dns_id": "0x23ea",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-l16-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "60056",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.197",
+        "dns_id": "0xea6e",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-f5-vr-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "61005",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "42.99.128.161",
+        "dns_id": "0x46eb",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-f16-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "65089",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "128.1.11.93",
+        "dns_id": "0x0070",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-f5-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "50589",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "3.165.102.77",
+        "dns_id": "0xdc5a",
+        "plain_text": "streaming",
+        "sni": "streaming.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "26322",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "46.151.192.192",
+        "dns_id": "0x7da3",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-w5-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "51535",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.204",
+        "dns_id": "0xa19b",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-c5-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "59159",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "46.151.192.192",
+        "dns_id": "0x00f3",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-o5-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "62595",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.196",
+        "dns_id": "0xd0b9",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-a5-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "63944",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "151.242.250.19",
+        "dns_id": "0x8a4e",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l60-tt04.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "49306",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "151.242.250.19",
+        "dns_id": "0x48b4",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l60-tt03.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "53341",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.204",
+        "dns_id": "0xcaed",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-c5-tt01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "49584",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.204",
+        "dns_id": "0x77b7",
+        "plain_text": "ttlivecdn",
+        "sni": "pull-w5-va01.ttlivecdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "52700",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "46.151.192.192",
+        "dns_id": "0x916e",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-q5-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "52998",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.197",
+        "dns_id": "0x0ae6",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-o5-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "53138",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.204",
+        "dns_id": "0x04b9",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-a5-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "53182",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "46.151.192.192",
+        "dns_id": "0x626e",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-q5-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "53671",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.204",
+        "dns_id": "0x38a4",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-f5-tt03.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "55070",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "46.151.192.192",
+        "dns_id": "0x94c4",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-w5-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "56140",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "46.151.192.192",
+        "dns_id": "0x006e",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-o5-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "56603",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.204",
+        "dns_id": "0x6f8b",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-g5-tt03.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "56884",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.197",
+        "dns_id": "0x6a9d",
+        "plain_text": "ttlivecdn",
+        "sni": "pull-q5-sg01.ttlivecdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "57283",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.196",
+        "dns_id": "0x07dc",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-a5-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "57953",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "46.151.192.192",
+        "dns_id": "0xec45",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-f5-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "59040",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "46.151.192.192",
+        "dns_id": "0x6275",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-w5-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "59103",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "46.151.192.192",
+        "dns_id": "0x947b",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-g5-tt04.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "59141",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "46.151.192.192",
+        "dns_id": "0x3347",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-f5-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "59586",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "46.151.192.192",
+        "dns_id": "0xadb2",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-f5-tt02.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "62303",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "129.227.94.204",
+        "dns_id": "0x8fc3",
+        "plain_text": "ttlivecdn",
+        "sni": "pull-q5-va01.ttlivecdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "64792",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "98.98.121.137",
+        "dns_id": "0xcd8c",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-c5-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "61620",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "170.187.221.21",
+        "dns_id": "0x56aa",
+        "plain_text": "ttlivecdn",
+        "sni": "pull-cmaf-f5-sg01.ttlivecdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "65297",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "157.240.205.38",
+        "dns_id": "0xe515",
+        "plain_text": "5281DFA",
+        "sni": "e86a2b50-f3d9-4b31-8d62-5281dfa4ebc0-netseer-ipaddr-assoc.xz.fbcdn.net",
+        "ip_source": "192.168.50.87",
+        "port_source": "49980",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "risk": "** Susp DNS Traffic **",
+        "risk_score": "50",
+        "risk_info": "Long DNS host name",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "172.234.52.55",
+        "dns_id": "0x3e27",
+        "plain_text": "tiktokcdn",
+        "sni": "push-rtmp-l1-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "62806",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "138.113.249.17",
+        "dns_id": "0x152a",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l1-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "52342",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "138.113.249.12",
+        "dns_id": "0xe98c",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l1-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "57635",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0xfbcf",
+        "plain_text": "facebook",
+        "sni": "graph.facebook.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "54894",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "34.102.164.249",
+        "dns_id": "0x4e18",
+        "plain_text": "normal",
+        "sni": "api22-normal-c-alisg.tiktokv.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "52921",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x4def",
+        "plain_text": "gspe79",
+        "sni": "gspe79-ssl.ls.apple.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "55957",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.226",
+        "dns_id": "0x2787",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f77-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "49153",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.229",
+        "dns_id": "0xd8ff",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l77-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "51620",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.226",
+        "dns_id": "0xb02a",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l77-tt04.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "49445",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.229",
+        "dns_id": "0x9ccb",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l77-tt02.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "51487",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.226",
+        "dns_id": "0xbf2b",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-o77-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "51743",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.226",
+        "dns_id": "0xaa61",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-o77-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "52699",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.229",
+        "dns_id": "0xf6ea",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f77-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "53154",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.226",
+        "dns_id": "0x7054",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-w77-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "53564",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.226",
+        "dns_id": "0x63ec",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l77-tt01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "53689",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.226",
+        "dns_id": "0xb0f6",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-q77-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "54248",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "138.113.197.42",
+        "dns_id": "0x85f8",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l16-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "54568",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "138.113.197.42",
+        "dns_id": "0xafb2",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l16-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "55995",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.226",
+        "dns_id": "0xad07",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f77-tt02.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "56596",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.226",
+        "dns_id": "0x1978",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-q77-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "57064",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.229",
+        "dns_id": "0x9e3e",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f77-tt01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "59552",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.226",
+        "dns_id": "0x582b",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f77-tt04.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "60195",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.229",
+        "dns_id": "0xf34d",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l77-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "62809",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.226",
+        "dns_id": "0x63cf",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f77-tt03.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "64574",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "79.127.213.226",
+        "dns_id": "0x9cd4",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f77-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "64627",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "138.113.197.42",
+        "dns_id": "0x5f0c",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-l1-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "50669",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0xe739",
+        "plain_text": "photos",
+        "sni": "yt3.ggpht.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "5029",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "138.113.197.42",
+        "dns_id": "0xe121",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f1-tt04.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "52303",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "138.113.197.42",
+        "dns_id": "0xd3c9",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-lls-l1-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "54201",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "138.113.197.42",
+        "dns_id": "0xbb81",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-o1-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "54693",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "138.113.197.42",
+        "dns_id": "0x27ec",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-o1-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "55352",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "138.113.197.42",
+        "dns_id": "0xc63d",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-lls-l1-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "60691",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "172.253.118.113",
+        "dns_id": "0x509e",
+        "plain_text": "google",
+        "sni": "docs.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "10379",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "64.233.170.100",
+        "dns_id": "0x4b0d",
+        "plain_text": "google",
+        "sni": "docs.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "36927",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x6118",
+        "plain_text": "whatsapp",
+        "sni": "dit.whatsapp.net",
+        "ip_source": "192.168.50.87",
+        "port_source": "64422",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "151.101.195.9",
+        "dns_id": "0x2131",
+        "plain_text": "fastly",
+        "sni": "sdk.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "40194",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "151.101.67.9",
+        "dns_id": "0x64ac",
+        "plain_text": "fastly",
+        "sni": "sdk.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "59315",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "71.18.39.231",
+        "dns_id": "0xc69c",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-f5-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "52153",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "84.17.61.17",
+        "dns_id": "0x1920",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-l77-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "55767",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "13.107.5.93",
+        "dns_id": "0xb260",
+        "plain_text": "default",
+        "sni": "default.exp-tas.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "54435",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "89.187.160.196",
+        "dns_id": "0x277a",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-f77-tt01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "51965",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "89.187.160.196",
+        "dns_id": "0x1fb6",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-f77-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "53326",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "89.187.160.196",
+        "dns_id": "0xf3f1",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-f77-tt02.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "57092",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "89.187.160.196",
+        "dns_id": "0x3306",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-f77-tt03.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "57409",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "84.17.61.17",
+        "dns_id": "0x75dc",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-cmaf-l77-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "62228",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "84.17.61.17",
+        "dns_id": "0xb6b7",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-hls-f77-gcp01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "65011",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "84.17.61.17",
+        "dns_id": "0xd582",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-hls-f77-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "62444",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "84.17.61.17",
+        "dns_id": "0x29d0",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-hls-f77-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "64289",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0xeabe",
+        "plain_text": "akamai",
+        "sni": "a1838.dscw154.akamai.net",
+        "ip_source": "192.168.50.87",
+        "port_source": "52311",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "71.18.253.215",
+        "dns_id": "0xa6dd",
+        "plain_text": "frontier",
+        "sni": "frontier.tiktokv.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "57336",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "17.253.61.201",
+        "dns_id": "0xf644",
+        "plain_text": "gspe79",
+        "sni": "gspe79-ssl.ls.apple.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "55028",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "95.85.65.34",
+        "dns_id": "0x7ba3",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f58-tt02.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "59419",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "95.85.65.34",
+        "dns_id": "0xf2fd",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f58-va01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "59636",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "95.85.65.34",
+        "dns_id": "0xf9f2",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f58-sg01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "62804",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "95.85.65.34",
+        "dns_id": "0xfb43",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f58-tt04.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "62958",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "95.85.65.34",
+        "dns_id": "0x4652",
+        "plain_text": "tiktokcdn",
+        "sni": "pull-flv-f58-tt01.tiktokcdn.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "65175",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x598d",
+        "plain_text": "safebrowsing",
+        "sni": "safebrowsing.googleapis.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "26598",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0xea84",
+        "plain_text": "gspe79",
+        "sni": "gspe79-cdn.g.aaplimg.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "63883",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x14a0",
+        "plain_text": "whatsapp",
+        "sni": "graph.whatsapp.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "63525",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "157.240.13.54",
+        "dns_id": "0x40cf",
+        "plain_text": "whatsapp",
+        "sni": "dit.whatsapp.net",
+        "ip_source": "192.168.50.87",
+        "port_source": "59767",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x90e3",
+        "plain_text": "whatsapp",
+        "sni": "mmx-ds.cdn.whatsapp.net",
+        "ip_source": "192.168.50.87",
+        "port_source": "61465",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "35.170.228.5",
+        "dns_id": "0xb841",
+        "sni": "auth.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "25004",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "44.197.221.236",
+        "dns_id": "0x086e",
+        "sni": "auth.split.io",
+        "ip_source": "192.168.50.96",
+        "port_source": "28449",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x385a",
+        "plain_text": "accounts",
+        "sni": "accounts.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "52631",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "64.233.170.132",
+        "dns_id": "0xc338",
+        "plain_text": "photos",
+        "sni": "yt3.ggpht.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "17024",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x7d8a",
+        "plain_text": "gstatic",
+        "sni": "ssl.gstatic.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "41905",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "104.75.84.17",
+        "dns_id": "0x6ff4",
+        "plain_text": "akamai",
+        "sni": "a1838.dscw154.akamai.net",
+        "ip_source": "192.168.50.87",
+        "port_source": "52606",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "222.165.168.202",
+        "dns_id": "0xb168",
+        "plain_text": "akamai",
+        "sni": "a1838.dscw154.akamai.net",
+        "ip_source": "192.168.50.87",
+        "port_source": "65211",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0xd8fd",
+        "plain_text": "google",
+        "sni": "docs.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "7343",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "1 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0xa397",
+        "plain_text": "youtube",
+        "sni": "www.youtube.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "24062",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "142.251.12.188",
+        "dns_id": "0xe28f",
+        "plain_text": "google",
+        "sni": "mtalk.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "33342",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "142.251.10.188",
+        "dns_id": "0xbb46",
+        "plain_text": "google",
+        "sni": "mtalk.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "37019",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "157.240.13.14",
+        "dns_id": "0xe42d",
+        "plain_text": "facebook",
+        "sni": "graph.facebook.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "51044",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "172.253.118.94",
+        "dns_id": "0x9b1d",
+        "plain_text": "clientservices",
+        "sni": "clientservices.googleapis.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "23151",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "1 <-> 1",
+            "1 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "157.240.13.54",
+        "dns_id": "0xead2",
+        "plain_text": "whatsapp",
+        "sni": "media-sin6-2.cdn.whatsapp.net",
+        "ip_source": "192.168.50.96",
+        "port_source": "63652",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "74.125.200.95",
+        "dns_id": "0xd295",
+        "plain_text": "safebrowsing",
+        "sni": "safebrowsing.googleapis.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "37142",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "157.240.13.54",
+        "dns_id": "0x57f7",
+        "plain_text": "whatsapp",
+        "sni": "graph.whatsapp.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "61778",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "147.50.207.114",
+        "dns_id": "0x2c12",
+        "plain_text": "byteoversea",
+        "sni": "api39.gtm.byteoversea.net",
+        "ip_source": "192.168.50.87",
+        "port_source": "62231",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "89.187.160.196",
+        "dns_id": "0xeb3b",
+        "plain_text": "1544820005",
+        "sni": "1544820005.rsc.cdn77.org",
+        "ip_source": "192.168.50.87",
+        "port_source": "64588",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "157.240.13.14",
+        "dns_id": "0xfdac",
+        "plain_text": "facebook",
+        "sni": "star.c10r.facebook.com",
+        "ip_source": "192.168.50.87",
+        "port_source": "55479",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 7,
+        "exchanged_packets": [
+            "1 <-> 1",
+            "1 <-> 1",
+            "1 <-> 1",
+            "1 <-> 1",
+            "1 <-> 1",
+            "1 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "157.240.13.55",
+        "dns_id": "0x6453",
+        "plain_text": "whatsapp",
+        "sni": "chat.cdn.whatsapp.net",
+        "ip_source": "192.168.50.87",
+        "port_source": "53299",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "1 <-> 1",
+            "1 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "157.240.13.55",
+        "dns_id": "0xee25",
+        "plain_text": "whatsapp",
+        "sni": "chat.cdn.whatsapp.net",
+        "ip_source": "192.168.50.96",
+        "port_source": "55805",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "142.250.4.84",
+        "dns_id": "0x1da6",
+        "plain_text": "accounts",
+        "sni": "accounts.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "58329",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "142.250.4.94",
+        "dns_id": "0x4a01",
+        "plain_text": "gstatic",
+        "sni": "ssl.gstatic.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "10572",
+        "ip_destination": "192.168.50.1",
+        "port_destination": "53",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "1 <-> 1",
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0xc1f1",
+        "plain_text": "clientservices",
+        "sni": "clientservices.googleapis.com",
+        "risk": "** Unidirectional Traffic **",
+        "risk_score": "10",
+        "risk_info": "No server to client traffic",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "1 <-> 0",
+            "1 <-> 0"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x2248",
+        "plain_text": "vscode",
+        "sni": "main.vscode-cdn.net",
+        "risk": "** Unidirectional Traffic **",
+        "risk_score": "10",
+        "risk_info": "No server to client traffic",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "1 <-> 0",
+            "1 <-> 0"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "dns_ip": "0.0.0.0",
+        "dns_id": "0x218d",
+        "plain_text": "gstatic",
+        "sni": "ssl.gstatic.com",
+        "risk": "** Unidirectional Traffic **",
+        "risk_score": "10",
+        "risk_info": "No server to client traffic",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 0"
+        ]
+    }
+]

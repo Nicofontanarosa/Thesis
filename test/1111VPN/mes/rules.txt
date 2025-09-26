@@ -1,0 +1,5 @@
+host:"content-autofill.googleapis.com",host:"doubleclick.net",host:"gstatic.com",host:"hbopenbid.pubmatic.com",host:"lh3.googleusercontent.com"@whois: domains by proxy, llc, google llc & AI: unknown
+host:"apple.com",host:"icloud.com",host:"s.mzstatic.com",host:"sgsin8.icloud-content.com"@whois: apple inc. & AI: unknown
+host:"btlr.sharethrough.com",host:"rubiconproject.com"@whois: domains by proxy, llc, unknown & AI: unknown
+host:"c2shb.pubgw.yahoo.com",host:"secure-us.imrworldwide.com"@whois: the nielsen company, yahoo assets llc & AI: unknown
+host:"prebid.media.net"@whois: media.net advertising fz-llc & AI: unknown

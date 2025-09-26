@@ -1,0 +1,3 @@
+host:"gsp-ssl.ls.apple.com"@whois: apple inc. & AI: unknown
+host:"split.io"@whois: unknown & AI: unknown
+host:"releases.obsidian.md"@whois: unknown & AI: unknown

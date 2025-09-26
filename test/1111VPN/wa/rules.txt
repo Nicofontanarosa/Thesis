@@ -1,0 +1,3 @@
+host:"apple.com",host:"edge-106.sgsin8.icloud-content.com",host:"p168-content.icloud.com"@whois: apple inc. & AI: unknown
+host:"split.io"@whois: unknown & AI: unknown
+host:"api.termius.com"@whois: identity protection service & AI: unknown

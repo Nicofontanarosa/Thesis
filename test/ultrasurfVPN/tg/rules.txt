@@ -1,0 +1,2 @@
+host:"edge-chat.facebook.com",host:"googleapis.com",host:"instagram.com",host:"ogads-pa.clients6.google.com"@whois: google llc, instagram llc, meta platforms, inc. & AI: unknown
+host:"setting.imoim.net"@whois: unknown & AI: unknown

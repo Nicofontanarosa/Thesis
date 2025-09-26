@@ -1,0 +1,6 @@
+host:"edge-037.inbom2.icloud-content.com",host:"icloud.com"@whois: apple inc. & AI: unknown
+host:"edge-chat.facebook.com",host:"www.instagram.com"@whois: instagram llc, meta platforms, inc. & AI: unknown
+host:"apple.com"@whois: apple inc. & AI: unknown
+host:"googleapis.com"@whois: google llc & AI: unknown
+host:"conf.letsmessagenow.com"@whois: unknown & AI: unknown
+host:"split.io"@whois: unknown & AI: unknown

@@ -1,0 +1,8 @@
+host:"instagram.com",host:"mail-attachment.googleusercontent.com"@whois: google llc, instagram llc & AI: unknown
+host:"media1.giphy.com"@whois: domains by proxy, llc & AI: unknown
+host:"client-api.itunes.apple.com"@whois: apple inc. & AI: unknown
+host:"mail.google.com"@whois: google llc & AI: unknown
+host:"api.termius.com"@whois: identity protection service & AI: unknown
+host:"split.io"@whois: unknown & AI: unknown
+host:"clientservices.googleapis.com"@whois:  & AI: unknown
+host:"dit.whatsapp.net"@whois: whatsapp llc & AI: unknown

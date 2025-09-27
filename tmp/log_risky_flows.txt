@@ -2,41 +2,1798 @@
 
 >> Risky Flow:
 
-  + ip_field: 119/Facebook
+  + ip_field: 0/Unknown
   + transport_protocol: TCP
-  + proto_field: 91.157/TLS.FacebookMessenger
-  + tls_version: TLSv1.3
-  + ja3s: fcb2d4d0991292272fcb1e464eedfd43
-  + ja4: t00d030800_55b375c5d22e_566d5108064c
-  + [green]sni: edge-mqtt.facebook.com[/green]
-  + ip_source: 192.168.50.22
-  + port_source: 54906
-  + ip_destination: 157.240.13.10
-  + port_destination: 443
+  + proto_field: 130/HTTP_Connect
+  + url: mediaim.expedia.com:443
+  + plain_text: CONNECT mediaim.expedia.com
+  + [green]sni: mediaim.expedia.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65156
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
   + tcp_fingerprint: 194_64_65535_d29295416479/macOS
-  + [red]risk: ** TLS (probably) Not Carrying HTTPS **[/red]
-  + [red]risk_score: 10[/red]
-  + [red]risk_info: No ALPN[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['48 <-> 45'\]
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 7
+  + exchanged_packets: \['873 <-> 16990', '175 <-> 1589', '76 <-> 480', '73 <-> 291', '79 <-> 220', '112 <-> 115', '38 <-> 46'\]
+  + ja4: a09f3c656075_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
 
 
 >> Risky Flow:
 
-  + ip_field: 126/Google
+  + ip_field: 0/Unknown
   + transport_protocol: TCP
-  + proto_field: 91.239/TLS.GoogleServices
-  + tls_version: TLSv1.3
-  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
-  + ja4: t13d151400_8daaf6152771_0a20fe35d3a5
-  + [green]sni: mtalk.google.com[/green]
-  + ip_source: 192.168.50.96
-  + port_source: 53173
-  + ip_destination: 142.251.10.188
-  + port_destination: 5228
+  + proto_field: 130/HTTP_Connect
+  + url: images.trvl-media.com:443
+  + plain_text: CONNECT images.trvl
+  + [green]sni: images.trvl-media.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65221
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
   + tcp_fingerprint: 194_64_65535_d29295416479/macOS
-  + [red]risk: ** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **[/red]
-  + [red]risk_score: 60[/red]
-  + [red]risk_info: No ALPN / Expected on port 443[/red]
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['1285 <-> 16603', '17 <-> 17'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: c.travel-assets.com:443
+  + plain_text: CONNECT c.travel
+  + [green]sni: c.travel-assets.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65131
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 4
+  + exchanged_packets: \['410 <-> 10081', '172 <-> 6134', '124 <-> 1099', '32 <-> 59'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.expedia.com:443
+  + plain_text: CONNECT www.expedia.com
+  + [green]sni: www.expedia.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65046
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 922
+  + exchanged_packets: \['2991 <-> 4808', '965 <-> 1105', '575 <-> 597', '924 <-> 618', '535 <-> 502', '485 <-> 520', '36 <-> 168', '25 <-> 21', '22 <-> 22', '22 <-> 19', '21 <-> 21', '21 <-> 21', '21 <-> 20', '21 <-> 20', '21 <-> 20', '20 <-> 20', '21 <-> 19', '19 <-> 20', '20 <-> 21', '21 <-> 22', '20 <-> 19', '21 <-> 22', '19 <-> 19', '21 <-> 21', '21 <-> 22', '21 <-> 22', '21 <-> 22', '21 <-> 22', '21 <-> 22', '20 <-> 20', '21 <-> 19', '21 <-> 21', '21 <-> 21', '21 <-> 21', '21 <-> 20', '20 <-> 19', '21 <-> 20', '20 <-> 21', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '19 <-> 20', '19 <-> 20', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '19 <-> 20', '19 <-> 20', '19 <-> 19', '19 <-> 19', '19 <-> 19', '21 <-> 20', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '18 <-> 19', '20 <-> 19', '21 <-> 20', '19 <-> 20', '20 <-> 20', '20 <-> 20', '21 <-> 20', '21 <-> 20', '19 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '22 <-> 22', '20 <-> 20', '20 <-> 20', '20 <-> 19', '20 <-> 20', '20 <-> 19', '20 <-> 19', '19 <-> 20', '20 <-> 19', '20 <-> 18', '20 <-> 19', '20 <-> 18', '20 <-> 18', '20 <-> 18', '19 <-> 19', '19 <-> 19', '20 <-> 18', '19 <-> 19', '21 <-> 20', '19 <-> 18', '18 <-> 19', '21 <-> 19', '20 <-> 19', '20 <-> 21', '20 <-> 19', '20 <-> 20', '20 <-> 18', '19 <-> 21', '20 <-> 20', '20 <-> 20', '19 <-> 18', '20 <-> 19', '19 <-> 20', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '19 <-> 18', '20 <-> 20', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 18', '18 <-> 19', '18 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 19', '19 <-> 19', '18 <-> 18', '19 <-> 18', '19 <-> 18', '20 <-> 21', '20 <-> 19', '21 <-> 20', '20 <-> 21', '20 <-> 18', '20 <-> 18', '20 <-> 18', '20 <-> 19', '20 <-> 19', '20 <-> 20', '18 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 17', '19 <-> 17', '18 <-> 18', '21 <-> 21', '20 <-> 21', '20 <-> 18', '20 <-> 21', '19 <-> 18', '19 <-> 18', '21 <-> 22', '21 <-> 22', '20 <-> 21', '20 <-> 19', '20 <-> 20', '20 <-> 20', '19 <-> 18', '20 <-> 19', '20 <-> 20', '20 <-> 20', '21 <-> 21', '21 <-> 21', '21 <-> 21', '20 <-> 21', '21 <-> 21', '19 <-> 20', '21 <-> 20', '20 <-> 19', '20 <-> 19', '19 <-> 19', '19 <-> 20', '20 <-> 19', '20 <-> 19', '21 <-> 20', '20 <-> 21', '21 <-> 20', '21 <-> 20', '21 <-> 20', '20 <-> 21', '20 <-> 21', '20 <-> 21', '20 <-> 21', '20 <-> 21', '20 <-> 21', '20 <-> 21', '20 <-> 21', '19 <-> 19', '20 <-> 20', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '20 <-> 19', '20 <-> 19', '19 <-> 19', '20 <-> 20', '19 <-> 19', '15 <-> 14', '20 <-> 20', '19 <-> 19', '21 <-> 19', '19 <-> 19', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '19 <-> 19', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '21 <-> 19', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '19 <-> 21', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '19 <-> 21', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '21 <-> 19', '20 <-> 20', '20 <-> 20', '19 <-> 18', '20 <-> 20', '20 <-> 20', '19 <-> 21', '21 <-> 18', '21 <-> 19', '19 <-> 18', '19 <-> 19', '19 <-> 18', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '19 <-> 18', '20 <-> 19', '19 <-> 20', '19 <-> 19', '19 <-> 18', '19 <-> 19', '20 <-> 19', '19 <-> 18', '20 <-> 19', '20 <-> 19', '19 <-> 20', '20 <-> 19', '19 <-> 20', '19 <-> 20', '19 <-> 20', '20 <-> 19', '20 <-> 19', '20 <-> 19', '19 <-> 19', '20 <-> 19', '20 <-> 19', '19 <-> 20', '19 <-> 20', '19 <-> 20', '19 <-> 20', '20 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 20', '19 <-> 20', '20 <-> 19', '19 <-> 20', '20 <-> 19', '19 <-> 20', '20 <-> 19', '19 <-> 20', '19 <-> 20', '20 <-> 19', '20 <-> 19', '20 <-> 19', '19 <-> 20', '19 <-> 20', '19 <-> 20', '19 <-> 19', '19 <-> 20', '20 <-> 19', '20 <-> 19', '20 <-> 18', '20 <-> 18', '19 <-> 20', '20 <-> 19', '19 <-> 20', '19 <-> 19', '19 <-> 20', '20 <-> 21', '20 <-> 18', '19 <-> 19', '19 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 19', '20 <-> 18', '20 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '20 <-> 18', '18 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 19', '18 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '20 <-> 18', '19 <-> 19', '18 <-> 19', '19 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '20 <-> 17', '19 <-> 19', '19 <-> 19', '19 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 19', '18 <-> 17', '19 <-> 19', '18 <-> 17', '19 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 17', '18 <-> 17', '18 <-> 17', '19 <-> 18', '19 <-> 18', '19 <-> 18', '20 <-> 17', '18 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '20 <-> 21', '20 <-> 17', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 17', '19 <-> 18', '18 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 17', '19 <-> 18', '18 <-> 19', '19 <-> 18', '18 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '18 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 17', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '18 <-> 19', '19 <-> 18', '18 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 17', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 17', '21 <-> 19', '19 <-> 18', '20 <-> 21', '20 <-> 20', '19 <-> 20', '19 <-> 19', '20 <-> 19', '19 <-> 17', '19 <-> 17', '19 <-> 17', '20 <-> 19', '20 <-> 19', '18 <-> 18', '19 <-> 17', '18 <-> 18', '18 <-> 18', '20 <-> 20', '19 <-> 17', '19 <-> 17', '18 <-> 18', '18 <-> 17', '19 <-> 17', '18 <-> 18', '18 <-> 18', '20 <-> 20', '18 <-> 18', '18 <-> 18', '18 <-> 18', '18 <-> 19', '20 <-> 19', '20 <-> 19', '19 <-> 19', '18 <-> 17', '18 <-> 19', '19 <-> 18', '19 <-> 20', '20 <-> 20', '19 <-> 19', '20 <-> 21', '20 <-> 21', '20 <-> 21', '20 <-> 18', '19 <-> 19', '18 <-> 17', '19 <-> 19', '18 <-> 20', '19 <-> 19', '18 <-> 17', '18 <-> 17', '19 <-> 16', '18 <-> 17', '18 <-> 17', '18 <-> 17', '19 <-> 16', '20 <-> 19', '18 <-> 17', '18 <-> 19', '18 <-> 17', '21 <-> 19', '20 <-> 20', '20 <-> 18', '19 <-> 18', '20 <-> 20', '20 <-> 20', '20 <-> 20', '19 <-> 21', '19 <-> 20', '20 <-> 19', '19 <-> 18', '18 <-> 18', '19 <-> 18', '19 <-> 18', '20 <-> 18', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '20 <-> 20', '19 <-> 18', '19 <-> 18', '20 <-> 20', '20 <-> 19', '20 <-> 19', '18 <-> 20', '18 <-> 19', '20 <-> 19', '18 <-> 19', '20 <-> 19', '19 <-> 18', '19 <-> 19', '19 <-> 18', '18 <-> 16', '20 <-> 19', '19 <-> 19', '20 <-> 19', '20 <-> 19', '19 <-> 19', '20 <-> 19', '20 <-> 19', '18 <-> 19', '20 <-> 19', '19 <-> 18', '20 <-> 19', '18 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 18', '18 <-> 19', '20 <-> 19', '19 <-> 20', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '19 <-> 18', '20 <-> 19', '18 <-> 19', '19 <-> 20', '19 <-> 19', '19 <-> 19', '19 <-> 18', '20 <-> 18', '19 <-> 19', '19 <-> 20', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '19 <-> 20', '20 <-> 19', '20 <-> 19', '19 <-> 20', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '20 <-> 19', '19 <-> 20', '20 <-> 19', '19 <-> 17', '20 <-> 19', '20 <-> 19', '18 <-> 19', '19 <-> 17', '18 <-> 19', '18 <-> 19', '18 <-> 19', '18 <-> 18', '20 <-> 18', '19 <-> 19', '20 <-> 18', '19 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 19', '19 <-> 19', '20 <-> 18', '20 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '20 <-> 18', '20 <-> 18', '20 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 17', '20 <-> 18', '19 <-> 19', '20 <-> 18', '19 <-> 19', '20 <-> 18', '19 <-> 19', '20 <-> 18', '20 <-> 18', '19 <-> 19', '18 <-> 19', '18 <-> 19', '19 <-> 18', '20 <-> 18', '19 <-> 19', '19 <-> 18', '19 <-> 19', '18 <-> 19', '18 <-> 19', '19 <-> 18', '19 <-> 18', '20 <-> 18', '19 <-> 19', '19 <-> 18', '19 <-> 19', '20 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 19', '20 <-> 18', '20 <-> 18', '19 <-> 19', '19 <-> 19', '20 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 19', '20 <-> 18', '19 <-> 19', '18 <-> 18', '19 <-> 19', '19 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 18', '19 <-> 19', '19 <-> 19', '20 <-> 18', '19 <-> 19', '19 <-> 19', '19 <-> 19', '19 <-> 19', '20 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '18 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 17', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 17', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '18 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '18 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 17', '18 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '18 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '18 <-> 19', '17 <-> 19', '20 <-> 17', '20 <-> 17', '18 <-> 18', '17 <-> 19', '19 <-> 18', '18 <-> 19', '18 <-> 18', '17 <-> 18', '18 <-> 18', '19 <-> 17', '18 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '18 <-> 19', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 18', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 18', '19 <-> 18', '19 <-> 17', '19 <-> 18', '19 <-> 17', '18 <-> 18', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 17', '18 <-> 19', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 17', '18 <-> 18', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 17', '17 <-> 18', '19 <-> 17', '18 <-> 18', '18 <-> 18', '17 <-> 19', '17 <-> 18', '18 <-> 18', '19 <-> 17', '20 <-> 19', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 17', '19 <-> 17', '18 <-> 18', '19 <-> 17', '19 <-> 17', '19 <-> 17', '18 <-> 18', '19 <-> 17', '19 <-> 17', '19 <-> 16', '18 <-> 17', '18 <-> 18', '18 <-> 18', '18 <-> 18', '19 <-> 16', '19 <-> 16', '18 <-> 17', '17 <-> 18', '18 <-> 16', '17 <-> 16', '17 <-> 17', '17 <-> 17', '20 <-> 20', '15 <-> 15', '19 <-> 18', '19 <-> 18', '17 <-> 18'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: a.travel-assets.com:443
+  + plain_text: yCONNECT a.travel
+  + [green]sni: a.travel-assets.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65118
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 3
+  + exchanged_packets: \['366 <-> 3895', '137 <-> 435', '40 <-> 71'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: ingest.quantummetric.com:443
+  + plain_text: CONNECT ingest.quantummetric.co
+  + [green]sni: ingest.quantummetric.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65419
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 7
+  + exchanged_packets: \['1403 <-> 236', '187 <-> 82', '146 <-> 74', '93 <-> 45', '99 <-> 54', '57 <-> 32', '44 <-> 36'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: forever.travel-assets.com:443
+  + plain_text: CONNECT forever.travel
+  + [green]sni: forever.travel-assets.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65051
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['135 <-> 1291', '103 <-> 443'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: z.travel-assets.com:443
+  + plain_text: CONNECT z.travel
+  + [green]sni: z.travel-assets.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49838
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
   + similar_flows_count: 1
-  + exchanged_packets: \['21 <-> 21'\]
+  + exchanged_packets: \['142 <-> 838'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: contents.odysol.com:443
+  + plain_text: CONNECT contents.odysol.com
+  + [green]sni: contents.odysol.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49892
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['272 <-> 771'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: vac.vap.expedia.com:443
+  + plain_text: CONNECT vac.vap.expedia.com
+  + [green]sni: vac.vap.expedia.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49858
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['229 <-> 743'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: src.mastercard.com:443
+  + plain_text: CONNECT src.mastercard.com
+  + [green]sni: src.mastercard.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49662
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['176 <-> 652'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: sdk.wellsfargo.com:443
+  + plain_text: CONNECT sdk.wellsfargo.com
+  + [green]sni: sdk.wellsfargo.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49733
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 6
+  + exchanged_packets: \['86 <-> 331', '87 <-> 315', '35 <-> 68', '25 <-> 51', '20 <-> 26', '14 <-> 15'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: browser-intake-datadoghq.com:443
+  + plain_text: CONNECT browser
+  + [green]sni: browser-intake-datadoghq.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49670
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 8
+  + exchanged_packets: \['292 <-> 108', '120 <-> 61', '118 <-> 51', '108 <-> 54', '96 <-> 39', '90 <-> 61', '18 <-> 18', '21 <-> 17'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: secure.checkout.visa.com:443
+  + plain_text: CONNECT secure.checkout.visa.co
+  + [green]sni: secure.checkout.visa.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49693
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['54 <-> 257'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: cdn.cookielaw.org:443
+  + plain_text: CONNECT cdn.cookielaw.org
+  + [green]sni: cdn.cookielaw.org[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49895
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['51 <-> 214'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.uciservice.com:443
+  + plain_text: CONNECT www.uciservice.com
+  + [green]sni: www.uciservice.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49837
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['105 <-> 185'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: b.travel-assets.com:443
+  + plain_text: CONNECT b.travel
+  + [green]sni: b.travel-assets.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49658
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['61 <-> 125', '19 <-> 24'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: cdn.quantummetric.com:443
+  + plain_text: CONNECT cdn.quantummetric.com
+  + [green]sni: cdn.quantummetric.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49665
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 3
+  + exchanged_packets: \['30 <-> 100', '19 <-> 96', '18 <-> 22'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: expedia-api.arkoselabs.com:443
+  + plain_text: CONNECT expedia
+  + [green]sni: expedia-api.arkoselabs.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65064
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['67 <-> 98'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.app-ads-services.com:443
+  + plain_text: CONNECT www.app
+  + [green]sni: www.app-ads-services.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65090
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['48 <-> 80'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: thm.visa.com:443
+  + plain_text: tCONNECT thm.visa.com
+  + [green]sni: thm.visa.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49713
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 4
+  + exchanged_packets: \['37 <-> 72', '22 <-> 33', '18 <-> 21', '15 <-> 18'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: vap.expedia.com:443
+  + plain_text: CONNECT vap.expedia.com
+  + [green]sni: vap.expedia.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49859
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['79 <-> 78', '20 <-> 26'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.cdn-path.com:443
+  + plain_text: CONNECT www.cdn
+  + [green]sni: www.cdn-path.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49723
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['28 <-> 68'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: s.go-mpulse.net:443
+  + plain_text: CONNECT s.go
+  + [green]sni: s.go-mpulse.net[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49874
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['27 <-> 55'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: content.discovercard.com:443
+  + plain_text: CONNECT content.discovercard.co
+  + [green]sni: content.discovercard.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49725
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 7
+  + exchanged_packets: \['27 <-> 59', '21 <-> 29', '20 <-> 28', '26 <-> 25', '18 <-> 17', '16 <-> 17', '6 <-> 6'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.datadoghq-browser-agent.com:443
+  + plain_text: hCONNECT www.datadoghq
+  + [green]sni: www.datadoghq-browser-agent.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49666
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **** Susp Entropy **[/red]
+  + [red]risk_score: 160[/red]
+  + [red]risk_info: Entropy: 4.945 (Executable?) / Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['24 <-> 53'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: egus.odysol.com:443
+  + plain_text: iCONNECT egus.odysol.com
+  + [green]sni: egus.odysol.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49893
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['48 <-> 64'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: icm.aexp-static.com:443
+  + plain_text: @CONNECT icm.aexp
+  + [green]sni: icm.aexp-static.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49708
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['31 <-> 50'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.uqd.io:443
+  + plain_text: gHCONNECT www.uqd.io
+  + [green]sni: www.uqd.io[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49676
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['26 <-> 47', '19 <-> 43'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: vacadapter.vap.expedia.com:443
+  + plain_text: CONNECT vacadapter.vap.expedia.
+  + [green]sni: vacadapter.vap.expedia.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49853
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['27 <-> 41'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: t.promotionx.io:443
+  + plain_text: CONNECT t.promotionx.io
+  + [green]sni: t.promotionx.io[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49688
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['24 <-> 46', '23 <-> 41'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: connect.secure.wellsfargo.com:443
+  + plain_text: CONNECT connect.secure.wellsfar
+  + [green]sni: connect.secure.wellsfargo.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49739
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['28 <-> 43'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: webapp.src.discover.com:443
+  + plain_text: OCONNECT webapp.src.discover.co
+  + [green]sni: webapp.src.discover.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49695
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['29 <-> 44'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: api2.branch.io:443
+  + plain_text: eCONNECT api2.branch.io
+  + [green]sni: api2.branch.io[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65032
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['59 <-> 47'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: wfgaccess.wellsfargo.com:443
+  + plain_text: CONNECT wfgaccess.wellsfargo.co
+  + [green]sni: wfgaccess.wellsfargo.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49751
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 12
+  + exchanged_packets: \['43 <-> 44', '23 <-> 25', '23 <-> 24', '22 <-> 23', '22 <-> 23', '24 <-> 26', '17 <-> 19', '15 <-> 17', '16 <-> 18', '16 <-> 18', '14 <-> 16', '14 <-> 16'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: e54965894d6b45ecb4323c7ea3d6c115
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.aexp-static.com:443
+  + plain_text: CONNECT www.aexp
+  + [green]sni: www.aexp-static.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49694
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['30 <-> 45'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: code.jquery.com:443
+  + plain_text: CONNECT code.jquery.com
+  + [green]sni: code.jquery.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49707
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['25 <-> 39'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: znbbf46ejn8vkhysu-expediaxm.siteintercept.qualtrics.com:443
+  + plain_text: CONNECT z
+  + [green]sni: znbbf46ejn8vkhysu-expediaxm.siteintercept.qualtrics.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65039
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **** Susp Entropy **[/red]
+  + [red]risk_score: 160[/red]
+  + [red]risk_info: Entropy: 5.064 (Executable?) / Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['48 <-> 54'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: static.pay.expedia.com:443
+  + plain_text: CONNECT static.pay.expedia.com
+  + [green]sni: static.pay.expedia.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49663
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['32 <-> 37'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: mpsnare.iesnare.com:443
+  + plain_text: /aCONNECT mpsnare.iesnare.com
+  + [green]sni: mpsnare.iesnare.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49669
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 3
+  + exchanged_packets: \['21 <-> 38', '16 <-> 16', '16 <-> 16'\]
+  + ja4: a09f3c656075_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: cdn.tagcommander.com:443
+  + plain_text: CONNECT cdn.tagcommander.com
+  + [green]sni: cdn.tagcommander.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49667
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['23 <-> 35', '22 <-> 31'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: ep1.adtrafficquality.google:443
+  + plain_text: CONNECT ep1.adtrafficquality.go
+  + [green]sni: ep1.adtrafficquality.google[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49873
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['22 <-> 29'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: privacyportal.onetrust.com:443
+  + plain_text: CONNECT privacyportal.onetrust.
+  + [green]sni: privacyportal.onetrust.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49900
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['21 <-> 17', '11 <-> 13'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: ep2.adtrafficquality.google:443
+  + plain_text: CONNECT ep2.adtrafficquality.go
+  + [green]sni: ep2.adtrafficquality.google[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49876
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['25 <-> 32'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: srcdcf.americanexpress.com:443
+  + plain_text: CONNECT srcdc
+  + [green]sni: srcdcf.americanexpress.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49703
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['18 <-> 25'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: e54965894d6b45ecb4323c7ea3d6c115
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: cdn.jsdelivr.net:443
+  + plain_text: CONNECT cdn.j
+  + [green]sni: cdn.jsdelivr.net[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49709
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['21 <-> 28', '13 <-> 15'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: pdx-col.eum-appdynamics.com:443
+  + plain_text: CONNECT pdx
+  + [green]sni: pdx-col.eum-appdynamics.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49757
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['24 <-> 20'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 50a9e7b112931e541503e8a2499252b9
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: att.conversions.appsflyersdk.com:443
+  + plain_text: CONNECT att.conversions.appsfly
+  + [green]sni: att.conversions.appsflyersdk.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65052
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['25 <-> 20'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: att.attr.appsflyersdk.com:443
+  + plain_text: CONNECT att.attr.appsflyersdk.c
+  + [green]sni: att.attr.appsflyersdk.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65055
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['25 <-> 19'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.trvl-px.com:443
+  + plain_text: CONNECT www.trvl
+  + [green]sni: www.trvl-px.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49849
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 4
+  + exchanged_packets: \['25 <-> 29', '20 <-> 22', '16 <-> 19', '17 <-> 18'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: rl.quantummetric.com:443
+  + plain_text: CONNECT rl.quantummetric.com
+  + [green]sni: rl.quantummetric.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49885
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 5
+  + exchanged_packets: \['33 <-> 31', '24 <-> 24', '23 <-> 23', '17 <-> 18', '19 <-> 19'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: trkn.us:443
+  + plain_text: CONNECT trkn.us
+  + [green]sni: trkn.us[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49847
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['17 <-> 18'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: mcbnck8rxcs7cyrnvfcfd43796q0.device.marketingcloudapis.com:443
+  + plain_text: CONNECT mcbnck8
+  + [green]sni: mcbnck8rxcs7cyrnvfcfd43796q0.device.marketingcloudapis.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65075
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **** Susp DGA Domain name **** Susp Entropy **[/red]
+  + [red]risk_score: 260[/red]
+  + [red]risk_info: Entropy: 5.121 (Executable?) / mcbnck8rxcs7cyrnvfcfd43796q0.device.marketingcloudapis.com / Empty or missing User-Agent / Expe[/red]
+  + similar_flows_count: 4
+  + exchanged_packets: \['16 <-> 18', '15 <-> 16', '15 <-> 16', '13 <-> 12'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: e54965894d6b45ecb4323c7ea3d6c115
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.expediapartnercentral.com:443
+  + plain_text: CONNECT www.expediapartnercentr
+  + [green]sni: www.expediapartnercentral.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49715
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['19 <-> 20', '13 <-> 15'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: src.apis.discover.com:443
+  + plain_text: CONNECT src.apis.discover.com
+  + [green]sni: src.apis.discover.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49718
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['21 <-> 21', '18 <-> 19'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: region1.app-analytics-services-att.com:443
+  + plain_text: CONNECT region1.app
+  + [green]sni: region1.app-analytics-services-att.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49886
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 3
+  + exchanged_packets: \['21 <-> 22', '21 <-> 22', '19 <-> 21'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: expedia.com:443
+  + plain_text: bCONNECT expedia.com
+  + [green]sni: expedia.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49896
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['15 <-> 15'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.vrbo.com:443
+  + plain_text: CONNECT www.vrbo.com
+  + [green]sni: www.vrbo.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49705
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['20 <-> 21', '14 <-> 16'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: onboarding.expediapartnercentral.com:443
+  + plain_text: wCONNECT onboarding.expediapart
+  + [green]sni: onboarding.expediapartnercentral.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49720
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['18 <-> 19', '13 <-> 14'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: h.online-metrix.net:443
+  + plain_text: CONNECT h.online
+  + [green]sni: h.online-metrix.net[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49728
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['18 <-> 19'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.expedia.com:443
+  + plain_text: ACONNECT www.expedia.com
+  + [green]sni: www.expedia.com[/green]
+  + ip_source: 192.168.0.21
+  + port_source: 9000
+  + ip_destination: 192.168.0.86
+  + port_destination: 65205
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['19 <-> 18'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.hotels.com:443
+  + plain_text: CONNECT www.hotels.com
+  + [green]sni: www.hotels.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49687
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['19 <-> 20', '15 <-> 17'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: h64.online-metrix.net:443
+  + plain_text: CONNECT h
+  + [green]sni: h64.online-metrix.net[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49717
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['18 <-> 18'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: globalsiteanalytics.com:443
+  + plain_text: CONNECT globalsiteanalytics.com
+  + [green]sni: globalsiteanalytics.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49741
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['17 <-> 17'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: yclqkn.dynamic-report-api.appsflyersdk.com:443
+  + plain_text: CONNECT ycl
+  + [green]sni: yclqkn.dynamic-report-api.appsflyersdk.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65021
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['19 <-> 20'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.trivago.com:443
+  + plain_text: CONNECT www.trivago.com
+  + [green]sni: www.trivago.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49675
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['18 <-> 17'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: app-analytics-services.com:443
+  + plain_text: CONNECT app
+  + [green]sni: app-analytics-services.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65058
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['18 <-> 20', '19 <-> 17'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: yclqkn.dynamic-config-api.appsflyersdk.com:443
+  + plain_text: XCONNECT yclq
+  + [green]sni: yclqkn.dynamic-config-api.appsflyersdk.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65054
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['19 <-> 17'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: yclqkn.cdn-settings.appsflyersdk.com:443
+  + plain_text: uCONNECT yclq
+  + [green]sni: yclqkn.cdn-settings.appsflyersdk.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65020
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['18 <-> 19'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: cdn.branch.io:443
+  + plain_text: CONNECT cdn.branch.io
+  + [green]sni: cdn.branch.io[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65037
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['17 <-> 18'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: yclqkn.skadsdk.appsflyersdk.com:443
+  + plain_text: ACONNECT yclq
+  + [green]sni: yclqkn.skadsdk.appsflyersdk.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65031
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **** Susp DGA Domain name **[/red]
+  + [red]risk_score: 250[/red]
+  + [red]risk_info: yclqkn.skadsdk.appsflyersdk.com / Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['18 <-> 18'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.travelocity.com:443
+  + plain_text: CONNECT www.travelocity.com
+  + [green]sni: www.travelocity.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49700
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['18 <-> 20', '13 <-> 15'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: app-48725c5363069804.mobileapi.usebutton.com:443
+  + plain_text: CONNECT app
+  + [green]sni: app-48725c5363069804.mobileapi.usebutton.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 65011
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **** Susp Entropy **[/red]
+  + [red]risk_score: 160[/red]
+  + [red]risk_info: Entropy: 5.112 (Executable?) / Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['19 <-> 19'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.orbitz.com:443
+  + plain_text: CONNECT www.orbitz.com
+  + [green]sni: www.orbitz.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49696
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['16 <-> 17', '12 <-> 14'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: insight.adsrvr.org:443
+  + plain_text: CONNECT insight.adsrvr.org
+  + [green]sni: insight.adsrvr.org[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49844
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['15 <-> 15'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 50a9e7b112931e541503e8a2499252b9
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: match.adsrvr.org:443
+  + plain_text: CONNECT match.adsrvr.org
+  + [green]sni: match.adsrvr.org[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49674
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['17 <-> 17', '13 <-> 13'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 50a9e7b112931e541503e8a2499252b9
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: www.homeaway.com:443
+  + plain_text: CONNECT www.homeaway.com
+  + [green]sni: www.homeaway.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49712
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['16 <-> 17', '12 <-> 14'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: expedia-realtime.ably.io:443
+  + plain_text: CONNECT expedia
+  + [green]sni: expedia-realtime.ably.io[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49880
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['13 <-> 14'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: expedia-rest.ably.io:443
+  + plain_text: CONNECT expedia
+  + [green]sni: expedia-rest.ably.io[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49881
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['13 <-> 14'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: c.go-mpulse.net:443
+  + plain_text: CONNECT c.go
+  + [green]sni: c.go-mpulse.net[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49879
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['14 <-> 16'\]
+  + ja4: f57a46bbacb6_14788d8d241b
+  + ja3s: 15af977ce25de452b96affa2addb1036
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: clickstream-event-manager-service.test.expedia.com:443
+  + plain_text: CONNECT clickstream
+  + [green]sni: clickstream-event-manager-service.test.expedia.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49207
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **** Error Code **[/red]
+  + [red]risk_score: 160[/red]
+  + [red]risk_info: HTTP Error Code 503 / Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 114
+  + exchanged_packets: \['6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '6 <-> 6', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '4 <-> 4', '3 <-> 3'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 130/HTTP_Connect
+  + url: ir.surveywall-api.survata.com:443
+  + plain_text: CONNECT ir.surveywall
+  + [green]sni: ir.surveywall-api.survata.com[/green]
+  + ip_source: 192.168.0.86
+  + port_source: 49875
+  + ip_destination: 192.168.0.21
+  + port_destination: 9000
+  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
+  + [red]risk: ** Known Proto on Non Std Port **** HTTP Susp User-Agent **** Error Code **[/red]
+  + [red]risk_score: 160[/red]
+  + [red]risk_info: HTTP Error Code 503 / Empty or missing User-Agent / Expected on port 8080[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['5 <-> 6', '5 <-> 6'\]

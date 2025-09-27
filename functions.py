@@ -72,28 +72,37 @@ def normalize_sni_clusters(clusters, sorted_dataset):
         if sni.lower().startswith("www."):
             sni = sni[4:]
 
-        # Split by '.' and remove parts with numbers until we find a "clean" part
         parts = sni.split(".")
-        for i, part in enumerate(parts):
-            if not any(char.isdigit() for char in part):
-                sni = ".".join(parts[i:])
-                break
-        return sni
+        # Split by '.' and remove parts with numbers until we find a "clean" part
+        keep = []
+        for part in reversed(parts):
+            if any(c.isdigit() for c in part):
+                break  # stop qui → scarto tutto ciò che sta a sinistra
+            keep.append(part)
+
+         # keep ora è al contrario → ricostruisco nel giusto ordine
+        keep = list(reversed(keep))
+        normalized = ".".join(keep)
+
+        # se rimane solo 1 pezzo → scarto del tutto
+        if len(keep) <= 1:
+            return None
+        return normalized
 
     normalized_clusters = []
     for cluster in clusters:
-        # Normalize each SNI
-        cluster["sni_list"] = [normalize_sni(sni) for sni in cluster["sni_list"]]
+        # Normalize each SNI ed elimina quelli None
+        normalized_snis = [normalize_sni(sni) for sni in cluster["sni_list"]]
+        normalized_snis = [sni for sni in normalized_snis if sni is not None]
 
-        # Remove SNIs present in sorted_dataset
-        cluster["sni_list"] = [
-            sni for sni in cluster["sni_list"]
-            if sni.lower() not in sorted_dataset
-        ]
+        # Remove SNIs presenti in sorted_dataset
+        filtered_snis = [sni for sni in normalized_snis if sni.lower() not in sorted_dataset]
 
-        # Keep only non-empty clusters
-        if cluster["sni_list"]:
-            normalized_clusters.append(cluster)
+        # Se il cluster ha ancora SNIs → lo tengo
+        if filtered_snis:
+            new_cluster = cluster.copy()
+            new_cluster["sni_list"] = filtered_snis
+            normalized_clusters.append(new_cluster)
 
     return normalized_clusters
 
@@ -102,9 +111,6 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
     output_folder = os.path.dirname(output_file)
     base, _ = os.path.splitext(os.path.basename(output_file))
     json_time_ndpi = os.path.join(output_folder, base + "_k.json")
-
-    # Rank SNIs in final_flows and output ranking to json_time_ndpi
-    rank_sni.rank_sni(final_flows, json_time_ndpi)
 
     # Load the main dataset of known domains
     with open(dataset_file, "r") as f:
@@ -253,6 +259,12 @@ def generate_rules(final_flows, output_file, dataset_file="dataset.json", datase
     # Merge clusters with the existing merging function
     sni_to_use = group_sni.merge_clusters(risultato)
     sni_to_use = normalize_sni_clusters(sni_to_use, sorted_dataset)
+
+    #print(f"\nFinal clusters to classify {sni_to_use}\n")
+
+    if constants.CLUSTER_RANKING:
+        # Rank SNIs in final_flows and output ranking to json_time_ndpi
+        rank_sni.rank_sni(final_flows, json_time_ndpi, sni_to_use)
 
     #print(f"\nClusters after merging:\n{sni_to_use}\n")
 

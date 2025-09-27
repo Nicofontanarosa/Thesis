@@ -1,17 +1,17 @@
->> Flows read: 211
->> Flows kept: 40
->> Flows removed: 171
+>> Flows read: 1362
+>> Flows kept: 1203
+>> Flows removed: 159
 
-   + General flows removed: 81
+   + General flows removed: 134
 
-   + Empty flows removed: 3
+   + Empty flows removed: 1
 
-   + IPv6 flows removed: 70
+   + IPv6 flows removed: 19
 
-   + Incomplete TLS flows removed: 7
+   + Incomplete TLS flows removed: 0
 
-   + No SNI flows removed: 10
+   + No SNI flows removed: 5
 
 >> Flows detected after aggregation:
 
- + 18 flows QUIC, 12 flows TLS
+ + 82 flows HTTP

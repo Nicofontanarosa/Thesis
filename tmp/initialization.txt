@@ -1,17 +1,17 @@
 >> Using existing nDPI JSON:
 
- + .\test\ultrasurfVPN\ig\instagramVideo.json
+ + .\test\expedia\expedia.json
 
 >> Using existing nDPI JSON:
 
- + .\test\ultrasurfVPN\ig\instagramVideo_output_k.json
+ + .\test\expedia\expedia_output_k.json
 
 >> Running initial filtering ...
 
- + input file: .\test\ultrasurfVPN\ig\instagramVideo.json
- + output file: .\test\ultrasurfVPN\ig\instagramVideo_filtered.json
+ + input file: .\test\expedia\expedia.json
+ + output file: .\test\expedia\expedia_filtered.json
 
 >> Running flows filtering ...
 
- + input file: .\test\ultrasurfVPN\ig\instagramVideo_filtered.json
- + output file: .\test\ultrasurfVPN\ig\instagramVideo_output.json
+ + input file: .\test\expedia\expedia_filtered.json
+ + output file: .\test\expedia\expedia_output.json

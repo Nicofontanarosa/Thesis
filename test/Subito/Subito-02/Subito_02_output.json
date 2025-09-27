@@ -48,6 +48,42 @@
         ]
     },
     {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "www.googletagservices.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63315",
+        "ip_destination": "216.58.205.34",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "49 <-> 79"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "lh6.googleusercontent.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63332",
+        "ip_destination": "142.250.180.129",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "65 <-> 73"
+        ]
+    },
+    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -63,6 +99,80 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "101 <-> 127"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "googleads.g.doubleclick.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63298",
+        "ip_destination": "142.251.209.2",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "43 <-> 63"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "ew@5PHX",
+        "sni": "pagead2.googlesyndication.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63329",
+        "ip_destination": "216.58.204.226",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "32 <-> 50"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "tpc.googlesyndication.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63313",
+        "ip_destination": "216.58.205.33",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "23 <-> 26",
+            "14 <-> 10"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "lh3.googleusercontent.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63326",
+        "ip_destination": "142.250.180.129",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "23 <-> 22",
+            "14 <-> 14"
         ]
     },
     {
@@ -106,6 +216,42 @@
         ]
     },
     {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "adservice.google.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63304",
+        "ip_destination": "142.251.209.34",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "23 <-> 33"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "ad.doubleclick.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63300",
+        "ip_destination": "216.58.205.38",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "21 <-> 28"
+        ]
+    },
+    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -121,6 +267,23 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "26 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "sni": "googleads.g.doubleclick.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63325",
+        "ip_destination": "142.251.209.2",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "7 <-> 11"
         ]
     },
     {
@@ -145,6 +308,24 @@
         ]
     },
     {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "pubads.g.doubleclick.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63316",
+        "ip_destination": "216.58.204.226",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 13"
+        ]
+    },
+    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -160,6 +341,25 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "16 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "pagead2.googlesyndication.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63317",
+        "ip_destination": "216.58.204.226",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "21 <-> 17",
+            "10 <-> 7"
         ]
     },
     {
@@ -228,6 +428,24 @@
         ]
     },
     {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "pagead2.googleadservices.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63331",
+        "ip_destination": "216.58.205.34",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "10 <-> 9"
+        ]
+    },
+    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -265,6 +483,24 @@
         ]
     },
     {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "googleads.g.doubleclick.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63319",
+        "ip_destination": "142.251.209.2",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 10"
+        ]
+    },
+    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -285,6 +521,24 @@
         "exchanged_packets": [
             "13 <-> 13",
             "12 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "tpc.googlesyndication.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63327",
+        "ip_destination": "216.58.205.33",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 10"
         ]
     },
     {
@@ -360,6 +614,25 @@
         ]
     },
     {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
+        "sni": "googleads.g.doubleclick.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63333",
+        "ip_destination": "142.251.209.2",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "8 <-> 8",
+            "9 <-> 7"
+        ]
+    },
+    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -379,87 +652,20 @@
     },
     {
         "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "108.157.194.56",
-        "dns_id": "0xede9",
-        "plain_text": "launches",
-        "sni": "4dxsfv.launches.appsflyersdk.com",
+        "transport_protocol": "TCP",
+        "proto_field": "7.212/HTTP.Microsoft",
+        "url": "www.msftconnecttest.com/connecttest.txt",
+        "user_agent": "Microsoft NCSI",
+        "plain_text": "GET /connecttest.txt HTTP/1.1",
+        "sni": "www.msftconnecttest.com",
         "ip_source": "192.168.80.96",
-        "port_source": "65044",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
+        "port_source": "56525",
+        "ip_destination": "83.224.69.203",
+        "port_destination": "80",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "4 <-> 4"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "13.226.175.20",
-        "dns_id": "0x0c21",
-        "plain_text": "mobile",
-        "sni": "mobile-2260.api.privacy-center.org",
-        "ip_source": "192.168.80.96",
-        "port_source": "49769",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "4 <-> 4"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "104.83.126.129",
-        "dns_id": "0xa7c5",
-        "plain_text": "assets",
-        "sni": "assets.subito.it",
-        "ip_source": "192.168.80.96",
-        "port_source": "60225",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "4 <-> 4"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "104.83.126.129",
-        "dns_id": "0xa375",
-        "plain_text": "subito",
-        "sni": "hades.subito.it",
-        "ip_source": "192.168.80.96",
-        "port_source": "51671",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "4 <-> 4"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "3.123.89.98",
-        "dns_id": "0x500f",
-        "plain_text": "presence",
-        "sni": "presence-api-subito.trust.advgo.net",
-        "ip_source": "192.168.80.96",
-        "port_source": "55217",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "3 <-> 3"
+            "5 <-> 5"
         ]
     }
 ]

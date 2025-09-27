@@ -1,5 +1,5 @@
 host:"logs-ingress.svc.vinted.com",host:"vinted.fr"@
 host:"api-sdk.datadome.co",host:"vintedapp.com"@
 host:"vinted.net"@
-host:"sdk.fra-01.braze.eu"@
+host:"braze.eu"@
 host:"rokt.com"@

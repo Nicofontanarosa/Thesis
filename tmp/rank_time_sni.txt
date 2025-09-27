@@ -1,77 +1,224 @@
 >> Temporal ranking:
 
 
- + SNI: edge-mqtt.facebook.com
-  + first_seen:2025-09-06 03:16:58
+ + SNI: www.expedia.com
+  + first_seen:2025-09-18 17:40:58
 
- + SNI: gateway.instagram.com
-  + first_seen:2025-09-06 03:16:58
+ + SNI: app-analytics-services.com
+  + first_seen:2025-09-18 17:40:58
 
- + SNI: www.instagram.com
-  + first_seen:2025-09-06 03:16:58
+ + SNI: app-48725c5363069804.mobileapi.usebutton.com
+  + first_seen:2025-09-18 17:40:58
 
- + SNI: graph.facebook.com
-  + first_seen:2025-09-06 03:16:58
+ + SNI: rl.quantummetric.com
+  + first_seen:2025-09-18 17:40:58
 
- + SNI: web.facebook.com
-  + first_seen:2025-09-06 03:17:03
+ + SNI: yclqkn.dynamic-report-api.appsflyersdk.com
+  + first_seen:2025-09-18 17:40:59
 
- + SNI: clientservices.googleapis.com
-  + first_seen:2025-09-06 03:17:42
+ + SNI: yclqkn.skadsdk.appsflyersdk.com
+  + first_seen:2025-09-18 17:40:59
 
- + SNI: www.youtube.com
-  + first_seen:2025-09-06 03:18:20
+ + SNI: ingest.quantummetric.com
+  + first_seen:2025-09-18 17:40:59
 
- + SNI: yt3.ggpht.com
-  + first_seen:2025-09-06 03:18:20
+ + SNI: api2.branch.io
+  + first_seen:2025-09-18 17:40:59
 
- + SNI: client-api.itunes.apple.com
-  + first_seen:2025-09-06 03:19:16
+ + SNI: znbbf46ejn8vkhysu-expediaxm.siteintercept.qualtrics.com
+  + first_seen:2025-09-18 17:41:00
 
- + SNI: ssl.gstatic.com
-  + first_seen:2025-09-06 03:19:21
+ + SNI: mcbnck8rxcs7cyrnvfcfd43796q0.device.marketingcloudapis.com
+  + first_seen:2025-09-18 17:41:00
 
- + SNI: docs.google.com
-  + first_seen:2025-09-06 03:19:24
+ + SNI: clickstream-event-manager-service.test.expedia.com
+  + first_seen:2025-09-18 17:41:03
 
- + SNI: media-sin6-2.cdn.whatsapp.net
-  + first_seen:2025-09-06 03:19:24
+ + SNI: forever.travel-assets.com
+  + first_seen:2025-09-18 17:41:03
 
- + SNI: dit.whatsapp.net
-  + first_seen:2025-09-06 03:19:55
+ + SNI: att.conversions.appsflyersdk.com
+  + first_seen:2025-09-18 17:41:06
 
- + SNI: googleads.g.doubleclick.net
-  + first_seen:2025-09-06 03:20:01
+ + SNI: att.attr.appsflyersdk.com
+  + first_seen:2025-09-18 17:41:06
 
- + SNI: mtalk.google.com
-  + first_seen:2025-09-06 03:20:06
+ + SNI: yclqkn.dynamic-config-api.appsflyersdk.com
+  + first_seen:2025-09-18 17:41:06
 
- + SNI: sdk.split.io
-  + first_seen:2025-09-06 03:20:06
+ + SNI: region1.app-analytics-services-att.com
+  + first_seen:2025-09-18 17:41:09
 
- + SNI: auth.split.io
-  + first_seen:2025-09-06 03:20:07
+ + SNI: browser-intake-datadoghq.com
+  + first_seen:2025-09-18 17:41:21
 
- + SNI: api.termius.com
-  + first_seen:2025-09-06 03:20:15
+ + SNI: expedia-api.arkoselabs.com
+  + first_seen:2025-09-18 17:41:47
 
- + SNI: streaming.split.io
-  + first_seen:2025-09-06 03:21:08
+ + SNI: www.app-ads-services.com
+  + first_seen:2025-09-18 17:42:29
 
- + SNI: accounts.google.com
-  + first_seen:2025-09-06 03:21:25
+ + SNI: a.travel-assets.com
+  + first_seen:2025-09-18 17:42:38
 
- + SNI: mail.google.com
-  + first_seen:2025-09-06 03:22:11
+ + SNI: c.travel-assets.com
+  + first_seen:2025-09-18 17:42:38
 
- + SNI: mail-attachment.googleusercontent.com
-  + first_seen:2025-09-06 03:22:13
+ + SNI: mediaim.expedia.com
+  + first_seen:2025-09-18 17:42:39
 
- + SNI: safebrowsing.googleapis.com
-  + first_seen:2025-09-06 03:22:18
+ + SNI: images.trvl-media.com
+  + first_seen:2025-09-18 17:42:45
 
- + SNI: dns.google
-  + first_seen:2025-09-06 03:23:10
+ + SNI: b.travel-assets.com
+  + first_seen:2025-09-18 17:45:56
 
- + SNI: media1.giphy.com
-  + first_seen:2025-09-06 03:24:42
+ + SNI: src.mastercard.com
+  + first_seen:2025-09-18 17:45:56
+
+ + SNI: static.pay.expedia.com
+  + first_seen:2025-09-18 17:45:56
+
+ + SNI: www.datadoghq-browser-agent.com
+  + first_seen:2025-09-18 17:45:57
+
+ + SNI: mpsnare.iesnare.com
+  + first_seen:2025-09-18 17:45:57
+
+ + SNI: www.trvl-px.com
+  + first_seen:2025-09-18 17:45:58
+
+ + SNI: www.trivago.com
+  + first_seen:2025-09-18 17:45:58
+
+ + SNI: match.adsrvr.org
+  + first_seen:2025-09-18 17:45:58
+
+ + SNI: www.uqd.io
+  + first_seen:2025-09-18 17:45:58
+
+ + SNI: www.hotels.com
+  + first_seen:2025-09-18 17:46:00
+
+ + SNI: t.promotionx.io
+  + first_seen:2025-09-18 17:46:00
+
+ + SNI: secure.checkout.visa.com
+  + first_seen:2025-09-18 17:46:00
+
+ + SNI: webapp.src.discover.com
+  + first_seen:2025-09-18 17:46:00
+
+ + SNI: www.aexp-static.com
+  + first_seen:2025-09-18 17:46:00
+
+ + SNI: www.orbitz.com
+  + first_seen:2025-09-18 17:46:00
+
+ + SNI: www.travelocity.com
+  + first_seen:2025-09-18 17:46:01
+
+ + SNI: srcdcf.americanexpress.com
+  + first_seen:2025-09-18 17:46:02
+
+ + SNI: src.apis.discover.com
+  + first_seen:2025-09-18 17:46:02
+
+ + SNI: www.vrbo.com
+  + first_seen:2025-09-18 17:46:02
+
+ + SNI: code.jquery.com
+  + first_seen:2025-09-18 17:46:02
+
+ + SNI: icm.aexp-static.com
+  + first_seen:2025-09-18 17:46:02
+
+ + SNI: thm.visa.com
+  + first_seen:2025-09-18 17:46:03
+
+ + SNI: www.homeaway.com
+  + first_seen:2025-09-18 17:46:03
+
+ + SNI: www.expediapartnercentral.com
+  + first_seen:2025-09-18 17:46:03
+
+ + SNI: h64.online-metrix.net
+  + first_seen:2025-09-18 17:46:03
+
+ + SNI: onboarding.expediapartnercentral.com
+  + first_seen:2025-09-18 17:46:04
+
+ + SNI: content.discovercard.com
+  + first_seen:2025-09-18 17:46:04
+
+ + SNI: h.online-metrix.net
+  + first_seen:2025-09-18 17:46:05
+
+ + SNI: sdk.wellsfargo.com
+  + first_seen:2025-09-18 17:46:11
+
+ + SNI: connect.secure.wellsfargo.com
+  + first_seen:2025-09-18 17:46:14
+
+ + SNI: globalsiteanalytics.com
+  + first_seen:2025-09-18 17:46:14
+
+ + SNI: wfgaccess.wellsfargo.com
+  + first_seen:2025-09-18 17:46:16
+
+ + SNI: pdx-col.eum-appdynamics.com
+  + first_seen:2025-09-18 17:46:20
+
+ + SNI: z.travel-assets.com
+  + first_seen:2025-09-18 17:46:56
+
+ + SNI: www.uciservice.com
+  + first_seen:2025-09-18 17:46:56
+
+ + SNI: trkn.us
+  + first_seen:2025-09-18 17:46:57
+
+ + SNI: insight.adsrvr.org
+  + first_seen:2025-09-18 17:46:57
+
+ + SNI: vacadapter.vap.expedia.com
+  + first_seen:2025-09-18 17:46:58
+
+ + SNI: vac.vap.expedia.com
+  + first_seen:2025-09-18 17:46:58
+
+ + SNI: vap.expedia.com
+  + first_seen:2025-09-18 17:46:58
+
+ + SNI: ep1.adtrafficquality.google
+  + first_seen:2025-09-18 17:47:00
+
+ + SNI: s.go-mpulse.net
+  + first_seen:2025-09-18 17:47:00
+
+ + SNI: ir.surveywall-api.survata.com
+  + first_seen:2025-09-18 17:47:00
+
+ + SNI: ep2.adtrafficquality.google
+  + first_seen:2025-09-18 17:47:00
+
+ + SNI: c.go-mpulse.net
+  + first_seen:2025-09-18 17:47:00
+
+ + SNI: expedia-realtime.ably.io
+  + first_seen:2025-09-18 17:47:00
+
+ + SNI: expedia-rest.ably.io
+  + first_seen:2025-09-18 17:47:00
+
+ + SNI: contents.odysol.com
+  + first_seen:2025-09-18 17:47:09
+
+ + SNI: egus.odysol.com
+  + first_seen:2025-09-18 17:47:09
+
+ + SNI: expedia.com
+  + first_seen:2025-09-18 17:47:14
+
+ + SNI: privacyportal.onetrust.com
+  + first_seen:2025-09-18 17:47:17

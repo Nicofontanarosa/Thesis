@@ -1,3 +1,2 @@
-
-host:"api.statsig.com",host:"cluster-active-gate-lb.dynatrace.stackit.zone",host:"exp.notion.so",host:"identity.notion.so",host:"msgstore.www.notion.so",host:"o324374.ingest.sentry.io",host:"www.notion.so"@Unknown
-host:"http-inputs-notion.splunkcloud.com"@Cisco technology inc.
+host:"notion.so"@
+host:"http-inputs-notion.splunkcloud.com"@

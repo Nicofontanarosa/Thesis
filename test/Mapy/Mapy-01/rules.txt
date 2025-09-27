@@ -1,8 +1,1 @@
-host:"atlassian.com"@Atlassian pty ltd
-host:"mapy.cz"@Mapycz 
-
-host:"digitalassetlinks.googleapis.com"@Google asset links
-host:"featureassets.org"@Private by design, llc
-host:"h.seznam.cz"@Seznam traffic
-host:"sentry.io"@Sentryio
-host:"sgepodownload.mediatek.com"@Mediatek download
+host:"featureassets.org",host:"mapy.cz"@

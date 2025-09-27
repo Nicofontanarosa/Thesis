@@ -6,7 +6,6 @@ host:"mobileapi.usebutton.com"@
 host:"app-analytics-services.com"@
 host:"app.biziday.ro"@
 host:"apps.mzstatic.com"@
-host:"eu.auth0.com"@
 host:"prod.apigee.hostelworld.com"@
 host:"app-analytics-services-att.com"@
 host:"google-analytics.com"@

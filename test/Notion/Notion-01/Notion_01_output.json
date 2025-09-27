@@ -39,6 +39,24 @@
         ]
     },
     {
+        "ip_field": "142/WhatsApp",
+        "transport_protocol": "TCP",
+        "proto_field": "91.242/TLS.WhatsAppFiles",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t00d0109ht_0f2cb44170f4_759b0bad1464",
+        "sni": "media-fco2-1.cdn.whatsapp.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63492",
+        "ip_destination": "157.240.231.60",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "175 <-> 123",
+            "10 <-> 10"
+        ]
+    },
+    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -215,6 +233,42 @@
         ]
     },
     {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91.265/TLS.AmazonAWS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "notion-emojis.s3-us-west-2.amazonaws.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63482",
+        "ip_destination": "52.92.193.98",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "219/Microsoft365",
+        "transport_protocol": "TCP",
+        "proto_field": "91.219/TLS.Microsoft365",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2013h2_2b729b4bf6f3_e24568c0d440",
+        "sni": "login.microsoftonline.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "56664",
+        "ip_destination": "20.190.147.1",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 14"
+        ]
+    },
+    {
         "ip_field": "284/GoogleCloud",
         "transport_protocol": "UDP",
         "proto_field": "188/QUIC",
@@ -251,72 +305,93 @@
         ]
     },
     {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "157.240.203.61",
-        "dns_id": "0x851d",
-        "plain_text": "whatsapp",
-        "sni": "g.whatsapp.net",
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91.265/TLS.AmazonAWS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "notion-emojis.s3-us-west-2.amazonaws.com",
         "ip_source": "192.168.80.96",
-        "port_source": "58625",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 2,
+        "port_source": "63483",
+        "ip_destination": "52.92.193.98",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
         "exchanged_packets": [
-            "6 <-> 6",
-            "2 <-> 1"
+            "13 <-> 15"
         ]
     },
     {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "142.251.209.35",
-        "dns_id": "0x2c39",
-        "plain_text": "firebase",
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.275/TLS.Crashlytics",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
         "sni": "firebase-settings.crashlytics.com",
         "ip_source": "192.168.80.96",
-        "port_source": "51671",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
+        "port_source": "63460",
+        "ip_destination": "142.251.209.35",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "5 <-> 4"
+            "12 <-> 13"
         ]
     },
     {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "34.128.128.0",
-        "dns_id": "0x04dd",
-        "plain_text": "statsig",
-        "sni": "api.statsig.com",
+        "ip_field": "142/WhatsApp",
+        "transport_protocol": "TCP",
+        "proto_field": "91.142/TLS.WhatsApp",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d2013h2_2b729b4bf6f3_e24568c0d440",
+        "sni": "mmg.whatsapp.net",
         "ip_source": "192.168.80.96",
-        "port_source": "65044",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
+        "port_source": "56660",
+        "ip_destination": "157.240.203.60",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "5 <-> 4"
+            "13 <-> 13"
         ]
     },
     {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "208.103.161.2",
-        "dns_id": "0xc7d8",
-        "plain_text": "notion",
-        "sni": "www.notion.so",
+        "ip_field": "142/WhatsApp",
+        "transport_protocol": "TCP",
+        "proto_field": "91.242/TLS.WhatsAppFiles",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d2013h2_2b729b4bf6f3_e24568c0d440",
+        "sni": "media-fco2-1.cdn.whatsapp.net",
         "ip_source": "192.168.80.96",
-        "port_source": "49769",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
+        "port_source": "56657",
+        "ip_destination": "157.240.231.60",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "2 <-> 2"
+            "13 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "142/WhatsApp",
+        "transport_protocol": "TCP",
+        "proto_field": "91.242/TLS.WhatsAppFiles",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d2013h2_2b729b4bf6f3_e24568c0d440",
+        "sni": "media-mxp2-1.cdn.whatsapp.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "56659",
+        "ip_destination": "157.240.203.60",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "12 <-> 14"
         ]
     }
 ]

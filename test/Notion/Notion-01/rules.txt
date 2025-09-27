@@ -1,3 +1,2 @@
-host:"img.notionusercontent.com",host:"notion.so",host:"o324374.ingest.sentry.io"@whois: identity protection service & AI: Notion Images, Notion Workspace, Sentry Ingest
-host:"api.statsig.com"@whois:  & AI: Statsig API
-host:"http-inputs-notion.splunkcloud.com"@whois: cisco technology inc. & AI: Splunk Cloud
+host:"notion.so"@
+host:"api.statsig.com"@

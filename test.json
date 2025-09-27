@@ -1,59 +1,28 @@
 [
     {
-        "ja3s": null,
-        "ja4": "55b375c5d22e_f2a83c8e78ae",
-        "sni_list": [
-            "instagram.com",
-            "mail-attachment.googleusercontent.com"
-        ]
-    },
-    {
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "f57a46bbacb6_e42f34c56612",
-        "sni_list": [
-            "giphy.com"
-        ]
-    },
-    {
         "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "a09f3c656075_e42f34c56612",
+        "ja4": "f57a46bbacb6_14788d8d241b",
         "sni_list": [
-            "client-api.itunes.apple.com"
-        ]
-    },
-    {
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "f57a46bbacb6_e42f34c56612",
-        "sni_list": [
-            "mail.google.com"
-        ]
-    },
-    {
-        "ja3s": "cabca0e45d1843a8873f229da4a3323f",
-        "ja4": "8daaf6152771_e5627efa2ab1",
-        "sni_list": [
-            "api.termius.com"
-        ]
-    },
-    {
-        "ja3s": "2ab44dd8c27bdce434a961463587356a",
-        "ja4": "8daaf6152771_e5627efa2ab1",
-        "sni_list": [
-            "split.io"
-        ]
-    },
-    {
-        "ja3s": null,
-        "ja4": "55b375c5d22e_226f3f127bbe",
-        "sni_list": [
-            "clientservices.googleapis.com"
+            "expedia.com",
+            "images.trvl-media.com",
+            "quantummetric.com",
+            "travel-assets.com",
+            "hotels.com",
+            "trvl-px.com"
         ]
     },
     {
         "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "a09f3c656075_e42f34c56612",
+        "ja4": "a09f3c656075_14788d8d241b",
         "sni_list": [
-            "dit.whatsapp.net"
+            "mpsnare.iesnare.com"
+        ]
+    },
+    {
+        "ja3s": "50a9e7b112931e541503e8a2499252b9",
+        "ja4": "f57a46bbacb6_14788d8d241b",
+        "sni_list": [
+            "adsrvr.org"
         ]
     }
 ]

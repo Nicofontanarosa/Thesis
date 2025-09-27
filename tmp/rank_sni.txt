@@ -1,77 +1,224 @@
 >> Frequency ranking:
 
 
- + SNI: docs.google.com
+ + SNI: www.expedia.com
+  + count: 923
+
+ + SNI: clickstream-event-manager-service.test.expedia.com
+  + count: 114
+
+ + SNI: wfgaccess.wellsfargo.com
+  + count: 12
+
+ + SNI: browser-intake-datadoghq.com
+  + count: 8
+
+ + SNI: mediaim.expedia.com
+  + count: 7
+
+ + SNI: ingest.quantummetric.com
+  + count: 7
+
+ + SNI: content.discovercard.com
+  + count: 7
+
+ + SNI: sdk.wellsfargo.com
+  + count: 6
+
+ + SNI: rl.quantummetric.com
+  + count: 5
+
+ + SNI: c.travel-assets.com
   + count: 4
 
- + SNI: ssl.gstatic.com
+ + SNI: thm.visa.com
   + count: 4
 
- + SNI: dns.google
+ + SNI: www.trvl-px.com
   + count: 4
 
- + SNI: www.youtube.com
+ + SNI: mcbnck8rxcs7cyrnvfcfd43796q0.device.marketingcloudapis.com
+  + count: 4
+
+ + SNI: a.travel-assets.com
   + count: 3
 
- + SNI: media-sin6-2.cdn.whatsapp.net
+ + SNI: mpsnare.iesnare.com
+  + count: 3
+
+ + SNI: region1.app-analytics-services-att.com
+  + count: 3
+
+ + SNI: images.trvl-media.com
   + count: 2
 
- + SNI: client-api.itunes.apple.com
+ + SNI: forever.travel-assets.com
   + count: 2
 
- + SNI: graph.facebook.com
+ + SNI: b.travel-assets.com
   + count: 2
 
- + SNI: auth.split.io
+ + SNI: vap.expedia.com
   + count: 2
 
- + SNI: gateway.instagram.com
+ + SNI: www.uqd.io
+  + count: 2
+
+ + SNI: t.promotionx.io
+  + count: 2
+
+ + SNI: privacyportal.onetrust.com
+  + count: 2
+
+ + SNI: www.expediapartnercentral.com
+  + count: 2
+
+ + SNI: src.apis.discover.com
+  + count: 2
+
+ + SNI: www.vrbo.com
+  + count: 2
+
+ + SNI: onboarding.expediapartnercentral.com
+  + count: 2
+
+ + SNI: www.hotels.com
+  + count: 2
+
+ + SNI: app-analytics-services.com
+  + count: 2
+
+ + SNI: www.travelocity.com
+  + count: 2
+
+ + SNI: www.orbitz.com
+  + count: 2
+
+ + SNI: match.adsrvr.org
+  + count: 2
+
+ + SNI: www.homeaway.com
+  + count: 2
+
+ + SNI: ir.surveywall-api.survata.com
+  + count: 2
+
+ + SNI: z.travel-assets.com
   + count: 1
 
- + SNI: mail-attachment.googleusercontent.com
+ + SNI: contents.odysol.com
   + count: 1
 
- + SNI: edge-mqtt.facebook.com
+ + SNI: vac.vap.expedia.com
   + count: 1
 
- + SNI: media1.giphy.com
+ + SNI: src.mastercard.com
   + count: 1
 
- + SNI: yt3.ggpht.com
+ + SNI: secure.checkout.visa.com
   + count: 1
 
- + SNI: safebrowsing.googleapis.com
+ + SNI: www.uciservice.com
   + count: 1
 
- + SNI: accounts.google.com
+ + SNI: expedia-api.arkoselabs.com
   + count: 1
 
- + SNI: web.facebook.com
+ + SNI: www.app-ads-services.com
   + count: 1
 
- + SNI: mail.google.com
+ + SNI: s.go-mpulse.net
   + count: 1
 
- + SNI: mtalk.google.com
+ + SNI: www.datadoghq-browser-agent.com
   + count: 1
 
- + SNI: api.termius.com
+ + SNI: egus.odysol.com
   + count: 1
 
- + SNI: googleads.g.doubleclick.net
+ + SNI: icm.aexp-static.com
   + count: 1
 
- + SNI: www.instagram.com
+ + SNI: vacadapter.vap.expedia.com
   + count: 1
 
- + SNI: clientservices.googleapis.com
+ + SNI: connect.secure.wellsfargo.com
   + count: 1
 
- + SNI: streaming.split.io
+ + SNI: webapp.src.discover.com
   + count: 1
 
- + SNI: sdk.split.io
+ + SNI: api2.branch.io
   + count: 1
 
- + SNI: dit.whatsapp.net
+ + SNI: www.aexp-static.com
+  + count: 1
+
+ + SNI: code.jquery.com
+  + count: 1
+
+ + SNI: znbbf46ejn8vkhysu-expediaxm.siteintercept.qualtrics.com
+  + count: 1
+
+ + SNI: static.pay.expedia.com
+  + count: 1
+
+ + SNI: ep1.adtrafficquality.google
+  + count: 1
+
+ + SNI: ep2.adtrafficquality.google
+  + count: 1
+
+ + SNI: srcdcf.americanexpress.com
+  + count: 1
+
+ + SNI: pdx-col.eum-appdynamics.com
+  + count: 1
+
+ + SNI: att.conversions.appsflyersdk.com
+  + count: 1
+
+ + SNI: att.attr.appsflyersdk.com
+  + count: 1
+
+ + SNI: trkn.us
+  + count: 1
+
+ + SNI: expedia.com
+  + count: 1
+
+ + SNI: h.online-metrix.net
+  + count: 1
+
+ + SNI: h64.online-metrix.net
+  + count: 1
+
+ + SNI: globalsiteanalytics.com
+  + count: 1
+
+ + SNI: yclqkn.dynamic-report-api.appsflyersdk.com
+  + count: 1
+
+ + SNI: www.trivago.com
+  + count: 1
+
+ + SNI: yclqkn.dynamic-config-api.appsflyersdk.com
+  + count: 1
+
+ + SNI: yclqkn.skadsdk.appsflyersdk.com
+  + count: 1
+
+ + SNI: app-48725c5363069804.mobileapi.usebutton.com
+  + count: 1
+
+ + SNI: insight.adsrvr.org
+  + count: 1
+
+ + SNI: expedia-realtime.ably.io
+  + count: 1
+
+ + SNI: expedia-rest.ably.io
+  + count: 1
+
+ + SNI: c.go-mpulse.net
   + count: 1

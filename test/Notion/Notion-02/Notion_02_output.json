@@ -234,6 +234,24 @@
         ]
     },
     {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "firebaselogging-pa.googleapis.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63563",
+        "ip_destination": "216.58.204.234",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "12 <-> 11"
+        ]
+    },
+    {
         "ip_field": "284/GoogleCloud",
         "transport_protocol": "UDP",
         "proto_field": "188/QUIC",
@@ -248,57 +266,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "5 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "216.58.204.234",
-        "dns_id": "0x608d",
-        "plain_text": "firebaselogging",
-        "sni": "firebaselogging-pa.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "49964",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "44.215.234.239",
-        "dns_id": "0xf5c4",
-        "plain_text": "inputs",
-        "sni": "http-inputs-notion.splunkcloud.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "58769",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "34.128.128.0",
-        "dns_id": "0xb7d6",
-        "plain_text": "statsig",
-        "sni": "api.statsig.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "61678",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
         ]
     }
 ]

@@ -1,5 +1,3 @@
-host:"lidlplus.com",host:"www.lidl.it"@whois: lidl stiftung u. co. kg & AI: unknown
-host:"accounts.lidl.com",host:"cluster-active-gate-lb.dynatrace.stackit.zone"@whois: unknown & AI: unknown
-host:"asset.schwarz"@whois: schwarz it kg & AI: unknown
-host:"mcf4wh-jdfmxrzzzttwqcrf-d3b4.device.marketingcloudapis.com"@whois: salesforce.com, inc. & AI: unknown
-host:"lidl.leaflets.schwarz"@whois: schwarz it kg & AI: unknown
+host:"lidleu.my.salesforce.com",host:"lidlplus.com"@
+host:"accounts.lidl.com"@
+host:"device.marketingcloudapis.com"@

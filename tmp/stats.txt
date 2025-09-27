@@ -1,19 +1,20 @@
 >> Lists of protocols read:
 
    + ApplePush
+   + DHCP
    + DNS
+   + Dropbox
+   + HTTP_Connect
+   + HTTP_Proxy
    + ICMP
    + ICMPV6
-   + IMAPS
    + MDNS
    + NTP
    + NetBIOS
    + QUIC
-   + SOAP
-   + SSH
-   + TLS
+   + STUN
+   + TuyaLP
    + Unknown
-   + WhatsApp
 
 >> Lists of protocols supported:
 
@@ -26,13 +27,14 @@
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
    [red]+ ApplePush[/red]
+   [red]+ DHCP[/red]
    [red]+ DNS[/red]
+   [red]+ Dropbox[/red]
+   [red]+ HTTP_Proxy[/red]
    [red]+ ICMP[/red]
    [red]+ ICMPV6[/red]
-   [red]+ IMAPS[/red]
    [red]+ MDNS[/red]
    [red]+ NTP[/red]
    [red]+ NetBIOS[/red]
-   [red]+ SOAP[/red]
-   [red]+ SSH[/red]
-   [red]+ WhatsApp[/red]
+   [red]+ STUN[/red]
+   [red]+ TuyaLP[/red]

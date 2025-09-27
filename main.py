@@ -3,6 +3,7 @@
 # File: main.py to run the entire pipeline
 #################################################################
 
+import json
 import os
 import subprocess
 # my file
@@ -11,6 +12,7 @@ import filter
 import functions
 import flow_processor
 import threading
+import constants
 
 def run_ndpi_command(cmd, output_file=None):
     if output_file:
@@ -67,7 +69,18 @@ def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
     # Step 3: flow_processor.py
     final_output = os.path.join(output_dir, os.path.basename(json_ndpi).replace(".json", "_output.json"))
     config.log_message(f"\n\n>> Running flows filtering ...\n\n + input file: {filtered_json}\n + output file: {final_output}", log_file)
-    final_flows = flow_processor.flow_processor(filtered_json, final_output)
+    final_flows = flow_processor.flow_processor(filtered_json)
+
+    if constants.CHECK_JA_MISSING:
+        # Step intermedio: estrai JA3/JA4 e SNI da pcap con tshark e salva in tmp
+        import extract_tls_ja3_sni  # importa il modulo se non già importato
+        tmp_cluster_file = "tmp/tshark_clusters.json"
+        extract_tls_ja3_sni.extract_tls_clusters(pcap_file, tmp_cluster_file)
+        # Riempie ja4 e ja3s dai cluster Tshark per HTTP
+        final_flows = flow_processor.fill_missing_ja_from_cluster(final_flows, tmp_cluster_file)
+
+    with open(final_output, 'w') as f_out:
+        json.dump(final_flows, f_out, indent=4)
 
     # printing flows with risk
     functions.print_risky_flows(final_flows)

@@ -1,6 +1,5 @@
-host:"assets.subito.it",host:"collector.subito.it",host:"hades.subito.it"@Subito.it srl
-host:"atsod.launch.liveramp.com",host:"geo.privacymanager.io",host:"liveupdate01s.asus.com"@Unknown
-host:"mobile-2260.api.privacy-center.org"@Domains by proxy, llc
-host:"presence-api-subito.trust.advgo.net",host:"profile-api-subito.trust.advgo.net",host:"xmpp.messaging.advgo.net"@Identity protection service
-host:"mcrndycn8bj4zfvcnqlh9d-pbw21.device.marketingcloudapis.com"@Salesforce.com, inc.
-host:"images.sbito.it"@Subito.it s.r.l
+host:"atsod.launch.liveramp.com",host:"geo.privacymanager.io",host:"images.sbito.it"@
+host:"advgo.net",host:"subito.it"@
+host:"api.privacy-center.org"@
+host:"asus.com"@
+host:"device.marketingcloudapis.com"@

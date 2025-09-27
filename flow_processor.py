@@ -18,6 +18,36 @@ log_file_flows = "tmp/flows.txt"
 
 # -------------------------------------------
 
+def fill_missing_ja_from_cluster(final_flows, tshark_cluster_file):
+
+    # Carica il cluster Tshark
+    with open(tshark_cluster_file, "r", encoding="utf-8") as f:
+        tshark_clusters = json.load(f)
+
+    # Costruisci mappa SNI → (ja4, ja3s)
+    sni_to_ja = {}
+    for cluster in tshark_clusters:
+        ja4 = cluster.get("ja4")
+        ja3s = cluster.get("ja3s")
+        for sni in cluster.get("sni_list", []):
+            sni_to_ja[sni.lower()] = (ja4, ja3s)
+
+    #print(f"Loaded {sni_to_ja}")
+
+    # Aggiorna flussi HTTP senza JA4/JA3S
+    for flow in final_flows:
+        if flow.get("ja4") or flow.get("ja3s"):
+            continue
+
+        sni = flow.get("sni", "").lower()
+        if not sni:
+            continue
+
+        if sni in sni_to_ja:
+            flow["ja4"], flow["ja3s"] = sni_to_ja[sni]
+
+    return final_flows
+
 def remove_flows_maxsin(final_flows):
 
     # filtering SNIs with more than 4 domains
@@ -33,7 +63,7 @@ def remove_flows_maxsin(final_flows):
 
 # -------------------------------------------
 
-def flow_processor(input_file, output_file):
+def flow_processor(input_file):
     
     # flows read
     flows = []
@@ -210,9 +240,6 @@ def flow_processor(input_file, output_file):
     final_flows = list(aggregated.values())
 
     final_flows = remove_flows_maxsin(final_flows)
-
-    with open(output_file, 'w') as f_out:
-        json.dump(final_flows, f_out, indent=4)
     
     config.log_message(final_flows, log_file_filtered_flows)
 

@@ -1,224 +1,56 @@
 >> Frequency ranking:
 
 
- + SNI: www.expedia.com
-  + count: 923
+ + SNI: fuck.rkn
+  + count: 192
 
- + SNI: clickstream-event-manager-service.test.expedia.com
-  + count: 114
-
- + SNI: wfgaccess.wellsfargo.com
-  + count: 12
-
- + SNI: browser-intake-datadoghq.com
-  + count: 8
-
- + SNI: mediaim.expedia.com
-  + count: 7
-
- + SNI: ingest.quantummetric.com
-  + count: 7
-
- + SNI: content.discovercard.com
-  + count: 7
-
- + SNI: sdk.wellsfargo.com
-  + count: 6
-
- + SNI: rl.quantummetric.com
+ + SNI: logs.ads.vungle.com
   + count: 5
 
- + SNI: c.travel-assets.com
+ + SNI: adx.ads.vungle.com
   + count: 4
 
- + SNI: thm.visa.com
+ + SNI: app.adjust.com
   + count: 4
 
- + SNI: www.trvl-px.com
+ + SNI: events.ads.vungle.com
   + count: 4
 
- + SNI: mcbnck8rxcs7cyrnvfcfd43796q0.device.marketingcloudapis.com
-  + count: 4
-
- + SNI: a.travel-assets.com
+ + SNI: kfhupwcinaumhiyfmdugz1m.com
   + count: 3
 
- + SNI: mpsnare.iesnare.com
-  + count: 3
-
- + SNI: region1.app-analytics-services-att.com
-  + count: 3
-
- + SNI: images.trvl-media.com
+ + SNI: assets.remerge.io
   + count: 2
 
- + SNI: forever.travel-assets.com
-  + count: 2
-
- + SNI: b.travel-assets.com
-  + count: 2
-
- + SNI: vap.expedia.com
-  + count: 2
-
- + SNI: www.uqd.io
-  + count: 2
-
- + SNI: t.promotionx.io
-  + count: 2
-
- + SNI: privacyportal.onetrust.com
-  + count: 2
-
- + SNI: www.expediapartnercentral.com
-  + count: 2
-
- + SNI: src.apis.discover.com
-  + count: 2
-
- + SNI: www.vrbo.com
-  + count: 2
-
- + SNI: onboarding.expediapartnercentral.com
-  + count: 2
-
- + SNI: www.hotels.com
-  + count: 2
-
- + SNI: app-analytics-services.com
-  + count: 2
-
- + SNI: www.travelocity.com
-  + count: 2
-
- + SNI: www.orbitz.com
-  + count: 2
-
- + SNI: match.adsrvr.org
-  + count: 2
-
- + SNI: www.homeaway.com
-  + count: 2
-
- + SNI: ir.surveywall-api.survata.com
-  + count: 2
-
- + SNI: z.travel-assets.com
+ + SNI: webview.unityads.unity3d.com
   + count: 1
 
- + SNI: contents.odysol.com
+ + SNI: configv2.unityads.unity3d.com
   + count: 1
 
- + SNI: vac.vap.expedia.com
+ + SNI: config.inmobi.com
   + count: 1
 
- + SNI: src.mastercard.com
+ + SNI: hybird.mtgglobals.com
   + count: 1
 
- + SNI: secure.checkout.visa.com
+ + SNI: configure.rayjump.com
   + count: 1
 
- + SNI: www.uciservice.com
+ + SNI: config.ads.vungle.com
   + count: 1
 
- + SNI: expedia-api.arkoselabs.com
+ + SNI: publisher-config.unityads.unity3d.com
   + count: 1
 
- + SNI: www.app-ads-services.com
+ + SNI: us8.remerge.events
   + count: 1
 
- + SNI: s.go-mpulse.net
+ + SNI: httpkafka.unityads.unity3d.com
   + count: 1
 
- + SNI: www.datadoghq-browser-agent.com
+ + SNI: init-mp.fyber.com
   + count: 1
 
- + SNI: egus.odysol.com
-  + count: 1
-
- + SNI: icm.aexp-static.com
-  + count: 1
-
- + SNI: vacadapter.vap.expedia.com
-  + count: 1
-
- + SNI: connect.secure.wellsfargo.com
-  + count: 1
-
- + SNI: webapp.src.discover.com
-  + count: 1
-
- + SNI: api2.branch.io
-  + count: 1
-
- + SNI: www.aexp-static.com
-  + count: 1
-
- + SNI: code.jquery.com
-  + count: 1
-
- + SNI: znbbf46ejn8vkhysu-expediaxm.siteintercept.qualtrics.com
-  + count: 1
-
- + SNI: static.pay.expedia.com
-  + count: 1
-
- + SNI: ep1.adtrafficquality.google
-  + count: 1
-
- + SNI: ep2.adtrafficquality.google
-  + count: 1
-
- + SNI: srcdcf.americanexpress.com
-  + count: 1
-
- + SNI: pdx-col.eum-appdynamics.com
-  + count: 1
-
- + SNI: att.conversions.appsflyersdk.com
-  + count: 1
-
- + SNI: att.attr.appsflyersdk.com
-  + count: 1
-
- + SNI: trkn.us
-  + count: 1
-
- + SNI: expedia.com
-  + count: 1
-
- + SNI: h.online-metrix.net
-  + count: 1
-
- + SNI: h64.online-metrix.net
-  + count: 1
-
- + SNI: globalsiteanalytics.com
-  + count: 1
-
- + SNI: yclqkn.dynamic-report-api.appsflyersdk.com
-  + count: 1
-
- + SNI: www.trivago.com
-  + count: 1
-
- + SNI: yclqkn.dynamic-config-api.appsflyersdk.com
-  + count: 1
-
- + SNI: yclqkn.skadsdk.appsflyersdk.com
-  + count: 1
-
- + SNI: app-48725c5363069804.mobileapi.usebutton.com
-  + count: 1
-
- + SNI: insight.adsrvr.org
-  + count: 1
-
- + SNI: expedia-realtime.ably.io
-  + count: 1
-
- + SNI: expedia-rest.ably.io
-  + count: 1
-
- + SNI: c.go-mpulse.net
+ + SNI: ssp-track-us.bidease.com
   + count: 1

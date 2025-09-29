@@ -1,17 +1,17 @@
 >> Using existing nDPI JSON:
 
- + .\test\expedia\expedia.json
+ + .\test\Planet_VPN\Planet-01\Planet_VPN_Connection_01.json
 
 >> Using existing nDPI JSON:
 
- + .\test\expedia\expedia_output_k.json
+ + .\test\Planet_VPN\Planet-01\Planet_VPN_Connection_01_output_k.json
 
 >> Running initial filtering ...
 
- + input file: .\test\expedia\expedia.json
- + output file: .\test\expedia\expedia_filtered.json
+ + input file: .\test\Planet_VPN\Planet-01\Planet_VPN_Connection_01.json
+ + output file: .\test\Planet_VPN\Planet-01\Planet_VPN_Connection_01_filtered.json
 
 >> Running flows filtering ...
 
- + input file: .\test\expedia\expedia_filtered.json
- + output file: .\test\expedia\expedia_output.json
+ + input file: .\test\Planet_VPN\Planet-01\Planet_VPN_Connection_01_filtered.json
+ + output file: .\test\Planet_VPN\Planet-01\Planet_VPN_Connection_01_output.json

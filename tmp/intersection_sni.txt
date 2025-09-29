@@ -1,16 +1,2 @@
 >> Intersection of top 50% temporal & frequency rankings:
 
- + SNI: www.expedia.com
- + SNI: rl.quantummetric.com
- + SNI: match.adsrvr.org
- + SNI: clickstream-event-manager-service.test.expedia.com
- + SNI: mpsnare.iesnare.com
- + SNI: ingest.quantummetric.com
- + SNI: www.trvl-px.com
- + SNI: forever.travel-assets.com
- + SNI: images.trvl-media.com
- + SNI: b.travel-assets.com
- + SNI: c.travel-assets.com
- + SNI: a.travel-assets.com
- + SNI: www.hotels.com
- + SNI: mediaim.expedia.com

@@ -1,200 +1,163 @@
 [
     {
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "sni_list": [
-            "2ol9uikbxcpirutl3txvmxp4qapfngv5edxdn27zae7996b368667e32am1.e.aa.online-metrix.net",
-            "a.travel-assets.com",
-            "b.travel-assets.com",
-            "c.go-mpulse.net",
-            "c.travel-assets.com",
-            "connect.secure.wellsfargo.com",
-            "content.discovercard.com",
-            "expedia.com",
-            "forever.travel-assets.com",
-            "ge4f5xfnnmbc2atycnu2qarj47xxbne2hqg2bm7b710f12be63449653am1.e.aa.online-metrix.net",
-            "h.online-metrix.net",
-            "h64.online-metrix.net",
-            "icm.aexp-static.com",
-            "images.trvl-media.com",
-            "mediaim.expedia.com",
-            "onboarding.expediapartnercentral.com",
-            "rl.quantummetric.com",
-            "s.go-mpulse.net",
-            "sdk.wellsfargo.com",
-            "src.mastercard.com",
-            "static.pay.expedia.com",
-            "thm.visa.com",
-            "trkn.us",
-            "vac.vap.expedia.com",
-            "vacadapter.vap.expedia.com",
-            "vap.expedia.com",
-            "webapp.src.discover.com",
-            "www.aexp-static.com",
-            "www.expedia.com",
-            "www.expediapartnercentral.com",
-            "www.homeaway.com",
-            "www.hotels.com",
-            "www.orbitz.com",
-            "www.travelocity.com",
-            "www.trivago.com",
-            "www.trvl-px.com",
-            "www.uciservice.com",
-            "www.vrbo.com"
-        ]
-    },
-    {
-        "ja4": "f57a46bbacb6_14788d8d241b",
+        "ja4": "5b57614c22b0_eca864cca44a",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
         "sni_list": [
-            "53716c4d324d7a33e471746314e82094.safeframe.googlesyndication.com",
-            "9224405.fls.doubleclick.net",
-            "ad.doubleclick.net",
-            "adservice.google.com",
-            "app-analytics-services.com",
-            "browser-intake-datadoghq.com",
-            "cdn.cookielaw.org",
-            "cdn.jsdelivr.net",
-            "cdn.quantummetric.com",
-            "cdnjs.cloudflare.com",
-            "ep1.adtrafficquality.google",
-            "ep2.adtrafficquality.google",
+            "config.inmobi.com",
+            "configv2.unityads.unity3d.com",
             "firebase-settings.crashlytics.com",
             "firebaseinstallations.googleapis.com",
-            "firebaseremoteconfig.googleapis.com",
+            "firebaselogging-pa.googleapis.com",
+            "fundingchoicesmessages.google.com",
+            "googleads.g.doubleclick.net",
+            "httpkafka.unityads.unity3d.com",
+            "init-mp.fyber.com",
+            "kfhupwcinaumhiyfmdugz1m.com",
+            "pagead2.googleadservices.com",
+            "pagead2.googlesyndication.com",
+            "publisher-config.unityads.unity3d.com"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_eca864cca44a",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "sni_list": [
+            "adx.ads.vungle.com",
+            "cdn-lb.vungle.com",
+            "commvod.kwcdn.com",
+            "config.ads.vungle.com",
+            "events.ads.vungle.com",
+            "logs.ads.vungle.com",
+            "ssp-track-us.bidease.com"
+        ]
+    },
+    {
+        "ja4": "55b375c5d22e_653d80c3fe9d",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "sni_list": [
+            "app-measurement.com",
+            "fundingchoicesmessages.google.com",
+            "googleads.g.doubleclick.net",
+            "region1.app-measurement.com",
+            "www.googleapis.com",
+            "youtubei.googleapis.com"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_d8a2da3f94cd",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "sni_list": [
             "fonts.googleapis.com",
             "fonts.gstatic.com",
+            "fundingchoicesmessages.google.com",
             "googleads.g.doubleclick.net",
-            "ingest.quantummetric.com",
-            "maps.googleapis.com",
-            "pagead2.googlesyndication.com",
-            "privacyportal.onetrust.com",
-            "region1.app-analytics-services-att.com",
-            "region1.google-analytics.com",
-            "secure.checkout.visa.com",
-            "securepubads.g.doubleclick.net",
-            "tpc.googlesyndication.com",
-            "www.app-ads-services.com",
-            "www.google-analytics.com",
-            "www.google.com",
-            "www.google.ro",
-            "www.googleadservices.com",
-            "www.googleapis.com",
-            "www.googletagmanager.com",
-            "z.travel-assets.com",
-            "znbbf46ejn8vkhysu-expediaxm.siteintercept.qualtrics.com"
+            "youtubei.googleapis.com"
         ]
     },
     {
-        "ja4": "f57a46bbacb6_14788d8d241b",
+        "ja4": "8daaf6152771_eca864cca44a",
         "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
         "sni_list": [
-            "api2.branch.io",
-            "app-48725c5363069804.mobileapi.usebutton.com",
-            "att.attr.appsflyersdk.com",
-            "att.conversions.appsflyersdk.com",
-            "cdn.branch.io",
-            "cdn.jsdelivr.net",
-            "cdn.tagcommander.com",
-            "code.jquery.com",
-            "connect.facebook.net",
-            "contents.odysol.com",
-            "egus.odysol.com",
-            "expedia-api.arkoselabs.com",
-            "expedia-realtime.ably.io",
-            "expedia-rest.ably.io",
-            "globalsiteanalytics.com",
-            "graph.facebook.com",
-            "mpsnare.iesnare.com",
-            "src.apis.discover.com",
-            "t.promotionx.io",
-            "www.cdn-path.com",
-            "www.datadoghq-browser-agent.com",
-            "www.facebook.com",
-            "www.uqd.io",
-            "yclqkn.cdn-settings.appsflyersdk.com",
-            "yclqkn.dynamic-config-api.appsflyersdk.com",
-            "yclqkn.dynamic-report-api.appsflyersdk.com",
-            "yclqkn.skadsdk.appsflyersdk.com"
+            "assets.remerge.io",
+            "cdn-adn-https.mtgglobals.com",
+            "configure.rayjump.com",
+            "hybird.mtgglobals.com"
         ]
     },
     {
-        "ja4": "a09f3c656075_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "sni_list": [
-            "api-adservices.apple.com",
-            "ca.iadsdk.apple.com",
-            "configuration.apple.com",
-            "gateway.icloud.com",
-            "init.itunes.apple.com",
-            "mediaim.expedia.com",
-            "stocks-data-service.apple.com",
-            "wps.apple.com",
-            "xp.apple.com"
-        ]
-    },
-    {
-        "ja4": "a09f3c656075_14788d8d241b",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "sni_list": [
-            "configuration.ls.apple.com",
-            "gspe21-ssl.ls.apple.com",
-            "mesu.apple.com",
-            "ocsp2.apple.com",
-            "proxy-safebrowsing.googleapis.com"
-        ]
-    },
-    {
-        "ja4": "a09f3c656075_3d00e4afe3b1",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "sni_list": [
-            "gspe19-2-ssl.ls.apple.com",
-            "gspe19-ssl.ls.apple.com",
-            "xp.apple.com"
-        ]
-    },
-    {
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "e54965894d6b45ecb4323c7ea3d6c115",
-        "sni_list": [
-            "mcbnck8rxcs7cyrnvfcfd43796q0.device.marketingcloudapis.com",
-            "srcdcf.americanexpress.com",
-            "wfgaccess.wellsfargo.com"
-        ]
-    },
-    {
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "50a9e7b112931e541503e8a2499252b9",
-        "sni_list": [
-            "insight.adsrvr.org",
-            "match.adsrvr.org",
-            "pdx-col.eum-appdynamics.com"
-        ]
-    },
-    {
-        "ja4": "f57a46bbacb6_874d27d7ca63",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "sni_list": [
-            "bat.bing.com",
-            "c.bing.com"
-        ]
-    },
-    {
-        "ja4": "a09f3c656075_3d00e4afe3b1",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "sni_list": [
-            "gsp-ssl.ls.apple.com"
-        ]
-    },
-    {
-        "ja4": "a09f3c656075_14788d8d241b",
+        "ja4": "5b57614c22b0_eca864cca44a",
         "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
         "sni_list": [
-            "mpsnare.iesnare.com"
+            "cdn2.inner-active.mobi",
+            "s3.amazonaws.com",
+            "webview.unityads.unity3d.com"
         ]
     },
     {
-        "ja4": "55b375c5d22e_f2a83c8e78ae",
+        "ja4": "5b57614c22b0_352634941f3a",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "sni_list": [
+            "googleads.g.doubleclick.net",
+            "mtalk.google.com",
+            "pagead2.googlesyndication.com"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_fadfdae04b4e",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "sni_list": [
+            "adx.ads.vungle.com",
+            "events.ads.vungle.com",
+            "logs.ads.vungle.com"
+        ]
+    },
+    {
+        "ja4": "5b57614c22b0_eca864cca44a",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "sni_list": [
+            "api.telegra.ph",
+            "app.adjust.com"
+        ]
+    },
+    {
+        "ja4": "2b729b4bf6f3_1ea369dc5faa",
+        "ja3s": "f590053ff246338aff7c203dbe7164d6",
+        "sni_list": [
+            "drivefrontend-pa.googleapis.com",
+            "signaler-pa.googleapis.com"
+        ]
+    },
+    {
+        "ja4": "5b57614c22b0_352634941f3a",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "sni_list": [
+            "app.adjust.com"
+        ]
+    },
+    {
+        "ja4": "2b729b4bf6f3_e24568c0d440",
+        "ja3s": "907bf3ecef1c987c889946b737b43de8",
+        "sni_list": [
+            "drivefrontend-pa.googleapis.com"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_eca864cca44a",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "sni_list": [
+            "us8.remerge.events"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_d8a2da3f94cd",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "sni_list": [
+            "assets.remerge.io"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_02713d6af862",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "sni_list": [
+            "fuck.rkn"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_b6f405a00624",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "sni_list": [
+            "android.apis.google.com"
+        ]
+    },
+    {
+        "ja4": "ec078ce24869_e918dd3cc848",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "sni_list": [
+            "z-m-gateway.facebook.com"
+        ]
+    },
+    {
+        "ja4": "5b57614c22b0_78e6aca7449b",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
         "sni_list": []
     }

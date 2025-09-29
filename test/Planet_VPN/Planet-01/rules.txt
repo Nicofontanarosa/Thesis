@@ -1,4 +1,4 @@
-host:"analytics-tcp.mintegral.net",host:"api.telegra.ph",host:"assets.remerge.io",host:"configure.rayjump.com",host:"fuck.rkn",host:"us8.remerge.events"@Unknown
-host:"httpkafka.unityads.unity3d.com",host:"publisher-config.unityads.unity3d.com",host:"webview.unityads.unity3d.com"@Unity technologies sf
-host:"ssp-track-us.bidease.com"@Domains by proxy, llc
-host:"hybird.mtgglobals.com"@Identity protection service
+host:"assets.remerge.io",host:"configure.rayjump.com",host:"hybird.mtgglobals.com"@
+host:"fuck.rkn"@
+host:"remerge.events"@
+host:"ssp-track-us.bidease.com"@

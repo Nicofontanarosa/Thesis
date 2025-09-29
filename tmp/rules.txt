@@ -1,3 +1,4 @@
-host:"expedia.com",host:"hotels.com",host:"images.trvl-media.com",host:"quantummetric.com",host:"travel-assets.com",host:"trvl-px.com"@
-host:"mpsnare.iesnare.com"@
-host:"adsrvr.org"@
+host:"assets.remerge.io",host:"configure.rayjump.com",host:"hybird.mtgglobals.com"@
+host:"fuck.rkn"@
+host:"remerge.events"@
+host:"ssp-track-us.bidease.com"@

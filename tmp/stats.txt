@@ -1,20 +1,13 @@
 >> Lists of protocols read:
 
-   + ApplePush
-   + DHCP
    + DNS
-   + Dropbox
-   + HTTP_Connect
-   + HTTP_Proxy
+   + Google
+   + GoogleCloud
    + ICMP
-   + ICMPV6
    + MDNS
-   + NTP
-   + NetBIOS
    + QUIC
-   + STUN
-   + TuyaLP
-   + Unknown
+   + TLS
+   + WireGuard
 
 >> Lists of protocols supported:
 
@@ -26,15 +19,9 @@
 
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
-   [red]+ ApplePush[/red]
-   [red]+ DHCP[/red]
    [red]+ DNS[/red]
-   [red]+ Dropbox[/red]
-   [red]+ HTTP_Proxy[/red]
+   [red]+ Google[/red]
+   [red]+ GoogleCloud[/red]
    [red]+ ICMP[/red]
-   [red]+ ICMPV6[/red]
    [red]+ MDNS[/red]
-   [red]+ NTP[/red]
-   [red]+ NetBIOS[/red]
-   [red]+ STUN[/red]
-   [red]+ TuyaLP[/red]
+   [red]+ WireGuard[/red]

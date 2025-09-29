@@ -19,7 +19,7 @@ SHOW_GUESS_SNI = True
 # redacted organization names for whois
 REDACTED_ORGS = {"redacted for privacy", "data redacted", "hidden", "not disclosed", "domains by proxy, llc", "identity protection service", "registration private"}
 # use time ranking and frequency ranking to select top SNIs 
-CLUSTER_RANKING = True
+CLUSTER_RANKING = False
 # ratio of top SNIs to keep based on both temporal and frequency ranking
 TOP_RATIO=0.5
 # check and fill missing JA3/JA4 for HTTP flows and others using tshark clusters

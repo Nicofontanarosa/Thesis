@@ -92,6 +92,8 @@ def flow_filter(input_file, output_file):
     tls_incomplete_pattern = re.compile(r"^\s*\d+\s+(?:TCP|UDP)\s+\d+\.\d+\.\d+\.\d+:\d+\s+(?:<->|->|<-)\s+\d+\.\d+\.\d+\.\d+:\d+\s+\[proto:\s*\d+/(?:TLS|QUIC)\]\[IP:\s*[^\]]+\]\[(\d+)\s+pkts\s*[^\]]+\]")
     # regex to match lines without SNI/Hostname
     sni_pattern = re.compile(r"\[Hostname/SNI:\s*[^\]]+\]")
+    # regex to match lines without TCP fingerprint
+    tcp_fingerprint = re.compile(r"\[TCP Fingerprint:\s*([^\]]+)\]")
 
     # 1° version of the filtering script using regex
     #sed -E 's/\[Goodput ratio: [^]]+\]\[[^]]+\]//g; s/\[bytes ratio: [^]]+\]//g; s/\[(Encrypted|ClearText)\]//g; s/\[Confidence: [^]]+\]//g;
@@ -195,6 +197,10 @@ def flow_filter(input_file, output_file):
                 # check for flows without SNI/Hostname
                 if not sni_pattern.search(clean_line):
                     no_sni_flows.append(line)
+                    continue
+
+                if not tcp_fingerprint.search(clean_line):
+                    incomplete_tls_flows.append(line)
                     continue
 
                 # add good flows

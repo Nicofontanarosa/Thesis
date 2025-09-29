@@ -19,84 +19,9 @@
             "926 <-> 12938",
             "40 <-> 42",
             "39 <-> 41"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "gspe19-ssl.ls.apple.com:443",
-        "plain_text": "CONNECT gspe19",
-        "sni": "gspe19-ssl.ls.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52363",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "489 <-> 5077"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "gspe21-ssl.ls.apple.com:443",
-        "plain_text": "CONNECT gspe21",
-        "sni": "gspe21-ssl.ls.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52361",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 38,
-        "exchanged_packets": [
-            "211 <-> 1512",
-            "58 <-> 1008",
-            "58 <-> 938",
-            "43 <-> 495",
-            "58 <-> 397",
-            "46 <-> 398",
-            "37 <-> 395",
-            "41 <-> 259",
-            "35 <-> 238",
-            "41 <-> 233",
-            "28 <-> 148",
-            "28 <-> 129",
-            "32 <-> 129",
-            "26 <-> 94",
-            "22 <-> 87",
-            "25 <-> 65",
-            "28 <-> 61",
-            "20 <-> 61",
-            "24 <-> 60",
-            "19 <-> 51",
-            "18 <-> 43",
-            "24 <-> 38",
-            "26 <-> 37",
-            "22 <-> 34",
-            "19 <-> 29",
-            "18 <-> 27",
-            "18 <-> 26",
-            "18 <-> 25",
-            "15 <-> 25",
-            "14 <-> 21",
-            "14 <-> 19",
-            "14 <-> 16",
-            "14 <-> 14",
-            "15 <-> 17",
-            "15 <-> 15",
-            "14 <-> 15",
-            "14 <-> 16",
-            "13 <-> 14"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -116,28 +41,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "323 <-> 686"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.239/HTTP_Connect.GoogleServices",
-        "url": "www.googletagmanager.com:443",
-        "plain_text": "CONNECT www.googletagmanager.co",
-        "sni": "www.googletagmanager.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52313",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "145 <-> 371",
-            "72 <-> 364"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
     },
     {
         "ip_field": "0/Unknown",
@@ -157,7 +63,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "461 <-> 281"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -178,7 +86,9 @@
         "exchanged_packets": [
             "88 <-> 161",
             "72 <-> 162"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -201,27 +111,9 @@
             "40 <-> 27",
             "45 <-> 35",
             "26 <-> 22"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "gdmf.apple.com:443",
-        "plain_text": "CONNECT gdmf.apple.com",
-        "sni": "gdmf.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52283",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "27 <-> 129"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -243,7 +135,9 @@
             "40 <-> 132",
             "32 <-> 123",
             "15 <-> 17"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
     },
     {
         "ip_field": "0/Unknown",
@@ -263,7 +157,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "44 <-> 121"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "d93a04e792b59c119912bd0f60915165"
     },
     {
         "ip_field": "0/Unknown",
@@ -283,71 +179,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "25 <-> 71"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "gsa.apple.com:443",
-        "plain_text": "CONNECT gsa.apple.com",
-        "sni": "gsa.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52330",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 4,
-        "exchanged_packets": [
-            "34 <-> 65",
-            "21 <-> 22",
-            "19 <-> 20",
-            "18 <-> 18"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "gspe19-2-ssl.ls.apple.com:443",
-        "plain_text": "CONNECT gspe19",
-        "sni": "gspe19-2-ssl.ls.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52364",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "57 <-> 80"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.126/HTTP_Connect.Google",
-        "url": "fonts.gstatic.com:443",
-        "plain_text": "CONNECT fonts.gstatic.com",
-        "sni": "fonts.gstatic.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52323",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "34 <-> 56",
-            "23 <-> 54"
-        ]
+        ],
+        "ja4": "f57a46bbacb6_14788d8d241b",
+        "ja3s": "15af977ce25de452b96affa2addb1036"
     },
     {
         "ip_field": "0/Unknown",
@@ -369,48 +203,9 @@
             "33 <-> 52",
             "33 <-> 50",
             "13 <-> 16"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "configuration.apple.com:443",
-        "plain_text": "CONNECT configuration.apple.com",
-        "sni": "configuration.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52284",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "24 <-> 40"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.239/HTTP_Connect.GoogleServices",
-        "url": "ajax.googleapis.com:443",
-        "plain_text": "CONNECT ajax.googleapis.com",
-        "sni": "ajax.googleapis.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52292",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "24 <-> 38",
-            "25 <-> 38"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -430,7 +225,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "64 <-> 65"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -456,50 +253,9 @@
             "19 <-> 21",
             "19 <-> 20",
             "19 <-> 19"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.126/HTTP_Connect.Google",
-        "url": "www.google-analytics.com:443",
-        "plain_text": "CONNECT www.google",
-        "sni": "www.google-analytics.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52314",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "19 <-> 30",
-            "18 <-> 29"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.145/HTTP_Connect.AppleiTunes",
-        "url": "bag.itunes.apple.com:443",
-        "plain_text": "CONNECT bag.itunes.apple.com",
-        "sni": "bag.itunes.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52332",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 3,
-        "exchanged_packets": [
-            "22 <-> 32",
-            "19 <-> 26",
-            "16 <-> 18"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
     },
     {
         "ip_field": "0/Unknown",
@@ -520,7 +276,9 @@
         "exchanged_packets": [
             "16 <-> 29",
             "15 <-> 28"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
     },
     {
         "ip_field": "0/Unknown",
@@ -541,48 +299,9 @@
         "exchanged_packets": [
             "16 <-> 26",
             "15 <-> 24"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.126/HTTP_Connect.Google",
-        "url": "region1.google-analytics.com:443",
-        "plain_text": "CONNECT region1.google",
-        "sni": "region1.google-analytics.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52300",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "31 <-> 25",
-            "31 <-> 24"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.145/HTTP_Connect.AppleiTunes",
-        "url": "inappcheck.itunes.apple.com:443",
-        "plain_text": "CONNECT inappcheck.itunes.apple",
-        "sni": "inappcheck.itunes.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52263",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "21 <-> 21"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
     },
     {
         "ip_field": "0/Unknown",
@@ -604,7 +323,9 @@
             "22 <-> 27",
             "15 <-> 18",
             "15 <-> 18"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "15af977ce25de452b96affa2addb1036"
     },
     {
         "ip_field": "0/Unknown",
@@ -624,7 +345,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "20 <-> 27"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
     },
     {
         "ip_field": "0/Unknown",
@@ -644,7 +367,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "25 <-> 20"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -664,69 +389,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "24 <-> 18"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.239/HTTP_Connect.GoogleServices",
-        "url": "firebaseremoteconfig.googleapis.com:443",
-        "plain_text": "CONNECT firebaseremoteconfig.go",
-        "sni": "firebaseremoteconfig.googleapis.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52270",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "22 <-> 27",
-            "14 <-> 16"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.143/HTTP_Connect.AppleiCloud",
-        "url": "gateway.icloud.com:443",
-        "plain_text": "@CONNECT gateway.icloud.com",
-        "sni": "gateway.icloud.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52302",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_0_d29295416479/iOS/iPad",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "24 <-> 20"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "xp.apple.com:443",
-        "plain_text": "CONNECT xp.apple.com",
-        "sni": "xp.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52266",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "19 <-> 18",
-            "17 <-> 17"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -748,7 +413,9 @@
             "29 <-> 28",
             "23 <-> 22",
             "13 <-> 13"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "50a9e7b112931e541503e8a2499252b9"
     },
     {
         "ip_field": "0/Unknown",
@@ -768,7 +435,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "28 <-> 26"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -796,87 +465,9 @@
             "20 <-> 22",
             "20 <-> 21",
             "19 <-> 21"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.143/HTTP_Connect.AppleiCloud",
-        "url": "p150-quota.icloud.com:443",
-        "plain_text": "CONNECT p",
-        "sni": "p150-quota.icloud.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52303",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **** Susp Entropy **",
-        "risk_score": "160",
-        "risk_info": "Entropy: 4.950 (Executable?) / Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "17 <-> 17"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "amp-api.apps.apple.com:443",
-        "plain_text": "CONNECT amp",
-        "sni": "amp-api.apps.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52340",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "17 <-> 20"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.145/HTTP_Connect.AppleiTunes",
-        "url": "fpinit.itunes.apple.com:443",
-        "plain_text": "CONNECT fpinit.itunes.apple.com",
-        "sni": "fpinit.itunes.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52334",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "19 <-> 20"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.145/HTTP_Connect.AppleiTunes",
-        "url": "sf-api-token-service.itunes.apple.com:443",
-        "plain_text": "CONNECT sf",
-        "sni": "sf-api-token-service.itunes.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52335",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "19 <-> 20"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
     },
     {
         "ip_field": "0/Unknown",
@@ -896,7 +487,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "28 <-> 29"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
     },
     {
         "ip_field": "0/Unknown",
@@ -916,68 +509,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "22 <-> 22"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "gsp-ssl.ls.apple.com:443",
-        "plain_text": "cCONNECT gsp",
-        "sni": "gsp-ssl.ls.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52356",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "21 <-> 20"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "ca.iadsdk.apple.com:443",
-        "plain_text": "CONNECT ca.iadsdk.apple.com",
-        "sni": "ca.iadsdk.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52306",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "18 <-> 18",
-            "17 <-> 17"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.239/HTTP_Connect.GoogleServices",
-        "url": "proxy-safebrowsing.googleapis.com:443",
-        "plain_text": "uCONNECT proxy",
-        "sni": "proxy-safebrowsing.googleapis.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52354",
-        "ip_destination": "2.18.79.108",
-        "port_destination": "80",
-        "tcp_fingerprint": "194_64_0_d29295416479/iOS/iPad",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "15 <-> 13"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
     },
     {
         "ip_field": "0/Unknown",
@@ -997,27 +531,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "17 <-> 19"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "api-adservices.apple.com:443",
-        "plain_text": "rCONNECT api",
-        "sni": "api-adservices.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52267",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "20 <-> 20"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -1037,7 +553,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "20 <-> 20"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -1059,7 +577,9 @@
             "25 <-> 21",
             "14 <-> 15",
             "17 <-> 17"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
     },
     {
         "ip_field": "0/Unknown",
@@ -1079,28 +599,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "17 <-> 19"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "ocsp2.apple.com:443",
-        "plain_text": "CONNECT ocsp2.apple.com",
-        "sni": "ocsp2.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52282",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "15 <-> 16",
-            "13 <-> 15"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -1120,7 +621,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "18 <-> 18"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -1140,27 +643,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "19 <-> 19"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "apps.mzstatic.com:443",
-        "plain_text": "CONNECT apps.mz",
-        "sni": "apps.mzstatic.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52331",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "17 <-> 18"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -1180,7 +665,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "18 <-> 19"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -1200,27 +687,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "18 <-> 18"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.239/HTTP_Connect.GoogleServices",
-        "url": "firebaseinstallations.googleapis.com:443",
-        "plain_text": "@.xCONNECT firebaseinstallation",
-        "sni": "firebaseinstallations.googleapis.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52264",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "20 <-> 22"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -1240,182 +709,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "18 <-> 19"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.239/HTTP_Connect.GoogleServices",
-        "url": "fonts.googleapis.com:443",
-        "plain_text": "CONNECT fonts.googleapis.com",
-        "sni": "fonts.googleapis.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52316",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "14 <-> 16",
-            "14 <-> 16"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.275/HTTP_Connect.Crashlytics",
-        "url": "firebase-settings.crashlytics.com:443",
-        "plain_text": "CONNECT firebase",
-        "sni": "firebase-settings.crashlytics.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52254",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "18 <-> 18",
-            "18 <-> 19"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "configuration.ls.apple.com:443",
-        "plain_text": "CONNECT configuration.ls.apple.",
-        "sni": "configuration.ls.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52355",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "15 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "188.277/QUIC.iCloudPrivateRelay",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0109h0_ee47968ec53b_cf6d9b7e5ad4",
-        "quic_version": "V-1",
-        "sni": "mask.icloud.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "62896",
-        "ip_destination": "172.224.194.6",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "9 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "sequoia.cdn-apple.com:443",
-        "plain_text": "CONNECT sequoia.cdn",
-        "sni": "sequoia.cdn-apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52296",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "13 <-> 14",
-            "13 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.126/HTTP_Connect.Google",
-        "url": "pagead2.googlesyndication.com:443",
-        "plain_text": "CONNECT pagead2.googlesyndicati",
-        "sni": "pagead2.googlesyndication.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52326",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "15 <-> 16",
-            "15 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130.140/HTTP_Connect.Apple",
-        "url": "wps.apple.com:443",
-        "plain_text": "CONNECT wps.apple.com",
-        "sni": "wps.apple.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52280",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_0_d29295416479/iOS/iPad",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "16 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "188.277/QUIC.iCloudPrivateRelay",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0109h0_ee47968ec53b_cf6d9b7e5ad4",
-        "quic_version": "V-1",
-        "sni": "mask.icloud.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "58101",
-        "ip_destination": "172.224.38.134",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "6 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "188.277/QUIC.iCloudPrivateRelay",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0109h0_ee47968ec53b_cf6d9b7e5ad4",
-        "quic_version": "V-1",
-        "sni": "mask.icloud.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "53887",
-        "ip_destination": "172.224.38.3",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "7 <-> 8"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -1435,7 +731,9 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "17 <-> 17"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     },
     {
         "ip_field": "0/Unknown",
@@ -1455,27 +753,8 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "16 <-> 16"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "131.63/HTTP_Proxy.OCSP",
-        "url": "http://ocsp.godaddy.com//MEAwPjA8MDowODAHBgUrDgMCGgQUHSNvjgZLlx%2Fd36EVI%2BGu5QK%2BKxsEFDqahQcQZyi27%2Fa9BUFuIMGU2g%2FeAgEH",
-        "user_agent": "com.apple.trustd/3.0",
-        "plain_text": "GET http",
-        "sni": "ocsp.godaddy.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "52353",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **",
-        "risk_score": "50",
-        "risk_info": "Expected on port 8080,3128",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "5 <-> 8"
-        ]
+        ],
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
     }
 ]

@@ -1,4 +1,2 @@
-host:"assets.remerge.io",host:"configure.rayjump.com",host:"hybird.mtgglobals.com"@
-host:"fuck.rkn"@
-host:"remerge.events"@
-host:"ssp-track-us.bidease.com"@
+host:"a.hwstatic.com"@
+host:"prod.apigee.hostelworld.com"@

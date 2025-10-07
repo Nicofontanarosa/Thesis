@@ -48,8 +48,10 @@ def fill_missing_ja_from_cluster(final_flows, tshark_cluster_file):
 
     return final_flows
 
-def remove_flows_maxsin(final_flows):
+def remove_flows_maxsin(final_flows, sni_stats_file="tmp/sni_stats.txt"):
 
+    config.clear_log(sni_stats_file)
+    config.log_message(f">> Removed SNI with more than 4 domains:\n\n", sni_stats_file)
     # filtering SNIs with more than 4 domains
     filtered_flows = []
     for flow in final_flows:
@@ -57,7 +59,7 @@ def remove_flows_maxsin(final_flows):
         if not sni or len(sni.split(".")) <= constants.SNI_MAX_DOMAIN:
             filtered_flows.append(flow)
         else:
-            print(f"[REMOVED] SNI with more than 4 domains: {sni}")
+            config.log_message(f"   + {sni}\n", sni_stats_file)
 
     return  filtered_flows
 

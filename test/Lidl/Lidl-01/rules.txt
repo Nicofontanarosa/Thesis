@@ -1,3 +1,4 @@
-host:"lidleu.my.salesforce.com",host:"lidlplus.com"@
+host:"lidl.it",host:"lidlplus.com"@
 host:"accounts.lidl.com"@
-host:"device.marketingcloudapis.com"@
+host:"asset.schwarz"@
+host:"lidl.leaflets.schwarz"@

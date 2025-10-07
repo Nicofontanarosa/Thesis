@@ -1,0 +1,6 @@
+
+>> Coverage statistics:
+
+ + Total packets: 1884
+ + Recognized packets: 1860
+ + Coverage (%): 98.73

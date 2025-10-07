@@ -1,56 +1,23 @@
 >> Frequency ranking:
 
 
- + SNI: fuck.rkn
-  + count: 192
-
- + SNI: logs.ads.vungle.com
-  + count: 5
-
- + SNI: adx.ads.vungle.com
-  + count: 4
-
- + SNI: app.adjust.com
-  + count: 4
-
- + SNI: events.ads.vungle.com
-  + count: 4
-
- + SNI: kfhupwcinaumhiyfmdugz1m.com
-  + count: 3
-
- + SNI: assets.remerge.io
+ + SNI: glovo.dhmedia.io
   + count: 2
 
- + SNI: webview.unityads.unity3d.com
+ + SNI: api.glovoapp.com
+  + count: 2
+
+ + SNI: perseus-productanalytics.deliveryhero.net
   + count: 1
 
- + SNI: configv2.unityads.unity3d.com
+ + SNI: api.usercentrics.eu
   + count: 1
 
- + SNI: config.inmobi.com
+ + SNI: aggregator.service.usercentrics.eu
   + count: 1
 
- + SNI: hybird.mtgglobals.com
+ + SNI: live.ravelin.click
   + count: 1
 
- + SNI: configure.rayjump.com
-  + count: 1
-
- + SNI: config.ads.vungle.com
-  + count: 1
-
- + SNI: publisher-config.unityads.unity3d.com
-  + count: 1
-
- + SNI: us8.remerge.events
-  + count: 1
-
- + SNI: httpkafka.unityads.unity3d.com
-  + count: 1
-
- + SNI: init-mp.fyber.com
-  + count: 1
-
- + SNI: ssp-track-us.bidease.com
+ + SNI: app.usercentrics.eu
   + count: 1

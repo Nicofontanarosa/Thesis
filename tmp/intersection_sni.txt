@@ -1,2 +1,3 @@
 >> Intersection of top 50% temporal & frequency rankings:
 
+ + SNI: api.glovoapp.com

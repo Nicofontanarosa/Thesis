@@ -1,17 +1,17 @@
 >> Using existing nDPI JSON:
 
- + .\test\Planet_VPN\Planet-01\Planet_VPN_Connection_01.json
+ + .\test\hostelworld\hostelworld.json
 
 >> Using existing nDPI JSON:
 
- + .\test\Planet_VPN\Planet-01\Planet_VPN_Connection_01_output_k.json
+ + .\test\hostelworld\hostelworld_output_k.json
 
 >> Running initial filtering ...
 
- + input file: .\test\Planet_VPN\Planet-01\Planet_VPN_Connection_01.json
- + output file: .\test\Planet_VPN\Planet-01\Planet_VPN_Connection_01_filtered.json
+ + input file: .\test\hostelworld\hostelworld.json
+ + output file: .\test\hostelworld\hostelworld_filtered.json
 
 >> Running flows filtering ...
 
- + input file: .\test\Planet_VPN\Planet-01\Planet_VPN_Connection_01_filtered.json
- + output file: .\test\Planet_VPN\Planet-01\Planet_VPN_Connection_01_output.json
+ + input file: .\test\hostelworld\hostelworld_filtered.json
+ + output file: .\test\hostelworld\hostelworld_output.json

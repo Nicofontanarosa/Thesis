@@ -1,3 +1,1 @@
-host:"api.marinobus.it"@Soc marino srl
-host:"u.expo.dev"@Unknown
-host:"dsadata.intel.com"@Intel corporation
+host:"api.marinobus.it"@

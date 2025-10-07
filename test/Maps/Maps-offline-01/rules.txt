@@ -1,2 +1,1 @@
-host:"offline-maps.gvt1.com"@
-host:"dsadata.intel.com"@
+host:"rr1---sn-uv2pm-ugol.offline-maps.gvt1.com"@

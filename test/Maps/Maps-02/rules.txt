@@ -1,1 +1,1 @@
-host:"mobilemaps-pa-gz.googleapis.com",host:"mobilemaps.googleapis.com",host:"ogads-pa.googleapis.com"@Unknown
+host:"googleapis.com"@

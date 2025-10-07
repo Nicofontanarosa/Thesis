@@ -1,1 +1,1 @@
-host:"mobilemaps-pa-gz.googleapis.com",host:"offline-maps.gvt1.com"@
+host:"mobilemaps-pa-gz.googleapis.com",host:"rr2---sn-uv2pm-ugol.offline-maps.gvt1.com"@

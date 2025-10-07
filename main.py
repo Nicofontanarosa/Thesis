@@ -13,6 +13,7 @@ import functions
 import flow_processor
 import threading
 import constants
+import coverage
 
 def run_ndpi_command(cmd, output_file=None):
     if output_file:
@@ -79,13 +80,24 @@ def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
         # Riempie ja4 e ja3s dai cluster Tshark per HTTP
         final_flows = flow_processor.fill_missing_ja_from_cluster(final_flows, tmp_cluster_file)
 
-    with open(final_output, 'w') as f_out:
+    with open("tmp/final_output.json", 'w') as f_out:
         json.dump(final_flows, f_out, indent=4)
 
     # printing flows with risk
     functions.print_risky_flows(final_flows)
-    functions.generate_rules(final_flows, final_output)
-    
+    final_flows = functions.generate_rules(final_flows, final_output)
+
+    with open(final_output, 'w') as f_out:
+        json.dump(final_flows, f_out, indent=4)
+
+
+    # make the complete path for the rules file
+    coverage_file = os.path.join(output_dir, "coverage.txt")
+    config.clear_log(coverage_file)
+    # Calculate and print coverage statistics
+    coverage_result = coverage.calculate_coverage("tmp/final_output.json", "tmp/GT_SNI.json", "test.json")
+    config.log_message(f"\n>> Coverage statistics:\n\n + Total packets: {coverage_result['total_packets']}\n + Recognized packets: {coverage_result['recognized_packets']}\n + Coverage (%): {coverage_result['coverage_percent']}\n + False positives: {coverage_result['false_positives']}", coverage_file)
+
 def main_pipeline(pcap, ndpi, output):
 
     # At the beginning of run_pipeline or right after the imports

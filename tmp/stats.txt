@@ -1,13 +1,21 @@
 >> Lists of protocols read:
 
+   + DHCP
    + DNS
-   + Google
-   + GoogleCloud
+   + Dropbox
+   + HTTP_Connect
+   + HTTP_Proxy
    + ICMP
+   + ICMPV6
    + MDNS
+   + NetBIOS
    + QUIC
+   + SOAP
+   + SSDP
+   + Spotify
    + TLS
-   + WireGuard
+   + TuyaLP
+   + Unknown
 
 >> Lists of protocols supported:
 
@@ -19,9 +27,15 @@
 
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
+   [red]+ DHCP[/red]
    [red]+ DNS[/red]
-   [red]+ Google[/red]
-   [red]+ GoogleCloud[/red]
+   [red]+ Dropbox[/red]
+   [red]+ HTTP_Proxy[/red]
    [red]+ ICMP[/red]
+   [red]+ ICMPV6[/red]
    [red]+ MDNS[/red]
-   [red]+ WireGuard[/red]
+   [red]+ NetBIOS[/red]
+   [red]+ SOAP[/red]
+   [red]+ SSDP[/red]
+   [red]+ Spotify[/red]
+   [red]+ TuyaLP[/red]

@@ -1,6 +1,2 @@
-host:"a.hwstatic.com",host:"api.segment.io",host:"mobileapi.usebutton.com",host:"s.gravatar.com"@
-host:"app-analytics-services-att.com",host:"app-analytics-services.com",host:"prod.apigee.hostelworld.com",host:"sendbird.com"@
-host:"res.cloudinary.com"@
-host:"app.biziday.ro"@
-host:"survey.survicate.com"@
-host:"api.iterable.com"@
+host:"a.hwstatic.com"@
+host:"prod.apigee.hostelworld.com"@

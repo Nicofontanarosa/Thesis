@@ -1,0 +1,85 @@
+>> Removed SNI with more than 4 domains:
+
+   + 0774a3a257.us.verifysession.uxcam.com
+
+
+>> All SNIs seen:
+
+   + [green]a.hwstatic.com[/green]
+   + [green]api-e26a48d0-916a-45b5-91be-c247781e7cf8.sendbird.com[/green]
+   + [green]api.iterable.com[/green]
+   + [green]api.segment.io[/green]
+   + [green]app-0e724cf8bd98b0a2.mobileapi.usebutton.com[/green]
+   + [green]app-analytics-services.com[/green]
+   + [green]app.biziday.ro[/green]
+   + [green]att.attr.appsflyersdk.com[/green]
+   + [green]att.conversions.appsflyersdk.com[/green]
+   + [green]cdn-settings.segment.com[/green]
+   + [green]cdn.auth0.com[/green]
+   + [green]cdn.jsdelivr.net[/green]
+   + [green]cdn.segment.com[/green]
+   + [green]hostelworld-2021-production.eu.auth0.com[/green]
+   + [green]i2.wp.com[/green]
+   + [green]maxcdn.bootstrapcdn.com[/green]
+   + [green]prod.apigee.hostelworld.com[/green]
+   + [green]region1.app-analytics-services-att.com[/green]
+   + [green]region1.app-analytics-services.com[/green]
+   + [green]res.cloudinary.com[/green]
+   + [green]s.gravatar.com[/green]
+   + [green]survey.survicate.com[/green]
+   + [green]ws-e26a48d0-916a-45b5-91be-c247781e7cf8.sendbird.com[/green]
+   + [green]www.app-ads-services.com[/green]
+   + [green]zdffis.cdn-settings.appsflyersdk.com[/green]
+   + [green]zdffis.dlsdk.appsflyersdk.com[/green]
+   + [green]zdffis.dynamic-config-api.appsflyersdk.com[/green]
+   + [green]zdffis.dynamic-report-api.appsflyersdk.com[/green]
+   + [green]zdffis.gcdsdk.appsflyersdk.com[/green]
+   + [green]zdffis.inapps.appsflyersdk.com[/green]
+   + [green]zdffis.register.appsflyersdk.com[/green]
+   + [green]zdffis.skadsdk.appsflyersdk.com[/green]
+   + [green]zdffis.skadsdkless.appsflyersdk.com[/green]
+
+
+>> Removed flows 1° filtering ( Exclude words and know domains ):
+
+   + [red]cdn.segment.com[/red]
+   + [red]cdn.auth0.com[/red]
+   + [red]maxcdn.bootstrapcdn.com[/red]
+   + [red]cdn.jsdelivr.net[/red]
+   + [red]cdn-settings.segment.com[/red]
+   + [red]zdffis.cdn-settings.appsflyersdk.com[/red]
+
+
+>> Removed flows 2° filtering ( Remove known suffixes and not_protocols domains ):
+
+   + [red]zdffis.inapps.appsflyersdk.com[/red]
+   + [red]api.segment.io[/red]
+   + [red]res.cloudinary.com[/red]
+   + [red]zdffis.skadsdkless.appsflyersdk.com[/red]
+   + [red]app-analytics-services.com[/red]
+   + [red]survey.survicate.com[/red]
+   + [red]www.app-ads-services.com[/red]
+   + [red]att.conversions.appsflyersdk.com[/red]
+   + [red]att.attr.appsflyersdk.com[/red]
+   + [red]api.iterable.com[/red]
+   + [red]zdffis.dynamic-report-api.appsflyersdk.com[/red]
+   + [red]region1.app-analytics-services-att.com[/red]
+   + [red]ws-e26a48d0-916a-45b5-91be-c247781e7cf8.sendbird.com[/red]
+   + [red]region1.app-analytics-services.com[/red]
+   + [red]app-0e724cf8bd98b0a2.mobileapi.usebutton.com[/red]
+   + [red]api-e26a48d0-916a-45b5-91be-c247781e7cf8.sendbird.com[/red]
+   + [red]zdffis.register.appsflyersdk.com[/red]
+   + [red]zdffis.dlsdk.appsflyersdk.com[/red]
+   + [red]zdffis.dynamic-config-api.appsflyersdk.com[/red]
+   + [red]zdffis.gcdsdk.appsflyersdk.com[/red]
+   + [red]zdffis.skadsdk.appsflyersdk.com[/red]
+   + [red]i2.wp.com[/red]
+
+
+>> Remaining SNIs:
+
+   + [green]a.hwstatic.com[/green]
+   + [green]app.biziday.ro[/green]
+   + [green]hostelworld-2021-production.eu.auth0.com[/green]
+   + [green]prod.apigee.hostelworld.com[/green]
+   + [green]s.gravatar.com[/green]

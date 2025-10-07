@@ -1,56 +1,23 @@
 >> Temporal ranking:
 
 
- + SNI: app.adjust.com
-  + first_seen:2025-08-21 09:51:44
+ + SNI: api.glovoapp.com
+  + first_seen:2025-08-23 14:53:38
 
- + SNI: kfhupwcinaumhiyfmdugz1m.com
-  + first_seen:2025-08-21 09:51:44
+ + SNI: app.usercentrics.eu
+  + first_seen:2025-08-23 14:53:38
 
- + SNI: configv2.unityads.unity3d.com
-  + first_seen:2025-08-21 09:51:47
+ + SNI: live.ravelin.click
+  + first_seen:2025-08-23 14:53:38
 
- + SNI: config.ads.vungle.com
-  + first_seen:2025-08-21 09:51:47
+ + SNI: api.usercentrics.eu
+  + first_seen:2025-08-23 14:53:38
 
- + SNI: configure.rayjump.com
-  + first_seen:2025-08-21 09:51:47
+ + SNI: aggregator.service.usercentrics.eu
+  + first_seen:2025-08-23 14:53:39
 
- + SNI: adx.ads.vungle.com
-  + first_seen:2025-08-21 09:51:48
+ + SNI: glovo.dhmedia.io
+  + first_seen:2025-08-23 14:53:39
 
- + SNI: hybird.mtgglobals.com
-  + first_seen:2025-08-21 09:51:48
-
- + SNI: webview.unityads.unity3d.com
-  + first_seen:2025-08-21 09:51:48
-
- + SNI: init-mp.fyber.com
-  + first_seen:2025-08-21 09:51:49
-
- + SNI: events.ads.vungle.com
-  + first_seen:2025-08-21 09:51:50
-
- + SNI: httpkafka.unityads.unity3d.com
-  + first_seen:2025-08-21 09:51:50
-
- + SNI: logs.ads.vungle.com
-  + first_seen:2025-08-21 09:51:50
-
- + SNI: config.inmobi.com
-  + first_seen:2025-08-21 09:51:50
-
- + SNI: ssp-track-us.bidease.com
-  + first_seen:2025-08-21 09:51:50
-
- + SNI: publisher-config.unityads.unity3d.com
-  + first_seen:2025-08-21 09:51:54
-
- + SNI: assets.remerge.io
-  + first_seen:2025-08-21 09:51:58
-
- + SNI: us8.remerge.events
-  + first_seen:2025-08-21 09:51:58
-
- + SNI: fuck.rkn
-  + first_seen:2025-08-21 09:52:06
+ + SNI: perseus-productanalytics.deliveryhero.net
+  + first_seen:2025-08-23 14:53:43

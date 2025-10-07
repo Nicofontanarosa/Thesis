@@ -1,4 +1,2 @@
-host:"atsod.launch.liveramp.com",host:"geo.privacymanager.io",host:"images.sbito.it"@
-host:"advgo.net",host:"subito.it"@
-host:"api.privacy-center.org"@
-host:"device.marketingcloudapis.com"@
+host:"images.sbito.it"@
+host:"subito.it"@

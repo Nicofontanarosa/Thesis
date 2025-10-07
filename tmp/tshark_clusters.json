@@ -1,164 +1,138 @@
 [
     {
-        "ja4": "5b57614c22b0_eca864cca44a",
+        "ja4": "a09f3c656075_14788d8d241b",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
         "sni_list": [
-            "config.inmobi.com",
-            "configv2.unityads.unity3d.com",
+            "ajax.googleapis.com",
+            "api-e26a48d0-916a-45b5-91be-c247781e7cf8.sendbird.com",
+            "app-analytics-services.com",
+            "cdn.jsdelivr.net",
+            "configuration.apple.com",
+            "configuration.ls.apple.com",
             "firebase-settings.crashlytics.com",
             "firebaseinstallations.googleapis.com",
-            "firebaselogging-pa.googleapis.com",
-            "fundingchoicesmessages.google.com",
-            "googleads.g.doubleclick.net",
-            "httpkafka.unityads.unity3d.com",
-            "init-mp.fyber.com",
-            "kfhupwcinaumhiyfmdugz1m.com",
-            "pagead2.googleadservices.com",
-            "pagead2.googlesyndication.com",
-            "publisher-config.unityads.unity3d.com"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_eca864cca44a",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "sni_list": [
-            "adx.ads.vungle.com",
-            "cdn-lb.vungle.com",
-            "commvod.kwcdn.com",
-            "config.ads.vungle.com",
-            "events.ads.vungle.com",
-            "logs.ads.vungle.com",
-            "ssp-track-us.bidease.com"
-        ]
-    },
-    {
-        "ja4": "55b375c5d22e_653d80c3fe9d",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "sni_list": [
-            "app-measurement.com",
-            "fundingchoicesmessages.google.com",
-            "googleads.g.doubleclick.net",
-            "region1.app-measurement.com",
-            "www.googleapis.com",
-            "youtubei.googleapis.com"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_d8a2da3f94cd",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "sni_list": [
+            "firebaseremoteconfig.googleapis.com",
             "fonts.googleapis.com",
             "fonts.gstatic.com",
-            "fundingchoicesmessages.google.com",
-            "googleads.g.doubleclick.net",
-            "youtubei.googleapis.com"
+            "gspe21-ssl.ls.apple.com",
+            "hostelworld-2021-production.eu.auth0.com",
+            "init.sandbox.push.apple.com",
+            "maxcdn.bootstrapcdn.com",
+            "ocsp2.apple.com",
+            "pagead2.googlesyndication.com",
+            "prod.apigee.hostelworld.com",
+            "proxy-safebrowsing.googleapis.com",
+            "region1.app-analytics-services-att.com",
+            "region1.app-analytics-services.com",
+            "region1.google-analytics.com",
+            "sequoia.cdn-apple.com",
+            "ws-e26a48d0-916a-45b5-91be-c247781e7cf8.sendbird.com",
+            "www.app-ads-services.com",
+            "www.google-analytics.com",
+            "www.googletagmanager.com"
         ]
     },
     {
-        "ja4": "8daaf6152771_eca864cca44a",
+        "ja4": "a09f3c656075_14788d8d241b",
         "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
         "sni_list": [
-            "assets.remerge.io",
-            "cdn-adn-https.mtgglobals.com",
-            "configure.rayjump.com",
-            "hybird.mtgglobals.com"
+            "0774a3a257.us.verifysession.uxcam.com",
+            "a.hwstatic.com",
+            "amp-api.apps.apple.com",
+            "api.segment.io",
+            "app-0e724cf8bd98b0a2.mobileapi.usebutton.com",
+            "apps.mzstatic.com",
+            "att.attr.appsflyersdk.com",
+            "att.conversions.appsflyersdk.com",
+            "bag.itunes.apple.com",
+            "cdn-settings.segment.com",
+            "cdn.auth0.com",
+            "cdn.segment.com",
+            "i2.wp.com",
+            "s.gravatar.com",
+            "zdffis.cdn-settings.appsflyersdk.com",
+            "zdffis.dlsdk.appsflyersdk.com",
+            "zdffis.dynamic-config-api.appsflyersdk.com",
+            "zdffis.dynamic-report-api.appsflyersdk.com",
+            "zdffis.gcdsdk.appsflyersdk.com",
+            "zdffis.inapps.appsflyersdk.com",
+            "zdffis.register.appsflyersdk.com",
+            "zdffis.skadsdk.appsflyersdk.com",
+            "zdffis.skadsdkless.appsflyersdk.com"
         ]
     },
     {
-        "ja4": "5b57614c22b0_eca864cca44a",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "sni_list": [
-            "cdn2.inner-active.mobi",
-            "s3.amazonaws.com",
-            "webview.unityads.unity3d.com"
-        ]
-    },
-    {
-        "ja4": "5b57614c22b0_352634941f3a",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "sni_list": [
-            "googleads.g.doubleclick.net",
-            "mtalk.google.com",
-            "pagead2.googlesyndication.com"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_fadfdae04b4e",
+        "ja4": "a09f3c656075_14788d8d241b",
         "ja3s": "15af977ce25de452b96affa2addb1036",
         "sni_list": [
-            "adx.ads.vungle.com",
-            "events.ads.vungle.com",
-            "logs.ads.vungle.com"
+            "api-adservices.apple.com",
+            "ca.iadsdk.apple.com",
+            "fpinit.itunes.apple.com",
+            "gateway.icloud.com",
+            "ocsp2.apple.com",
+            "p150-quota.icloud.com",
+            "sf-api-token-service.itunes.apple.com",
+            "survey.survicate.com",
+            "wps.apple.com"
         ]
     },
     {
-        "ja4": "5b57614c22b0_eca864cca44a",
+        "ja4": "a09f3c656075_3d00e4afe3b1",
         "ja3s": "15af977ce25de452b96affa2addb1036",
         "sni_list": [
-            "api.telegra.ph",
-            "app.adjust.com"
+            "gspe19-2-ssl.ls.apple.com",
+            "gspe19-ssl.ls.apple.com",
+            "xp.apple.com"
         ]
     },
     {
-        "ja4": "2b729b4bf6f3_1ea369dc5faa",
-        "ja3s": "f590053ff246338aff7c203dbe7164d6",
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "5311d65cbc4513b3a931887511930625",
         "sni_list": [
-            "drivefrontend-pa.googleapis.com",
-            "signaler-pa.googleapis.com"
+            "gdmf.apple.com",
+            "inappcheck.itunes.apple.com"
         ]
     },
     {
-        "ja4": "5b57614c22b0_352634941f3a",
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "50a9e7b112931e541503e8a2499252b9",
+        "sni_list": [
+            "api.iterable.com"
+        ]
+    },
+    {
+        "ja4": "55b375c5d22e_f2a83c8e78ae",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "sni_list": [
+            "mask.icloud.com"
+        ]
+    },
+    {
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "263c859c5391203d774bc0599793d915",
+        "sni_list": [
+            "gsa.apple.com"
+        ]
+    },
+    {
+        "ja4": "a09f3c656075_14788d8d241b",
+        "ja3s": "d93a04e792b59c119912bd0f60915165",
+        "sni_list": [
+            "res.cloudinary.com"
+        ]
+    },
+    {
+        "ja4": "a09f3c656075_3d00e4afe3b1",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "sni_list": [
+            "gsp-ssl.ls.apple.com"
+        ]
+    },
+    {
+        "ja4": "f57a46bbacb6_14788d8d241b",
         "ja3s": "15af977ce25de452b96affa2addb1036",
         "sni_list": [
-            "app.adjust.com"
+            "app.biziday.ro"
         ]
-    },
-    {
-        "ja4": "2b729b4bf6f3_e24568c0d440",
-        "ja3s": "907bf3ecef1c987c889946b737b43de8",
-        "sni_list": [
-            "drivefrontend-pa.googleapis.com"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_eca864cca44a",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "sni_list": [
-            "us8.remerge.events"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_d8a2da3f94cd",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "sni_list": [
-            "assets.remerge.io"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_02713d6af862",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "sni_list": [
-            "fuck.rkn"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_b6f405a00624",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "sni_list": [
-            "android.apis.google.com"
-        ]
-    },
-    {
-        "ja4": "ec078ce24869_e918dd3cc848",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "sni_list": [
-            "z-m-gateway.facebook.com"
-        ]
-    },
-    {
-        "ja4": "5b57614c22b0_78e6aca7449b",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "sni_list": []
     }
 ]

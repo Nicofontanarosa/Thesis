@@ -20,11 +20,11 @@ log_file_flows = "tmp/flows.txt"
 
 def fill_missing_ja_from_cluster(final_flows, tshark_cluster_file):
 
-    # Carica il cluster Tshark
+    # Load the TLS clusters previously extracted by tshark
     with open(tshark_cluster_file, "r", encoding="utf-8") as f:
         tshark_clusters = json.load(f)
 
-    # Costruisci mappa SNI → (ja4, ja3s)
+    # Build a mapping from SNI → (JA4, JA3S)
     sni_to_ja = {}
     for cluster in tshark_clusters:
         ja4 = cluster.get("ja4")
@@ -32,34 +32,37 @@ def fill_missing_ja_from_cluster(final_flows, tshark_cluster_file):
         for sni in cluster.get("sni_list", []):
             sni_to_ja[sni.lower()] = (ja4, ja3s)
 
-    #print(f"Loaded {sni_to_ja}")
-
-    # Aggiorna flussi HTTP senza JA4/JA3S
+    # Update HTTP (or other) flows that are missing JA4/JA3S
     for flow in final_flows:
+        # Skip flows that already have JA3 or JA4 values
         if flow.get("ja4") or flow.get("ja3s"):
             continue
 
+        # Get the flow SNI in lowercase (if present)
         sni = flow.get("sni", "").lower()
         if not sni:
             continue
 
+        # If the SNI was seen in the tshark clusters, fill in the missing values
         if sni in sni_to_ja:
             flow["ja4"], flow["ja3s"] = sni_to_ja[sni]
 
     return final_flows
 
+# -------------------------------------------
+
 def remove_flows_maxsin(final_flows, sni_stats_file="tmp/sni_stats.txt"):
 
     config.clear_log(sni_stats_file)
-    config.log_message(f">> Removed SNI with more than 4 domains:\n\n", sni_stats_file)
-    # filtering SNIs with more than 4 domains
+    config.log_message(f">> Removed SNI with more than {constants.SNI_MAX_DOMAIN} domains:\n\n", sni_stats_file)
+    # filtering SNIs with more than SNI_MAX_DOMAIN domains
     filtered_flows = []
     for flow in final_flows:
         sni = flow.get("sni", "")
         if not sni or len(sni.split(".")) <= constants.SNI_MAX_DOMAIN:
             filtered_flows.append(flow)
         else:
-            config.log_message(f"   + {sni}\n", sni_stats_file)
+            config.log_message(f"   [+] {sni}\n", sni_stats_file)
 
     return  filtered_flows
 
@@ -69,7 +72,8 @@ def flow_processor(input_file):
     
     # flows read
     flows = []
-    #ip_host = []
+    # list of ip hosts
+    ip_host = []
     # flows aggregation
     aggregated = {}
     # flows to print
@@ -86,12 +90,10 @@ def flow_processor(input_file):
             flow = {}
 
             # Host
-            #match_ip_only = re.match(r"^\s*\d+\s+(\d+\.\d+\.\d+\.\d+)\s+\d+\s*$", line)
-            #if match_ip_only:
-            #    flow["ip_host"] = match_ip_only.group(1)
-            #    flows.append(flow)
-            #    ip_host.append(match_ip_only.group(1))
-            #    continue
+            match_ip_only = re.match(r"^\s*\d+\s+(\d+\.\d+\.\d+\.\d+)\s+\d+\s*$", line)
+            if match_ip_only:
+                ip_host.append(match_ip_only.group(1))
+                continue
 
             # IP
             match_ip_field = re.search(r"\[IP:\s*([^\]]+)\]", line)
@@ -109,14 +111,14 @@ def flow_processor(input_file):
                 flow["proto_field"] = match_proto.group(1)
             
             # DNS IP
-            match_dns_ip = re.search(r"\]\[([\d]+\.[\d]+\.[\d]+\.[\d]+)\]", line)
-            if match_dns_ip:
-                flow["dns_ip"] = match_dns_ip.group(1)
+            #match_dns_ip = re.search(r"\]\[([\d]+\.[\d]+\.[\d]+\.[\d]+)\]", line)
+            #if match_dns_ip:
+            #    flow["dns_ip"] = match_dns_ip.group(1)
 
             # DNS ID
-            match_dns_id = re.search(r"\[DNS Id:\s*([^\]]+)\]", line)
-            if match_dns_id:
-                flow["dns_id"] = match_dns_id.group(1)
+            #match_dns_id = re.search(r"\[DNS Id:\s*([^\]]+)\]", line)
+            #if match_dns_id:
+            #    flow["dns_id"] = match_dns_id.group(1)
 
             # URL
             match_url = re.search(r"\[URL:\s*([^\]]+)\]", line)
@@ -159,9 +161,9 @@ def flow_processor(input_file):
             if match_certificate:
                 flow["certificate"] = match_certificate.group(1)
 
-            match_validity = re.search(r"\[Validity:\s*([^\]]+)\]", line)
-            if match_validity:
-                flow["validity"] = match_validity.group(1)
+            #match_validity = re.search(r"\[Validity:\s*([^\]]+)\]", line)
+            #if match_validity:
+            #    flow["validity"] = match_validity.group(1)
 
             # QUIC Version
             match_quic = re.search(r"\[QUIC ver:\s*([^\]]+)\]", line)
@@ -248,7 +250,7 @@ def flow_processor(input_file):
     protocol_counts = functions.protocols_summary(final_flows)
     # printing summary
     summary = ", ".join([f"{v} flows {k}" for k, v in protocol_counts.items()])
-    config.log_message(f"\n\n>> Flows detected after aggregation:\n\n + {summary}", log_file_flows)
+    config.log_message(f"\n\n>> Flows detected after aggregation:\n\n   [+] {summary}", log_file_flows)
 
     return final_flows
 

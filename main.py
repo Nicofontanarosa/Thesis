@@ -15,12 +15,16 @@ import threading
 import constants
 import coverage
 
+# -------------------------------------------
+
 def run_ndpi_command(cmd, output_file=None):
     if output_file:
         with open(output_file, "w") as f_out:
             subprocess.run(cmd, stdout=f_out, stderr=subprocess.DEVNULL, check=True)
     else:
         subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+
+# -------------------------------------------
 
 def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
     
@@ -29,12 +33,16 @@ def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
     # create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
 
+    # make the complete path for the rules file
+    coverage_file = os.path.join(output_dir, "coverage.txt")
+    config.clear_log(coverage_file)
+
     # Step 1: nDPI
     base, _ = os.path.splitext(os.path.basename(pcap_file))
     json_ndpi = os.path.join(output_dir, base + ".json")
     json_time_ndpi = os.path.join(output_dir, base + "_output_k.json")
 
-    # check if on Windows ( you can delete this part if you have nDPI installed on Windows)
+    # check if on Windows ( you can delete this part if you have nDPI installed on Windows )
     if ndpi_path == 'None':
         if not os.path.exists(json_ndpi):
             config.log_message(f"JSON file from nDPI not found: {json_ndpi}", log_file_error)
@@ -73,11 +81,15 @@ def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
     final_flows = flow_processor.flow_processor(filtered_json)
 
     if constants.CHECK_JA_MISSING:
-        # Step intermedio: estrai JA3/JA4 e SNI da pcap con tshark e salva in tmp
-        import extract_tls_ja3_sni  # importa il modulo se non già importato
+        # Intermediate step: extract JA3/JA4 fingerprints and SNI values from the pcap file using tshark,
+        # then save the extracted data into a temporary JSON file.
+        import extract_tls_ja3_sni  # Import the module if it hasn’t been imported yet.
         tmp_cluster_file = "tmp/tshark_clusters.json"
+        # Run the extraction process, which analyzes the given pcap file
+        # and outputs a JSON file containing TLS clusters with JA3, JA4, and SNI information.
         extract_tls_ja3_sni.extract_tls_clusters(pcap_file, tmp_cluster_file)
-        # Riempie ja4 e ja3s dai cluster Tshark per HTTP
+        # Use the extracted JA3 and JA4 data from the tshark clusters to fill in
+        # any missing fingerprint information in the 'final_flows' dataset (e.g., for HTTP flows).
         final_flows = flow_processor.fill_missing_ja_from_cluster(final_flows, tmp_cluster_file)
 
     with open("tmp/final_output.json", 'w') as f_out:
@@ -89,14 +101,11 @@ def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
 
     with open(final_output, 'w') as f_out:
         json.dump(final_flows, f_out, indent=4)
-
-
-    # make the complete path for the rules file
-    coverage_file = os.path.join(output_dir, "coverage.txt")
-    config.clear_log(coverage_file)
+    
+    config.log_message(f"\n\n>> Coverage statistics save in: {coverage_file}\n", log_file)
     # Calculate and print coverage statistics
-    coverage_result = coverage.calculate_coverage("tmp/final_output.json", "tmp/GT_SNI.json", "test.json")
-    config.log_message(f"\n>> Coverage statistics:\n\n + Total packets: {coverage_result['total_packets']}\n + Recognized packets: {coverage_result['recognized_packets']}\n + Coverage (%): {coverage_result['coverage_percent']}\n + False positives: {coverage_result['false_positives']}", coverage_file)
+    coverage_result = coverage.calculate_coverage("tmp/final_output.json", "clusters.json")
+    config.log_message(f"\n>> Coverage statistics:\n\n [+] Total packets: {coverage_result['total_packets']}\n [+] Recognized packets: {coverage_result['recognized_packets']}\n [+] Coverage (%): {coverage_result['packet_coverage_percent']}\n [+] Total flows: {coverage_result['total_flows']}\n [+] Recognized flows: {coverage_result['recognized_flows']}\n [+] Flow coverage (%): {coverage_result['flow_coverage_percent']}", coverage_file)
 
 def main_pipeline(pcap, ndpi, output):
 

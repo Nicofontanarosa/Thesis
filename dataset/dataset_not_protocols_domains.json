@@ -1,9 +1,16 @@
 {
+  "__comment": [
+    "List of third-party analytics or tracking domains excluded from recognition",
+    "Vinted",
+    "Glovo"
+  ],
+  
   "domains": [
     "datadome.co",
     "braze.eu",
     "inner-active.mobi",
     "i.sng.link",
+
     "rokt.com",
     "sendbird.com",
     "mobileapi.usebutton.com",

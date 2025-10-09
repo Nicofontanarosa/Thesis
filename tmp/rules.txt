@@ -1,2 +1,1 @@
-host:"a.hwstatic.com"@
-host:"prod.apigee.hostelworld.com"@
+host:"vinted.com",host:"vinted.fr",host:"vinted.net"@

@@ -174,7 +174,7 @@ def normalize_sni_clusters(clusters, sorted_dataset):
 
     return normalized_clusters
 
-def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt", log_file_filtered_flows="tmp/filtered_flows.json", dataset_file="dataset/dataset.json", datasetTLD_file="dataset/datasetTLD.json", dataset_not_protocols_file="dataset/dataset_not_protocols_domains.json"):
+def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt", log_file_removed_flows="tmp/removed_flows.json", log_file_filtered_flows="tmp/filtered_flows.json", dataset_file="dataset/dataset.json", datasetTLD_file="dataset/datasetTLD.json", dataset_not_protocols_file="dataset/dataset_not_protocols_domains.json"):
 
     if constants.CLUSTER_RANKING:
         # Create the complete path for the intermediate JSON file
@@ -208,7 +208,7 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
     # Print all SNIs detected in the flows
     config.log_message("\n\n>> All SNIs seen:\n\n", sni_stats_file)
     for sni in unique_sni:
-        config.log_message(f"   + [green]{sni}[/green]\n", sni_stats_file)
+        config.log_message(f"   [+] [green]{sni}[/green]\n", sni_stats_file)
 
     # --------------------------------
 
@@ -221,13 +221,13 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
     # Remove flows with SNIs containing excluded words or present in the main dataset
     removed_flows = [
         flow for flow in final_flows
-        if any(word in flow.get("sni").lower() for word in constants.EXCLUDE_WORDS) 
-        or flow.get("sni").lower() in sorted_dataset
+            if any(word in flow.get("sni").lower() for word in constants.EXCLUDE_WORDS) 
+            or flow.get("sni").lower() in sorted_dataset
     ]
 
     config.log_message("\n\n>> Removed flows 1° filtering ( Exclude words and know domains ):\n\n", sni_stats_file)
     for flow in removed_flows:
-        config.log_message(f"   + [red]{flow.get('sni', '')}[/red]\n", sni_stats_file)
+        config.log_message(f"   [+] [red]{flow.get('sni', '')}[/red]\n", sni_stats_file)
 
     # Keep only flows that are not removed
     final_flows = [
@@ -270,20 +270,20 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
                     remove_sni = True
                     break
             if remove_sni:
-                config.log_message(f"   + [red]{sni}[/red]\n", sni_stats_file)
+                config.log_message(f"   [+] [red]{sni}[/red]\n", sni_stats_file)
                 removed_flows.append(flow)
                 continue
 
         # remove not_protocols domains
-        remove_sni = False
-        for d in dataset_not_protocols_domains:
-            if sni_proc.endswith(d):
-                remove_sni = True
-                break
-        if remove_sni:
-            config.log_message(f"   + [red]{sni}[/red]\n", sni_stats_file)
-            removed_flows.append(flow)
-            continue
+        #remove_sni = False
+        #for d in dataset_not_protocols_domains:
+        #    if sni_proc.endswith(d):
+        #        remove_sni = True
+        #        break
+        #if remove_sni:
+        #    config.log_message(f"   [+] [red]{sni}[/red]\n", sni_stats_file)
+        #    removed_flows.append(flow)
+        #    continue
 
         print(f"\n[DEBUG] Original SNI: {sni} → After removing dataset suffix: {sni_proc}")
 
@@ -304,7 +304,7 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
         print(f"\n[DEBUG] After removing numeric/short/TLD parts: {parts}")
 
         if not parts:
-            config.log_message(f"   + [red]{sni}[/red]\n", sni_stats_file)
+            config.log_message(f"   [+] [red]{sni}[/red]\n", sni_stats_file)
             removed_flows.append(flow)
             continue
 
@@ -325,7 +325,7 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
 
     config.log_message(f"\n\n>> Remaining SNIs:\n\n", sni_stats_file)
     for sni in sorted(cleaned_snis):
-        config.log_message(f"   + [green]{sni}[/green]\n", sni_stats_file)
+        config.log_message(f"   [+] [green]{sni}[/green]\n", sni_stats_file)
 
     # Keep only flows that are not removed
     final_flows = [
@@ -335,6 +335,8 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
 
     config.clear_log(log_file_filtered_flows)
     config.log_message(final_flows, log_file_filtered_flows)
+    config.log_message(f"\n>> Removed flows after filtering [DEBUG]:\n\n", log_file_removed_flows)
+    config.log_message(removed_flows, log_file_removed_flows)
 
     # --------------------------------
 
@@ -369,7 +371,7 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
     #print(f"\nClusters after merging:\n{sni_to_use}\n")
 
     # Save the final merged data to a JSON file
-    with open("test.json", "w", encoding="utf-8") as f:
+    with open("clusters.json", "w", encoding="utf-8") as f:
         json.dump(sni_to_use, f, indent=4)
 
     # Call classification on the cleaned and merged SNIs outputting to the specified file

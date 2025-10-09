@@ -1,138 +1,154 @@
 [
     {
-        "ja4": "a09f3c656075_14788d8d241b",
+        "ja4": "5b57614c22b0_eca864cca44a",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
         "sni_list": [
-            "ajax.googleapis.com",
-            "api-e26a48d0-916a-45b5-91be-c247781e7cf8.sendbird.com",
-            "app-analytics-services.com",
-            "cdn.jsdelivr.net",
-            "configuration.apple.com",
-            "configuration.ls.apple.com",
-            "firebase-settings.crashlytics.com",
-            "firebaseinstallations.googleapis.com",
+            "config.inmobi.com",
+            "d.applovin.com",
+            "firebaselogging-pa.googleapis.com",
             "firebaseremoteconfig.googleapis.com",
+            "googleads.g.doubleclick.net",
+            "img.applovin.com",
+            "init-mp.fyber.com",
+            "ms.applovin.com",
+            "ms4.applovin.com",
+            "pagead2.googlesyndication.com",
+            "prod-mediate-events.applovin.com",
+            "res1.applovin.com",
+            "rr4---sn-hpa7znzr.googlevideo.com",
+            "rt.applovin.com",
+            "sdk-events.inner-active.mobi",
+            "sdk.fra-01.braze.eu",
+            "stage-mediate-events.applovin.com",
+            "sts.applovin.com",
+            "t.applovin.com",
+            "telemetry.sdk.inmobi.com",
+            "unif-id.ssp.inmobi.com",
+            "www.google.com"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_d8a2da3f94cd",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "sni_list": [
+            "csi.gstatic.com",
             "fonts.googleapis.com",
             "fonts.gstatic.com",
-            "gspe21-ssl.ls.apple.com",
-            "hostelworld-2021-production.eu.auth0.com",
-            "init.sandbox.push.apple.com",
-            "maxcdn.bootstrapcdn.com",
-            "ocsp2.apple.com",
+            "googleads.g.doubleclick.net",
+            "lh3.googleusercontent.com",
             "pagead2.googlesyndication.com",
-            "prod.apigee.hostelworld.com",
-            "proxy-safebrowsing.googleapis.com",
-            "region1.app-analytics-services-att.com",
-            "region1.app-analytics-services.com",
-            "region1.google-analytics.com",
-            "sequoia.cdn-apple.com",
-            "ws-e26a48d0-916a-45b5-91be-c247781e7cf8.sendbird.com",
-            "www.app-ads-services.com",
-            "www.google-analytics.com",
-            "www.googletagmanager.com"
+            "www.googletagservices.com",
+            "www.gstatic.com"
         ]
     },
     {
-        "ja4": "a09f3c656075_14788d8d241b",
+        "ja4": "8daaf6152771_eca864cca44a",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "sni_list": [
+            "cdn.cookielaw.org",
+            "logs-ingress.svc.vinted.com",
+            "metrics-ingress.svc.vinted.com",
+            "mobile-data.onetrust.io",
+            "socket.vinted.net",
+            "www.vinted.fr"
+        ]
+    },
+    {
+        "ja4": "5b57614c22b0_eca864cca44a",
         "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
         "sni_list": [
-            "0774a3a257.us.verifysession.uxcam.com",
-            "a.hwstatic.com",
-            "amp-api.apps.apple.com",
-            "api.segment.io",
-            "app-0e724cf8bd98b0a2.mobileapi.usebutton.com",
-            "apps.mzstatic.com",
-            "att.attr.appsflyersdk.com",
-            "att.conversions.appsflyersdk.com",
-            "bag.itunes.apple.com",
-            "cdn-settings.segment.com",
-            "cdn.auth0.com",
-            "cdn.segment.com",
-            "i2.wp.com",
-            "s.gravatar.com",
-            "zdffis.cdn-settings.appsflyersdk.com",
-            "zdffis.dlsdk.appsflyersdk.com",
-            "zdffis.dynamic-config-api.appsflyersdk.com",
-            "zdffis.dynamic-report-api.appsflyersdk.com",
-            "zdffis.gcdsdk.appsflyersdk.com",
-            "zdffis.inapps.appsflyersdk.com",
-            "zdffis.register.appsflyersdk.com",
-            "zdffis.skadsdk.appsflyersdk.com",
-            "zdffis.skadsdkless.appsflyersdk.com"
+            "cdn2.inner-active.mobi",
+            "graph.facebook.com",
+            "images1.vinted.net",
+            "static-assets.vinted.com"
         ]
     },
     {
-        "ja4": "a09f3c656075_14788d8d241b",
+        "ja4": "8daaf6152771_eca864cca44a",
         "ja3s": "15af977ce25de452b96affa2addb1036",
         "sni_list": [
-            "api-adservices.apple.com",
-            "ca.iadsdk.apple.com",
-            "fpinit.itunes.apple.com",
-            "gateway.icloud.com",
-            "ocsp2.apple.com",
-            "p150-quota.icloud.com",
-            "sf-api-token-service.itunes.apple.com",
-            "survey.survicate.com",
-            "wps.apple.com"
+            "apps.rokt.com",
+            "config.ads.vungle.com",
+            "logs.ads.vungle.com",
+            "mobile-api.rokt.com"
         ]
     },
     {
-        "ja4": "a09f3c656075_3d00e4afe3b1",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "sni_list": [
-            "gspe19-2-ssl.ls.apple.com",
-            "gspe19-ssl.ls.apple.com",
-            "xp.apple.com"
-        ]
-    },
-    {
-        "ja4": "a09f3c656075_14788d8d241b",
-        "ja3s": "5311d65cbc4513b3a931887511930625",
-        "sni_list": [
-            "gdmf.apple.com",
-            "inappcheck.itunes.apple.com"
-        ]
-    },
-    {
-        "ja4": "a09f3c656075_14788d8d241b",
-        "ja3s": "50a9e7b112931e541503e8a2499252b9",
-        "sni_list": [
-            "api.iterable.com"
-        ]
-    },
-    {
-        "ja4": "55b375c5d22e_f2a83c8e78ae",
+        "ja4": "55b375c5d22e_653d80c3fe9d",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
         "sni_list": [
-            "mask.icloud.com"
+            "csi.gstatic.com",
+            "googleads.g.doubleclick.net",
+            "pagead2.googlesyndication.com",
+            "www.gstatic.com"
         ]
     },
     {
-        "ja4": "a09f3c656075_14788d8d241b",
-        "ja3s": "263c859c5391203d774bc0599793d915",
+        "ja4": "5b57614c22b0_352634941f3a",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
         "sni_list": [
-            "gsa.apple.com"
+            "firebaseremoteconfig.googleapis.com",
+            "prod-mediate-events.applovin.com",
+            "sdk.fra-01.braze.eu"
         ]
     },
     {
-        "ja4": "a09f3c656075_14788d8d241b",
-        "ja3s": "d93a04e792b59c119912bd0f60915165",
+        "ja4": "8daaf6152771_eca864cca44a",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
         "sni_list": [
-            "res.cloudinary.com"
+            "api-sdk.datadome.co",
+            "vintedapp.com"
         ]
     },
     {
-        "ja4": "a09f3c656075_3d00e4afe3b1",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "5b57614c22b0_fadfdae04b4e",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
         "sni_list": [
-            "gsp-ssl.ls.apple.com"
+            "cdn2.inner-active.mobi",
+            "images1.vinted.net"
         ]
     },
     {
-        "ja4": "f57a46bbacb6_14788d8d241b",
+        "ja4": "8daaf6152771_d8a2da3f94cd",
         "ja3s": "15af977ce25de452b96affa2addb1036",
         "sni_list": [
-            "app.biziday.ro"
+            "i.sng.link",
+            "view.adjust.com"
+        ]
+    },
+    {
+        "ja4": "5b57614c22b0_eca864cca44a",
+        "ja3s": "35af4c8cd9495354f7d701ce8ad7fd2d",
+        "sni_list": [
+            "ads.pubmatic.com"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_fadfdae04b4e",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "sni_list": [
+            "logs.ads.vungle.com"
+        ]
+    },
+    {
+        "ja4": "5b57614c22b0_fadfdae04b4e",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "sni_list": [
+            "rr4---sn-hpa7znzr.googlevideo.com"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_d8a2da3f94cd",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "sni_list": [
+            "impression.appsflyer.com"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_b6f405a00624",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "sni_list": [
+            "view.adjust.com"
         ]
     }
 ]

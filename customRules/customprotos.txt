@@ -1,0 +1,182 @@
+
+#################################################################
+# nDPI protos.txt - example file for defining custom protocols
+#################################################################
+
+# Original File nDPI/Example/protos.txt
+
+# 1. PORT-BASED PROTOCOLS
+# Format: tcp:<port>,udp:<port>@<ProtoName>[=ProtoID][,cat=N][,breed=M]
+#tcp:80@HTTP=1,cat=1,breed=1
+#tcp:443@TLS=2,cat=2,breed=1
+#udp:5060@SIP=3,cat=3,breed=1
+#tcp:65535@TestProto=4000,cat=9,breed=1
+
+# 2. HOST-BASED (hostname/SNI)
+# Format: host:"<value>"@<ProtoName>[=ProtoID][,cat=N][,breed=M]
+#host:"disneyplus.com",host:"*.disneyplus.net"@DisneyPlus=4200,cat=11,breed=1
+#host:"api-global.netflix.com"@Netflix=4201,cat=11,breed=2
+
+# 3. IP-BASED (IPv4)
+# Format: ip:<addr>[:<port>]@<ProtoName>[=ProtoID][,cat=N][,breed=M]
+#ip:8.248.73.247:443@AmazonPrime=4300,cat=12,breed=1
+#ip:3.3.3.3:443@CustomProtocolA=4301,cat=5,breed=2
+
+# 4. IPV6-BASED
+# Format: ipv6:[<addr>][:<port>]@<ProtoName>[=ProtoID][,cat=N][,breed=M]
+#ipv6:[2001:db8::c2fd:b817:5ca8:82dd]:16690@CustomProtocolJ=4400,cat=6,breed=3
+#ipv6:[fe80::76ac:b9ff:fe6c:c124]:12717@CustomProtocolG=4401,cat=6,breed=4
+
+# 5. SYMBOLIC IP / HOSTNAME
+# Format: ip:<hostname>@<ProtoName>[=ProtoID][,cat=N][,breed=M]
+#ip:www.ntop.org@ntop=4500,cat=7,breed=1
+#ipv6:www.ntop.org@ntop=4501,cat=7,breed=1
+
+# 6. JA4 FINGERPRINTS
+# Format: ja4:<fingerprint>@<ProtoName>[=ProtoID][,cat=N][,breed=M]
+#ja4:t12d1409h1_c866b44c5a26_b39be8c56777@CustomJA4Proto=2060,cat=2,breed=5
+
+# 7. nDPI FINGERPRINTS
+# Format: ndpifp:<fingerprint>@<ProtoName>[=ProtoID][,cat=N][,breed=M]
+#ndpifp:8ae775daeb30f7aa5790706158288639@CustomnDPIFPProto=2061,cat=3,breed=2
+#ndpifp:2d3ea0b7f090060fa1b9f3783362f862@CustomnDPIFPProto2=2062,cat=3,breed=3
+
+# VINTED Sample
+#ip:www.vinted.fr@Vinted
+#ip:vintedapp.com@Vinted
+#ip:104.18.120.232@Vinted
+#ip:3.165.239.126:443@Vinted
+#ip:34.102.162.219:443@Vinted
+#ip:108.157.194.66:443@Vinted
+#ip:104.16.207.80:443@Vinted
+#ip:34.110.179.88:443@Vinted
+#ip:34.117.147.68:443@Vinted
+#ip:34.111.80.193:443@Vinted
+#ip:104.17.195.159:443@Vinted
+#host:"applovin.com",host:"applovin.com",host:"vinted.net",host:"www.vinted.fr",host:"vinted.com"@Vinted,cat=27,breed=2
+
+#################################################################
+# End of complete example file
+#################################################################
+
+host:"api.glovoapp.com",host:"glovo-fonts-78305bac.s3.eu-west-1.amazonaws.com",host:"glovo.dhmedia.io"@Glovo
+
+#################################################################
+# Breed
+#################################################################
+
+# NDPI_PROTOCOL_SAFE = 0,                   /* Surely doesn't provide risks for the network. (e.g., a news site) */
+# NDPI_PROTOCOL_ACCEPTABLE = 1,             /* Probably doesn't provide risks, but could be malicious (e.g., Dropbox) */
+# NDPI_PROTOCOL_FUN = 2,                    /* Pure fun protocol, which may be prohibited by the user policy (e.g., Netflix) */
+# NDPI_PROTOCOL_UNSAFE = 3,                 /* Probably provides risks, but could be a normal traffic. Unencrypted protocols with clear pass should be here (e.g., telnet) */
+# NDPI_PROTOCOL_POTENTIALLY_DANGEROUS = 4,  /* Possibly dangerous (ex. Tor). */
+# NDPI_PROTOCOL_DANGEROUS = 5,              /* Surely is dangerous (ex. smbv1). Be prepared to troubles */
+# NDPI_PROTOCOL_TRACKER_ADS = 6,            /* Trackers, Advertisements... */
+# NDPI_PROTOCOL_UNRATED = 7                 /* No idea, not implemented or impossible to classify */
+
+#################################################################
+# Categories
+#################################################################
+
+#  NDPI_PROTOCOL_CATEGORY_UNSPECIFIED = 0,       /* For general services and unknown protocols */
+#  NDPI_PROTOCOL_CATEGORY_MEDIA = 1,             /* Multimedia and streaming */
+#  NDPI_PROTOCOL_CATEGORY_VPN = 2,               /* Virtual Private Networks */
+#  NDPI_PROTOCOL_CATEGORY_MAIL = 3,              /* Protocols to send/receive/sync emails */
+#  NDPI_PROTOCOL_CATEGORY_DATA_TRANSFER = 4,     /* AFS/NFS and similar protocols */
+#  NDPI_PROTOCOL_CATEGORY_WEB = 5,               /* Web/mobile protocols and services */
+#  NDPI_PROTOCOL_CATEGORY_SOCIAL_NETWORK = 6,    /* Social networks */
+#  NDPI_PROTOCOL_CATEGORY_DOWNLOAD_FT = 7,       /* Download, FTP, file transfer/sharing */
+#  NDPI_PROTOCOL_CATEGORY_GAME = 8,              /* Online games */
+#  NDPI_PROTOCOL_CATEGORY_CHAT = 9,              /* Instant messaging */
+#  NDPI_PROTOCOL_CATEGORY_VOIP = 10,             /* Real-time communications and conferencing */ /* 10 */
+#  NDPI_PROTOCOL_CATEGORY_DATABASE = 11,         /* Protocols for database communication */
+#  NDPI_PROTOCOL_CATEGORY_REMOTE_ACCESS = 12,    /* Remote access and control */
+#  NDPI_PROTOCOL_CATEGORY_CLOUD = 13,            /* Online cloud services */
+#  NDPI_PROTOCOL_CATEGORY_NETWORK = 14,          /* Network infrastructure protocols */
+#  NDPI_PROTOCOL_CATEGORY_COLLABORATIVE = 15,    /* Software for collaborative development, including Webmail */
+#  NDPI_PROTOCOL_CATEGORY_RPC = 16,              /* High level network communication protocols */
+#  NDPI_PROTOCOL_CATEGORY_STREAMING = 17,        /* Streaming protocols */
+#  NDPI_PROTOCOL_CATEGORY_SYSTEM_OS = 18,        /* System/Operating System level applications */
+#  NDPI_PROTOCOL_CATEGORY_SW_UPDATE = 19,        /* Software update */
+
+#  /* Further categories... */
+#  NDPI_PROTOCOL_CATEGORY_MUSIC = 25,
+#  NDPI_PROTOCOL_CATEGORY_VIDEO = 26,
+#  NDPI_PROTOCOL_CATEGORY_SHOPPING = 27,
+#  NDPI_PROTOCOL_CATEGORY_PRODUCTIVITY = 28,
+#  NDPI_PROTOCOL_CATEGORY_FILE_SHARING = 29,
+
+#  /* The category below is used by sites who are used to test connectivity */
+#  NDPI_PROTOCOL_CATEGORY_CONNECTIVITY_CHECK = 30,
+#  NDPI_PROTOCOL_CATEGORY_IOT_SCADA = 31,
+
+#  /* The category below is used for vocal assistance services */
+#  NDPI_PROTOCOL_CATEGORY_VIRTUAL_ASSISTANT = 32,
+#  NDPI_PROTOCOL_CATEGORY_CYBERSECURITY = 33,
+#  NDPI_PROTOCOL_CATEGORY_ADULT_CONTENT = 34,
+
+#  NDPI_PROTOCOL_CATEGORY_MINING           = 99,
+#  NDPI_PROTOCOL_CATEGORY_MALWARE          = 100,
+#  NDPI_PROTOCOL_CATEGORY_ADVERTISEMENT    = 101,    /* Advertisement, ADS & analytics */
+#  NDPI_PROTOCOL_CATEGORY_BANNED_SITE      = 102,
+#  NDPI_PROTOCOL_CATEGORY_SITE_UNAVAILABLE = 103,
+#  NDPI_PROTOCOL_CATEGORY_ALLOWED_SITE     = 104,
+#  NDPI_PROTOCOL_CATEGORY_ANTIMALWARE      = 105,
+
+#  /* Crypto Currency e.g Bitcoin, Litecoin, Etherum ..et. */
+#  NDPI_PROTOCOL_CATEGORY_CRYPTO_BLOCKCHAIN = 106,
+
+#  /* Gambling websites */
+#  NDPI_PROTOCOL_CATEGORY_GAMBLING = 107,
+#  NDPI_PROTOCOL_CATEGORY_HEALTH = 108,
+#  NDPI_PROTOCOL_CATEGORY_ARTIFICIAL_INTELLIGENCE = 109,
+#  NDPI_PROTOCOL_CATEGORY_FINANCE = 110,
+#  NDPI_PROTOCOL_CATEGORY_NEWS = 111,
+#  NDPI_PROTOCOL_CATEGORY_SPORT = 112,
+#  NDPI_PROTOCOL_CATEGORY_BUSINESS = 113,
+#  NDPI_PROTOCOL_CATEGORY_INTERNET_HOSTING = 114,    /* Internet sites including hosting */
+#  NDPI_PROTOCOL_CATEGORY_BLOCKCHAIN_CRYPTO = 115,
+#  NDPI_PROTOCOL_CATEGORY_BLOG_FORUM = 116,
+#  NDPI_PROTOCOL_CATEGORY_GOVERNMENT = 117,
+#  NDPI_PROTOCOL_CATEGORY_EDU_CATION = 118,
+#  NDPI_PROTOCOL_CATEGORY_CDN_PROXY = 119,
+#  NDPI_PROTOCOL_CATEGORY_HARDWARE_SOFTWARE = 120,
+#  NDPI_PROTOCOL_CATEGORY_DATING = 121,
+#  NDPI_PROTOCOL_CATEGORY_TRAVEL = 121,
+#  NDPI_PROTOCOL_CATEGORY_FOOD = 123,  
+#  NDPI_PROTOCOL_CATEGORY_BOTS = 124,                /* Crawlers, bots */
+#  NDPI_PROTOCOL_CATEGORY_SCANNERS = 125,            /* e.g. shodan.io, censys.io */
+#  NDPI_PROTOCOL_CATEGORY_HOSTING = 126,
+#  NDPI_PROTOCOL_CATEGORY_ART = 127,
+#  NDPI_PROTOCOL_CATEGORY_FASHION = 128,
+#  NDPI_PROTOCOL_CATEGORY_BOOKS = 129,
+#  NDPI_PROTOCOL_CATEGORY_SCIENCE = 130,
+#  NDPI_PROTOCOL_CATEGORY_MAPS_NAVIGATION = 131,
+#  NDPI_PROTOCOL_CATEGORY_LOGIN_PORTAL = 132,
+#  NDPI_PROTOCOL_CATEGORY_LEGAL = 133,
+#  NDPI_PROTOCOL_CATEGORY_ENVIRONMENTAL_SERVICES = 134,
+#  NDPI_PROTOCOL_CATEGORY_CULTURE = 135,
+#  NDPI_PROTOCOL_CATEGORY_HOUSING = 136,
+#  NDPI_PROTOCOL_CATEGORY_TELECOMMUNICATION = 137,
+#  NDPI_PROTOCOL_CATEGORY_TRANSPORTATION = 138,
+#  NDPI_PROTOCOL_CATEGORY_DESIGN = 139,
+#  NDPI_PROTOCOL_CATEGORY_EMPLOYMENT = 140,
+#  NDPI_PROTOCOL_CATEGORY_EVENTS = 141,
+#  NDPI_PROTOCOL_CATEGORY_WEATHER = 142,
+#  NDPI_PROTOCOL_CATEGORY_LIFESTYLE = 143,
+#  NDPI_PROTOCOL_CATEGORY_REAL_ESTATE = 144,
+#  NDPI_PROTOCOL_CATEGORY_SECURITY = 145,
+#  NDPI_PROTOCOL_CATEGORY_ENVIRONMENT = 146,
+#  NDPI_PROTOCOL_CATEGORY_HOBBY = 147,
+#  NDPI_PROTOCOL_CATEGORY_COMPUTER_SCIENCE = 148,
+#  NDPI_PROTOCOL_CATEGORY_CONSTRUCTION = 149,
+#  NDPI_PROTOCOL_CATEGORY_ENGINEERING = 150,
+#  NDPI_PROTOCOL_CATEGORY_RELIGION = 151,
+#  NDPI_PROTOCOL_CATEGORY_ENTERTAINMENT = 152,
+#  NDPI_PROTOCOL_CATEGORY_AGRICULTURE = 153,
+#  NDPI_PROTOCOL_CATEGORY_TECHNOLOGY = 154,
+#  NDPI_PROTOCOL_CATEGORY_BEAUTY = 155,
+
+#################################################################
+# End of file
+#################################################################

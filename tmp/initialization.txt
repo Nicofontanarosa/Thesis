@@ -1,17 +1,19 @@
 >> Using existing nDPI JSON:
 
- + .\test\hostelworld\hostelworld.json
+ + .\test\Vinted\Vinted_01_pcapandroid.json
 
 >> Using existing nDPI JSON:
 
- + .\test\hostelworld\hostelworld_output_k.json
+ + .\test\Vinted\Vinted_01_pcapandroid_output_k.json
 
 >> Running initial filtering ...
 
- + input file: .\test\hostelworld\hostelworld.json
- + output file: .\test\hostelworld\hostelworld_filtered.json
+ + input file: .\test\Vinted\Vinted_01_pcapandroid.json
+ + output file: .\test\Vinted\Vinted_01_pcapandroid_filtered.json
 
 >> Running flows filtering ...
 
- + input file: .\test\hostelworld\hostelworld_filtered.json
- + output file: .\test\hostelworld\hostelworld_output.json
+ + input file: .\test\Vinted\Vinted_01_pcapandroid_filtered.json
+ + output file: .\test\Vinted\Vinted_01_pcapandroid_output.json
+
+>> Coverage statistics save in: .\test\Vinted\coverage.txt

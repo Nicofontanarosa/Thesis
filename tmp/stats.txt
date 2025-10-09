@@ -1,41 +1,17 @@
 >> Lists of protocols read:
 
-   + DHCP
-   + DNS
-   + Dropbox
-   + HTTP_Connect
-   + HTTP_Proxy
-   + ICMP
-   + ICMPV6
-   + MDNS
-   + NetBIOS
-   + QUIC
-   + SOAP
-   + SSDP
-   + Spotify
-   + TLS
-   + TuyaLP
-   + Unknown
+   [+] DNS
+   [+] QUIC
+   [+] TLS
 
 >> Lists of protocols supported:
 
-   + HTTP
-   + HTTP_Connect
-   + QUIC
-   + TLS
-   + Unknown
+   [+] HTTP
+   [+] HTTP_Connect
+   [+] QUIC
+   [+] TLS
+   [+] Unknown
 
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
-   [red]+ DHCP[/red]
-   [red]+ DNS[/red]
-   [red]+ Dropbox[/red]
-   [red]+ HTTP_Proxy[/red]
-   [red]+ ICMP[/red]
-   [red]+ ICMPV6[/red]
-   [red]+ MDNS[/red]
-   [red]+ NetBIOS[/red]
-   [red]+ SOAP[/red]
-   [red]+ SSDP[/red]
-   [red]+ Spotify[/red]
-   [red]+ TuyaLP[/red]
+   [red][+] DNS[/red]

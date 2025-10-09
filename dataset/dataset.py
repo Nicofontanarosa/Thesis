@@ -3,18 +3,9 @@
 # File: dataset.py extracts domain from a C-style static array in the input file and writes them as a JSON dataset
 #################################################################
 
-import config
 import re
 import json
-# -------------------------------------------
-
-# Parse command-line arguments
-args = config.get_args()
-input_file = args.input_file
-output_file = args.output
-
-# Print the input and output file paths being used
-config.print_files(input_file, output_file)
+import sys
 
 # -------------------------------------------
 
@@ -56,31 +47,41 @@ def extract_domains(input_file, output_file):
         with open(output_file, 'w') as fout:
             json.dump(data, fout, indent=2)
 
-        print(f"[+] Extracted {len(domains)} domains, wrote {len(unique_domains)} unique domains to {output_file}")
+        #print(f"\n[+] Extracted {len(domains)} domains, wrote {len(unique_domains)} unique domains to {output_file}")
 
 # -------------------------------------------
 
-# Extract domains from the input file to the first output dataset
-extract_domains(input_file, output_file)
+def run():
+    if len(sys.argv) != 3:
+        print(f"Usage: {sys.argv[0]} <input> <output>")
+        sys.exit(1)
 
-# -------------------------------------------
-# Process a temporary JSON dataset (temp.json) to create datasetTLD.json
-input_file = "temp.json"
-output_file = "datasetTLD.json"
+    input_file = sys.argv[1]
+    output_file = sys.argv[2]
 
-with open(input_file, "r") as f:
-    data = json.load(f)
+    # Extract domains from the input file to the first output dataset
+    extract_domains(input_file, output_file)
 
-domains = data.get("domains", [])
-# Remove duplicates and sort
-domains_sorted = sorted(set(domains))
-data["domains"] = domains_sorted
+    # Process a temporary JSON dataset (temp.json) to create datasetTLD.json
+    input_file = "temp.json"
+    output_file = "datasetTLD.json"
 
-# Write the cleaned dataset to datasetTLD.json
-with open(output_file, "w") as f:
-    json.dump(data, f, indent=2)
+    with open(input_file, "r") as f:
+        data = json.load(f)
 
-print("Done")
+    domains = data.get("domains", [])
+    # Remove duplicates and sort
+    domains_sorted = sorted(set(domains))
+    data["domains"] = domains_sorted
+
+    # Write the cleaned dataset to datasetTLD.json
+    with open(output_file, "w") as f:
+        json.dump(data, f, indent=2)
+
+    #print("\nDone\n")
+
+if __name__ == "__main__":
+    run()
 
 #################################################################
 # End of dataset.py

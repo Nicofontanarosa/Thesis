@@ -1,7 +1,9 @@
 
 >> Coverage statistics:
 
- + Total packets: 130490
- + Recognized packets: 99538
- + Coverage (%): 76.28
- + False positives: {'images.trvl-media.com'}
+ [+] Total packets: 130490
+ [+] Recognized packets: 117460
+ [+] Coverage (%): 90.01
+ [+] Total flows: 1200
+ [+] Recognized flows: 1063
+ [+] Flow coverage (%): 88.58

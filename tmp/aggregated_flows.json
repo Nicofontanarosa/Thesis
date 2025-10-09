@@ -1,22 +1,47 @@
 [
     {
-        "sni": "a.hwstatic.com",
+        "sni": "vinted.com",
+        "flow_count": 7,
+        "packets": 281
+    },
+    {
+        "sni": "vinted.net",
+        "flow_count": 19,
+        "packets": 549
+    },
+    {
+        "sni": "vinted.fr",
+        "flow_count": 9,
+        "packets": 508
+    },
+    {
+        "sni": "sdk-events.inner-active.mobi",
+        "flow_count": 2,
+        "packets": 20
+    },
+    {
+        "sni": "braze.eu",
+        "flow_count": 5,
+        "packets": 70
+    },
+    {
+        "sni": "api-sdk.datadome.co",
+        "flow_count": 2,
+        "packets": 29
+    },
+    {
+        "sni": "vintedapp.com",
+        "flow_count": 2,
+        "packets": 29
+    },
+    {
+        "sni": "i.sng.link",
+        "flow_count": 2,
+        "packets": 28
+    },
+    {
+        "sni": "rokt.com",
         "flow_count": 4,
-        "packets": 14026
-    },
-    {
-        "sni": "s.gravatar.com",
-        "flow_count": 2,
-        "packets": 34
-    },
-    {
-        "sni": "prod.apigee.hostelworld.com",
-        "flow_count": 2,
-        "packets": 1009
-    },
-    {
-        "sni": "app.biziday.ro",
-        "flow_count": 2,
-        "packets": 96
+        "packets": 44
     }
 ]

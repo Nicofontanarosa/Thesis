@@ -1,3 +1,2 @@
-host:"courier.push.apple.com"@
 host:"api.termius.com"@
 host:"split.io"@

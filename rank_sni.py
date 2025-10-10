@@ -34,7 +34,7 @@ def filter_sni_to_use(sni_to_use, intersection):
     sni_to_use[:] = [c for c in sni_to_use if c["sni_list"]]
     print(f"\nFiltered clusters to classify {sni_to_use}\n")
 
-def rank_sni(flows, times_file, sni_to_use, log_file_time="tmp/rank_time_sni.txt", log_file_rank="tmp/rank_sni.txt", log_file_intersection="tmp/intersection_sni.txt"):
+def rank_sni(flows, times_file, sni_to_use, log_file_time, log_file_rank, log_file_intersection):
 
     config.clear_log(log_file_time)
     config.clear_log(log_file_rank)

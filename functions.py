@@ -21,72 +21,63 @@ protocols = constants.PROTOCOLS
 # -------------------------------------------
 
 def aggregate_flows_by_sni(sni_to_use, final_flows, output_file="tmp/aggregated_flows.json"):
-
-    aggregated = []
-
-    # Step 1: aggregate flows for each SNI in the clusters
+    # Step 1: crea un dizionario per associare SNI -> cluster
+    sni_to_cluster = {}
     for cluster in sni_to_use:
-        sni_list = cluster.get("sni_list", [])
-        # initialize counters for each SNI
-        sni_counters = {sni: {"flow_count": 0, "packets": 0} for sni in sni_list}
+        for sni in cluster.get("sni_list", []):
+            sni_to_cluster[sni.lower()] = cluster
 
-        for flow in final_flows:
-            flow_sni = (flow.get("sni") or "").lower()
-            similar_count = flow.get("similar_flows_count", 0)
-            exchanged = flow.get("exchanged_packets", [])
+    # Step 2: inizializza flow_count e packets per ogni cluster
+    for cluster in sni_to_use:
+        cluster["flow_count"] = 0
+        cluster["packets"] = 0
 
-            # calculate total packets (sum of both directions)
-            pkt = 0
-            for exch in exchanged:
-                if "<->" in exch:
-                    left, right = exch.split("<->")
-                    try:
-                        pkt += int(left.strip()) + int(right.strip())
-                    except ValueError:
-                        continue
+    # Step 3: aggrega i flussi verso i cluster corretti
+    for flow in final_flows:
+        flow_sni = (flow.get("sni") or "no_sni").lower()
+        similar_count = flow.get("similar_flows_count", 0)
+        exchanged = flow.get("exchanged_packets", [])
 
-            # update counters if SNI matches
-            for sni in sni_list:
-                if flow_sni == sni or flow_sni.endswith("." + sni):
-                    sni_counters[sni]["flow_count"] += 1 + similar_count
-                    sni_counters[sni]["packets"] += pkt
+        # calcola pacchetti del flusso
+        pkt = 0
+        for exch in exchanged:
+            if "<->" in exch:
+                left, right = exch.split("<->")
+                try:
+                    pkt += int(left.strip()) + int(right.strip())
+                except ValueError:
+                    continue
 
-        # append aggregated data
-        for sni in sni_list:
-            counters = sni_counters[sni]
-            aggregated.append({
-                "sni": sni,
-                "flow_count": counters["flow_count"],
-                "packets": counters["packets"]
-            })
+        # verifica se il flow_sni appartiene a un cluster
+        matched = False
+        for sni_key, cluster in sni_to_cluster.items():
+            if flow_sni == sni_key or flow_sni.endswith("." + sni_key):
+                cluster["flow_count"] += similar_count
+                cluster["packets"] += pkt
+                matched = True
+                break
 
-    # save aggregated data for reference
+        # se non matcha nessun cluster, crea un cluster “no_sni”
+        if not matched:
+            sni_no = flow_sni
+            new_cluster = {
+                "ja3s": None,
+                "ja4": None,
+                "certificate": None,
+                "sni_list": [sni_no],
+                "flow_count": similar_count,
+                "packets": pkt
+            }
+            sni_to_use.append(new_cluster)
+            sni_to_cluster[sni_no] = new_cluster
+
+    # Step 4: salva JSON completo
     with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(aggregated, f, indent=4, ensure_ascii=False)
+        json.dump(sni_to_use, f, indent=4, ensure_ascii=False)
 
-    # Step 2: calculate the cumulative packet threshold for top SNI
-    total_pkts = sum(entry["packets"] for entry in aggregated)
-    threshold = total_pkts * constants.TOP_PERCENT
+    return sni_to_use
 
-    # Step 3: determine top SNI based on packets
-    
-    top_sni = set()
-    for entry in aggregated:
-        if entry["packets"] >= threshold:
-            top_sni.add(entry["sni"])
-
-    # Step 4: filter original sni_to_use clusters keeping only top SNI
-    filtered_clusters = []
-    for cluster in sni_to_use:
-        sni_list = [sni for sni in cluster.get("sni_list", []) if sni in top_sni]
-        if sni_list:  # keep cluster only if it still has SNI
-            filtered_clusters.append({
-                "ja3s": cluster.get("ja3s"),
-                "ja4": cluster.get("ja4"),
-                "sni_list": sni_list
-            })
-
-    return filtered_clusters
+# -------------------------------------------
 
 def protocols_summary(flows):
 
@@ -218,11 +209,13 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
     clusters = defaultdict(list)
     raw_clusters = []
 
+    #print(f"\n[DEBUG] Starting with:\n\n{final_flows}\n")
+
     # Remove flows with SNIs containing excluded words or present in the main dataset
     removed_flows = [
         flow for flow in final_flows
-            if any(word in flow.get("sni").lower() for word in constants.EXCLUDE_WORDS) 
-            or flow.get("sni").lower() in sorted_dataset
+            if (flow.get("sni") and any(word in flow.get("sni").lower() for word in constants.EXCLUDE_WORDS))
+            or (flow.get("sni") and flow.get("sni").lower() in sorted_dataset)
     ]
 
     config.log_message("\n\n>> Removed flows 1° filtering ( Exclude words and know domains ):\n\n", sni_stats_file)
@@ -243,7 +236,10 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
     config.log_message("\n\n>> Removed flows 2° filtering ( Remove known suffixes and not_protocols domains ):\n\n", sni_stats_file)
 
     for flow in final_flows:
-        sni = flow.get("sni", "").lower()
+        if flow.get("sni"):
+            sni = flow.get("sni", "").lower()
+        else:
+            continue
 
         # Initialize a processed SNI variable
         sni_proc = sni
@@ -275,15 +271,15 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
                 continue
 
         # remove not_protocols domains
-        #remove_sni = False
-        #for d in dataset_not_protocols_domains:
-        #    if sni_proc.endswith(d):
-        #        remove_sni = True
-        #        break
-        #if remove_sni:
-        #    config.log_message(f"   [+] [red]{sni}[/red]\n", sni_stats_file)
-        #    removed_flows.append(flow)
-        #    continue
+        remove_sni = False
+        for d in dataset_not_protocols_domains:
+            if sni_proc.endswith(d):
+                remove_sni = True
+                break
+        if remove_sni:
+            config.log_message(f"   [+] [red]{sni}[/red]\n", sni_stats_file)
+            removed_flows.append(flow)
+            continue
 
         print(f"\n[DEBUG] Original SNI: {sni} → After removing dataset suffix: {sni_proc}")
 
@@ -310,9 +306,26 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
 
         # Add remaining SNI to the set
         cleaned_snis.add(sni)
+    
+    config.log_message(f"\n>> Removed flows after SNI filtering [DEBUG]:\n\n", log_file_removed_flows)
+    config.log_message(removed_flows, log_file_removed_flows)
+
+    removed_flows_ja = []
+    config.log_message(f"\n>> Removed flows after JA3S/JA4/Certificate filtering [DEBUG]:\n\n", log_file_removed_flows)
+
+    for flow in final_flows:
 
         ja3s = flow.get("ja3s")
         ja4 = flow.get("ja4")
+        certificate = {
+            "certificate": flow.get("certificate"),
+            "subject": flow.get("subject"),
+            "issuer": flow.get("issuer"),
+            "servernames": flow.get("servernames")
+        }
+
+        if not (ja3s or ja4 or certificate):
+            removed_flows_ja.append(flow)
 
         if ja4:
             # Keep only the last 2 parts of ja4
@@ -320,27 +333,21 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
             if len(parts) >= 2:
                 ja4 = "_".join(parts[-2:])
         
-        key = (ja3s, ja4)
+        # Create a hashable key for the certificate dictionary
+        cert_tuple = tuple(sorted(certificate.items()))
+        key = (ja3s, ja4, cert_tuple)
+
         clusters[key].append(flow)
+
+    config.log_message(removed_flows_ja, log_file_removed_flows)
 
     config.log_message(f"\n\n>> Remaining SNIs:\n\n", sni_stats_file)
     for sni in sorted(cleaned_snis):
         config.log_message(f"   [+] [green]{sni}[/green]\n", sni_stats_file)
 
-    # Keep only flows that are not removed
-    final_flows = [
-        flow for flow in final_flows
-        if flow not in removed_flows
-    ]
-
-    config.clear_log(log_file_filtered_flows)
-    config.log_message(final_flows, log_file_filtered_flows)
-    config.log_message(f"\n>> Removed flows after filtering [DEBUG]:\n\n", log_file_removed_flows)
-    config.log_message(removed_flows, log_file_removed_flows)
-
     # --------------------------------
 
-    for (ja3s, ja4), elements in clusters.items():
+    for (ja3s, ja4, certificate), elements in clusters.items():
 
         # Collect all unique SNI values
         sni_list = sorted({e.get("sni") for e in elements if e.get("sni")})
@@ -348,10 +355,9 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
         raw_clusters.append({
             "ja3s": ja3s,
             "ja4": ja4,
+            "certificate": certificate,
             "sni_list": sni_list,
         })
-
-    #print(f"\nClusters before merging:\n{raw_clusters}\n")
 
     # Merge clusters with the existing merging function
     sni_to_use = group_sni.merge_clusters(raw_clusters)
@@ -359,14 +365,29 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
     if not constants.SHOW_NDPI_PROTOCOLS:
         sni_to_use = normalize_sni_clusters(sni_to_use, sorted_dataset)
 
-    #print(f"\nFinal clusters to classify {sni_to_use}\n")
-
     if constants.WEB_TRAFFIC:
         sni_to_use = aggregate_flows_by_sni(sni_to_use, final_flows)
 
+    # Keep only flows that are not removed
+    final_flows = [
+        flow for flow in final_flows
+        if (flow not in removed_flows) and (flow not in removed_flows_ja)
+    ]
+
+    config.clear_log(log_file_filtered_flows)
+    config.log_message(final_flows, log_file_filtered_flows)
+
+    log_file_time="tmp/rank_time_sni.txt"
+    log_file_rank="tmp/rank_sni.txt"
+    log_file_intersection="tmp/intersection_sni.txt"
+
     if constants.CLUSTER_RANKING:
         # Rank SNIs in final_flows and output ranking to json_time_ndpi
-        rank_sni.rank_sni(final_flows, json_time_ndpi, sni_to_use)
+        rank_sni.rank_sni(final_flows, json_time_ndpi, sni_to_use, log_file_time, log_file_rank, log_file_intersection)
+    else:
+        config.clear_log(log_file_time)
+        config.clear_log(log_file_rank)
+        config.clear_log(log_file_intersection)
 
     #print(f"\nClusters after merging:\n{sni_to_use}\n")
 

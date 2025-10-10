@@ -1,1 +1,2 @@
-host:"vinted.com",host:"vinted.fr",host:"vinted.net"@
+host:"api.termius.com"@
+host:"split.io"@

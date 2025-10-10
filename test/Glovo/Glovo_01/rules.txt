@@ -1,2 +1,2 @@
 host:"api.glovoapp.com",host:"glovo.dhmedia.io"@
-host:"perseus-productanalytics.deliveryhero.net"@
+host:"mparticle.com"@

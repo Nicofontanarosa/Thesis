@@ -1,19 +1,19 @@
 >> Using existing nDPI JSON:
 
- + .\test\Vinted\Vinted_01_pcapandroid.json
+ + .\test\ultrasurfVPN\fb\facebookVideosUltraSurfVpn.json
 
 >> Using existing nDPI JSON:
 
- + .\test\Vinted\Vinted_01_pcapandroid_output_k.json
+ + .\test\ultrasurfVPN\fb\facebookVideosUltraSurfVpn_output_k.json
 
 >> Running initial filtering ...
 
- + input file: .\test\Vinted\Vinted_01_pcapandroid.json
- + output file: .\test\Vinted\Vinted_01_pcapandroid_filtered.json
+ + input file: .\test\ultrasurfVPN\fb\facebookVideosUltraSurfVpn.json
+ + output file: .\test\ultrasurfVPN\fb\facebookVideosUltraSurfVpn_filtered.json
 
 >> Running flows filtering ...
 
- + input file: .\test\Vinted\Vinted_01_pcapandroid_filtered.json
- + output file: .\test\Vinted\Vinted_01_pcapandroid_output.json
+ + input file: .\test\ultrasurfVPN\fb\facebookVideosUltraSurfVpn_filtered.json
+ + output file: .\test\ultrasurfVPN\fb\facebookVideosUltraSurfVpn_output.json
 
->> Coverage statistics save in: .\test\Vinted\coverage.txt
+>> Coverage statistics save in: .\test\ultrasurfVPN\fb\coverage.txt

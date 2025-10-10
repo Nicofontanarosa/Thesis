@@ -14,6 +14,8 @@
 
 # show nDPI protocol in the output
 SHOW_NDPI_PROTOCOLS = False
+# change filter based on VPN detection
+VPN_DETECTION = True
 
 # show name hints in the output (requires whois and AI classification)
 SHOW_NAME_HINT = False
@@ -23,7 +25,7 @@ SHOW_GUESS_SNI = False
 REDACTED_ORGS = {"redacted for privacy", "data redacted", "hidden", "not disclosed", "domains by proxy, llc", "identity protection service", "registration private"}
 
 # use time ranking and frequency ranking to select top SNIs 
-CLUSTER_RANKING = False
+CLUSTER_RANKING = True
 # ratio of top SNIs to keep based on both temporal and frequency ranking
 TOP_RATIO=0.5
 

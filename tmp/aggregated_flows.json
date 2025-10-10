@@ -1,47 +1,66 @@
 [
     {
-        "sni": "vinted.com",
-        "flow_count": 7,
-        "packets": 281
-    },
-    {
-        "sni": "vinted.net",
-        "flow_count": 19,
-        "packets": 549
-    },
-    {
-        "sni": "vinted.fr",
-        "flow_count": 9,
-        "packets": 508
-    },
-    {
-        "sni": "sdk-events.inner-active.mobi",
-        "flow_count": 2,
-        "packets": 20
-    },
-    {
-        "sni": "braze.eu",
-        "flow_count": 5,
-        "packets": 70
-    },
-    {
-        "sni": "api-sdk.datadome.co",
-        "flow_count": 2,
-        "packets": 29
-    },
-    {
-        "sni": "vintedapp.com",
-        "flow_count": 2,
-        "packets": 29
-    },
-    {
-        "sni": "i.sng.link",
-        "flow_count": 2,
-        "packets": 28
-    },
-    {
-        "sni": "rokt.com",
+        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
+        "ja4": "8daaf6152771_e5627efa2ab1",
+        "certificate": [
+            [
+                "certificate",
+                "SHA-1: 75:72:89:84:63:27:61:00:57:79:54:DA:FE:A8:A4:0B:02:B1:1A:82"
+            ],
+            [
+                "issuer",
+                "C=US, O=Amazon, CN=Amazon RSA 2048 M04"
+            ],
+            [
+                "servernames",
+                "api.termius.com,api.beta.termius.com"
+            ],
+            [
+                "subject",
+                "CN=api.termius.com"
+            ]
+        ],
+        "sni_list": [
+            "api.termius.com"
+        ],
         "flow_count": 4,
-        "packets": 44
+        "packets": 253
+    },
+    {
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "8daaf6152771_6cdcb247c39b",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "split.io"
+        ],
+        "flow_count": 10,
+        "packets": 292
+    },
+    {
+        "ja3s": null,
+        "ja4": null,
+        "certificate": null,
+        "sni_list": [
+            "no_sni"
+        ],
+        "flow_count": 9,
+        "packets": 306087
     }
 ]

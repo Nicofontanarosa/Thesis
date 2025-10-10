@@ -1,154 +1,119 @@
 [
     {
-        "ja4": "5b57614c22b0_eca864cca44a",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "sni_list": [
-            "config.inmobi.com",
-            "d.applovin.com",
-            "firebaselogging-pa.googleapis.com",
-            "firebaseremoteconfig.googleapis.com",
-            "googleads.g.doubleclick.net",
-            "img.applovin.com",
-            "init-mp.fyber.com",
-            "ms.applovin.com",
-            "ms4.applovin.com",
-            "pagead2.googlesyndication.com",
-            "prod-mediate-events.applovin.com",
-            "res1.applovin.com",
-            "rr4---sn-hpa7znzr.googlevideo.com",
-            "rt.applovin.com",
-            "sdk-events.inner-active.mobi",
-            "sdk.fra-01.braze.eu",
-            "stage-mediate-events.applovin.com",
-            "sts.applovin.com",
-            "t.applovin.com",
-            "telemetry.sdk.inmobi.com",
-            "unif-id.ssp.inmobi.com",
-            "www.google.com"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_d8a2da3f94cd",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "sni_list": [
-            "csi.gstatic.com",
-            "fonts.googleapis.com",
-            "fonts.gstatic.com",
-            "googleads.g.doubleclick.net",
-            "lh3.googleusercontent.com",
-            "pagead2.googlesyndication.com",
-            "www.googletagservices.com",
-            "www.gstatic.com"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_eca864cca44a",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "sni_list": [
-            "cdn.cookielaw.org",
-            "logs-ingress.svc.vinted.com",
-            "metrics-ingress.svc.vinted.com",
-            "mobile-data.onetrust.io",
-            "socket.vinted.net",
-            "www.vinted.fr"
-        ]
-    },
-    {
-        "ja4": "5b57614c22b0_eca864cca44a",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "sni_list": [
-            "cdn2.inner-active.mobi",
-            "graph.facebook.com",
-            "images1.vinted.net",
-            "static-assets.vinted.com"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_eca864cca44a",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "sni_list": [
-            "apps.rokt.com",
-            "config.ads.vungle.com",
-            "logs.ads.vungle.com",
-            "mobile-api.rokt.com"
-        ]
-    },
-    {
-        "ja4": "55b375c5d22e_653d80c3fe9d",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "sni_list": [
-            "csi.gstatic.com",
-            "googleads.g.doubleclick.net",
-            "pagead2.googlesyndication.com",
-            "www.gstatic.com"
-        ]
-    },
-    {
-        "ja4": "5b57614c22b0_352634941f3a",
+        "ja4": "55b375c5d22e_226f3f127bbe",
         "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
         "sni_list": [
-            "firebaseremoteconfig.googleapis.com",
-            "prod-mediate-events.applovin.com",
-            "sdk.fra-01.braze.eu"
+            "accounts.google.com",
+            "docs.google.com",
+            "ssl.gstatic.com",
+            "www.youtube.com",
+            "yt3.ggpht.com"
         ]
     },
     {
-        "ja4": "8daaf6152771_eca864cca44a",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "sni_list": [
-            "api-sdk.datadome.co",
-            "vintedapp.com"
-        ]
-    },
-    {
-        "ja4": "5b57614c22b0_fadfdae04b4e",
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "sni_list": [
-            "cdn2.inner-active.mobi",
-            "images1.vinted.net"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_d8a2da3f94cd",
+        "ja4": "a09f3c656075_e42f34c56612",
         "ja3s": "15af977ce25de452b96affa2addb1036",
         "sni_list": [
-            "i.sng.link",
-            "view.adjust.com"
-        ]
-    },
-    {
-        "ja4": "5b57614c22b0_eca864cca44a",
-        "ja3s": "35af4c8cd9495354f7d701ce8ad7fd2d",
-        "sni_list": [
-            "ads.pubmatic.com"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_fadfdae04b4e",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "sni_list": [
-            "logs.ads.vungle.com"
-        ]
-    },
-    {
-        "ja4": "5b57614c22b0_fadfdae04b4e",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "sni_list": [
-            "rr4---sn-hpa7znzr.googlevideo.com"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_d8a2da3f94cd",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "sni_list": [
-            "impression.appsflyer.com"
+            "edge-089.sgsin8.icloud-content.com",
+            "gateway.icloud.com",
+            "p103-content.icloud.com",
+            "p167-contacts.icloud.com"
         ]
     },
     {
         "ja4": "8daaf6152771_b6f405a00624",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "sni_list": [
+            "main.vscode-cdn.net"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_e5627efa2ab1",
+        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
+        "sni_list": [
+            "api.termius.com"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_0a20fe35d3a5",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "sni_list": [
+            "mtalk.google.com"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_9b887d9acb53",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "sni_list": [
+            "sdk.split.io"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_e5627efa2ab1",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "sni_list": [
+            "sdk.split.io"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_e5627efa2ab1",
+        "ja3s": "9dd9697e41bf4842b13869ec64041126",
+        "sni_list": [
+            "auth.split.io"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_e5627efa2ab1",
+        "ja3s": "cabca0e45d1843a8873f229da4a3323f",
+        "sni_list": [
+            "api.termius.com"
+        ]
+    },
+    {
+        "ja4": "55b375c5d22e_81719d8ccb8b",
         "ja3s": "15af977ce25de452b96affa2addb1036",
         "sni_list": [
-            "view.adjust.com"
+            "courier.push.apple.com"
         ]
+    },
+    {
+        "ja4": "a09f3c656075_e42f34c56612",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "sni_list": [
+            "dns.google"
+        ]
+    },
+    {
+        "ja4": "a09f3c656075_c258b721e490",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "sni_list": [
+            "gspe1-ssl.ls.apple.com"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_6cdcb247c39b",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "sni_list": [
+            "streaming.split.io"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_e5627efa2ab1",
+        "ja3s": "2ab44dd8c27bdce434a961463587356a",
+        "sni_list": [
+            "auth.split.io"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_b6f405a00624",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "sni_list": [
+            "ssl.gstatic.com"
+        ]
+    },
+    {
+        "ja4": "c1385321e2f4_b1166f63991e",
+        "ja3s": "364ff14b04ef93c3b4cfa429d729c0d9",
+        "sni_list": []
     }
 ]

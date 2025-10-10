@@ -1,1 +1,3 @@
 host:"app.lefrecce.it"@
+host:"fstechnologyspa.data.adobedc.net"@
+host:"oraclersys.com"@

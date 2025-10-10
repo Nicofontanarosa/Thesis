@@ -1,3 +1,4 @@
 >> Intersection of top 50% temporal & frequency rankings:
 
- + SNI: api.glovoapp.com
+ + SNI: sdk.split.io
+ + SNI: api.termius.com

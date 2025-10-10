@@ -1,0 +1,9 @@
+
+>> Coverage statistics:
+
+ [+] Total packets: 0
+ [+] Recognized packets: 0
+ [+] Coverage (%): 0.0
+ [+] Total flows: 0
+ [+] Recognized flows: 0
+ [+] Flow coverage (%): 0.0

@@ -1,3 +1,4 @@
+	1	 192.168.80.96            	 9      
 	1	TCP 192.168.80.96:63142 <-> 108.138.199.68:443 [proto: 91/TLS][IP: 265/AmazonAWS][426 pkts/29899 bytes <-> 512 pkts/727920 bytes][Hostname/SNI: images.sbito.it][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1513h2_8daaf6152771_eca864cca44a][JA3S: f4febc55ea12b31ae17cfb7e614afda8]
 	3	TCP 192.168.80.96:63107 <-> 104.83.126.129:443 [proto: 91/TLS][IP: 0/Unknown][158 pkts/18574 bytes <-> 228 pkts/202002 bytes][Hostname/SNI: hades.subito.it][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1513h2_8daaf6152771_eca864cca44a][JA3S: 15af977ce25de452b96affa2addb1036]
 	5	TCP 192.168.80.96:63112 <-> 184.25.53.15:443 [proto: 91/TLS][IP: 0/Unknown][46 pkts/22334 bytes <-> 58 pkts/12913 bytes][Hostname/SNI: collector.subito.it][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1513h2_8daaf6152771_eca864cca44a][JA3S: 15af977ce25de452b96affa2addb1036]

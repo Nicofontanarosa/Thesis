@@ -3,7 +3,8 @@
 # Example groups definition
 GROUPS = {
     "flows": {
-        "filtered": ("Filtered-Flows", "tmp/filtered_flows.json")
+        "filtered": ("Filtered-Flows", "tmp/filtered_flows.json"),
+        "finalflows": ("Final-Flows", "tmp/final_output.json")
     },
     "statistics": {
         "path": ("Path-file", "tmp/initialization.txt"),

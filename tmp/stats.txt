@@ -1,8 +1,18 @@
 >> Lists of protocols read:
 
+   [+] DHCP
    [+] DNS
+   [+] Google
+   [+] ICMP
+   [+] ICMPV6
+   [+] MDNS
+   [+] NTP
+   [+] NetBIOS
    [+] QUIC
+   [+] SOAP
+   [+] SSH
    [+] TLS
+   [+] Unknown
 
 >> Lists of protocols supported:
 
@@ -14,4 +24,13 @@
 
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
+   [red][+] DHCP[/red]
    [red][+] DNS[/red]
+   [red][+] Google[/red]
+   [red][+] ICMP[/red]
+   [red][+] ICMPV6[/red]
+   [red][+] MDNS[/red]
+   [red][+] NTP[/red]
+   [red][+] NetBIOS[/red]
+   [red][+] SOAP[/red]
+   [red][+] SSH[/red]

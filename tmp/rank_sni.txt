@@ -1,23 +1,14 @@
 >> Frequency ranking:
 
 
- + SNI: glovo.dhmedia.io
-  + count: 2
+ + SNI: sdk.split.io
+  + count: 5
 
- + SNI: api.glovoapp.com
-  + count: 2
+ + SNI: api.termius.com
+  + count: 4
 
- + SNI: perseus-productanalytics.deliveryhero.net
-  + count: 1
+ + SNI: auth.split.io
+  + count: 4
 
- + SNI: api.usercentrics.eu
-  + count: 1
-
- + SNI: aggregator.service.usercentrics.eu
-  + count: 1
-
- + SNI: live.ravelin.click
-  + count: 1
-
- + SNI: app.usercentrics.eu
+ + SNI: streaming.split.io
   + count: 1

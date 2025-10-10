@@ -2,6 +2,8 @@
   "__comment": [
     "List of third-party analytics or tracking domains excluded from recognition",
     "Vinted",
+    "Subito",
+    "Trenitalia",
     "Glovo"
   ],
   
@@ -9,35 +11,22 @@
     "datadome.co",
     "braze.eu",
     "inner-active.mobi",
-    "i.sng.link",
-
+    "sng.link",
     "rokt.com",
-    "sendbird.com",
-    "mobileapi.usebutton.com",
-    "app-analytics-services.com",
-    "app-analytics-services-att.com",
-    "api.privacy-center.org",
-    "api.iterable.com",
-    "survicate.com",
-    "cloudinary.com",
-    "api.segment.io",
-    "privacymanager.io",
-    "quantummetric.com",
-    "remerge.events",
-    "assets.remerge.io",
-    "mtgglobals.com",
-    "device.marketingcloudapis.com",
-    "asset.schwarz",
-    "intel.com",
-    "mediatek.com",
-    "expo.dev",
+
     "advgo.net",
+    "privacy-center.org",
+    "marketingcloudapis.com",
+    "privacymanager.io",
     "liveramp.com",
     "kampyle.com",
+
     "oraclersys.com",
     "adobedc.net",
     "demdex.net",
+
     "mparticle.com",
-    "usercentrics.eu"
+    "usercentrics.eu",
+    "ravelin.click"
   ]
 }

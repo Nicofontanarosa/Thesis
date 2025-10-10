@@ -18,5 +18,59 @@
             "11 <-> 12",
             "13 <-> 14"
         ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "fstechnologyspa.data.adobedc.net",
+        "ip_source": "10.215.173.1",
+        "port_source": "46434",
+        "ip_destination": "63.140.62.236",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "36 <-> 38"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "tr81qim-push.oraclersys.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "33628",
+        "ip_destination": "23.215.5.86",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 24"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "dpm.demdex.net",
+        "ip_source": "10.215.173.1",
+        "port_source": "46282",
+        "ip_destination": "34.247.4.177",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 10"
+        ]
     }
 ]

@@ -13,7 +13,7 @@
 # parameters used by all scripts 
 
 # show nDPI protocol in the output
-SHOW_NDPI_PROTOCOLS = False
+SHOW_NDPI_PROTOCOLS = True
 # change filter based on VPN detection
 VPN_DETECTION = True
 
@@ -24,16 +24,9 @@ SHOW_GUESS_SNI = False
 # redacted organization names for whois
 REDACTED_ORGS = {"redacted for privacy", "data redacted", "hidden", "not disclosed", "domains by proxy, llc", "identity protection service", "registration private"}
 
-# use time ranking and frequency ranking to select top SNIs 
-CLUSTER_RANKING = True
-# ratio of top SNIs to keep based on both temporal and frequency ranking
-TOP_RATIO=0.5
-
 # check and fill missing JA3/JA4 for HTTP flows and others using tshark clusters
 CHECK_JA_MISSING = True
 
-# consider the top percentage of packets to select top SNI
-WEB_TRAFFIC = True
 # percentage of total packets to use as threshold for top SNI selection
 TOP_PERCENT = 0.05
 

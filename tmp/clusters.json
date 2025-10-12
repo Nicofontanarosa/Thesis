@@ -1,5 +1,60 @@
 [
     {
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "a09f3c656075_e42f34c56612",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "edge-089.sgsin8.icloud-content.com",
+            "icloud.com"
+        ],
+        "flow_count": 5,
+        "packets": 163
+    },
+    {
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "55b375c5d22e_81719d8ccb8b",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "courier.push.apple.com"
+        ],
+        "flow_count": 4,
+        "packets": 227
+    },
+    {
         "ja3s": "bfc90d56141386ee83b56cda231cccfc",
         "ja4": "8daaf6152771_e5627efa2ab1",
         "certificate": [

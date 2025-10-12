@@ -1,8 +1,8 @@
 >> Flows read: 288
->> Flows kept: 26
->> Flows removed: 262
+>> Flows kept: 65
+>> Flows removed: 223
 
-   [+] General flows removed: 144
+   [+] General flows removed: 105
 
    [+] Empty flows removed: 18
 
@@ -16,4 +16,4 @@
 
 >> Flows detected after aggregation:
 
-   [+] 3 flows QUIC, 14 flows TLS
+   [+] 10 flows QUIC, 37 flows TLS

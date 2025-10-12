@@ -1,49 +1,11 @@
 
 >> General flows removed [DEBUG]:
 
-5	TCP 192.168.50.96:51291 <-> 17.57.145.134:5223 [proto: 91.238/TLS.ApplePush][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 238/ApplePush, Confidence: DNS][DPI packets: 6][cat: Cloud/13][43 pkts/11655 bytes <-> 54 pkts/43179 bytes][Goodput ratio: 76/92][399.06 sec][Hostname/SNI: courier.push.apple.com][(Advertised) ALPNs: apns-security-v3;apns-pack-v1][TLS Supported Versions: GREASE;TLSv1.3][bytes ratio: -0.575 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 6547/4471 199206/161746 33647/24066][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 271/800 1506/1506 442/674][Risk: ** Known Proto on Non Std Port **][Risk Score: 50][Risk Info: Expected on port 443][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d0311ap_55b375c5d22e_81719d8ccb8b][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 3,13,17,3,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,48,0,0]
-6	TCP 192.168.50.96:51321 <-> 17.57.145.132:5223 [proto: 91.238/TLS.ApplePush][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 238/ApplePush, Confidence: DNS][DPI packets: 6][cat: Cloud/13][56 pkts/13162 bytes <-> 51 pkts/38231 bytes][Goodput ratio: 72/91][3.15 sec][Hostname/SNI: courier.push.apple.com][(Advertised) ALPNs: apns-security-v3;apns-pack-v1][TLS Supported Versions: GREASE;TLSv1.3][bytes ratio: -0.488 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 59/64 2018/1977 298/308][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 235/750 1506/1506 387/677][Risk: ** Known Proto on Non Std Port **][Risk Score: 50][Risk Info: Expected on port 443][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d0311ap_55b375c5d22e_81719d8ccb8b][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 4,13,20,4,1,1,0,0,0,0,0,0,0,0,0,0,4,1,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,43,0,0]
-7	TCP 192.168.50.96:51323 <-> 17.248.154.35:443 [proto: 91.143/TLS.AppleiCloud][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 143/AppleiCloud, Confidence: DNS][DPI packets: 6][cat: Web/5][32 pkts/6109 bytes <-> 35 pkts/39181 bytes][Goodput ratio: 65/94][0.67 sec][Hostname/SNI: edge-089.sgsin8.icloud-content.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.730 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 13/15 197/254 40/50][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 191/1119 1506/1506 361/584][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014h2_a09f3c656075_e42f34c56612][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 0,0,2,2,0,0,0,0,0,8,0,0,0,0,0,2,5,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,0,0]
-9	UDP 192.168.50.96:65209 <-> 142.251.12.93:443 [proto: 188.124/QUIC.YouTube][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 9][cat: Media/1][28 pkts/13494 bytes <-> 39 pkts/18563 bytes][Goodput ratio: 91/91][12.33 sec][Hostname/SNI: www.youtube.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.158 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 504/350 9304/9305 1925/1614][Pkt Len c2s/s2c min/avg/max/stddev: 72/65 482/476 1292/1292 538/506][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][PLAIN TEXT (LBZtfbh)][Plen Bins: 24,22,5,7,0,1,2,0,0,1,1,1,0,0,0,0,2,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,2,0,4,21,0,0,0,0,0,0,0,0]
-10	TCP 192.168.50.96:51316 <-> 17.248.224.69:443 [proto: 91.143/TLS.AppleiCloud][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 140/Apple, Confidence: DNS][DPI packets: 6][cat: Web/5][23 pkts/12911 bytes <-> 31 pkts/12117 bytes][Goodput ratio: 88/81][8.23 sec][Hostname/SNI: gateway.icloud.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: 0.032 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 276/256 2444/2665 570/530][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 561/391 1506/1506 640/510][TCP Fingerprint: 2_64_0_d29295416479/macOS][TLSv1.3][JA4: t13d2014h2_a09f3c656075_e42f34c56612][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 13,18,3,0,0,0,0,0,0,6,0,0,0,0,0,3,3,0,0,0,6,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,0,0,0,36,0,0]
-11	UDP 192.168.50.96:51400 <-> 74.125.24.84:443 [proto: 188.126/QUIC.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: DNS][DPI packets: 7][cat: Web/5][17 pkts/13190 bytes <-> 22 pkts/10984 bytes][Goodput ratio: 95/92][5.39 sec][Hostname/SNI: accounts.google.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: 0.091 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 352/285 3132/3920 829/887][Pkt Len c2s/s2c min/avg/max/stddev: 74/65 776/499 1292/1292 581/525][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][PLAIN TEXT (Kkejap)][Plen Bins: 17,21,5,2,0,0,0,2,0,5,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,5,34,0,0,0,0,0,0,0,0]
-12	UDP 192.168.50.96:52678 <-> 74.125.200.113:443 [proto: 188.241/QUIC.GoogleDocs][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 11][cat: Collaborative/15][19 pkts/13113 bytes <-> 18 pkts/10808 bytes][Goodput ratio: 94/93][0.39 sec][Hostname/SNI: docs.google.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: 0.096 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 6/8 42/39 14/14][Pkt Len c2s/s2c min/avg/max/stddev: 73/64 690/600 1292/1292 585/534][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][PLAIN TEXT (RM .Ix)][Plen Bins: 14,19,8,2,0,0,2,0,0,2,2,0,0,0,2,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2,40,0,0,0,0,0,0,0,0]
-14	TCP 192.168.50.96:51322 <-> 17.248.224.66:443 [proto: 91.143/TLS.AppleiCloud][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 140/Apple, Confidence: IP address][DPI packets: 6][cat: Web/5][23 pkts/2558 bytes <-> 22 pkts/20661 bytes][Goodput ratio: 40/93][0.48 sec][Hostname/SNI: gateway.icloud.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.780 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 8/14 62/126 19/32][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 111/939 583/1506 126/641][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014h2_a09f3c656075_e42f34c56612][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 13,4,4,0,0,0,0,0,0,8,0,4,0,0,0,4,4,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,53,0,0]
-20	UDP 192.168.50.96:62770 <-> 74.125.200.132:443 [proto: 188.124/QUIC.YouTube][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Media/1][16 pkts/6880 bytes <-> 16 pkts/10629 bytes][Goodput ratio: 90/94][0.47 sec][Hostname/SNI: yt3.ggpht.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.214 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 2/14 25/168 7/46][Pkt Len c2s/s2c min/avg/max/stddev: 71/65 430/664 1292/1292 518/551][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][PLAIN TEXT (KAHIZe)][Plen Bins: 15,21,9,9,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,3,28,0,0,0,0,0,0,0,0]
-21	UDP 192.168.50.96:55235 <-> 142.250.4.113:443 [proto: 188.241/QUIC.GoogleDocs][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 4][cat: Collaborative/15][17 pkts/9297 bytes <-> 20 pkts/7366 bytes][Goodput ratio: 92/89][4.91 sec][Hostname/SNI: docs.google.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: 0.116 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 222/279 1747/1498 465/469][Pkt Len c2s/s2c min/avg/max/stddev: 71/66 547/368 1292/1292 564/444][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][PLAIN TEXT (gIbIPPe)][Plen Bins: 31,17,8,5,0,0,2,0,0,2,2,0,0,0,2,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,5,19,0,0,0,0,0,0,0,0]
-23	TCP 192.168.50.96:50148 <-> 74.125.200.188:5228 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 8][cat: Web/5][20 pkts/3617 bytes <-> 19 pkts/12451 bytes][Goodput ratio: 63/90][68.99 sec][Hostname/SNI: mtalk.google.com][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.550 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 4269/4531 66584/66584 16091/16586][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 181/655 1466/1466 309/603][Risk: ** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **][Risk Score: 60][Risk Info: No ALPN / Expected on port 443][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d151400_8daaf6152771_0a20fe35d3a5][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 10,5,10,0,0,0,5,0,5,5,0,0,0,0,0,0,5,0,0,0,0,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,0,0,0,0]
-24	TCP 192.168.50.96:51317 <-> 17.248.224.65:443 [proto: 91.143/TLS.AppleiCloud][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 143/AppleiCloud, Confidence: DNS][DPI packets: 6][cat: Web/5][8 pkts/2596 bytes <-> 15 pkts/12656 bytes][Goodput ratio: 80/92][5.49 sec][Hostname/SNI: p167-contacts.icloud.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.660 (Download)][IAT c2s/s2c min/avg/max/stddev: 4/0 210/311 477/1983 217/543][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 324/844 583/1506 259/643][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014h2_a09f3c656075_e42f34c56612][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,15,0,0,0,7,0,0,0,0,0,0,39,0,0]
-27	UDP 192.168.50.96:52955 <-> 142.250.4.113:443 [proto: 188.241/QUIC.GoogleDocs][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 10][cat: Collaborative/15][12 pkts/7726 bytes <-> 13 pkts/6633 bytes][Goodput ratio: 93/92][1.50 sec][Hostname/SNI: docs.google.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: 0.076 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 83/91 435/311 158/139][Pkt Len c2s/s2c min/avg/max/stddev: 73/67 644/510 1292/1292 568/493][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][PLAIN TEXT (rxueMN)][Plen Bins: 12,20,12,4,0,0,0,0,0,4,0,4,0,0,4,0,0,0,0,4,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,4,28,0,0,0,0,0,0,0,0]
-28	TCP 192.168.50.96:51324 <-> 17.248.224.68:443 [proto: 91.143/TLS.AppleiCloud][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 143/AppleiCloud, Confidence: DNS][DPI packets: 6][cat: Web/5][14 pkts/4628 bytes <-> 15 pkts/9623 bytes][Goodput ratio: 79/90][1.61 sec][Hostname/SNI: p103-content.icloud.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.351 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 134/86 838/288 234/106][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 331/642 1506/1506 499/552][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014h2_a09f3c656075_e42f34c56612][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 0,0,6,0,0,0,6,0,0,20,0,0,0,0,0,0,6,0,0,0,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,6,27,0,0]
-29	TCP 192.168.50.96:51318 <-> 17.248.224.67:443 [proto: 91.143/TLS.AppleiCloud][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 143/AppleiCloud, Confidence: DNS][DPI packets: 8][cat: Web/5][7 pkts/1508 bytes <-> 14 pkts/12572 bytes][Goodput ratio: 69/92][6.24 sec][Hostname/SNI: p167-contacts.icloud.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.786 (Download)][IAT c2s/s2c min/avg/max/stddev: 28/0 781/435 2732/1941 1050/596][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 215/898 583/1506 233/631][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014h2_a09f3c656075_e42f34c56612][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,18,0,0,0,9,0,0,0,0,0,0,45,0,0]
-30	TCP 192.168.50.96:51309 <-> 17.248.224.13:443 [proto: 91.143/TLS.AppleiCloud][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 140/Apple, Confidence: IP address][DPI packets: 8][cat: Web/5][9 pkts/3203 bytes <-> 13 pkts/10538 bytes][Goodput ratio: 81/92][55.24 sec][Hostname/SNI: gateway.icloud.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.534 (Download)][IAT c2s/s2c min/avg/max/stddev: 52/0 6489/783 27322/2807 9587/947][Pkt Len c2s/s2c min/avg/max/stddev: 66/54 356/811 583/1506 254/695][TCP Fingerprint: 2_64_0_d29295416479/macOS][TLSv1.3][JA4: t13d2014h2_a09f3c656075_e42f34c56612][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0]
-34	UDP 192.168.50.96:56982 <-> 74.125.200.94:443 [proto: 188.126/QUIC.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 7][cat: Web/5][13 pkts/6669 bytes <-> 15 pkts/6599 bytes][Goodput ratio: 92/90][26.18 sec][Hostname/SNI: ssl.gstatic.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: 0.005 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 2/0 2580/2158 24897/24974 7441/6881][Pkt Len c2s/s2c min/avg/max/stddev: 73/64 513/440 1292/1292 546/490][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][PLAIN TEXT (BmRAgd)][Plen Bins: 21,21,7,10,0,0,0,0,0,3,0,0,0,0,0,0,3,0,0,0,0,3,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0]
-36	TCP 192.168.50.96:51302 <-> 104.75.84.11:443 [proto: 91.140/TLS.Apple][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 140/Apple, Confidence: DNS][DPI packets: 7][cat: Web/5][12 pkts/1687 bytes <-> 17 pkts/10606 bytes][Goodput ratio: 52/89][56.53 sec][Hostname/SNI: gspe1-ssl.ls.apple.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.726 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 6045/4526 40195/40246 12254/11474][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 141/624 583/1494 163/598][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2015ht_a09f3c656075_c258b721e490][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 13,0,0,0,13,0,0,0,0,13,6,0,0,0,0,0,6,0,0,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,0,0,0]
-37	UDP 192.168.50.96:49643 <-> 74.125.200.113:443 [proto: 188.241/QUIC.GoogleDocs][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Collaborative/15][14 pkts/6657 bytes <-> 13 pkts/5624 bytes][Goodput ratio: 91/90][0.41 sec][Hostname/SNI: docs.google.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: 0.084 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 16/16 70/46 20/16][Pkt Len c2s/s2c min/avg/max/stddev: 73/65 476/433 1292/1292 537/442][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][PLAIN TEXT (bADNCLI)][Plen Bins: 23,19,11,3,0,0,0,0,3,3,3,0,0,0,3,0,0,0,0,3,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,3,19,0,0,0,0,0,0,0,0]
-38	TCP 192.168.50.96:51304 <-> 104.75.84.11:443 [proto: 91.140/TLS.Apple][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 140/Apple, Confidence: DNS][DPI packets: 5][cat: Web/5][12 pkts/1663 bytes <-> 16 pkts/10524 bytes][Goodput ratio: 53/90][56.60 sec][Hostname/SNI: gspe1-ssl.ls.apple.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.727 (Download)][IAT c2s/s2c min/avg/max/stddev: 1/0 1706/1498 8643/10361 3188/3197][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 139/658 583/1494 164/600][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2015ht_a09f3c656075_c258b721e490][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 13,0,0,0,13,0,0,0,0,13,6,0,0,0,0,0,6,0,0,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,0,0,0]
-39	TCP 192.168.50.96:51305 <-> 104.75.84.11:443 [proto: 91.140/TLS.Apple][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 140/Apple, Confidence: DNS][DPI packets: 6][cat: Web/5][10 pkts/1531 bytes <-> 17 pkts/10606 bytes][Goodput ratio: 58/89][56.58 sec][Hostname/SNI: gspe1-ssl.ls.apple.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.748 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 7485/371 49899/1624 17334/559][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 153/624 583/1506 176/604][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2015ht_a09f3c656075_c258b721e490][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 13,0,0,0,13,0,0,0,0,13,6,0,0,0,0,0,6,0,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,0,0]
-40	TCP 192.168.50.96:51303 <-> 104.75.84.11:443 [proto: 91.140/TLS.Apple][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 140/Apple, Confidence: DNS][DPI packets: 5][cat: Web/5][11 pkts/1609 bytes <-> 14 pkts/10246 bytes][Goodput ratio: 55/91][56.58 sec][Hostname/SNI: gspe1-ssl.ls.apple.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.729 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 6631/266 51350/1514 16905/443][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 146/732 583/1494 169/606][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2015ht_a09f3c656075_c258b721e490][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 14,0,0,0,7,0,0,0,0,14,7,0,0,0,0,0,7,0,0,0,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,0,0,0]
-41	UDP 192.168.50.96:65033 <-> 142.250.4.94:443 [proto: 188.126/QUIC.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][18 pkts/4665 bytes <-> 33 pkts/7181 bytes][Goodput ratio: 84/81][57.02 sec][Hostname/SNI: ssl.gstatic.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.212 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 2412/1711 25251/25316 6656/4874][Pkt Len c2s/s2c min/avg/max/stddev: 71/64 259/218 1292/1292 395/325][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][Plen Bins: 33,33,5,16,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0]
-42	TCP 192.168.50.96:51308 <-> 17.248.224.67:443 [proto: 91.143/TLS.AppleiCloud][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 140/Apple, Confidence: IP address][DPI packets: 10][cat: Web/5][7 pkts/2566 bytes <-> 13 pkts/9102 bytes][Goodput ratio: 81/90][69.63 sec][Hostname/SNI: gateway.icloud.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.560 (Download)][IAT c2s/s2c min/avg/max/stddev: 120/0 12000/1344 37813/3780 14676/1371][Pkt Len c2s/s2c min/avg/max/stddev: 78/54 367/700 583/1506 250/690][TCP Fingerprint: 2_64_0_d29295416479/macOS][TLSv1.3][JA4: t13d2014h2_a09f3c656075_e42f34c56612][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][PLAIN TEXT (gateway.icloud.com)][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0]
-45	TCP 192.168.50.96:51314 <-> 17.248.224.65:443 [proto: 91.143/TLS.AppleiCloud][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 143/AppleiCloud, Confidence: DNS][DPI packets: 11][cat: Web/5][9 pkts/2698 bytes <-> 12 pkts/8012 bytes][Goodput ratio: 77/90][133.55 sec][Hostname/SNI: gateway.icloud.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.496 (Download)][IAT c2s/s2c min/avg/max/stddev: 4/57 4773/535 18943/1104 6713/397][Pkt Len c2s/s2c min/avg/max/stddev: 66/54 300/668 583/1506 253/709][TCP Fingerprint: 2_64_0_d29295416479/macOS][TLSv1.3][JA4: t13d2014h2_a09f3c656075_e42f34c56612][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,0,0]
-46	TCP 192.168.50.96:51319 <-> 17.248.224.68:443 [proto: 91.143/TLS.AppleiCloud][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 143/AppleiCloud, Confidence: DNS][DPI packets: 15][cat: Web/5][9 pkts/1159 bytes <-> 14 pkts/9037 bytes][Goodput ratio: 45/89][6.00 sec][Hostname/SNI: p167-contacts.icloud.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.773 (Download)][IAT c2s/s2c min/avg/max/stddev: 1/0 839/208 1736/608 579/214][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 129/646 583/1506 161/677][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014h2_a09f3c656075_e42f34c56612][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,0,0,0,0,0,0,0,0,0,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,0,0]
 48	UDP 192.168.50.96:5353 -> 224.0.0.251:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 3][cat: Network/14][30 pkts/10174 bytes -> 0 pkts/0 bytes][Goodput ratio: 88/0][618.07 sec][Hostname/SNI: dulenâ€™s macbook air._device-info._tcp.local][dulenâ€™s macbook air._device-info._tcp.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 22846/0 239358/0 58356/0][Pkt Len c2s/s2c min/avg/max/stddev: 99/0 339/0 790/0 189/0][Risk: ** Minor Issues **][Risk Score: 10][Risk Info: DNS Record with zero TTL][PLAIN TEXT (98ce083)][Plen Bins: 0,13,0,0,0,6,41,0,0,0,0,13,0,0,13,0,0,0,6,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-49	TCP 192.168.50.96:51310 <-> 17.248.224.69:443 [proto: 91.143/TLS.AppleiCloud][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 140/Apple, Confidence: DNS][DPI packets: 9][cat: Web/5][7 pkts/2037 bytes <-> 9 pkts/7810 bytes][Goodput ratio: 76/92][24.42 sec][Hostname/SNI: gateway.icloud.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.586 (Download)][IAT c2s/s2c min/avg/max/stddev: 69/0 3577/909 13160/2083 4836/805][Pkt Len c2s/s2c min/avg/max/stddev: 66/54 291/868 583/1506 253/714][TCP Fingerprint: 2_64_0_d29295416479/macOS][TLSv1.3][JA4: t13d2014h2_a09f3c656075_e42f34c56612][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][PLAIN TEXT (gateway.icloud.com)][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62,0,0]
-58	TCP 192.168.50.96:51294 <-> 8.8.8.8:853 [proto: 91.196/TLS.DoH_DoT][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 196/DoH_DoT, Confidence: DNS][DPI packets: 7][cat: Network/14][12 pkts/1949 bytes <-> 12 pkts/5098 bytes][Goodput ratio: 58/84][310.51 sec][Hostname/SNI: dns.google][(Advertised) ALPNs: dot][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.447 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 28301/358 64062/1472 26906/556][Pkt Len c2s/s2c min/avg/max/stddev: 66/54 162/425 583/1466 132/601][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014do_a09f3c656075_e42f34c56612][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,15,54,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,0,0,0,0]
-60	TCP 192.168.50.96:51297 <-> 8.8.8.8:443 [proto: 91.196/TLS.DoH_DoT][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 196/DoH_DoT, Confidence: DNS][DPI packets: 7][cat: Network/14][11 pkts/1319 bytes <-> 11 pkts/5650 bytes][Goodput ratio: 46/87][4.40 sec][Hostname/SNI: dns.google][(Advertised) ALPNs: h2][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.621 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 495/123 1629/693 653/255][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 120/514 583/1466 148/607][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014h0_a09f3c656075_e42f34c56612][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 11,22,11,0,0,0,0,0,0,0,0,0,0,0,0,0,11,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,0,0,0,0]
-66	TCP 192.168.50.96:51299 <-> 8.8.4.4:443 [proto: 91.196/TLS.DoH_DoT][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 196/DoH_DoT, Confidence: DNS][DPI packets: 7][cat: Network/14][6 pkts/1001 bytes <-> 10 pkts/5576 bytes][Goodput ratio: 60/88][10.96 sec][Hostname/SNI: dns.google][(Advertised) ALPNs: h2][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.696 (Download)][IAT c2s/s2c min/avg/max/stddev: 25/0 2383/692 6160/2680 2283/1039][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 167/558 583/1466 189/620][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014h0_a09f3c656075_e42f34c56612][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,25,12,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,0,0,0,0]
-69	TCP 192.168.50.96:51300 <-> 8.8.4.4:853 [proto: 91.196/TLS.DoH_DoT][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 196/DoH_DoT, Confidence: DNS][DPI packets: 7][cat: Network/14][6 pkts/937 bytes <-> 11 pkts/5020 bytes][Goodput ratio: 55/85][12.55 sec][Hostname/SNI: dns.google][(Advertised) ALPNs: dot][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.685 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 2764/747 6491/3041 2375/1153][Pkt Len c2s/s2c min/avg/max/stddev: 66/54 156/456 583/1466 191/618][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014do_a09f3c656075_e42f34c56612][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0,0,0]
-72	TCP 192.168.50.96:51295 <-> 8.8.8.8:443 [proto: 91.196/TLS.DoH_DoT][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 196/DoH_DoT, Confidence: DNS][DPI packets: 8][cat: Network/14][7 pkts/943 bytes <-> 8 pkts/4795 bytes][Goodput ratio: 55/88][5.49 sec][Hostname/SNI: dns.google][(Advertised) ALPNs: h2][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.671 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 952/530 3628/2120 1369/918][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 135/599 583/1466 183/671][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014h0_a09f3c656075_e42f34c56612][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,0,0,0,0]
-73	TCP 192.168.50.96:51296 <-> 8.8.8.8:853 [proto: 91.196/TLS.DoH_DoT][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 196/DoH_DoT, Confidence: DNS][DPI packets: 7][cat: Network/14][6 pkts/889 bytes <-> 7 pkts/4711 bytes][Goodput ratio: 58/90][5.49 sec][Hostname/SNI: dns.google][(Advertised) ALPNs: dot][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.683 (Download)][IAT c2s/s2c min/avg/max/stddev: 102/0 1268/831 3090/4153 1146/1661][Pkt Len c2s/s2c min/avg/max/stddev: 54/66 148/673 583/1466 195/687][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014do_a09f3c656075_e42f34c56612][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,0,0,0,0]
-74	TCP 192.168.50.96:50243 <-> 142.250.4.94:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: DNS][DPI packets: 8][cat: Web/5][7 pkts/2728 bytes <-> 6 pkts/2828 bytes][Goodput ratio: 83/86][0.17 sec][Hostname/SNI: ssl.gstatic.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.018 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 5/0 33/18 49/55 18/22][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 390/471 1466/1466 513/563][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d1517h2_8daaf6152771_b6f405a00624][JA3S: 2b0648ab686ee45e0e7c35fcfb0eea7e][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,33,0,0,0,0]
 76	TCP 192.168.50.1:22 <-> 192.168.50.96:49435 [proto: 92/SSH][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 23][cat: RemoteAccess/12][27 pkts/2082 bytes <-> 29 pkts/3278 bytes][Goodput ratio: 6/41][676.38 sec][bytes ratio: -0.223 (Download)][IAT c2s/s2c min/avg/max/stddev: 125/35 28488/26011 78930/78930 28549/28440][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 77/113 198/118 24/15][Plen Bins: 0,96,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-78	TCP 192.168.50.96:51293 <-> 17.57.145.138:5223 [proto: 91.238/TLS.ApplePush][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 238/ApplePush, Confidence: DNS][DPI packets: 8][cat: Cloud/13][4 pkts/1298 bytes <-> 8 pkts/3460 bytes][Goodput ratio: 80/83][37.18 sec][Hostname/SNI: courier.push.apple.com][(Advertised) ALPNs: apns-security-v3;apns-pack-v1][TLS Supported Versions: GREASE;TLSv1.3][bytes ratio: -0.454 (Download)][IAT c2s/s2c min/avg/max/stddev: 16077/1376 16532/8724 16988/16072 456/7348][Pkt Len c2s/s2c min/avg/max/stddev: 54/74 324/432 583/1506 259/620][Risk: ** Known Proto on Non Std Port **][Risk Score: 50][Risk Info: Expected on port 443][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d0311ap_55b375c5d22e_81719d8ccb8b][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0]
-79	TCP 192.168.50.96:51298 <-> 8.8.4.4:853 [proto: 91.196/TLS.DoH_DoT][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 196/DoH_DoT, Confidence: DNS][DPI packets: 8][cat: Network/14][4 pkts/1298 bytes <-> 8 pkts/3380 bytes][Goodput ratio: 80/83][35.56 sec][Hostname/SNI: dns.google][(Advertised) ALPNs: dot][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.445 (Download)][IAT c2s/s2c min/avg/max/stddev: 15821/1350 17264/10027 18706/18704 1442/8677][Pkt Len c2s/s2c min/avg/max/stddev: 54/74 324/422 583/1466 259/602][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d2014do_a09f3c656075_e42f34c56612][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0,0,0]
-88	TCP 192.168.50.96:50161 <-> 74.125.200.188:5228 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 14][cat: Web/5][7 pkts/3425 bytes <-> 7 pkts/466 bytes][Goodput ratio: 86/0][10.58 sec][Hostname/SNI: mtalk.google.com][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: 0.760 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/2459 1323/3158 3148/3858 1242/699][Pkt Len c2s/s2c min/avg/max/stddev: 66/54 489/67 1466/78 567/9][Risk: ** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **][Risk Score: 60][Risk Info: No ALPN / Expected on port 443][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.2][JA4: t13d151400_8daaf6152771_0a20fe35d3a5][ECH: version 0xfe0d][Chrome][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,0,0,0,0,0,33,0,0,0,0]
 92	UDP 192.168.50.22:5353 -> 224.0.0.251:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 5][cat: Network/14][22 pkts/3564 bytes -> 0 pkts/0 bytes][Goodput ratio: 74/0][531.97 sec][Hostname/SNI: 98ce083f._sub._apple-mobdev2._tcp.local][98ce083f._sub._apple-mobdev2._tcp.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 27500/0 247426/0 68656/0][Pkt Len c2s/s2c min/avg/max/stddev: 81/0 162/0 290/0 98/0][PLAIN TEXT (companion)][Plen Bins: 0,54,9,0,0,0,0,36,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 143	TCP 192.168.50.96:50157 <-> 74.125.200.188:5228 [proto: 126/Google][IP: 126/Google][Encrypted][Confidence: Match by IP][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 10][cat: Web/5][4 pkts/2652 bytes <-> 6 pkts/388 bytes][Goodput ratio: 90/0][31.50 sec][bytes ratio: 0.745 (Upload)][IAT c2s/s2c min/avg/max/stddev: 1270/0 10488/0 15389/0 6523/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/54 663/65 1254/74 591/8][TCP Fingerprint: 2_64_65535_d29295416479/macOS][PLAIN TEXT (mtalk.google.com)][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0]
 145	ICMP 192.168.50.96:0 -> 192.168.50.1:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][42 pkts/2940 bytes -> 0 pkts/0 bytes][Goodput ratio: 40/0][366.76 sec][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 8147/0 233856/0 38672/0][Pkt Len c2s/s2c min/avg/max/stddev: 70/0 70/0 70/0 0/0][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-146	TCP 192.168.50.96:51292 <-> 17.57.145.139:5223 [proto: 91.238/TLS.ApplePush][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 238/ApplePush, Confidence: DNS][DPI packets: 10][cat: Cloud/13][4 pkts/793 bytes <-> 7 pkts/1950 bytes][Goodput ratio: 65/74][26.96 sec][Hostname/SNI: courier.push.apple.com][(Advertised) ALPNs: apns-security-v3;apns-pack-v1][TLS Supported Versions: GREASE;TLSv1.3][bytes ratio: -0.422 (Download)][IAT c2s/s2c min/avg/max/stddev: 54/11504 13456/11504 26857/11504 13402/0][Pkt Len c2s/s2c min/avg/max/stddev: 54/74 198/279 583/1506 222/501][Risk: ** Known Proto on Non Std Port **][Risk Score: 50][Risk Info: Expected on port 443][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d0311ap_55b375c5d22e_81719d8ccb8b][JA3S: 15af977ce25de452b96affa2addb1036][Safari][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0]
 149	UDP 192.168.50.96:52833 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][9 pkts/756 bytes <-> 9 pkts/1692 bytes][Goodput ratio: 50/78][23.29 sec][Hostname/SNI: p167-contacts.icloud.com][17.248.224.64][DNS Id: 0x5acd][bytes ratio: -0.382 (Download)][IAT c2s/s2c min/avg/max/stddev: 1031/1031 2144/2135 4130/4130 938/938][Pkt Len c2s/s2c min/avg/max/stddev: 84/188 84/188 84/188 0/0][PLAIN TEXT (contacts)][Plen Bins: 0,50,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 151	UDP 192.168.50.96:137 -> 192.168.50.255:137 [proto: 10/NetBIOS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 10/NetBIOS, Confidence: DPI][DPI packets: 1][cat: System/18][20 pkts/2056 bytes -> 0 pkts/0 bytes][Goodput ratio: 59/0][408.26 sec][Hostname/SNI: __msbrowse__][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 21045/0 366117/0 83705/0][Pkt Len c2s/s2c min/avg/max/stddev: 92/0 103/0 110/0 9/0][PLAIN TEXT (FPFPENFDECFCEPFHFDEFFPFPACAB)][Plen Bins: 0,40,60,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 157	UDP 192.168.50.96:59788 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][5 pkts/430 bytes <-> 5 pkts/855 bytes][Goodput ratio: 51/75][8.41 sec][Hostname/SNI: contacts.fe2.apple-dns.net][0.0.0.0][DNS Id: 0x0534][bytes ratio: -0.331 (Download)][IAT c2s/s2c min/avg/max/stddev: 1052/1031 2086/2086 3096/3083 725/728][Pkt Len c2s/s2c min/avg/max/stddev: 86/171 86/171 86/171 0/0][PLAIN TEXT (contacts)][Plen Bins: 0,50,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
@@ -52,7 +14,6 @@
 161	UDP 192.168.50.96:49334 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][3 pkts/252 bytes <-> 3 pkts/802 bytes][Goodput ratio: 50/84][0.65 sec][Hostname/SNI: 1-courier.push.apple.com][17.57.145.154][DNS Id: 0x0683][bytes ratio: -0.522 (Download)][IAT c2s/s2c min/avg/max/stddev: 293/228 323/290 353/353 30/62][Pkt Len c2s/s2c min/avg/max/stddev: 84/258 84/267 84/272 0/7][PLAIN TEXT (courier)][Plen Bins: 0,50,0,0,0,0,16,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 163	UDP 192.168.50.96:61980 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][4 pkts/340 bytes <-> 4 pkts/680 bytes][Goodput ratio: 50/75][4.36 sec][Hostname/SNI: gateway.fe2.apple-dns.net][0.0.0.0][DNS Id: 0x82c1][bytes ratio: -0.333 (Download)][IAT c2s/s2c min/avg/max/stddev: 1006/966 1439/1432 2015/2015 424/436][Pkt Len c2s/s2c min/avg/max/stddev: 85/170 85/170 85/170 0/0][PLAIN TEXT (gateway)][Plen Bins: 0,50,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 168	UDP 192.168.50.96:51788 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][3 pkts/228 bytes <-> 3 pkts/669 bytes][Goodput ratio: 45/81][0.47 sec][Hostname/SNI: itunes.apple.com][23.41.44.33][DNS Id: 0x5ebb][bytes ratio: -0.492 (Download)][IAT c2s/s2c min/avg/max/stddev: 144/144 233/192 322/239 89/48][Pkt Len c2s/s2c min/avg/max/stddev: 76/219 76/223 76/225 0/3][PLAIN TEXT (itunes)][Plen Bins: 0,50,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-169	TCP 192.168.50.96:51325 <-> 17.36.206.4:443 [proto: 91.140/TLS.Apple][IP: 140/Apple][Encrypted][Confidence: DPI][FPC: 140/Apple, Confidence: DNS][DPI packets: 4][cat: Web/5][3 pkts/727 bytes <-> 1 pkts/74 bytes][Goodput ratio: 71/0][0.25 sec][Hostname/SNI: gs-loc.apple.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][TCP Fingerprint: 2_64_65535_d29295416479/macOS][TLSv1.2][JA4: t13d2014h2_a09f3c656075_e42f34c56612][Safari][PLAIN TEXT (loc.apple.com)][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 170	UDP 192.168.50.96:61557 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][2 pkts/170 bytes <-> 2 pkts/630 bytes][Goodput ratio: 50/87][0.30 sec][Hostname/SNI: 42-courier.push.apple.com][17.57.145.134][DNS Id: 0xfa64][PLAIN TEXT (courier)][Plen Bins: 0,50,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 172	UDP 192.168.50.96:56491 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][3 pkts/234 bytes <-> 3 pkts/495 bytes][Goodput ratio: 46/74][0.46 sec][Hostname/SNI: gateway.icloud.com][17.248.224.65][DNS Id: 0x86e3][bytes ratio: -0.358 (Download)][IAT c2s/s2c min/avg/max/stddev: 144/144 227/199 310/254 83/55][Pkt Len c2s/s2c min/avg/max/stddev: 78/165 78/165 78/165 0/0][PLAIN TEXT (gateway)][Plen Bins: 0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 173	UDP 192.168.50.96:64078 <-> 192.168.50.1:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][2 pkts/156 bytes <-> 2 pkts/532 bytes][Goodput ratio: 46/84][0.35 sec][Hostname/SNI: _dns.resolver.arpa][0.0.0.0][DNS Id: 0xa8e5][PLAIN TEXT (resolver)][Plen Bins: 0,50,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
@@ -280,9 +241,555 @@
 >> No TCP fingerprint flows removed [DEBUG]:
 
 
->> Removed flows after SNI filtering [DEBUG]:
+>> Removed flows after 1° SNI filtering [DEBUG]:
 
-[]
+[
+    {
+        "ip_field": "276/Azure",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1517h2_8daaf6152771_b6f405a00624",
+        "sni": "main.vscode-cdn.net",
+        "ip_source": "192.168.50.96",
+        "port_source": "50144",
+        "ip_destination": "13.107.253.59",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "55 <-> 58",
+            "61 <-> 55",
+            "17 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.241/QUIC.GoogleDocs",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "RM .Ix",
+        "sni": "docs.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "52678",
+        "ip_destination": "74.125.200.113",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "19 <-> 18",
+            "14 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.124/QUIC.YouTube",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "KAHIZe",
+        "sni": "yt3.ggpht.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "62770",
+        "ip_destination": "74.125.200.132",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.241/QUIC.GoogleDocs",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "gIbIPPe",
+        "sni": "docs.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "55235",
+        "ip_destination": "142.250.4.113",
+        "port_destination": "443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "17 <-> 20",
+            "12 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d151400_8daaf6152771_0a20fe35d3a5",
+        "sni": "mtalk.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "50148",
+        "ip_destination": "74.125.200.188",
+        "port_destination": "5228",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "60",
+        "risk_info": "No ALPN / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "20 <-> 19"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.196/TLS.DoH_DoT",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2014do_a09f3c656075_e42f34c56612",
+        "sni": "dns.google",
+        "ip_source": "192.168.50.96",
+        "port_source": "51294",
+        "ip_destination": "8.8.8.8",
+        "port_destination": "853",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "12 <-> 12",
+            "6 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.196/TLS.DoH_DoT",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2014h0_a09f3c656075_e42f34c56612",
+        "sni": "dns.google",
+        "ip_source": "192.168.50.96",
+        "port_source": "51297",
+        "ip_destination": "8.8.8.8",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "11 <-> 11",
+            "7 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.196/TLS.DoH_DoT",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2014h0_a09f3c656075_e42f34c56612",
+        "sni": "dns.google",
+        "ip_source": "192.168.50.96",
+        "port_source": "51299",
+        "ip_destination": "8.8.4.4",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "6 <-> 10"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.196/TLS.DoH_DoT",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d2014do_a09f3c656075_e42f34c56612",
+        "sni": "dns.google",
+        "ip_source": "192.168.50.96",
+        "port_source": "51300",
+        "ip_destination": "8.8.4.4",
+        "port_destination": "853",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "6 <-> 11",
+            "4 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.2",
+        "ja4": "t13d151400_8daaf6152771_0a20fe35d3a5",
+        "sni": "mtalk.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "50161",
+        "ip_destination": "74.125.200.188",
+        "port_destination": "5228",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "60",
+        "risk_info": "No ALPN / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "7 <-> 7"
+        ]
+    }
+]
+>> Removed flows after SNI filtering ( Remove known suffixes and not_protocols domains ) [DEBUG]:
+
+[
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.124/QUIC.YouTube",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "LBZtfbh",
+        "sni": "www.youtube.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65209",
+        "ip_destination": "142.251.12.93",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "28 <-> 39"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51316",
+        "ip_destination": "17.248.224.69",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_0_d29295416479/macOS",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "23 <-> 31",
+            "7 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "Kkejap",
+        "sni": "accounts.google.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51400",
+        "ip_destination": "74.125.24.84",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 22"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51322",
+        "ip_destination": "17.248.224.66",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "23 <-> 22"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51309",
+        "ip_destination": "17.248.224.13",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_0_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "BmRAgd",
+        "sni": "ssl.gstatic.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "56982",
+        "ip_destination": "74.125.200.94",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.140/TLS.Apple",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2015ht_a09f3c656075_c258b721e490",
+        "sni": "gspe1-ssl.ls.apple.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51302",
+        "ip_destination": "104.75.84.11",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "12 <-> 17",
+            "12 <-> 16",
+            "10 <-> 17",
+            "11 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "sni": "ssl.gstatic.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "65033",
+        "ip_destination": "142.250.4.94",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 33"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "plain_text": "gateway.icloud.com",
+        "sni": "gateway.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51308",
+        "ip_destination": "17.248.224.67",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_0_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "7 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "gateway.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51314",
+        "ip_destination": "17.248.224.65",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_0_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "t13d1517h2_8daaf6152771_b6f405a00624",
+        "sni": "ssl.gstatic.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "50243",
+        "ip_destination": "142.250.4.94",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "7 <-> 6"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.140/TLS.Apple",
+        "tls_version": "TLSv1.2",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "plain_text": "loc.apple.com",
+        "sni": "gs-loc.apple.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51325",
+        "ip_destination": "17.36.206.4",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "3 <-> 1"
+        ]
+    }
+]
 >> Removed flows after JA3S/JA4/Certificate filtering [DEBUG]:
 
-[]
+[
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "plain_text": "OB@dUO",
+        "ip_source": "192.168.50.22",
+        "port_source": "53670",
+        "ip_destination": "162.159.198.1",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "117317 <-> 188572"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "ip_source": "192.168.50.96",
+        "port_source": "50162",
+        "ip_destination": "74.125.200.188",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.854 (Encrypted or Random?)",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "25 <-> 23"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "ip_source": "192.168.50.96",
+        "port_source": "50251",
+        "ip_destination": "172.217.194.113",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.840 (Encrypted or Random?)",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "22 <-> 18"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "ip_source": "192.168.50.96",
+        "port_source": "50248",
+        "ip_destination": "142.250.4.94",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.862 (Encrypted or Random?)",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "22 <-> 23",
+            "5 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "ip_source": "192.168.50.96",
+        "port_source": "51262",
+        "ip_destination": "17.57.145.139",
+        "port_destination": "5223",
+        "risk": "** Known Proto on Non Std Port **",
+        "risk_score": "50",
+        "risk_info": "Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "quic_version": "V-1",
+        "ip_source": "192.168.50.96",
+        "port_source": "57576",
+        "ip_destination": "74.125.200.94",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "5 <-> 3"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "ip_source": "192.168.50.96",
+        "port_source": "52318",
+        "ip_destination": "142.250.4.94",
+        "port_destination": "443",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 7.830 (Encrypted or Random?)",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "ip_source": "192.168.50.96",
+        "port_source": "49880",
+        "ip_destination": "172.253.118.188",
+        "port_destination": "5228",
+        "risk": "** Known Proto on Non Std Port **",
+        "risk_score": "50",
+        "risk_info": "Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "8 <-> 6"
+        ]
+    }
+]

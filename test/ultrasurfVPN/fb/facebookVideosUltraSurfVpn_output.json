@@ -1,33 +1,116 @@
 [
     {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "UDP",
-        "proto_field": "188/QUIC",
-        "plain_text": "OB@dUO",
-        "ip_source": "192.168.50.22",
-        "port_source": "53670",
-        "ip_destination": "162.159.198.1",
-        "port_destination": "443",
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.238/TLS.ApplePush",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d0311ap_55b375c5d22e_81719d8ccb8b",
+        "sni": "courier.push.apple.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51291",
+        "ip_destination": "17.57.145.134",
+        "port_destination": "5223",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **",
+        "risk_score": "50",
+        "risk_info": "Expected on port 443",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "117317 <-> 188572"
+            "43 <-> 54"
         ]
     },
     {
-        "ip_field": "126/Google",
+        "ip_field": "140/Apple",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
+        "proto_field": "91.238/TLS.ApplePush",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d0311ap_55b375c5d22e_81719d8ccb8b",
+        "sni": "courier.push.apple.com",
         "ip_source": "192.168.50.96",
-        "port_source": "50162",
-        "ip_destination": "74.125.200.188",
-        "port_destination": "443",
+        "port_source": "51321",
+        "ip_destination": "17.57.145.132",
+        "port_destination": "5223",
         "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "risk": "** Susp Entropy **",
-        "risk_score": "10",
-        "risk_info": "Entropy: 7.854 (Encrypted or Random?)",
+        "risk": "** Known Proto on Non Std Port **",
+        "risk_score": "50",
+        "risk_info": "Expected on port 443",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "25 <-> 23"
+            "56 <-> 51"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "edge-089.sgsin8.icloud-content.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51323",
+        "ip_destination": "17.248.154.35",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "32 <-> 35"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "p167-contacts.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51317",
+        "ip_destination": "17.248.224.65",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "8 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "p103-content.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51324",
+        "ip_destination": "17.248.224.68",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "p167-contacts.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51318",
+        "ip_destination": "17.248.224.67",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "7 <-> 14"
         ]
     },
     {
@@ -73,41 +156,6 @@
         ]
     },
     {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "ip_source": "192.168.50.96",
-        "port_source": "50251",
-        "ip_destination": "172.217.194.113",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "risk": "** Susp Entropy **",
-        "risk_score": "10",
-        "risk_info": "Entropy: 7.840 (Encrypted or Random?)",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "22 <-> 18"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "ip_source": "192.168.50.96",
-        "port_source": "50248",
-        "ip_destination": "142.250.4.94",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "risk": "** Susp Entropy **",
-        "risk_score": "10",
-        "risk_info": "Entropy: 7.862 (Encrypted or Random?)",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "22 <-> 23",
-            "5 <-> 11"
-        ]
-    },
-    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -123,6 +171,24 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "36 <-> 42"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.143/TLS.AppleiCloud",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
+        "sni": "p167-contacts.icloud.com",
+        "ip_source": "192.168.50.96",
+        "port_source": "51319",
+        "ip_destination": "17.248.224.68",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 14"
         ]
     },
     {
@@ -168,22 +234,6 @@
         ]
     },
     {
-        "ip_field": "140/Apple",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "ip_source": "192.168.50.96",
-        "port_source": "51262",
-        "ip_destination": "17.57.145.139",
-        "port_destination": "5223",
-        "risk": "** Known Proto on Non Std Port **",
-        "risk_score": "50",
-        "risk_info": "Expected on port 443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "13 <-> 12"
-        ]
-    },
-    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -202,17 +252,24 @@
         ]
     },
     {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188/QUIC",
-        "quic_version": "V-1",
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91.238/TLS.ApplePush",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d0311ap_55b375c5d22e_81719d8ccb8b",
+        "sni": "courier.push.apple.com",
         "ip_source": "192.168.50.96",
-        "port_source": "57576",
-        "ip_destination": "74.125.200.94",
-        "port_destination": "443",
+        "port_source": "51293",
+        "ip_destination": "17.57.145.138",
+        "port_destination": "5223",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **",
+        "risk_score": "50",
+        "risk_info": "Expected on port 443",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "5 <-> 3"
+            "4 <-> 8"
         ]
     },
     {
@@ -254,35 +311,24 @@
         ]
     },
     {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188/QUIC",
-        "ip_source": "192.168.50.96",
-        "port_source": "52318",
-        "ip_destination": "142.250.4.94",
-        "port_destination": "443",
-        "risk": "** Susp Entropy **",
-        "risk_score": "10",
-        "risk_info": "Entropy: 7.830 (Encrypted or Random?)",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
+        "ip_field": "140/Apple",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
+        "proto_field": "91.238/TLS.ApplePush",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d0311ap_55b375c5d22e_81719d8ccb8b",
+        "sni": "courier.push.apple.com",
         "ip_source": "192.168.50.96",
-        "port_source": "49880",
-        "ip_destination": "172.253.118.188",
-        "port_destination": "5228",
+        "port_source": "51292",
+        "ip_destination": "17.57.145.139",
+        "port_destination": "5223",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
         "risk": "** Known Proto on Non Std Port **",
         "risk_score": "50",
         "risk_info": "Expected on port 443",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "8 <-> 6"
+            "4 <-> 7"
         ]
     }
 ]

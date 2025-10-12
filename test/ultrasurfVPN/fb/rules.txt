@@ -1,2 +1,4 @@
+host:"edge-089.sgsin8.icloud-content.com",host:"icloud.com"@
+host:"courier.push.apple.com"@
 host:"api.termius.com"@
 host:"split.io"@

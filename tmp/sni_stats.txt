@@ -4,64 +4,47 @@
 
 >> All SNIs seen:
 
-   [+] [green]accounts.google.com[/green]
-   [+] [green]api.termius.com[/green]
+   [+] [green]accounts.youtube.com[/green]
    [+] [green]auth.split.io[/green]
-   [+] [green]courier.push.apple.com[/green]
-   [+] [green]dns.google[/green]
+   [+] [green]clients4.google.com[/green]
+   [+] [green]default.exp-tas.com[/green]
    [+] [green]docs.google.com[/green]
-   [+] [green]edge-089.sgsin8.icloud-content.com[/green]
+   [+] [green]edge-174.sgsin8.icloud-content.com[/green]
    [+] [green]gateway.icloud.com[/green]
-   [+] [green]gs-loc.apple.com[/green]
-   [+] [green]gspe1-ssl.ls.apple.com[/green]
    [+] [green]main.vscode-cdn.net[/green]
-   [+] [green]mtalk.google.com[/green]
-   [+] [green]p103-content.icloud.com[/green]
+   [+] [green]ocsp2.apple.com[/green]
    [+] [green]p167-contacts.icloud.com[/green]
+   [+] [green]p168-content.icloud.com[/green]
    [+] [green]sdk.split.io[/green]
    [+] [green]ssl.gstatic.com[/green]
-   [+] [green]streaming.split.io[/green]
+   [+] [green]update.code.visualstudio.com[/green]
    [+] [green]www.youtube.com[/green]
-   [+] [green]yt3.ggpht.com[/green]
 
 
 >> Removed flows 1° filtering ( Exclude words and know domains ):
 
    [+] [red]main.vscode-cdn.net[/red]
    [+] [red]docs.google.com[/red]
-   [+] [red]yt3.ggpht.com[/red]
-   [+] [red]docs.google.com[/red]
-   [+] [red]mtalk.google.com[/red]
-   [+] [red]dns.google[/red]
-   [+] [red]dns.google[/red]
-   [+] [red]dns.google[/red]
-   [+] [red]dns.google[/red]
-   [+] [red]mtalk.google.com[/red]
 
 
 >> Removed flows 2° filtering ( Remove known suffixes and not_protocols domains ):
 
    [+] [red]www.youtube.com[/red]
    [+] [red]gateway.icloud.com[/red]
-   [+] [red]accounts.google.com[/red]
+   [+] [red]accounts.youtube.com[/red]
+   [+] [red]clients4.google.com[/red]
    [+] [red]gateway.icloud.com[/red]
-   [+] [red]gateway.icloud.com[/red]
+   [+] [red]default.exp-tas.com[/red]
    [+] [red]ssl.gstatic.com[/red]
-   [+] [red]gspe1-ssl.ls.apple.com[/red]
-   [+] [red]ssl.gstatic.com[/red]
+   [+] [red]ocsp2.apple.com[/red]
    [+] [red]gateway.icloud.com[/red]
-   [+] [red]gateway.icloud.com[/red]
-   [+] [red]ssl.gstatic.com[/red]
-   [+] [red]gs-loc.apple.com[/red]
 
 
 >> Remaining SNIs:
 
-   [+] [green]api.termius.com[/green]
    [+] [green]auth.split.io[/green]
-   [+] [green]courier.push.apple.com[/green]
-   [+] [green]edge-089.sgsin8.icloud-content.com[/green]
-   [+] [green]p103-content.icloud.com[/green]
+   [+] [green]edge-174.sgsin8.icloud-content.com[/green]
    [+] [green]p167-contacts.icloud.com[/green]
+   [+] [green]p168-content.icloud.com[/green]
    [+] [green]sdk.split.io[/green]
-   [+] [green]streaming.split.io[/green]
+   [+] [green]update.code.visualstudio.com[/green]

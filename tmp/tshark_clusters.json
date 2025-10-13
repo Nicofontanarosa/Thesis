@@ -3,21 +3,28 @@
         "ja4": "55b375c5d22e_226f3f127bbe",
         "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
         "sni_list": [
-            "accounts.google.com",
+            "accounts.youtube.com",
+            "clients4.google.com",
             "docs.google.com",
             "ssl.gstatic.com",
-            "www.youtube.com",
-            "yt3.ggpht.com"
+            "www.youtube.com"
         ]
     },
     {
         "ja4": "a09f3c656075_e42f34c56612",
         "ja3s": "15af977ce25de452b96affa2addb1036",
         "sni_list": [
-            "edge-089.sgsin8.icloud-content.com",
+            "edge-174.sgsin8.icloud-content.com",
             "gateway.icloud.com",
-            "p103-content.icloud.com",
-            "p167-contacts.icloud.com"
+            "p167-contacts.icloud.com",
+            "p168-content.icloud.com"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_b6f405a00624",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "sni_list": [
+            "main.vscode-cdn.net"
         ]
     },
     {
@@ -28,29 +35,22 @@
         ]
     },
     {
-        "ja4": "8daaf6152771_e5627efa2ab1",
-        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
+        "ja4": "a09f3c656075_7f0f34a4126d",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
         "sni_list": [
-            "api.termius.com"
+            "update.code.visualstudio.com"
         ]
     },
     {
-        "ja4": "8daaf6152771_0a20fe35d3a5",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "5d04281c6031_78e6aca7449b",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
         "sni_list": [
-            "mtalk.google.com"
+            "default.exp-tas.com"
         ]
     },
     {
         "ja4": "8daaf6152771_9b887d9acb53",
         "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "sni_list": [
-            "sdk.split.io"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_e5627efa2ab1",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
         "sni_list": [
             "sdk.split.io"
         ]
@@ -63,57 +63,10 @@
         ]
     },
     {
-        "ja4": "8daaf6152771_e5627efa2ab1",
-        "ja3s": "cabca0e45d1843a8873f229da4a3323f",
-        "sni_list": [
-            "api.termius.com"
-        ]
-    },
-    {
-        "ja4": "55b375c5d22e_81719d8ccb8b",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "sni_list": [
-            "courier.push.apple.com"
-        ]
-    },
-    {
         "ja4": "a09f3c656075_e42f34c56612",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
         "sni_list": [
-            "dns.google"
+            "ocsp2.apple.com"
         ]
-    },
-    {
-        "ja4": "a09f3c656075_c258b721e490",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "sni_list": [
-            "gspe1-ssl.ls.apple.com"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_6cdcb247c39b",
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "sni_list": [
-            "streaming.split.io"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_e5627efa2ab1",
-        "ja3s": "2ab44dd8c27bdce434a961463587356a",
-        "sni_list": [
-            "auth.split.io"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_b6f405a00624",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "sni_list": [
-            "ssl.gstatic.com"
-        ]
-    },
-    {
-        "ja4": "c1385321e2f4_b1166f63991e",
-        "ja3s": "364ff14b04ef93c3b4cfa429d729c0d9",
-        "sni_list": []
     }
 ]

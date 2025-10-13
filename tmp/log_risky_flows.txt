@@ -2,210 +2,36 @@
 
 >> Risky Flow:
 
-  + ip_field: 140/Apple
-  + transport_protocol: TCP
-  + proto_field: 91.238/TLS.ApplePush
-  + tls_version: TLSv1.3
-  + ja3s: 15af977ce25de452b96affa2addb1036
-  + ja4: t13d0311ap_55b375c5d22e_81719d8ccb8b
-  + [green]sni: courier.push.apple.com[/green]
-  + ip_source: 192.168.50.96
-  + port_source: 51291
-  + ip_destination: 17.57.145.134
-  + port_destination: 5223
-  + tcp_fingerprint: 2_64_65535_d29295416479/macOS
-  + [red]risk: ** Known Proto on Non Std Port **[/red]
-  + [red]risk_score: 50[/red]
-  + [red]risk_info: Expected on port 443[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['43 <-> 54'\]
-
-
->> Risky Flow:
-
-  + ip_field: 140/Apple
-  + transport_protocol: TCP
-  + proto_field: 91.238/TLS.ApplePush
-  + tls_version: TLSv1.3
-  + ja3s: 15af977ce25de452b96affa2addb1036
-  + ja4: t13d0311ap_55b375c5d22e_81719d8ccb8b
-  + [green]sni: courier.push.apple.com[/green]
-  + ip_source: 192.168.50.96
-  + port_source: 51321
-  + ip_destination: 17.57.145.132
-  + port_destination: 5223
-  + tcp_fingerprint: 2_64_65535_d29295416479/macOS
-  + [red]risk: ** Known Proto on Non Std Port **[/red]
-  + [red]risk_score: 50[/red]
-  + [red]risk_info: Expected on port 443[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['56 <-> 51'\]
-
-
->> Risky Flow:
-
-  + ip_field: 126/Google
-  + transport_protocol: TCP
-  + proto_field: 91/TLS
-  + ip_source: 192.168.50.96
-  + port_source: 50162
-  + ip_destination: 74.125.200.188
-  + port_destination: 443
-  + tcp_fingerprint: 2_64_65535_d29295416479/macOS
-  + [red]risk: ** Susp Entropy **[/red]
-  + [red]risk_score: 10[/red]
-  + [red]risk_info: Entropy: 7.854 (Encrypted or Random?)[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['25 <-> 23'\]
-
-
->> Risky Flow:
-
-  + ip_field: 126/Google
-  + transport_protocol: TCP
-  + proto_field: 91.239/TLS.GoogleServices
-  + tls_version: TLSv1.3
-  + ja3s: eb1d94daa7e0344597e756a1fb6e7054
-  + ja4: t13d151400_8daaf6152771_0a20fe35d3a5
-  + [green]sni: mtalk.google.com[/green]
-  + ip_source: 192.168.50.96
-  + port_source: 50148
-  + ip_destination: 74.125.200.188
-  + port_destination: 5228
-  + tcp_fingerprint: 2_64_65535_d29295416479/macOS
-  + [red]risk: ** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **[/red]
-  + [red]risk_score: 60[/red]
-  + [red]risk_info: No ALPN / Expected on port 443[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['20 <-> 19'\]
-
-
->> Risky Flow:
-
-  + ip_field: 126/Google
-  + transport_protocol: TCP
-  + proto_field: 91/TLS
-  + ip_source: 192.168.50.96
-  + port_source: 50251
-  + ip_destination: 172.217.194.113
-  + port_destination: 443
-  + tcp_fingerprint: 2_64_65535_d29295416479/macOS
-  + [red]risk: ** Susp Entropy **[/red]
-  + [red]risk_score: 10[/red]
-  + [red]risk_info: Entropy: 7.840 (Encrypted or Random?)[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['22 <-> 18'\]
-
-
->> Risky Flow:
-
-  + ip_field: 126/Google
-  + transport_protocol: TCP
-  + proto_field: 91/TLS
-  + ip_source: 192.168.50.96
-  + port_source: 50248
-  + ip_destination: 142.250.4.94
-  + port_destination: 443
-  + tcp_fingerprint: 2_64_65535_d29295416479/macOS
-  + [red]risk: ** Susp Entropy **[/red]
-  + [red]risk_score: 10[/red]
-  + [red]risk_info: Entropy: 7.862 (Encrypted or Random?)[/red]
-  + similar_flows_count: 2
-  + exchanged_packets: \['22 <-> 23', '5 <-> 11'\]
-
-
->> Risky Flow:
-
-  + ip_field: 140/Apple
-  + transport_protocol: TCP
-  + proto_field: 91/TLS
-  + ip_source: 192.168.50.96
-  + port_source: 51262
-  + ip_destination: 17.57.145.139
-  + port_destination: 5223
-  + [red]risk: ** Known Proto on Non Std Port **[/red]
-  + [red]risk_score: 50[/red]
-  + [red]risk_info: Expected on port 443[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['13 <-> 12'\]
-
-
->> Risky Flow:
-
-  + ip_field: 140/Apple
-  + transport_protocol: TCP
-  + proto_field: 91.238/TLS.ApplePush
-  + tls_version: TLSv1.3
-  + ja3s: 15af977ce25de452b96affa2addb1036
-  + ja4: t13d0311ap_55b375c5d22e_81719d8ccb8b
-  + [green]sni: courier.push.apple.com[/green]
-  + ip_source: 192.168.50.96
-  + port_source: 51293
-  + ip_destination: 17.57.145.138
-  + port_destination: 5223
-  + tcp_fingerprint: 2_64_65535_d29295416479/macOS
-  + [red]risk: ** Known Proto on Non Std Port **[/red]
-  + [red]risk_score: 50[/red]
-  + [red]risk_info: Expected on port 443[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['4 <-> 8'\]
-
-
->> Risky Flow:
-
-  + ip_field: 126/Google
-  + transport_protocol: TCP
-  + proto_field: 91.239/TLS.GoogleServices
-  + tls_version: TLSv1.2
-  + ja4: t13d151400_8daaf6152771_0a20fe35d3a5
-  + [green]sni: mtalk.google.com[/green]
-  + ip_source: 192.168.50.96
-  + port_source: 50161
-  + ip_destination: 74.125.200.188
-  + port_destination: 5228
-  + tcp_fingerprint: 2_64_65535_d29295416479/macOS
-  + [red]risk: ** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **[/red]
-  + [red]risk_score: 60[/red]
-  + [red]risk_info: No ALPN / Expected on port 443[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['7 <-> 7'\]
-
-
->> Risky Flow:
-
-  + ip_field: 140/Apple
-  + transport_protocol: TCP
-  + proto_field: 91.238/TLS.ApplePush
-  + tls_version: TLSv1.3
-  + ja3s: 15af977ce25de452b96affa2addb1036
-  + ja4: t13d0311ap_55b375c5d22e_81719d8ccb8b
-  + [green]sni: courier.push.apple.com[/green]
-  + ip_source: 192.168.50.96
-  + port_source: 51292
-  + ip_destination: 17.57.145.139
-  + port_destination: 5223
-  + tcp_fingerprint: 2_64_65535_d29295416479/macOS
-  + [red]risk: ** Known Proto on Non Std Port **[/red]
-  + [red]risk_score: 50[/red]
-  + [red]risk_info: Expected on port 443[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['4 <-> 7'\]
-
-
->> Risky Flow:
-
-  + ip_field: 126/Google
+  + ip_field: 0/Unknown
   + transport_protocol: UDP
-  + proto_field: 188/QUIC
-  + ip_source: 192.168.50.96
-  + port_source: 52318
-  + ip_destination: 142.250.4.94
-  + port_destination: 443
+  + proto_field: 206/WireGuard
+  + ja4: q13d0313h0_55b375c5d22e_226f3f127bbe
+  + plain_text: za/9MK9
+  + ip_source: 162.128.128.38
+  + port_source: 51820
+  + ip_destination: 192.168.50.22
+  + port_destination: 53511
   + [red]risk: ** Susp Entropy **[/red]
   + [red]risk_score: 10[/red]
-  + [red]risk_info: Entropy: 7.830 (Encrypted or Random?)[/red]
+  + [red]risk_info: Entropy: 7.859 (Encrypted or Random?)[/red]
   + similar_flows_count: 1
-  + exchanged_packets: \['1 <-> 1'\]
+  + exchanged_packets: \['29992 <-> 4624'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 140/Apple
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + ip_source: 17.57.145.138
+  + port_source: 5223
+  + ip_destination: 192.168.50.96
+  + port_destination: 58784
+  + [red]risk: ** Known Proto on Non Std Port **[/red]
+  + [red]risk_score: 50[/red]
+  + [red]risk_info: Expected on port 443[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['31 <-> 29'\]
 
 
 >> Risky Flow:
@@ -214,11 +40,11 @@
   + transport_protocol: TCP
   + proto_field: 91/TLS
   + ip_source: 192.168.50.96
-  + port_source: 49880
-  + ip_destination: 172.253.118.188
+  + port_source: 50626
+  + ip_destination: 74.125.200.188
   + port_destination: 5228
   + [red]risk: ** Known Proto on Non Std Port **[/red]
   + [red]risk_score: 50[/red]
   + [red]risk_info: Expected on port 443[/red]
   + similar_flows_count: 1
-  + exchanged_packets: \['8 <-> 6'\]
+  + exchanged_packets: \['17 <-> 17'\]

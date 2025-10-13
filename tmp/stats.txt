@@ -2,17 +2,15 @@
 
    [+] DHCP
    [+] DNS
-   [+] Google
    [+] ICMP
    [+] ICMPV6
+   [+] IGMP
    [+] MDNS
-   [+] NTP
-   [+] NetBIOS
    [+] QUIC
-   [+] SOAP
    [+] SSH
    [+] TLS
    [+] Unknown
+   [+] WireGuard
 
 >> Lists of protocols supported:
 
@@ -21,16 +19,14 @@
    [+] QUIC
    [+] TLS
    [+] Unknown
+   [+] WireGuard
 
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
    [red][+] DHCP[/red]
    [red][+] DNS[/red]
-   [red][+] Google[/red]
    [red][+] ICMP[/red]
    [red][+] ICMPV6[/red]
+   [red][+] IGMP[/red]
    [red][+] MDNS[/red]
-   [red][+] NTP[/red]
-   [red][+] NetBIOS[/red]
-   [red][+] SOAP[/red]
    [red][+] SSH[/red]

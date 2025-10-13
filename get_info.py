@@ -11,8 +11,12 @@ import os
 import constants
 import config
 
+# -------------------------------------------
+
 log_file_rules = "tmp/rules.txt"
 config.clear_log(log_file_rules)
+
+# -------------------------------------------
 
 def classify_domain_AI(domain):
 
@@ -47,6 +51,8 @@ def classify_domain_AI(domain):
 
     return message
 
+# -------------------------------------------
+
 def classify_domains(clusters, output_file):
 
     output_folder = os.path.dirname(output_file)
@@ -55,7 +61,13 @@ def classify_domains(clusters, output_file):
     config.clear_log(rules_file)
 
     for cluster in clusters:
+
         snis = cluster.get("sni_list", [])
+        ja4 = cluster.get("ja4", "")
+        certificate = {
+            "issuer": cluster.get("issuer"),
+            "subject": cluster.get("subject")
+        }
         
         if constants.SHOW_NAME_HINT:
 
@@ -118,9 +130,32 @@ def classify_domains(clusters, output_file):
                 rule = f"{host_entries}@whois: {whois_str} & AI: {ai_str}"
 
         else:
-            # genera regola solo con host
-            host_entries = ",".join([f'host:"{sni}"' for sni in sorted(snis)])
-            rule = f"{host_entries}@"
+
+            # === Prefer SNI if available ===
+            if snis:
+                # genera regola solo con host
+                host_entries = ",".join([f'host:"{sni}"' for sni in sorted(snis)])
+                rule = f"{host_entries}@"
+
+            # === If no SNI, use certificate ===
+            elif any(v not in (None, "None", "") for v in certificate.values()):
+
+                issuer = certificate.get("issuer")
+                subject = certificate.get("subject")
+
+                if subject and subject.lower() != "none":
+                    rule = f'trusted_subject_dn:"{subject}"@'
+                elif issuer and issuer.lower() != "none":
+                    rule = f'trusted_issuer_dn:"{issuer}"@'
+
+            # === If neither SNI nor certificate, use JA4 ===
+            elif ja4:
+                rule = f"ja4:{ja4}@"
+
+            # === Fallback ===
+            else:
+                rule = "unknown@UnknownProto"
+
 
         with open(rules_file, "a") as f:
             f.write(f"{rule}\n")

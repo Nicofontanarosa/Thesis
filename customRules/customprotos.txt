@@ -36,7 +36,11 @@
 # Format: ja4:<fingerprint>@<ProtoName>[=ProtoID][,cat=N][,breed=M]
 #ja4:t12d1409h1_c866b44c5a26_b39be8c56777@CustomJA4Proto=2060,cat=2,breed=5
 
-# 7. nDPI FINGERPRINTS
+# 7. CERTIFICATION
+# Custom certification autorities we trust
+#trusted_issuer_dn:"CN=813845657003339838, O=Code42, OU=TEST, ST=MN, C=US"@CustomProto=2060,cat=2,breed=5
+
+# 8. nDPI FINGERPRINTS
 # Format: ndpifp:<fingerprint>@<ProtoName>[=ProtoID][,cat=N][,breed=M]
 #ndpifp:8ae775daeb30f7aa5790706158288639@CustomnDPIFPProto=2061,cat=3,breed=2
 #ndpifp:2d3ea0b7f090060fa1b9f3783362f862@CustomnDPIFPProto2=2062,cat=3,breed=3
@@ -59,7 +63,7 @@
 # End of complete example file
 #################################################################
 
-host:"api.glovoapp.com",host:"glovo-fonts-78305bac.s3.eu-west-1.amazonaws.com",host:"glovo.dhmedia.io"@Glovo
+host:"api.glovoapp.com",host:"glovo.dhmedia.io"@Glovo
 
 #################################################################
 # Breed

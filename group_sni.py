@@ -74,17 +74,14 @@ def merge_clusters(clusters: list) -> list:
                 continue
 
             # combine the SNI lists from the large and small clusters
-            union = {
-                "sni_list": large_cluster["sni_list"] + small_cluster["sni_list"]
-            }
+            union = {"sni_list": large_cluster["sni_list"] + small_cluster["sni_list"]}
             # group the combined SNI list
             grouped_union = group_sni(union)
 
             # if grouping reduces the total number of SNIs
             if len(grouped_union["sni_list"]) < (len(large_cluster["sni_list"]) + len(small_cluster["sni_list"])):
                 reduced = set(grouped_union["sni_list"])
-                #print(f"\n{reduced}\n\n{large_cluster['sni_list']}\n\n{small_cluster['sni_list']}\n\n")
-
+                
                 new_large = []
                 for s in large_cluster["sni_list"]:
                     # check if each SNI in the large cluster has been reduced
@@ -112,6 +109,16 @@ def merge_clusters(clusters: list) -> list:
             j += 1
         i += 1
 
-    # remove empty clusters
-    clusters = [c for c in clusters if c["sni_list"]]
+    # --- Remove clusters that have no SNI, no JA4, and no certificate ---
+    def has_useful_data(cluster):
+        if cluster.get("sni_list"):
+            return True
+        if cluster.get("ja4"):
+            return True
+        cert_values = [v for k, v in cluster.get("certificate", []) if v is not None]
+        if cert_values:
+            return True
+        return False
+
+    clusters = [c for c in clusters if has_useful_data(c)]
     return clusters

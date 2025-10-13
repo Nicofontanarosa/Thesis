@@ -1,2 +1,2 @@
 host:"images.sbito.it"@
-host:"advgo.net",host:"subito.it"@
+host:"subito.it"@

@@ -1,7 +1,7 @@
 [
     {
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "55b375c5d22e_81719d8ccb8b",
+        "ja3s": null,
+        "ja4": "55b375c5d22e_226f3f127bbe",
         "certificate": [
             [
                 "certificate",
@@ -20,11 +20,9 @@
                 null
             ]
         ],
-        "sni_list": [
-            "courier.push.apple.com"
-        ],
-        "flow_count": 4,
-        "packets": 227
+        "sni_list": [],
+        "flow_count": 9,
+        "packets": 34866
     },
     {
         "ja3s": "15af977ce25de452b96affa2addb1036",
@@ -48,147 +46,13 @@
             ]
         ],
         "sni_list": [
-            "edge-089.sgsin8.icloud-content.com",
-            "p103-content.icloud.com",
-            "p167-contacts.icloud.com"
+            "edge-174.sgsin8.icloud-content.com",
+            "p167-contacts.icloud.com",
+            "p168-content.icloud.com",
+            "update.code.visualstudio.com"
         ],
-        "flow_count": 5,
-        "packets": 163
-    },
-    {
-        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
-        "ja4": "8daaf6152771_e5627efa2ab1",
-        "certificate": [
-            [
-                "certificate",
-                "SHA-1: 75:72:89:84:63:27:61:00:57:79:54:DA:FE:A8:A4:0B:02:B1:1A:82"
-            ],
-            [
-                "issuer",
-                "C=US, O=Amazon, CN=Amazon RSA 2048 M04"
-            ],
-            [
-                "servernames",
-                "api.termius.com,api.beta.termius.com"
-            ],
-            [
-                "subject",
-                "CN=api.termius.com"
-            ]
-        ],
-        "sni_list": [
-            "api.termius.com"
-        ],
-        "flow_count": 4,
-        "packets": 253
-    },
-    {
-        "ja3s": "cabca0e45d1843a8873f229da4a3323f",
-        "ja4": "8daaf6152771_e5627efa2ab1",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "api.termius.com"
-        ],
-        "flow_count": 0,
-        "packets": 0
-    },
-    {
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "8daaf6152771_6cdcb247c39b",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "streaming.split.io"
-        ],
-        "flow_count": 1,
-        "packets": 78
-    },
-    {
-        "ja3s": "2ab44dd8c27bdce434a961463587356a",
-        "ja4": "8daaf6152771_e5627efa2ab1",
-        "certificate": [
-            [
-                "certificate",
-                "SHA-1: DC:4D:63:73:63:8A:E1:0B:61:25:43:E8:19:60:5E:BD:63:6E:A3:51"
-            ],
-            [
-                "issuer",
-                "C=US, O=Amazon, CN=Amazon RSA 2048 M03"
-            ],
-            [
-                "servernames",
-                "*.split.io"
-            ],
-            [
-                "subject",
-                "CN=*.split.io"
-            ]
-        ],
-        "sni_list": [
-            "auth.split.io"
-        ],
-        "flow_count": 4,
-        "packets": 80
-    },
-    {
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "8daaf6152771_e5627efa2ab1",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "sdk.split.io"
-        ],
-        "flow_count": 5,
-        "packets": 134
+        "flow_count": 7,
+        "packets": 251
     },
     {
         "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
@@ -214,8 +78,8 @@
         "sni_list": [
             "sdk.split.io"
         ],
-        "flow_count": 0,
-        "packets": 0
+        "flow_count": 1,
+        "packets": 56
     },
     {
         "ja3s": "9dd9697e41bf4842b13869ec64041126",
@@ -241,7 +105,7 @@
         "sni_list": [
             "auth.split.io"
         ],
-        "flow_count": 0,
-        "packets": 0
+        "flow_count": 2,
+        "packets": 37
     }
 ]

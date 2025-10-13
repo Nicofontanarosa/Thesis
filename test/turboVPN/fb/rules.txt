@@ -1,2 +1,1 @@
-host:"update.code.visualstudio.com"@
-host:"split.io"@
+ja4:55b375c5d22e_226f3f127bbe@

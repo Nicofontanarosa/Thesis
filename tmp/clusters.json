@@ -1,7 +1,7 @@
 [
     {
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "a09f3c656075_e42f34c56612",
+        "ja3s": null,
+        "ja4": "55b375c5d22e_226f3f127bbe",
         "certificate": [
             [
                 "certificate",
@@ -20,92 +20,8 @@
                 null
             ]
         ],
-        "sni_list": [
-            "edge-089.sgsin8.icloud-content.com",
-            "icloud.com"
-        ],
-        "flow_count": 5,
-        "packets": 163
-    },
-    {
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "55b375c5d22e_81719d8ccb8b",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "courier.push.apple.com"
-        ],
-        "flow_count": 4,
-        "packets": 227
-    },
-    {
-        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
-        "ja4": "8daaf6152771_e5627efa2ab1",
-        "certificate": [
-            [
-                "certificate",
-                "SHA-1: 75:72:89:84:63:27:61:00:57:79:54:DA:FE:A8:A4:0B:02:B1:1A:82"
-            ],
-            [
-                "issuer",
-                "C=US, O=Amazon, CN=Amazon RSA 2048 M04"
-            ],
-            [
-                "servernames",
-                "api.termius.com,api.beta.termius.com"
-            ],
-            [
-                "subject",
-                "CN=api.termius.com"
-            ]
-        ],
-        "sni_list": [
-            "api.termius.com"
-        ],
-        "flow_count": 4,
-        "packets": 253
-    },
-    {
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "8daaf6152771_6cdcb247c39b",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "split.io"
-        ],
-        "flow_count": 10,
-        "packets": 292
+        "sni_list": [],
+        "flow_count": 9,
+        "packets": 34866
     }
 ]

@@ -1,1 +1,7 @@
 ja4:55b375c5d22e_226f3f127bbe@
+
+>> Per aggiungere questa regola basata su JA4:
+   [+] Apri il file: `nDPI/example/protos.txt`
+   [+] Incolla la seguente regola: ja4:55b375c5d22e_226f3f127bbe@
+
+--------------------------------------------------------------------------------

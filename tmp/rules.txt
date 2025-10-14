@@ -1,7 +1,14 @@
-ja4:55b375c5d22e_226f3f127bbe@
+host:"images.sbito.it"@
 
->> Per aggiungere questa regola basata su JA4:
-   [+] Apri il file: `nDPI/example/protos.txt`
-   [+] Incolla la seguente regola: ja4:55b375c5d22e_226f3f127bbe@
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"images.sbito.it"@
+
+--------------------------------------------------------------------------------
+host:"subito.it"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"subito.it"@
 
 --------------------------------------------------------------------------------

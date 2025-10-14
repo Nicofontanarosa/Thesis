@@ -20,11 +20,11 @@ log_file_flows = "tmp/flows.txt"
 
 def fill_missing_ja_from_cluster(final_flows, tshark_cluster_file):
 
-    # Load the TLS clusters previously extracted by tshark
+    # load the TLS clusters previously extracted by tshark
     with open(tshark_cluster_file, "r", encoding="utf-8") as f:
         tshark_clusters = json.load(f)
 
-    # Build a mapping from SNI → (JA4, JA3S)
+    # build a mapping from SNI → (JA4, JA3S)
     sni_to_ja = {}
     for cluster in tshark_clusters:
         ja4 = cluster.get("ja4")
@@ -32,18 +32,18 @@ def fill_missing_ja_from_cluster(final_flows, tshark_cluster_file):
         for sni in cluster.get("sni_list", []):
             sni_to_ja[sni.lower()] = (ja4, ja3s)
 
-    # Update HTTP (or other) flows that are missing JA4/JA3S
+    # update HTTP (or other) flows that are missing JA4/JA3S
     for flow in final_flows:
-        # Skip flows that already have JA3 or JA4 values
+        # skip flows that already have JA3 or JA4 values
         if flow.get("ja4") or flow.get("ja3s"):
             continue
 
-        # Get the flow SNI in lowercase (if present)
+        # get the flow SNI in lowercase (if present)
         sni = flow.get("sni", "").lower()
         if not sni:
             continue
 
-        # If the SNI was seen in the tshark clusters, fill in the missing values
+        # if the SNI was seen in the tshark clusters, fill in the missing values
         if sni in sni_to_ja:
             flow["ja4"], flow["ja3s"] = sni_to_ja[sni]
 
@@ -83,6 +83,7 @@ def flow_processor(input_file):
     with open(input_file, 'r') as f_in:
         for line in f_in:
             line = line.strip()
+
             # skip empty lines or lines without IP ( further but not necessary check )
             if not line or not re.search(r"\d+\.\d+\.\d+\.\d+", line):
                 continue

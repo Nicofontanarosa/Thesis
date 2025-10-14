@@ -21,37 +21,37 @@ protocols = constants.PROTOCOLS
 def normalize_sni_clusters(clusters, sorted_dataset):
     
     def normalize_sni(sni):
-        # Remove 'www.' prefix
+        # remove 'www.' prefix
         if sni.lower().startswith("www."):
             sni = sni[4:]
 
+        # split the domain into components (e.g., ["api", "google", "com"])
         parts = sni.split(".")
-        # Split by '.' and remove parts with numbers until we find a "clean" part
+        # split by '.' and remove parts with numbers until we find a "clean" part
         keep = []
         for part in reversed(parts):
             if any(c.isdigit() for c in part):
-                break  # stop qui → scarto tutto ciò che sta a sinistra
+                break
             keep.append(part)
 
-         # keep ora è al contrario → ricostruisco nel giusto ordine
+        # keep it's now at reverse order
         keep = list(reversed(keep))
         normalized = ".".join(keep)
 
-        # se rimane solo 1 pezzo → scarto del tutto
         if len(keep) <= 1:
             return None
         return normalized
 
     normalized_clusters = []
     for cluster in clusters:
-        # Normalize each SNI ed elimina quelli None
+        # normalize each SNI ed elimina quelli None
         normalized_snis = [normalize_sni(sni) for sni in cluster["sni_list"]]
         normalized_snis = [sni for sni in normalized_snis if sni is not None]
 
-        # Remove SNIs presenti in sorted_dataset
+        # remove SNIs presenti in sorted_dataset
         filtered_snis = [sni for sni in normalized_snis if sni.lower() not in sorted_dataset]
 
-        # Se il cluster ha ancora SNIs → lo tengo
+        # keep the cluster only if it still has valid SNIs
         if filtered_snis:
             new_cluster = cluster.copy()
             new_cluster["sni_list"] = filtered_snis

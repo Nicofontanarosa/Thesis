@@ -1,72 +1,108 @@
 [
     {
-        "ja4": "55b375c5d22e_226f3f127bbe",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "5b57614c22b0_eca864cca44a",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
         "sni_list": [
-            "accounts.youtube.com",
-            "clients4.google.com",
-            "docs.google.com",
-            "ssl.gstatic.com",
-            "www.youtube.com"
+            "4dxsfv.cdn-settings.appsflyersdk.com",
+            "4dxsfv.inapps.appsflyersdk.com",
+            "4dxsfv.launches.appsflyersdk.com",
+            "mobile-2260.api.privacy-center.org"
         ]
     },
     {
-        "ja4": "a09f3c656075_e42f34c56612",
+        "ja4": "8daaf6152771_eca864cca44a",
         "ja3s": "15af977ce25de452b96affa2addb1036",
         "sni_list": [
-            "edge-174.sgsin8.icloud-content.com",
-            "gateway.icloud.com",
-            "p167-contacts.icloud.com",
-            "p168-content.icloud.com"
+            "collector.subito.it",
+            "hades.subito.it",
+            "presence-api-subito.trust.advgo.net",
+            "profile-api-subito.trust.advgo.net"
         ]
     },
     {
-        "ja4": "8daaf6152771_b6f405a00624",
+        "ja4": "8daaf6152771_eca864cca44a",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "sni_list": [
+            "atsod.launch.liveramp.com",
+            "chat.stream-io-api.com",
+            "geo.privacymanager.io",
+            "images.sbito.it"
+        ]
+    },
+    {
+        "ja4": "5b57614c22b0_eca864cca44a",
         "ja3s": "15af977ce25de452b96affa2addb1036",
         "sni_list": [
-            "main.vscode-cdn.net"
+            "assets.subito.it",
+            "hades.subito.it",
+            "mobilesdk-eu.kampyle.com"
         ]
     },
     {
-        "ja4": "8daaf6152771_b6f405a00624",
-        "ja3s": "2253c82f03b621c5144709b393fde2c9",
-        "sni_list": [
-            "main.vscode-cdn.net"
-        ]
-    },
-    {
-        "ja4": "a09f3c656075_7f0f34a4126d",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "sni_list": [
-            "update.code.visualstudio.com"
-        ]
-    },
-    {
-        "ja4": "5d04281c6031_78e6aca7449b",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "sni_list": [
-            "default.exp-tas.com"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_9b887d9acb53",
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "sni_list": [
-            "sdk.split.io"
-        ]
-    },
-    {
-        "ja4": "8daaf6152771_e5627efa2ab1",
-        "ja3s": "9dd9697e41bf4842b13869ec64041126",
-        "sni_list": [
-            "auth.split.io"
-        ]
-    },
-    {
-        "ja4": "a09f3c656075_e42f34c56612",
+        "ja4": "8daaf6152771_eca864cca44a",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
         "sni_list": [
-            "ocsp2.apple.com"
+            "ad.doubleclick.net",
+            "adservice.google.com",
+            "api.rlcdn.com"
+        ]
+    },
+    {
+        "ja4": "5b57614c22b0_eca864cca44a",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "sni_list": [
+            "firebaseremoteconfig.googleapis.com",
+            "pubads.g.doubleclick.net"
+        ]
+    },
+    {
+        "ja4": "8daaf6152771_d8a2da3f94cd",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "sni_list": [
+            "googleads.g.doubleclick.net",
+            "tpc.googlesyndication.com"
+        ]
+    },
+    {
+        "ja4": "39a52dd9ae43_b39be8c56a14",
+        "ja3s": "eca9b8f0f3eae50309eaf901cb822d9b",
+        "sni_list": [
+            "firebaseinappmessaging.googleapis.com"
+        ]
+    },
+    {
+        "ja4": "5b57614c22b0_3f5d972527c0",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "sni_list": [
+            "people-pa.googleapis.com"
+        ]
+    },
+    {
+        "ja4": "5b57614c22b0_3f5d972527c0",
+        "ja3s": "303951d4c50efb2e991652225a6f02b1",
+        "sni_list": [
+            "xmpp.messaging.advgo.net"
+        ]
+    },
+    {
+        "ja4": "5b57614c22b0_eca864cca44a",
+        "ja3s": "e54965894d6b45ecb4323c7ea3d6c115",
+        "sni_list": [
+            "mcrndycn8bj4zfvcnqlh9d-pbw21.device.marketingcloudapis.com"
+        ]
+    },
+    {
+        "ja4": "55b375c5d22e_653d80c3fe9d",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "sni_list": [
+            "googleads.g.doubleclick.net"
+        ]
+    },
+    {
+        "ja4": "5b57614c22b0_352634941f3a",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "sni_list": [
+            "pubads.g.doubleclick.net"
         ]
     }
 ]

@@ -1,4 +1,8 @@
 
+#################################################################
+# File: group_sni.py to merge clusters
+#################################################################
+
 def group_sni(cluster):
     
     # extract the SNI list from the cluster
@@ -122,3 +126,7 @@ def merge_clusters(clusters: list) -> list:
 
     clusters = [c for c in clusters if has_useful_data(c)]
     return clusters
+
+#################################################################
+# End of group_sni.py
+#################################################################

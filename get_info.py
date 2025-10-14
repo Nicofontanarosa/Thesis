@@ -60,13 +60,21 @@ def classify_domains(clusters, output_file):
     rules_file = os.path.join(output_folder, "rules.txt")
     config.clear_log(rules_file)
 
+    if not clusters:
+        rule = "unknown@UnknownProto"
+        instructions = "\n[red]>> NOT ENOUGH INFORMATION TO GENERATE A RULE[/red]"
+        with open(rules_file, "a") as f:
+            f.write(f"{rule}\n{instructions}\n{'-'*80}\n")
+        config.log_message(f"{rule}\n{instructions}\n{'-'*80}\n", log_file_rules)
+
     for cluster in clusters:
 
         snis = cluster.get("sni_list", [])
         ja4 = cluster.get("ja4", "")
-        certificate = {
-            "subject": cluster.get("subject")
-        }
+        raw_cert = cluster.get("certificate", [])
+        certificate = {item[0]: item[1] for item in raw_cert if len(item) == 2}
+
+        print(f"\n\n{certificate}\n\n")
 
         # === Rule and instructions ===
         instructions = ""
@@ -173,7 +181,7 @@ def classify_domains(clusters, output_file):
                     "   [+] Open `nDPI/src/lib/ndpi_content_match.c.inc`\n"
                     "      >> In `static ndpi_tls_cert_name_match tls_certificate_match[]`, add:\n"
                     f"         [+] {{ \"{subject}\", NDPI_PROTOCOL_MYPROTO }},\n\n"
-                    f"   [+] Add to `nDPI/example/protos.txt`: {rule}\n"
+                    f"   [+] ( Optional ) Add to `nDPI/example/protos.txt`: {rule}\n"
                 )
 
             # === If neither SNI nor certificate, use JA4 ===
@@ -184,12 +192,6 @@ def classify_domains(clusters, output_file):
                     "   [+] Open `nDPI/example/protos.txt`\n"
                     f"   [+] Paste the following rule: {rule}\n"
                 )
-
-            # === Fallback ===
-            else:
-                rule = "unknown@UnknownProto"
-                instructions = "[red]>> NOT ENOUGH INFORMATION TO GENERATE A RULE[/red]"
-
 
         with open(rules_file, "a") as f:
             f.write(f"{rule}\n{instructions}\n{'-'*80}\n")

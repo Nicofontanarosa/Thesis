@@ -1,16 +1,11 @@
 >> Lists of protocols read:
 
-   [+] DHCP
    [+] DNS
-   [+] ICMP
-   [+] ICMPV6
-   [+] IGMP
+   [+] HTTP
    [+] MDNS
    [+] QUIC
-   [+] SSH
    [+] TLS
-   [+] Unknown
-   [+] WireGuard
+   [+] WhatsApp
 
 >> Lists of protocols supported:
 
@@ -23,10 +18,6 @@
 
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
-   [red][+] DHCP[/red]
    [red][+] DNS[/red]
-   [red][+] ICMP[/red]
-   [red][+] ICMPV6[/red]
-   [red][+] IGMP[/red]
    [red][+] MDNS[/red]
-   [red][+] SSH[/red]
+   [red][+] WhatsApp[/red]

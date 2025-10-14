@@ -1,15 +1,15 @@
 >> Using existing nDPI JSON:
 
- [+] .\test\turboVPN\fb\facebookTurboVpn.json
+ [+] C:\Programs\Thesis\Thesis\test\Subito\Subito-01\Subito_01.json
 
 >> Running initial filtering ...
 
- [+] input file: .\test\turboVPN\fb\facebookTurboVpn.json
- [+] output file: .\test\turboVPN\fb\facebookTurboVpn_filtered.json
+ [+] input file: C:\Programs\Thesis\Thesis\test\Subito\Subito-01\Subito_01.json
+ [+] output file: C:\Programs\Thesis\Thesis\test\Subito\Subito-01\Subito_01_filtered.json
 
 >> Running flows filtering ...
 
- [+] input file: .\test\turboVPN\fb\facebookTurboVpn_filtered.json
- [+] output file: .\test\turboVPN\fb\facebookTurboVpn_output.json
+ [+] input file: C:\Programs\Thesis\Thesis\test\Subito\Subito-01\Subito_01_filtered.json
+ [+] output file: C:\Programs\Thesis\Thesis\test\Subito\Subito-01\Subito_01_output.json
 
->> Coverage statistics save in: .\test\turboVPN\fb\coverage.txt
+>> Coverage statistics save in: C:\Programs\Thesis\Thesis\test\Subito\Subito-01\coverage.txt

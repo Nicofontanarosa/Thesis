@@ -91,13 +91,15 @@ def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
         json.dump(final_flows, f_out, indent=4)
     
     config.log_message(f"\n\n>> Coverage statistics save in: {coverage_file}\n", log_file)
-    # Calculate and print coverage statistics
+    # calculate and print coverage statistics
     coverage_result = coverage.calculate_coverage("tmp/final_output.json", "tmp/clusters.json")
     config.log_message(f"\n>> Coverage statistics:\n\n [+] Total packets: {coverage_result['total_packets']}\n [+] Recognized packets: {coverage_result['recognized_packets']}\n [+] Coverage (%): {coverage_result['packet_coverage_percent']}\n [+] Total flows: {coverage_result['total_flows']}\n [+] Recognized flows: {coverage_result['recognized_flows']}\n [+] Flow coverage (%): {coverage_result['flow_coverage_percent']}", coverage_file)
 
+    config.log_message(f"\n\n>> All removed flows save in: /tmp/removed_flows.json\n")
+
 def main_pipeline(pcap, ndpi, output):
 
-    # At the beginning of run_pipeline or right after the imports
+    # at the beginning of run_pipeline or right after the imports
     log_file = "tmp/initialization.txt"
     log_file_error = "tmp/errors.txt"
     config.clear_log(log_file)

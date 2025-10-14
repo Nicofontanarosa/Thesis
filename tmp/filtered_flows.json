@@ -1,149 +1,101 @@
 [
     {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "206/WireGuard",
-        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
-        "plain_text": "za/9MK9",
-        "ip_source": "162.128.128.38",
-        "port_source": "51820",
-        "ip_destination": "192.168.50.22",
-        "port_destination": "53511",
-        "risk": "** Susp Entropy **",
-        "risk_score": "10",
-        "risk_info": "Entropy: 7.859 (Encrypted or Random?)",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "29992 <-> 4624"
-        ]
-    },
-    {
-        "ip_field": "140/Apple",
-        "transport_protocol": "TCP",
-        "proto_field": "91.143/TLS.AppleiCloud",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
-        "sni": "edge-174.sgsin8.icloud-content.com",
-        "ip_source": "192.168.50.96",
-        "port_source": "58802",
-        "ip_destination": "17.248.164.120",
-        "port_destination": "443",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "38 <-> 46"
-        ]
-    },
-    {
-        "ip_field": "140/Apple",
-        "transport_protocol": "TCP",
-        "proto_field": "91.143/TLS.AppleiCloud",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
-        "sni": "p168-content.icloud.com",
-        "ip_source": "192.168.50.96",
-        "port_source": "58803",
-        "ip_destination": "17.248.224.64",
-        "port_destination": "443",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "15 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "140/Apple",
-        "transport_protocol": "TCP",
-        "proto_field": "91.143/TLS.AppleiCloud",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
-        "sni": "p167-contacts.icloud.com",
-        "ip_source": "192.168.50.96",
-        "port_source": "58810",
-        "ip_destination": "17.248.224.65",
-        "port_destination": "443",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "14 <-> 13",
-            "15 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "276/Azure",
-        "transport_protocol": "TCP",
-        "proto_field": "91.276/TLS.Azure",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d2014ht_a09f3c656075_e42f34c56612",
-        "sni": "update.code.visualstudio.com",
-        "ip_source": "192.168.50.96",
-        "port_source": "58806",
-        "ip_destination": "13.107.246.59",
-        "port_destination": "443",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "18 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "140/Apple",
-        "transport_protocol": "TCP",
-        "proto_field": "91.143/TLS.AppleiCloud",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d2014h2_a09f3c656075_e42f34c56612",
-        "sni": "p167-contacts.icloud.com",
-        "ip_source": "192.168.50.96",
-        "port_source": "58809",
-        "ip_destination": "17.248.224.64",
-        "port_destination": "443",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "14 <-> 12",
-            "14 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "t13d1516h2_8daaf6152771_9b887d9acb53",
-        "sni": "sdk.split.io",
-        "ip_source": "192.168.50.96",
-        "port_source": "51260",
-        "ip_destination": "151.101.67.9",
-        "port_destination": "443",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "28 <-> 28"
-        ]
-    },
-    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "9dd9697e41bf4842b13869ec64041126",
-        "ja4": "t13d1516h2_8daaf6152771_e5627efa2ab1",
-        "sni": "auth.split.io",
-        "ip_source": "192.168.50.96",
-        "port_source": "51261",
-        "ip_destination": "54.157.194.5",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "images.sbito.it",
+        "ip_source": "192.168.80.96",
+        "port_source": "63142",
+        "ip_destination": "108.138.199.68",
         "port_destination": "443",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "similar_flows_count": 2,
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 6,
         "exchanged_packets": [
-            "10 <-> 11",
-            "8 <-> 8"
+            "426 <-> 512",
+            "17 <-> 21",
+            "11 <-> 9",
+            "11 <-> 9",
+            "11 <-> 9",
+            "11 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "hades.subito.it",
+        "ip_source": "192.168.80.96",
+        "port_source": "63107",
+        "ip_destination": "104.83.126.129",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 5,
+        "exchanged_packets": [
+            "158 <-> 228",
+            "14 <-> 11",
+            "14 <-> 11",
+            "14 <-> 11",
+            "14 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "collector.subito.it",
+        "ip_source": "192.168.80.96",
+        "port_source": "63112",
+        "ip_destination": "184.25.53.15",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "46 <-> 58"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "assets.subito.it",
+        "ip_source": "192.168.80.96",
+        "port_source": "63099",
+        "ip_destination": "104.83.126.129",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "27 <-> 23"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "hades.subito.it",
+        "ip_source": "192.168.80.96",
+        "port_source": "63115",
+        "ip_destination": "104.83.126.129",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 12"
         ]
     }
 ]

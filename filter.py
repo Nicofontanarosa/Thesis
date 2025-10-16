@@ -198,7 +198,7 @@ def flow_filter(input_file, output_file):
                     incomplete_tls_flows.append(line)
                     continue
 
-                if not constants.VPN_DETECTION:
+                if constants.ONLY_SNI:
                     # check for flows without SNI/Hostname
                     if not sni_pattern.search(clean_line):
                         no_sni_flows.append(line)

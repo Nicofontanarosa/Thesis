@@ -1,3 +1,7 @@
-host:"notebooklm-pa.googleapis.com"@Unknown
-host:"notebooklm-pa.googleapis.com"@Unknown
-host:"notebooklm-pa.googleapis.com"@Google notebooklm
+host:"notebooklm-pa.googleapis.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"notebooklm-pa.googleapis.com"@
+
+--------------------------------------------------------------

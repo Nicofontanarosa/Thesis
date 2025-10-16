@@ -67,7 +67,9 @@ def calculate_coverage(flows_file, recognized_file):
     # --- Step 2: Compute recognized packets and flows ---
     recognized_packets = 0
     recognized_flows = 0
+
     for flow in final_flows:
+
         flow_sni = (flow.get("sni"))
         if flow_sni: flow_sni = flow_sni.lower()
         flow_ja4 = functions.normalize_ja4(flow.get("ja4"))
@@ -80,10 +82,27 @@ def calculate_coverage(flows_file, recognized_file):
 
         #print(f"\n[DEBUG] SNI flow: {flow_sni}, JA4 flow: {flow_ja4}, CERT flow: {flow_sni or flow_ja4 or flow_cert["certificate"] or flow_cert["issuer"] or flow_cert["servernames"] or flow_cert["subject"]}")
 
-        if (flow_sni or flow_ja4 or flow_cert["certificate"] or flow_cert["issuer"] or flow_cert["servernames"] or flow_cert["subject"]) and (matches_any_sni(flow_sni, recognized_sni) or matches_any_cert(flow_cert, recognized_certs) or flow_ja4 in recognized_ja4):
+        recognized = False  # Flag per capire se il flusso è stato riconosciuto
+
+        # --- Priority 1: SNI ---
+        if flow_sni:
+            if matches_any_sni(flow_sni, recognized_sni):
+                recognized = True
+
+        # --- Priority 2: Certificate ---
+        elif any(flow_cert.values()):  # solo se non c'è SNI
+            if matches_any_cert(flow_cert, recognized_certs):
+                recognized = True
+
+        # --- Priority 3: JA4 ---
+        elif flow_ja4:
+            if flow_ja4 in recognized_ja4:
+                recognized = True
+
+        # --- Count recognized flows ---
+        if recognized:
             recognized_packets += count_packets(flow)
             recognized_flows += flow.get("similar_flows_count", 0)
-            #print("\nValid\n")
 
     # --- Step 3: Compute percentages ---
     packet_coverage = (recognized_packets / total_packets * 100) if total_packets > 0 else 0.0

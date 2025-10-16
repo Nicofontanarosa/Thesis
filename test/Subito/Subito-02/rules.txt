@@ -1,5 +1,14 @@
-host:"atsod.launch.liveramp.com",host:"geo.privacymanager.io",host:"images.sbito.it"@
-host:"advgo.net",host:"subito.it"@
-host:"api.privacy-center.org"@
-host:"asus.com"@
-host:"device.marketingcloudapis.com"@
+host:"images.sbito.it"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"images.sbito.it"@
+
+--------------------------------------------------------------
+host:"subito.it"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"subito.it"@
+
+--------------------------------------------------------------

@@ -62,6 +62,8 @@ def merge_clusters(clusters: list) -> list:
     # group SNIs within each cluster
     clusters = [group_sni(c) for c in clusters]
 
+    #print(f"\n[DEBUG] 1 Merged Cluster: {clusters}")
+
     # sort clusters by descending length of sni_list (IMPORTANT)
     clusters.sort(key=lambda c: len(c["sni_list"]), reverse=True)
 

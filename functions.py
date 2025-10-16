@@ -121,7 +121,7 @@ def aggregate_flows_by_sni(raw_clusters, final_flows):
         for cluster in raw_clusters:
 
             # extract fields from cluster for comparison
-            cluster_sni_list = [s.lower() for s in cluster.get("sni_list", []) if s]
+            cluster_sni_list = [s.lower() for s in cluster.get("sni_list") if s]
             ja4_match = flow_ja4 == cluster.get("ja4")
             ja3s_match = flow_ja3s == cluster.get("ja3s")
             cluster_cert_dict = {k: v for k, v in cluster.get("certificate", [])}
@@ -130,6 +130,8 @@ def aggregate_flows_by_sni(raw_clusters, final_flows):
                 for k in ["certificate", "issuer", "servernames", "subject"]
                 if cluster_cert_dict.get(k) is not None
             )
+
+            #print(f"[NEW DEBUG] {flow_ja4}, {flow_ja3s}, {flow_sni}, {flow_cert}\n\n{ja4_match}{ja3s_match}{cluster_sni_list}{cert_match}")
 
             # --- Priority 1: match by SNI ---
             if cluster_sni_list and any(flow_sni == s or flow_sni.endswith("." + s) for s in cluster_sni_list):
@@ -249,7 +251,7 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
     # raw clusters before normalization
     raw_clusters = []
 
-    print(f"\n[DEBUG] Starting with:\n\n{final_flows}\n")
+    #print(f"\n[DEBUG] Starting with:\n\n{final_flows}\n")
 
     # remove flows with SNIs containing excluded words or present in the main dataset
     removed_flows = [
@@ -391,17 +393,31 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
 
     for (ja3s, ja4, certificate), elements in clusters.items():
 
-        # collect all unique SNI values
-        sni_list = sorted({e.get("sni") for e in elements if e.get("sni")})
+        # --- Case 1: cluster with only SNI ( no JA3S, JA4, or certificate ) ---
+        if ja3s is None and ja4 is None:
+            # create a separate object for each flow/SNI instead of aggregating
+            for flow in elements:
+                flow_sni = flow.get("sni")
+                if flow_sni:
+                    raw_clusters.append({
+                        "ja3s": ja3s,
+                        "ja4": ja4,
+                        "certificate": certificate,
+                        "sni_list": [flow_sni],
+                    })
+        else:
+            # --- Case 2: normal cluster with JA3S, JA4, or certificate ---
+            # collect all unique SNI values
+            sni_list = sorted({e.get("sni") for e in elements if e.get("sni")})
 
-        raw_clusters.append({
-            "ja3s": ja3s,
-            "ja4": ja4,
-            "certificate": certificate,
-            "sni_list": sni_list,
-        })
+            raw_clusters.append({
+                "ja3s": ja3s,
+                "ja4": ja4,
+                "certificate": certificate,
+                "sni_list": sni_list,
+            })
 
-    print(f"\n[DEBUG] Raw Cluster: {raw_clusters}")
+    #print(f"\n[DEBUG] Raw Cluster: {raw_clusters}")
 
     # count flows using raw cluster information
     raw_clusters = aggregate_flows_by_sni(raw_clusters , final_flows)
@@ -413,7 +429,7 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
     # merge clusters based on SNI
     sni_to_use = group_sni.merge_clusters(raw_clusters)
 
-    print(f"\n[DEBUG] Merged Cluster: {sni_to_use}")
+    #print(f"\n[DEBUG] Merged Cluster: {sni_to_use}")
 
     if not constants.SHOW_NDPI_PROTOCOLS:
         sni_to_use = normalize_sni_clusters(sni_to_use, sorted_dataset)

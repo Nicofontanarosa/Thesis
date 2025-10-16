@@ -1,15 +1,18 @@
 >> Using existing nDPI JSON:
 
- [+] C:\Programs\Thesis\Thesis\test\Subito\Subito-01\Subito_01.json
+ [+] C:\Programs\Thesis\Thesis\test\hostelworld\hostelworld.json
 
 >> Running initial filtering ...
 
- [+] input file: C:\Programs\Thesis\Thesis\test\Subito\Subito-01\Subito_01.json
- [+] output file: C:\Programs\Thesis\Thesis\test\Subito\Subito-01\Subito_01_filtered.json
+ [+] input file: C:\Programs\Thesis\Thesis\test\hostelworld\hostelworld.json
+ [+] output file: C:\Programs\Thesis\Thesis\test\hostelworld\hostelworld_filtered.json
 
 >> Running flows filtering ...
 
- [+] input file: C:\Programs\Thesis\Thesis\test\Subito\Subito-01\Subito_01_filtered.json
- [+] output file: C:\Programs\Thesis\Thesis\test\Subito\Subito-01\Subito_01_output.json
+ [+] input file: C:\Programs\Thesis\Thesis\test\hostelworld\hostelworld_filtered.json
+ [+] output file: C:\Programs\Thesis\Thesis\test\hostelworld\hostelworld_output.json
 
->> Coverage statistics save in: C:\Programs\Thesis\Thesis\test\Subito\Subito-01\coverage.txt
+>> Coverage statistics save in: C:\Programs\Thesis\Thesis\test\hostelworld\coverage.txt
+
+
+>> All removed flows save in: /tmp/removed_flows.json

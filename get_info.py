@@ -64,8 +64,8 @@ def classify_domains(clusters, output_file):
         rule = "unknown@UnknownProto"
         instructions = "\n[red]>> NOT ENOUGH INFORMATION TO GENERATE A RULE[/red]"
         with open(rules_file, "a") as f:
-            f.write(f"{rule}\n{instructions}\n{'-'*80}\n")
-        config.log_message(f"{rule}\n{instructions}\n{'-'*80}\n", log_file_rules)
+            f.write(f"{rule}\n{instructions}\n{'-'*62}\n")
+        config.log_message(f"{rule}\n{instructions}\n{'-'*62}\n", log_file_rules)
 
     for cluster in clusters:
 
@@ -194,8 +194,8 @@ def classify_domains(clusters, output_file):
                 )
 
         with open(rules_file, "a") as f:
-            f.write(f"{rule}\n{instructions}\n{'-'*80}\n")
-        config.log_message(f"{rule}\n{instructions}\n{'-'*80}\n", log_file_rules)
+            f.write(f"{rule}\n{instructions}\n{'-'*62}\n")
+        config.log_message(f"{rule}\n{instructions}\n{'-'*62}\n", log_file_rules)
 
         print(f"\n[DEBUG] Generated rule: {rule}\n{instructions}\n")
 

@@ -1,32 +1,82 @@
 
 >> General flows removed [DEBUG]:
 
-52	UDP 192.168.80.96:5353 -> 224.0.0.251:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][6 pkts/2488 bytes -> 0 pkts/0 bytes][Goodput ratio: 90/0][0.77 sec][Hostname/SNI: _dosvc._tcp.local][_dosvc._tcp.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 1/0 154/0 256/0 125/0][Pkt Len c2s/s2c min/avg/max/stddev: 82/0 415/0 783/0 333/0][PLAIN TEXT (DteHHBOBO)][Plen Bins: 0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-53	UDP 192.168.80.96:58558 <-> 192.168.80.68:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][7 pkts/588 bytes <-> 7 pkts/995 bytes][Goodput ratio: 50/70][11.66 sec][Hostname/SNI: assets.subito.it][104.83.126.129][DNS Id: 0x57f1][bytes ratio: -0.257 (Download)][IAT c2s/s2c min/avg/max/stddev: 131/154 1653/1651 4953/4962 1757/1754][Pkt Len c2s/s2c min/avg/max/stddev: 75/96 84/142 118/176 14/30][PLAIN TEXT (assets)][Plen Bins: 0,57,7,28,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-54	UDP 192.168.80.96:62837 <-> 192.168.80.68:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][6 pkts/537 bytes <-> 6 pkts/944 bytes][Goodput ratio: 53/73][11.63 sec][Hostname/SNI: 4dxsfv.cdn-settings.appsflyersdk.com][108.156.2.56][DNS Id: 0x0218][bytes ratio: -0.275 (Download)][IAT c2s/s2c min/avg/max/stddev: 211/211 2370/2372 7728/7686 3102/3078][Pkt Len c2s/s2c min/avg/max/stddev: 81/101 90/157 97/209 6/37][PLAIN TEXT (settings)][Plen Bins: 0,59,8,16,8,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-55	UDP 192.168.80.96:50615 <-> 192.168.80.68:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][6 pkts/533 bytes <-> 6 pkts/926 bytes][Goodput ratio: 53/73][11.34 sec][Hostname/SNI: mobile-2260.api.privacy-center.org][13.226.175.20][DNS Id: 0xeaf7][bytes ratio: -0.269 (Download)][IAT c2s/s2c min/avg/max/stddev: 140/132 2297/2311 7465/7511 3026/3039][Pkt Len c2s/s2c min/avg/max/stddev: 78/94 89/154 95/207 7/42][PLAIN TEXT (mobile)][Plen Bins: 0,67,0,16,8,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-56	UDP 192.168.80.96:60225 <-> 192.168.80.68:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][6 pkts/508 bytes <-> 6 pkts/787 bytes][Goodput ratio: 50/68][10.05 sec][Hostname/SNI: mobilesdk-eu.kampyle.com][147.75.180.89][DNS Id: 0xdb6f][bytes ratio: -0.215 (Download)][IAT c2s/s2c min/avg/max/stddev: 164/127 651/663 1228/1290 483/507][Pkt Len c2s/s2c min/avg/max/stddev: 73/89 85/131 92/156 6/27][PLAIN TEXT (mobilesdk)][Plen Bins: 8,58,0,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+83	UDP 192.168.0.154:5353 -> 224.0.0.251:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 2][cat: Network/14][46 pkts/16830 bytes -> 0 pkts/0 bytes][Goodput ratio: 92/0][193.24 sec][Hostname/SNI: 5.9.1.5.2.0.b.8.c.1.f.1.c.9.c.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa][5.9.1.5.2.0.b.8.c.1.f.1.c.9.c.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 4614/0 74932/0 12502/0][Pkt Len c2s/s2c min/avg/max/stddev: 113/0 366/0 857/0 240/0][PLAIN TEXT (companion)][Plen Bins: 0,0,8,10,10,17,0,0,0,6,17,0,0,2,0,0,0,0,0,0,20,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+85	UDP 192.168.0.159:5353 -> 224.0.0.251:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][30 pkts/16762 bytes -> 0 pkts/0 bytes][Goodput ratio: 95/0][97.96 sec][Hostname/SNI: _kerberos.airbook.local][_kerberos.airbook.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 3590/0 41465/0 9058/0][Pkt Len c2s/s2c min/avg/max/stddev: 282/0 559/0 1404/0 410/0][PLAIN TEXT (kerberos)][Plen Bins: 0,0,0,0,0,0,0,20,30,6,6,3,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,0,0,0,0,0,0,0,6,0,0,0,0]
+97	UDP 0.0.0.0:68 -> 255.255.255.255:67 [proto: 18/DHCP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 18/DHCP, Confidence: DPI][DPI packets: 1][cat: Network/14][41 pkts/13448 bytes -> 0 pkts/0 bytes][Goodput ratio: 91/0][238.71 sec][Hostname/SNI: maxbook][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 6490/0 57615/0 10449/0][Pkt Len c2s/s2c min/avg/max/stddev: 328/0 328/0 328/0 0/0][DHCP Fingerprint: 1,121,3,6,15,108,114,119,162,252,95,44,46][PLAIN TEXT (BookAir)][Plen Bins: 0,0,0,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+111	UDP 192.168.0.50:60025 -> 255.255.255.255:6667 [proto: 331/TuyaLP][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 24][cat: IoT-Scada/31][50 pkts/11700 bytes -> 0 pkts/0 bytes][Goodput ratio: 88/0][244.77 sec][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 4035/0 4961/0 6058/0 446/0][Pkt Len c2s/s2c min/avg/max/stddev: 234/0 234/0 234/0 0/0][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 6.758 (Compressed Executable?)][PLAIN TEXT (ac17449)][Plen Bins: 0,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+160	UDP 192.168.0.125:17500 -> 255.255.255.255:17500 [proto: 121/Dropbox][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 121/Dropbox, Confidence: DPI][DPI packets: 1][cat: Cloud/13][43 pkts/7826 bytes -> 0 pkts/0 bytes][Goodput ratio: 85/0][241.72 sec][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 5565/0 30584/0 11712/0][Pkt Len c2s/s2c min/avg/max/stddev: 182/0 182/0 182/0 0/0][PLAIN TEXT (version)][Plen Bins: 0,0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+174	UDP 192.168.0.20:137 -> 192.168.0.255:137 [proto: 10/NetBIOS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 10/NetBIOS, Confidence: DPI][DPI packets: 1][cat: System/18][68 pkts/5898 bytes -> 0 pkts/0 bytes][Goodput ratio: 68/0][78.73 sec][Hostname/SNI: maxbook][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 1191/0 31266/0 4281/0][Pkt Len c2s/s2c min/avg/max/stddev: 78/0 87/0 96/0 9/0][PLAIN TEXT ( ENEBFIECEPEPELCACACACACACACACA)][Plen Bins: 0,51,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+175	UDP 192.168.0.21:137 -> 192.168.0.255:137 [proto: 10/NetBIOS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 10/NetBIOS, Confidence: DPI][DPI packets: 1][cat: System/18][68 pkts/5898 bytes -> 0 pkts/0 bytes][Goodput ratio: 68/0][78.73 sec][Hostname/SNI: maxbook][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 1191/0 31266/0 4281/0][Pkt Len c2s/s2c min/avg/max/stddev: 78/0 87/0 96/0 9/0][PLAIN TEXT ( ENEBFIECEPEPELCACACACACACACACA)][Plen Bins: 0,51,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+177	UDP 192.168.0.159:137 -> 192.168.0.255:137 [proto: 10/NetBIOS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 10/NetBIOS, Confidence: DPI][DPI packets: 1][cat: System/18][61 pkts/5352 bytes -> 0 pkts/0 bytes][Goodput ratio: 68/0][88.85 sec][Hostname/SNI: macbookair][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 1514/0 40454/0 5701/0][Pkt Len c2s/s2c min/avg/max/stddev: 78/0 88/0 96/0 9/0][PLAIN TEXT ( ENEBEDECEPEPELEBEJ)][Plen Bins: 0,45,54,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+181	UDP 169.254.78.211:5353 -> 224.0.0.251:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][24 pkts/4298 bytes -> 0 pkts/0 bytes][Goodput ratio: 84/0][239.72 sec][Hostname/SNI: 78006834-756c-47a9-8924-68c2bb4deaa8.local][78006834-756c-47a9-8924-68c2bb4deaa8.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 11127/0 172032/0 36585/0][Pkt Len c2s/s2c min/avg/max/stddev: 109/0 179/0 296/0 65/0][PLAIN TEXT (78006834)][Plen Bins: 0,0,25,16,25,0,16,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+182	UDP 192.168.0.86:5353 -> 224.0.0.251:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][24 pkts/4298 bytes -> 0 pkts/0 bytes][Goodput ratio: 84/0][239.72 sec][Hostname/SNI: 78006834-756c-47a9-8924-68c2bb4deaa8.local][78006834-756c-47a9-8924-68c2bb4deaa8.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 11127/0 172032/0 36585/0][Pkt Len c2s/s2c min/avg/max/stddev: 109/0 179/0 296/0 65/0][PLAIN TEXT (78006834)][Plen Bins: 0,0,25,16,25,0,16,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+184	UDP 169.254.43.231:5353 -> 224.0.0.251:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 6][cat: Network/14][26 pkts/3396 bytes -> 0 pkts/0 bytes][Goodput ratio: 79/0][216.51 sec][Hostname/SNI: _spotify-connect._tcp.local][_spotify-connect._tcp.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 8885/0 82142/0 18858/0][Pkt Len c2s/s2c min/avg/max/stddev: 73/0 131/0 234/0 58/0][PLAIN TEXT (spotify)][Plen Bins: 0,34,23,0,23,15,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+191	UDP 192.168.0.20:5353 -> 224.0.0.251:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 6][cat: Network/14][13 pkts/1726 bytes -> 0 pkts/0 bytes][Goodput ratio: 79/0][216.51 sec][Hostname/SNI: _spotify-connect._tcp.local][_spotify-connect._tcp.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 10/0 15638/0 82148/0 24029/0][Pkt Len c2s/s2c min/avg/max/stddev: 73/0 133/0 545/0 128/0][PLAIN TEXT (spotify)][Plen Bins: 0,62,15,0,7,0,7,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+192	UDP 192.168.0.125:17500 -> 192.168.0.255:17500 [proto: 121/Dropbox][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 121/Dropbox, Confidence: DPI][DPI packets: 1][cat: Cloud/13][9 pkts/1638 bytes -> 0 pkts/0 bytes][Goodput ratio: 85/0][241.72 sec][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 29404/0 30214/0 30585/0 325/0][Pkt Len c2s/s2c min/avg/max/stddev: 182/0 182/0 182/0 0/0][PLAIN TEXT (version)][Plen Bins: 0,0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+193	UDP 192.168.0.21:5353 -> 224.0.0.251:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 6][cat: Network/14][13 pkts/1415 bytes -> 0 pkts/0 bytes][Goodput ratio: 74/0][216.51 sec][Hostname/SNI: _spotify-connect._tcp.local][_spotify-connect._tcp.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 9/0 15638/0 82148/0 24029/0][Pkt Len c2s/s2c min/avg/max/stddev: 73/0 109/0 234/0 59/0][PLAIN TEXT (spotify)][Plen Bins: 0,62,15,0,7,0,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+194	UDP 169.254.43.231:56664 -> 239.255.255.250:1900 [proto: 12/SSDP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 12/SSDP, Confidence: DPI][DPI packets: 1][cat: System/18][9 pkts/1377 bytes -> 0 pkts/0 bytes][Goodput ratio: 82/0][134.37 sec][Hostname/SNI: 239.255.255.250][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 2006/0 16795/0 120232/0 39095/0][Pkt Len c2s/s2c min/avg/max/stddev: 153/0 153/0 153/0 0/0][PLAIN TEXT (SEARCH )][Plen Bins: 0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+195	ICMP 192.168.0.86:0 -> 192.168.0.21:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][12 pkts/672 bytes -> 0 pkts/0 bytes][Goodput ratio: 50/0][214.01 sec][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 3/0 21199/0 198318/0 59054/0][Pkt Len c2s/s2c min/avg/max/stddev: 56/0 56/0 56/0 0/0][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+196	UDP 192.168.0.21:57621 -> 192.168.0.255:57621 [proto: 156/Spotify][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 156/Spotify, Confidence: DPI][DPI packets: 1][cat: Music/25][8 pkts/576 bytes -> 0 pkts/0 bytes][Goodput ratio: 61/0][210.39 sec][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 29229/0 30055/0 30571/0 487/0][Pkt Len c2s/s2c min/avg/max/stddev: 72/0 72/0 72/0 0/0][PLAIN TEXT (SpotUdp)][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+197	UDP 192.168.0.86:64012 <-> 192.168.0.4:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/78 bytes <-> 1 pkts/196 bytes][Goodput ratio: 63/85][< 1 sec][Hostname/SNI: safebrowsing-proxy.g.aaplimg.com][2.18.79.108][DNS Id: 0xe48a][PLAIN TEXT (safebrowsing)][Plen Bins: 0,50,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+198	UDP 192.168.0.86:59461 <-> 192.168.0.4:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/99 bytes <-> 1 pkts/160 bytes][Goodput ratio: 71/82][0.00 sec][Hostname/SNI: api-e26a48d0-916a-45b5-91be-c247781e7cf8.sendbird.com][18.156.156.175][DNS Id: 0x1030][PLAIN TEXT (247781E)][Plen Bins: 0,0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+199	UDP 192.168.0.86:62813 <-> 192.168.0.4:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/64 bytes <-> 1 pkts/192 bytes][Goodput ratio: 55/85][0.00 sec][Hostname/SNI: mask.apple-dns.net][172.224.38.3][DNS Id: 0x37e7][Plen Bins: 0,50,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+200	UDP 192.168.0.86:57240 <-> 192.168.0.4:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/78 bytes <-> 1 pkts/138 bytes][Goodput ratio: 63/79][< 1 sec][Hostname/SNI: safebrowsing-proxy.g.aaplimg.com][0.0.0.0][DNS Id: 0xbd0c][PLAIN TEXT (safebrowsing)][Plen Bins: 0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+201	UDP 192.168.0.86:49579 <-> 192.168.0.4:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/64 bytes <-> 1 pkts/149 bytes][Goodput ratio: 55/81][0.00 sec][Hostname/SNI: mask.apple-dns.net][0.0.0.0][DNS Id: 0x6808][PLAIN TEXT (awsdns)][Plen Bins: 0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+202	UDP 192.168.0.86:64623 <-> 192.168.0.4:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/63 bytes <-> 1 pkts/145 bytes][Goodput ratio: 55/80][0.00 sec][Hostname/SNI: api-.sendbird.com][0.0.0.0][DNS Id: 0x42b8][Risk: ** Error Code **][Risk Score: 10][Risk Info: DNS Error Code NXDOMAIN][PLAIN TEXT (sendbird)][Plen Bins: 0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+203	UDP 192.168.0.86:63597 <-> 192.168.0.4:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/69 bytes <-> 1 pkts/135 bytes][Goodput ratio: 59/79][0.00 sec][Hostname/SNI: a1814.dscdi3.akamai.net][0.0.0.0][DNS Id: 0xf506][PLAIN TEXT (akamai)][Plen Bins: 0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+204	UDP 192.168.0.86:54881 <-> 192.168.0.4:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/72 bytes <-> 1 pkts/88 bytes][Goodput ratio: 60/67][1.00 sec][Hostname/SNI: app-analytics-services.com][216.58.213.110][DNS Id: 0x0e34][PLAIN TEXT (analytics)][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 
 >> Empty flows removed [DEBUG]:
 
-57	TCP 192.168.80.96:63147 <-> 216.58.205.33:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 126/Google, Confidence: IP address][DPI packets: 7][cat: Web/5][4 pkts/272 bytes <-> 3 pkts/206 bytes][Goodput ratio: 0/0][0.60 sec][bytes ratio: 0.138 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 92/0 199/0 379/0 128/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/69 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-63	TCP 192.168.80.96:63028 <-> 157.240.203.61:5222 [proto: 142/WhatsApp][IP: 142/WhatsApp][Encrypted][Confidence: Match by IP][FPC: 142/WhatsApp, Confidence: IP address][DPI packets: 2][cat: Chat/9][1 pkts/66 bytes <-> 1 pkts/66 bytes][Goodput ratio: 0/0][0.04 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-64	TCP 192.168.80.96:63092 -> 151.101.243.52:443 [proto: 91/TLS][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: Web/5][1 pkts/66 bytes -> 0 pkts/0 bytes][Goodput ratio: 0/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-65	TCP 83.224.69.202:80 -> 192.168.80.96:56404 [proto: 7/HTTP][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: Web/5][1 pkts/54 bytes -> 0 pkts/0 bytes][Goodput ratio: 0/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No client to server traffic][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+28	TCP 192.168.0.86:49152 <-> 192.168.0.20:55715 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 2][1 pkts/40 bytes <-> 1 pkts/52 bytes][Goodput ratio: 0/0][< 1 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 >> IPv6 flows removed [DEBUG]:
 
-51	UDP [fe80::d9a6:c8b:2523:951d]:5353 -> [ff02::fb]:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][6 pkts/2608 bytes -> 0 pkts/0 bytes][Goodput ratio: 86/0][0.77 sec][Hostname/SNI: _dosvc._tcp.local][_dosvc._tcp.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 1/0 153/0 256/0 124/0][Pkt Len c2s/s2c min/avg/max/stddev: 102/0 435/0 803/0 333/0][PLAIN TEXT (DteHHBOBO)][Plen Bins: 0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+6	TCP [fe80::f428:94ff:fec9:eea]:58340 <-> [fe80::f428:94ff:fec9:e15]:58762 [proto: 91/TLS][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 3][cat: Web/5][2055 pkts/379393 bytes <-> 2061 pkts/474655 bytes][Goodput ratio: 61/69][248.80 sec][bytes ratio: -0.112 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 137/112 1269/1269 344/315][Pkt Len c2s/s2c min/avg/max/stddev: 72/72 185/230 881/1500 191/242][Risk: ** Known Proto on Non Std Port **][Risk Score: 50][Risk Info: Expected on port 443][Plen Bins: 0,0,3,13,9,26,3,10,5,5,3,0,6,0,7,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0]
+52	TCP [fd06:7f44:12e4::2]:50702 <-> [fd06:7f44:12e4::1]:60764 [proto: 253/SOAP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 11][cat: RPC/16][237 pkts/15321 bytes <-> 237 pkts/17606 bytes][Goodput ratio: 6/3][231.62 sec][bytes ratio: -0.069 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 990/990 2015/2018 298/298][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 65/74 670/311 46/22][TCP Fingerprint: 194_64_65535_a5df257ae612/Unknown][PLAIN TEXT (xml version)][Plen Bins: 50,10,0,0,0,0,0,20,0,0,10,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+53	TCP [fd06:7f44:12e4::2]:50700 <-> [fd06:7f44:12e4::1]:60764 [proto: 253/SOAP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 11][cat: RPC/16][237 pkts/15205 bytes <-> 237 pkts/17606 bytes][Goodput ratio: 5/3][231.64 sec][bytes ratio: -0.073 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 17/10 990/990 2015/2018 298/298][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 64/74 554/311 39/22][TCP Fingerprint: 194_64_65535_a5df257ae612/Unknown][PLAIN TEXT (xml version)][Plen Bins: 50,10,0,0,0,0,0,20,0,0,10,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+75	UDP [fe80::f428:94ff:fec9:eea]:63850 <-> [fe80::f428:94ff:fec9:e15]:58631 [proto: 188/QUIC][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 1][cat: Web/5][38 pkts/12789 bytes <-> 38 pkts/7264 bytes][Goodput ratio: 86/75][30.26 sec][(Advertised) ALPNs: application-service][TLS Supported Versions: GREASE;TLSv1.3][bytes ratio: 0.276 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 355/758 4580/10082 1089/2064][Pkt Len c2s/s2c min/avg/max/stddev: 73/73 337/191 1497/1248 463/264][Risk: ** Known Proto on Non Std Port **** Missing SNI TLS Extn **** Uncommon TLS ALPN **][Risk Score: 150][Risk Info: No server to client traffic / application-servic / SNI should always be present / Expected on port 443][TLSv1.3][QUIC ver: V-1][JA4: q13d0310ap_55b375c5d22e_f2a83c8e78ae][Safari][Plen Bins: 24,29,13,10,0,0,3,5,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,5,0,1,0,0,0,0,1,1,0,0]
+76	UDP [fe80::f428:94ff:fec9:eea]:65156 <-> [fe80::f428:94ff:fec9:e15]:58631 [proto: 188/QUIC][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 1][cat: Web/5][38 pkts/12788 bytes <-> 37 pkts/7017 bytes][Goodput ratio: 86/75][30.36 sec][(Advertised) ALPNs: application-service][TLS Supported Versions: GREASE;TLSv1.3][bytes ratio: 0.291 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 776/559 10156/10149 2262/1968][Pkt Len c2s/s2c min/avg/max/stddev: 73/73 337/190 1497/1248 464/266][Risk: ** Known Proto on Non Std Port **** Missing SNI TLS Extn **** Uncommon TLS ALPN **][Risk Score: 150][Risk Info: No server to client traffic / application-servic / SNI should always be present / Expected on port 443][TLSv1.3][QUIC ver: V-1][JA4: q13d0310ap_55b375c5d22e_f2a83c8e78ae][Safari][PLAIN TEXT (SLzKhM)][Plen Bins: 26,29,13,10,0,0,2,5,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,5,0,1,0,0,0,0,1,1,0,0]
+81	UDP [fe80::c9c:1f1c:8b02:5195]:5353 -> [ff02::fb]:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 2][cat: Network/14][46 pkts/17750 bytes -> 0 pkts/0 bytes][Goodput ratio: 88/0][193.24 sec][Hostname/SNI: 5.9.1.5.2.0.b.8.c.1.f.1.c.9.c.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa][5.9.1.5.2.0.b.8.c.1.f.1.c.9.c.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 4614/0 74932/0 12502/0][Pkt Len c2s/s2c min/avg/max/stddev: 133/0 386/0 877/0 240/0][PLAIN TEXT (companion)][Plen Bins: 0,0,8,10,10,17,0,0,0,6,17,0,0,2,0,0,0,0,0,0,20,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+87	UDP [fe80::8c7:306a:75e6:f345]:5353 -> [ff02::fb]:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][29 pkts/15938 bytes -> 0 pkts/0 bytes][Goodput ratio: 91/0][97.96 sec][Hostname/SNI: _kerberos.airbook.local][_kerberos.airbook.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 3729/0 41465/0 9246/0][Pkt Len c2s/s2c min/avg/max/stddev: 302/0 550/0 1424/0 386/0][PLAIN TEXT (kerberos)][Plen Bins: 0,0,0,0,0,0,0,21,32,6,6,3,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,0,0,0,0,0,0,0,3,0,0,0,0]
+88	ICMPV6 [fe80::18a7:64d:faf8:a628]:0 <-> [fe80::4dc:3e32:1675:ee35]:0 [proto: 102/ICMPV6][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 102/ICMPV6, Confidence: DPI][DPI packets: 1][cat: Network/14][16 pkts/15632 bytes <-> 4 pkts/272 bytes][Goodput ratio: 95/29][216.08 sec][bytes ratio: 0.966 (Upload)][IAT c2s/s2c min/avg/max/stddev: 3/4059 1412/4340 2551/4620 773/280][Pkt Len c2s/s2c min/avg/max/stddev: 64/64 977/68 1280/72 525/4][PLAIN TEXT (duUocO)][Plen Bins: 40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,0,0,0,0,0,0,0,0,0]
+176	UDP [fe80::8809:deff:fe46:ad81]:5353 -> [ff02::fb]:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][24 pkts/5482 bytes -> 0 pkts/0 bytes][Goodput ratio: 79/0][239.72 sec][Hostname/SNI: 78006834-756c-47a9-8924-68c2bb4deaa8.local][78006834-756c-47a9-8924-68c2bb4deaa8.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 11127/0 172032/0 36585/0][Pkt Len c2s/s2c min/avg/max/stddev: 129/0 228/0 404/0 92/0][PLAIN TEXT (78006834)][Plen Bins: 0,0,25,0,25,0,33,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+178	UDP [fe80::18a7:64d:faf8:a628]:5353 -> [ff02::fb]:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][24 pkts/4778 bytes -> 0 pkts/0 bytes][Goodput ratio: 76/0][239.72 sec][Hostname/SNI: 78006834-756c-47a9-8924-68c2bb4deaa8.local][78006834-756c-47a9-8924-68c2bb4deaa8.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 11127/0 172032/0 36585/0][Pkt Len c2s/s2c min/avg/max/stddev: 129/0 199/0 316/0 65/0][PLAIN TEXT (78006834)][Plen Bins: 0,0,25,16,25,0,16,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+179	UDP [fe80::c0b:ad22:49cf:15d3]:5353 -> [ff02::fb]:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][24 pkts/4778 bytes -> 0 pkts/0 bytes][Goodput ratio: 76/0][239.72 sec][Hostname/SNI: 78006834-756c-47a9-8924-68c2bb4deaa8.local][78006834-756c-47a9-8924-68c2bb4deaa8.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 11127/0 172032/0 36585/0][Pkt Len c2s/s2c min/avg/max/stddev: 129/0 199/0 316/0 65/0][PLAIN TEXT (78006834)][Plen Bins: 0,0,25,16,25,0,16,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+180	UDP [fe80::f428:94ff:fec9:e15]:5353 -> [ff02::fb]:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][24 pkts/4650 bytes -> 0 pkts/0 bytes][Goodput ratio: 75/0][239.72 sec][Hostname/SNI: 78006834-756c-47a9-8924-68c2bb4deaa8.local][78006834-756c-47a9-8924-68c2bb4deaa8.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 11127/0 172032/0 36585/0][Pkt Len c2s/s2c min/avg/max/stddev: 129/0 194/0 300/0 62/0][PLAIN TEXT (78006834)][Plen Bins: 0,0,25,16,25,0,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+185	TCP [fd06:7f44:12e4::2]:50699 <-> [fd06:7f44:12e4::1]:60783 [proto: 253/SOAP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 11][cat: RPC/16][12 pkts/1561 bytes <-> 12 pkts/1661 bytes][Goodput ratio: 44/47][0.02 sec][bytes ratio: -0.031 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 2/0 0/0 2/0 1/0][Pkt Len c2s/s2c min/avg/max/stddev: 72/72 130/138 411/552 125/149][TCP Fingerprint: 194_64_65535_a5df257ae612/Unknown][PLAIN TEXT (xml version)][Plen Bins: 50,0,0,0,0,0,0,0,0,12,25,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+186	TCP [fd06:7f44:12e4::2]:50701 <-> [fd06:7f44:12e4::1]:60783 [proto: 253/SOAP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 11][cat: RPC/16][12 pkts/1561 bytes <-> 12 pkts/1661 bytes][Goodput ratio: 44/47][0.02 sec][bytes ratio: -0.031 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 1/2 10/10 3/3][Pkt Len c2s/s2c min/avg/max/stddev: 72/72 130/138 411/552 125/149][TCP Fingerprint: 194_64_65535_a5df257ae612/Unknown][PLAIN TEXT (xml version)][Plen Bins: 50,0,0,0,0,0,0,0,0,12,25,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+187	UDP [fe80::c64:bb50:f919:5023]:5353 -> [ff02::fb]:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 6][cat: Network/14][20 pkts/2959 bytes -> 0 pkts/0 bytes][Goodput ratio: 68/0][216.51 sec][Hostname/SNI: _spotify-connect._tcp.local][_spotify-connect._tcp.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 12027/0 82142/0 20465/0][Pkt Len c2s/s2c min/avg/max/stddev: 93/0 148/0 254/0 62/0][PLAIN TEXT (spotify)][Plen Bins: 0,45,15,0,15,20,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+188	UDP [fe80::f428:94ff:fec9:eea]:5353 -> [ff02::fb]:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 6][cat: Network/14][16 pkts/2015 bytes -> 0 pkts/0 bytes][Goodput ratio: 62/0][216.51 sec][Hostname/SNI: _spotify-connect._tcp.local][_spotify-connect._tcp.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 1/0 15464/0 82142/0 22312/0][Pkt Len c2s/s2c min/avg/max/stddev: 93/0 126/0 254/0 49/0][PLAIN TEXT (spotify)][Plen Bins: 0,57,18,0,18,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+189	UDP [fe80::4dc:3e32:1675:ee35]:5353 -> [ff02::fb]:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 6][cat: Network/14][15 pkts/1994 bytes -> 0 pkts/0 bytes][Goodput ratio: 64/0][216.51 sec][Hostname/SNI: _spotify-connect._tcp.local][_spotify-connect._tcp.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 5/0 14717/0 82143/0 22929/0][Pkt Len c2s/s2c min/avg/max/stddev: 93/0 133/0 254/0 57/0][PLAIN TEXT (spotify)][Plen Bins: 0,53,20,0,13,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+190	ICMPV6 [fe80::f428:94ff:fec9:eea]:0 <-> [fe80::f428:94ff:fec9:e15]:0 [proto: 102/ICMPV6][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 102/ICMPV6, Confidence: DPI][DPI packets: 1][cat: Network/14][14 pkts/968 bytes <-> 14 pkts/936 bytes][Goodput ratio: 31/28][234.66 sec][bytes ratio: 0.017 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 1008/1008 18490/18490 30401/30401 11816/11816][Pkt Len c2s/s2c min/avg/max/stddev: 64/64 69/67 72/72 4/4][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+205	UDP [fe80::606b:33ff:fef4:553a]:5353 -> [ff02::fb]:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/84 bytes -> 0 pkts/0 bytes][Goodput ratio: 42/0][< 1 sec][Hostname/SNI: _asquic._udp.local][_asquic._udp.local][PLAIN TEXT (asquic)][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+1	TCP [fd06:7f44:12e4::2]:50614 <-> [fd06:7f44:12e4::1]:60736 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][257 pkts/21590 bytes <-> 257 pkts/70894 bytes][Goodput ratio: 27/74][248.80 sec][bytes ratio: -0.533 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 977/978 2017/2017 311/311][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 84/276 665/5313 117/1013][PLAIN TEXT (CoreDevice.coreDeviceVersion)][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50]
+2	TCP [fd06:7f44:12e4::2]:50604 <-> [fd06:7f44:12e4::1]:60732 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][258 pkts/15720 bytes <-> 258 pkts/21736 bytes][Goodput ratio: 0/15][248.80 sec][bytes ratio: -0.161 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 971/971 2017/2017 304/304][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 61/84 72/384 3/60][PLAIN TEXT (xml version)][Plen Bins: 54,0,0,0,0,0,0,0,0,45,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+3	TCP [fe80::f428:94ff:fec9:eea]:64394 <-> [fe80::f428:94ff:fec9:e15]:58783 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][245 pkts/14700 bytes <-> 245 pkts/17640 bytes][Goodput ratio: 0/0][248.80 sec][bytes ratio: -0.091 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 2/2 1013/1013 2011/2011 186/186][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 60/72 60/72 0/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+4	TCP [fe80::f428:94ff:fec9:eea]:64401 <-> [fe80::f428:94ff:fec9:e15]:60650 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][245 pkts/14700 bytes <-> 245 pkts/17640 bytes][Goodput ratio: 0/0][248.80 sec][bytes ratio: -0.091 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 2/2 1013/1013 2011/2011 186/186][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 60/72 60/72 0/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+5	TCP [fd06:7f44:12e4::2]:50602 <-> [fd06:7f44:12e4::1]:60732 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][241 pkts/14460 bytes <-> 241 pkts/17352 bytes][Goodput ratio: 0/0][248.79 sec][bytes ratio: -0.091 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 116/115 1029/1029 2011/2011 183/183][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 60/72 60/72 0/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+6	TCP [fd06:7f44:12e4::2]:50607 <-> [fd06:7f44:12e4::1]:60732 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][241 pkts/14460 bytes <-> 241 pkts/17352 bytes][Goodput ratio: 0/0][248.79 sec][bytes ratio: -0.091 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 116/115 1030/1029 2011/2011 183/183][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 60/72 60/72 0/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+7	TCP [fd06:7f44:12e4::2]:56947 <-> [fd06:7f44:12e4::1]:60744 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][241 pkts/14460 bytes <-> 241 pkts/17352 bytes][Goodput ratio: 0/0][247.79 sec][bytes ratio: -0.091 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 116/115 1029/1029 2015/2015 183/183][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 60/72 60/72 0/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+8	TCP [fd06:7f44:12e4::2]:57124 <-> [fd06:7f44:12e4::1]:60744 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][241 pkts/14460 bytes <-> 241 pkts/17352 bytes][Goodput ratio: 0/0][247.79 sec][bytes ratio: -0.091 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 116/116 1029/1029 2015/2015 183/183][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 60/72 60/72 0/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+9	TCP [fd06:7f44:12e4::2]:57215 <-> [fd06:7f44:12e4::1]:60744 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][241 pkts/14460 bytes <-> 241 pkts/17352 bytes][Goodput ratio: 0/0][247.79 sec][bytes ratio: -0.091 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 116/116 1029/1029 2015/2015 183/183][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 60/72 60/72 0/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+10	TCP [fd06:7f44:12e4::2]:57297 <-> [fd06:7f44:12e4::1]:60744 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][241 pkts/14460 bytes <-> 241 pkts/17352 bytes][Goodput ratio: 0/0][247.79 sec][bytes ratio: -0.091 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 116/116 1029/1030 2017/2017 184/184][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 60/72 60/72 0/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+11	TCP [fd06:7f44:12e4::2]:58866 <-> [fd06:7f44:12e4::1]:60744 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][241 pkts/14460 bytes <-> 241 pkts/17352 bytes][Goodput ratio: 0/0][247.79 sec][bytes ratio: -0.091 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 116/116 1030/1030 2021/2021 184/184][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 60/72 60/72 0/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+12	TCP [fd06:7f44:12e4::2]:61337 <-> [fd06:7f44:12e4::1]:60732 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][241 pkts/14460 bytes <-> 241 pkts/17352 bytes][Goodput ratio: 0/0][247.79 sec][bytes ratio: -0.091 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 116/116 1030/1030 2021/2021 184/184][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 60/72 60/72 0/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+13	TCP [fd06:7f44:12e4::2]:61347 <-> [fd06:7f44:12e4::1]:60781 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][241 pkts/14460 bytes <-> 241 pkts/17352 bytes][Goodput ratio: 0/0][247.79 sec][bytes ratio: -0.091 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 10/10 1030/1029 2021/2021 233/233][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 60/72 60/72 0/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+14	UDP [fe80::c64:bb50:f919:5023]:54053 -> [fe80::c0b:ad22:49cf:15d3]:58631 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][6 pkts/7488 bytes -> 0 pkts/0 bytes][Goodput ratio: 96/0][7.58 sec][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 3/0 1516/0 3554/0 1200/0][Pkt Len c2s/s2c min/avg/max/stddev: 1248/0 1248/0 1248/0 0/0][Risk: ** Susp Entropy **** Unidirectional Traffic **][Risk Score: 20][Risk Info: No server to client traffic / Entropy: 7.833 (Encrypted or Random?)][PLAIN TEXT (EQDty@)][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0]
+15	UDP [fe80::c64:bb50:f919:5023]:59385 -> [fe80::c0b:ad22:49cf:15d3]:58631 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][6 pkts/7488 bytes -> 0 pkts/0 bytes][Goodput ratio: 96/0][8.10 sec][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 8/0 1619/0 4064/0 1377/0][Pkt Len c2s/s2c min/avg/max/stddev: 1248/0 1248/0 1248/0 0/0][Risk: ** Susp Entropy **** Unidirectional Traffic **][Risk Score: 20][Risk Info: No server to client traffic / Entropy: 7.869 (Encrypted or Random?)][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0]
+16	UDP [fe80::4dc:3e32:1675:ee35]:51080 -> [fe80::18a7:64d:faf8:a628]:58631 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][6 pkts/7488 bytes -> 0 pkts/0 bytes][Goodput ratio: 96/0][7.59 sec][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 3/0 1518/0 3563/0 1204/0][Pkt Len c2s/s2c min/avg/max/stddev: 1248/0 1248/0 1248/0 0/0][Risk: ** Susp Entropy **** Unidirectional Traffic **][Risk Score: 20][Risk Info: No server to client traffic / Entropy: 7.835 (Encrypted or Random?)][PLAIN TEXT (duUocO)][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0]
+17	UDP [fe80::4dc:3e32:1675:ee35]:59005 -> [fe80::18a7:64d:faf8:a628]:58631 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][6 pkts/7488 bytes -> 0 pkts/0 bytes][Goodput ratio: 96/0][8.10 sec][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 8/0 1619/0 4064/0 1377/0][Pkt Len c2s/s2c min/avg/max/stddev: 1248/0 1248/0 1248/0 0/0][Risk: ** Susp Entropy **** Unidirectional Traffic **][Risk Score: 20][Risk Info: No server to client traffic / Entropy: 7.831 (Encrypted or Random?)][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0]
+22	TCP [fe80::f428:94ff:fec9:e15]:60843 <-> [fe80::f428:94ff:fec9:eea]:49370 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 23][21 pkts/3869 bytes <-> 21 pkts/3082 bytes][Goodput ratio: 61/51][211.48 sec][bytes ratio: 0.113 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 3488/3488 50741/50741 12262/12262][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 184/147 478/551 162/137][PLAIN TEXT (30mUd )][Plen Bins: 0,40,10,10,0,0,0,0,5,0,0,10,15,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+23	TCP [fd06:7f44:12e4::2]:50599 <-> [fd06:7f44:12e4::1]:58763 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 21][16 pkts/2056 bytes <-> 16 pkts/1800 bytes][Goodput ratio: 44/36][210.01 sec][bytes ratio: 0.066 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 14969/14969 30370/30370 14972/14973][Pkt Len c2s/s2c min/avg/max/stddev: 72/72 128/112 185/153 56/40][PLAIN TEXT (MessageType)][Plen Bins: 0,0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+24	TCP [fd06:7f44:12e4::2]:50412 <-> [fd06:7f44:12e4::1]:60764 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][18 pkts/1104 bytes <-> 18 pkts/1296 bytes][Goodput ratio: 0/0][16.17 sec][bytes ratio: -0.080 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 2/18 938/1010 2021/2021 459/393][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 61/72 72/72 4/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+25	TCP [fd06:7f44:12e4::2]:50414 <-> [fd06:7f44:12e4::1]:60764 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 32][18 pkts/1104 bytes <-> 18 pkts/1296 bytes][Goodput ratio: 0/0][16.18 sec][bytes ratio: -0.080 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/27 938/1011 2021/2021 458/391][Pkt Len c2s/s2c min/avg/max/stddev: 60/72 61/72 72/72 4/0][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 >> Incomplete TLS flows removed [DEBUG]:
 
-50	UDP 192.168.80.96:63033 <-> 216.58.204.142:443 [proto: 188/QUIC][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 3][cat: Web/5][7 pkts/2098 bytes <-> 7 pkts/2450 bytes][Goodput ratio: 86/88][0.31 sec][bytes ratio: -0.077 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 56/25 130/75 49/28][Pkt Len c2s/s2c min/avg/max/stddev: 74/64 300/350 1292/1288 414/453][Plen Bins: 28,28,7,0,7,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,0,0,0,0,0,0,0,0]
-58	TCP 216.58.209.42:443 <-> 192.168.80.96:56371 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 2][cat: Web/5][1 pkts/174 bytes <-> 1 pkts/54 bytes][Goodput ratio: 69/0][0.06 sec][Plen Bins: 0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-59	TCP 216.58.209.42:443 <-> 192.168.80.96:56377 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 2][cat: Web/5][1 pkts/174 bytes <-> 1 pkts/54 bytes][Goodput ratio: 69/0][0.04 sec][Plen Bins: 0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-60	TCP 216.58.204.234:443 <-> 192.168.80.96:56314 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 2][cat: Web/5][1 pkts/157 bytes <-> 1 pkts/54 bytes][Goodput ratio: 65/0][0.05 sec][Plen Bins: 0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-61	TCP 216.58.204.234:443 <-> 192.168.80.96:56313 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 2][cat: Web/5][1 pkts/140 bytes <-> 1 pkts/54 bytes][Goodput ratio: 61/0][0.05 sec][Plen Bins: 0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-62	TCP 216.58.204.234:443 <-> 192.168.80.96:56317 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 2][cat: Web/5][1 pkts/115 bytes <-> 1 pkts/54 bytes][Goodput ratio: 53/0][0.05 sec][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 >> No SNI flows removed [DEBUG]:
 
@@ -38,57 +88,221 @@
 
 [
     {
-        "ip_field": "126/Google",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "adservice.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63133",
-        "ip_destination": "142.251.209.34",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
+        "proto_field": "130/HTTP_Connect",
+        "url": "cdn.segment.com:443",
+        "plain_text": "CONNECT cdn.segment.com",
+        "sni": "cdn.segment.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52322",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 2,
         "exchanged_packets": [
-            "15 <-> 17"
+            "88 <-> 161",
+            "72 <-> 162"
         ]
     },
     {
-        "ip_field": "284/GoogleCloud",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "api.rlcdn.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63126",
-        "ip_destination": "34.120.133.55",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
+        "proto_field": "130/HTTP_Connect",
+        "url": "cdn.auth0.com:443",
+        "plain_text": "CONNECT cdn.auth0.com",
+        "sni": "cdn.auth0.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52319",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 3,
         "exchanged_packets": [
-            "17 <-> 16"
+            "33 <-> 52",
+            "33 <-> 50",
+            "13 <-> 16"
         ]
     },
     {
-        "ip_field": "265/AmazonAWS",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "4dxsfv.cdn-settings.appsflyersdk.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63102",
-        "ip_destination": "108.156.2.56",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "proto_field": "130/HTTP_Connect",
+        "url": "maxcdn.bootstrapcdn.com:443",
+        "plain_text": "iTCONNECT maxcdn.bootstrapcdn.c",
+        "sni": "maxcdn.bootstrapcdn.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52287",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "16 <-> 29",
+            "15 <-> 28"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130/HTTP_Connect",
+        "url": "cdn.jsdelivr.net:443",
+        "plain_text": "CONNECT cdn.j",
+        "sni": "cdn.jsdelivr.net",
+        "ip_source": "192.168.0.86",
+        "port_source": "52317",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "16 <-> 26",
+            "15 <-> 24"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130/HTTP_Connect",
+        "url": "cdn-settings.segment.com:443",
+        "plain_text": "CONNECT cdn",
+        "sni": "cdn-settings.segment.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52255",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "14 <-> 11"
+            "17 <-> 19"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130/HTTP_Connect",
+        "url": "zdffis.cdn-settings.appsflyersdk.com:443",
+        "plain_text": "CONNECT zdffis.cdn",
+        "sni": "zdffis.cdn-settings.appsflyersdk.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52256",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 19"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.277/QUIC.iCloudPrivateRelay",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0109h0_ee47968ec53b_cf6d9b7e5ad4",
+        "quic_version": "V-1",
+        "sni": "mask.icloud.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "62896",
+        "ip_destination": "172.224.194.6",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "sequoia.cdn-apple.com:443",
+        "plain_text": "CONNECT sequoia.cdn",
+        "sni": "sequoia.cdn-apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52296",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "13 <-> 14",
+            "13 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.277/QUIC.iCloudPrivateRelay",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0109h0_ee47968ec53b_cf6d9b7e5ad4",
+        "quic_version": "V-1",
+        "sni": "mask.icloud.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "58101",
+        "ip_destination": "172.224.38.134",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "6 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.277/QUIC.iCloudPrivateRelay",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0109h0_ee47968ec53b_cf6d9b7e5ad4",
+        "quic_version": "V-1",
+        "sni": "mask.icloud.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "53887",
+        "ip_destination": "172.224.38.3",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "7 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "131.63/HTTP_Proxy.OCSP",
+        "url": "http://ocsp.godaddy.com//MEAwPjA8MDowODAHBgUrDgMCGgQUHSNvjgZLlx%2Fd36EVI%2BGu5QK%2BKxsEFDqahQcQZyi27%2Fa9BUFuIMGU2g%2FeAgEH",
+        "user_agent": "com.apple.trustd/3.0",
+        "plain_text": "GET http",
+        "sni": "ocsp.godaddy.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52353",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **",
+        "risk_score": "50",
+        "risk_info": "Expected on port 8080,3128",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "5 <-> 8"
         ]
     }
 ]
@@ -96,416 +310,499 @@
 
 [
     {
-        "ip_field": "126/Google",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "googleads.g.doubleclick.net",
-        "ip_source": "192.168.80.96",
-        "port_source": "63119",
-        "ip_destination": "142.251.209.2",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "gspe19-ssl.ls.apple.com:443",
+        "plain_text": "CONNECT gspe19",
+        "sni": "gspe19-ssl.ls.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52363",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "160 <-> 226"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
-        "sni": "pubads.g.doubleclick.net",
-        "ip_source": "192.168.80.96",
-        "port_source": "63135",
-        "ip_destination": "216.58.204.226",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 3,
-        "exchanged_packets": [
-            "48 <-> 48",
-            "14 <-> 14",
-            "14 <-> 14"
+            "489 <-> 5077"
         ]
     },
     {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "mobilesdk-eu.kampyle.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63098",
-        "ip_destination": "147.75.180.89",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "gspe21-ssl.ls.apple.com:443",
+        "plain_text": "CONNECT gspe21",
+        "sni": "gspe21-ssl.ls.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52361",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 38,
         "exchanged_packets": [
-            "29 <-> 23"
+            "211 <-> 1512",
+            "58 <-> 1008",
+            "58 <-> 938",
+            "43 <-> 495",
+            "58 <-> 397",
+            "46 <-> 398",
+            "37 <-> 395",
+            "41 <-> 259",
+            "35 <-> 238",
+            "41 <-> 233",
+            "28 <-> 148",
+            "28 <-> 129",
+            "32 <-> 129",
+            "26 <-> 94",
+            "22 <-> 87",
+            "25 <-> 65",
+            "28 <-> 61",
+            "20 <-> 61",
+            "24 <-> 60",
+            "19 <-> 51",
+            "18 <-> 43",
+            "24 <-> 38",
+            "26 <-> 37",
+            "22 <-> 34",
+            "19 <-> 29",
+            "18 <-> 27",
+            "18 <-> 26",
+            "18 <-> 25",
+            "15 <-> 25",
+            "14 <-> 21",
+            "14 <-> 19",
+            "14 <-> 16",
+            "14 <-> 14",
+            "15 <-> 17",
+            "15 <-> 15",
+            "14 <-> 15",
+            "14 <-> 16",
+            "13 <-> 14"
         ]
     },
     {
-        "ip_field": "126/Google",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "pubads.g.doubleclick.net",
-        "ip_source": "192.168.80.96",
-        "port_source": "63136",
-        "ip_destination": "216.58.204.226",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "17 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "plain_text": "teFEPi",
-        "sni": "googleads.g.doubleclick.net",
-        "ip_source": "192.168.80.96",
-        "port_source": "63125",
-        "ip_destination": "142.251.209.2",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "mobile-2260.api.privacy-center.org",
-        "ip_source": "192.168.80.96",
-        "port_source": "63100",
-        "ip_destination": "13.226.175.20",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "17 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1712h0_5b57614c22b0_3f5d972527c0",
-        "sni": "people-pa.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63117",
-        "ip_destination": "142.250.180.170",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "19 <-> 24"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "profile-api-subito.trust.advgo.net",
-        "ip_source": "192.168.80.96",
-        "port_source": "63130",
-        "ip_destination": "3.78.39.170",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 3,
-        "exchanged_packets": [
-            "14 <-> 17",
-            "12 <-> 10",
-            "11 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "4dxsfv.launches.appsflyersdk.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63110",
-        "ip_destination": "108.157.194.80",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "risk": "** Susp DGA Domain name **",
-        "risk_score": "100",
-        "risk_info": "4dxsfv.launches.appsflyersdk.com",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "geo.privacymanager.io",
-        "ip_source": "192.168.80.96",
-        "port_source": "63124",
-        "ip_destination": "108.139.243.72",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "18 <-> 17"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "firebaseremoteconfig.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63114",
-        "ip_destination": "216.58.205.42",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "proto_field": "130.239/HTTP_Connect.GoogleServices",
+        "url": "www.googletagmanager.com:443",
+        "plain_text": "CONNECT www.googletagmanager.co",
+        "sni": "www.googletagmanager.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52313",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
         "similar_flows_count": 2,
         "exchanged_packets": [
-            "14 <-> 13",
-            "14 <-> 13"
+            "145 <-> 371",
+            "72 <-> 364"
         ]
     },
     {
-        "ip_field": "265/AmazonAWS",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "4dxsfv.inapps.appsflyersdk.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63129",
-        "ip_destination": "18.66.195.87",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "risk": "** Susp DGA Domain name **",
-        "risk_score": "100",
-        "risk_info": "4dxsfv.inapps.appsflyersdk.com",
-        "similar_flows_count": 3,
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "gsa.apple.com:443",
+        "plain_text": "CONNECT gsa.apple.com",
+        "sni": "gsa.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52330",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 4,
         "exchanged_packets": [
-            "14 <-> 12",
-            "15 <-> 13",
-            "15 <-> 13"
+            "34 <-> 65",
+            "21 <-> 22",
+            "19 <-> 20",
+            "18 <-> 18"
         ]
     },
     {
-        "ip_field": "126/Google",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "ad.doubleclick.net",
-        "ip_source": "192.168.80.96",
-        "port_source": "63128",
-        "ip_destination": "216.58.205.38",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "gspe19-2-ssl.ls.apple.com:443",
+        "plain_text": "CONNECT gspe19",
+        "sni": "gspe19-2-ssl.ls.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52364",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "14 <-> 15"
+            "57 <-> 80"
         ]
     },
     {
-        "ip_field": "265/AmazonAWS",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "303951d4c50efb2e991652225a6f02b1",
-        "ja4": "t13d171100_5b57614c22b0_3f5d972527c0",
-        "servernames": "messaging.advgo.net,*.messaging.advgo.net",
-        "issuer": "C=US, O=Amazon, CN=Amazon RSA 2048 M03",
-        "subject": "CN=messaging.advgo.net",
-        "certificate": "SHA-1: 79:9B:BF:01:90:B3:71:DB:52:DF:A8:9B:D2:9F:7F:0D:C8:75:01:D8",
-        "sni": "xmpp.messaging.advgo.net",
-        "ip_source": "192.168.80.96",
-        "port_source": "63116",
-        "ip_destination": "52.210.105.81",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "risk": "** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "10",
-        "risk_info": "No ALPN",
+        "proto_field": "130.126/HTTP_Connect.Google",
+        "url": "fonts.gstatic.com:443",
+        "plain_text": "CONNECT fonts.gstatic.com",
+        "sni": "fonts.gstatic.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52323",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "34 <-> 56",
+            "23 <-> 54"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.145/HTTP_Connect.AppleiTunes",
+        "url": "bag.itunes.apple.com:443",
+        "plain_text": "CONNECT bag.itunes.apple.com",
+        "sni": "bag.itunes.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52332",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "22 <-> 32",
+            "19 <-> 26",
+            "16 <-> 18"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130/HTTP_Connect",
+        "url": "www.app-ads-services.com:443",
+        "plain_text": "CONNECT www.app",
+        "sni": "www.app-ads-services.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52348",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "20 <-> 27"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.239/HTTP_Connect.GoogleServices",
+        "url": "firebaseremoteconfig.googleapis.com:443",
+        "plain_text": "CONNECT firebaseremoteconfig.go",
+        "sni": "firebaseremoteconfig.googleapis.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52270",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "22 <-> 27",
+            "14 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.143/HTTP_Connect.AppleiCloud",
+        "url": "gateway.icloud.com:443",
+        "plain_text": "@CONNECT gateway.icloud.com",
+        "sni": "gateway.icloud.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52302",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_0_d29295416479/iOS/iPad",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "24 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "xp.apple.com:443",
+        "plain_text": "CONNECT xp.apple.com",
+        "sni": "xp.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52266",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "19 <-> 18",
+            "17 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "gsp-ssl.ls.apple.com:443",
+        "plain_text": "cCONNECT gsp",
+        "sni": "gsp-ssl.ls.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52356",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "21 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "ocsp2.apple.com:443",
+        "plain_text": "CONNECT ocsp2.apple.com",
+        "sni": "ocsp2.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52282",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "15 <-> 16",
+            "13 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.239/HTTP_Connect.GoogleServices",
+        "url": "firebaseinstallations.googleapis.com:443",
+        "plain_text": "@.xCONNECT firebaseinstallation",
+        "sni": "firebaseinstallations.googleapis.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52264",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "20 <-> 22"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.239/HTTP_Connect.GoogleServices",
+        "url": "fonts.googleapis.com:443",
+        "plain_text": "CONNECT fonts.googleapis.com",
+        "sni": "fonts.googleapis.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52316",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "14 <-> 16",
+            "14 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.275/HTTP_Connect.Crashlytics",
+        "url": "firebase-settings.crashlytics.com:443",
+        "plain_text": "CONNECT firebase",
+        "sni": "firebase-settings.crashlytics.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52254",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "18 <-> 18",
+            "18 <-> 19"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.126/HTTP_Connect.Google",
+        "url": "pagead2.googlesyndication.com:443",
+        "plain_text": "CONNECT pagead2.googlesyndicati",
+        "sni": "pagead2.googlesyndication.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52326",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "15 <-> 16",
+            "15 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "wps.apple.com:443",
+        "plain_text": "CONNECT wps.apple.com",
+        "sni": "wps.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52280",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_0_d29295416479/iOS/iPad",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
         "similar_flows_count": 1,
         "exchanged_packets": [
             "16 <-> 15"
         ]
     },
     {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513ht_8daaf6152771_eca864cca44a",
-        "sni": "chat.stream-io-api.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63122",
-        "ip_destination": "3.65.55.155",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "18 <-> 16"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "chat.stream-io-api.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63123",
-        "ip_destination": "3.65.55.155",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "20 <-> 18",
-            "16 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "presence-api-subito.trust.advgo.net",
-        "ip_source": "192.168.80.96",
-        "port_source": "63104",
-        "ip_destination": "52.29.75.8",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "13 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.2",
-        "ja3s": "eca9b8f0f3eae50309eaf901cb822d9b",
-        "ja4": "t12d0609h0_39a52dd9ae43_b39be8c56a14",
-        "servernames": "upload.video.google.com,*.clients.google.com,*.docs.google.com,*.drive.google.com,*.gdata.youtube.com,*.googleapis.com,*.photos.google.com,*.youtube-3rd-party.com,upload.google.com,*.upload.google.com,upload.youtube.com,*.upload.youtube.com,uploads.stage.gdata.youtube.com,bg-call-donation.goog,bg-call-donation-alpha.goog,bg-call-donation-canary.goog,bg-call-donation-dev.goog",
-        "issuer": "C=US, O=Google Trust Services, CN=WR2",
-        "subject": "CN=upload.video.google.com",
-        "certificate": "SHA-1: DF:A1:DB:1F:BC:5E:31:D7:F8:FE:26:E3:B9:B3:02:98:B1:C8:50:EC",
-        "sni": "firebaseinappmessaging.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63111",
-        "ip_destination": "216.58.204.138",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "16 <-> 17"
-        ]
-    },
-    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "e54965894d6b45ecb4323c7ea3d6c115",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "servernames": "*.device.marketingcloudapis.com,device.marketingcloudapis.com",
-        "issuer": "C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1",
-        "subject": "C=US, ST=California, L=San Francisco, O=Salesforce, Inc., CN=*.device.marketingcloudapis.com",
-        "certificate": "SHA-1: A9:34:8E:BF:10:07:B5:BA:E7:10:A7:80:2A:74:60:A4:67:38:47:54",
-        "sni": "mcrndycn8bj4zfvcnqlh9d-pbw21.device.marketingcloudapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63120",
-        "ip_destination": "13.111.95.28",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "proto_field": "130/HTTP_Connect",
+        "url": "i2.wp.com:443",
+        "plain_text": "CONNECT i",
+        "sni": "i2.wp.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "52350",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "12 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "atsod.launch.liveramp.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63118",
-        "ip_destination": "3.166.14.57",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "tpc.googlesyndication.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63145",
-        "ip_destination": "216.58.205.33",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 4,
-        "exchanged_packets": [
-            "9 <-> 7",
-            "9 <-> 7",
-            "9 <-> 7",
-            "9 <-> 6"
+            "16 <-> 16"
         ]
     }
 ]
 >> Removed flows after JA3S/JA4/Certificate filtering [DEBUG]:
 
-[]
+[
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "ip_source": "192.168.0.86",
+        "port_source": "51709",
+        "ip_destination": "17.57.146.57",
+        "port_destination": "5223",
+        "risk": "** Known Proto on Non Std Port **",
+        "risk_score": "50",
+        "risk_info": "Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "26 <-> 24"
+        ]
+    },
+    {
+        "ip_field": "140/Apple",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "ip_source": "17.57.146.22",
+        "port_source": "5223",
+        "ip_destination": "10.65.158.29",
+        "port_destination": "60986",
+        "risk": "** Known Proto on Non Std Port **",
+        "risk_score": "50",
+        "risk_info": "Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "6 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "0/Unknown",
+        "plain_text": "KIDieC",
+        "risk": "** Susp Entropy **** Unidirectional Traffic **",
+        "risk_score": "20",
+        "risk_info": "No server to client traffic / Entropy: 7.845 (Encrypted or Random?)",
+        "similar_flows_count": 5,
+        "exchanged_packets": [
+            "6 <-> 0",
+            "6 <-> 0",
+            "6 <-> 0",
+            "6 <-> 0",
+            "9 <-> 0"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "0/Unknown",
+        "ip_source": "192.168.0.86",
+        "port_source": "60845",
+        "ip_destination": "192.168.0.177",
+        "port_destination": "34689",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "8 <-> 4"
+        ]
+    }
+]

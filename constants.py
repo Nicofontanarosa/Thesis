@@ -15,7 +15,7 @@
 # show nDPI protocol in the output
 SHOW_NDPI_PROTOCOLS = True
 # change filter based on VPN detection
-VPN_DETECTION = True
+ONLY_SNI = False
 
 # show name hints in the output (requires whois and AI classification)
 SHOW_NAME_HINT = False
@@ -25,10 +25,10 @@ SHOW_GUESS_SNI = False
 REDACTED_ORGS = {"redacted for privacy", "data redacted", "hidden", "not disclosed", "domains by proxy, llc", "identity protection service", "registration private"}
 
 # check and fill missing JA3/JA4 for HTTP flows and others using tshark clusters
-CHECK_JA_MISSING = True
+CHECK_JA_MISSING = False
 
 # percentage of total packets to use as threshold for top SNI selection
-TOP_PERCENT = 0.05
+TOP_PERCENT = 0.04
 
 # protocols to keep
 PROTOCOLS = {"TLS", "HTTP", "HTTP_Connect", "QUIC", "Unknown", "WireGuard"}

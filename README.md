@@ -95,7 +95,7 @@ Test them directly with your nDPI installation
 
 # 📄 License
 
-This project is distributed under the terms of the MIT License. A complete copy of the license is available in the \[LICENSE](LICENSE) file within this repository. Any contribution made to this project will be licensed under the same MIT License
+This project is distributed under the terms of the MIT License. A complete copy of the license is available in the [LICENSE](LICENSE) file within this repository. Any contribution made to this project will be licensed under the same MIT License
 
 - Academic project developed for educational and research purposes in the field of cybersecurity
 - Author: Nicolò Fontanarosa

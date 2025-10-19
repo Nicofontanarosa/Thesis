@@ -19,7 +19,7 @@ import main
 
 class PipelineInputs(App):
 
-    # Bindings, title, subtitle come from constants_textual
+    # bindings, title, subtitle come from constants_textual
     BINDINGS = constant.BINDINGS
     TITLE = constant.TITLE
     SUB_TITLE = constant.SUB_TITLE
@@ -35,19 +35,19 @@ class PipelineInputs(App):
         self.statistics_select = None
         self.flows_select = None
 
-        # Currently selected files for left/right panels
+        # currently selected files for left/right panels
         self.current_stats_file = "tmp/initialization.txt"
         self.current_flow_file = "tmp/filtered_flows.json"
     
     async def run_main_in_background(self):
 
-        # Run main.main_pipeline asynchronously in a separate thread (UI non-blocking)
+        # run main.main_pipeline asynchronously in a separate thread (UI non-blocking)
         loop = asyncio.get_running_loop()
         await loop.run_in_executor(None, partial(main.main_pipeline, self.paths["pcap"], self.paths["ndpi"], self.paths["output"]))
 
     def compose(self) -> ComposeResult:
 
-        # Build initial UI layout
+        # build initial UI layout
         yield Header(show_clock=True)
         banner = Static("Please provide the required paths and press Enter after each one ...", id="banner")
         banner.styles.margin = (5, 50, 0, 50)
@@ -56,7 +56,7 @@ class PipelineInputs(App):
         banner.styles.padding = (1, 3)
         yield banner
 
-        # Input for PCAP
+        # input for PCAP
         pcap_input = Input(placeholder="Enter PCAP file path and press Enter", id="pcap_input")
         pcap_input.styles.padding = (0, 5)
         pcap_input.styles.margin = (10, 20, 1, 20)
@@ -64,7 +64,7 @@ class PipelineInputs(App):
         pcap_input.styles.height = "auto"
         yield pcap_input
 
-        # Input for nDPI path
+        # input for nDPI path
         ndpi_input = Input(placeholder="Enter nDPI folder path and press Enter", id="ndpi_input")
         ndpi_input.styles.padding = (0, 5)
         ndpi_input.styles.margin = (1, 20)
@@ -72,7 +72,7 @@ class PipelineInputs(App):
         ndpi_input.styles.height = "auto"
         yield ndpi_input
 
-        # Input for output folder
+        # input for output folder
         output_input = Input(placeholder="Enter output folder path and press Enter", id="output_input")
         output_input.styles.padding = (0, 5)
         output_input.styles.margin = (1, 20)
@@ -80,13 +80,13 @@ class PipelineInputs(App):
         output_input.styles.height = "auto"
         yield output_input
 
-        # Empty vertical container for panels
+        # empty vertical container for panels
         yield VerticalScroll(id="main_panel")
         yield Footer()
 
     def on_input_submitted(self, event: Input.Submitted) -> None:
 
-        # Save path entered by user
+        # save path entered by user
         if event.input.id == "pcap_input":
             #self.paths["pcap"] = "pcapng/Glovo_01.pcapng"
             self.paths["pcap"] = event.value.strip()
@@ -98,7 +98,7 @@ class PipelineInputs(App):
             self.paths["output"] = event.value.strip()
             self.notify(f"Output folder set: {event.value.strip()}", severity="information")
 
-        # If all three are provided, remove inputs and show panels
+        # if all three are provided, remove inputs and show panels
         if all(self.paths.values()):
             self.query_one("#pcap_input").remove()
             self.query_one("#ndpi_input").remove()
@@ -109,7 +109,7 @@ class PipelineInputs(App):
 
     def display_panels(self):
 
-        # Run main() asynchronously in background (thread-safe)
+        # run main() asynchronously in background (thread-safe)
         asyncio.create_task(self.run_main_in_background())
 
         main_container = self.query_one("#main_panel", VerticalScroll)
@@ -139,7 +139,7 @@ class PipelineInputs(App):
         select_container.mount(self.statistics_select, self.flows_select)
         # ---------------------
 
-        # Left panel (statistics) and right panel (flows table)
+        # left panel (statistics) and right panel (flows table)
         panels_container = Horizontal(id="panels_container")
         main_container.mount(panels_container)
 
@@ -156,10 +156,10 @@ class PipelineInputs(App):
 
         panels_container.mount(self.left_panel, self.right_panel)
 
-        # Keep track of last contents for updates
+        # keep track of last contents for updates
         self._last_error_content = None
 
-        # Auto refresh every second
+        # auto refresh every second
         self.set_interval(1, self.refresh_panels)
 
     def refresh_panels(self):
@@ -171,7 +171,7 @@ class PipelineInputs(App):
             with open(errors_file, "r", encoding="utf-8") as f:
                 error_content = f.read()
 
-        # Notify only if content changed and is not empty
+        # notify only if content changed and is not empty
         if error_content and self._last_error_content != error_content:
             self.notify(f"Error: {error_content.strip()}", severity="error")
             self._last_error_content = error_content
@@ -183,7 +183,7 @@ class PipelineInputs(App):
         stats_file = getattr(self, "current_stats_file", "tmp/initialization.txt")
 
         if not os.path.exists(stats_file) or os.path.getsize(stats_file) == 0:
-            # Show loading animation if empty
+            # show loading animation if empty
             if not hasattr(self, "_loading_widget") or self._loading_widget is None:
                 self._loading_widget = LoadingIndicator(id="loading")
                 self.left_panel.mount(self._loading_widget)
@@ -194,7 +194,7 @@ class PipelineInputs(App):
             content = f.read()
         left_widget.update(content)
 
-        # Remove loader if present
+        # remove loader if present
         if hasattr(self, "_loading_widget") and self._loading_widget:
             self._loading_widget.remove()
             self._loading_widget = None
@@ -214,7 +214,7 @@ class PipelineInputs(App):
         else:
             flows = []
 
-        # Skip update if unchanged
+        # skip update if unchanged
         if getattr(self, "_last_flows", None) == flows:
             return  
         
@@ -228,29 +228,29 @@ class PipelineInputs(App):
             for flow in flows:
                 row = [flow.get(key, "N/A") for key in constant.COLUMNS_FROM_FILE]
                 sni = flow.get("sni") or flow.get("url", "N/A")
-                row[4] = sni  
+                row[3] = sni  
                 table.add_row(*row)
         else:
             table.add_row(*constant.EMPTY_ROW)
 
     def on_select_changed(self, event: Select.Changed) -> None:
 
-        # Handle dropdown change (statistics or flows)
+        # handle dropdown change (statistics or flows)
         key = event.value
         select_id = event.select.id
 
-        # Ignore blank selections
+        # ignore blank selections
         if key == Select.BLANK:
             return
 
         if select_id == "statistics_select":
-            # Get the path of the selected file for the left panel
+            # get the path of the selected file for the left panel
             _, file_path = constant.GROUPS["statistics"][key]
             self.current_stats_file = file_path
             self.update_left_panel(file_path)
 
         elif select_id == "flows_select":
-            # Get the path of the selected file for the right panel
+            # get the path of the selected file for the right panel
             _, file_path = constant.GROUPS["flows"][key]
             self.current_flow_file = file_path  # update the current file
             self.update_right_panel(file_path)
@@ -267,7 +267,7 @@ class PipelineInputs(App):
 
     def update_right_panel(self, file_path):
 
-        # Same of refresh
+        # same of refresh
         table = self.right_panel.query_one("#json_table", DataTable)
         table.styles.max_height = 30
         table.header_height = 2

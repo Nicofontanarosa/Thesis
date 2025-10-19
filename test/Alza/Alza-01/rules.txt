@@ -1,0 +1,7 @@
+host:"alza.cz",host:"pay.sandbox.google.com",host:"static.cloudflareinsights.com",host:"www.googleoptimize.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"alza.cz",host:"pay.sandbox.google.com",host:"static.cloudflareinsights.com",host:"www.googleoptimize.com"@
+
+--------------------------------------------------------------

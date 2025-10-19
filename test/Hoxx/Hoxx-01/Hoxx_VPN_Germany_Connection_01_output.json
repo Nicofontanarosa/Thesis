@@ -24,42 +24,5 @@
             "9 <-> 7",
             "9 <-> 7"
         ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "151.5.24.33",
-        "dns_id": "0x6201",
-        "plain_text": "msftconnecttest",
-        "sni": "www.msftconnecttest.com",
-        "ip_source": "192.168.229.96",
-        "port_source": "55566",
-        "ip_destination": "192.168.229.54",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "0.0.0.0",
-        "dns_id": "0x2be2",
-        "plain_text": "account",
-        "sni": "account2.hoxx.com",
-        "ip_source": "192.168.229.96",
-        "port_source": "52856",
-        "ip_destination": "192.168.229.54",
-        "port_destination": "53",
-        "similar_flows_count": 4,
-        "exchanged_packets": [
-            "1 <-> 1",
-            "1 <-> 1",
-            "1 <-> 1",
-            "1 <-> 1"
-        ]
     }
 ]

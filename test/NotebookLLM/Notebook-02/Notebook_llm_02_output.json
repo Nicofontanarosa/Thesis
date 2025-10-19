@@ -1,36 +1,31 @@
 [
     {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "216.58.204.138",
-        "dns_id": "0x2813",
-        "plain_text": "notebooklm",
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4": "t13d1712gr_5b57614c22b0_ef7df7f74e48",
         "sni": "notebooklm-pa.googleapis.com",
         "ip_source": "10.215.173.1",
-        "port_source": "11882",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "similar_flows_count": 1,
+        "port_source": "52374",
+        "ip_destination": "216.58.204.138",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "risk": "** Uncommon TLS ALPN **",
+        "risk_score": "50",
+        "risk_info": "grpc-ex",
+        "similar_flows_count": 9,
         "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "216.58.204.225",
-        "dns_id": "0x8898",
-        "plain_text": "googleusercontent",
-        "sni": "lh3.googleusercontent.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "16526",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
+            "79 <-> 103",
+            "12 <-> 15",
+            "12 <-> 14",
+            "11 <-> 14",
+            "11 <-> 14",
+            "11 <-> 13",
+            "11 <-> 13",
+            "11 <-> 12",
+            "11 <-> 12"
         ]
     }
 ]

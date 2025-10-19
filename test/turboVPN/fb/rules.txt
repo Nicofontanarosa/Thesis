@@ -1,2 +1,0 @@
-host:"update.code.visualstudio.com"@
-host:"split.io"@

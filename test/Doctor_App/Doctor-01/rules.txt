@@ -1,2 +1,7 @@
-host:"content-autofill.googleapis.com"@Unknown
-host:"api.doctorapp.it",host:"doctorapp.it"@Hidden
+host:"doctorapp.it"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"doctorapp.it"@
+
+--------------------------------------------------------------

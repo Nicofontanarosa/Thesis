@@ -198,7 +198,7 @@ def flow_filter(input_file, output_file):
                     incomplete_tls_flows.append(line)
                     continue
 
-                if not constants.VPN_DETECTION:
+                if constants.ONLY_SNI:
                     # check for flows without SNI/Hostname
                     if not sni_pattern.search(clean_line):
                         no_sni_flows.append(line)
@@ -216,7 +216,7 @@ def flow_filter(input_file, output_file):
                 # remove flows matching general protocol pattern
                 removed_flows.append(line)
 
-    # Print summary
+    # print summary
     config.log_message(f">> Flows read: {len(keep_flows) + len(removed_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows) + len(no_sni_flows) + len(no_tcp_fingerprint_flows)}", log_file_flows)
     config.log_message(f"\n>> Flows kept: {len(keep_flows)}", log_file_flows)
     config.log_message(f"\n>> Flows removed: {len(removed_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows) + len(no_sni_flows) + len(no_tcp_fingerprint_flows)}", log_file_flows)

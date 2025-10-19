@@ -1,4 +1,7 @@
-host:"lidl.it",host:"lidlplus.com"@
-host:"accounts.lidl.com"@
-host:"asset.schwarz"@
-host:"lidl.leaflets.schwarz"@
+host:"lidleu.my.salesforce.com",host:"lidlplus.com",host:"www.lidl.it"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"lidleu.my.salesforce.com",host:"lidlplus.com",host:"www.lidl.it"@
+
+--------------------------------------------------------------

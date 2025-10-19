@@ -1,3 +1,7 @@
 host:"app.lefrecce.it"@
-host:"fstechnologyspa.data.adobedc.net"@
-host:"oraclersys.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"app.lefrecce.it"@
+
+--------------------------------------------------------------

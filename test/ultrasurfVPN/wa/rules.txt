@@ -1,2 +1,0 @@
-host:"edge-chat.facebook.com",host:"instagram.com"@whois: instagram llc, meta platforms, inc. & AI: unknown
-host:"split.io"@whois: unknown & AI: unknown

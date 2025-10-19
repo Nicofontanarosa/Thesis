@@ -1,4 +1,14 @@
-host:"api.phantom.avira-vpn.com",host:"it.phantom.avira-vpn.com"@Gen digital, inc
-host:"z-m-gateway.facebook.com"@Meta platforms, inc.
-host:"fcmconnection.googleapis.com"@Unknown
-host:"www.recaptcha.net"@Google llc
+host:"www.recaptcha.net"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"www.recaptcha.net"@
+
+--------------------------------------------------------------
+host:"api.phantom.avira-vpn.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"api.phantom.avira-vpn.com"@
+
+--------------------------------------------------------------

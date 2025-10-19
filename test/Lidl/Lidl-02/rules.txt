@@ -1,2 +1,7 @@
-host:"alerts.lidlplus.com",host:"announcements.lidlplus.com",host:"appgateway.lidlplus.com",host:"clickandpick.lidlplus.com",host:"couponplus.lidlplus.com",host:"coupons.lidlplus.com",host:"home.lidlplus.com",host:"localization.lidlplus.com",host:"payments.lidlplus.com",host:"push-notifications.lidlplus.com",host:"segments.lidlplus.com",host:"shopping-list.lidlplus.com",host:"shortcuts.lidlplus.com",host:"stores.lidlplus.com",host:"surveys.lidlplus.com"@Unknown
-host:"lidleu.my.salesforce.com",host:"mcf4wh-jdfmxrzzzttwqcrf-d3b4.device.marketingcloudapis.com"@Salesforce.com, inc.
+host:"lidleu.my.salesforce.com",host:"lidlplus.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"lidleu.my.salesforce.com",host:"lidlplus.com"@
+
+--------------------------------------------------------------

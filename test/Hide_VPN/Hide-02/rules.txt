@@ -1,1 +1,14 @@
-host:"api.hide.me",host:"www.msftncsi.com"@Unknown
+host:"api.hide.me"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"api.hide.me"@
+
+--------------------------------------------------------------
+ja4:8daaf6152771_40271e0a5736@
+
+>> To add this rule based on JA4:
+   [+] Open `nDPI/example/protos.txt`
+   [+] Paste the following rule: ja4:8daaf6152771_40271e0a5736@
+
+--------------------------------------------------------------

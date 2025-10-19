@@ -1,19 +1,18 @@
 >> Using existing nDPI JSON:
 
- + .\test\ultrasurfVPN\fb\facebookVideosUltraSurfVpn.json
-
->> Using existing nDPI JSON:
-
- + .\test\ultrasurfVPN\fb\facebookVideosUltraSurfVpn_output_k.json
+ [+] .\test\warframe\warframe.json
 
 >> Running initial filtering ...
 
- + input file: .\test\ultrasurfVPN\fb\facebookVideosUltraSurfVpn.json
- + output file: .\test\ultrasurfVPN\fb\facebookVideosUltraSurfVpn_filtered.json
+ [+] input file: .\test\warframe\warframe.json
+ [+] output file: .\test\warframe\warframe_filtered.json
 
 >> Running flows filtering ...
 
- + input file: .\test\ultrasurfVPN\fb\facebookVideosUltraSurfVpn_filtered.json
- + output file: .\test\ultrasurfVPN\fb\facebookVideosUltraSurfVpn_output.json
+ [+] input file: .\test\warframe\warframe_filtered.json
+ [+] output file: .\test\warframe\warframe_output.json
 
->> Coverage statistics save in: .\test\ultrasurfVPN\fb\coverage.txt
+>> Coverage statistics save in: .\test\warframe\coverage.txt
+
+
+>> All removed flows save in: /tmp/removed_flows.json

@@ -1,6 +1,5 @@
 
-
-# Example groups definition
+# groups definition to visualize
 GROUPS = {
     "flows": {
         "filtered": ("Filtered-Flows", "tmp/filtered_flows.json"),
@@ -11,19 +10,19 @@ GROUPS = {
         "flowsnumber": ("Flows-Number","tmp/flows.txt"),
         "stats": ("Stats", "tmp/stats.txt"),
         "rule": ("Custom-Rules-nDPI", "tmp/rules.txt"),
-        "timeSNI": ("Time rank SNI", "tmp/rank_time_sni.txt"),
-        "rankSNI": ("Occurence rank SNI", "tmp/rank_sni.txt"),
-        "riskyflows": ("Risky Flows", "tmp/log_risky_flows.txt")
+        "statsSNI": ("SNI Stats", "tmp/sni_stats.txt"),
+        "riskyflows": ("Risky Flows", "tmp/log_risky_flows.txt"),
+        "coverage": ("Coverage of Rules", "tmp/coverage.txt")
     }
 }
 
-# Default table columns
-COLUMNS = ["Protocol", "Source IP", "Destination IP", "DNS IP", "SNI/URL", "JA3S", "JA4", "Similar Flows", "Risk"]
-COLUMNS_FROM_FILE = ["proto_field", "ip_source", "ip_destination", "dns_ip", "sni", "ja3s", "ja4", "similar_flows_count", "risk"]
-# Default values for empty rows
-EMPTY_ROW = ["N/A", "N/A", "N/A", "No data", "N/A", "N/A", "N/A", "No data", "None"]
+# default table columns
+COLUMNS = ["Protocol", "Source IP", "Destination IP", "SNI/URL", "JA3S", "JA4", "Similar Flows", "Risk"]
+COLUMNS_FROM_FILE = ["proto_field", "ip_source", "ip_destination", "sni", "ja3s", "ja4", "similar_flows_count", "risk"]
+# default values for empty rows
+EMPTY_ROW = ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "No data", "None"]
 
-# Key bindings
+# key bindings and constants
 BINDINGS = [("q", "quit", "Quit")]
 TITLE = "My Custom Flow Viewer"
 SUB_TITLE = "Analyse and Debug Network Flows"

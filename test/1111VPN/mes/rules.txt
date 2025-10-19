@@ -1,5 +1,0 @@
-host:"content-autofill.googleapis.com",host:"hbopenbid.pubmatic.com"@
-host:"s.mzstatic.com"@
-host:"btlr.sharethrough.com"@
-host:"pubgw.yahoo.com",host:"secure-us.imrworldwide.com"@
-host:"prebid.media.net"@

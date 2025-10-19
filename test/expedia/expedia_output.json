@@ -23,9 +23,7 @@
             "79 <-> 220",
             "112 <-> 115",
             "38 <-> 46"
-        ],
-        "ja4": "a09f3c656075_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -46,9 +44,7 @@
         "exchanged_packets": [
             "1285 <-> 16603",
             "17 <-> 17"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -71,9 +67,7 @@
             "172 <-> 6134",
             "124 <-> 1099",
             "32 <-> 59"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1014,9 +1008,7 @@
             "19 <-> 18",
             "19 <-> 18",
             "17 <-> 18"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1038,9 +1030,7 @@
             "366 <-> 3895",
             "137 <-> 435",
             "40 <-> 71"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1066,9 +1056,7 @@
             "99 <-> 54",
             "57 <-> 32",
             "44 <-> 36"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1089,9 +1077,7 @@
         "exchanged_packets": [
             "135 <-> 1291",
             "103 <-> 443"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1111,9 +1097,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "142 <-> 838"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1133,9 +1117,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "272 <-> 771"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1155,9 +1137,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "229 <-> 743"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1177,9 +1157,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "176 <-> 652"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1204,9 +1182,7 @@
             "25 <-> 51",
             "20 <-> 26",
             "14 <-> 15"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1233,9 +1209,7 @@
             "90 <-> 61",
             "18 <-> 18",
             "21 <-> 17"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1255,9 +1229,27 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "54 <-> 257"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.126/HTTP_Connect.Google",
+        "url": "securepubads.g.doubleclick.net:443",
+        "plain_text": "CONNECT securepubads.g.doublecl",
+        "sni": "securepubads.g.doubleclick.net",
+        "ip_source": "192.168.0.86",
+        "port_source": "49850",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "95 <-> 182"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1277,9 +1269,27 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "105 <-> 185"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.239/HTTP_Connect.GoogleServices",
+        "url": "maps.googleapis.com:443",
+        "plain_text": "CONNECT maps.googleapis.com",
+        "sni": "maps.googleapis.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "49661",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "95 <-> 175"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1300,9 +1310,28 @@
         "exchanged_packets": [
             "61 <-> 125",
             "19 <-> 24"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.119/HTTP_Connect.Facebook",
+        "url": "connect.facebook.net:443",
+        "plain_text": "59CONNECT connect.facebook.net",
+        "sni": "connect.facebook.net",
+        "ip_source": "192.168.0.86",
+        "port_source": "49841",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "58 <-> 100",
+            "59 <-> 102"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1322,9 +1351,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "67 <-> 98"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1347,9 +1374,7 @@
             "22 <-> 33",
             "18 <-> 21",
             "15 <-> 18"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1370,9 +1395,7 @@
         "exchanged_packets": [
             "79 <-> 78",
             "20 <-> 26"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1392,9 +1415,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "27 <-> 55"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1420,9 +1441,7 @@
             "18 <-> 17",
             "16 <-> 17",
             "6 <-> 6"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1442,9 +1461,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "24 <-> 53"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1464,9 +1481,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "48 <-> 64"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1486,9 +1501,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "31 <-> 50"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1508,9 +1521,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "27 <-> 41"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1531,9 +1542,7 @@
         "exchanged_packets": [
             "24 <-> 46",
             "23 <-> 41"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1553,9 +1562,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "28 <-> 43"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1575,9 +1582,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "29 <-> 44"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1597,9 +1602,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "59 <-> 47"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1630,9 +1633,7 @@
             "16 <-> 18",
             "14 <-> 16",
             "14 <-> 16"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "e54965894d6b45ecb4323c7ea3d6c115"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1652,9 +1653,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "30 <-> 45"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1674,9 +1673,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "25 <-> 39"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1696,9 +1693,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "48 <-> 54"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1718,9 +1713,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "32 <-> 37"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1742,9 +1735,27 @@
             "21 <-> 38",
             "16 <-> 16",
             "16 <-> 16"
-        ],
-        "ja4": "a09f3c656075_14788d8d241b",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.126/HTTP_Connect.Google",
+        "url": "www.google-analytics.com:443",
+        "plain_text": "CONNECT www.google",
+        "sni": "www.google-analytics.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "49710",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "22 <-> 33"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1764,9 +1775,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "22 <-> 29"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1787,9 +1796,7 @@
         "exchanged_packets": [
             "21 <-> 17",
             "11 <-> 13"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1809,9 +1816,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "25 <-> 32"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1831,9 +1836,111 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "18 <-> 25"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "e54965894d6b45ecb4323c7ea3d6c115"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130/HTTP_Connect",
+        "url": "att.conversions.appsflyersdk.com:443",
+        "plain_text": "CONNECT att.conversions.appsfly",
+        "sni": "att.conversions.appsflyersdk.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "65052",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "25 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.126/HTTP_Connect.Google",
+        "url": "53716c4d324d7a33e471746314e82094.safeframe.googlesyndication.com:443",
+        "plain_text": "CONNECT 53716",
+        "sni": "53716c4d324d7a33e471746314e82094.safeframe.googlesyndication.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "49865",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "24 <-> 29"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130/HTTP_Connect",
+        "url": "att.attr.appsflyersdk.com:443",
+        "plain_text": "CONNECT att.attr.appsflyersdk.c",
+        "sni": "att.attr.appsflyersdk.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "65055",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "25 <-> 19"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.126/HTTP_Connect.Google",
+        "url": "region1.google-analytics.com:443",
+        "plain_text": "CONNECT region1.google",
+        "sni": "region1.google-analytics.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "49897",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "31 <-> 32",
+            "19 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130/HTTP_Connect",
+        "url": "www.trvl-px.com:443",
+        "plain_text": "CONNECT www.trvl",
+        "sni": "www.trvl-px.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "49849",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "25 <-> 29",
+            "20 <-> 22",
+            "16 <-> 19",
+            "17 <-> 18"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1857,9 +1964,7 @@
             "23 <-> 23",
             "17 <-> 18",
             "19 <-> 19"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1879,34 +1984,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "17 <-> 18"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130/HTTP_Connect",
-        "url": "mcbnck8rxcs7cyrnvfcfd43796q0.device.marketingcloudapis.com:443",
-        "plain_text": "CONNECT mcbnck8",
-        "sni": "mcbnck8rxcs7cyrnvfcfd43796q0.device.marketingcloudapis.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "65075",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **** Susp DGA Domain name **** Susp Entropy **",
-        "risk_score": "260",
-        "risk_info": "Entropy: 5.121 (Executable?) / mcbnck8rxcs7cyrnvfcfd43796q0.device.marketingcloudapis.com / Empty or missing User-Agent / Expe",
-        "similar_flows_count": 4,
-        "exchanged_packets": [
-            "16 <-> 18",
-            "15 <-> 16",
-            "15 <-> 16",
-            "13 <-> 12"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "e54965894d6b45ecb4323c7ea3d6c115"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1927,9 +2005,7 @@
         "exchanged_packets": [
             "19 <-> 20",
             "13 <-> 15"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1950,9 +2026,7 @@
         "exchanged_packets": [
             "21 <-> 21",
             "18 <-> 19"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1974,9 +2048,27 @@
             "21 <-> 22",
             "21 <-> 22",
             "19 <-> 21"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "configuration.apple.com:443",
+        "plain_text": "CONNECT configuration.apple.com",
+        "sni": "configuration.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "65240",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 17"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -1996,9 +2088,28 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "15 <-> 15"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "ca.iadsdk.apple.com:443",
+        "plain_text": "CONNECT ca.iadsdk.apple.com",
+        "sni": "ca.iadsdk.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "65034",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "18 <-> 18",
+            "18 <-> 18"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2019,9 +2130,27 @@
         "exchanged_packets": [
             "20 <-> 21",
             "14 <-> 16"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "api-adservices.apple.com:443",
+        "plain_text": ".CONNECT api",
+        "sni": "api-adservices.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "65043",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "20 <-> 20"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2042,9 +2171,7 @@
         "exchanged_packets": [
             "18 <-> 19",
             "13 <-> 14"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2064,9 +2191,26 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "18 <-> 19"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130/HTTP_Connect",
+        "url": "www.expedia.com:443",
+        "plain_text": "ACONNECT www.expedia.com",
+        "sni": "www.expedia.com",
+        "ip_source": "192.168.0.21",
+        "port_source": "9000",
+        "ip_destination": "192.168.0.86",
+        "port_destination": "65205",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 18"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2087,9 +2231,7 @@
         "exchanged_packets": [
             "19 <-> 20",
             "15 <-> 17"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2109,9 +2251,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "18 <-> 18"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2131,9 +2271,47 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "17 <-> 17"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130/HTTP_Connect",
+        "url": "yclqkn.dynamic-report-api.appsflyersdk.com:443",
+        "plain_text": "CONNECT ycl",
+        "sni": "yclqkn.dynamic-report-api.appsflyersdk.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "65021",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "stocks-data-service.apple.com:443",
+        "plain_text": "CONNECT stocks",
+        "sni": "stocks-data-service.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "65444",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 15"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2153,9 +2331,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "18 <-> 17"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2176,9 +2352,47 @@
         "exchanged_packets": [
             "18 <-> 20",
             "19 <-> 17"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130/HTTP_Connect",
+        "url": "yclqkn.dynamic-config-api.appsflyersdk.com:443",
+        "plain_text": "XCONNECT yclq",
+        "sni": "yclqkn.dynamic-config-api.appsflyersdk.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "65054",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130/HTTP_Connect",
+        "url": "yclqkn.skadsdk.appsflyersdk.com:443",
+        "plain_text": "ACONNECT yclq",
+        "sni": "yclqkn.skadsdk.appsflyersdk.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "65031",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **** Susp DGA Domain name **",
+        "risk_score": "250",
+        "risk_info": "yclqkn.skadsdk.appsflyersdk.com / Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 18"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2199,9 +2413,7 @@
         "exchanged_packets": [
             "18 <-> 20",
             "13 <-> 15"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2221,9 +2433,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "19 <-> 19"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2244,9 +2454,7 @@
         "exchanged_packets": [
             "16 <-> 17",
             "12 <-> 14"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2266,9 +2474,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "15 <-> 15"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "50a9e7b112931e541503e8a2499252b9"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2289,9 +2495,27 @@
         "exchanged_packets": [
             "17 <-> 17",
             "13 <-> 13"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "50a9e7b112931e541503e8a2499252b9"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "configuration.ls.apple.com:443",
+        "plain_text": "CONNECT configuration.ls.apple.",
+        "sni": "configuration.ls.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "65242",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 17"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2312,9 +2536,27 @@
         "exchanged_packets": [
             "16 <-> 17",
             "12 <-> 14"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.140/HTTP_Connect.Apple",
+        "url": "mesu.apple.com:443",
+        "plain_text": "CONNECT mesu.apple.com",
+        "sni": "mesu.apple.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "49351",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_0_d29295416479/iOS/iPad",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 14"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2334,9 +2576,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "13 <-> 14"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2356,9 +2596,7 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "13 <-> 14"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8"
+        ]
     },
     {
         "ip_field": "0/Unknown",
@@ -2378,9 +2616,27 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "14 <-> 16"
-        ],
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "ja3s": "15af977ce25de452b96affa2addb1036"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130.239/HTTP_Connect.GoogleServices",
+        "url": "proxy-safebrowsing.googleapis.com:443",
+        "plain_text": "CONNECT proxy",
+        "sni": "proxy-safebrowsing.googleapis.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "49656",
+        "ip_destination": "2.18.79.72",
+        "port_destination": "80",
+        "tcp_fingerprint": "194_64_0_d29295416479/iOS/iPad",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 13"
+        ]
     },
     {
         "ip_field": "0/Unknown",

@@ -2,6 +2,24 @@
     {
         "ip_field": "220/Cloudflare",
         "transport_protocol": "TCP",
+        "proto_field": "7.251/HTTP.WebSocket",
+        "url": "ptitunnel.ptisupporterteam.xyz/",
+        "user_agent": "[ua",
+        "plain_text": "GET / HTTP/1.1",
+        "sni": "ptitunnel.ptisupporterteam.xyz",
+        "ip_source": "192.168.80.96",
+        "port_source": "62377",
+        "ip_destination": "172.67.146.149",
+        "port_destination": "80",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "7486 <-> 14474"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
@@ -20,54 +38,28 @@
         ]
     },
     {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "142.250.180.138",
-        "dns_id": "0x2101",
-        "plain_text": "firebaseinappmessaging",
-        "sni": "firebaseinappmessaging.googleapis.com",
+        "ip_field": "276/Azure",
+        "transport_protocol": "TCP",
+        "proto_field": "91.221/TLS.MS_OneDrive",
+        "tls_version": "TLSv1.2",
+        "ja3s": "ae4edc6faf64d08308082ad26be60767",
+        "ja4": "t12d180700_4b22cbed5bed_2dae41c691ec",
+        "servernames": "*.wns.windows.com",
+        "issuer": "C=US, O=Microsoft Corporation, CN=Microsoft Azure RSA TLS Issuing CA 07",
+        "subject": "C=US, ST=WA, L=Redmond, O=Microsoft Corporation, CN=*.wns.windows.com",
+        "certificate": "SHA-1: 3C:2D:E7:70:E0:8E:5F:E6:F3:01:81:E7:04:F5:13:3F:24:5F:C3:EB",
+        "sni": "client.wns.windows.com",
         "ip_source": "192.168.80.96",
-        "port_source": "59735",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
+        "port_source": "49417",
+        "ip_destination": "4.207.247.138",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "12 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "142.250.180.170",
-        "dns_id": "0x8c8f",
-        "plain_text": "firebaseinstallations",
-        "sni": "firebaseinstallations.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "55032",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "13 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "104.21.35.164",
-        "dns_id": "0x22a7",
-        "plain_text": "ptisupporterteam",
-        "sni": "ptisupporterteam.xyz",
-        "ip_source": "192.168.80.96",
-        "port_source": "59264",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 11"
+            "13 <-> 12"
         ]
     }
 ]

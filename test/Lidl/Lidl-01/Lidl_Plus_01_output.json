@@ -78,6 +78,28 @@
     {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
+        "proto_field": "91.266/TLS.Salesforce",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "lidleu.my.salesforce.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63523",
+        "ip_destination": "85.222.142.10",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 5,
+        "exchanged_packets": [
+            "83 <-> 84",
+            "11 <-> 8",
+            "11 <-> 8",
+            "11 <-> 8",
+            "11 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.2",
         "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
@@ -292,6 +314,40 @@
     },
     {
         "ip_field": "284/GoogleCloud",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "sni": "asset.schwarz",
+        "ip_source": "192.168.80.96",
+        "port_source": "63547",
+        "ip_destination": "34.120.152.173",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0312h0_55b375c5d22e_5a06198afb93",
+        "quic_version": "V-1",
+        "sni": "asset.schwarz",
+        "ip_source": "192.168.80.96",
+        "port_source": "63551",
+        "ip_destination": "34.120.152.173",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "7 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
@@ -306,6 +362,22 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "12 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "sni": "www.lidl.it",
+        "risk": "** Unidirectional Traffic **",
+        "risk_score": "10",
+        "risk_info": "No server to client traffic",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "6 <-> 0"
         ]
     },
     {

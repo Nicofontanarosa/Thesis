@@ -1,1 +1,7 @@
-host:"account2.hoxx.com"@Not disclosed
+host:"account2.hoxx.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"account2.hoxx.com"@
+
+--------------------------------------------------------------

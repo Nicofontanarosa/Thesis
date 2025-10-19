@@ -1,5 +1,0 @@
-host:"dit.whatsapp.net",host:"graph.whatsapp.com"@whois: whatsapp llc & AI: unknown
-host:"tiktokv.com"@whois: tiktok ltd & AI: unknown
-host:"client-api.itunes.apple.com"@whois: apple inc. & AI: unknown
-host:"clientservices.googleapis.com"@whois:  & AI: unknown
-host:"split.io"@whois: unknown & AI: unknown

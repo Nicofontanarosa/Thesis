@@ -1,4 +1,0 @@
->> Intersection of top 50% temporal & frequency rankings:
-
- + SNI: sdk.split.io
- + SNI: api.termius.com

@@ -1,0 +1,189 @@
+[
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "t13d1913h2_9dc949149365_6e36e74388e1",
+        "ip_source": "192.168.1.52",
+        "port_source": "62845",
+        "ip_destination": "74.82.60.58",
+        "port_destination": "58240",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **",
+        "risk_score": "150",
+        "risk_info": "h2 / SNI should always be present / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "3685 <-> 4670"
+        ]
+    },
+    {
+        "ip_field": "276/Azure",
+        "transport_protocol": "TCP",
+        "proto_field": "91.219/TLS.Microsoft365",
+        "tls_version": "TLSv1.2",
+        "ja3s": "d7e12962b60127bdbe4f65f39221f9e8",
+        "ja4": "t12d1809h2_4b22cbed5bed_7af1ed941c26",
+        "sni": "nexus.officeapps.live.com",
+        "ip_source": "192.168.1.52",
+        "port_source": "53484",
+        "ip_destination": "13.107.213.60",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "41 <-> 22"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "sni": "beacons.gvt2.com",
+        "ip_source": "192.168.1.52",
+        "port_source": "62838",
+        "ip_destination": "192.178.204.94",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "10 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "api.revenuecat.com",
+        "ip_source": "192.168.1.52",
+        "port_source": "62870",
+        "ip_destination": "3.165.255.3",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "12 <-> 13",
+            "10 <-> 8",
+            "10 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja4": "t13d1912h2_9dc949149365_ae524846d7cc",
+        "ip_source": "192.168.1.52",
+        "port_source": "62844",
+        "ip_destination": "74.82.60.58",
+        "port_destination": "58240",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **",
+        "risk_score": "150",
+        "risk_info": "h2 / SNI should always be present / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.212/TLS.Microsoft",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1911h2_9dc949149365_143984610e49",
+        "sni": "download.microsoft.com",
+        "ip_source": "192.168.1.52",
+        "port_source": "62841",
+        "ip_destination": "9.9.9.11",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.2",
+        "ja4": "t13d1517h2_8daaf6152771_b6f405a00624",
+        "sni": "beacons.gvt2.com",
+        "ip_source": "192.168.1.52",
+        "port_source": "62835",
+        "ip_destination": "192.178.204.94",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1912h2_9dc949149365_ae524846d7cc",
+        "ip_source": "192.168.1.52",
+        "port_source": "62846",
+        "ip_destination": "65.49.68.27",
+        "port_destination": "60612",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **",
+        "risk_score": "150",
+        "risk_info": "h2 / SNI should always be present / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "firebaseremoteconfigrealtime.googleapis.com",
+        "ip_source": "192.168.1.52",
+        "port_source": "62836",
+        "ip_destination": "142.250.180.138",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "t13d1912h2_9dc949149365_ae524846d7cc",
+        "ip_source": "192.168.1.52",
+        "port_source": "62843",
+        "ip_destination": "65.49.2.63",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Missing SNI TLS Extn **** ALPN/SNI Mismatch **",
+        "risk_score": "100",
+        "risk_info": "h2 / SNI should always be present",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 13"
+        ]
+    }
+]

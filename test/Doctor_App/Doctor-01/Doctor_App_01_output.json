@@ -45,108 +45,39 @@
         ]
     },
     {
-        "ip_field": "220/Cloudflare",
+        "ip_field": "126/Google",
         "transport_protocol": "UDP",
-        "proto_field": "188/QUIC",
+        "proto_field": "188.239/QUIC.GoogleServices",
         "tls_version": "TLSv1.3",
         "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
         "quic_version": "V-1",
-        "plain_text": "BmPRdH5",
-        "sni": "cdn.jsdelivr.net",
+        "plain_text": "71XLMY",
+        "sni": "content-autofill.googleapis.com",
         "ip_source": "192.168.80.96",
-        "port_source": "63810",
-        "ip_destination": "104.16.174.226",
+        "port_source": "63824",
+        "ip_destination": "216.58.209.42",
         "port_destination": "443",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "13 <-> 14"
+            "10 <-> 13"
         ]
     },
     {
-        "ip_field": "220/Cloudflare",
+        "ip_field": "126/Google",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
+        "proto_field": "91.239/TLS.GoogleServices",
         "tls_version": "TLSv1.3",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
         "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "cdn.jsdelivr.net",
+        "sni": "content-autofill.googleapis.com",
         "ip_source": "192.168.80.96",
-        "port_source": "63811",
-        "ip_destination": "104.16.174.226",
+        "port_source": "63814",
+        "ip_destination": "216.58.209.42",
         "port_destination": "443",
         "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "15 <-> 14",
-            "15 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "216.58.204.234",
-        "dns_id": "0x93dd",
-        "plain_text": "firebaseinstallations",
-        "sni": "firebaseinstallations.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "62935",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "10 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "142.251.209.10",
-        "dns_id": "0x4cde",
-        "plain_text": "googleapis",
-        "sni": "fonts.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "58812",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "7 <-> 7"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "0.0.0.0",
-        "dns_id": "0x347a",
-        "plain_text": "optimizationguide",
-        "sni": "optimizationguide-pa.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "62148",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "2 <-> 2"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "162.19.31.184",
-        "dns_id": "0x5fa6",
-        "plain_text": "doctorapp",
-        "sni": "api.doctorapp.it",
-        "ip_source": "192.168.80.96",
-        "port_source": "60761",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "2 <-> 1"
+            "20 <-> 20"
         ]
     }
 ]

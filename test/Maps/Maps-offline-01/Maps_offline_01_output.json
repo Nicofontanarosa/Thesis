@@ -1,5 +1,41 @@
 [
     {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "mWzeCRoq8",
+        "sni": "rr4---sn-hpa7kn76.offline-maps.gvt1.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61903",
+        "ip_destination": "74.125.99.137",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "955 <-> 8519"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "/0jUfy",
+        "sni": "rr1---sn-uv2pm-ugol.offline-maps.gvt1.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61901",
+        "ip_destination": "194.116.104.8",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "875 <-> 6996"
+        ]
+    },
+    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91.126/TLS.Google",
@@ -15,6 +51,45 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "3099 <-> 5742"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "xDou3 ",
+        "sni": "rr2---sn-uv2pm-ugol.offline-maps.gvt1.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61902",
+        "ip_destination": "194.116.104.9",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "12 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "ja4": "t13d201200_2b729b4bf6f3_89322cc15493",
+        "sni": "dsadata.intel.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "52030",
+        "ip_destination": "83.224.69.211",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "6 <-> 6"
         ]
     }
 ]

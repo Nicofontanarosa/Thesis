@@ -1,2 +1,0 @@
-host:"connect.mail.ru"@whois: obshchestvo s ogranichennoy otvetstvennostu vk & AI: unknown
-host:"split.io"@whois: unknown & AI: unknown

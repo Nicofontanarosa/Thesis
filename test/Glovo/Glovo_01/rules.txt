@@ -1,2 +1,7 @@
 host:"api.glovoapp.com",host:"glovo.dhmedia.io"@
-host:"mparticle.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"api.glovoapp.com",host:"glovo.dhmedia.io"@
+
+--------------------------------------------------------------

@@ -1,0 +1,7 @@
+host:"api.entclass.tech",host:"code.jquery.com",host:"unity3d.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"api.entclass.tech",host:"code.jquery.com",host:"unity3d.com"@
+
+--------------------------------------------------------------

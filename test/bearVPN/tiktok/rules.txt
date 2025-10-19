@@ -1,2 +1,0 @@
-host:"api.termius.com"@whois: identity protection service & AI: unknown
-host:"alive.github.com"@whois: github, inc. & AI: unknown

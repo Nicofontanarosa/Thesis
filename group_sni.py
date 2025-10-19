@@ -1,6 +1,11 @@
 
+#################################################################
+# File: group_sni.py to merge clusters
+#################################################################
+
 def group_sni(cluster):
-    # Extract the SNI list from the cluster
+    
+    # extract the SNI list from the cluster
     sni_list = cluster["sni_list"]
 
     # If the SNI list is empty, return the cluster as is
@@ -8,11 +13,11 @@ def group_sni(cluster):
         return cluster
     
     groups = []
-    # Get a sorted list of unique SNIs
+    # get a sorted list of unique SNIs
     unique_sni = sorted(set(sni_list))
 
     while unique_sni:
-        # Take the first SNI as the base for comparison
+        # take the first SNI as the base for comparison
         base = unique_sni.pop(0)
         base_parts = base.split(".")
         common = [base]
@@ -21,19 +26,19 @@ def group_sni(cluster):
         for sni in unique_sni:
             parts = sni.split(".")
 
-            # Find common suffix from the end
+            # find common suffix from the end
             i = 1
             while i <= min(len(base_parts), len(parts)) and base_parts[-i] == parts[-i]:
                 i += 1
             common_suffix = ".".join(base_parts[-(i-1):]) if i > 1 else None
 
-            # If at least domain + TLD are common
+            # if at least domain + TLD are common
             if common_suffix and common_suffix.count(".") >= 1:
                 common.append(sni)
             else:
                 remaining.append(sni)
 
-        # Calculate effective base domain if more than one in common
+        # calculate effective base domain if more than one in common
         if len(common) > 1:
             common_parts = [c.split(".") for c in common]
             min_len = min(len(p) for p in common_parts)
@@ -45,19 +50,21 @@ def group_sni(cluster):
         else:
             groups.append(base)
 
-        # Update the list with remaining SNIs
+        # update the list with remaining SNIs
         unique_sni = remaining
 
-    # Update the cluster's sni_list with grouped SNIs
+    # update the cluster's sni_list with grouped SNIs
     cluster["sni_list"] = groups
     return cluster
 
 def merge_clusters(clusters: list) -> list:
 
-    # Group SNIs within each cluster
+    # group SNIs within each cluster
     clusters = [group_sni(c) for c in clusters]
 
-    # Sort clusters by descending length of sni_list
+    #print(f"\n[DEBUG] 1 Merged Cluster: {clusters}")
+
+    # sort clusters by descending length of sni_list (IMPORTANT)
     clusters.sort(key=lambda c: len(c["sni_list"]), reverse=True)
 
     i = 0
@@ -67,47 +74,61 @@ def merge_clusters(clusters: list) -> list:
         while j < len(clusters):
             small_cluster = clusters[j]
 
-            # Try merging only if both clusters have SNIs
+            # try merging only if both clusters have SNIs
             if not large_cluster["sni_list"] or not small_cluster["sni_list"]:
                 j += 1
                 continue
 
-            # Combine the SNI lists from the large and small clusters
-            union = {
-                "sni_list": large_cluster["sni_list"] + small_cluster["sni_list"]
-            }
-            # Group the combined SNI list
+            # combine the SNI lists from the large and small clusters
+            union = {"sni_list": large_cluster["sni_list"] + small_cluster["sni_list"]}
+            # group the combined SNI list
             grouped_union = group_sni(union)
 
-            # If grouping reduces the total number of SNIs
-            if len(grouped_union["sni_list"]) < (
-                len(large_cluster["sni_list"]) + len(small_cluster["sni_list"])
-            ):
+            # if grouping reduces the total number of SNIs
+            if len(grouped_union["sni_list"]) < (len(large_cluster["sni_list"]) + len(small_cluster["sni_list"])):
                 reduced = set(grouped_union["sni_list"])
-
-                #print(f"\n{reduced}\n\n{large_cluster['sni_list']}\n\n{small_cluster['sni_list']}\n\n")
-
+                
                 new_large = []
                 for s in large_cluster["sni_list"]:
-                    # Check if each SNI in the large cluster has been reduced
+                    # check if each SNI in the large cluster has been reduced
                     matches = [r for r in reduced if s.endswith(r)]
                     if matches:
-                        # Replace with the reduced SNI
+                        # replace with the reduced SNI
                         new_large.append(matches[0])
                     else:
-                        # Keep original SNI
+                        # keep original SNI
                         new_large.append(s)
                 large_cluster["sni_list"] = sorted(set(new_large))
 
-                # Remove from small cluster SNIs absorbed by the large cluster
+                # remove from small cluster SNIs absorbed by the large cluster
                 small_cluster["sni_list"] = [
                     s for s in small_cluster["sni_list"]
                     if not any(r in reduced and s.endswith(r) for r in reduced)
                 ]
 
+                # sum flow_count and packets from small to large cluster
+                large_cluster["flow_count"] += small_cluster.get("flow_count", 0)
+                large_cluster["packets"] += small_cluster.get("packets", 0)
+                small_cluster["flow_count"] = 0
+                small_cluster["packets"] = 0
+
             j += 1
         i += 1
 
-    # Remove empty clusters
-    clusters = [c for c in clusters if c["sni_list"]]
+    # --- Remove clusters that have no SNI, no JA4, and no certificate ---
+    def has_useful_data(cluster):
+        if cluster.get("sni_list"):
+            return True
+        if cluster.get("ja4"):
+            return True
+        cert_values = [v for k, v in cluster.get("certificate", []) if v is not None]
+        if cert_values:
+            return True
+        return False
+
+    clusters = [c for c in clusters if has_useful_data(c)]
     return clusters
+
+#################################################################
+# End of group_sni.py
+#################################################################

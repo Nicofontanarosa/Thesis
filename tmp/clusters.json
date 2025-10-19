@@ -1,0 +1,29 @@
+[
+    {
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "8daaf6152771_d8a2da3f94cd",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "warframe.market"
+        ],
+        "flow_count": 96,
+        "packets": 3165
+    }
+]

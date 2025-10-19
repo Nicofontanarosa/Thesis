@@ -1,1 +1,7 @@
 host:"api.marinobus.it"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"api.marinobus.it"@
+
+--------------------------------------------------------------

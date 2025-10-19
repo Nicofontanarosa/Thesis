@@ -1,2 +1,0 @@
-host:"api.termius.com"@
-host:"split.io"@

@@ -1,4 +1,7 @@
-host:"pubsub.googleapis.com"@Unknown
-host:"api.mariokarttour.com"@Mario kart tour api
-host:"a6913b7b80402974409b47079c29d775.baas.nintendo.com"@Nintendo traffic monitor
-host:"sessions.bugsnag.com"@Bugsnag inc.
+host:"api.mariokarttour.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"api.mariokarttour.com"@
+
+--------------------------------------------------------------

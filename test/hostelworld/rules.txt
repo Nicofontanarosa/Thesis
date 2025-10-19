@@ -1,2 +1,7 @@
 host:"a.hwstatic.com"@
-host:"prod.apigee.hostelworld.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"a.hwstatic.com"@
+
+--------------------------------------------------------------

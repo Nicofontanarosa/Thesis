@@ -1,2 +1,0 @@
-host:"rum20.perf.linkedin.com"@Linkedin corporation
-host:"perseus-productanalytics.deliveryhero.net"@Delivery hero se

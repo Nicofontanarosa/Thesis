@@ -4,6 +4,27 @@
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1511h2_8daaf6152771_40271e0a5736",
+        "ip_source": "192.168.70.96",
+        "port_source": "61765",
+        "ip_destination": "144.76.154.14",
+        "port_destination": "432",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **",
+        "risk_score": "150",
+        "risk_info": "h2 / SNI should always be present / Expected on port 443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "15 <-> 17",
+            "18 <-> 18"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
         "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
         "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
         "sni": "api.hide.me",
@@ -16,26 +37,6 @@
         "exchanged_packets": [
             "10 <-> 9",
             "9 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "144.76.154.16",
-        "dns_id": "0x5a32",
-        "plain_text": "myipstack",
-        "sni": "free-de-v4.hideservers.net",
-        "ip_source": "192.168.70.96",
-        "port_source": "58777",
-        "ip_destination": "192.168.70.69",
-        "port_destination": "53",
-        "risk": "** Error Code **** Minor Issues **",
-        "risk_score": "20",
-        "risk_info": "DNS Record with zero TTL / DNS Error Code NXDOMAIN",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "8 <-> 8"
         ]
     },
     {
@@ -54,23 +55,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "4 <-> 3"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "151.5.24.33",
-        "dns_id": "0x9c9f",
-        "plain_text": "msftncsi",
-        "sni": "www.msftncsi.com",
-        "ip_source": "192.168.70.96",
-        "port_source": "51359",
-        "ip_destination": "192.168.70.69",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
         ]
     }
 ]

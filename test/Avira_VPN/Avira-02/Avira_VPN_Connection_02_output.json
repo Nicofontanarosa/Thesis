@@ -116,22 +116,5 @@
         "exchanged_packets": [
             "11 <-> 11"
         ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "157.240.203.14",
-        "dns_id": "0xb87f",
-        "plain_text": "facebook",
-        "sni": "graph.facebook.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "56344",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "4 <-> 4"
-        ]
     }
 ]

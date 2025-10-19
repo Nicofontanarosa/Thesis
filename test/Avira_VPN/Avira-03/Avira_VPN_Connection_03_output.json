@@ -139,56 +139,5 @@
         "exchanged_packets": [
             "9 <-> 7"
         ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "108.177.119.188",
-        "dns_id": "0x7d3b",
-        "plain_text": "google",
-        "sni": "mtalk.google.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "50949",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "3 <-> 3"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "157.240.203.14",
-        "dns_id": "0xb371",
-        "plain_text": "facebook",
-        "sni": "graph.facebook.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "49258",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "2 <-> 2"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "3.126.169.100",
-        "dns_id": "0xa2de",
-        "plain_text": "phantom",
-        "sni": "api.phantom.avira-vpn.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "56344",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
     }
 ]

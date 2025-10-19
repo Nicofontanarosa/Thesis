@@ -1,0 +1,7 @@
+ja4:9dc949149365_6e36e74388e1@
+
+>> To add this rule based on JA4:
+   [+] Open `nDPI/example/protos.txt`
+   [+] Paste the following rule: ja4:9dc949149365_6e36e74388e1@
+
+--------------------------------------------------------------

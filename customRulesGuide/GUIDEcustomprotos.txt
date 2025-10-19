@@ -47,23 +47,11 @@
 
 # VINTED Sample
 #ip:www.vinted.fr@Vinted
-#ip:vintedapp.com@Vinted
-#ip:104.18.120.232@Vinted
-#ip:3.165.239.126:443@Vinted
-#ip:34.102.162.219:443@Vinted
-#ip:108.157.194.66:443@Vinted
-#ip:104.16.207.80:443@Vinted
-#ip:34.110.179.88:443@Vinted
-#ip:34.117.147.68:443@Vinted
-#ip:34.111.80.193:443@Vinted
-#ip:104.17.195.159:443@Vinted
 #host:"applovin.com",host:"applovin.com",host:"vinted.net",host:"www.vinted.fr",host:"vinted.com"@Vinted,cat=27,breed=2
 
 #################################################################
 # End of complete example file
 #################################################################
-
-host:"api.glovoapp.com",host:"glovo.dhmedia.io"@Glovo
 
 #################################################################
 # Breed

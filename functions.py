@@ -69,18 +69,53 @@ def normalize_ja4(ja4: str) -> str:
 
 # -------------------------------------------
 
-def filter_top_clusters(clusters, total_packets):
+def filter_top_clusters(final_flows, clusters, total_packets):
 
     # keep only clusters that contribute at least TOP_PERCENT of packets
     pkt_threshold = total_packets * constants.TOP_PERCENT
 
-    print(f"\n[DEBUG] Threshold: {pkt_threshold}")
+    print(f"\n[DEBUG] Cluster threshold (packets): {pkt_threshold}")
 
-    filtered_clusters = [
-        cluster for cluster in clusters
-        if cluster.get("packets", 0) >= pkt_threshold
-    ]
+    # Step 1: Build a global dictionary {sni: total_packets}
+    sni_packet_count = {}
+    for flow in final_flows:
+        sni = flow.get("sni")
+        if not sni:
+            continue
+        else:
+            sni = sni.lower()
+        exchanged = flow.get("exchanged_packets", [])
 
+        pkt_count = 0
+        for exch in exchanged:
+            if "<->" in exch:
+                left, right = exch.split("<->")
+                try:
+                    pkt_count += int(left.strip()) + int(right.strip())
+                except ValueError:
+                    continue
+
+        sni_packet_count[sni] = sni_packet_count.get(sni, 0) + pkt_count
+
+    # Keep only SNIs that exceed the packet threshold
+    top_snis = {sni for sni, pkt in sni_packet_count.items() if pkt >= pkt_threshold}
+
+    print(f"[DEBUG] Top SNIs: {top_snis}")
+
+    # Step 3: Filter clusters and keep only top SNIs
+    filtered_clusters = []
+    for cluster in clusters:
+        if cluster.get("packets", 0) >= pkt_threshold:
+            snis = cluster.get("sni_list", [])
+            top_cluster_snis = [sni for sni in snis if sni in top_snis]
+
+            # Keep cluster only if it still contains valid top SNIs
+            if top_cluster_snis:
+                new_cluster = cluster.copy()
+                new_cluster["sni_list"] = top_cluster_snis
+                filtered_clusters.append(new_cluster)
+
+    print(f"[DEBUG] Final top clusters: {len(filtered_clusters)}")
     return filtered_clusters
 
 # -------------------------------------------
@@ -444,7 +479,7 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
     config.log_message(final_flows, log_file_filtered_flows)
 
     # keep only the clusters above the threshold (IMPORTANT)
-    top_clusters = filter_top_clusters(sni_to_use, total_packets)
+    top_clusters = filter_top_clusters(final_flows, sni_to_use, total_packets)
 
     # save the final merged data to a JSON file
     with open("tmp/clusters.json", "w", encoding="utf-8") as f:

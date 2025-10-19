@@ -21,71 +21,9 @@
             ]
         ],
         "sni_list": [
-            "a.audrte.com",
-            "ad-delivery.net",
-            "adsrvr.org",
-            "beacons.gcp.gvt2.com",
-            "btloader.com",
-            "c.bannerflow.net",
-            "content-autofill.googleapis.com",
-            "criteo.com",
-            "hbopenbid.pubmatic.com",
-            "indexww.com",
-            "media.net",
-            "nitropay.com",
-            "pixels.ad.gt",
-            "quantserve.com",
-            "redirect.frontend.weborama.fr",
-            "region1.google-analytics.com",
-            "securepubads.g.doubleclick.net",
-            "sync.a-mo.net",
-            "sync.aniview.com",
-            "warframe.market",
-            "wt.rqtrk.eu"
+            "warframe.market"
         ],
         "flow_count": 96,
         "packets": 3165
-    },
-    {
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "8daaf6152771_d8a2da3f94cd",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "ad-score.com",
-            "adsafeprotected.com",
-            "bh.contextweb.com",
-            "cookie-matching.mediarithmics.com",
-            "cs.krushmedia.com",
-            "ftstatic.com",
-            "id5-sync.com",
-            "lijit.com",
-            "onetag-sys.com",
-            "s.c.appier.net",
-            "semasio.net",
-            "sharethrough.com",
-            "sync.1rx.io",
-            "sync.serverbid.com",
-            "sync.targeting.unrulymedia.com",
-            "sync.teads.tv"
-        ],
-        "flow_count": 30,
-        "packets": 1042
     }
 ]

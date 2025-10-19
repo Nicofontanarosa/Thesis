@@ -1,14 +1,7 @@
-host:"a.audrte.com",host:"ad-delivery.net",host:"adsrvr.org",host:"beacons.gcp.gvt2.com",host:"btloader.com",host:"c.bannerflow.net",host:"content-autofill.googleapis.com",host:"criteo.com",host:"hbopenbid.pubmatic.com",host:"indexww.com",host:"media.net",host:"nitropay.com",host:"pixels.ad.gt",host:"quantserve.com",host:"redirect.frontend.weborama.fr",host:"region1.google-analytics.com",host:"securepubads.g.doubleclick.net",host:"sync.a-mo.net",host:"sync.aniview.com",host:"warframe.market",host:"wt.rqtrk.eu"@
+host:"warframe.market"@
 
 >> To add this rule based on SNI:
    [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"a.audrte.com",host:"ad-delivery.net",host:"adsrvr.org",host:"beacons.gcp.gvt2.com",host:"btloader.com",host:"c.bannerflow.net",host:"content-autofill.googleapis.com",host:"criteo.com",host:"hbopenbid.pubmatic.com",host:"indexww.com",host:"media.net",host:"nitropay.com",host:"pixels.ad.gt",host:"quantserve.com",host:"redirect.frontend.weborama.fr",host:"region1.google-analytics.com",host:"securepubads.g.doubleclick.net",host:"sync.a-mo.net",host:"sync.aniview.com",host:"warframe.market",host:"wt.rqtrk.eu"@
-
---------------------------------------------------------------
-host:"ad-score.com",host:"adsafeprotected.com",host:"bh.contextweb.com",host:"cookie-matching.mediarithmics.com",host:"cs.krushmedia.com",host:"ftstatic.com",host:"id5-sync.com",host:"lijit.com",host:"onetag-sys.com",host:"s.c.appier.net",host:"semasio.net",host:"sharethrough.com",host:"sync.1rx.io",host:"sync.serverbid.com",host:"sync.targeting.unrulymedia.com",host:"sync.teads.tv"@
-
->> To add this rule based on SNI:
-   [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"ad-score.com",host:"adsafeprotected.com",host:"bh.contextweb.com",host:"cookie-matching.mediarithmics.com",host:"cs.krushmedia.com",host:"ftstatic.com",host:"id5-sync.com",host:"lijit.com",host:"onetag-sys.com",host:"s.c.appier.net",host:"semasio.net",host:"sharethrough.com",host:"sync.1rx.io",host:"sync.serverbid.com",host:"sync.targeting.unrulymedia.com",host:"sync.teads.tv"@
+   [+] Paste the following rule: host:"warframe.market"@
 
 --------------------------------------------------------------

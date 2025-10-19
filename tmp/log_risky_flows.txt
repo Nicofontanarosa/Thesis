@@ -2,115 +2,158 @@
 
 >> Risky Flow:
 
-  + ip_field: 0/Unknown
+  + ip_field: 126/Google
   + transport_protocol: TCP
   + proto_field: 91/TLS
-  + tls_version: TLSv1.3
-  + ja3s: b4f2541b0a0b815edb08e1c3ffe8aad8
-  + ja4: t13d1913h2_9dc949149365_6e36e74388e1
   + ip_source: 192.168.1.52
-  + port_source: 62845
-  + ip_destination: 74.82.60.58
-  + port_destination: 58240
-  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
-  + [red]risk: ** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
-  + [red]risk_score: 150[/red]
-  + [red]risk_info: h2 / SNI should always be present / Expected on port 443[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['3685 <-> 4670'\]
-
-
->> Risky Flow:
-
-  + ip_field: 0/Unknown
-  + transport_protocol: TCP
-  + proto_field: 7/HTTP
-  + plain_text: HFJaPyYt
-  + ip_source: 2.16.17.65
-  + port_source: 80
-  + ip_destination: 192.168.1.52
-  + port_destination: 53470
+  + port_source: 63082
+  + ip_destination: 216.58.205.34
+  + port_destination: 443
   + [red]risk: ** Susp Entropy **[/red]
   + [red]risk_score: 10[/red]
-  + [red]risk_info: Entropy: 7.834 (Encrypted or Random?)[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['622 <-> 299'\]
+  + [red]risk_info: Entropy: 7.862 (Encrypted or Random?)[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['114 <-> 116', '65 <-> 64'\]
 
 
 >> Risky Flow:
 
-  + ip_field: 0/Unknown
-  + transport_protocol: TCP
-  + proto_field: 7/HTTP
-  + plain_text: RaJiEZ
-  + ip_source: 2.16.17.64
-  + port_source: 80
-  + ip_destination: 192.168.1.52
-  + port_destination: 53467
-  + [red]risk: ** Susp Entropy **[/red]
-  + [red]risk_score: 10[/red]
-  + [red]risk_info: Entropy: 7.845 (Encrypted or Random?)[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['268 <-> 78'\]
-
-
->> Risky Flow:
-
-  + ip_field: 0/Unknown
+  + ip_field: 442/DigitalOcean
   + transport_protocol: TCP
   + proto_field: 91/TLS
   + tls_version: TLSv1.2
-  + ja4: t13d1912h2_9dc949149365_ae524846d7cc
+  + ja4: t13d1511h2_8daaf6152771_40271e0a5736
   + ip_source: 192.168.1.52
-  + port_source: 62844
-  + ip_destination: 74.82.60.58
-  + port_destination: 58240
+  + port_source: 63342
+  + ip_destination: 167.71.37.75
+  + port_destination: 443
   + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
-  + [red]risk: ** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
-  + [red]risk_score: 150[/red]
-  + [red]risk_info: h2 / SNI should always be present / Expected on port 443[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['17 <-> 15'\]
+  + [red]risk: ** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 100[/red]
+  + [red]risk_info: h2 / SNI should always be present[/red]
+  + similar_flows_count: 2
+  + exchanged_packets: \['10 <-> 8', '11 <-> 7'\]
 
 
 >> Risky Flow:
 
-  + ip_field: 0/Unknown
+  + ip_field: 442/DigitalOcean
   + transport_protocol: TCP
   + proto_field: 91/TLS
-  + tls_version: TLSv1.3
-  + ja3s: 475c9302dc42b2751db9edcac3b74891
-  + ja4: t13d1912h2_9dc949149365_ae524846d7cc
+  + tls_version: TLSv1.2
+  + ja4: t13d1511h2_8daaf6152771_40271e0a5736
   + ip_source: 192.168.1.52
-  + port_source: 62846
-  + ip_destination: 65.49.68.27
-  + port_destination: 60612
-  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
-  + [red]risk: ** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
-  + [red]risk_score: 150[/red]
-  + [red]risk_info: h2 / SNI should always be present / Expected on port 443[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['16 <-> 14'\]
-
-
->> Risky Flow:
-
-  + ip_field: 0/Unknown
-  + transport_protocol: TCP
-  + proto_field: 91/TLS
-  + tls_version: TLSv1.3
-  + ja3s: 475c9302dc42b2751db9edcac3b74891
-  + ja4: t13d1912h2_9dc949149365_ae524846d7cc
-  + ip_source: 192.168.1.52
-  + port_source: 62843
-  + ip_destination: 65.49.2.63
+  + port_source: 63153
+  + ip_destination: 167.99.40.39
   + port_destination: 443
   + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
   + [red]risk: ** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
   + [red]risk_score: 100[/red]
   + [red]risk_info: h2 / SNI should always be present[/red]
   + similar_flows_count: 1
-  + exchanged_packets: \['16 <-> 13'\]
+  + exchanged_packets: \['12 <-> 11'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 442/DigitalOcean
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + tls_version: TLSv1.3
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+  + ja4: t13d1511h2_8daaf6152771_40271e0a5736
+  + ip_source: 192.168.1.52
+  + port_source: 63148
+  + ip_destination: 167.99.33.156
+  + port_destination: 443
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 100[/red]
+  + [red]risk_info: h2 / SNI should always be present[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['12 <-> 11'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 442/DigitalOcean
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + tls_version: TLSv1.2
+  + ja4: t13d1511h2_8daaf6152771_40271e0a5736
+  + ip_source: 192.168.1.52
+  + port_source: 63151
+  + ip_destination: 159.223.75.211
+  + port_destination: 443
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 100[/red]
+  + [red]risk_info: h2 / SNI should always be present[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['9 <-> 9'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 442/DigitalOcean
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + tls_version: TLSv1.3
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+  + ja4: t13d1511h2_8daaf6152771_40271e0a5736
+  + ip_source: 192.168.1.52
+  + port_source: 63154
+  + ip_destination: 152.42.175.239
+  + port_destination: 443
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 100[/red]
+  + [red]risk_info: h2 / SNI should always be present[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['9 <-> 9'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 442/DigitalOcean
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + tls_version: TLSv1.3
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+  + ja4: t13d1511h2_8daaf6152771_40271e0a5736
+  + ip_source: 192.168.1.52
+  + port_source: 63147
+  + ip_destination: 152.42.205.4
+  + port_destination: 443
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 100[/red]
+  + [red]risk_info: h2 / SNI should always be present[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['9 <-> 9'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 274/Alibaba
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + tls_version: TLSv1.2
+  + ja3s: 4ef1b297bb817d8212165a86308bac5f
+  + ja4: t13d1511h2_8daaf6152771_40271e0a5736
+  + issuer: C=SG, ST=SG, L=Singapore, O=Innovative Connecting, OU=Innovative Connecting, CN=inconnecting.com
+  + subject: C=SG, ST=SG, L=Singapore, O=Innovative Connecting, OU=Innovative Connecting, CN=inconnecting.com
+  + certificate: SHA-1: C5:F9:C5:68:D6:BB:21:20:64:01:17:C4:79:5D:32:8D:5B:A7:89:81
+  + ip_source: 192.168.1.52
+  + port_source: 63145
+  + ip_destination: 8.210.133.83
+  + port_destination: 443
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Self-signed Cert **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 200[/red]
+  + [red]risk_info: h2 / SNI should always be present / C=SG, ST=SG, L=Singapore, O=Innovative Connecting, OU=Innovative Connecting, CN=inconnecti[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['11 <-> 10'\]
 
 
 >> Risky Flow:
@@ -123,12 +166,108 @@
   + ja4: t13d171200_5b57614c22b0_352634941f3a
   + [green]sni: mtalk.google.com[/green]
   + ip_source: 192.168.1.52
-  + port_source: 62842
-  + ip_destination: 173.194.69.188
+  + port_source: 63347
+  + ip_destination: 172.217.218.188
   + port_destination: 5228
   + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
   + [red]risk: ** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **[/red]
   + [red]risk_score: 60[/red]
   + [red]risk_info: No ALPN / Expected on port 443[/red]
   + similar_flows_count: 1
+  + exchanged_packets: \['11 <-> 10'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 274/Alibaba
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + tls_version: TLSv1.2
+  + ja4: t13d1511h2_8daaf6152771_40271e0a5736
+  + ip_source: 192.168.1.52
+  + port_source: 63146
+  + ip_destination: 8.210.184.85
+  + port_destination: 443
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 100[/red]
+  + [red]risk_info: h2 / SNI should always be present[/red]
+  + similar_flows_count: 1
   + exchanged_packets: \['11 <-> 9'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 274/Alibaba
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + tls_version: TLSv1.2
+  + ja4: t13d1511h2_8daaf6152771_40271e0a5736
+  + ip_source: 192.168.1.52
+  + port_source: 63144
+  + ip_destination: 8.210.163.172
+  + port_destination: 443
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 100[/red]
+  + [red]risk_info: h2 / SNI should always be present[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['8 <-> 8'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 274/Alibaba
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + tls_version: TLSv1.2
+  + ja4: t13d1511h2_8daaf6152771_40271e0a5736
+  + ip_source: 192.168.1.52
+  + port_source: 63152
+  + ip_destination: 47.242.155.104
+  + port_destination: 443
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 100[/red]
+  + [red]risk_info: h2 / SNI should always be present[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['10 <-> 9'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 442/DigitalOcean
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + tls_version: TLSv1.2
+  + ja3s: 4ef1b297bb817d8212165a86308bac5f
+  + ja4: t13d1511h2_8daaf6152771_40271e0a5736
+  + issuer: C=SG, ST=SG, L=Singapore, O=Innovative Connecting, OU=Innovative Connecting, CN=inconnecting.com
+  + subject: C=SG, ST=SG, L=Singapore, O=Innovative Connecting, OU=Innovative Connecting, CN=inconnecting.com
+  + certificate: SHA-1: C5:F9:C5:68:D6:BB:21:20:64:01:17:C4:79:5D:32:8D:5B:A7:89:81
+  + ip_source: 192.168.1.52
+  + port_source: 63149
+  + ip_destination: 167.71.45.16
+  + port_destination: 443
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Self-signed Cert **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 200[/red]
+  + [red]risk_info: h2 / SNI should always be present / C=SG, ST=SG, L=Singapore, O=Innovative Connecting, OU=Innovative Connecting, CN=inconnecti[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['11 <-> 7'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 119/Facebook
+  + transport_protocol: UDP
+  + proto_field: 188/QUIC
+  + ip_source: 192.168.1.52
+  + port_source: 62954
+  + ip_destination: 31.13.86.8
+  + port_destination: 443
+  + [red]risk: ** Susp Entropy **[/red]
+  + [red]risk_score: 10[/red]
+  + [red]risk_info: Entropy: 7.656 (Encrypted or Random?)[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['5 <-> 6'\]

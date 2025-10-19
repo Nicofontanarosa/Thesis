@@ -1,18 +1,23 @@
->> Using existing nDPI JSON:
 
- [+] .\test\ultrasurfVPN\UltrasurfVpn_connection_01.json
+>> Running nDPI first command:
+
+ [+] /home/keiyukensei/nDPI/example/ndpiReader -v 2 -i test/turboVPN/TurboVpn_connection_01.pcapng
+
+>> First nDPI JSON saved to:
+
+ [+] test/turboVPN/TurboVpn_connection_01.json
 
 >> Running initial filtering ...
 
- [+] input file: .\test\ultrasurfVPN\UltrasurfVpn_connection_01.json
- [+] output file: .\test\ultrasurfVPN\UltrasurfVpn_connection_01_filtered.json
+ [+] input file: test/turboVPN/TurboVpn_connection_01.json
+ [+] output file: test/turboVPN/TurboVpn_connection_01_filtered.json
 
 >> Running flows filtering ...
 
- [+] input file: .\test\ultrasurfVPN\UltrasurfVpn_connection_01_filtered.json
- [+] output file: .\test\ultrasurfVPN\UltrasurfVpn_connection_01_output.json
+ [+] input file: test/turboVPN/TurboVpn_connection_01_filtered.json
+ [+] output file: test/turboVPN/TurboVpn_connection_01_output.json
 
->> Coverage statistics save in: .\test\ultrasurfVPN\coverage.txt
+>> Coverage statistics save in: test/turboVPN/coverage.txt
 
 
 >> All removed flows save in: /tmp/removed_flows.json

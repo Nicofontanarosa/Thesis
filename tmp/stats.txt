@@ -2,9 +2,10 @@
 
    [+] DNS
    [+] Google
-   [+] HTTP
+   [+] HTTP_Proxy
+   [+] ICMP
+   [+] IPSec
    [+] MDNS
-   [+] MSDO
    [+] QUIC
    [+] SSDP
    [+] TLS
@@ -22,6 +23,8 @@
 
    [red][+] DNS[/red]
    [red][+] Google[/red]
+   [red][+] HTTP_Proxy[/red]
+   [red][+] ICMP[/red]
+   [red][+] IPSec[/red]
    [red][+] MDNS[/red]
-   [red][+] MSDO[/red]
    [red][+] SSDP[/red]

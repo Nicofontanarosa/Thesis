@@ -1,7 +1,7 @@
 [
     {
-        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
-        "ja4": "9dc949149365_6e36e74388e1",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "5b57614c22b0_eca864cca44a",
         "certificate": [
             [
                 "certificate",
@@ -20,8 +20,12 @@
                 null
             ]
         ],
-        "sni_list": [],
-        "flow_count": 1,
-        "packets": 8355
+        "sni_list": [
+            "api.entclass.tech",
+            "code.jquery.com",
+            "unity3d.com"
+        ],
+        "flow_count": 30,
+        "packets": 2908
     }
 ]

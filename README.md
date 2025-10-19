@@ -1,8 +1,8 @@
-\# RTT Geo-Location Anomaly Detector
+# RTT Geo-Location Anomaly Detector
 
 
 
-\### What is RTT Geo-Location Anomaly Detector ?
+### What is RTT Geo-Location Anomaly Detector ?
 
 
 

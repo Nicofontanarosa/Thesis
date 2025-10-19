@@ -26,7 +26,7 @@ There are two ways to use this project:
 1. 🖥️ Graphical interface ( *recommended* )
 2. 💻 Command-line mode
 
-###🖥️ Graphical Interface ( Textual-based UI )
+### 🖥️ Graphical Interface ( Textual-based UI )
 
 - Install the textual library with `pip install textual`
 - Then start the graphical interface with `python3 flow_viewer_textual.py`

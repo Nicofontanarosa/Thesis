@@ -2,64 +2,133 @@
 
 >> Risky Flow:
 
-  + ip_field: 126/Google
+  + ip_field: 0/Unknown
   + transport_protocol: TCP
   + proto_field: 91/TLS
-  + ip_source: 192.168.50.96
-  + port_source: 53497
-  + ip_destination: 74.125.130.188
-  + port_destination: 5228
-  + [red]risk: ** Known Proto on Non Std Port **[/red]
-  + [red]risk_score: 50[/red]
-  + [red]risk_info: Expected on port 443[/red]
+  + tls_version: TLSv1.3
+  + ja3s: b4f2541b0a0b815edb08e1c3ffe8aad8
+  + ja4: t13d1913h2_9dc949149365_6e36e74388e1
+  + ip_source: 192.168.1.52
+  + port_source: 62845
+  + ip_destination: 74.82.60.58
+  + port_destination: 58240
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: h2 / SNI should always be present / Expected on port 443[/red]
   + similar_flows_count: 1
-  + exchanged_packets: \['22 <-> 21'\]
-
-
->> Risky Flow:
-
-  + ip_field: 126/Google
-  + transport_protocol: TCP
-  + proto_field: 7.126/HTTP.Google
-  + url: clients2.google.com/time/1/current?cup2key=9:CNZy29Mt23Had0v3y1EoM10dg4tSk2ti_zHlIZcTzeY&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-  + user_agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
-  + plain_text: PyGET /time/1/current
-  + [green]sni: clients2.google.com[/green]
-  + ip_source: 192.168.50.96
-  + port_source: 53746
-  + ip_destination: 74.125.200.138
-  + port_destination: 80
-  + tcp_fingerprint: 194_64_65535_d29295416479/macOS
-  + [red]risk: ** Binary File/Data Transfer (Attempt) **[/red]
-  + [red]risk_score: 50[/red]
-  + [red]risk_info: File download json.txt"; filename*=UTF-8''json.txt[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['7 <-> 5'\]
-
-
->> Risky Flow:
-
-  + ip_field: 126/Google
-  + transport_protocol: TCP
-  + proto_field: 91/TLS
-  + ip_source: 74.125.68.188
-  + port_source: 5228
-  + ip_destination: 192.168.50.82
-  + port_destination: 59888
-  + [red]risk: ** Known Proto on Non Std Port **[/red]
-  + [red]risk_score: 50[/red]
-  + [red]risk_info: Expected on port 443[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['5 <-> 5'\]
+  + exchanged_packets: \['3685 <-> 4670'\]
 
 
 >> Risky Flow:
 
   + ip_field: 0/Unknown
-  + transport_protocol: UDP
-  + proto_field: 0/Unknown
-  + [red]risk: ** Unidirectional Traffic **[/red]
+  + transport_protocol: TCP
+  + proto_field: 7/HTTP
+  + plain_text: HFJaPyYt
+  + ip_source: 2.16.17.65
+  + port_source: 80
+  + ip_destination: 192.168.1.52
+  + port_destination: 53470
+  + [red]risk: ** Susp Entropy **[/red]
   + [red]risk_score: 10[/red]
-  + [red]risk_info: No server to client traffic[/red]
+  + [red]risk_info: Entropy: 7.834 (Encrypted or Random?)[/red]
   + similar_flows_count: 1
-  + exchanged_packets: \['6 <-> 0'\]
+  + exchanged_packets: \['622 <-> 299'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 7/HTTP
+  + plain_text: RaJiEZ
+  + ip_source: 2.16.17.64
+  + port_source: 80
+  + ip_destination: 192.168.1.52
+  + port_destination: 53467
+  + [red]risk: ** Susp Entropy **[/red]
+  + [red]risk_score: 10[/red]
+  + [red]risk_info: Entropy: 7.845 (Encrypted or Random?)[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['268 <-> 78'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + tls_version: TLSv1.2
+  + ja4: t13d1912h2_9dc949149365_ae524846d7cc
+  + ip_source: 192.168.1.52
+  + port_source: 62844
+  + ip_destination: 74.82.60.58
+  + port_destination: 58240
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: h2 / SNI should always be present / Expected on port 443[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['17 <-> 15'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + tls_version: TLSv1.3
+  + ja3s: 475c9302dc42b2751db9edcac3b74891
+  + ja4: t13d1912h2_9dc949149365_ae524846d7cc
+  + ip_source: 192.168.1.52
+  + port_source: 62846
+  + ip_destination: 65.49.68.27
+  + port_destination: 60612
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: h2 / SNI should always be present / Expected on port 443[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['16 <-> 14'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + tls_version: TLSv1.3
+  + ja3s: 475c9302dc42b2751db9edcac3b74891
+  + ja4: t13d1912h2_9dc949149365_ae524846d7cc
+  + ip_source: 192.168.1.52
+  + port_source: 62843
+  + ip_destination: 65.49.2.63
+  + port_destination: 443
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 100[/red]
+  + [red]risk_info: h2 / SNI should always be present[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['16 <-> 13'\]
+
+
+>> Risky Flow:
+
+  + ip_field: 126/Google
+  + transport_protocol: TCP
+  + proto_field: 91.239/TLS.GoogleServices
+  + tls_version: TLSv1.3
+  + ja3s: 2b0648ab686ee45e0e7c35fcfb0eea7e
+  + ja4: t13d171200_5b57614c22b0_352634941f3a
+  + [green]sni: mtalk.google.com[/green]
+  + ip_source: 192.168.1.52
+  + port_source: 62842
+  + ip_destination: 173.194.69.188
+  + port_destination: 5228
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **[/red]
+  + [red]risk_score: 60[/red]
+  + [red]risk_info: No ALPN / Expected on port 443[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['11 <-> 9'\]

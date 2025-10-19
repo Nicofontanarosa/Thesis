@@ -1,7 +1,7 @@
 [
     {
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "a09f3c656075_e42f34c56612",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "9dc949149365_6e36e74388e1",
         "certificate": [
             [
                 "certificate",
@@ -20,17 +20,13 @@
                 null
             ]
         ],
-        "sni_list": [
-            "edge-037.inbom2.icloud-content.com",
-            "p167-contacts.icloud.com",
-            "p168-content.icloud.com"
-        ],
-        "flow_count": 6,
-        "packets": 238
+        "sni_list": [],
+        "flow_count": 1,
+        "packets": 8355
     },
     {
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "a09f3c656075_e42f34c56612",
+        "ja3s": "d7e12962b60127bdbe4f65f39221f9e8",
+        "ja4": "4b22cbed5bed_7af1ed941c26",
         "certificate": [
             [
                 "certificate",
@@ -50,39 +46,10 @@
             ]
         ],
         "sni_list": [
-            "configuration.ls.apple.com",
-            "swallow.apple.com"
+            "nexus.officeapps.live.com"
         ],
-        "flow_count": 3,
-        "packets": 144
-    },
-    {
-        "ja3s": null,
-        "ja4": "55b375c5d22e_5a1f323ef56d",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "searchnotifications-pa.googleapis.com",
-            "xgapromomanager-pa.googleapis.com"
-        ],
-        "flow_count": 2,
-        "packets": 97
+        "flow_count": 1,
+        "packets": 63
     },
     {
         "ja3s": null,
@@ -106,15 +73,14 @@
             ]
         ],
         "sni_list": [
-            "edge-chat.facebook.com",
-            "www.instagram.com"
+            "beacons.gvt2.com"
         ],
-        "flow_count": 44,
-        "packets": 1194
+        "flow_count": 2,
+        "packets": 52
     },
     {
         "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "8daaf6152771_eca864cca44a",
+        "ja4": "5b57614c22b0_eca864cca44a",
         "certificate": [
             [
                 "certificate",
@@ -134,41 +100,39 @@
             ]
         ],
         "sni_list": [
-            "conf.letsmessagenow.com"
+            "api.revenuecat.com"
         ],
-        "flow_count": 2,
-        "packets": 62
+        "flow_count": 3,
+        "packets": 61
     },
     {
-        "ja3s": "2ab44dd8c27bdce434a961463587356a",
-        "ja4": "8daaf6152771_e5627efa2ab1",
+        "ja3s": null,
+        "ja4": "9dc949149365_ae524846d7cc",
         "certificate": [
             [
                 "certificate",
-                "SHA-1: DC:4D:63:73:63:8A:E1:0B:61:25:43:E8:19:60:5E:BD:63:6E:A3:51"
+                null
             ],
             [
                 "issuer",
-                "C=US, O=Amazon, CN=Amazon RSA 2048 M03"
+                null
             ],
             [
                 "servernames",
-                "*.split.io"
+                null
             ],
             [
                 "subject",
-                "CN=*.split.io"
+                null
             ]
         ],
-        "sni_list": [
-            "auth.split.io"
-        ],
-        "flow_count": 2,
-        "packets": 67
+        "sni_list": [],
+        "flow_count": 1,
+        "packets": 32
     },
     {
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "8daaf6152771_352634941f3a",
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "9dc949149365_143984610e49",
         "certificate": [
             [
                 "certificate",
@@ -188,63 +152,88 @@
             ]
         ],
         "sni_list": [
-            "conf.letsmessagenow.com"
-        ],
-        "flow_count": 0,
-        "packets": 0
-    },
-    {
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "8daaf6152771_0d365e64def3",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "edge-chat.facebook.com"
-        ],
-        "flow_count": 0,
-        "packets": 0
-    },
-    {
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "8daaf6152771_9b887d9acb53",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "sdk.split.io"
+            "download.microsoft.com"
         ],
         "flow_count": 1,
-        "packets": 73
+        "packets": 35
+    },
+    {
+        "ja3s": null,
+        "ja4": "8daaf6152771_b6f405a00624",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "beacons.gvt2.com"
+        ],
+        "flow_count": 0,
+        "packets": 0
+    },
+    {
+        "ja3s": "475c9302dc42b2751db9edcac3b74891",
+        "ja4": "9dc949149365_ae524846d7cc",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [],
+        "flow_count": 2,
+        "packets": 59
+    },
+    {
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "5b57614c22b0_eca864cca44a",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "firebaseremoteconfigrealtime.googleapis.com"
+        ],
+        "flow_count": 1,
+        "packets": 17
     }
 ]

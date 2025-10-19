@@ -1,91 +1,67 @@
 >> Removed SNI with more than 4 domains:
 
-   [+] media.fcmb2-2.fna.whatsapp.net
-   [+] sg.global.market.xiaomi.com
-   [+] api.ad.intl.xiaomi.com
+   [+] 1d.tlu.dl.delivery.mp.microsoft.com
+   [+] 1d.tlu.dl.delivery.mp.microsoft.com
+   [+] 1d.tlu.dl.delivery.mp.microsoft.com
+   [+] 1d.tlu.dl.delivery.mp.microsoft.com
+   [+] dl.delivery.mp.microsoft.com
+   [+] 1d.tlu.dl.delivery.mp.microsoft.com
+   [+] 1d.tlu.dl.delivery.mp.microsoft.com
+   [+] cp601.prod.do.dsp.mp.microsoft.com
+   [+] v10.events.data.microsoft.com
+   [+] geover.prod.do.dsp.mp.microsoft.com
+   [+] dl.delivery.mp.microsoft.com
 
 
 >> All SNIs seen:
 
-   [+] [green]app-measurement.com[/green]
-   [+] [green]auth.split.io[/green]
-   [+] [green]bstream.kzhi.tech[/green]
-   [+] [green]chatgpt.com[/green]
-   [+] [green]clients2.google.com[/green]
-   [+] [green]clientservices.googleapis.com[/green]
-   [+] [green]conf.letsmessagenow.com[/green]
-   [+] [green]configuration.ls.apple.com[/green]
-   [+] [green]connectivitycheck.gstatic.com[/green]
-   [+] [green]default.exp-tas.com[/green]
-   [+] [green]dns.google[/green]
-   [+] [green]edge-037.inbom2.icloud-content.com[/green]
-   [+] [green]edge-chat.facebook.com[/green]
-   [+] [green]firebase-settings.crashlytics.com[/green]
-   [+] [green]gateway.icloud.com[/green]
-   [+] [green]i.ytimg.com[/green]
-   [+] [green]main.vscode-cdn.net[/green]
-   [+] [green]media-sin6-3.cdn.whatsapp.net[/green]
-   [+] [green]p167-contacts.icloud.com[/green]
-   [+] [green]p168-content.icloud.com[/green]
-   [+] [green]play.googleapis.com[/green]
-   [+] [green]safebrowsing.googleapis.com[/green]
-   [+] [green]sdk.split.io[/green]
-   [+] [green]searchnotifications-pa.googleapis.com[/green]
-   [+] [green]swallow.apple.com[/green]
-   [+] [green]tether.edge.apple[/green]
-   [+] [green]ws.chatgpt.com[/green]
-   [+] [green]www.instagram.com[/green]
-   [+] [green]xgapromomanager-pa.googleapis.com[/green]
-   [+] [green]youtubei.googleapis.com[/green]
+   [+] [green]api.revenuecat.com[/green]
+   [+] [green]beacons.gvt2.com[/green]
+   [+] [green]csi.gstatic.com[/green]
+   [+] [green]download.microsoft.com[/green]
+   [+] [green]firebaseremoteconfigrealtime.googleapis.com[/green]
+   [+] [green]fonts.googleapis.com[/green]
+   [+] [green]fonts.gstatic.com[/green]
+   [+] [green]fundingchoicesmessages.google.com[/green]
+   [+] [green]googleads.g.doubleclick.net[/green]
+   [+] [green]lh3.googleusercontent.com[/green]
+   [+] [green]mtalk.google.com[/green]
+   [+] [green]nexus.officeapps.live.com[/green]
+   [+] [green]pagead2.googleadservices.com[/green]
+   [+] [green]pagead2.googlesyndication.com[/green]
+   [+] [green]www.gstatic.com[/green]
+   [+] [green]www.msftconnecttest.com[/green]
 
 
 >> Removed flows 1° filtering ( Exclude words and know domains ):
 
-   [+] [red]main.vscode-cdn.net[/red]
-   [+] [red]main.vscode-cdn.net[/red]
-   [+] [red]media-sin6-3.cdn.whatsapp.net[/red]
-   [+] [red]main.vscode-cdn.net[/red]
-   [+] [red]media-sin6-3.cdn.whatsapp.net[/red]
-   [+] [red]youtubei.googleapis.com[/red]
-   [+] [red]tether.edge.apple[/red]
-   [+] [red]youtubei.googleapis.com[/red]
-   [+] [red]app-measurement.com[/red]
-   [+] [red]chatgpt.com[/red]
-   [+] [red]youtubei.googleapis.com[/red]
-   [+] [red]connectivitycheck.gstatic.com[/red]
-   [+] [red]dns.google[/red]
-   [+] [red]play.googleapis.com[/red]
-   [+] [red]dns.google[/red]
-   [+] [red]dns.google[/red]
-   [+] [red]bstream.kzhi.tech[/red]
-   [+] [red]bstream.kzhi.tech[/red]
-   [+] [red]bstream.kzhi.tech[/red]
+   [+] [red]mtalk.google.com[/red]
 
 
 >> Removed flows 2° filtering ( Remove known suffixes and not_protocols domains ):
 
-   [+] [red]gateway.icloud.com[/red]
-   [+] [red]ws.chatgpt.com[/red]
-   [+] [red]gateway.icloud.com[/red]
-   [+] [red]safebrowsing.googleapis.com[/red]
-   [+] [red]i.ytimg.com[/red]
-   [+] [red]clientservices.googleapis.com[/red]
-   [+] [red]default.exp-tas.com[/red]
-   [+] [red]firebase-settings.crashlytics.com[/red]
-   [+] [red]clients2.google.com[/red]
+   [+] [red]fundingchoicesmessages.google.com[/red]
+   [+] [red]www.gstatic.com[/red]
+   [+] [red]csi.gstatic.com[/red]
+   [+] [red]googleads.g.doubleclick.net[/red]
+   [+] [red]lh3.googleusercontent.com[/red]
+   [+] [red]csi.gstatic.com[/red]
+   [+] [red]googleads.g.doubleclick.net[/red]
+   [+] [red]pagead2.googlesyndication.com[/red]
+   [+] [red]googleads.g.doubleclick.net[/red]
+   [+] [red]fonts.googleapis.com[/red]
+   [+] [red]pagead2.googlesyndication.com[/red]
+   [+] [red]pagead2.googlesyndication.com[/red]
+   [+] [red]pagead2.googleadservices.com[/red]
+   [+] [red]fonts.gstatic.com[/red]
+   [+] [red]googleads.g.doubleclick.net[/red]
+   [+] [red]www.msftconnecttest.com[/red]
 
 
 >> Remaining SNIs:
 
-   [+] [green]auth.split.io[/green]
-   [+] [green]conf.letsmessagenow.com[/green]
-   [+] [green]configuration.ls.apple.com[/green]
-   [+] [green]edge-037.inbom2.icloud-content.com[/green]
-   [+] [green]edge-chat.facebook.com[/green]
-   [+] [green]p167-contacts.icloud.com[/green]
-   [+] [green]p168-content.icloud.com[/green]
-   [+] [green]sdk.split.io[/green]
-   [+] [green]searchnotifications-pa.googleapis.com[/green]
-   [+] [green]swallow.apple.com[/green]
-   [+] [green]www.instagram.com[/green]
-   [+] [green]xgapromomanager-pa.googleapis.com[/green]
+   [+] [green]api.revenuecat.com[/green]
+   [+] [green]beacons.gvt2.com[/green]
+   [+] [green]download.microsoft.com[/green]
+   [+] [green]firebaseremoteconfigrealtime.googleapis.com[/green]
+   [+] [green]nexus.officeapps.live.com[/green]

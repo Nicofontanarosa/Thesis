@@ -1,0 +1,27 @@
+>> Lists of protocols read:
+
+   [+] DNS
+   [+] Google
+   [+] HTTP
+   [+] MDNS
+   [+] MSDO
+   [+] QUIC
+   [+] SSDP
+   [+] TLS
+
+>> Lists of protocols supported:
+
+   [+] HTTP
+   [+] HTTP_Connect
+   [+] QUIC
+   [+] TLS
+   [+] Unknown
+   [+] WireGuard
+
+[red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
+
+   [red][+] DNS[/red]
+   [red][+] Google[/red]
+   [red][+] MDNS[/red]
+   [red][+] MSDO[/red]
+   [red][+] SSDP[/red]

@@ -1,7 +1,7 @@
 [
     {
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "a09f3c656075_e42f34c56612",
+        "ja3s": "b4f2541b0a0b815edb08e1c3ffe8aad8",
+        "ja4": "9dc949149365_6e36e74388e1",
         "certificate": [
             [
                 "certificate",
@@ -20,66 +20,8 @@
                 null
             ]
         ],
-        "sni_list": [
-            "edge-037.inbom2.icloud-content.com",
-            "icloud.com"
-        ],
-        "flow_count": 6,
-        "packets": 238
-    },
-    {
-        "ja3s": null,
-        "ja4": "55b375c5d22e_226f3f127bbe",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "edge-chat.facebook.com",
-            "www.instagram.com"
-        ],
-        "flow_count": 44,
-        "packets": 1194
-    },
-    {
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "a09f3c656075_e42f34c56612",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "apple.com"
-        ],
-        "flow_count": 3,
-        "packets": 144
+        "sni_list": [],
+        "flow_count": 1,
+        "packets": 8355
     }
 ]

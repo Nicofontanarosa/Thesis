@@ -1,7 +1,7 @@
 [
     {
-        "ja3s": null,
-        "ja4": null,
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "a09f3c656075_e42f34c56612",
         "certificate": [
             [
                 "certificate",
@@ -21,14 +21,44 @@
             ]
         ],
         "sni_list": [
-            "a.hwstatic.com"
+            "edge-037.inbom2.icloud-content.com",
+            "p167-contacts.icloud.com",
+            "p168-content.icloud.com"
+        ],
+        "flow_count": 6,
+        "packets": 238
+    },
+    {
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "a09f3c656075_e42f34c56612",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "configuration.ls.apple.com",
+            "swallow.apple.com"
         ],
         "flow_count": 3,
-        "packets": 14026
+        "packets": 144
     },
     {
         "ja3s": null,
-        "ja4": null,
+        "ja4": "55b375c5d22e_5a1f323ef56d",
         "certificate": [
             [
                 "certificate",
@@ -48,230 +78,15 @@
             ]
         ],
         "sni_list": [
-            "prod.apigee.hostelworld.com"
-        ],
-        "flow_count": 1,
-        "packets": 1009
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "zdffis.inapps.appsflyersdk.com"
-        ],
-        "flow_count": 1,
-        "packets": 742
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "api.segment.io"
-        ],
-        "flow_count": 4,
-        "packets": 474
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "gdmf.apple.com"
-        ],
-        "flow_count": 1,
-        "packets": 156
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "hostelworld-2021-production.eu.auth0.com"
-        ],
-        "flow_count": 3,
-        "packets": 359
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "res.cloudinary.com"
-        ],
-        "flow_count": 1,
-        "packets": 165
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "app.biziday.ro"
-        ],
-        "flow_count": 1,
-        "packets": 96
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "configuration.apple.com"
-        ],
-        "flow_count": 1,
-        "packets": 64
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "ajax.googleapis.com"
+            "searchnotifications-pa.googleapis.com",
+            "xgapromomanager-pa.googleapis.com"
         ],
         "flow_count": 2,
-        "packets": 125
+        "packets": 97
     },
     {
         "ja3s": null,
-        "ja4": null,
+        "ja4": "55b375c5d22e_226f3f127bbe",
         "certificate": [
             [
                 "certificate",
@@ -291,14 +106,15 @@
             ]
         ],
         "sni_list": [
-            "zdffis.skadsdkless.appsflyersdk.com"
+            "edge-chat.facebook.com",
+            "www.instagram.com"
         ],
-        "flow_count": 1,
-        "packets": 129
+        "flow_count": 44,
+        "packets": 1194
     },
     {
-        "ja3s": null,
-        "ja4": null,
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "8daaf6152771_eca864cca44a",
         "certificate": [
             [
                 "certificate",
@@ -318,68 +134,41 @@
             ]
         ],
         "sni_list": [
-            "app-analytics-services.com"
-        ],
-        "flow_count": 8,
-        "packets": 339
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "www.google-analytics.com"
+            "conf.letsmessagenow.com"
         ],
         "flow_count": 2,
-        "packets": 96
+        "packets": 62
     },
     {
-        "ja3s": null,
-        "ja4": null,
+        "ja3s": "2ab44dd8c27bdce434a961463587356a",
+        "ja4": "8daaf6152771_e5627efa2ab1",
         "certificate": [
             [
                 "certificate",
-                null
+                "SHA-1: DC:4D:63:73:63:8A:E1:0B:61:25:43:E8:19:60:5E:BD:63:6E:A3:51"
             ],
             [
                 "issuer",
-                null
+                "C=US, O=Amazon, CN=Amazon RSA 2048 M03"
             ],
             [
                 "servernames",
-                null
+                "*.split.io"
             ],
             [
                 "subject",
-                null
+                "CN=*.split.io"
             ]
         ],
         "sni_list": [
-            "region1.google-analytics.com"
+            "auth.split.io"
         ],
         "flow_count": 2,
-        "packets": 111
+        "packets": 67
     },
     {
-        "ja3s": null,
-        "ja4": null,
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "8daaf6152771_352634941f3a",
         "certificate": [
             [
                 "certificate",
@@ -399,338 +188,14 @@
             ]
         ],
         "sni_list": [
-            "inappcheck.itunes.apple.com"
-        ],
-        "flow_count": 1,
-        "packets": 42
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "survey.survicate.com"
-        ],
-        "flow_count": 3,
-        "packets": 115
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "att.conversions.appsflyersdk.com"
-        ],
-        "flow_count": 1,
-        "packets": 45
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "att.attr.appsflyersdk.com"
-        ],
-        "flow_count": 1,
-        "packets": 42
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "api.iterable.com"
-        ],
-        "flow_count": 3,
-        "packets": 128
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "zdffis.dynamic-report-api.appsflyersdk.com"
-        ],
-        "flow_count": 1,
-        "packets": 54
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "region1.app-analytics-services-att.com"
-        ],
-        "flow_count": 9,
-        "packets": 375
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "p150-quota.icloud.com"
-        ],
-        "flow_count": 1,
-        "packets": 34
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "amp-api.apps.apple.com"
-        ],
-        "flow_count": 1,
-        "packets": 37
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "fpinit.itunes.apple.com"
-        ],
-        "flow_count": 1,
-        "packets": 39
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "sf-api-token-service.itunes.apple.com"
-        ],
-        "flow_count": 1,
-        "packets": 39
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "ws-e26a48d0-916a-45b5-91be-c247781e7cf8.sendbird.com"
-        ],
-        "flow_count": 1,
-        "packets": 57
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "region1.app-analytics-services.com"
+            "conf.letsmessagenow.com"
         ],
         "flow_count": 0,
         "packets": 0
     },
     {
-        "ja3s": null,
-        "ja4": null,
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "8daaf6152771_0d365e64def3",
         "certificate": [
             [
                 "certificate",
@@ -750,14 +215,14 @@
             ]
         ],
         "sni_list": [
-            "ca.iadsdk.apple.com"
+            "edge-chat.facebook.com"
         ],
-        "flow_count": 2,
-        "packets": 70
+        "flow_count": 0,
+        "packets": 0
     },
     {
-        "ja3s": null,
-        "ja4": null,
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "8daaf6152771_9b887d9acb53",
         "certificate": [
             [
                 "certificate",
@@ -777,306 +242,9 @@
             ]
         ],
         "sni_list": [
-            "proxy-safebrowsing.googleapis.com"
+            "sdk.split.io"
         ],
         "flow_count": 1,
-        "packets": 28
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "api-adservices.apple.com"
-        ],
-        "flow_count": 1,
-        "packets": 40
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "app-0e724cf8bd98b0a2.mobileapi.usebutton.com"
-        ],
-        "flow_count": 1,
-        "packets": 40
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "api-e26a48d0-916a-45b5-91be-c247781e7cf8.sendbird.com"
-        ],
-        "flow_count": 3,
-        "packets": 109
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "zdffis.register.appsflyersdk.com"
-        ],
-        "flow_count": 1,
-        "packets": 36
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "zdffis.dlsdk.appsflyersdk.com"
-        ],
-        "flow_count": 1,
-        "packets": 36
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "zdffis.dynamic-config-api.appsflyersdk.com"
-        ],
-        "flow_count": 1,
-        "packets": 38
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "apps.mzstatic.com"
-        ],
-        "flow_count": 1,
-        "packets": 35
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "zdffis.gcdsdk.appsflyersdk.com"
-        ],
-        "flow_count": 1,
-        "packets": 37
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "zdffis.skadsdk.appsflyersdk.com"
-        ],
-        "flow_count": 1,
-        "packets": 36
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "configuration.ls.apple.com"
-        ],
-        "flow_count": 1,
-        "packets": 30
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "s.gravatar.com"
-        ],
-        "flow_count": 1,
-        "packets": 34
+        "packets": 73
     }
 ]

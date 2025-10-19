@@ -126,40 +126,40 @@
         ]
     },
     {
-        "ip_field": "220/Cloudflare",
+        "ip_field": "284/GoogleCloud",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
         "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "sdk.fra-01.braze.eu",
+        "sni": "telemetry.sdk.inmobi.com",
         "ip_source": "10.215.173.1",
-        "port_source": "58458",
-        "ip_destination": "172.64.152.249",
+        "port_source": "49794",
+        "ip_destination": "35.212.26.181",
         "port_destination": "443",
         "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 2,
         "exchanged_packets": [
-            "14 <-> 14",
-            "12 <-> 12"
+            "11 <-> 9",
+            "11 <-> 11"
         ]
     },
     {
-        "ip_field": "0/Unknown",
+        "ip_field": "284/GoogleCloud",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "i.sng.link",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "stage-mediate-events.applovin.com",
         "ip_source": "10.215.173.1",
-        "port_source": "53458",
-        "ip_destination": "95.100.171.132",
+        "port_source": "50140",
+        "ip_destination": "34.102.162.219",
         "port_destination": "443",
         "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "14 <-> 14"
+            "13 <-> 13"
         ]
     },
     {
@@ -181,42 +181,6 @@
         ]
     },
     {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "mobile-api.rokt.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "49166",
-        "ip_destination": "2.19.179.64",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "api-sdk.datadome.co",
-        "ip_source": "10.215.173.1",
-        "port_source": "48554",
-        "ip_destination": "35.152.114.134",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 15"
-        ]
-    },
-    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -232,42 +196,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "14 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "sdk-events.inner-active.mobi",
-        "ip_source": "10.215.173.1",
-        "port_source": "45104",
-        "ip_destination": "34.160.136.185",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "apps.rokt.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "44524",
-        "ip_destination": "2.19.179.72",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "9 <-> 10"
         ]
     },
     {
@@ -287,24 +215,6 @@
         "exchanged_packets": [
             "13 <-> 14",
             "12 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
-        "sni": "sdk.fra-01.braze.eu",
-        "ip_source": "10.215.173.1",
-        "port_source": "60956",
-        "ip_destination": "172.64.152.249",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "9 <-> 9"
         ]
     }
 ]

@@ -1,8 +1,0 @@
-host:"instagram.com",host:"mail-attachment.googleusercontent.com"@
-host:"giphy.com"@
-host:"client-api.itunes.apple.com"@
-host:"mail.google.com"@
-host:"api.termius.com"@
-host:"split.io"@
-host:"clientservices.googleapis.com"@
-host:"dit.whatsapp.net"@

@@ -1,9 +1,0 @@
-host:"api.groq.com",host:"ci3.googleusercontent.com",host:"googleapis.com",host:"gvt1.com",host:"mail.google.com"@whois: google llc, groq inc. & AI: unknown
-host:"icloud-content.com",host:"icloud.com",host:"visualstudio.com"@whois: apple inc., microsoft corporation & AI: unknown
-host:"education.github.com",host:"githubcopilot.com",host:"githubusercontent.com"@whois: github, inc. & AI: unknown
-host:"graph.whatsapp.com",host:"whatsapp.net"@whois: whatsapp llc & AI: unknown
-host:"tiktokv.com"@whois: tiktok ltd & AI: unknown
-host:"zoom.us"@whois: zoom video communications, inc. & AI: unknown
-host:"i.instagram.com"@whois: instagram llc & AI: unknown
-host:"app.posthog.com"@whois: identity protection service & AI: unknown
-host:"auth.split.io"@whois: unknown & AI: unknown

@@ -31,7 +31,7 @@ There are two ways to use this project:
 - Install the textual library with `pip install textual`
 - Then start the graphical interface with `python3 flow_viewer_textual.py`
 
-In this version, the interface will ask for all required paths ( **PCAP file, nDPI root path, and output directory** ) through the GUI. ==!! you don’t need to type them in the terminal !!==
+In this version, the interface will ask for all required paths ( **PCAP file, nDPI root path, and output directory** ) through the GUI. <mark>!! you don’t need to type them in the terminal !!</mark>
 
 ### 💻 Command-Line Mode
 

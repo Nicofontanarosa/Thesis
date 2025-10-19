@@ -2,29 +2,24 @@
 
    [+] DNS
    [+] Google
-   [+] HTTP_Proxy
    [+] ICMP
-   [+] IPSec
-   [+] MDNS
-   [+] QUIC
-   [+] SSDP
-   [+] TLS
-
->> Lists of protocols supported:
-
-   [+] HTTP
-   [+] HTTP_Connect
    [+] QUIC
    [+] TLS
    [+] Unknown
    [+] WireGuard
 
+>> Lists of protocols supported:
+
+   [+] HTTP
+   [+] HTTP.WebSocket
+   [+] HTTP_Connect
+   [+] QUIC
+   [+] TLS
+
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
    [red][+] DNS[/red]
    [red][+] Google[/red]
-   [red][+] HTTP_Proxy[/red]
    [red][+] ICMP[/red]
-   [red][+] IPSec[/red]
-   [red][+] MDNS[/red]
-   [red][+] SSDP[/red]
+   [red][+] Unknown[/red]
+   [red][+] WireGuard[/red]

@@ -1,53 +1,20 @@
 [
     {
-        "ip_field": "0/Unknown",
+        "ip_field": "126/Google",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "63743b46235eafbf07950e6fbab70fe4",
-        "ja4": "t12d800700_ee0b5a6c69b8_7b0ba9b4cf08",
-        "servernames": "a248.e.akamai.net,*.akamaized.net,*.akamaized-staging.net,*.akamaihd.net,*.akamaihd-staging.net",
-        "issuer": "C=US, O=DigiCert Inc, CN=DigiCert TLS Hybrid ECC SHA384 2020 CA1",
-        "subject": "C=US, ST=Massachusetts, L=Cambridge, O=Akamai Technologies, Inc., CN=a248.e.akamai.net",
-        "certificate": "SHA-1: 51:B3:16:11:9C:44:F0:40:BC:CE:8A:C0:3A:1A:D3:BB:C6:47:40:B3",
-        "sni": "download-cdn-mariokarttour.akamaized.net",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "907bf3ecef1c987c889946b737b43de8",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "pubsub.googleapis.com",
         "ip_source": "10.215.173.1",
-        "port_source": "57554",
-        "ip_destination": "83.224.69.216",
+        "port_source": "38922",
+        "ip_destination": "142.251.209.42",
         "port_destination": "443",
         "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
-        "risk": "** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "10",
-        "risk_info": "No ALPN",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "296 <-> 602",
-            "183 <-> 360"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "63743b46235eafbf07950e6fbab70fe4",
-        "ja4": "t12d800700_ee0b5a6c69b8_7b0ba9b4cf08",
-        "servernames": "a248.e.akamai.net,*.akamaized.net,*.akamaized-staging.net,*.akamaihd.net,*.akamaihd-staging.net",
-        "issuer": "C=US, O=DigiCert Inc, CN=DigiCert TLS Hybrid ECC SHA384 2020 CA1",
-        "subject": "C=US, ST=Massachusetts, L=Cambridge, O=Akamai Technologies, Inc., CN=a248.e.akamai.net",
-        "certificate": "SHA-1: 51:B3:16:11:9C:44:F0:40:BC:CE:8A:C0:3A:1A:D3:BB:C6:47:40:B3",
-        "sni": "download-cdn-mariokarttour.akamaized.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "42826",
-        "ip_destination": "83.224.69.216",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_39840_6fd296f068e7/Unknown",
-        "risk": "** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "10",
-        "risk_info": "No ALPN",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "255 <-> 622"
+            "42 <-> 41"
         ]
     },
     {
@@ -115,6 +82,62 @@
     {
         "ip_field": "284/GoogleCloud",
         "transport_protocol": "TCP",
+        "proto_field": "91.173/TLS.Nintendo",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "a6913b7b80402974409b47079c29d775.baas.nintendo.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "44416",
+        "ip_destination": "34.110.169.141",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "TCP",
+        "proto_field": "91.173/TLS.Nintendo",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
+        "sni": "a6913b7b80402974409b47079c29d775.baas.nintendo.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "55686",
+        "ip_destination": "34.110.169.141",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "15 <-> 15",
+            "7 <-> 8",
+            "8 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f590053ff246338aff7c203dbe7164d6",
+        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
+        "sni": "pubsub.googleapis.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "55922",
+        "ip_destination": "142.251.209.42",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "284/GoogleCloud",
+        "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
@@ -153,161 +176,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "12 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "54.82.45.73",
-        "dns_id": "0xddae",
-        "plain_text": "accounts",
-        "sni": "api.accounts.nintendo.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "44905",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "142.251.209.42",
-        "dns_id": "0x22e0",
-        "plain_text": "firebaselogging",
-        "sni": "firebaselogging.googleapis.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "25425",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "0.0.0.0",
-        "dns_id": "0x646b",
-        "plain_text": "download",
-        "sni": "download-cdn-mariokarttour.akamaized.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "30614",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "142.251.209.42",
-        "dns_id": "0x07c4",
-        "plain_text": "pubsub",
-        "sni": "pubsub.googleapis.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "42567",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "108.138.192.103",
-        "dns_id": "0xbdb4",
-        "plain_text": "mariokarttour",
-        "sni": "api.mariokarttour.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "5872",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "1 <-> 1",
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "83.224.69.216",
-        "dns_id": "0x710f",
-        "plain_text": "download",
-        "sni": "download-cdn-mariokarttour.akamaized.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "21995",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "34.110.169.141",
-        "dns_id": "0xaf66",
-        "plain_text": " a6913b",
-        "sni": "a6913b7b80402974409b47079c29d775.baas.nintendo.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "40859",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "1 <-> 1",
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "23.213.161.134",
-        "dns_id": "0xa94d",
-        "plain_text": "accounts",
-        "sni": "accounts.nintendo.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "48145",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "35.190.88.7",
-        "dns_id": "0xad5e",
-        "plain_text": "sessions",
-        "sni": "sessions.bugsnag.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "34482",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
         ]
     }
 ]

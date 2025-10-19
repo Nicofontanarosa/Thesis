@@ -1,6 +1,59 @@
 [
     {
         "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.239/QUIC.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "hnVEhj",
+        "sni": "mobilemaps.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61906",
+        "ip_destination": "216.239.38.135",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "713 <-> 2343"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.239/QUIC.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "sni": "ogads-pa.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61918",
+        "ip_destination": "216.58.204.138",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.239/QUIC.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "/tWa70",
+        "sni": "mobilemaps-pa-gz.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61908",
+        "ip_destination": "216.239.38.135",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "10 <-> 10"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
         "transport_protocol": "TCP",
         "proto_field": "91.239/TLS.GoogleServices",
         "tls_version": "TLSv1.3",

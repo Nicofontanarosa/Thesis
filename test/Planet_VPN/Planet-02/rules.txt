@@ -1,3 +1,7 @@
-host:"api.telegra.ph",host:"fuck.rkn",host:"mobileconfiguration-pa.googleapis.com"@Unknown
-host:"telemetry.sdk.inmobi.com"@Identity protection service
-host:"ssp-track-us.bidease.com"@Domains by proxy, llc
+host:"fuck.rkn"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"fuck.rkn"@
+
+--------------------------------------------------------------

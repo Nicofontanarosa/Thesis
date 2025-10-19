@@ -31,7 +31,7 @@ CHECK_JA_MISSING = False
 TOP_PERCENT = 0.04
 
 # protocols to keep
-PROTOCOLS = {"TLS", "HTTP", "HTTP_Connect", "QUIC", "Unknown", "WireGuard"}
+PROTOCOLS = {"TLS", "HTTP", "HTTP_Connect", "HTTP.WebSocket", "QUIC"}
 # aggregation key: flows with identical values for all these fields are merged into a single entry
 KEYS_BY_PROTOCOL = {
     "TLS": ["ip_source", "tcp_fingerprint", "ip_destination", "sni", "ja3s", "ja4", "tls_version", "proto_field", "transport_protocol"],

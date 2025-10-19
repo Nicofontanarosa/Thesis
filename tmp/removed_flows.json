@@ -1,182 +1,39 @@
 
 >> General flows removed [DEBUG]:
 
-2	UDP 192.168.1.52:63338 <-> 146.70.96.39:4500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 79/IPSec, Confidence: DPI][DPI packets: 1][cat: VPN/2][2632 pkts/1092200 bytes <-> 5320 pkts/6051776 bytes][Goodput ratio: 90/96][43.86 sec][bytes ratio: -0.694 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 7/4 4621/4620 104/71][Pkt Len c2s/s2c min/avg/max/stddev: 118/118 415/1138 1478/1478 487/457][PLAIN TEXT (Xa7.@Q)][Plen Bins: 0,0,37,28,4,2,2,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,2,1,0,0,12,0,0,0]
-33	UDP 192.168.1.52:56990 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 3][cat: Network/14][128 pkts/12542 bytes <-> 128 pkts/20724 bytes][Goodput ratio: 57/74][11.06 sec][Hostname/SNI: 42.209.251.142.in-addr.arpa][0.0.0.0][DNS Id: 0xbd28][DNS Ptr: mil04s51-in-f10.1e100.net][bytes ratio: -0.246 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 53/78 1057/1115 222/233][Pkt Len c2s/s2c min/avg/max/stddev: 94/96 98/162 143/255 6/20][PLAIN TEXT (myfastgate)][Plen Bins: 0,50,4,29,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-175	UDP 192.168.1.52:49252 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][14 pkts/1196 bytes <-> 12 pkts/1865 bytes][Goodput ratio: 51/73][29.65 sec][Hostname/SNI: 1859452490.rsc.cdn77.org][212.102.55.182][DNS Id: 0x593b][bytes ratio: -0.219 (Download)][IAT c2s/s2c min/avg/max/stddev: 52/101 2622/3050 10812/10836 3611/3833][Pkt Len c2s/s2c min/avg/max/stddev: 77/87 85/155 98/366 5/85][PLAIN TEXT (1859452490)][Plen Bins: 0,62,23,0,7,0,0,3,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-177	UDP 192.168.1.254:54146 -> 239.255.255.250:1900 [proto: 12/SSDP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 12/SSDP, Confidence: DPI][DPI packets: 1][cat: System/18][8 pkts/2854 bytes -> 0 pkts/0 bytes][Goodput ratio: 88/0][0.07 sec][Hostname/SNI: 239.255.255.250][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 10/0 64/0 22/0][Pkt Len c2s/s2c min/avg/max/stddev: 320/0 357/0 394/0 33/0][PLAIN TEXT (NOTIFY )][Plen Bins: 0,0,0,0,0,0,0,0,50,0,25,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-179	UDP 192.168.1.52:54433 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][11 pkts/915 bytes <-> 11 pkts/1822 bytes][Goodput ratio: 49/75][5.98 sec][Hostname/SNI: statics.creativecdn.com][212.102.55.183][DNS Id: 0xc04f][bytes ratio: -0.331 (Download)][IAT c2s/s2c min/avg/max/stddev: 70/0 627/679 3194/3171 920/956][Pkt Len c2s/s2c min/avg/max/stddev: 70/91 83/166 93/237 7/43][PLAIN TEXT (statics)][Plen Bins: 4,51,9,13,9,9,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-182	UDP 192.168.1.52:56200 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][7 pkts/605 bytes <-> 7 pkts/827 bytes][Goodput ratio: 51/64][6.10 sec][Hostname/SNI: 165.2.254.10.in-addr.arpa][0.0.0.0][DNS Id: 0xbb8b][bytes ratio: -0.155 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 115/101 1175/1169 5324/5316 2075/2074][Pkt Len c2s/s2c min/avg/max/stddev: 85/101 86/118 91/135 2/13][Risk: ** Error Code **][Risk Score: 10][Risk Info: DNS Error Code NXDOMAIN][PLAIN TEXT (fastres)][Plen Bins: 0,64,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-183	UDP 192.168.1.84:5353 -> 224.0.0.251:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][6 pkts/1432 bytes -> 0 pkts/0 bytes][Goodput ratio: 82/0][0.72 sec][Hostname/SNI: _dosvc._tcp.local][_dosvc._tcp.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 143/0 306/0 122/0][Pkt Len c2s/s2c min/avg/max/stddev: 82/0 239/0 431/0 158/0][PLAIN TEXT (BIOT/KBRWA)][Plen Bins: 0,50,0,0,0,0,0,0,0,0,33,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-184	UDP 192.168.1.52:61915 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][5 pkts/427 bytes <-> 5 pkts/819 bytes][Goodput ratio: 51/74][0.67 sec][Hostname/SNI: tpc.googlesyndication.com][216.58.204.225][DNS Id: 0x6273][bytes ratio: -0.315 (Download)][IAT c2s/s2c min/avg/max/stddev: 58/0 145/152 253/327 75/120][Pkt Len c2s/s2c min/avg/max/stddev: 85/101 85/164 87/202 1/36][PLAIN TEXT (googlesyndication)][Plen Bins: 0,60,0,10,20,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-185	UDP 192.168.1.52:53515 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][5 pkts/423 bytes <-> 4 pkts/713 bytes][Goodput ratio: 50/76][2.63 sec][Hostname/SNI: view.adjust.com][185.151.204.51][DNS Id: 0x23b8][bytes ratio: -0.255 (Download)][IAT c2s/s2c min/avg/max/stddev: 60/96 654/852 2088/2048 837/855][Pkt Len c2s/s2c min/avg/max/stddev: 75/107 85/178 101/224 12/45][PLAIN TEXT (adjust)][Plen Bins: 0,55,11,0,11,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-186	UDP 192.168.1.52:49809 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][5 pkts/399 bytes <-> 4 pkts/718 bytes][Goodput ratio: 47/76][4.03 sec][Hostname/SNI: events.ads.vungle.com][54.86.132.50][DNS Id: 0x03f7][bytes ratio: -0.286 (Download)][IAT c2s/s2c min/avg/max/stddev: 63/202 1004/1328 2864/2871 1125/1129][Pkt Len c2s/s2c min/avg/max/stddev: 76/131 80/180 90/209 5/31][PLAIN TEXT (events)][Plen Bins: 0,55,11,0,11,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-187	UDP 192.168.1.52:63336 <-> 146.70.96.39:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 79/IPSec, Confidence: DPI][DPI packets: 1][cat: VPN/2][1 pkts/758 bytes <-> 1 pkts/322 bytes][Goodput ratio: 94/87][0.16 sec][Plen Bins: 0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-188	UDP 192.168.1.52:49253 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 3][cat: Network/14][3 pkts/429 bytes <-> 3 pkts/605 bytes][Goodput ratio: 70/79][1.06 sec][Hostname/SNI: 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa][0.0.0.0][DNS Id: 0xc078][DNS Ptr: myfastgate][bytes ratio: -0.170 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 920/12 460/519 920/1026 460/507][Pkt Len c2s/s2c min/avg/max/stddev: 143/167 143/202 143/219 0/25][Risk: ** Minor Issues **][Risk Score: 10][Risk Info: DNS Record with zero TTL][PLAIN TEXT (myfastgate)][Plen Bins: 0,0,0,66,0,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-189	UDP 192.168.1.52:56980 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][5 pkts/400 bytes <-> 4 pkts/601 bytes][Goodput ratio: 47/72][4.02 sec][Hostname/SNI: rr2---sn-hpa7kn7d.googlevideo.com][74.125.99.167][DNS Id: 0x48ea][bytes ratio: -0.201 (Download)][IAT c2s/s2c min/avg/max/stddev: 63/203 1003/1328 2358/2342 950/877][Pkt Len c2s/s2c min/avg/max/stddev: 74/90 80/150 93/195 7/38][PLAIN TEXT (googlevideo)][Plen Bins: 0,66,0,22,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-190	UDP 192.168.1.52:56989 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][5 pkts/404 bytes <-> 4 pkts/503 bytes][Goodput ratio: 48/66][2.92 sec][Hostname/SNI: 1900368543.rsc.cdn77.org][84.17.59.9][DNS Id: 0x9cb0][bytes ratio: -0.109 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 65/204 726/956 2261/2249 893/918][Pkt Len c2s/s2c min/avg/max/stddev: 77/86 81/126 86/205 4/47][PLAIN TEXT (1900368543)][Plen Bins: 0,77,11,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-191	UDP 192.168.1.52:55278 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][4 pkts/321 bytes <-> 4 pkts/567 bytes][Goodput ratio: 48/70][0.56 sec][Hostname/SNI: cdn.iads.unity3d.com][3.165.238.92][DNS Id: 0xe3bd][bytes ratio: -0.277 (Download)][IAT c2s/s2c min/avg/max/stddev: 73/11 170/166 315/379 104/156][Pkt Len c2s/s2c min/avg/max/stddev: 76/96 80/142 89/157 5/26][PLAIN TEXT (configv)][Plen Bins: 0,62,0,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-192	UDP 192.168.1.52:59848 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][3 pkts/242 bytes <-> 3 pkts/530 bytes][Goodput ratio: 48/76][1.07 sec][Hostname/SNI: 1982070091.rsc.cdn77.org][212.102.55.183][DNS Id: 0x8df2][bytes ratio: -0.373 (Download)][IAT c2s/s2c min/avg/max/stddev: 64/3 532/502 999/1002 468/500][Pkt Len c2s/s2c min/avg/max/stddev: 79/116 81/177 84/207 2/43][PLAIN TEXT (1982070091)][Plen Bins: 0,50,16,0,0,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-193	UDP 192.168.1.52:54553 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][4 pkts/348 bytes <-> 4 pkts/412 bytes][Goodput ratio: 52/59][2.41 sec][Hostname/SNI: pro.ip-api.com][193.234.225.88][DNS Id: 0x1d88][bytes ratio: -0.084 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 67/13 798/789 2252/2254 1028/1037][Pkt Len c2s/s2c min/avg/max/stddev: 74/90 87/103 96/112 8/8][PLAIN TEXT (crashlyticsreports)][Plen Bins: 0,87,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-194	UDP 192.168.1.52:61145 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 3][cat: Network/14][3 pkts/332 bytes <-> 3 pkts/381 bytes][Goodput ratio: 62/67][1.03 sec][Hostname/SNI: 248.72.0.10.in-addr.arpa][0.0.0.0][DNS Id: 0x5d6d][bytes ratio: -0.069 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 971/11 486/508 971/1004 486/496][Pkt Len c2s/s2c min/avg/max/stddev: 94/94 111/127 143/192 23/46][Risk: ** Error Code **][Risk Score: 10][Risk Info: DNS Error Code NXDOMAIN][Plen Bins: 0,67,0,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-195	UDP 192.168.1.52:49894 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][3 pkts/260 bytes <-> 3 pkts/447 bytes][Goodput ratio: 51/72][2.11 sec][Hostname/SNI: cdn59994332.blazingcdn.net][188.240.13.1][DNS Id: 0xc8e2][bytes ratio: -0.264 (Download)][IAT c2s/s2c min/avg/max/stddev: 68/15 1046/1022 2025/2030 978/1008][Pkt Len c2s/s2c min/avg/max/stddev: 86/118 87/149 87/178 0/25][PLAIN TEXT (59994332)][Plen Bins: 0,51,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-196	UDP 192.168.1.52:56202 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 4][cat: Network/14][3 pkts/291 bytes <-> 3 pkts/415 bytes][Goodput ratio: 57/69][0.01 sec][Hostname/SNI: 129.124.101.62.in-addr.arpa][0.0.0.0][DNS Id: 0x3d3f][DNS Ptr: 62-101-124-129.fastres.net][bytes ratio: -0.176 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 1/1 1/0 1/1 0/0][Pkt Len c2s/s2c min/avg/max/stddev: 96/136 97/138 98/141 1/2][PLAIN TEXT (fastres)][Plen Bins: 0,50,16,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-197	UDP 192.168.1.254:46945 -> 239.255.255.250:1900 [proto: 12/SSDP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 12/SSDP, Confidence: DPI][DPI packets: 1][cat: System/18][4 pkts/698 bytes -> 0 pkts/0 bytes][Goodput ratio: 76/0][1.73 sec][Hostname/SNI: 239.255.255.250][PLAIN TEXT (SEARCH )][Plen Bins: 0,0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-200	ICMP 192.168.1.52:0 -> 216.58.209.36:0 [proto: 81/ICMP][IP: 126/Google][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][7 pkts/686 bytes -> 0 pkts/0 bytes][Goodput ratio: 57/0][12.29 sec][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 298/0 2048/0 5318/0 2310/0][Pkt Len c2s/s2c min/avg/max/stddev: 98/0 98/0 98/0 0/0][Risk: ** Susp Entropy **** Unidirectional Traffic **][Risk Score: 20][Risk Info: No server to client traffic / Entropy: 5.262 (Executable?)][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-202	UDP 192.168.1.52:65397 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][3 pkts/251 bytes <-> 2 pkts/388 bytes][Goodput ratio: 50/78][3.20 sec][Hostname/SNI: t2.chartboost.com][2.19.179.112][DNS Id: 0x3ecd][PLAIN TEXT (chartboost)][Plen Bins: 0,60,0,0,20,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-203	UDP 192.168.1.52:51509 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][3 pkts/258 bytes <-> 3 pkts/322 bytes][Goodput ratio: 51/61][0.86 sec][Hostname/SNI: 1940108038.rsc.cdn77.org][212.102.55.182][DNS Id: 0x4392][bytes ratio: -0.110 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 67/3 428/402 790/801 362/399][Pkt Len c2s/s2c min/avg/max/stddev: 84/103 86/107 87/116 1/6][PLAIN TEXT (1940108038)][Plen Bins: 0,83,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-204	UDP 192.168.1.52:61144 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][3 pkts/250 bytes <-> 2 pkts/267 bytes][Goodput ratio: 49/68][0.45 sec][Hostname/SNI: 248.72.0.10.in-addr.arpa][0.0.0.0][DNS Id: 0x3bf3][Risk: ** Error Code **][Risk Score: 10][Risk Info: DNS Error Code NXDOMAIN][Plen Bins: 0,60,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-206	UDP 192.168.1.52:57559 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][3 pkts/245 bytes <-> 2 pkts/192 bytes][Goodput ratio: 48/56][0.15 sec][Hostname/SNI: www.gstatic.com][142.250.180.131][DNS Id: 0xda88][PLAIN TEXT (gstatic)][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-237	UDP 192.168.1.52:55536 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 3][cat: Network/14][2 pkts/154 bytes <-> 1 pkts/243 bytes][Goodput ratio: 45/82][0.09 sec][Hostname/SNI: cdn-lb.vungle.com][84.53.184.162][DNS Id: 0x4211][PLAIN TEXT (vungle)][Plen Bins: 0,66,0,0,0,0,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-249	UDP 192.168.1.52:61114 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 3][cat: Network/14][2 pkts/140 bytes <-> 2 pkts/172 bytes][Goodput ratio: 40/51][0.08 sec][Hostname/SNI: myfastgate][192.168.1.254][DNS Id: 0xaa78][Risk: ** Minor Issues **][Risk Score: 10][Risk Info: DNS Record with zero TTL][PLAIN TEXT (myfastgate)][Plen Bins: 50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-252	UDP 192.168.1.52:53516 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/99 bytes <-> 1 pkts/172 bytes][Goodput ratio: 57/75][0.03 sec][Hostname/SNI: 250.255.255.239.in-addr.arpa][0.0.0.0][DNS Id: 0x771b][Risk: ** Error Code **][Risk Score: 10][Risk Info: DNS Error Code NXDOMAIN][Plen Bins: 0,50,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-253	UDP 192.168.1.52:49254 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/97 bytes <-> 1 pkts/168 bytes][Goodput ratio: 56/75][0.07 sec][Hostname/SNI: 26.114.82.140.in-addr.arpa][0.0.0.0][DNS Id: 0x9261][DNS Ptr: lb-140-82-114-26-iad.github.com][PLAIN TEXT (github)][Plen Bins: 0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-254	UDP 192.168.1.52:5353 -> 224.0.0.251:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 3][cat: Network/14][3 pkts/242 bytes -> 0 pkts/0 bytes][Goodput ratio: 48/0][0.30 sec][Hostname/SNI: myfastgate][myfastgate][PLAIN TEXT (myfastgate)][Plen Bins: 33,66,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-256	UDP 192.168.1.52:56201 <-> 192.168.1.254:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/96 bytes <-> 1 pkts/96 bytes][Goodput ratio: 56/56][0.01 sec][Hostname/SNI: 165.2.254.10.in-addr.arpa][0.0.0.0][DNS Id: 0xab79][Risk: ** Error Code **][Risk Score: 10][Risk Info: DNS Error Code NXDOMAIN][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-259	ICMP 93.62.86.153:0 -> 192.168.1.52:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/126 bytes -> 0 pkts/0 bytes][Goodput ratio: 66/0][< 1 sec][Risk: ** Susp Entropy **** Unidirectional Traffic **][Risk Score: 20][Risk Info: No server to client traffic / Entropy: 5.528 (Executable?)][Plen Bins: 0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-260	ICMP 192.168.1.254:0 -> 192.168.1.52:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/126 bytes -> 0 pkts/0 bytes][Goodput ratio: 66/0][< 1 sec][Risk: ** Susp Entropy **** Unidirectional Traffic **][Risk Score: 20][Risk Info: No server to client traffic / Entropy: 5.461 (Executable?)][Plen Bins: 0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-262	ICMP 10.0.75.26:0 -> 192.168.1.52:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/110 bytes -> 0 pkts/0 bytes][Goodput ratio: 61/0][< 1 sec][Risk: ** Susp Entropy **** Unidirectional Traffic **][Risk Score: 20][Risk Info: No server to client traffic / Entropy: 5.049 (Executable?)][Plen Bins: 0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-263	ICMP 62.101.124.13:0 -> 192.168.1.52:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/110 bytes -> 0 pkts/0 bytes][Goodput ratio: 61/0][< 1 sec][Risk: ** Susp Entropy **** Unidirectional Traffic **][Risk Score: 20][Risk Info: No server to client traffic / Entropy: 4.979 (Executable?)][Plen Bins: 0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-264	ICMP 62.101.124.129:0 -> 192.168.1.52:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/110 bytes -> 0 pkts/0 bytes][Goodput ratio: 61/0][< 1 sec][Risk: ** Susp Entropy **** Unidirectional Traffic **][Risk Score: 20][Risk Info: No server to client traffic / Entropy: 5.026 (Executable?)][Plen Bins: 0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-290	ICMP 10.0.72.248:0 -> 192.168.1.52:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/70 bytes -> 0 pkts/0 bytes][Goodput ratio: 39/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-291	ICMP 10.254.2.165:0 -> 192.168.1.52:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/70 bytes -> 0 pkts/0 bytes][Goodput ratio: 39/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-294	UDP 192.168.1.52:63165 -> 146.70.96.39:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-295	UDP 192.168.1.52:63166 -> 138.197.157.119:500 [proto: 79/IPSec][IP: 442/DigitalOcean][Encrypted][Confidence: Match by port][FPC: 442/DigitalOcean, Confidence: IP address][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-296	UDP 192.168.1.52:63167 -> 147.182.146.88:500 [proto: 79/IPSec][IP: 442/DigitalOcean][Encrypted][Confidence: Match by port][FPC: 442/DigitalOcean, Confidence: IP address][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-297	UDP 192.168.1.52:63168 -> 169.197.140.234:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-298	UDP 192.168.1.52:63169 -> 45.84.121.120:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-299	UDP 192.168.1.52:63170 -> 135.125.207.226:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-300	UDP 192.168.1.52:63171 -> 107.151.252.192:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-301	UDP 192.168.1.52:63172 -> 128.14.197.149:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-302	UDP 192.168.1.52:63173 -> 135.125.206.182:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-303	UDP 192.168.1.52:63174 -> 128.14.193.230:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-304	UDP 192.168.1.52:63175 -> 146.70.46.154:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-305	UDP 192.168.1.52:63176 -> 128.14.193.181:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-306	UDP 192.168.1.52:63177 -> 135.125.206.126:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-307	UDP 192.168.1.52:63178 -> 217.148.141.55:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-308	UDP 192.168.1.52:63179 -> 193.108.118.2:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-309	UDP 192.168.1.52:63180 -> 23.251.121.146:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-310	UDP 192.168.1.52:63181 -> 128.1.205.130:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-311	UDP 192.168.1.52:63182 -> 128.1.186.185:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-312	UDP 192.168.1.52:63183 -> 37.120.202.182:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-313	UDP 192.168.1.52:63184 -> 193.108.119.72:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-314	UDP 192.168.1.52:63185 -> 128.1.186.135:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-315	UDP 192.168.1.52:63186 -> 146.70.46.157:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-316	UDP 192.168.1.52:63187 -> 23.251.121.143:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-317	UDP 192.168.1.52:63188 -> 128.1.172.215:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-318	UDP 192.168.1.52:63189 -> 159.89.114.32:500 [proto: 79/IPSec][IP: 442/DigitalOcean][Encrypted][Confidence: Match by port][FPC: 442/DigitalOcean, Confidence: IP address][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-319	UDP 192.168.1.52:63190 -> 37.120.202.169:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-320	UDP 192.168.1.52:63191 -> 146.70.46.153:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-321	UDP 192.168.1.52:63192 -> 79.110.53.95:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-322	UDP 192.168.1.52:63193 -> 193.118.59.77:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-323	UDP 192.168.1.52:63194 -> 79.110.53.77:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-324	UDP 192.168.1.52:63195 -> 217.148.141.46:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-325	UDP 192.168.1.52:63196 -> 217.148.141.56:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-326	UDP 192.168.1.52:63197 -> 23.251.121.147:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-327	UDP 192.168.1.52:63198 -> 193.108.119.234:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-328	UDP 192.168.1.52:63199 -> 51.222.111.138:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-329	UDP 192.168.1.52:63201 -> 45.84.121.121:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-330	UDP 192.168.1.52:63202 -> 51.222.86.37:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-331	UDP 192.168.1.52:63203 -> 128.1.186.11:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-332	UDP 192.168.1.52:63204 -> 45.84.123.73:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-333	UDP 192.168.1.52:63205 -> 128.1.172.241:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-334	UDP 192.168.1.52:63206 -> 128.1.205.161:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-335	UDP 192.168.1.52:63207 -> 37.120.202.174:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-336	UDP 192.168.1.52:63208 -> 79.110.53.85:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-337	UDP 192.168.1.52:63209 -> 146.70.61.242:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-338	UDP 192.168.1.52:63210 -> 51.222.86.214:500 [proto: 79/IPSec][IP: 0/Unknown][Encrypted][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 1][cat: VPN/2][1 pkts/44 bytes -> 0 pkts/0 bytes][Goodput ratio: 4/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+1	UDP 192.168.80.96:63054 <-> 15.220.66.32:443 [proto: 206/WireGuard][IP: 265/AmazonAWS][Encrypted][Confidence: DPI][FPC: 265/AmazonAWS, Confidence: IP address][DPI packets: 2][cat: VPN/2][1759 pkts/398106 bytes <-> 2762 pkts/3149952 bytes][Goodput ratio: 81/96][18.09 sec][bytes ratio: -0.776 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 7/3 1383/1208 47/28][Pkt Len c2s/s2c min/avg/max/stddev: 74/122 226/1140 1354/1354 283/445][Risk: ** Known Proto on Non Std Port **][Risk Score: 50][Risk Info: Expected on port 51820][PLAIN TEXT (wpB@Nc)][Plen Bins: 0,0,1,54,5,4,1,1,0,1,1,1,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0]
+20	ICMP 192.168.80.96:0 -> 3.125.65.153:0 [proto: 81/ICMP][IP: 265/AmazonAWS][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][6 pkts/1308 bytes -> 0 pkts/0 bytes][Goodput ratio: 81/0][26.07 sec][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 5070/0 5214/0 5423/0 154/0][Pkt Len c2s/s2c min/avg/max/stddev: 218/0 218/0 218/0 0/0][Risk: ** Susp Entropy **** Unidirectional Traffic **][Risk Score: 20][Risk Info: No server to client traffic / Entropy: 6.352 (Executable?)][Plen Bins: 0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+21	UDP 3.125.65.153:443 -> 192.168.80.96:63014 [proto: 206/WireGuard][IP: 265/AmazonAWS][Encrypted][Confidence: DPI][FPC: 265/AmazonAWS, Confidence: IP address][DPI packets: 2][cat: VPN/2][6 pkts/1140 bytes -> 0 pkts/0 bytes][Goodput ratio: 78/0][26.11 sec][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 5117/0 5222/0 5379/0 127/0][Pkt Len c2s/s2c min/avg/max/stddev: 190/0 190/0 190/0 0/0][Risk: ** Known Proto on Non Std Port **** Unidirectional Traffic **][Risk Score: 60][Risk Info: No client to server traffic / Expected on port 51820][Plen Bins: 0,0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+23	UDP 192.168.80.96:50949 <-> 192.168.80.68:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][3 pkts/261 bytes <-> 3 pkts/362 bytes][Goodput ratio: 52/65][0.50 sec][Hostname/SNI: mtalk.google.com][108.177.119.188][DNS Id: 0x7d3b][bytes ratio: -0.162 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 192/201 226/218 259/234 34/16][Pkt Len c2s/s2c min/avg/max/stddev: 76/118 87/121 102/123 11/2][PLAIN TEXT (google)][Plen Bins: 0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+26	UDP 192.168.80.96:49258 <-> 192.168.80.68:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][2 pkts/162 bytes <-> 2 pkts/266 bytes][Goodput ratio: 48/68][6.31 sec][Hostname/SNI: graph.facebook.com][157.240.203.14][DNS Id: 0xb371][PLAIN TEXT (facebook)][Plen Bins: 0,50,25,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+28	UDP 192.168.80.96:56344 <-> 192.168.80.68:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/85 bytes <-> 1 pkts/211 bytes][Goodput ratio: 50/80][0.06 sec][Hostname/SNI: api.phantom.avira-vpn.com][3.126.169.100][DNS Id: 0xa2de][PLAIN TEXT (phantom)][Plen Bins: 0,50,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+32	ICMP 192.168.80.96:0 -> 15.220.66.32:0 [proto: 81/ICMP][IP: 265/AmazonAWS][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/198 bytes -> 0 pkts/0 bytes][Goodput ratio: 78/0][< 1 sec][Risk: ** Susp Entropy **** Unidirectional Traffic **][Risk Score: 20][Risk Info: No server to client traffic / Entropy: 6.473 (Executable?)][Plen Bins: 0,0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 
 >> Empty flows removed [DEBUG]:
 
-205	TCP 192.168.1.52:63260 <-> 45.84.123.73:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 7][cat: Web/5][4 pkts/272 bytes <-> 3 pkts/206 bytes][Goodput ratio: 0/0][0.52 sec][bytes ratio: 0.138 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 87/342 172/342 228/342 61/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/69 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-208	TCP 192.168.1.52:63223 <-> 193.118.59.88:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 207/0 240/0 284/0 32/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-209	TCP 192.168.1.52:63226 <-> 128.14.197.149:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 208/0 240/0 289/0 35/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-210	TCP 192.168.1.52:63228 <-> 128.14.193.230:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 208/0 240/0 290/0 36/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-211	TCP 192.168.1.52:63229 <-> 45.84.123.71:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.52 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 91/0 174/0 299/0 90/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-212	TCP 192.168.1.52:63230 <-> 146.70.61.243:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.52 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 87/0 174/0 228/0 62/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-213	TCP 192.168.1.52:63231 <-> 146.70.46.154:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 206/0 239/0 285/0 33/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-214	TCP 192.168.1.52:63232 <-> 128.1.172.222:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.73 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 209/0 242/0 298/0 40/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-215	TCP 192.168.1.52:63234 <-> 217.148.141.55:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 207/0 239/0 288/0 35/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-216	TCP 192.168.1.52:63236 <-> 23.251.121.132:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.73 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 120/0 241/0 311/0 86/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-217	TCP 192.168.1.52:63238 <-> 146.70.46.155:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 206/0 239/0 286/0 34/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-218	TCP 192.168.1.52:63239 <-> 23.251.121.146:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 122/0 241/0 311/0 85/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-219	TCP 192.168.1.52:63240 <-> 128.1.172.245:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 208/0 240/0 290/0 36/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-220	TCP 192.168.1.52:63241 <-> 128.1.186.185:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.82 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 4/0 273/0 428/0 191/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-221	TCP 192.168.1.52:63243 <-> 128.1.205.157:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.73 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 120/0 241/0 310/0 86/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-222	TCP 192.168.1.52:63245 <-> 185.220.68.183:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 119/0 241/0 310/0 86/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-223	TCP 192.168.1.52:63246 <-> 217.148.141.58:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 206/0 239/0 289/0 36/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-224	TCP 192.168.1.52:63247 <-> 128.1.172.215:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 206/0 239/0 287/0 35/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-225	TCP 192.168.1.52:63248 <-> 37.120.202.169:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 205/0 239/0 288/0 36/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-226	TCP 192.168.1.52:63249 <-> 37.120.202.183:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 206/0 240/0 287/0 34/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-227	TCP 192.168.1.52:63250 <-> 79.110.53.95:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 123/0 240/0 309/0 83/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-228	TCP 192.168.1.52:63251 <-> 128.14.197.30:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 206/0 239/0 288/0 35/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-229	TCP 192.168.1.52:63252 <-> 79.110.53.107:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 121/0 241/0 309/0 85/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-230	TCP 192.168.1.52:63255 <-> 217.148.141.46:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 204/0 239/0 287/0 35/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-231	TCP 192.168.1.52:63256 <-> 23.251.121.147:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 121/0 240/0 308/0 84/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-232	TCP 192.168.1.52:63257 <-> 45.84.121.121:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.52 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 86/0 172/0 228/0 62/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-233	TCP 192.168.1.52:63258 <-> 146.70.46.156:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.71 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 202/0 238/0 284/0 34/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-234	TCP 192.168.1.52:63259 <-> 128.1.186.11:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.82 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 5/0 271/0 425/0 189/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-235	TCP 192.168.1.52:63261 <-> 37.120.202.174:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 204/0 238/0 287/0 35/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-236	TCP 192.168.1.52:63262 <-> 79.110.53.85:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.82 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 195/0 271/0 312/0 54/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-238	TCP 192.168.1.52:63224 <-> 207.154.233.73:8080 [proto: 131/HTTP_Proxy][IP: 442/DigitalOcean][ClearText][Confidence: Match by port][FPC: 442/DigitalOcean, Confidence: IP address][DPI packets: 6][cat: Web/5][4 pkts/236 bytes <-> 2 pkts/120 bytes][Goodput ratio: 0/0][0.52 sec][bytes ratio: 0.326 (Upload)][IAT c2s/s2c min/avg/max/stddev: 89/0 174/0 299/0 90/0][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 59/60 74/66 9/6][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-239	TCP 192.168.1.52:63225 <-> 107.151.252.192:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/236 bytes <-> 2 pkts/120 bytes][Goodput ratio: 0/0][0.73 sec][bytes ratio: 0.326 (Upload)][IAT c2s/s2c min/avg/max/stddev: 121/0 242/0 312/0 86/0][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 59/60 74/66 9/6][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-240	TCP 192.168.1.52:63233 <-> 142.93.151.210:8080 [proto: 131/HTTP_Proxy][IP: 442/DigitalOcean][ClearText][Confidence: Match by port][FPC: 442/DigitalOcean, Confidence: IP address][DPI packets: 6][cat: Web/5][4 pkts/236 bytes <-> 2 pkts/120 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.326 (Upload)][IAT c2s/s2c min/avg/max/stddev: 208/0 240/0 288/0 34/0][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 59/60 74/66 9/6][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-241	TCP 192.168.1.52:63235 <-> 167.99.191.106:8080 [proto: 131/HTTP_Proxy][IP: 442/DigitalOcean][ClearText][Confidence: Match by port][FPC: 442/DigitalOcean, Confidence: IP address][DPI packets: 6][cat: Web/5][4 pkts/236 bytes <-> 2 pkts/120 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.326 (Upload)][IAT c2s/s2c min/avg/max/stddev: 208/0 240/0 288/0 34/0][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 59/60 74/66 9/6][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-242	TCP 192.168.1.52:63242 <-> 46.101.83.123:8080 [proto: 131/HTTP_Proxy][IP: 442/DigitalOcean][ClearText][Confidence: Match by port][FPC: 442/DigitalOcean, Confidence: IP address][DPI packets: 6][cat: Web/5][4 pkts/236 bytes <-> 2 pkts/120 bytes][Goodput ratio: 0/0][0.52 sec][bytes ratio: 0.326 (Upload)][IAT c2s/s2c min/avg/max/stddev: 87/0 173/0 302/0 93/0][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 59/60 74/66 9/6][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-243	TCP 192.168.1.52:63244 <-> 107.151.252.177:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][4 pkts/236 bytes <-> 2 pkts/120 bytes][Goodput ratio: 0/0][0.73 sec][bytes ratio: 0.326 (Upload)][IAT c2s/s2c min/avg/max/stddev: 120/0 241/0 310/0 86/0][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 59/60 74/66 9/6][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-244	TCP 192.168.1.52:63253 <-> 138.197.141.58:8080 [proto: 131/HTTP_Proxy][IP: 442/DigitalOcean][ClearText][Confidence: Match by port][FPC: 442/DigitalOcean, Confidence: IP address][DPI packets: 6][cat: Web/5][4 pkts/236 bytes <-> 2 pkts/120 bytes][Goodput ratio: 0/0][0.72 sec][bytes ratio: 0.326 (Upload)][IAT c2s/s2c min/avg/max/stddev: 206/0 239/0 290/0 36/0][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 59/60 74/66 9/6][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-245	TCP 192.168.1.52:63254 <-> 165.232.113.246:8080 [proto: 131/HTTP_Proxy][IP: 442/DigitalOcean][ClearText][Confidence: Match by port][FPC: 442/DigitalOcean, Confidence: IP address][DPI packets: 6][cat: Web/5][4 pkts/236 bytes <-> 2 pkts/120 bytes][Goodput ratio: 0/0][0.52 sec][bytes ratio: 0.326 (Upload)][IAT c2s/s2c min/avg/max/stddev: 88/0 172/0 300/0 92/0][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 59/60 74/66 9/6][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-255	TCP 192.168.1.52:63297 <-> 35.212.47.33:443 [proto: 91/TLS][IP: 284/GoogleCloud][Encrypted][Confidence: Match by port][FPC: 284/GoogleCloud, Confidence: IP address][DPI packets: 3][cat: Web/5][2 pkts/128 bytes <-> 1 pkts/74 bytes][Goodput ratio: 0/0][0.20 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (client)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-257	TCP 192.168.1.52:63132 -> 18.66.218.69:443 [proto: 91/TLS][IP: 265/AmazonAWS][Encrypted][Confidence: Match by port][FPC: 265/AmazonAWS, Confidence: IP address][DPI packets: 2][cat: Web/5][2 pkts/132 bytes -> 0 pkts/0 bytes][Goodput ratio: 0/0][19.24 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-258	TCP 192.168.1.52:63227 <-> 193.108.119.99:8080 [proto: 131/HTTP_Proxy][IP: 0/Unknown][ClearText][Confidence: Match by port][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 2][cat: Web/5][1 pkts/74 bytes <-> 1 pkts/54 bytes][Goodput ratio: 0/0][0.08 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (server)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-261	TCP 192.168.1.52:63115 <-> 213.180.193.198:443 [proto: 91/TLS][IP: 25/Yandex][Encrypted][Confidence: Match by port][FPC: 25/Yandex, Confidence: IP address][DPI packets: 2][cat: Web/5][1 pkts/66 bytes <-> 1 pkts/54 bytes][Goodput ratio: 0/0][0.15 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-265	TCP 142.250.180.170:443 <-> 192.168.1.52:53688 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 126/Google, Confidence: IP address][DPI packets: 2][cat: Web/5][1 pkts/54 bytes <-> 1 pkts/54 bytes][Goodput ratio: 0/0][< 1 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-266	TCP 142.251.209.42:443 <-> 192.168.1.52:53682 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 126/Google, Confidence: IP address][DPI packets: 2][cat: Web/5][1 pkts/54 bytes <-> 1 pkts/54 bytes][Goodput ratio: 0/0][< 1 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-267	TCP 216.58.204.234:443 <-> 192.168.1.52:53582 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 126/Google, Confidence: IP address][DPI packets: 2][cat: Web/5][1 pkts/54 bytes <-> 1 pkts/54 bytes][Goodput ratio: 0/0][0.00 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-268	ICMP 192.168.1.52:0 <-> 23.251.121.132:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.25 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-269	ICMP 192.168.1.52:0 <-> 23.251.121.134:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.22 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-270	ICMP 192.168.1.52:0 <-> 23.251.121.147:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.25 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-271	ICMP 192.168.1.52:0 <-> 38.75.136.25:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.21 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-272	ICMP 192.168.1.52:0 <-> 38.75.136.191:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.26 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-273	ICMP 192.168.1.52:0 <-> 38.75.136.212:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.25 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-274	ICMP 192.168.1.52:0 <-> 128.1.172.215:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.17 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-275	ICMP 192.168.1.52:0 <-> 128.1.172.223:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.25 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-276	ICMP 192.168.1.52:0 <-> 128.1.172.227:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.25 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-277	ICMP 192.168.1.52:0 <-> 128.14.193.181:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.14 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-278	ICMP 192.168.1.52:0 <-> 128.14.193.217:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.17 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-279	ICMP 192.168.1.52:0 <-> 128.14.197.30:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.14 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-280	ICMP 192.168.1.52:0 <-> 154.12.241.121:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.22 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-281	ICMP 192.168.1.52:0 <-> 154.12.241.123:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.25 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-282	ICMP 192.168.1.52:0 <-> 154.12.242.50:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.25 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-283	ICMP 192.168.1.52:0 <-> 154.12.242.210:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.22 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-284	ICMP 192.168.1.52:0 <-> 154.12.245.112:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.22 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-285	ICMP 192.168.1.52:0 <-> 154.12.245.119:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.25 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-286	ICMP 192.168.1.52:0 <-> 154.53.60.80:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.25 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-287	ICMP 192.168.1.52:0 <-> 154.53.63.128:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.22 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-288	ICMP 192.168.1.52:0 <-> 207.244.234.246:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.15 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-289	ICMP 192.168.1.52:0 <-> 209.145.51.238:0 [proto: 81/ICMP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 81/ICMP, Confidence: DPI][DPI packets: 1][cat: Network/14][1 pkts/42 bytes <-> 1 pkts/42 bytes][Goodput ratio: 0/0][0.16 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-292	TCP 192.168.1.52:62886 -> 108.177.96.188:5228 [proto: 126/Google][IP: 126/Google][Encrypted][Confidence: Match by IP][FPC: 126/Google, Confidence: IP address][DPI packets: 1][cat: Web/5][1 pkts/66 bytes -> 0 pkts/0 bytes][Goodput ratio: 0/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-293	TCP 192.168.1.52:62933 -> 142.250.180.174:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 126/Google, Confidence: IP address][DPI packets: 1][cat: Web/5][1 pkts/66 bytes -> 0 pkts/0 bytes][Goodput ratio: 0/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+27	TCP 192.168.80.96:63045 <-> 3.126.169.100:443 [proto: 91/TLS][IP: 265/AmazonAWS][Encrypted][Confidence: Match by port][FPC: 265/AmazonAWS, Confidence: IP address][DPI packets: 6][cat: Web/5][4 pkts/272 bytes <-> 2 pkts/140 bytes][Goodput ratio: 0/0][0.14 sec][bytes ratio: 0.320 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 46/0 74/0 33/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 68/70 74/74 3/4][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+29	TCP 192.168.80.96:63040 <-> 3.123.150.17:443 [proto: 91/TLS][IP: 265/AmazonAWS][Encrypted][Confidence: Match by port][FPC: 265/AmazonAWS, Confidence: IP address][DPI packets: 3][cat: Web/5][2 pkts/128 bytes <-> 1 pkts/74 bytes][Goodput ratio: 0/0][0.08 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (client)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+30	TCP 192.168.80.96:63041 <-> 3.126.169.100:443 [proto: 91/TLS][IP: 265/AmazonAWS][Encrypted][Confidence: Match by port][FPC: 265/AmazonAWS, Confidence: IP address][DPI packets: 3][cat: Web/5][2 pkts/128 bytes <-> 1 pkts/74 bytes][Goodput ratio: 0/0][0.07 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (client)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+31	TCP 192.168.80.96:63044 <-> 3.123.150.17:443 [proto: 91/TLS][IP: 265/AmazonAWS][Encrypted][Confidence: Match by port][FPC: 265/AmazonAWS, Confidence: IP address][DPI packets: 3][cat: Web/5][2 pkts/128 bytes <-> 1 pkts/74 bytes][Goodput ratio: 0/0][0.07 sec][Risk: ** TCP Connection Issues **** Probing Attempt **][Risk Score: 100][Risk Info: TCP probing attempt / Connection refused (client)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+36	TCP 192.168.80.96:63019 -> 142.250.180.142:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 126/Google, Confidence: IP address][DPI packets: 1][cat: Web/5][1 pkts/66 bytes -> 0 pkts/0 bytes][Goodput ratio: 0/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+37	TCP 192.168.80.96:63020 -> 142.250.145.188:5228 [proto: 126/Google][IP: 126/Google][Encrypted][Confidence: Match by IP][FPC: 126/Google, Confidence: IP address][DPI packets: 1][cat: Web/5][1 pkts/66 bytes -> 0 pkts/0 bytes][Goodput ratio: 0/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+38	TCP 192.168.80.96:63022 -> 157.240.203.33:443 [proto: 91/TLS][IP: 119/Facebook][Encrypted][Confidence: Match by port][FPC: 119/Facebook, Confidence: IP address][DPI packets: 1][cat: Web/5][1 pkts/66 bytes -> 0 pkts/0 bytes][Goodput ratio: 0/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+39	TCP 192.168.80.96:63036 -> 216.58.204.244:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 126/Google, Confidence: IP address][DPI packets: 1][cat: Web/5][1 pkts/66 bytes -> 0 pkts/0 bytes][Goodput ratio: 0/0][< 1 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+1	TCP 192.168.80.96:63050 -> 85.194.243.137:8443 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 2][2 pkts/148 bytes -> 0 pkts/0 bytes][Goodput ratio: 0/0][1.02 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+2	TCP 192.168.80.96:63052 -> 217.138.209.130:8443 [proto: 0/Unknown][IP: 0/Unknown][ClearText][Confidence: Unknown][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 2][2 pkts/148 bytes -> 0 pkts/0 bytes][Goodput ratio: 0/0][1.02 sec][Risk: ** Unidirectional Traffic **][Risk Score: 10][Risk Info: No server to client traffic][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 >> IPv6 flows removed [DEBUG]:
 
-180	UDP [fe80::d9a6:c8b:2523:951d]:5353 -> [ff02::fb]:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 1][cat: Network/14][6 pkts/1552 bytes -> 0 pkts/0 bytes][Goodput ratio: 76/0][0.72 sec][Hostname/SNI: _dosvc._tcp.local][_dosvc._tcp.local][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 1/0 143/0 306/0 122/0][Pkt Len c2s/s2c min/avg/max/stddev: 102/0 259/0 451/0 158/0][PLAIN TEXT (BIOT/KBRWA)][Plen Bins: 0,50,0,0,0,0,0,0,0,0,33,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-181	UDP [fe80::1]:44328 -> [ff05::c]:1900 [proto: 12/SSDP][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 12/SSDP, Confidence: DPI][DPI packets: 1][cat: System/18][8 pkts/1508 bytes -> 0 pkts/0 bytes][Goodput ratio: 67/0][2.25 sec][Hostname/SNI: [ff05][bytes ratio: 1.000 (Upload)][IAT c2s/s2c min/avg/max/stddev: 203/0 321/0 817/0 207/0][Pkt Len c2s/s2c min/avg/max/stddev: 188/0 188/0 189/0 0/0][PLAIN TEXT (SEARCH )][Plen Bins: 0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-250	UDP [fe80::d2c9:17ee:c4b8:ce9e]:5353 -> [ff02::fb]:5353 [proto: 8/MDNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 8/MDNS, Confidence: DPI][DPI packets: 3][cat: Network/14][3 pkts/302 bytes -> 0 pkts/0 bytes][Goodput ratio: 38/0][0.30 sec][Hostname/SNI: myfastgate][myfastgate][PLAIN TEXT (myfastgate)][Plen Bins: 33,66,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 >> Incomplete TLS flows removed [DEBUG]:
 
-174	UDP 192.168.1.52:62957 <-> 216.58.209.46:443 [proto: 188/QUIC][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 4][cat: Web/5][9 pkts/2148 bytes <-> 12 pkts/1387 bytes][Goodput ratio: 82/64][11.33 sec][bytes ratio: 0.215 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 59/1218 177/10542 61/3297][Pkt Len c2s/s2c min/avg/max/stddev: 74/66 239/116 1265/281 369/69][Plen Bins: 28,34,19,0,0,0,4,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0]
-176	UDP 192.168.1.52:62932 <-> 142.250.180.174:443 [proto: 188/QUIC][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 3][cat: Web/5][14 pkts/1315 bytes <-> 16 pkts/1706 bytes][Goodput ratio: 55/61][5.19 sec][bytes ratio: -0.129 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 438/386 4443/4406 1268/1162][Pkt Len c2s/s2c min/avg/max/stddev: 72/65 94/107 142/176 30/41][Plen Bins: 43,16,10,23,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-198	TCP 142.251.209.42:443 <-> 192.168.1.52:53683 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 6][cat: Web/5][3 pkts/525 bytes <-> 3 pkts/162 bytes][Goodput ratio: 69/0][41.22 sec][bytes ratio: 0.528 (Upload)][IAT c2s/s2c min/avg/max/stddev: 20482/20484 20584/20582 20685/20681 102/99][Pkt Len c2s/s2c min/avg/max/stddev: 175/54 175/54 175/54 0/0][Plen Bins: 0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-199	TCP 216.58.204.234:443 <-> 192.168.1.52:53668 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 6][cat: Web/5][3 pkts/525 bytes <-> 3 pkts/162 bytes][Goodput ratio: 69/0][40.58 sec][bytes ratio: 0.528 (Upload)][IAT c2s/s2c min/avg/max/stddev: 20250/20249 20266/20270 20282/20290 16/20][Pkt Len c2s/s2c min/avg/max/stddev: 175/54 175/54 175/54 0/0][Plen Bins: 0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-201	TCP 142.251.209.42:443 <-> 192.168.1.52:53695 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 6][cat: Web/5][3 pkts/522 bytes <-> 3 pkts/162 bytes][Goodput ratio: 69/0][41.33 sec][bytes ratio: 0.526 (Upload)][IAT c2s/s2c min/avg/max/stddev: 20296/20295 20638/20642 20980/20990 342/348][Pkt Len c2s/s2c min/avg/max/stddev: 174/54 174/54 174/54 0/0][Plen Bins: 0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-207	TCP 142.251.209.42:443 <-> 192.168.1.52:43548 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 4][cat: Web/5][2 pkts/313 bytes <-> 2 pkts/108 bytes][Goodput ratio: 65/0][29.98 sec][Plen Bins: 0,0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-246	TCP 192.168.1.52:53548 <-> 140.82.114.26:443 [proto: 91/TLS][IP: 203/Github][Encrypted][Confidence: Match by port][FPC: 203/Github, Confidence: IP address][DPI packets: 5][cat: Web/5][2 pkts/139 bytes <-> 3 pkts/202 bytes][Goodput ratio: 22/13][14.99 sec][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-247	TCP 142.251.209.42:443 <-> 192.168.1.52:43546 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 4][cat: Web/5][2 pkts/221 bytes <-> 2 pkts/108 bytes][Goodput ratio: 51/0][30.04 sec][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-248	TCP 142.251.209.42:443 <-> 192.168.1.52:43547 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 4][cat: Web/5][2 pkts/208 bytes <-> 2 pkts/108 bytes][Goodput ratio: 48/0][29.98 sec][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-251	TCP 192.168.1.52:63141 <-> 142.251.209.34:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 4][cat: Web/5][3 pkts/222 bytes <-> 1 pkts/66 bytes][Goodput ratio: 11/0][0.17 sec][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+22	TCP 142.250.180.138:443 <-> 192.168.80.96:65320 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 5][cat: Web/5][3 pkts/522 bytes <-> 2 pkts/120 bytes][Goodput ratio: 69/0][20.29 sec][Plen Bins: 0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+24	TCP 216.58.204.234:443 <-> 192.168.80.96:65014 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 4][cat: Web/5][2 pkts/350 bytes <-> 2 pkts/108 bytes][Goodput ratio: 69/0][21.02 sec][Plen Bins: 0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+25	TCP 216.58.204.234:443 <-> 192.168.80.96:65054 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 4][cat: Web/5][2 pkts/350 bytes <-> 2 pkts/108 bytes][Goodput ratio: 69/0][20.16 sec][Plen Bins: 0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+33	TCP 142.250.180.170:443 <-> 192.168.80.96:57808 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 2][cat: Web/5][1 pkts/137 bytes <-> 1 pkts/54 bytes][Goodput ratio: 60/0][0.05 sec][Plen Bins: 0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+34	TCP 142.250.180.170:443 <-> 192.168.80.96:57812 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 2][cat: Web/5][1 pkts/113 bytes <-> 1 pkts/54 bytes][Goodput ratio: 52/0][0.04 sec][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+35	TCP 142.250.180.170:443 <-> 192.168.80.96:57815 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 2][cat: Web/5][1 pkts/98 bytes <-> 1 pkts/54 bytes][Goodput ratio: 44/0][0.06 sec][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 >> No SNI flows removed [DEBUG]:
 
@@ -188,290 +45,24 @@
 
 [
     {
-        "ip_field": "0/Unknown",
+        "ip_field": "126/Google",
         "transport_protocol": "TCP",
-        "proto_field": "91.435/TLS.Temu",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "commvod.kwcdn.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63269",
-        "ip_destination": "212.102.55.182",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "2773 <-> 6701"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "ams.creativecdn.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63295",
-        "ip_destination": "185.184.8.90",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "446 <-> 588"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "cdn.iads.unity3d.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63377",
-        "ip_destination": "3.165.238.92",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 9,
-        "exchanged_packets": [
-            "205 <-> 204",
-            "114 <-> 113",
-            "22 <-> 18",
-            "17 <-> 13",
-            "16 <-> 13",
-            "16 <-> 12",
-            "12 <-> 10",
-            "14 <-> 10",
-            "11 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "statics.creativecdn.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63311",
-        "ip_destination": "212.102.55.183",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 6,
-        "exchanged_packets": [
-            "136 <-> 143",
-            "12 <-> 9",
-            "12 <-> 9",
-            "12 <-> 9",
-            "12 <-> 9",
-            "12 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "cdn.iads.unity3d.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63320",
-        "ip_destination": "3.165.238.92",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "67 <-> 115",
-            "15 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "cdn-lb.vungle.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63271",
-        "ip_destination": "84.53.184.162",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "51 <-> 80"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "gdl.news-cdn.site",
-        "ip_source": "192.168.1.52",
-        "port_source": "63211",
-        "ip_destination": "185.93.35.254",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "18 <-> 24"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "cdn59994332.blazingcdn.net",
-        "ip_source": "192.168.1.52",
-        "port_source": "63162",
-        "ip_destination": "188.240.13.1",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 3,
-        "exchanged_packets": [
-            "18 <-> 20",
-            "19 <-> 19",
-            "15 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
+        "proto_field": "91.239/TLS.GoogleServices",
         "tls_version": "TLSv1.3",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "i.l.inmobicdn.net",
-        "ip_source": "192.168.1.52",
-        "port_source": "63273",
-        "ip_destination": "34.36.52.227",
-        "port_destination": "443",
+        "ja4": "t13d171200_5b57614c22b0_352634941f3a",
+        "sni": "mtalk.google.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63057",
+        "ip_destination": "108.177.119.188",
+        "port_destination": "5228",
         "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "60",
+        "risk_info": "No ALPN / Expected on port 443",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "10 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "supply.inmobicdn.net",
-        "ip_source": "192.168.1.52",
-        "port_source": "63274",
-        "ip_destination": "34.8.14.192",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 7"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "1859452490.rsc.cdn77.org",
-        "ip_source": "192.168.1.52",
-        "port_source": "63158",
-        "ip_destination": "212.102.55.182",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 16"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "1900368543.rsc.cdn77.org",
-        "ip_source": "192.168.1.52",
-        "port_source": "63161",
-        "ip_destination": "84.17.59.9",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "15 <-> 16"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "1982070091.rsc.cdn77.org",
-        "ip_source": "192.168.1.52",
-        "port_source": "63159",
-        "ip_destination": "212.102.55.183",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "17 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "1940108038.rsc.cdn77.org",
-        "ip_source": "192.168.1.52",
-        "port_source": "63157",
-        "ip_destination": "212.102.55.182",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "t13d1517h2_8daaf6152771_b6f405a00624",
-        "sni": "cdn.iads.unity3d.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63324",
-        "ip_destination": "3.165.238.92",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "8 <-> 7",
-            "8 <-> 7"
+            "12 <-> 15"
         ]
     },
     {
@@ -482,9 +73,9 @@
         "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
         "ja4": "t13d171200_5b57614c22b0_352634941f3a",
         "sni": "mtalk.google.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63347",
-        "ip_destination": "172.217.218.188",
+        "ip_source": "192.168.80.96",
+        "port_source": "63061",
+        "ip_destination": "108.177.119.188",
         "port_destination": "5228",
         "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
         "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
@@ -492,7 +83,28 @@
         "risk_info": "No ALPN / Expected on port 443",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "11 <-> 10"
+            "6 <-> 5"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "t13d171200_5b57614c22b0_352634941f3a",
+        "sni": "mtalk.google.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63056",
+        "ip_destination": "66.102.1.188",
+        "port_destination": "5228",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "60",
+        "risk_info": "No ALPN / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "3 <-> 5"
         ]
     }
 ]
@@ -501,156 +113,20 @@
 [
     {
         "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.124/TLS.YouTube",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
         "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "rr1---sn-hpa7znzr.googlevideo.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63316",
-        "ip_destination": "173.194.6.38",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "zMYUcQ",
+        "sni": "android.apis.google.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63060",
+        "ip_destination": "142.250.180.142",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "445 <-> 596"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "t2.chartboost.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63319",
-        "ip_destination": "2.19.179.112",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "204 <-> 201",
-            "98 <-> 99"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "googleads.g.doubleclick.net",
-        "ip_source": "192.168.1.52",
-        "port_source": "63215",
-        "ip_destination": "216.58.204.226",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "192 <-> 222"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "www.gstatic.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63287",
-        "ip_destination": "142.250.180.131",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 4,
-        "exchanged_packets": [
-            "139 <-> 191",
-            "12 <-> 9",
-            "12 <-> 8",
-            "12 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "fundingchoicesmessages.google.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63212",
-        "ip_destination": "142.251.209.46",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "95 <-> 99"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.124/TLS.YouTube",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "rr2---sn-hpa7kn7d.googlevideo.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63318",
-        "ip_destination": "74.125.99.167",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "82 <-> 83"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "www.googletagservices.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63294",
-        "ip_destination": "142.250.180.162",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "63 <-> 76",
-            "12 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "pagead2.googlesyndication.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63265",
-        "ip_destination": "216.58.204.130",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 6,
-        "exchanged_packets": [
-            "58 <-> 65",
-            "45 <-> 54",
-            "19 <-> 14",
-            "11 <-> 10",
-            "13 <-> 10",
-            "13 <-> 10"
+            "12 <-> 14"
         ]
     },
     {
@@ -659,218 +135,16 @@
         "proto_field": "91.126/TLS.Google",
         "tls_version": "TLSv1.3",
         "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
-        "sni": "googleads.g.doubleclick.net",
-        "ip_source": "192.168.1.52",
-        "port_source": "63327",
-        "ip_destination": "216.58.204.226",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 12,
-        "exchanged_packets": [
-            "48 <-> 47",
-            "30 <-> 42",
-            "15 <-> 9",
-            "10 <-> 8",
-            "9 <-> 7",
-            "9 <-> 7",
-            "11 <-> 8",
-            "9 <-> 7",
-            "8 <-> 7",
-            "9 <-> 7",
-            "8 <-> 7",
-            "8 <-> 7"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "tpc.googlesyndication.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63272",
-        "ip_destination": "216.58.204.225",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 6,
-        "exchanged_packets": [
-            "39 <-> 47",
-            "14 <-> 10",
-            "14 <-> 10",
-            "10 <-> 8",
-            "10 <-> 7",
-            "10 <-> 7"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "lh3.googleusercontent.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63292",
-        "ip_destination": "142.250.180.161",
+        "ja4": "t13d1517h2_8daaf6152771_b6f405a00624",
+        "sni": "android.apis.google.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63059",
+        "ip_destination": "142.250.180.142",
         "port_destination": "443",
         "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "39 <-> 49"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "fonts.gstatic.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63218",
-        "ip_destination": "216.58.205.35",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "34 <-> 36"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "csi.gstatic.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63356",
-        "ip_destination": "216.239.32.3",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 6,
-        "exchanged_packets": [
-            "43 <-> 45",
-            "12 <-> 9",
-            "12 <-> 9",
-            "12 <-> 8",
-            "12 <-> 9",
-            "12 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "lh3.googleusercontent.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63299",
-        "ip_destination": "142.250.180.161",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "26 <-> 23"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "adx.ads.vungle.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63216",
-        "ip_destination": "34.198.197.200",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "24 <-> 29"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "ads.inmobi.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63219",
-        "ip_destination": "35.214.245.79",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "20 <-> 22"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "configv2.unityads.unity3d.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63305",
-        "ip_destination": "34.110.229.214",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "17 <-> 20",
-            "15 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "fonts.googleapis.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63268",
-        "ip_destination": "142.250.180.138",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "25 <-> 31"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "lh3.googleusercontent.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63341",
-        "ip_destination": "142.250.180.129",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "19 <-> 16"
+            "17 <-> 14"
         ]
     },
     {
@@ -878,404 +152,20 @@
         "transport_protocol": "TCP",
         "proto_field": "91.119/TLS.Facebook",
         "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "www.facebook.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63345",
-        "ip_destination": "157.240.203.35",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1714ht_5b57614c22b0_fadfdae04b4e",
+        "sni": "graph.facebook.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63037",
+        "ip_destination": "157.240.203.14",
         "port_destination": "443",
         "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "24 <-> 19"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "config.inmobi.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63314",
-        "ip_destination": "35.212.2.2",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "20 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "crashlyticsreports-pa.googleapis.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63200",
-        "ip_destination": "216.58.204.227",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "17 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "ae.iads.unity3d.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63335",
-        "ip_destination": "108.138.199.14",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "17 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "et-eus.w.inmobi.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63275",
-        "ip_destination": "35.212.47.33",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "17 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.124/TLS.YouTube",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "www.youtube.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63384",
-        "ip_destination": "216.58.204.142",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "13 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
-        "sni": "logs.ads.vungle.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63326",
-        "ip_destination": "18.215.54.175",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 4,
-        "exchanged_packets": [
-            "20 <-> 16",
-            "17 <-> 15",
-            "14 <-> 10",
-            "14 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "www.google.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63343",
-        "ip_destination": "216.58.209.36",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "view.adjust.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63369",
-        "ip_destination": "185.151.204.51",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "15 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "firebaseremoteconfig.googleapis.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63237",
-        "ip_destination": "142.250.180.138",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "tpc.googlesyndication.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63298",
-        "ip_destination": "216.58.204.225",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "15 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "googleads.g.doubleclick.net",
-        "ip_source": "192.168.1.52",
-        "port_source": "63328",
-        "ip_destination": "216.58.204.226",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 4,
-        "exchanged_packets": [
-            "12 <-> 10",
-            "12 <-> 10",
-            "11 <-> 10",
-            "11 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "et-l.w.inmobi.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63385",
-        "ip_destination": "35.212.47.33",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "13 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "live.chartboost.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63290",
-        "ip_destination": "34.107.157.36",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 3,
-        "exchanged_packets": [
-            "15 <-> 12",
-            "14 <-> 12",
-            "14 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "firebaselogging.googleapis.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63325",
-        "ip_destination": "142.250.180.170",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "13 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "events.ads.vungle.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63317",
-        "ip_destination": "54.86.132.50",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "16 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "events.ads.vungle.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63381",
-        "ip_destination": "54.86.132.50",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.275/TLS.Crashlytics",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "firebase-settings.crashlytics.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63315",
-        "ip_destination": "142.250.180.131",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "13 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "logs.ads.vungle.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63217",
-        "ip_destination": "18.215.54.175",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "15 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "pro.ip-api.com",
-        "ip_source": "192.168.1.52",
-        "port_source": "63160",
-        "ip_destination": "193.234.225.88",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 11"
+            "7 <-> 6"
         ]
     }
 ]
 >> Removed flows after JA3S/JA4/Certificate filtering [DEBUG]:
 
-[
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "ip_source": "192.168.1.52",
-        "port_source": "63082",
-        "ip_destination": "216.58.205.34",
-        "port_destination": "443",
-        "risk": "** Susp Entropy **",
-        "risk_score": "10",
-        "risk_info": "Entropy: 7.862 (Encrypted or Random?)",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "114 <-> 116",
-            "65 <-> 64"
-        ]
-    },
-    {
-        "ip_field": "119/Facebook",
-        "transport_protocol": "UDP",
-        "proto_field": "188/QUIC",
-        "ip_source": "192.168.1.52",
-        "port_source": "62954",
-        "ip_destination": "31.13.86.8",
-        "port_destination": "443",
-        "risk": "** Susp Entropy **",
-        "risk_score": "10",
-        "risk_info": "Entropy: 7.656 (Encrypted or Random?)",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "5 <-> 6"
-        ]
-    }
-]
+[]

@@ -1,5 +1,7 @@
-host:"config2.mparticle.com",host:"nativesdks.mparticle.com"@Domains by proxy, llc
-host:"glovo.dhmedia.io",host:"mapsmobilesdks-pa.googleapis.com",host:"sdk.fra-01.braze.eu",host:"spot-pa.googleapis.com"@Unknown
-host:"live.ravelin.click"@Ravelin technology
-host:"api.glovoapp.com"@Glovoapp23 s.a.
-host:"perseus-productanalytics.deliveryhero.net"@Delivery hero se
+host:"api.glovoapp.com",host:"glovo.dhmedia.io"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"api.glovoapp.com",host:"glovo.dhmedia.io"@
+
+--------------------------------------------------------------

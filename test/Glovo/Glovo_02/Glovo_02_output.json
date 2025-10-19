@@ -42,28 +42,6 @@
         ]
     },
     {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "a885fb01204bc11cc58efc02fe640899",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "servernames": "nativesdks.mparticle.com,www.nativesdks.mparticle.com,tracking-nativesdks.mparticle.com",
-        "issuer": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2",
-        "subject": "CN=nativesdks.mparticle.com",
-        "certificate": "SHA-1: 39:FE:13:30:9D:62:4D:B9:96:28:35:53:59:C1:CE:D2:0D:F4:75:7B",
-        "sni": "nativesdks.mparticle.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63786",
-        "ip_destination": "151.101.242.133",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "52 <-> 45"
-        ]
-    },
-    {
         "ip_field": "220/Cloudflare",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -82,110 +60,56 @@
         ]
     },
     {
-        "ip_field": "220/Cloudflare",
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.239/QUIC.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "FNDw01",
+        "sni": "mapsmobilesdks-pa.googleapis.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63770",
+        "ip_destination": "142.251.209.42",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "18 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.239/QUIC.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "sni": "spot-pa.googleapis.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63761",
+        "ip_destination": "216.58.209.42",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
+        "proto_field": "91.239/TLS.GoogleServices",
         "tls_version": "TLSv1.3",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "live.ravelin.click",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "mapsmobilesdks-pa.googleapis.com",
         "ip_source": "192.168.80.96",
-        "port_source": "63763",
-        "ip_destination": "104.21.43.7",
+        "port_source": "63771",
+        "ip_destination": "142.251.209.42",
         "port_destination": "443",
         "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "20 <-> 18"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "app.adjust.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63765",
-        "ip_destination": "185.151.204.7",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "22 <-> 17"
-        ]
-    },
-    {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
-        "sni": "sdk.fra-01.braze.eu",
-        "ip_source": "192.168.80.96",
-        "port_source": "63758",
-        "ip_destination": "172.64.152.249",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "15 <-> 16",
-            "13 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "5b94af9bf6efc9dea416841602004fbb",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "config2.mparticle.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63785",
-        "ip_destination": "151.101.130.133",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "7 <-> 6"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "172.64.152.249",
-        "dns_id": "0x4305",
-        "plain_text": "cloudflare",
-        "sni": "sdk.fra-01.braze.eu",
-        "ip_source": "192.168.80.96",
-        "port_source": "58812",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "7 <-> 7"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "3.160.212.82",
-        "dns_id": "0x8bfe",
-        "plain_text": "glovoapp",
-        "sni": "api.glovoapp.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "60761",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "6 <-> 6"
+            "12 <-> 10"
         ]
     }
 ]

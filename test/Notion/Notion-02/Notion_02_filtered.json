@@ -1,3 +1,4 @@
+	1	 192.168.80.96            	 6      
 	1	TCP 192.168.80.96:63560 <-> 208.103.161.2:443 [proto: 91/TLS][IP: 0/Unknown][2859 pkts/210705 bytes <-> 5626 pkts/8063031 bytes][Hostname/SNI: www.notion.so][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1513h2_8daaf6152771_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054]
 	2	UDP 192.168.80.96:63572 <-> 208.103.161.2:443 [proto: 188/QUIC][IP: 0/Unknown][363 pkts/340409 bytes <-> 424 pkts/233112 bytes][Hostname/SNI: www.notion.so][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][PLAIN TEXT (knOuekK)]
 	3	TCP 192.168.80.96:63566 <-> 208.103.161.2:443 [proto: 91/TLS][IP: 0/Unknown][89 pkts/14963 bytes <-> 135 pkts/135549 bytes][Hostname/SNI: www.notion.so][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054]

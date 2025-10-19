@@ -1,5 +1,0 @@
-	1	 192.168.50.96            	 4      
-	2	 fe80::14b0:a46e:c90d:c76 	 1      
-	26	TCP 192.168.50.96:51471 <-> 54.157.194.5:443 [proto: 91/TLS][IP: 265/AmazonAWS][14 pkts/2144 bytes <-> 14 pkts/2466 bytes][Hostname/SNI: auth.split.io][TCP Fingerprint: 194_64_65535_d29295416479/macOS][TLSv1.2][JA4: t13d1516h2_8daaf6152771_e5627efa2ab1][JA3S: 9dd9697e41bf4842b13869ec64041126]
-	27	TCP 192.168.50.96:51473 <-> 151.101.67.9:443 [proto: 91/TLS][IP: 0/Unknown][17 pkts/2428 bytes <-> 18 pkts/2039 bytes][Hostname/SNI: sdk.split.io][TCP Fingerprint: 194_64_65535_d29295416479/macOS][TLSv1.3][JA4: t13d1516h2_8daaf6152771_9b887d9acb53][JA3S: fcb2d4d0991292272fcb1e464eedfd43]
-	38	TCP 192.168.50.96:51472 <-> 54.157.194.5:443 [proto: 91/TLS][IP: 265/AmazonAWS][9 pkts/1162 bytes <-> 9 pkts/780 bytes][Hostname/SNI: auth.split.io][TCP Fingerprint: 194_64_65535_d29295416479/macOS][TLSv1.2][JA4: t13d1516h2_8daaf6152771_e5627efa2ab1][JA3S: 9dd9697e41bf4842b13869ec64041126]

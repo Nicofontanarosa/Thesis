@@ -2,6 +2,24 @@
     {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
+        "proto_field": "91.266/TLS.Salesforce",
+        "tls_version": "TLSv1.3",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "lidleu.my.salesforce.com",
+        "ip_source": "192.168.80.96",
+        "port_source": "63637",
+        "ip_destination": "85.222.142.10",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "113 <-> 116"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
         "ja3s": "15af977ce25de452b96affa2addb1036",
@@ -15,24 +33,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "36 <-> 44"
-        ]
-    },
-    {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "mobile-data.onetrust.io",
-        "ip_source": "192.168.80.96",
-        "port_source": "63623",
-        "ip_destination": "104.18.32.25",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "19 <-> 29"
         ]
     },
     {
@@ -292,28 +292,6 @@
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "e54965894d6b45ecb4323c7ea3d6c115",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "servernames": "*.device.marketingcloudapis.com,device.marketingcloudapis.com",
-        "issuer": "C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1",
-        "subject": "C=US, ST=California, L=San Francisco, O=Salesforce, Inc., CN=*.device.marketingcloudapis.com",
-        "certificate": "SHA-1: A9:34:8E:BF:10:07:B5:BA:E7:10:A7:80:2A:74:60:A4:67:38:47:54",
-        "sni": "mcf4wh-jdfmxrzzzttwqcrf-d3b4.device.marketingcloudapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63626",
-        "ip_destination": "161.71.33.241",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
         "ja3s": "2253c82f03b621c5144709b393fde2c9",
         "ja4": "t13d1513h2_8daaf6152771_352634941f3a",
@@ -326,57 +304,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "12 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "2.19.124.214",
-        "dns_id": "0x41d6",
-        "plain_text": "segments",
-        "sni": "segments.lidlplus.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "49964",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "104.18.32.25",
-        "dns_id": "0x9f53",
-        "plain_text": "mobile",
-        "sni": "mobile-data.onetrust.io",
-        "ip_source": "192.168.80.96",
-        "port_source": "51642",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "9 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "2.19.124.205",
-        "dns_id": "0x4453",
-        "plain_text": "alerts",
-        "sni": "alerts.lidlplus.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "52809",
-        "ip_destination": "192.168.80.68",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "3 <-> 2"
         ]
     }
 ]

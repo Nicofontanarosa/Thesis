@@ -1,7 +1,21 @@
-host:"api.entclass.tech",host:"code.jquery.com",host:"unity3d.com"@
+host:"www.recaptcha.net"@
 
 >> To add this rule based on SNI:
    [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"api.entclass.tech",host:"code.jquery.com",host:"unity3d.com"@
+   [+] Paste the following rule: host:"www.recaptcha.net"@
+
+--------------------------------------------------------------
+host:"phantom.avira-vpn.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"phantom.avira-vpn.com"@
+
+--------------------------------------------------------------
+host:"iron-dot-cobalt-antenna-219709.appspot.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"iron-dot-cobalt-antenna-219709.appspot.com"@
 
 --------------------------------------------------------------

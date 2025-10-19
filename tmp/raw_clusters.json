@@ -1,95 +1,5 @@
 [
     {
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "5b57614c22b0_eca864cca44a",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "a-adq.mediation.unity3d.com",
-            "api.entclass.tech",
-            "code.jquery.com",
-            "gw1.mediation.unity3d.com",
-            "i-adq.mediation.unity3d.com",
-            "i-sdk.mediation.unity3d.com",
-            "o-adq.mediation.unity3d.com",
-            "o-iab-notifications.mediation.unity3d.com",
-            "o-sdk.mediation.unity3d.com",
-            "webview.unityads.unity3d.com"
-        ],
-        "flow_count": 24,
-        "packets": 2707
-    },
-    {
-        "ja3s": "c8d5b17a0fd5b4ee799ca8bd692fee69",
-        "ja4": "c866b44c5a26_b39be8c56a14",
-        "certificate": [
-            [
-                "certificate",
-                "SHA-1: 97:14:D9:6B:02:04:2C:EF:E5:5F:8D:9D:81:13:60:0E:F1:48:FA:38"
-            ],
-            [
-                "issuer",
-                "C=US, O=Let's Encrypt, CN=R12"
-            ],
-            [
-                "servernames",
-                "6chcdn-2.feednews.com,6chcdn.feednews.com,cdn-af.feednews.com,chacdn.op-mobile.opera.com,content.apexnews-af.com,content.apexnews-global.com,content.apexnews-latam.com,content.apexnews-sea.com,content.apexnews.com,download.operachina.com,eu-static.pepeshort.com,img.6chcdn.com,img.dailyadvent.com,img.feednews.com,news-af.dailyactive.info,news-af.dailyadvent.com,news-af.feednews.com,news-default.dailyworthing.com,news-id.beritabuzz.com,news-id.beritao.com,news-id.dailyadvent.com,news-in.dailyadvent.com,news-in.dailyindia.in,news-us.dailyadvent.com,news-us.dailyworthing.com,olist-video.feednews.com,open.apexnews-af.com,open.apexnews-global.com,open.apexnews-latam.com,open.apexnews-sea.com,open.apexnews.com,page.6chan.media,page.olist.app,res-2.feednews.com,res-h5.dailyadvent.com,res-h5.feednews.com,res-odx.feednews.com,res-ru.apexnews-af.com,res.6chcdn.com,res.6chcdn.feednews.com,res.adx.opera.com,res.feednews.com,res.rtbscale.com,res.rtbwave.com,res2-odx.feednews.com,static-activity-ams.feednews.com,static-dapp.savi.xyz,static-pff.ogamebox.com,static.6chcdn.com,static.dailyadvent.com,static.feednews.com,static.minipay.xyz,static.savi.xyz,stories-2.feednews.com,stories-af.feednews.com,stories-apex.bestlifeoutlook.com,stories-d.apexnews.com,stories-d.feednews.com,stories-id.feednews.com,stories-ke.feednews.com,stories-local.apexnews.com,stories-local.bestlifeoutlook.com,stories-ng.feednews.com,stories-nl.apex-sports.com,stories-sg.apex-sports.com,stories-us.bestlifeoutlook.com,stories-za.feednews.com,stories.apexnews-af.com,stories.apexnews-global.com,stories.apexnews-latam.com,stories.apexnews-sea.com,stories.feednews.com,v-static.pepeshort.com,video.6chcdn.com"
-            ],
-            [
-                "subject",
-                "CN=download.operachina.com"
-            ]
-        ],
-        "sni_list": [
-            "res.adx.opera.com"
-        ],
-        "flow_count": 1,
-        "packets": 148
-    },
-    {
-        "ja3s": "00447ab319e9d94ba2b4c1248e155917",
-        "ja4": "c866b44c5a26_b39be8c56a14",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "mobile.yandexadexchange.net"
-        ],
-        "flow_count": 7,
-        "packets": 242
-    },
-    {
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
         "ja4": "5b57614c22b0_eca864cca44a",
         "certificate": [
@@ -111,253 +21,90 @@
             ]
         ],
         "sni_list": [
-            "hbevents-public.mz.unity3d.com",
-            "httpkafka.unityads.unity3d.com",
-            "publisher-config.unityads.unity3d.com",
-            "scar.unityads.unity3d.com",
-            "telemetry.sdk.inmobi.com",
-            "yandex.ru"
+            "www.recaptcha.net"
+        ],
+        "flow_count": 1,
+        "packets": 202
+    },
+    {
+        "ja3s": "2ab44dd8c27bdce434a961463587356a",
+        "ja4": "e8a523a41297_ef7df7f74e48",
+        "certificate": [
+            [
+                "certificate",
+                "SHA-1: 54:48:10:F0:FF:97:B2:AE:23:18:B0:D5:C0:5D:07:F1:09:94:32:90"
+            ],
+            [
+                "issuer",
+                "C=GB, ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Domain Validation Secure Server CA"
+            ],
+            [
+                "servernames",
+                "*.phantom.avira-vpn.com,phantom.avira-vpn.com"
+            ],
+            [
+                "subject",
+                "CN=*.phantom.avira-vpn.com"
+            ]
+        ],
+        "sni_list": [
+            "api.phantom.avira-vpn.com"
+        ],
+        "flow_count": 4,
+        "packets": 90
+    },
+    {
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "e8a523a41297_ef7df7f74e48",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "iron-dot-cobalt-antenna-219709.appspot.com"
         ],
         "flow_count": 6,
-        "packets": 201
+        "packets": 140
     },
     {
-        "ja3s": "6e15a5bf660856fa03186247ca41d059",
+        "ja3s": "3653a20186a5b490426131a611e01992",
         "ja4": "5b57614c22b0_eca864cca44a",
         "certificate": [
             [
                 "certificate",
-                null
+                "SHA-1: 54:48:10:F0:FF:97:B2:AE:23:18:B0:D5:C0:5D:07:F1:09:94:32:90"
             ],
             [
                 "issuer",
-                null
+                "C=GB, ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Domain Validation Secure Server CA"
             ],
             [
                 "servernames",
-                null
+                "*.phantom.avira-vpn.com,phantom.avira-vpn.com"
             ],
             [
                 "subject",
-                null
+                "CN=*.phantom.avira-vpn.com"
             ]
         ],
         "sni_list": [
-            "report.appmetrica.yandex.net"
-        ],
-        "flow_count": 2,
-        "packets": 79
-    },
-    {
-        "ja3s": "00447ab319e9d94ba2b4c1248e155917",
-        "ja4": "c866b44c5a26_f88f2b2eb673",
-        "certificate": [
-            [
-                "certificate",
-                "SHA-1: 89:14:9E:B0:40:4D:FC:F6:97:11:12:FF:39:A2:DF:43:41:4D:21:8A"
-            ],
-            [
-                "issuer",
-                "C=BE, O=GlobalSign nv-sa, CN=GlobalSign RSA OV SSL CA 2018"
-            ],
-            [
-                "servernames",
-                "mobile.yandexadexchange.net"
-            ],
-            [
-                "subject",
-                "C=RU, ST=Moscow, L=Moscow, O=YANDEX LLC, CN=mobile.yandexadexchange.net"
-            ]
-        ],
-        "sni_list": [
-            "mobile.yandexadexchange.net"
-        ],
-        "flow_count": 0,
-        "packets": 0
-    },
-    {
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "8daaf6152771_eca864cca44a",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "eu.matk.temu.com"
+            "pl.phantom.avira-vpn.com"
         ],
         "flow_count": 1,
-        "packets": 27
-    },
-    {
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "8daaf6152771_eca864cca44a",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "econo.flashpush.net",
-            "login.trovpn.com",
-            "yandex.com"
-        ],
-        "flow_count": 3,
-        "packets": 83
-    },
-    {
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "8daaf6152771_eca864cca44a",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "rus-trk2.monetune.com"
-        ],
-        "flow_count": 1,
-        "packets": 26
-    },
-    {
-        "ja3s": null,
-        "ja4": "8daaf6152771_40271e0a5736",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [],
-        "flow_count": 7,
-        "packets": 132
-    },
-    {
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "5b57614c22b0_fadfdae04b4e",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "o-sdk.mediation.unity3d.com"
-        ],
-        "flow_count": 0,
-        "packets": 0
-    },
-    {
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "8daaf6152771_40271e0a5736",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [],
-        "flow_count": 3,
-        "packets": 59
-    },
-    {
-        "ja3s": "4ef1b297bb817d8212165a86308bac5f",
-        "ja4": "8daaf6152771_40271e0a5736",
-        "certificate": [
-            [
-                "certificate",
-                "SHA-1: C5:F9:C5:68:D6:BB:21:20:64:01:17:C4:79:5D:32:8D:5B:A7:89:81"
-            ],
-            [
-                "issuer",
-                "C=SG, ST=SG, L=Singapore, O=Innovative Connecting, OU=Innovative Connecting, CN=inconnecting.com"
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                "C=SG, ST=SG, L=Singapore, O=Innovative Connecting, OU=Innovative Connecting, CN=inconnecting.com"
-            ]
-        ],
-        "sni_list": [],
-        "flow_count": 2,
-        "packets": 39
+        "packets": 22
     }
 ]

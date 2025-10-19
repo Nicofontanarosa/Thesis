@@ -4,6 +4,26 @@
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1511h2_8daaf6152771_40271e0a5736",
+        "ip_source": "192.168.70.96",
+        "port_source": "61813",
+        "ip_destination": "144.76.154.14",
+        "port_destination": "432",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **",
+        "risk_score": "150",
+        "risk_info": "h2 / SNI should always be present / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
         "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
         "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
         "sni": "api.hide.me",
@@ -19,20 +39,21 @@
         ]
     },
     {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "0.0.0.0",
-        "dns_id": "0xf1d6",
-        "plain_text": "myipstack",
-        "sni": "v6.myipstack.com",
-        "ip_source": "192.168.70.96",
-        "port_source": "53248",
-        "ip_destination": "192.168.70.69",
-        "port_destination": "53",
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ip_source": "64.233.166.188",
+        "port_source": "5228",
+        "ip_destination": "192.168.70.96",
+        "port_destination": "61802",
+        "risk": "** Known Proto on Non Std Port **",
+        "risk_score": "50",
+        "risk_info": "Expected on port 443",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "4 <-> 3"
+            "1 <-> 1"
         ]
     },
     {

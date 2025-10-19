@@ -1,1 +1,7 @@
-host:"rr1---sn-uv2pm-ugol.offline-maps.gvt1.com"@
+host:"offline-maps.gvt1.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"offline-maps.gvt1.com"@
+
+--------------------------------------------------------------

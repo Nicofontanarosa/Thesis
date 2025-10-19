@@ -24,39 +24,5 @@
             "9 <-> 7",
             "9 <-> 7"
         ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "0.0.0.0",
-        "dns_id": "0x271c",
-        "plain_text": "account",
-        "sni": "account2.hoxx.com",
-        "ip_source": "192.168.95.96",
-        "port_source": "58656",
-        "ip_destination": "192.168.95.205",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "54.145.205.221",
-        "dns_id": "0xf775",
-        "plain_text": "account",
-        "sni": "account2.hoxx.com",
-        "ip_source": "192.168.95.96",
-        "port_source": "65242",
-        "ip_destination": "192.168.95.205",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
     }
 ]

@@ -1,2 +1,0 @@
-host:"gsmpromax.xyz",host:"ptisupporterteam.xyz",host:"ptitunnel.ptisupporterteam.xyz"@Unknown
-host:"gsmpromax.xyz.mshome.net",host:"login.microsoftonline.com"@Microsoft corporation

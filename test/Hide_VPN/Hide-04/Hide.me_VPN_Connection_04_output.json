@@ -4,6 +4,26 @@
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1511h2_8daaf6152771_40271e0a5736",
+        "ip_source": "10.231.254.96",
+        "port_source": "61269",
+        "ip_destination": "88.99.164.231",
+        "port_destination": "432",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **",
+        "risk_score": "150",
+        "risk_info": "h2 / SNI should always be present / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
         "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
         "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
         "sni": "api.hide.me",
@@ -32,46 +52,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "2 <-> 2"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "151.5.18.105",
-        "dns_id": "0x6603",
-        "plain_text": "myipstack",
-        "sni": "www.msftconnecttest.com",
-        "ip_source": "10.231.254.96",
-        "port_source": "50506",
-        "ip_destination": "10.231.254.147",
-        "port_destination": "53",
-        "risk": "** Error Code **",
-        "risk_score": "10",
-        "risk_info": "DNS Error Code NXDOMAIN",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "3 <-> 2"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "dns_ip": "148.251.75.238",
-        "dns_id": "0x14e7",
-        "plain_text": "myipstack",
-        "sni": "free-de-v4.hideservers.net",
-        "ip_source": "10.231.254.96",
-        "port_source": "52712",
-        "ip_destination": "10.231.254.147",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "3 <-> 2"
         ]
     }
 ]

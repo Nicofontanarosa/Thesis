@@ -1,4 +1,14 @@
 host:"assets.remerge.io",host:"configure.rayjump.com",host:"hybird.mtgglobals.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"assets.remerge.io",host:"configure.rayjump.com",host:"hybird.mtgglobals.com"@
+
+--------------------------------------------------------------
 host:"fuck.rkn"@
-host:"remerge.events"@
-host:"ssp-track-us.bidease.com"@
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"fuck.rkn"@
+
+--------------------------------------------------------------

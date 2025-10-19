@@ -1,7 +1,7 @@
 [
     {
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "5b57614c22b0_eca864cca44a",
+        "ja4": "8daaf6152771_d8a2da3f94cd",
         "certificate": [
             [
                 "certificate",
@@ -21,41 +21,34 @@
             ]
         ],
         "sni_list": [
-            "www.recaptcha.net"
+            "a.audrte.com",
+            "ad-delivery.net",
+            "adsrvr.org",
+            "beacons.gcp.gvt2.com",
+            "btloader.com",
+            "c.bannerflow.net",
+            "content-autofill.googleapis.com",
+            "criteo.com",
+            "hbopenbid.pubmatic.com",
+            "indexww.com",
+            "media.net",
+            "nitropay.com",
+            "pixels.ad.gt",
+            "quantserve.com",
+            "redirect.frontend.weborama.fr",
+            "region1.google-analytics.com",
+            "securepubads.g.doubleclick.net",
+            "sync.a-mo.net",
+            "sync.aniview.com",
+            "warframe.market",
+            "wt.rqtrk.eu"
         ],
-        "flow_count": 1,
-        "packets": 202
+        "flow_count": 96,
+        "packets": 3165
     },
     {
-        "ja3s": "2ab44dd8c27bdce434a961463587356a",
-        "ja4": "e8a523a41297_ef7df7f74e48",
-        "certificate": [
-            [
-                "certificate",
-                "SHA-1: 54:48:10:F0:FF:97:B2:AE:23:18:B0:D5:C0:5D:07:F1:09:94:32:90"
-            ],
-            [
-                "issuer",
-                "C=GB, ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Domain Validation Secure Server CA"
-            ],
-            [
-                "servernames",
-                "*.phantom.avira-vpn.com,phantom.avira-vpn.com"
-            ],
-            [
-                "subject",
-                "CN=*.phantom.avira-vpn.com"
-            ]
-        ],
-        "sni_list": [
-            "phantom.avira-vpn.com"
-        ],
-        "flow_count": 5,
-        "packets": 112
-    },
-    {
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "e8a523a41297_ef7df7f74e48",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "8daaf6152771_d8a2da3f94cd",
         "certificate": [
             [
                 "certificate",
@@ -75,9 +68,24 @@
             ]
         ],
         "sni_list": [
-            "iron-dot-cobalt-antenna-219709.appspot.com"
+            "ad-score.com",
+            "adsafeprotected.com",
+            "bh.contextweb.com",
+            "cookie-matching.mediarithmics.com",
+            "cs.krushmedia.com",
+            "ftstatic.com",
+            "id5-sync.com",
+            "lijit.com",
+            "onetag-sys.com",
+            "s.c.appier.net",
+            "semasio.net",
+            "sharethrough.com",
+            "sync.1rx.io",
+            "sync.serverbid.com",
+            "sync.targeting.unrulymedia.com",
+            "sync.teads.tv"
         ],
-        "flow_count": 6,
-        "packets": 140
+        "flow_count": 30,
+        "packets": 1042
     }
 ]

@@ -1,18 +1,23 @@
->> Using existing nDPI JSON:
 
- [+] .\test\Avira_VPN\Avira-03\Avira_VPN_Connection_03.json
+>> Running nDPI first command:
+
+ [+] /home/keiyukensei/nDPI/example/ndpiReader -v 2 -i test/warframe/warframe.pcap
+
+>> First nDPI JSON saved to:
+
+ [+] test/warframe/warframe.json
 
 >> Running initial filtering ...
 
- [+] input file: .\test\Avira_VPN\Avira-03\Avira_VPN_Connection_03.json
- [+] output file: .\test\Avira_VPN\Avira-03\Avira_VPN_Connection_03_filtered.json
+ [+] input file: test/warframe/warframe.json
+ [+] output file: test/warframe/warframe_filtered.json
 
 >> Running flows filtering ...
 
- [+] input file: .\test\Avira_VPN\Avira-03\Avira_VPN_Connection_03_filtered.json
- [+] output file: .\test\Avira_VPN\Avira-03\Avira_VPN_Connection_03_output.json
+ [+] input file: test/warframe/warframe_filtered.json
+ [+] output file: test/warframe/warframe_output.json
 
->> Coverage statistics save in: .\test\Avira_VPN\Avira-03\coverage.txt
+>> Coverage statistics save in: test/warframe/coverage.txt
 
 
 >> All removed flows save in: /tmp/removed_flows.json

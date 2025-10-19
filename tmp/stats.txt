@@ -1,12 +1,8 @@
 >> Lists of protocols read:
 
    [+] DNS
-   [+] Google
-   [+] ICMP
    [+] QUIC
    [+] TLS
-   [+] Unknown
-   [+] WireGuard
 
 >> Lists of protocols supported:
 
@@ -19,7 +15,3 @@
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
    [red][+] DNS[/red]
-   [red][+] Google[/red]
-   [red][+] ICMP[/red]
-   [red][+] Unknown[/red]
-   [red][+] WireGuard[/red]

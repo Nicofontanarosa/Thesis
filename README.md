@@ -2,9 +2,7 @@
 
 ### Overview
 
-This repository contains the code and research developed for my Master’s Thesis.
-The goal is to extract meaningful metadata from encrypted network traffic (e.g., TLS, VPN) and use it to automatically generate detection rules for nDPI.
-The approach combines handshake analysis, TCP/TLS fingerprinting, and flow correlation to identify unknown or unclassified protocols.
+This repository contains the code and research developed for my **==Master’s Thesis==**. The goal is to extract meaningful metadata from encrypted network traffic ( *TLS, VPN etc ...* ) and use it to automatically generate detection rules for nDPI. The approach combines handshake analysis, TCP/TLS fingerprinting, and flow correlation to identify unknown or unclassified protocols.
 
 ![Static Badge](https://img.shields.io/badge/python-%20%3E%203.12-green?style=flat\&labelColor=red\&color=greed)
 <a href="https://www.wireshark.org/"><img src="https://img.shields.io/badge/Wireshark-%20%3E%204.4-%234285F4?labelColor=blue)"></a>
@@ -16,289 +14,87 @@ The approach combines handshake analysis, TCP/TLS fingerprinting, and flow corre
 
 # 🤸 Quickstart
 
+To get started with **nDPI Protocol Generator**, follow these steps:
 
+## 1️⃣ Install nDPI
 
-To get started with \*\*RTT GAD\*\*, follow these steps:
+Before running this tool, make sure **nDPI** is installed and compiled on your system. You can follow the official instructions from the [nDPI GitHub repository](https://github.com/ntop/nDPI). Once nDPI is installed, you can use this tool for metadata extraction and rule generation
 
+## 2️⃣ Run the Tool
 
+There are two ways to use this project:
 
-\### 1️⃣ Install the MaxMind GeoIP2 Country Database
+1. 🖥️ Graphical interface ( *recommended* )
+2. 💻 Command-line mode
 
+###🖥️ Graphical Interface ( Textual-based UI )
 
+- Install the textual library with `pip install textual`
+- Then start the graphical interface with `python3 flow_viewer_textual.py`
 
-Download the \*\*GeoLite2 Country\*\* database ( \*free with registration\* ) or another GeoIP2 Country database from \[MaxMind's official site](https://www.maxmind.com/en/geoip-databases)
+In this version, the interface will ask for all required paths ( **PCAP file, nDPI root path, and output directory** ) through the GUI. ==!! you don’t need to type them in the terminal !!==
 
+### 💻 Command-Line Mode
 
+- If you prefer the command line, run: `python3 debug.py <pcap_path> <ndpi_path> <output_folder>`
 
-You can also follow this helpful video tutorial for guidance by Chris Greer:   
+***Example:***
 
-🔗 \[YouTube – How to Download GeoLite2](https://www.youtube.com/watch?v=IlVppluWTHw)
+`python3 debug.py /downloads/application.pcapng /home/Nico/nDPI/ test/application`
 
+- Parameters:
 
-
-\### 2️⃣ Install the Lua Plugin
-
-
-
-Move the `rtt\_check.lua` script to Wireshark’s plugin directory. Wireshark automatically loads Lua plugins placed in these directories depending on your OS:
-
-
-
-\- \*\*Windows\*\*:  
-
-&nbsp; `C:\\Program Files\\Wireshark\\plugins\\`
-
-&nbsp; 
-
-\- \*\*macOS\*\*:  
-
-&nbsp; `~/.local/lib/wireshark/plugins`
-
-&nbsp; 
-
-\- \*\*Linux\*\*:  
-
-&nbsp; `/usr/lib/wireshark/plugins/<version>/`
-
-
-
-Copy your Lua script ( \*rtt\_check.lua\* ) into Wireshark's plugin directory. If you're using the personal plugin directory, make sure it exists and create the plugins folder if necessary
-
-
-
-\#### GUI Method ( recommended ):
-
-
-
-1\. Open Wireshark
-
-2\. Click on `Help` → `About Wireshark`
-
-3\. Go to the `Folders` tab
-
-4\. Click the link next to `Personal Plugins`
-
-5\. Move the `rtt\_check.lua` script into this folder
-
-
-
-\### 3️⃣ Add the RTT Statistics File
-
-
-
-Move the `ntp\_rtt\_stats.txt` file to Wireshark’s plugin directory like before. On \*\*Windows\*\*, place the file in:
-
-
-
-\- `C:\\Users\\<username>\\AppData\\Roaming\\Wireshark\\plugins\\`
-
-
-
-\### 4️⃣ Restart Wireshark to load the plugin
-
-
-
-\### 5️⃣ Now you're ready to start analyzing RTT anomalies and detecting geo-location inconsistencies!
-
-
+1. **<pcap_path>** → path to your `.pcap` or `.pcapng` file (e.g., /downloads/app.pcapng)
+2. **<ndpi_path>** → main `directory` where nDPI is installed (e.g., /home/Nico/nDPI/)
+3. **<output_folder>** → directory where analysis results and generated rules will be saved (e.g., test/app/)
 
 ---
 
+# 3️⃣ ⚙️ How it works?
 
+After running the tool, you’ll find:
 
-\# ⚙️ How it works?
+Extracted metadata from encrypted traffic (e.g., TLS handshakes, SNI, TCP options)
 
+Automatically generated draft nDPI detection rules
 
-
-\### 1️⃣ country.json
-
-
-
-The `generator.py` file performs pings to servers from the \[NTP Pool Project](https://www.ntppool.org/en/) ranging from server 0 to server 3. These servers are listed in the `country.json` file, where each country is associated with a corresponding NTP server domain. For example, the entry `"US": "us"` refers to the NTP `server us.pool.ntp.org`, and `"MX": "mx"` refers to the server `mx.pool.ntp.org`
-
-
-
-You can modify the `country.json` file based on your preferences but:
-
-
-
-\- \*\*Keys\*\*: Must be valid country codes recognized by \[MaxMind](https://www.maxmind.com/download/geoip/misc/region\_codes.csv)
-
-\- \*\*Values\*\*: Must correspond to valid zones supported by the NTP Pool Project ( \*used to construct domain names like 0.us.pool.ntp.org, 1.europe.pool.ntp.org, etc...\* )
-
-
-
-\### 2️⃣ parameters.json
-
-
-
-The `parameters.json` file contains configuration parameters for executing the pings:
-
-
-
-\*\*PING\_COUNT\*\*: Defines how many pings will be sent to each host
-
-
-
-\*\*PING\_TIMEOUT\*\*: Specifies the maximum wait time in seconds for each ping before considering it failed
-
-
-
-\*\*PING\_INTERVAL\*\*: Determines how quickly the pings are sent after receiving a result
-
-
-
-\*\*OUTLIER\_FACTOR\*\*: Used to exclude RTT values that are too far from the average, adjusting the tolerance for anomalous values ( \*Recommended value between 1.1 and 1.5\* )
-
-
-
-\### 3️⃣ generator.py
-
-
-
-The `generator.py` script includes regular expressions to handle the output of the ping command across different operating systems:
-
-
-
-Linux Regex:
-
-```
-
-rtt\_regex\_linux = re.compile(r'time=(\[\\d.]+)', re.IGNORECASE)
-
-```
-
-This regex captures the RTT values in decimal numbers from the output of the ping command on Linux, where the format typically looks like `time=xx.xx ms`
-
-
-
-Windows Regex:
-
-```
-
-rtt\_regex\_windows = re.compile(r'durata\[=<](\[\\d]+)', re.IGNORECASE)
-
-```
-
-This regex captures the RTT in Windows, where the output may show `durata = xx ms` or `durata < xx ms` depending on the system configuration
-
-
-
-macOS Regex:
-
-```
-
-rtt\_regex\_mac = re.compile(r'=\\s\*\[\\d.]+/(\[\\d.]+)', re.IGNORECASE)
-
-```
-
-This regex captures the average RTT value from the output format typically seen on macOS, such as `... = nn.nn/xx.xx/...`
-
-
-
-These regular expressions are used to extract RTT values from the ping output. <mark>\*\*If your system is in a language other than English or Italian, you may need to adjust them accordingly\*\*</mark>
-
-
-
-\### 4️⃣ ntp\_rtt\_stats.txt
-
-
-
-The output of the `generator.py` script is a text file named `ntp\_rtt\_stats.txt`, which contains Round-Trip Time ( \*RTT\* ) statistics for the NTP servers. The file includes data for each country and the corresponding server. This file is generated in the current directory where the script is run and is used as a reference for comparison when analyzing RTT anomalies
-
-
-
-\*\*Currently\*\*, the \*ntp\_rtt\_stats.txt\* file included in the repository \*\*contains RTT statistics from Italy to various NTP servers\*\*. If you're in a different country, it's recommended to re-run the `generator.py` script from your location to regenerate the file with more accurate local values
-
-
-
-\### 5️⃣ rtt\_check.lua
-
-
-
-The rtt\_check.lua script integrates with Wireshark and displays a \*\*dropdown menu\*\* containing the \*\*average RTT\*\* from your current location to various countries and continents. These values are taken from the pre-generated `ntp\_rtt\_stats.txt` file.
-
-
-
-<p align="center"><img src="img/img1.png" /></p>
-
-<p align="center"><img src="img/img2.png" /></p>
-
-
-
-The script adds a custom field to each packet in Wireshark named RTT Anomaly, which includes the following details:
-
-
-
-\- The \*\*measured country\*\* ( \*based on the IP geolocation\* ): \*\*Detected country\*\*
-
-\- The \*\*measured RTT\*\*:                                       \*\*Mesured RTT\*\*
-
-\- The \*\*expected country\*\* ( \*estimated based on RTT\* ):      \*\*Estimated country\*\*
-
-\- The \*\*expected RTT\*\* for the measured country:              \*\*Expected RTT\*\*
-
-
-
-If an anomaly is detected ( \*i.e., the measured RTT significantly differs from the expected value\* ), the script flags the packet with a \*\*protocol error\*\*, which Wireshark highlights in red
-
-
-
-<p align="center"><img src="img/img3.png" /></p>
-
-
+Logs and statistics inside the output directory you specified
 
 ---
 
+# 📌 Requirements
 
+Python 3.10+
 
-\# 📌 Requirements
+nDPI (installed and compiled)
 
-
-
-To run the `generator.py` script, you need to have \*\*Python\*\* installed on your system ( \*Tested on Python version >= 3.12\* )
-
-The script uses the following standard libraries, which are included in the Python Standard Library
-
-
-
-\- ✅ No external dependencies are required
-
-\- \*\*This plugin requires Wireshark version 4.4 or later\*\*
-
-
+(Optional) Textual → for the graphical interface
 
 ---
 
+## 5️⃣ Next Steps
 
+Once you have generated your rules, you can:
 
-\# 📄 License
+Test them directly with your nDPI installation
 
+Integrate them into the ndpi proto file to extend protocol recognition
 
+---
+
+# 📄 License
 
 This project is distributed under the terms of the MIT License. A complete copy of the license is available in the \[LICENSE](LICENSE) file within this repository. Any contribution made to this project will be licensed under the same MIT License
 
+- Academic project developed for educational and research purposes in the field of cybersecurity
+- Author: Nicolò Fontanarosa
+- Email: nickcompanyofficial@gmail.com
+- University: University of Pisa
+- Year: 2025
 
-
-\- Academic project developed for educational and research purposes in the field of cybersecurity
-
-\- Author: Nicolò Fontanarosa
-
-\- Email: nickcompanyofficial@gmail.com
-
-\- University: University of Pisa
-
-\- Year: 2025
-
-
-
-\## 🙌 DISCLAIMER
-
-
+## 🙌 DISCLAIMER
 
 While I do my best to detect location anomalies, I cannot guarantee that this software is error-free or 100% accurate. Please ensure that you respect users' privacy and have proper authorization to monitor, capture, and inspect network traffic
-
-
 
 !\[GitHub followers](https://img.shields.io/github/followers/Nicofontanarosa?style=social)
 

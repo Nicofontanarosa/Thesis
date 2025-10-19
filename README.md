@@ -69,6 +69,10 @@ Each file provides useful information about the analyzed traffic and the generat
 | **log_risky_flows.txt** | Lists flows marked as risky by nDPI according to its internal risk assessment. |
 | **sni_stats.txt** | Shows statistics on all SNI values observed in the traffic, useful for identifying recurring domains or patterns. |
 
+> ⚠️ **Note:**  
+> A copy of the following key files — **`final_output.json`**, **`rules.txt`**, and **`coverage.txt`** —  
+> is also automatically saved inside the program’s **output directory** specified at runtime.
+
 ---
 
 # 📌 Requirements

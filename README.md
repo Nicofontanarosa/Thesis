@@ -107,7 +107,7 @@ This project is distributed under the terms of the MIT License. A complete copy 
 
 While I do my best to detect location anomalies, I cannot guarantee that this software is error-free or 100% accurate. Please ensure that you respect users' privacy and have proper authorization to monitor, capture, and inspect network traffic
 
-!\[GitHub followers](https://img.shields.io/github/followers/Nicofontanarosa?style=social)
+![GitHub followers](https://img.shields.io/github/followers/Nicofontanarosa?style=social)
 
 
 

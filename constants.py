@@ -13,7 +13,7 @@
 # parameters used by all scripts 
 
 # show nDPI protocol in the output
-SHOW_NDPI_PROTOCOLS = True
+SHOW_NDPI_PROTOCOLS = False
 # change filter based on VPN detection
 ONLY_SNI = False
 

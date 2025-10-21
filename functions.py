@@ -102,12 +102,20 @@ def filter_top_clusters(final_flows, clusters, total_packets):
 
     print(f"[DEBUG] Top SNIs: {top_snis}")
 
-    # Step 3: Filter clusters and keep only top SNIs
+    # Step 3: suffix maching ( subdomain )
+    def is_sub_or_same_domain(sni, top_snis):
+
+        for tsni in top_snis:
+            if sni == tsni or tsni.endswith("." + sni):
+                return True
+        return False
+
+    # Step 4: Filter clusters and keep only top SNIs
     filtered_clusters = []
     for cluster in clusters:
         if cluster.get("packets", 0) >= pkt_threshold:
             snis = cluster.get("sni_list", [])
-            top_cluster_snis = [sni for sni in snis if sni in top_snis]
+            top_cluster_snis = [sni for sni in snis if is_sub_or_same_domain(sni.lower(), top_snis)]
 
             # Keep cluster only if it still contains valid top SNIs
             if top_cluster_snis:

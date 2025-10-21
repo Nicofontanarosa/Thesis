@@ -1,7 +1,12 @@
 >> Lists of protocols read:
 
    [+] DNS
+   [+] DoH_DoT
+   [+] Dropbox
+   [+] Google
+   [+] ICMPV6
    [+] QUIC
+   [+] Spotify
    [+] TLS
 
 >> Lists of protocols supported:
@@ -15,3 +20,8 @@
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
    [red][+] DNS[/red]
+   [red][+] DoH_DoT[/red]
+   [red][+] Dropbox[/red]
+   [red][+] Google[/red]
+   [red][+] ICMPV6[/red]
+   [red][+] Spotify[/red]

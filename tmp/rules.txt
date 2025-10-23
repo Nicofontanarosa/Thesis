@@ -1,14 +1,24 @@
-host:"images.sbito.it"@Subito
+host:"expedia.com",host:"travel-assets.com"@Expedia
 
 >> To add this rule based on SNI:
    [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"images.sbito.it"@Subito
+   [+] Paste the following rule: host:"expedia.com",host:"travel-assets.com"@Expedia
 
 --------------------------------------------------------------
-host:"subito.it"@Subito
+trusted_issuer_dn:"CN=*.expedia.org"@"Expedia"
 
->> To add this rule based on SNI:
-   [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"subito.it"@Subito
+>> To add this rule based on CERTIFICATE:
+   [+] Open `nDPI/src/include/ndpi_protocol_ids.h`
+      >> Add at the end of the typedef enum:
+         [+] NDPI_PROTOCOL_EXPEDIA = 453,
+         [+] Replace 453 with an available protocol number.
+   [+] Open `nDPI/src/lib/ndpi_main.c`
+      >> Inside `static void init_protocol_defaults`, add:
+         [+] ndpi_set_proto_defaults(ndpi_str, 0, 1, NDPI_PROTOCOL_ACCEPTABLE, NDPI_PROTOCOL_EXPEDIA, Expedia, NDPI_PROTOCOL_CATEGORY_NETWORK, NDPI_PROTOCOL_QOE_CATEGORY_UNSPECIFIED, ndpi_build_default_ports(ports_a, 0,0,0,0,0), ndpi_build_default_ports(ports_b, 0,0,0,0,0), 0);
+   [+] Open `nDPI/src/lib/ndpi_content_match.c.inc`
+      >> In `static ndpi_tls_cert_name_match tls_certificate_match[]`, add:
+         [+] { "CN=*.expedia.org", NDPI_PROTOCOL_EXPEDIA },
+
+   [+] ( Optional ) Add to `nDPI/example/protos.txt`: trusted_issuer_dn:"CN=*.expedia.org"@"Expedia"
 
 --------------------------------------------------------------

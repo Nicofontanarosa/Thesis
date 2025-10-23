@@ -130,14 +130,14 @@ def classify_domains(clusters, output_file, protoname):
                 "\n>> To add this rule based on CERTIFICATE:\n"
                 "   [+] Open `nDPI/src/include/ndpi_protocol_ids.h`\n"
                 "      >> Add at the end of the typedef enum:\n"
-                f"         [+] NDPI_PROTOCOL_{protoname.upper()} = 453,\n\n"
+                f"         [+] NDPI_PROTOCOL_{protoname.upper()} = 453,\n"
                 "         [+] Replace 453 with an available protocol number.\n"
                 "   [+] Open `nDPI/src/lib/ndpi_main.c`\n"
                 "      >> Inside `static void init_protocol_defaults`, add:\n"
                 f"         [+] ndpi_set_proto_defaults(ndpi_str, 0, 1, NDPI_PROTOCOL_ACCEPTABLE, NDPI_PROTOCOL_{protoname.upper()}, {protoname}, NDPI_PROTOCOL_CATEGORY_NETWORK, NDPI_PROTOCOL_QOE_CATEGORY_UNSPECIFIED, ndpi_build_default_ports(ports_a, 0,0,0,0,0), ndpi_build_default_ports(ports_b, 0,0,0,0,0), 0);\n"
                 "   [+] Open `nDPI/src/lib/ndpi_content_match.c.inc`\n"
                 "      >> In `static ndpi_tls_cert_name_match tls_certificate_match[]`, add:\n"
-                f"         [+] {{ \"{subject}\", NDPI_PROTOCOL_{protoname} }},\n\n"
+                f"         [+] {{ \"{subject}\", NDPI_PROTOCOL_{protoname.upper()} }},\n\n"
                 f"   [+] ( Optional ) Add to `nDPI/example/protos.txt`: {rule}\n"
             )
 

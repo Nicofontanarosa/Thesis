@@ -44,18 +44,16 @@ def normalize_sni_clusters(clusters, sorted_dataset):
 
     normalized_clusters = []
     for cluster in clusters:
-        # normalize each SNI ed elimina quelli None
+        # normalize each SNI ed delete None
         normalized_snis = [normalize_sni(sni) for sni in cluster["sni_list"]]
         normalized_snis = [sni for sni in normalized_snis if sni is not None]
 
-        # remove SNIs presenti in sorted_dataset
+        # remove SNIs in sorted_dataset
         filtered_snis = [sni for sni in normalized_snis if sni.lower() not in sorted_dataset]
 
-        # keep the cluster only if it still has valid SNIs
-        if filtered_snis:
-            new_cluster = cluster.copy()
-            new_cluster["sni_list"] = filtered_snis
-            normalized_clusters.append(new_cluster)
+        new_cluster = cluster.copy()
+        new_cluster["sni_list"] = filtered_snis
+        normalized_clusters.append(new_cluster)
 
     return normalized_clusters
 
@@ -71,10 +69,12 @@ def normalize_ja4(ja4: str) -> str:
 
 def filter_top_clusters(final_flows, clusters, total_packets):
 
+    print(f"\n[DEBUG] Cluster beforse treshold: {clusters}")
+
     # keep only clusters that contribute at least TOP_PERCENT of packets
     pkt_threshold = total_packets * constants.TOP_PERCENT
 
-    print(f"\n[DEBUG] Cluster threshold (packets): {pkt_threshold}")
+    #print(f"\n[DEBUG] Cluster threshold (packets): {pkt_threshold}")
 
     # Step 1: Build a global dictionary {sni: total_packets}
     sni_packet_count = {}
@@ -100,7 +100,7 @@ def filter_top_clusters(final_flows, clusters, total_packets):
     # Keep only SNIs that exceed the packet threshold
     top_snis = {sni for sni, pkt in sni_packet_count.items() if pkt >= pkt_threshold}
 
-    print(f"[DEBUG] Top SNIs: {top_snis}")
+    print(f"\n[DEBUG] Top SNIs: {top_snis}")
 
     # Step 3: suffix maching ( subdomain )
     def is_sub_or_same_domain(sni, top_snis):
@@ -113,17 +113,16 @@ def filter_top_clusters(final_flows, clusters, total_packets):
     # Step 4: Filter clusters and keep only top SNIs
     filtered_clusters = []
     for cluster in clusters:
+        #print(f"\n{cluster.get("packets", 0)}\n")
         if cluster.get("packets", 0) >= pkt_threshold:
             snis = cluster.get("sni_list", [])
             top_cluster_snis = [sni for sni in snis if is_sub_or_same_domain(sni.lower(), top_snis)]
 
-            # Keep cluster only if it still contains valid top SNIs
-            if top_cluster_snis:
-                new_cluster = cluster.copy()
-                new_cluster["sni_list"] = top_cluster_snis
-                filtered_clusters.append(new_cluster)
+            new_cluster = cluster.copy()
+            new_cluster["sni_list"] = top_cluster_snis
+            filtered_clusters.append(new_cluster)
 
-    print(f"[DEBUG] Final top clusters: {len(filtered_clusters)}")
+    print(f"[DEBUG] Final top clusters: {filtered_clusters}")
     return filtered_clusters
 
 # -------------------------------------------
@@ -472,7 +471,7 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
     # merge clusters based on SNI
     sni_to_use = group_sni.merge_clusters(raw_clusters)
 
-    #print(f"\n[DEBUG] Merged Cluster: {sni_to_use}")
+    print(f"\n[DEBUG] Merged Cluster: {sni_to_use}")
 
     if not constants.SHOW_NDPI_PROTOCOLS:
         sni_to_use = normalize_sni_clusters(sni_to_use, sorted_dataset)

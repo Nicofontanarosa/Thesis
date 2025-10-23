@@ -1,7 +1,7 @@
 [
     {
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "8daaf6152771_eca864cca44a",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "f57a46bbacb6_14788d8d241b",
         "certificate": [
             [
                 "certificate",
@@ -21,22 +21,23 @@
             ]
         ],
         "sni_list": [
-            "images.sbito.it"
+            "expedia.com",
+            "travel-assets.com"
         ],
-        "flow_count": 6,
-        "packets": 1056
+        "flow_count": 467,
+        "packets": 40373
     },
     {
         "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "8daaf6152771_eca864cca44a",
+        "ja4": null,
         "certificate": [
             [
                 "certificate",
-                null
+                "SHA-1: 3B:BD:DC:07:1B:5A:8B:1A:1F:48:85:84:E7:F0:D9:C3:D6:38:04:BE"
             ],
             [
                 "issuer",
-                null
+                "C=BE, O=GlobalSign nv-sa, CN=GlobalSign GCC R3 DV TLS CA 2020"
             ],
             [
                 "servernames",
@@ -44,13 +45,11 @@
             ],
             [
                 "subject",
-                null
+                "CN=*.expedia.org"
             ]
         ],
-        "sni_list": [
-            "subito.it"
-        ],
-        "flow_count": 8,
-        "packets": 666
+        "sni_list": [],
+        "flow_count": 1,
+        "packets": 14194
     }
 ]

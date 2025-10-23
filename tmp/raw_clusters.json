@@ -1,15 +1,15 @@
 [
     {
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "8daaf6152771_eca864cca44a",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": null,
         "certificate": [
             [
                 "certificate",
-                null
+                "SHA-1: 3B:BD:DC:07:1B:5A:8B:1A:1F:48:85:84:E7:F0:D9:C3:D6:38:04:BE"
             ],
             [
                 "issuer",
-                null
+                "C=BE, O=GlobalSign nv-sa, CN=GlobalSign GCC R3 DV TLS CA 2020"
             ],
             [
                 "servernames",
@@ -17,18 +17,16 @@
             ],
             [
                 "subject",
-                null
+                "CN=*.expedia.org"
             ]
         ],
-        "sni_list": [
-            "images.sbito.it"
-        ],
-        "flow_count": 6,
-        "packets": 1056
+        "sni_list": [],
+        "flow_count": 1,
+        "packets": 14194
     },
     {
         "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "8daaf6152771_eca864cca44a",
+        "ja4": "f57a46bbacb6_14788d8d241b",
         "certificate": [
             [
                 "certificate",
@@ -48,15 +46,170 @@
             ]
         ],
         "sni_list": [
-            "collector.subito.it",
-            "hades.subito.it"
+            "a.travel-assets.com",
+            "b.travel-assets.com",
+            "c.travel-assets.com",
+            "forever.travel-assets.com",
+            "mediaim.expedia.com",
+            "rl.quantummetric.com",
+            "static.pay.expedia.com",
+            "trkn.us",
+            "www.expedia.com",
+            "www.hotels.com",
+            "www.trivago.com",
+            "www.uciservice.com"
+        ],
+        "flow_count": 458,
+        "packets": 36992
+    },
+    {
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "a09f3c656075_14788d8d241b",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "mediaim.expedia.com"
+        ],
+        "flow_count": 0,
+        "packets": 0
+    },
+    {
+        "ja3s": null,
+        "ja4": "55b375c5d22e_0e9637bee5d3",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "app-analytics-services.com",
+            "ingest.quantummetric.com",
+            "region1.app-analytics-services-att.com",
+            "www.expedia.com",
+            "z.travel-assets.com"
+        ],
+        "flow_count": 9,
+        "packets": 3381
+    },
+    {
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "f57a46bbacb6_14788d8d241b",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "app-analytics-services.com",
+            "browser-intake-datadoghq.com",
+            "znbbf46ejn8vkhysu-expediaxm.siteintercept.qualtrics.com"
+        ],
+        "flow_count": 9,
+        "packets": 1349
+    },
+    {
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "f57a46bbacb6_14788d8d241b",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "api2.branch.io",
+            "mpsnare.iesnare.com",
+            "t.promotionx.io",
+            "www.datadoghq-browser-agent.com"
         ],
         "flow_count": 7,
-        "packets": 616
+        "packets": 379
     },
     {
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "5b57614c22b0_eca864cca44a",
+        "ja3s": "50a9e7b112931e541503e8a2499252b9",
+        "ja4": "f57a46bbacb6_14788d8d241b",
+        "certificate": [
+            [
+                "certificate",
+                "SHA-1: 3B:BD:DC:07:1B:5A:8B:1A:1F:48:85:84:E7:F0:D9:C3:D6:38:04:BE"
+            ],
+            [
+                "issuer",
+                "C=BE, O=GlobalSign nv-sa, CN=GlobalSign GCC R3 DV TLS CA 2020"
+            ],
+            [
+                "servernames",
+                "*.adsrvr.org,adsrvr.org"
+            ],
+            [
+                "subject",
+                "CN=*.adsrvr.org"
+            ]
+        ],
+        "sni_list": [
+            "insight.adsrvr.org",
+            "match.adsrvr.org"
+        ],
+        "flow_count": 3,
+        "packets": 87
+    },
+    {
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "a09f3c656075_14788d8d241b",
         "certificate": [
             [
                 "certificate",
@@ -76,10 +229,36 @@
             ]
         ],
         "sni_list": [
-            "assets.subito.it",
-            "hades.subito.it"
+            "mpsnare.iesnare.com"
+        ],
+        "flow_count": 0,
+        "packets": 0
+    },
+    {
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "a09f3c656075_14788d8d241b",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "token.safebrowsing.apple"
         ],
         "flow_count": 1,
-        "packets": 50
+        "packets": 16
     }
 ]

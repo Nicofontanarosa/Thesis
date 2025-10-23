@@ -62,7 +62,7 @@ def merge_clusters(clusters: list) -> list:
     # group SNIs within each cluster
     clusters = [group_sni(c) for c in clusters]
 
-    print(f"\n[DEBUG] 1 Merged Cluster: {clusters}")
+    #print(f"\n[DEBUG] 1 Merged Cluster before: {clusters}")
 
     # sort clusters by descending length of sni_list (IMPORTANT)
     clusters.sort(key=lambda c: len(c["sni_list"]), reverse=True)
@@ -117,16 +117,23 @@ def merge_clusters(clusters: list) -> list:
 
     # --- Remove clusters that have no SNI, no JA4, and no certificate ---
     def has_useful_data(cluster):
+        #print("\n\nDENTRO\n\n")
         if cluster.get("sni_list"):
+            #print(f"\nsni_list: {cluster.get("sni_list")}\n")
             return True
         if cluster.get("ja4"):
             return True
-        cert_values = [v for k, v in cluster.get("certificate", []) if v is not None]
-        if cert_values:
+        raw_cert = cluster.get("certificate", [])
+        #print(f"\n[DEBUG] 2 raw_cert: {raw_cert}\n")
+        certificate = {item[0]: item[1] for item in raw_cert if len(item) == 2}
+        print(f"\n\nCERT: {certificate.get("subject")}\n\n")
+        if certificate.get("subject"):
             return True
         return False
 
     clusters = [c for c in clusters if has_useful_data(c)]
+    print(f"\n[DEBUG] Merged Cluster after group: {clusters}")
+    
     return clusters
 
 #################################################################

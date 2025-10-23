@@ -1,29 +1,31 @@
 [
     {
-        "ja3s": "f9fcb52580329fb6a9b61d7542087b90",
-        "ja4": "8daaf6152771_d8a2da3f94cd",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "f57a46bbacb6_14788d8d241b",
         "certificate": [
             [
                 "certificate",
-                "SHA-1: 1B:A7:2E:19:CA:C7:BA:00:32:6D:C0:9E:9C:F4:AE:FC:8E:D3:54:E0"
+                null
             ],
             [
                 "issuer",
-                "C=US, O=Let's Encrypt, CN=R11"
+                null
             ],
             [
                 "servernames",
-                "api.doctorapp.it"
+                null
             ],
             [
                 "subject",
-                "CN=api.doctorapp.it"
+                null
             ]
         ],
         "sni_list": [
-            "doctorapp.it"
+            "expedia.com",
+            "images.trvl-media.com",
+            "travel-assets.com"
         ],
-        "flow_count": 3,
-        "packets": 3950
+        "flow_count": 468,
+        "packets": 54567
     }
 ]

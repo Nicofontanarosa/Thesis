@@ -1,14 +1,7 @@
-host:"portal.seafy.com"@
+host:"expedia.com",host:"images.trvl-media.com",host:"travel-assets.com"@Expedia
 
 >> To add this rule based on SNI:
    [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"portal.seafy.com"@
-
---------------------------------------------------------------
-host:"aliavpn.xyz"@
-
->> To add this rule based on SNI:
-   [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"aliavpn.xyz"@
+   [+] Paste the following rule: host:"expedia.com",host:"images.trvl-media.com",host:"travel-assets.com"@Expedia
 
 --------------------------------------------------------------

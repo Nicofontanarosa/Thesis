@@ -26,7 +26,7 @@ def run_ndpi_command(cmd, output_file=None):
 
 # -------------------------------------------
 
-def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
+def run_pipeline(pcap_file, ndpi_path, output_dir, protoname, log_file, log_file_error):
     
     # clear of terminal at start
     config.clear_terminal()
@@ -85,7 +85,7 @@ def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
 
     # printing flows with risk
     functions.print_risky_flows(final_flows)
-    final_flows = functions.generate_rules(final_flows, final_output)
+    final_flows = functions.generate_rules(final_flows, final_output, protoname)
 
     with open(final_output, 'w') as f_out:
         json.dump(final_flows, f_out, indent=4)
@@ -99,7 +99,7 @@ def run_pipeline(pcap_file, ndpi_path, output_dir, log_file, log_file_error):
 
     config.log_message(f"\n\n>> All removed flows save in: /tmp/removed_flows.json\n", log_file)
 
-def main_pipeline(pcap, ndpi, output):
+def main_pipeline(pcap, ndpi, output, protoname):
 
     # at the beginning of run_pipeline or right after the imports
     log_file = "tmp/initialization.txt"
@@ -107,7 +107,7 @@ def main_pipeline(pcap, ndpi, output):
     config.clear_log(log_file)
     config.clear_log(log_file_error)
 
-    run_pipeline(pcap, ndpi, output, log_file, log_file_error)
+    run_pipeline(pcap, ndpi, output, protoname, log_file, log_file_error)
 
 #################################################################
 # End of main.py

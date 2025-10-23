@@ -53,7 +53,7 @@ def classify_domain_AI(domain):
 
 # -------------------------------------------
 
-def classify_domains(clusters, output_file):
+def classify_domains(clusters, output_file, protoname):
 
     output_folder = os.path.dirname(output_file)
     # make the complete path for the rules file
@@ -82,116 +82,73 @@ def classify_domains(clusters, output_file):
         
         if constants.SHOW_NAME_HINT:
 
-            whois_orgs = set()
-            ai_orgs = set()
-
             for d in snis:
                 try:
                     w = whois.whois(d)
-                    org = w.get("registrant_organization") or w.get("admin_organization") or w.get("org")
+                    protoname = w.get("registrant_organization") or w.get("admin_organization") or w.get("org")
                     #print(f"\n---{org.lower()}---{ 'true' if org.lower() in constants.REDACTED_ORGS else 'false'}----")
 
-                    if org is None or org.lower() in constants.REDACTED_ORGS:
-                        if os.name == 'nt':
-                            org = "unknown"
-                            orgai = classify_domain_AI(d)
-                        else: 
-                            orgai = "unknown"
-                            org = "unknown"
+                    if protoname is None or protoname.lower() in constants.REDACTED_ORGS:
+                        protoname = classify_domain_AI(d)
                     else:
-                        if os.name == 'nt':
-                            orgai = classify_domain_AI(d)
-                        else:
-                            orgai = "unknown"
-                        org = org.lower()
-
-                    whois_orgs.add(org)
-                    ai_orgs.add(orgai)
-
-                    print(f"{d} → AI: {orgai} & whois: {org}")
+                        protoname = classify_domain_AI(d)
 
                 except Exception as e:
-                    orgai = classify_domain_AI(d)
-                    ai_orgs.add(orgai)
-                    print(f"{d} → AI: {orgai}")
+                    protoname = classify_domain_AI(d)
 
-            org = org.split()[0] if org else org
-            orgai = orgai.split()[0] if orgai else orgai
-            #print(f"Classified orgs for cluster {snis} → AI: {orgai} & whois: {org}")
+        # === Prefer SNI if available ===
+        if snis:
             host_entries = ",".join([f'host:"{sni}"' for sni in sorted(snis)])
+            rule = f"{host_entries}@{protoname}"
+            instructions = (
+                "\n>> To add this rule based on SNI:\n"
+                "   [+] Open the file: `nDPI/example/protos.txt`\n"
+                f"   [+] Paste the following rule: {rule}\n"
+            )
 
-            if constants.SHOW_GUESS_SNI:
+        # === If no SNI, use certificate ===
+        elif certificate.get("subject") and "CN=" in certificate.get("subject"):
 
-                if (org != "unknown" and org):
-                    proto = org
-                elif (orgai != "unknown" and orgai):
-                    proto = orgai
-                else:
-                    proto = "unknown"
+            subject = certificate.get("subject")
 
-                # host rule
-                rule = f"{host_entries}@{proto}"
-
-            else:
-                whois_str = ", ".join(sorted(whois_orgs)) if whois_orgs else ""
-                ai_str = ", ".join(sorted(ai_orgs)) if ai_orgs else "unknown"
-                rule = f"{host_entries}@whois: {whois_str} & AI: {ai_str}"
-
-        else:
-
-            # === Prefer SNI if available ===
-            if snis:
-                host_entries = ",".join([f'host:"{sni}"' for sni in sorted(snis)])
-                rule = f"{host_entries}@"
-                instructions = (
-                    "\n>> To add this rule based on SNI:\n"
-                    "   [+] Open the file: `nDPI/example/protos.txt`\n"
-                    f"   [+] Paste the following rule: {rule}\n"
-                )
-
-            # === If no SNI, use certificate ===
-            elif certificate.get("subject") and "CN=" in certificate.get("subject"):
-
-                subject = certificate.get("subject")
-
-                # extracts the CN from the subject field
-                def extract_cn(field):
-                    if not field or field.lower() == "none":
-                        return None
-                    for part in field.split(","):
-                        part = part.strip()
-                        if part.startswith("CN="):
-                            return part.replace("CN=", "").strip()
+            # extracts the CN from the subject field
+            def extract_cn(field):
+                if not field or field.lower() == "none":
                     return None
+                for part in field.split(","):
+                    part = part.strip()
+                    if part.startswith("CN="):
+                        return part.replace("CN=", "").strip()
+                return None
 
-                subject_cn = extract_cn(subject)
+            subject_cn = extract_cn(subject)
 
-                if subject_cn and subject.lower():
-                    rule = f'trusted_issuer_dn:"{subject}"@'
+            if subject_cn and subject.lower():
+                rule = f'trusted_issuer_dn:"{subject}"@"{protoname}"'
 
-                instructions = (
-                    "\n>> To add this rule based on CERTIFICATE:\n"
-                    "   [+] Open `nDPI/src/include/ndpi_protocol_ids.h`\n"
-                    "      >> Add at the end of the typedef enum:\n"
-                    "         [+] NDPI_PROTOCOL_MYPROTO = 453,\n\n"
-                    "   [+] Open `nDPI/src/lib/ndpi_main.c`\n"
-                    "      >> Inside `static void init_protocol_defaults`, add:\n"
-                    "         [+] ndpi_set_proto_defaults(ndpi_str, 0, 1, NDPI_PROTOCOL_ACCEPTABLE, NDPI_PROTOCOL_MYPROTO, testproto, NDPI_PROTOCOL_CATEGORY_NETWORK, NDPI_PROTOCOL_QOE_CATEGORY_UNSPECIFIED, ndpi_build_default_ports(ports_a, 0,0,0,0,0), ndpi_build_default_ports(ports_b, 0,0,0,0,0), 0);\n"
-                    "         [+] Replace NDPI_PROTOCOL_MYPROTO and testproto with your protocol name.\n"
-                    "   [+] Open `nDPI/src/lib/ndpi_content_match.c.inc`\n"
-                    "      >> In `static ndpi_tls_cert_name_match tls_certificate_match[]`, add:\n"
-                    f"         [+] {{ \"{subject}\", NDPI_PROTOCOL_MYPROTO }},\n\n"
-                    f"   [+] ( Optional ) Add to `nDPI/example/protos.txt`: {rule}\n"
-                )
+            instructions = (
+                "\n>> To add this rule based on CERTIFICATE:\n"
+                "   [+] Open `nDPI/src/include/ndpi_protocol_ids.h`\n"
+                "      >> Add at the end of the typedef enum:\n"
+                f"         [+] NDPI_PROTOCOL_{protoname} = 453,\n\n"
+                "         [+] Replace 453 with an available protocol number.\n"
+                "   [+] Open `nDPI/src/lib/ndpi_main.c`\n"
+                "      >> Inside `static void init_protocol_defaults`, add:\n"
+                f"         [+] ndpi_set_proto_defaults(ndpi_str, 0, 1, NDPI_PROTOCOL_ACCEPTABLE, NDPI_PROTOCOL_{protoname}, {protoname}, NDPI_PROTOCOL_CATEGORY_NETWORK, NDPI_PROTOCOL_QOE_CATEGORY_UNSPECIFIED, ndpi_build_default_ports(ports_a, 0,0,0,0,0), ndpi_build_default_ports(ports_b, 0,0,0,0,0), 0);\n"
+                "   [+] Open `nDPI/src/lib/ndpi_content_match.c.inc`\n"
+                "      >> In `static ndpi_tls_cert_name_match tls_certificate_match[]`, add:\n"
+                f"         [+] {{ \"{subject}\", NDPI_PROTOCOL_{protoname} }},\n\n"
+                f"   [+] ( Optional ) Add to `nDPI/example/protos.txt`: {rule}\n"
+            )
 
-            # === If neither SNI nor certificate, use JA4 ===
-            elif ja4:
-                rule = f"ja4:{ja4}@"
-                instructions = (
-                    "\n>> To add this rule based on JA4:\n"
-                    "   [+] Open `nDPI/example/protos.txt`\n"
-                    f"   [+] Paste the following rule: {rule}\n"
-                )
+        # === If neither SNI nor certificate, use JA4 ===
+        elif ja4:
+            rule = f"ja4:{ja4}@{protoname}"
+            instructions = (
+                "\n>> To add this rule based on JA4:\n"
+                "   [+] Open `nDPI/example/protos.txt`\n"
+                f"   [+] Paste the following rule: {rule}\n"
+            )
 
         with open(rules_file, "a") as f:
             f.write(f"{rule}\n{instructions}\n{'-'*62}\n")

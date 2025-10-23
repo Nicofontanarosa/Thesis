@@ -1,56 +1,29 @@
 [
     {
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "5b57614c22b0_eca864cca44a",
+        "ja3s": "f9fcb52580329fb6a9b61d7542087b90",
+        "ja4": "8daaf6152771_d8a2da3f94cd",
         "certificate": [
             [
                 "certificate",
-                null
+                "SHA-1: 1B:A7:2E:19:CA:C7:BA:00:32:6D:C0:9E:9C:F4:AE:FC:8E:D3:54:E0"
             ],
             [
                 "issuer",
-                null
+                "C=US, O=Let's Encrypt, CN=R11"
             ],
             [
                 "servernames",
-                null
+                "api.doctorapp.it"
             ],
             [
                 "subject",
-                null
+                "CN=api.doctorapp.it"
             ]
         ],
         "sni_list": [
-            "portal.seafy.com"
+            "doctorapp.it"
         ],
-        "flow_count": 2,
-        "packets": 2644
-    },
-    {
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "5b57614c22b0_eca864cca44a",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "aliavpn.xyz"
-        ],
-        "flow_count": 2,
-        "packets": 206
+        "flow_count": 3,
+        "packets": 3950
     }
 ]

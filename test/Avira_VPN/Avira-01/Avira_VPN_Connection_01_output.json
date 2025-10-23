@@ -72,26 +72,5 @@
         "exchanged_packets": [
             "19 <-> 16"
         ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f590053ff246338aff7c203dbe7164d6",
-        "ja4": "t13d201300_2b729b4bf6f3_1ea369dc5faa",
-        "sni": "fcmconnection.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "65119",
-        "ip_destination": "216.58.204.234",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
-        "risk": "** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "10",
-        "risk_info": "No ALPN",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "8 <-> 8"
-        ]
     }
 ]

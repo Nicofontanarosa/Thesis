@@ -1,7 +1,7 @@
-host:"warframe.market"@
+host:"warframe.market"@Warframe
 
 >> To add this rule based on SNI:
    [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"warframe.market"@
+   [+] Paste the following rule: host:"warframe.market"@Warframe
 
 --------------------------------------------------------------

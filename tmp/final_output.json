@@ -3,18 +3,63 @@
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "portal.seafy.com",
-        "ip_source": "192.168.2.7",
-        "port_source": "50747",
-        "ip_destination": "57.129.141.216",
+        "tls_version": "TLSv1.2",
+        "ja3s": "f9fcb52580329fb6a9b61d7542087b90",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "servernames": "api.doctorapp.it",
+        "issuer": "C=US, O=Let's Encrypt, CN=R11",
+        "subject": "CN=api.doctorapp.it",
+        "certificate": "SHA-1: 1B:A7:2E:19:CA:C7:BA:00:32:6D:C0:9E:9C:F4:AE:FC:8E:D3:54:E0",
+        "sni": "api.doctorapp.it",
+        "ip_source": "192.168.80.96",
+        "port_source": "63812",
+        "ip_destination": "162.19.31.184",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d876f498b09e/Android",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "719 <-> 1376",
+            "153 <-> 202"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "f9fcb52580329fb6a9b61d7542087b90",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "servernames": "doctorapp.it,www.doctorapp.it",
+        "issuer": "C=US, O=Let's Encrypt, CN=R11",
+        "subject": "CN=www.doctorapp.it",
+        "certificate": "SHA-1: 82:13:F0:33:95:8F:B0:A6:5A:2D:86:BF:E9:A9:58:A7:BF:2D:10:0B",
+        "sni": "doctorapp.it",
+        "ip_source": "192.168.80.96",
+        "port_source": "63813",
+        "ip_destination": "162.19.31.184",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "790 <-> 1816"
+            "634 <-> 866"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "BmPRdH5",
+        "sni": "cdn.jsdelivr.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63810",
+        "ip_destination": "104.16.174.226",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 14"
         ]
     },
     {
@@ -23,55 +68,31 @@
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "aliavpn.xyz",
-        "ip_source": "192.168.2.7",
-        "port_source": "41878",
-        "ip_destination": "188.114.96.7",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "cdn.jsdelivr.net",
+        "ip_source": "192.168.80.96",
+        "port_source": "63811",
+        "ip_destination": "104.16.174.226",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d876f498b09e/Android",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
         "similar_flows_count": 2,
         "exchanged_packets": [
-            "67 <-> 126",
-            "6 <-> 7"
+            "15 <-> 14",
+            "15 <-> 11"
         ]
     },
     {
-        "ip_field": "0/Unknown",
+        "ip_field": "126/Google",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "postimg.cc",
-        "ip_source": "192.168.2.7",
-        "port_source": "47076",
-        "ip_destination": "45.43.142.100",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d876f498b09e/Android",
-        "similar_flows_count": 1,
+        "risk": "** Unidirectional Traffic **",
+        "risk_score": "10",
+        "risk_info": "No server to client traffic",
+        "similar_flows_count": 3,
         "exchanged_packets": [
-            "20 <-> 18"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d170900_5b57614c22b0_78e6aca7449b",
-        "ip_source": "192.168.2.7",
-        "port_source": "54242",
-        "ip_destination": "1.1.1.1",
-        "port_destination": "853",
-        "tcp_fingerprint": "2_64_65535_dc2b5da52150/Unknown",
-        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **** Missing SNI TLS Extn **",
-        "risk_score": "110",
-        "risk_info": "SNI should always be present / No ALPN / Expected on port 443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "4 <-> 13"
+            "8 <-> 0",
+            "3 <-> 0",
+            "3 <-> 0"
         ]
     }
 ]

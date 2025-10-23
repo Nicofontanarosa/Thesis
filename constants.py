@@ -19,8 +19,6 @@ ONLY_SNI = False
 
 # show name hints in the output (requires whois and AI classification)
 SHOW_NAME_HINT = False
-# show guessed SNIs in the output (subset of SHOW_NAME_HINT)
-SHOW_GUESS_SNI = False
 # redacted organization names for whois
 REDACTED_ORGS = {"redacted for privacy", "data redacted", "hidden", "not disclosed", "domains by proxy, llc", "identity protection service", "registration private"}
 

@@ -237,7 +237,7 @@ def print_risky_flows(final_flows, log_risky_flows="tmp/log_risky_flows.txt"):
 
 # -------------------------------------------
 
-def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt", log_file_removed_flows="tmp/removed_flows.json", log_file_filtered_flows="tmp/filtered_flows.json", dataset_file="dataset/dataset.json", datasetTLD_file="dataset/datasetTLD.json", dataset_not_protocols_file="dataset/dataset_not_protocols_domains.json"):
+def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_stats.txt", log_file_removed_flows="tmp/removed_flows.json", log_file_filtered_flows="tmp/filtered_flows.json", dataset_file="dataset/dataset.json", datasetTLD_file="dataset/datasetTLD.json", dataset_not_protocols_file="dataset/dataset_not_protocols_domains.json"):
 
     # load the main dataset of known domains
     with open(dataset_file, "r") as f:
@@ -494,7 +494,7 @@ def generate_rules(final_flows, output_file, sni_stats_file="tmp/sni_stats.txt",
         json.dump(top_clusters, f, indent=4)
 
     # call classification on the cleaned and merged SNIs outputting to the specified file
-    get_info.classify_domains(top_clusters, output_file)
+    get_info.classify_domains(top_clusters, output_file, protoname)
 
     return final_flows
 

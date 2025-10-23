@@ -1,21 +1,21 @@
-host:"www.recaptcha.net"@
+host:"recaptcha.net"@Avira
 
 >> To add this rule based on SNI:
    [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"www.recaptcha.net"@
+   [+] Paste the following rule: host:"recaptcha.net"@Avira
 
 --------------------------------------------------------------
-host:"phantom.avira-vpn.com"@
+host:"phantom.avira-vpn.com"@Avira
 
 >> To add this rule based on SNI:
    [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"phantom.avira-vpn.com"@
+   [+] Paste the following rule: host:"phantom.avira-vpn.com"@Avira
 
 --------------------------------------------------------------
-host:"iron-dot-cobalt-antenna-219709.appspot.com"@
+host:"appspot.com"@Avira
 
 >> To add this rule based on SNI:
    [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"iron-dot-cobalt-antenna-219709.appspot.com"@
+   [+] Paste the following rule: host:"appspot.com"@Avira
 
 --------------------------------------------------------------

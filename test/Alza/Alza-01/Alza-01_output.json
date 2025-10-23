@@ -140,24 +140,6 @@
         ]
     },
     {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "pay.sandbox.google.com",
-        "ip_source": "192.168.1.84",
-        "port_source": "62663",
-        "ip_destination": "142.250.27.81",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "16 <-> 13"
-        ]
-    },
-    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -273,24 +255,6 @@
             "11 <-> 8",
             "10 <-> 7",
             "9 <-> 7"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "firebaseremoteconfigrealtime.googleapis.com",
-        "ip_source": "192.168.1.84",
-        "port_source": "62619",
-        "ip_destination": "142.251.209.42",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 9"
         ]
     },
     {

@@ -1,7 +1,7 @@
-host:"doctorapp.it"@
+host:"doctorapp.it"@Doctorapp
 
 >> To add this rule based on SNI:
    [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"doctorapp.it"@
+   [+] Paste the following rule: host:"doctorapp.it"@Doctorapp
 
 --------------------------------------------------------------

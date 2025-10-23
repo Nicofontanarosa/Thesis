@@ -43,41 +43,5 @@
         "exchanged_packets": [
             "634 <-> 866"
         ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.239/QUIC.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "plain_text": "71XLMY",
-        "sni": "content-autofill.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63824",
-        "ip_destination": "216.58.209.42",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "content-autofill.googleapis.com",
-        "ip_source": "192.168.80.96",
-        "port_source": "63814",
-        "ip_destination": "216.58.209.42",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "20 <-> 20"
-        ]
     }
 ]

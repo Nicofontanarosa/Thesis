@@ -4,13 +4,15 @@
 
 >> All SNIs seen:
 
-   [+] [green]aliavpn.xyz[/green]
-   [+] [green]portal.seafy.com[/green]
-   [+] [green]postimg.cc[/green]
+   [+] [green]api.doctorapp.it[/green]
+   [+] [green]cdn.jsdelivr.net[/green]
+   [+] [green]doctorapp.it[/green]
 
 
 >> Removed flows 1° filtering ( Exclude words and know domains ):
 
+   [+] [red]cdn.jsdelivr.net[/red]
+   [+] [red]cdn.jsdelivr.net[/red]
 
 
 >> Removed flows 2° filtering ( Remove known suffixes and not_protocols domains ):
@@ -19,6 +21,5 @@
 
 >> Remaining SNIs:
 
-   [+] [green]aliavpn.xyz[/green]
-   [+] [green]portal.seafy.com[/green]
-   [+] [green]postimg.cc[/green]
+   [+] [green]api.doctorapp.it[/green]
+   [+] [green]doctorapp.it[/green]

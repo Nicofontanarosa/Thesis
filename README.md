@@ -35,17 +35,18 @@ In this version, the interface will ask for all required paths ( **PCAP file, nD
 
 ### 💻 Command-Line Mode
 
-- If you prefer the command line, run: `python3 debug.py <pcap_path> <ndpi_path> <output_folder>`
+- If you prefer the command line, run: `python3 debug.py <pcap_path> <ndpi_path> <output_folder> <proto_name>`
 
 ***Example:***
 
-`python3 debug.py /downloads/application.pcapng /home/Nico/nDPI/ test/application`
+`python3 debug.py /downloads/application.pcapng /home/Nico/nDPI/ test/application Gioco`
 
 - Parameters:
 
 1. **<pcap_path>** → path to your `.pcap` or `.pcapng` file (e.g., /downloads/app.pcapng)
 2. **<ndpi_path>** → main `directory` where nDPI is installed (e.g., /home/Nico/nDPI/)
 3. **<output_folder>** → directory where analysis results and generated rules will be saved (e.g., test/app/)
+4. **<proto_name>** → application name
 
 ---
 

@@ -1,7 +1,7 @@
 [
     {
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "f57a46bbacb6_14788d8d241b",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "8daaf6152771_eca864cca44a",
         "certificate": [
             [
                 "certificate",
@@ -21,11 +21,36 @@
             ]
         ],
         "sni_list": [
-            "expedia.com",
-            "images.trvl-media.com",
-            "travel-assets.com"
+            "images.sbito.it"
         ],
-        "flow_count": 468,
-        "packets": 54567
+        "flow_count": 6,
+        "packets": 1056
+    },
+    {
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "8daaf6152771_eca864cca44a",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "subito.it"
+        ],
+        "flow_count": 8,
+        "packets": 666
     }
 ]

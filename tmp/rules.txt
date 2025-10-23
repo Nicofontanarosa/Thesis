@@ -1,7 +1,14 @@
-host:"expedia.com",host:"images.trvl-media.com",host:"travel-assets.com"@Expedia
+host:"images.sbito.it"@Subito
 
 >> To add this rule based on SNI:
    [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"expedia.com",host:"images.trvl-media.com",host:"travel-assets.com"@Expedia
+   [+] Paste the following rule: host:"images.sbito.it"@Subito
+
+--------------------------------------------------------------
+host:"subito.it"@Subito
+
+>> To add this rule based on SNI:
+   [+] Open the file: `nDPI/example/protos.txt`
+   [+] Paste the following rule: host:"subito.it"@Subito
 
 --------------------------------------------------------------

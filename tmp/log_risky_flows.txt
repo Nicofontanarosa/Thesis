@@ -7,39 +7,18 @@
   + proto_field: 91/TLS
   + tls_version: TLSv1.3
   + ja3s: f4febc55ea12b31ae17cfb7e614afda8
-  + ja4: t13d1314h2_f57a46bbacb6_14788d8d241b
-  + [green]sni: yclqkn.inapps.appsflyersdk.com[/green]
-  + ip_source: 192.168.0.86
-  + port_source: 52468
-  + ip_destination: 3.160.196.45
+  + ja4: t13d1713ht_5b57614c22b0_eca864cca44a
+  + [green]sni: 4dxsfv.launches.appsflyersdk.com[/green]
+  + ip_source: 192.168.80.96
+  + port_source: 63110
+  + ip_destination: 108.157.194.80
   + port_destination: 443
-  + tcp_fingerprint: 2_64_65535_d29295416479/macOS
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
   + [red]risk: ** Susp DGA Domain name **[/red]
   + [red]risk_score: 100[/red]
-  + [red]risk_info: yclqkn.inapps.appsflyersdk.com[/red]
+  + [red]risk_info: 4dxsfv.launches.appsflyersdk.com[/red]
   + similar_flows_count: 1
-  + exchanged_packets: \['17 <-> 17'\]
-
-
->> Risky Flow:
-
-  + ip_field: 0/Unknown
-  + transport_protocol: TCP
-  + proto_field: 91/TLS
-  + tls_version: TLSv1.3
-  + ja3s: 907bf3ecef1c987c889946b737b43de8
-  + ja4: t13d1314h2_f57a46bbacb6_14788d8d241b
-  + [green]sni: mcbnck8rxcs7cyrnvfcfd43796q0.device.marketingcloudapis.com[/green]
-  + ip_source: 192.168.0.86
-  + port_source: 52381
-  + ip_destination: 13.110.204.30
-  + port_destination: 443
-  + tcp_fingerprint: 2_64_65535_d29295416479/macOS
-  + [red]risk: ** Susp DGA Domain name **[/red]
-  + [red]risk_score: 100[/red]
-  + [red]risk_info: mcbnck8rxcs7cyrnvfcfd43796q0.device.marketingcloudapis.com[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['13 <-> 12'\]
+  + exchanged_packets: \['14 <-> 13'\]
 
 
 >> Risky Flow:
@@ -49,31 +28,40 @@
   + proto_field: 91/TLS
   + tls_version: TLSv1.3
   + ja3s: f4febc55ea12b31ae17cfb7e614afda8
-  + ja4: t13d1314h2_f57a46bbacb6_14788d8d241b
-  + [green]sni: yclqkn.skadsdk.appsflyersdk.com[/green]
-  + ip_source: 192.168.0.86
-  + port_source: 52374
-  + ip_destination: 18.161.97.83
+  + ja4: t13d1713ht_5b57614c22b0_eca864cca44a
+  + [green]sni: 4dxsfv.inapps.appsflyersdk.com[/green]
+  + ip_source: 192.168.80.96
+  + port_source: 63129
+  + ip_destination: 18.66.195.87
   + port_destination: 443
-  + tcp_fingerprint: 2_64_65535_d29295416479/macOS
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
   + [red]risk: ** Susp DGA Domain name **[/red]
   + [red]risk_score: 100[/red]
-  + [red]risk_info: yclqkn.skadsdk.appsflyersdk.com[/red]
-  + similar_flows_count: 1
-  + exchanged_packets: \['10 <-> 13'\]
+  + [red]risk_info: 4dxsfv.inapps.appsflyersdk.com[/red]
+  + similar_flows_count: 3
+  + exchanged_packets: \['14 <-> 12', '15 <-> 13', '15 <-> 13'\]
 
 
 >> Risky Flow:
 
-  + ip_field: 140/Apple
+  + ip_field: 265/AmazonAWS
   + transport_protocol: TCP
   + proto_field: 91/TLS
-  + ip_source: 192.168.0.86
-  + port_source: 51137
-  + ip_destination: 17.57.146.27
-  + port_destination: 5223
-  + [red]risk: ** Known Proto on Non Std Port **[/red]
-  + [red]risk_score: 50[/red]
-  + [red]risk_info: Expected on port 443[/red]
+  + tls_version: TLSv1.2
+  + ja3s: 303951d4c50efb2e991652225a6f02b1
+  + ja4: t13d171100_5b57614c22b0_3f5d972527c0
+  + servernames: messaging.advgo.net,*.messaging.advgo.net
+  + issuer: C=US, O=Amazon, CN=Amazon RSA 2048 M03
+  + subject: CN=messaging.advgo.net
+  + certificate: SHA-1: 79:9B:BF:01:90:B3:71:DB:52:DF:A8:9B:D2:9F:7F:0D:C8:75:01:D8
+  + [green]sni: xmpp.messaging.advgo.net[/green]
+  + ip_source: 192.168.80.96
+  + port_source: 63116
+  + ip_destination: 52.210.105.81
+  + port_destination: 443
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** TLS (probably) Not Carrying HTTPS **[/red]
+  + [red]risk_score: 10[/red]
+  + [red]risk_info: No ALPN[/red]
   + similar_flows_count: 1
-  + exchanged_packets: \['2 <-> 1'\]
+  + exchanged_packets: \['16 <-> 15'\]

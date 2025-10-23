@@ -1,17 +1,11 @@
 >> Lists of protocols read:
 
-   [+] DHCP
    [+] DNS
-   [+] Dropbox
-   [+] ICMP
-   [+] ICMPV6
+   [+] HTTP
    [+] MDNS
-   [+] NTP
-   [+] NetBIOS
    [+] QUIC
    [+] TLS
-   [+] TuyaLP
-   [+] Unknown
+   [+] WhatsApp
 
 >> Lists of protocols supported:
 
@@ -23,13 +17,6 @@
 
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
-   [red][+] DHCP[/red]
    [red][+] DNS[/red]
-   [red][+] Dropbox[/red]
-   [red][+] ICMP[/red]
-   [red][+] ICMPV6[/red]
    [red][+] MDNS[/red]
-   [red][+] NTP[/red]
-   [red][+] NetBIOS[/red]
-   [red][+] TuyaLP[/red]
-   [red][+] Unknown[/red]
+   [red][+] WhatsApp[/red]

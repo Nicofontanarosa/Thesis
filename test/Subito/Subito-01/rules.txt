@@ -1,14 +1,14 @@
-host:"images.sbito.it"@
+host:"images.sbito.it"@Subito
 
 >> To add this rule based on SNI:
    [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"images.sbito.it"@
+   [+] Paste the following rule: host:"images.sbito.it"@Subito
 
 --------------------------------------------------------------
-host:"subito.it"@
+host:"subito.it"@Subito
 
 >> To add this rule based on SNI:
    [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"subito.it"@
+   [+] Paste the following rule: host:"subito.it"@Subito
 
 --------------------------------------------------------------

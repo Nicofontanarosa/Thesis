@@ -1,7 +1,7 @@
-host:"vinted.com",host:"vinted.net",host:"www.vinted.fr"@
+host:"vinted.com",host:"vinted.fr",host:"vinted.net"@Vinted
 
 >> To add this rule based on SNI:
    [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"vinted.com",host:"vinted.net",host:"www.vinted.fr"@
+   [+] Paste the following rule: host:"vinted.com",host:"vinted.fr",host:"vinted.net"@Vinted
 
 --------------------------------------------------------------

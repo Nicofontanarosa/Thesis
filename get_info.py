@@ -69,9 +69,9 @@ def classify_domains(clusters, output_file, protoname):
 
     for cluster in clusters:
 
-        snis = cluster.get("sni_list", [])
-        ja4 = cluster.get("ja4", "")
-        raw_cert = cluster.get("certificate", [])
+        snis = cluster.get('sni_list', [])
+        ja4 = cluster.get('ja4', "")
+        raw_cert = cluster.get('certificate', [])
         certificate = {item[0]: item[1] for item in raw_cert if len(item) == 2}
 
         print(f"\n\n{certificate}\n\n")
@@ -85,7 +85,7 @@ def classify_domains(clusters, output_file, protoname):
             for d in snis:
                 try:
                     w = whois.whois(d)
-                    protoname = w.get("registrant_organization") or w.get("admin_organization") or w.get("org")
+                    protoname = w.get('registrant_organization') or w.get('admin_organization') or w.get('org')
                     #print(f"\n---{org.lower()}---{ 'true' if org.lower() in constants.REDACTED_ORGS else 'false'}----")
 
                     if protoname is None or protoname.lower() in constants.REDACTED_ORGS:
@@ -107,9 +107,9 @@ def classify_domains(clusters, output_file, protoname):
             )
 
         # === If no SNI, use certificate ===
-        elif certificate.get("subject") and "CN=" in certificate.get("subject"):
+        elif certificate.get('subject') and "CN=" in certificate.get('subject'):
 
-            subject = certificate.get("subject")
+            subject = certificate.get('subject')
 
             # extracts the CN from the subject field
             def extract_cn(field):

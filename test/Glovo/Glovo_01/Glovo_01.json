@@ -8,16 +8,16 @@
 
 Using nDPI (4.15.0-5377-8987a2c) [1 thread(s)]
 Using libgcrypt version 1.8.6internal
-Reading packets from pcap file pcapng/Glovo_01.pcapng...
+Reading packets from pcap file /media/keiyukensei/6584e824-46dd-406a-8bab-0766cbad8fed/pcaps/pcapng/Glovo_01.pcapng...
 Running thread 0...
 
 nDPI Memory statistics:
 	nDPI Memory (once):      2.95 KB      
 	Flow Memory (per flow):  1.13 KB      
-	Actual Memory:           10.04 MB     
-	Peak Memory:             10.04 MB     
-	Setup Time:              48 msec
-	Packet Processing Time:  11 msec
+	Actual Memory:           10.05 MB     
+	Peak Memory:             10.05 MB     
+	Setup Time:              45 msec
+	Packet Processing Time:  10 msec
 
 Traffic statistics:
 	Ethernet bytes:        1807921       (includes ethernet CRC/IFC/trailer)
@@ -38,7 +38,7 @@ Traffic statistics:
 	Packet Len 256-1024:   218          
 	Packet Len 1024-1500:  1044         
 	Packet Len > 1500:     0            
-	nDPI throughput:       223.55 K pps / 1.16 Gb/sec
+	nDPI throughput:       245.93 K pps / 1.28 Gb/sec
 	Analysis begin:        23/Aug/2025 14:53:35
 	Analysis end:          23/Aug/2025 14:53:51
 	Traffic throughput:    159.66 pps / 868.36 Kb/sec

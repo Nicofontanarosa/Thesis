@@ -79,12 +79,12 @@ def filter_top_clusters(final_flows, clusters, total_packets):
     # Step 1: Build a global dictionary {sni: total_packets}
     sni_packet_count = {}
     for flow in final_flows:
-        sni = flow.get("sni")
+        sni = flow.get('sni')
         if not sni:
             continue
         else:
             sni = sni.lower()
-        exchanged = flow.get("exchanged_packets", [])
+        exchanged = flow.get('exchanged_packets', [])
 
         pkt_count = 0
         for exch in exchanged:
@@ -114,8 +114,8 @@ def filter_top_clusters(final_flows, clusters, total_packets):
     filtered_clusters = []
     for cluster in clusters:
         #print(f"\n{cluster.get("packets", 0)}\n")
-        if cluster.get("packets", 0) >= pkt_threshold:
-            snis = cluster.get("sni_list", [])
+        if cluster.get('packets', 0) >= pkt_threshold:
+            snis = cluster.get('sni_list', [])
             top_cluster_snis = [sni for sni in snis if is_sub_or_same_domain(sni.lower(), top_snis)]
 
             new_cluster = cluster.copy()
@@ -137,17 +137,17 @@ def aggregate_flows_by_sni(raw_clusters, final_flows):
     # aggregate flows into correct clusters
     for flow in final_flows:
 
-        flow_ja4 = normalize_ja4((flow.get("ja4")))
-        flow_ja3s = (flow.get("ja3s"))
+        flow_ja4 = normalize_ja4((flow.get('ja4')))
+        flow_ja3s = (flow.get('ja3s'))
         flow_cert = {
-            "certificate": flow.get("certificate"),
-            "subject": flow.get("subject"),
-            "issuer": flow.get("issuer"),
-            "servernames": flow.get("servernames")
+            "certificate": flow.get('certificate'),
+            "subject": flow.get('subject'),
+            "issuer": flow.get('issuer'),
+            "servernames": flow.get('servernames')
         }
-        flow_sni = (flow.get("sni") or "").lower()
-        similar_count = flow.get("similar_flows_count", 0)
-        exchanged = flow.get("exchanged_packets", [])
+        flow_sni = (flow.get('sni') or "").lower()
+        similar_count = flow.get('similar_flows_count', 0)
+        exchanged = flow.get('exchanged_packets', [])
 
         # count total packets exchanged
         pkt = 0
@@ -163,13 +163,13 @@ def aggregate_flows_by_sni(raw_clusters, final_flows):
         for cluster in raw_clusters:
 
             # extract fields from cluster for comparison
-            cluster_sni_list = [s.lower() for s in cluster.get("sni_list") if s]
-            ja4_match = flow_ja4 == cluster.get("ja4")
-            ja3s_match = flow_ja3s == cluster.get("ja3s")
-            cluster_cert_dict = {k: v for k, v in cluster.get("certificate", [])}
+            cluster_sni_list = [s.lower() for s in cluster.get('sni_list') if s]
+            ja4_match = flow_ja4 == cluster.get('ja4')
+            ja3s_match = flow_ja3s == cluster.get('ja3s')
+            cluster_cert_dict = {k: v for k, v in cluster.get('certificate', [])}
             cert_match = all(
                 flow_cert.get(k) == cluster_cert_dict.get(k)
-                for k in ["certificate", "issuer", "servernames", "subject"]
+                for k in ['certificate', 'issuer', 'servernames', 'subject']
                 if cluster_cert_dict.get(k) is not None
             )
 
@@ -196,7 +196,7 @@ def protocols_summary(flows):
     protocol_cou = Counter()
 
     for flow in flows:
-        proto = flow.get("proto_field", "").lower()
+        proto = flow.get('proto_field', "").lower()
 
         # search for known protocols
         matched = False
@@ -241,24 +241,24 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
     # load the main dataset of known domains
     with open(dataset_file, "r") as f:
         dataset = json.load(f)
-    dataset_domains = {d.lower() for d in dataset.get("domains", [])}
+    dataset_domains = {d.lower() for d in dataset.get('domains', [])}
     # sort dataset domains by length descending to match longer suffixes first
     sorted_dataset = sorted(dataset_domains, key=len, reverse=True)
 
     # load the TLD dataset
     with open(datasetTLD_file, "r") as f:
         datasetTLD = json.load(f)
-    datasetTLD_domains = {d.lower() for d in datasetTLD.get("domains", [])}
+    datasetTLD_domains = {d.lower() for d in datasetTLD.get('domains', [])}
 
     # load the dataset of known non-protocol domains
     with open(dataset_not_protocols_file, "r") as f:
         dataset_not_protocols = json.load(f)
-    dataset_not_protocols_domains = {d.lower() for d in dataset_not_protocols.get("domains", [])}
+    dataset_not_protocols_domains = {d.lower() for d in dataset_not_protocols.get('domains', [])}
 
     # --------------------------------
 
     # collect all SNIs seen in the final flows
-    sni_list = [flow.get("sni") for flow in final_flows if "sni" in flow and flow["sni"]]
+    sni_list = [flow.get('sni') for flow in final_flows if 'sni' in flow and flow['sni']]
     unique_sni = sorted(set(sni_list))
 
     # print all SNIs detected in the flows
@@ -273,7 +273,7 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
 
     for flow in final_flows:
 
-        exchanged = flow.get("exchanged_packets", [])
+        exchanged = flow.get('exchanged_packets', [])
         for exch in exchanged:
             if "<->" in exch:
                 left, right = exch.split("<->")
@@ -298,8 +298,8 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
     # remove flows with SNIs containing excluded words or present in the main dataset
     removed_flows = [
         flow for flow in final_flows
-            if (flow.get("sni") and any(word in flow.get("sni").lower() for word in constants.EXCLUDE_WORDS))
-            or (flow.get("sni") and flow.get("sni").lower() in sorted_dataset)
+            if (flow.get('sni') and any(word in flow.get('sni').lower() for word in constants.EXCLUDE_WORDS))
+            or (flow.get('sni') and flow.get('sni').lower() in sorted_dataset)
     ]
 
     config.log_message("\n\n>> Removed flows 1° filtering ( Exclude words and know domains ):\n\n", sni_stats_file)
@@ -325,8 +325,8 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
     config.log_message("\n\n>> Removed flows 2° filtering ( Remove known suffixes and not_protocols domains ):\n\n", sni_stats_file)
 
     for flow in final_flows:
-        
-        sni = flow.get("sni")
+
+        sni = flow.get('sni')
         if sni:
 
             # initialize a processed SNI variable
@@ -398,13 +398,13 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
             # add remaining SNI to the set
             cleaned_snis.add(sni)
 
-        ja3s = flow.get("ja3s")
-        ja4 = flow.get("ja4")
+        ja3s = flow.get('ja3s')
+        ja4 = flow.get('ja4')
         certificate = {
-            "certificate": flow.get("certificate"),
-            "subject": flow.get("subject"),
-            "issuer": flow.get("issuer"),
-            "servernames": flow.get("servernames")
+            "certificate": flow.get('certificate'),
+            "subject": flow.get('subject'),
+            "issuer": flow.get('issuer'),
+            "servernames": flow.get('servernames')
         }
 
         print(f"\n[DEBUG] Flow → JA3S: {ja3s}, JA4: {ja4}, Cert: {certificate}")
@@ -439,7 +439,7 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
         if ja3s is None and ja4 is None:
             # create a separate object for each flow/SNI instead of aggregating
             for flow in elements:
-                flow_sni = flow.get("sni")
+                flow_sni = flow.get('sni')
                 if flow_sni:
                     raw_clusters.append({
                         "ja3s": ja3s,
@@ -450,7 +450,7 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
         else:
             # --- Case 2: normal cluster with JA3S, JA4, or certificate ---
             # collect all unique SNI values
-            sni_list = sorted({e.get("sni") for e in elements if e.get("sni")})
+            sni_list = sorted({e.get('sni') for e in elements if e.get('sni')})
 
             raw_clusters.append({
                 "ja3s": ja3s,

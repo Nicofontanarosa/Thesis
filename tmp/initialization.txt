@@ -1,18 +1,23 @@
->> Using existing nDPI JSON:
 
- [+] .\test\newtest\expedia.json
+>> Running nDPI first command:
+
+ [+] /home/keiyukensei/nDPI/example/ndpiReader -v 2 -i /media/keiyukensei/6584e824-46dd-406a-8bab-0766cbad8fed/pcaps/pcapng/Vinted_01_pcapandroid.pcap
+
+>> First nDPI JSON saved to:
+
+ [+] test/Vinted/Vinted_01_pcapandroid.json
 
 >> Running initial filtering ...
 
- [+] input file: .\test\newtest\expedia.json
- [+] output file: .\test\newtest\expedia_filtered.json
+ [+] input file: test/Vinted/Vinted_01_pcapandroid.json
+ [+] output file: test/Vinted/Vinted_01_pcapandroid_filtered.json
 
 >> Running flows filtering ...
 
- [+] input file: .\test\newtest\expedia_filtered.json
- [+] output file: .\test\newtest\expedia_output.json
+ [+] input file: test/Vinted/Vinted_01_pcapandroid_filtered.json
+ [+] output file: test/Vinted/Vinted_01_pcapandroid_output.json
 
->> Coverage statistics save in: .\test\newtest\coverage.txt
+>> Coverage statistics save in: test/Vinted/coverage.txt
 
 
 >> All removed flows save in: /tmp/removed_flows.json

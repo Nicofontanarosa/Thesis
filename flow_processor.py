@@ -27,19 +27,19 @@ def fill_missing_ja_from_cluster(final_flows, tshark_cluster_file):
     # build a mapping from SNI → (JA4, JA3S)
     sni_to_ja = {}
     for cluster in tshark_clusters:
-        ja4 = cluster.get("ja4")
-        ja3s = cluster.get("ja3s")
-        for sni in cluster.get("sni_list", []):
+        ja4 = cluster.get('ja4')
+        ja3s = cluster.get('ja3s')
+        for sni in cluster.get('sni_list', []):
             sni_to_ja[sni.lower()] = (ja4, ja3s)
 
     # update HTTP (or other) flows that are missing JA4/JA3S
     for flow in final_flows:
         # skip flows that already have JA3 or JA4 values
-        if flow.get("ja4") or flow.get("ja3s"):
+        if flow.get('ja4') or flow.get('ja3s'):
             continue
 
         # get the flow SNI in lowercase (if present)
-        sni = flow.get("sni", "").lower()
+        sni = flow.get('sni', '').lower()
         if not sni:
             continue
 
@@ -58,7 +58,7 @@ def remove_flows_maxsin(final_flows, sni_stats_file="tmp/sni_stats.txt"):
     # filtering SNIs with more than SNI_MAX_DOMAIN domains
     filtered_flows = []
     for flow in final_flows:
-        sni = flow.get("sni", "")
+        sni = flow.get('sni', '')
         if not sni or len(sni.split(".")) <= constants.SNI_MAX_DOMAIN:
             filtered_flows.append(flow)
         else:
@@ -222,7 +222,7 @@ def flow_processor(input_file):
         flow.pop("pkts_source", None)
         flow.pop("pkts_destination", None)
 
-        proto = flow.get("proto_field", "").lower()
+        proto = flow.get('proto_field', "").lower()
 
         # create key for aggregation
         if "tls" in proto:

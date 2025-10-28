@@ -107,8 +107,8 @@ def merge_clusters(clusters: list) -> list:
                 ]
 
                 # sum flow_count and packets from small to large cluster
-                large_cluster["flow_count"] += small_cluster.get("flow_count", 0)
-                large_cluster["packets"] += small_cluster.get("packets", 0)
+                large_cluster["flow_count"] += small_cluster.get('flow_count', 0)
+                large_cluster["packets"] += small_cluster.get('packets', 0)
                 small_cluster["flow_count"] = 0
                 small_cluster["packets"] = 0
 
@@ -118,16 +118,16 @@ def merge_clusters(clusters: list) -> list:
     # --- Remove clusters that have no SNI, no JA4, and no certificate ---
     def has_useful_data(cluster):
         #print("\n\nDENTRO\n\n")
-        if cluster.get("sni_list"):
+        if cluster.get('sni_list'):
             #print(f"\nsni_list: {cluster.get("sni_list")}\n")
             return True
-        if cluster.get("ja4"):
+        if cluster.get('ja4'):
             return True
-        raw_cert = cluster.get("certificate", [])
+        raw_cert = cluster.get('certificate', [])
         #print(f"\n[DEBUG] 2 raw_cert: {raw_cert}\n")
         certificate = {item[0]: item[1] for item in raw_cert if len(item) == 2}
-        print(f"\n\nCERT: {certificate.get("subject")}\n\n")
-        if certificate.get("subject"):
+        print(f"\n\nCERT: {certificate.get('subject')}\n\n")
+        if certificate.get('subject'):
             return True
         return False
 

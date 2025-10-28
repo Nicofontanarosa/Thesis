@@ -24,7 +24,7 @@ def matches_any_cert(flow_cert, recognized_certs_list):
 
 def count_packets(flow):
     total = 0
-    for exch in flow.get("exchanged_packets", []):
+    for exch in flow.get('exchanged_packets', []):
         if "<->" in exch:
             left, right = exch.split("<->")
             try:
@@ -48,10 +48,10 @@ def calculate_coverage(flows_file, recognized_file):
     recognized_ja4 = set()
     recognized_certs = []
     for rule in recognized_rules:
-        recognized_sni.update(rule.get("sni_list", []))
-        recognized_ja4.add(rule.get("ja4"))
+        recognized_sni.update(rule.get('sni_list', []))
+        recognized_ja4.add(rule.get('ja4'))
         # store certificates as dict for easy comparison
-        cert_dict = {k: v for k, v in rule.get("certificate", []) if v is not None}
+        cert_dict = {k: v for k, v in rule.get('certificate', []) if v is not None}
         recognized_certs.append(cert_dict)
         print(f"\n\n{recognized_certs}\n\n")
 
@@ -62,7 +62,7 @@ def calculate_coverage(flows_file, recognized_file):
     total_flows = 0
     for flow in final_flows:
         total_packets += count_packets(flow)
-        total_flows += flow.get("similar_flows_count", 0)
+        total_flows += flow.get('similar_flows_count', 0)
 
     # --- Step 2: Compute recognized packets and flows ---
     recognized_packets = 0
@@ -70,14 +70,14 @@ def calculate_coverage(flows_file, recognized_file):
 
     for flow in final_flows:
 
-        flow_sni = (flow.get("sni"))
+        flow_sni = (flow.get('sni'))
         if flow_sni: flow_sni = flow_sni.lower()
-        flow_ja4 = functions.normalize_ja4(flow.get("ja4"))
+        flow_ja4 = functions.normalize_ja4(flow.get('ja4'))
         flow_cert = {
-            "certificate": flow.get("certificate"),
-            "issuer": flow.get("issuer"),
-            "servernames": flow.get("servernames"),
-            "subject": flow.get("subject")
+            "certificate": flow.get('certificate'),
+            "issuer": flow.get('issuer'),
+            "servernames": flow.get('servernames'),
+            "subject": flow.get('subject')
         }
 
         #print(f"\n[DEBUG] SNI flow: {flow_sni}, JA4 flow: {flow_ja4}, CERT flow: {flow_sni or flow_ja4 or flow_cert["certificate"] or flow_cert["issuer"] or flow_cert["servernames"] or flow_cert["subject"]}")
@@ -102,7 +102,7 @@ def calculate_coverage(flows_file, recognized_file):
         # --- Count recognized flows ---
         if recognized:
             recognized_packets += count_packets(flow)
-            recognized_flows += flow.get("similar_flows_count", 0)
+            recognized_flows += flow.get('similar_flows_count', 0)
 
     # --- Step 3: Compute percentages ---
     packet_coverage = (recognized_packets / total_packets * 100) if total_packets > 0 else 0.0

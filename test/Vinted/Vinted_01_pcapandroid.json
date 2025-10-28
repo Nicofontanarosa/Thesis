@@ -8,7 +8,7 @@
 
 Using nDPI (4.15.0-5377-8987a2c) [1 thread(s)]
 Using libgcrypt version 1.8.6internal
-Reading packets from pcap file pcapng/Vinted_01_pcapandroid.pcap...
+Reading packets from pcap file /media/keiyukensei/6584e824-46dd-406a-8bab-0766cbad8fed/pcaps/pcapng/Vinted_01_pcapandroid.pcap...
 Running thread 0...
 
 nDPI Memory statistics:
@@ -16,8 +16,8 @@ nDPI Memory statistics:
 	Flow Memory (per flow):  1.13 KB      
 	Actual Memory:           16.53 MB     
 	Peak Memory:             16.53 MB     
-	Setup Time:              47 msec
-	Packet Processing Time:  63 msec
+	Setup Time:              50 msec
+	Packet Processing Time:  61 msec
 
 Traffic statistics:
 	Ethernet bytes:        6812886       (includes ethernet CRC/IFC/trailer)
@@ -38,7 +38,7 @@ Traffic statistics:
 	Packet Len 256-1024:   458          
 	Packet Len 1024-1500:  235          
 	Packet Len > 1500:     1029         
-	nDPI throughput:       78.34 K pps / 816.00 Mb/sec
+	nDPI throughput:       81.67 K pps / 850.71 Mb/sec
 	Analysis begin:        18/Sep/2025 10:41:23
 	Analysis end:          18/Sep/2025 10:42:16
 	Traffic throughput:    93.65 pps / 998.97 Kb/sec

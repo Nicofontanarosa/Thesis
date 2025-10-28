@@ -227,8 +227,8 @@ class PipelineInputs(App):
         if flows:
             for flow in flows:
                 row = [flow.get(key, "N/A") for key in constant.COLUMNS_FROM_FILE]
-                sni = flow.get("sni") or flow.get("url", "N/A")
-                row[3] = sni  
+                sni = flow.get('sni') or flow.get('url', "N/A")
+                row[3] = sni
                 table.add_row(*row)
         else:
             table.add_row(*constant.EMPTY_ROW)
@@ -288,7 +288,7 @@ class PipelineInputs(App):
         if flows:
             for flow in flows:
                 row = [flow.get(key, "N/A") for key in constant.COLUMNS_FROM_FILE]
-                sni = flow.get("sni") or flow.get("url", "N/A")
+                sni = flow.get('sni') or flow.get('url', "N/A")
                 row[3] = sni
                 table.add_row(*row)
         else:

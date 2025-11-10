@@ -2,7 +2,7 @@
 #################################################################
 # File: extract_tls_ja3_sni.py
 # Purpose: Extract JA3/JA4 fingerprints and SNI values from a PCAP file
-# using tshark, then group (cluster) them by (JA4, JA3S) pairs.
+# using tshark, then group them by (JA4, JA3S) pairs.
 #################################################################
 
 import subprocess
@@ -18,7 +18,7 @@ def normalize_ja4(ja4):
         return ""
     return ja4.split("_", 1)[-1] if "_" in ja4 else ja4
 
-def extract_tls_clusters(pcap_file, out_file):
+def extract_tls_groups(pcap_file, out_file):
     
     # Fields to extract from each TLS handshake
     fields = [
@@ -73,26 +73,26 @@ def extract_tls_clusters(pcap_file, out_file):
         if sni:
             streams[stream]["sni_list"].add(sni)
 
-    # === Build final clusters grouped by (JA4, JA3S) ===
-    final_clusters = defaultdict(set)
+    # === Build final groups grouped by (JA4, JA3S) ===
+    final_groups = defaultdict(set)
 
     for s in streams.values():
         ja4, ja3s = s["ja4"], s["ja3s"]
         if not ja4 or not ja3s:
             continue
         # Merge all SNI values from streams that share the same (JA4, JA3S)
-        final_clusters[(ja4, ja3s)].update(s["sni_list"])
+        final_groups[(ja4, ja3s)].update(s["sni_list"])
 
-    # Create a list of cluster dictionaries for JSON serialization
+    # Create a list of group dictionaries for JSON serialization
     result = []
-    for (ja4, ja3s), snis in final_clusters.items():
+    for (ja4, ja3s), snis in final_groups.items():
         result.append({
             "ja4": ja4,
             "ja3s": ja3s,
             "sni_list": sorted(list(snis))
         })
 
-    # Sort clusters by the number of associated SNIs
+    # Sort groups by the number of associated SNIs
     result = sorted(result, key=lambda x: len(x["sni_list"]), reverse=True)
 
     # Save the result to JSON file

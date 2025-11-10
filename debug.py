@@ -2,6 +2,7 @@ import sys
 import main
 
 def run():
+    
     if len(sys.argv) != 5:
         print(f"Usage: {sys.argv[0]} <pcap> <ndpi> <output> <protoname>")
         sys.exit(1)

@@ -23,7 +23,6 @@ def log_message(message, log_file):
 def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-
 #################################################################
 # End of config.py
 #################################################################

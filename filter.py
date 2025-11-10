@@ -28,10 +28,7 @@ def flow_filter(input_file, output_file):
     keep_flows = []
     removed_flows = []
     empty_flows = []
-    ipv6_flows = []
     incomplete_tls_flows = []
-    no_sni_flows = []
-    no_tcp_fingerprint_flows = []
     # all protocols present in the file
     all_protocols_in_file = set()
 
@@ -89,16 +86,14 @@ def flow_filter(input_file, output_file):
     pattern_general = re.compile(r"\[proto: [^\]]+\]")
     # regex to match lines with only the host IP
     host_ip_only_pattern = re.compile(r"^\s*\d+\s+([0-9a-fA-F:.]+)\s+")
-    # regex to match lines with IPv6 addresses
-    ipv6_pattern = re.compile(r"\[[0-9a-fA-F]{0,4}(:[0-9a-fA-F]{0,4}){2,7}\]")
     # regex to match lines with plen bins all zero
     plen_bins_empty_pattern = re.compile(r"\[Plen Bins: (0,){47}0\]")
     # regex to match incomplete TLS flows (no handshake)
     tls_incomplete_pattern = re.compile(r"^\s*\d+\s+(?:TCP|UDP)\s+\d+\.\d+\.\d+\.\d+:\d+\s+(?:<->|->|<-)\s+\d+\.\d+\.\d+\.\d+:\d+\s+\[proto:\s*\d+/(?:TLS|QUIC)\]\[IP:\s*[^\]]+\]\[(\d+)\s+pkts\s*[^\]]+\]")
     # regex to match lines without SNI/Hostname
-    sni_pattern = re.compile(r"\[Hostname/SNI:\s*[^\]]+\]")
+    #sni_pattern = re.compile(r"\[Hostname/SNI:\s*[^\]]+\]")
     # regex to match lines without TCP fingerprint
-    tcp_fingerprint = re.compile(r"\[TCP Fingerprint:\s*([^\]]+)\]")
+    #tcp_fingerprint = re.compile(r"\[TCP Fingerprint:\s*([^\]]+)\]")
 
     # 1° version of the filtering script using regex
     #sed -E 's/\[Goodput ratio: [^]]+\]\[[^]]+\]//g; s/\[bytes ratio: [^]]+\]//g; s/\[(Encrypted|ClearText)\]//g; s/\[Confidence: [^]]+\]//g;
@@ -160,11 +155,6 @@ def flow_filter(input_file, output_file):
             if host_ip_only_pattern.match(line_stripped):
                 fout.write(line)
                 continue
-            
-            # check for lines with IPv6 addresses
-            if ipv6_pattern.search(line_stripped):
-                ipv6_flows.append(line)
-                continue
 
             # check for lines with plen bins all zero
             if plen_bins_empty_pattern.search(line_stripped):
@@ -198,16 +188,6 @@ def flow_filter(input_file, output_file):
                     incomplete_tls_flows.append(line)
                     continue
 
-                if constants.ONLY_SNI:
-                    # check for flows without SNI/Hostname
-                    if not sni_pattern.search(clean_line):
-                        no_sni_flows.append(line)
-                        continue
-                    # check for flows without TCP fingerprint
-                    if not tcp_fingerprint.search(clean_line):
-                        no_tcp_fingerprint_flows.append(line)
-                        continue
-
                 # add good flows
                 keep_flows.append(line)
                 fout.write(clean_line)
@@ -217,15 +197,12 @@ def flow_filter(input_file, output_file):
                 removed_flows.append(line)
 
     # print summary
-    config.log_message(f">> Flows read: {len(keep_flows) + len(removed_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows) + len(no_sni_flows) + len(no_tcp_fingerprint_flows)}", log_file_flows)
+    config.log_message(f">> Flows read: {len(keep_flows) + len(removed_flows) + len(empty_flows) + len(incomplete_tls_flows)}", log_file_flows)
     config.log_message(f"\n>> Flows kept: {len(keep_flows)}", log_file_flows)
-    config.log_message(f"\n>> Flows removed: {len(removed_flows) + len(empty_flows) + len(ipv6_flows) + len(incomplete_tls_flows) + len(no_sni_flows) + len(no_tcp_fingerprint_flows)}", log_file_flows)
+    config.log_message(f"\n>> Flows removed: {len(removed_flows) + len(empty_flows) + len(incomplete_tls_flows)}", log_file_flows)
     config.log_message(f"\n\n   [+] General flows removed: {len(removed_flows)}", log_file_flows)
     config.log_message(f"\n\n   [+] Empty flows removed: {len(empty_flows)}", log_file_flows)
-    config.log_message(f"\n\n   [+] IPv6 flows removed: {len(ipv6_flows)}", log_file_flows)
     config.log_message(f"\n\n   [+] Incomplete TLS flows removed: {len(incomplete_tls_flows)}", log_file_flows)
-    config.log_message(f"\n\n   [+] No SNI flows removed: {len(no_sni_flows)}", log_file_flows)
-    config.log_message(f"\n\n   [+] No TCP fingerprint flows removed: {len(no_tcp_fingerprint_flows)}", log_file_flows)
 
     # ---------------------------------------------------
     # Print removed flows ( with categories )
@@ -237,17 +214,8 @@ def flow_filter(input_file, output_file):
     config.log_message(f"\n\n>> Empty flows removed [DEBUG]:\n\n", log_file_remove_flows)
     for flow in empty_flows:
         config.log_message(flow.strip() + "\n", log_file_remove_flows)
-    config.log_message(f"\n>> IPv6 flows removed [DEBUG]:\n\n", log_file_remove_flows)
-    for flow in ipv6_flows:
-        config.log_message(flow.strip() + "\n", log_file_remove_flows)
     config.log_message(f"\n>> Incomplete TLS flows removed [DEBUG]:\n\n", log_file_remove_flows)
     for flow in incomplete_tls_flows:
-        config.log_message(flow.strip() + "\n", log_file_remove_flows)
-    config.log_message(f"\n>> No SNI flows removed [DEBUG]:\n\n", log_file_remove_flows)
-    for flow in no_sni_flows:
-        config.log_message(flow.strip() + "\n", log_file_remove_flows)
-    config.log_message(f"\n>> No TCP fingerprint flows removed [DEBUG]:\n\n", log_file_remove_flows)
-    for flow in no_tcp_fingerprint_flows:
         config.log_message(flow.strip() + "\n", log_file_remove_flows)
             
 #################################################################

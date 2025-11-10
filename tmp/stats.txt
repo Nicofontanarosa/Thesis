@@ -1,8 +1,14 @@
 >> Lists of protocols read:
 
+   [+] ApplePush
+   [+] DHCP
    [+] DNS
+   [+] ICMP
+   [+] ICMPV6
+   [+] MDNS
    [+] QUIC
    [+] TLS
+   [+] Unknown
 
 >> Lists of protocols supported:
 
@@ -14,4 +20,10 @@
 
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
+   [red][+] ApplePush[/red]
+   [red][+] DHCP[/red]
    [red][+] DNS[/red]
+   [red][+] ICMP[/red]
+   [red][+] ICMPV6[/red]
+   [red][+] MDNS[/red]
+   [red][+] Unknown[/red]

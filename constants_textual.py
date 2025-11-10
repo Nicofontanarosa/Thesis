@@ -3,7 +3,8 @@
 GROUPS = {
     "flows": {
         "filtered": ("Filtered-Flows", "tmp/filtered_flows.json"),
-        "finalflows": ("Final-Flows", "tmp/final_output.json")
+        "finalflows": ("Final-Flows", "tmp/final_output.json"),
+        "allflows": ("All-Flows", "tmp/final_complete_output.json")
     },
     "statistics": {
         "path": ("Path-file", "tmp/initialization.txt"),
@@ -12,7 +13,8 @@ GROUPS = {
         "rule": ("Custom-Rules-nDPI", "tmp/rules.txt"),
         "statsSNI": ("SNI Stats", "tmp/sni_stats.txt"),
         "riskyflows": ("Risky Flows", "tmp/log_risky_flows.txt"),
-        "coverage": ("Coverage of Rules", "tmp/coverage.txt")
+        "coverage": ("Coverage of Rules", "tmp/coverage.txt"),
+        "parameters": ("Parameters Used", "tmp/parameters.txt")
     }
 }
 

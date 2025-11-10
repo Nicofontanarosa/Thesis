@@ -1,0 +1,80 @@
+[
+    {
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "f57a46bbacb6_14788d8d241b",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "austrian.com",
+            "miles-and-more.com"
+        ],
+        "flow_count": 30,
+        "packets": 20200,
+        "all_ja4_variants": [
+            "t13d1314h2_f57a46bbacb6_14788d8d241b",
+            "t13d1314h1_f57a46bbacb6_14788d8d241b"
+        ],
+        "sni_list_removed": [
+            "api-shop.austrian.com",
+            "api.travelid.austrian.com",
+            "shop.austrian.com",
+            "www.austrian.com",
+            "api.miles-and-more.com",
+            "www.miles-and-more.com",
+            "api.travelid.lufthansa.com",
+            "www.lufthansa.com"
+        ]
+    },
+    {
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "a09f3c656075_14788d8d241b",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "miles-and-more.com"
+        ],
+        "flow_count": 21,
+        "packets": 7450,
+        "all_ja4_variants": [
+            "t13d2014h2_a09f3c656075_14788d8d241b"
+        ],
+        "sni_list_removed": [
+            "api.miles-and-more.com",
+            "austrian.miles-and-more.com",
+            "api.travelid.lufthansa.com",
+            "www.lufthansa.com"
+        ]
+    }
+]

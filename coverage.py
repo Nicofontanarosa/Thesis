@@ -43,7 +43,7 @@ def calculate_coverage(flows_file, recognized_file):
     with open(recognized_file, "r") as f:
         recognized_rules = json.load(f)
 
-    # extract all recognized SNI, JA4s, and certificates from clusters
+    # extract all recognized SNI, JA4s, and certificates from groups
     recognized_sni = set()
     recognized_ja4 = set()
     recognized_certs = []
@@ -53,9 +53,8 @@ def calculate_coverage(flows_file, recognized_file):
         # store certificates as dict for easy comparison
         cert_dict = {k: v for k, v in rule.get('certificate', []) if v is not None}
         recognized_certs.append(cert_dict)
-        print(f"\n\n{recognized_certs}\n\n")
 
-    print(f"\n[DEBUG] SNI rec: {recognized_sni}, JA4 rec: {recognized_ja4}, CERT rec: {recognized_certs}")
+    #print(f"\n[DEBUG] SNI rec: {recognized_sni}, JA4 rec: {recognized_ja4}, CERT rec: {recognized_certs}")
 
     # --- Step 1: Compute total packets and total flows ---
     total_packets = 0
@@ -82,7 +81,7 @@ def calculate_coverage(flows_file, recognized_file):
 
         #print(f"\n[DEBUG] SNI flow: {flow_sni}, JA4 flow: {flow_ja4}, CERT flow: {flow_sni or flow_ja4 or flow_cert["certificate"] or flow_cert["issuer"] or flow_cert["servernames"] or flow_cert["subject"]}")
 
-        recognized = False  # Flag per capire se il flusso è stato riconosciuto
+        recognized = False
 
         # --- Priority 1: SNI ---
         if flow_sni:
@@ -90,7 +89,7 @@ def calculate_coverage(flows_file, recognized_file):
                 recognized = True
 
         # --- Priority 2: Certificate ---
-        elif any(flow_cert.values()):  # solo se non c'è SNI
+        elif any(flow_cert.values()):
             if matches_any_cert(flow_cert, recognized_certs):
                 recognized = True
 

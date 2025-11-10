@@ -13,23 +13,25 @@ import functions
 # -------------------------------------------
 
 log_file_filtered_flows = "tmp/filtered_flows.json"
+log_file_all_flows = "tmp/all_flows.json"
 config.clear_log(log_file_filtered_flows)
+config.clear_log(log_file_all_flows)
 log_file_flows = "tmp/flows.txt"
 
 # -------------------------------------------
 
-def fill_missing_ja_from_cluster(final_flows, tshark_cluster_file):
+def fill_missing_ja_from_groups(final_flows, tshark_groups_file):
 
-    # load the TLS clusters previously extracted by tshark
-    with open(tshark_cluster_file, "r", encoding="utf-8") as f:
-        tshark_clusters = json.load(f)
+    # load the TLS groups previously extracted by tshark
+    with open(tshark_groups_file, "r", encoding="utf-8") as f:
+        tshark_groups = json.load(f)
 
     # build a mapping from SNI → (JA4, JA3S)
     sni_to_ja = {}
-    for cluster in tshark_clusters:
-        ja4 = cluster.get('ja4')
-        ja3s = cluster.get('ja3s')
-        for sni in cluster.get('sni_list', []):
+    for group in tshark_groups:
+        ja4 = group.get('ja4')
+        ja3s = group.get('ja3s')
+        for sni in group.get('sni_list', []):
             sni_to_ja[sni.lower()] = (ja4, ja3s)
 
     # update HTTP (or other) flows that are missing JA4/JA3S
@@ -43,7 +45,7 @@ def fill_missing_ja_from_cluster(final_flows, tshark_cluster_file):
         if not sni:
             continue
 
-        # if the SNI was seen in the tshark clusters, fill in the missing values
+        # if the SNI was seen in the tshark groups, fill in the missing values
         if sni in sni_to_ja:
             flow["ja4"], flow["ja3s"] = sni_to_ja[sni]
 
@@ -68,7 +70,7 @@ def remove_flows_maxsin(final_flows, sni_stats_file="tmp/sni_stats.txt"):
 
 # -------------------------------------------
 
-def flow_processor(input_file):
+def flow_processor(input_file, tmp = True):
     
     # flows read
     flows = []
@@ -84,8 +86,10 @@ def flow_processor(input_file):
         for line in f_in:
             line = line.strip()
 
-            # skip empty lines or lines without IP ( further but not necessary check )
-            if not line or not re.search(r"\d+\.\d+\.\d+\.\d+", line):
+            ipv6_pattern = re.compile(r"\[[0-9a-fA-F]{0,4}(:[0-9a-fA-F]{0,4}){2,7}\]")
+
+            # skip empty lines or lines without IPv4 and without IPv6
+            if not line or (not re.search(r"\d+\.\d+\.\d+\.\d+", line) and not ipv6_pattern.search(line)):
                 continue
 
             flow = {}
@@ -111,16 +115,6 @@ def flow_processor(input_file):
             if match_proto:
                 flow["proto_field"] = match_proto.group(1)
             
-            # DNS IP
-            #match_dns_ip = re.search(r"\]\[([\d]+\.[\d]+\.[\d]+\.[\d]+)\]", line)
-            #if match_dns_ip:
-            #    flow["dns_ip"] = match_dns_ip.group(1)
-
-            # DNS ID
-            #match_dns_id = re.search(r"\[DNS Id:\s*([^\]]+)\]", line)
-            #if match_dns_id:
-            #    flow["dns_id"] = match_dns_id.group(1)
-
             # URL
             match_url = re.search(r"\[URL:\s*([^\]]+)\]", line)
             if match_url:
@@ -161,10 +155,6 @@ def flow_processor(input_file):
             match_certificate = re.search(r"\[Certificate\s*([^\]]+)\]", line)
             if match_certificate:
                 flow["certificate"] = match_certificate.group(1)
-
-            #match_validity = re.search(r"\[Validity:\s*([^\]]+)\]", line)
-            #if match_validity:
-            #    flow["validity"] = match_validity.group(1)
 
             # QUIC Version
             match_quic = re.search(r"\[QUIC ver:\s*([^\]]+)\]", line)
@@ -215,6 +205,8 @@ def flow_processor(input_file):
 
             flows.append(flow)
 
+    #n = 0
+
     for flow in flows:
 
         packets = f"{flow.get('pkts_source', 'N/A')} <-> {flow.get('pkts_destination', 'N/A')}"
@@ -224,34 +216,45 @@ def flow_processor(input_file):
 
         proto = flow.get('proto_field', "").lower()
 
-        # create key for aggregation
-        if "tls" in proto:
-            key = tuple(flow.get(k) for k in constants.KEYS_BY_PROTOCOL["TLS"])
-        elif "http" in proto:
-            key = tuple(flow.get(k) for k in constants.KEYS_BY_PROTOCOL["HTTP"])
-        elif "quic" in proto:    
-            key = tuple(flow.get(k) for k in constants.KEYS_BY_PROTOCOL["QUIC"])
-        else:
-            key = tuple(flow.get(k) for k in constants.KEYS_BY_PROTOCOL["Unknown"])
+        key = None
+        if tmp:
+            # create key for aggregation
+            if "tls" in proto:
+                key = tuple(flow.get(k) for k in constants.KEYS_BY_PROTOCOL["TLS"])
+            elif "http" in proto:
+                key = tuple(flow.get(k) for k in constants.KEYS_BY_PROTOCOL["HTTP"])
+            elif "quic" in proto:    
+                key = tuple(flow.get(k) for k in constants.KEYS_BY_PROTOCOL["QUIC"])
 
-        if key not in aggregated:
+        if not key:
             flow["similar_flows_count"] = 1
             flow["exchanged_packets"] = [packets]
-            aggregated[key] = flow
+            #flow["num"] = n
+            #n += 1
         else:
-            aggregated[key]["similar_flows_count"] += 1
-            aggregated[key]["exchanged_packets"].append(packets)
+            if key not in aggregated:
+                flow["similar_flows_count"] = 1
+                flow["exchanged_packets"] = [packets]
+                aggregated[key] = flow
+            else:
+                aggregated[key]["similar_flows_count"] += 1
+                aggregated[key]["exchanged_packets"].append(packets)
 
-    final_flows = list(aggregated.values())
+    if tmp:
+        final_flows = list(aggregated.values())
 
-    final_flows = remove_flows_maxsin(final_flows)
+        # remove flows with too many SNI domains
+        final_flows = remove_flows_maxsin(final_flows)
     
-    config.log_message(final_flows, log_file_filtered_flows)
+        config.log_message(final_flows, log_file_filtered_flows)
 
-    protocol_counts = functions.protocols_summary(final_flows)
-    # printing summary
-    summary = ", ".join([f"{v} flows {k}" for k, v in protocol_counts.items()])
-    config.log_message(f"\n\n>> Flows detected after aggregation:\n\n   [+] {summary}", log_file_flows)
+        protocol_counts = functions.protocols_summary(final_flows)
+        # printing summary
+        summary = ", ".join([f"{v} flows {k}" for k, v in protocol_counts.items()])
+        config.log_message(f"\n\n>> Flows detected after aggregation:\n\n   [+] {summary}", log_file_flows)
+    else: 
+        final_flows = flows
+        config.log_message(final_flows, log_file_all_flows)
 
     return final_flows
 

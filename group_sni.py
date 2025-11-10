@@ -1,16 +1,18 @@
 
 #################################################################
-# File: group_sni.py to merge clusters
+# File: group_sni.py to merge groups based on SNI similarity
 #################################################################
 
-def group_sni(cluster):
+def group_sni(group):
     
-    # extract the SNI list from the cluster
-    sni_list = cluster["sni_list"]
+    group["sni_list_removed"] = []
 
-    # If the SNI list is empty, return the cluster as is
+    # extract the SNI list from the group
+    sni_list = group["sni_list"]
+
+    # If the SNI list is empty, return the group as is
     if not sni_list:
-        return cluster
+        return group
     
     groups = []
     # get a sorted list of unique SNIs
@@ -47,94 +49,45 @@ def group_sni(cluster):
                 i += 1
             base_domain = ".".join(common_parts[0][-(i-1):])
             groups.append(base_domain)
+
+            # add removed SNIs aggregated (except the base_domain) to the removed list
+            for s in common:
+                if s != base_domain:
+                    group["sni_list_removed"].append(s)
         else:
             groups.append(base)
 
         # update the list with remaining SNIs
         unique_sni = remaining
 
-    # update the cluster's sni_list with grouped SNIs
-    cluster["sni_list"] = groups
-    return cluster
+    # update the group's sni_list with grouped SNIs
+    group["sni_list"] = groups
+    return group
 
-def merge_clusters(clusters: list) -> list:
+def merge_flows(groups: list) -> list:
 
-    # group SNIs within each cluster
-    clusters = [group_sni(c) for c in clusters]
+    # group SNIs within each group
+    groups = [group_sni(c) for c in groups]
 
-    #print(f"\n[DEBUG] 1 Merged Cluster before: {clusters}")
-
-    # sort clusters by descending length of sni_list (IMPORTANT)
-    clusters.sort(key=lambda c: len(c["sni_list"]), reverse=True)
-
-    i = 0
-    while i < len(clusters):
-        large_cluster = clusters[i]
-        j = i + 1
-        while j < len(clusters):
-            small_cluster = clusters[j]
-
-            # try merging only if both clusters have SNIs
-            if not large_cluster["sni_list"] or not small_cluster["sni_list"]:
-                j += 1
-                continue
-
-            # combine the SNI lists from the large and small clusters
-            union = {"sni_list": large_cluster["sni_list"] + small_cluster["sni_list"]}
-            # group the combined SNI list
-            grouped_union = group_sni(union)
-
-            # if grouping reduces the total number of SNIs
-            if len(grouped_union["sni_list"]) < (len(large_cluster["sni_list"]) + len(small_cluster["sni_list"])):
-                reduced = set(grouped_union["sni_list"])
-                
-                new_large = []
-                for s in large_cluster["sni_list"]:
-                    # check if each SNI in the large cluster has been reduced
-                    matches = [r for r in reduced if s.endswith(r)]
-                    if matches:
-                        # replace with the reduced SNI
-                        new_large.append(matches[0])
-                    else:
-                        # keep original SNI
-                        new_large.append(s)
-                large_cluster["sni_list"] = sorted(set(new_large))
-
-                # remove from small cluster SNIs absorbed by the large cluster
-                small_cluster["sni_list"] = [
-                    s for s in small_cluster["sni_list"]
-                    if not any(r in reduced and s.endswith(r) for r in reduced)
-                ]
-
-                # sum flow_count and packets from small to large cluster
-                large_cluster["flow_count"] += small_cluster.get('flow_count', 0)
-                large_cluster["packets"] += small_cluster.get('packets', 0)
-                small_cluster["flow_count"] = 0
-                small_cluster["packets"] = 0
-
-            j += 1
-        i += 1
-
-    # --- Remove clusters that have no SNI, no JA4, and no certificate ---
-    def has_useful_data(cluster):
-        #print("\n\nDENTRO\n\n")
-        if cluster.get('sni_list'):
-            #print(f"\nsni_list: {cluster.get("sni_list")}\n")
+    # --- Remove groups that have no SNI, no JA4, and no certificate ---
+    def has_useful_data(group):
+        if group.get('sni_list'):
+            #print(f"\nsni_list: {group.get("sni_list")}\n")
             return True
-        if cluster.get('ja4'):
+        if group.get('ja4'):
             return True
-        raw_cert = cluster.get('certificate', [])
+        raw_cert = group.get('certificate', [])
         #print(f"\n[DEBUG] 2 raw_cert: {raw_cert}\n")
         certificate = {item[0]: item[1] for item in raw_cert if len(item) == 2}
-        print(f"\n\nCERT: {certificate.get('subject')}\n\n")
+        #print(f"\n\nCERT: {certificate.get('subject')}\n\n")
         if certificate.get('subject'):
             return True
         return False
 
-    clusters = [c for c in clusters if has_useful_data(c)]
-    print(f"\n[DEBUG] Merged Cluster after group: {clusters}")
+    groups = [c for c in groups if has_useful_data(c)]
+    #print(f"\n[DEBUG] Merged Group after group: {groups}")
     
-    return clusters
+    return groups
 
 #################################################################
 # End of group_sni.py

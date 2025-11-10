@@ -12,35 +12,65 @@
 # -------------------------------------------
 # parameters used by all scripts 
 
-# show nDPI protocol in the output
-SHOW_NDPI_PROTOCOLS = False
-# change filter based on VPN detection
-ONLY_SNI = False
-
 # show name hints in the output (requires whois and AI classification)
 SHOW_NAME_HINT = False
 # redacted organization names for whois
 REDACTED_ORGS = {"redacted for privacy", "data redacted", "hidden", "not disclosed", "domains by proxy, llc", "identity protection service", "registration private"}
-
-# check and fill missing JA3/JA4 for HTTP flows and others using tshark clusters
+# check and fill missing JA3/JA4 for HTTP flows and others using tshark groups
 CHECK_JA_MISSING = False
+# remove all SNI domains shorter than 3 characters
+N_MIN = 3
+
+# -------------------------------------------
+
+# show nDPI protocol in the output
+SHOW_NDPI_PROTOCOLS = False
 
 # percentage of total packets to use as threshold for top SNI selection
-TOP_PERCENT = 0.04
+TOP_PERCENT = 0.05
 
 # protocols to keep
 PROTOCOLS = {"TLS", "HTTP", "HTTP_Connect", "HTTP.WebSocket", "QUIC"}
+
 # aggregation key: flows with identical values for all these fields are merged into a single entry
 KEYS_BY_PROTOCOL = {
     "TLS": ["ip_source", "tcp_fingerprint", "ip_destination", "sni", "ja3s", "ja4", "tls_version", "proto_field", "transport_protocol"],
     "HTTP": ["ip_source", "tcp_fingerprint", "ip_destination", "sni", "url", "user_agent", "proto_field", "transport_protocol"],
-    "QUIC": ["ip_source", "tcp_fingerprint", "ip_destination", "sni", "ja3s", "ja4", "quic_version", "proto_field", "transport_protocol"],
-    "Unknown": ["ip_source", "tcp_fingerprint", "ip_destination", "sni", "ja3s", "ja4", "url", "user_agent", "tls_version", "quic_version", "proto_field", "transport_protocol"]
+    "QUIC": ["ip_source", "tcp_fingerprint", "ip_destination", "sni", "ja3s", "ja4", "quic_version", "proto_field", "transport_protocol"]
 }
 
 # filter SNIs with more than 4 domain levels
 SNI_MAX_DOMAIN = 4
+
 # SNIs containing any word in this list will be excluded
-EXCLUDE_WORDS = ["cdn", "amazonaws", "cluster"]
-# remove all SNI domains shorter than 3 characters
-N_MIN = 3
+EXCLUDE_WORDS = [
+    "cdn",
+    "amazonaws",
+    "akamaiedge",
+    "akamaitechnologies",
+    "akamaizer",
+    "akamaicdn",
+    "cloudfront",
+    "cloudflare",
+    "fastly",
+    "edgekey",
+    "edgesuite",
+    "azureedge",
+    "googleusercontent",
+    "googleapis",
+    "googleusercontent",
+    "stackpath",
+    "cdnetworks",
+    "incap",
+    "gcore",
+    "kxcdn",
+    "chinacache",
+    "llnwd",
+    "akamaitechnologies",
+    "akamai",
+    "vo.msecnd",
+    "netdna",
+    "fastly"
+]
+
+# -------------------------------------------

@@ -1,140 +1,40 @@
 [
     {
-        "ip_field": "467/Akamai",
+        "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "www.austrian.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52808",
-        "ip_destination": "23.192.90.237",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
+        "sni": "assets.klarnacdn.net",
+        "ip_source": "10.215.173.1",
+        "port_source": "35116",
+        "ip_destination": "3.165.239.87",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "1951 <-> 7114",
-            "24 <-> 31"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "shop.austrian.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52848",
-        "ip_destination": "23.192.90.237",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "2089 <-> 5338"
+            "40 <-> 76"
         ]
     },
     {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "UDP",
-        "proto_field": "188/QUIC",
-        "plain_text": "gRLO9@ ",
-        "ip_source": "172.224.38.6",
-        "port_source": "443",
-        "ip_destination": "192.168.2.4",
-        "port_destination": "55785",
-        "risk": "** Susp Entropy **",
-        "risk_score": "10",
-        "risk_info": "Entropy: 5.962 (Executable?)",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "2091 <-> 894"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
+        "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d2014h2_a09f3c656075_14788d8d241b",
-        "sni": "austrian.miles-and-more.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52784",
-        "ip_destination": "104.103.102.207",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "assets.klarnacdn.net",
+        "ip_source": "10.215.173.1",
+        "port_source": "56462",
+        "ip_destination": "3.165.239.87",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 4,
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 3,
         "exchanged_packets": [
-            "632 <-> 1014",
-            "583 <-> 982",
-            "403 <-> 916",
-            "414 <-> 894"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "www.miles-and-more.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52750",
-        "ip_destination": "104.103.102.207",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "247 <-> 724"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "api-shop.austrian.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52852",
-        "ip_destination": "23.192.90.237",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "276 <-> 356",
-            "50 <-> 54"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "api.travelid.austrian.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52798",
-        "ip_destination": "23.192.90.237",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 9,
-        "exchanged_packets": [
-            "126 <-> 275",
-            "33 <-> 47",
-            "16 <-> 21",
-            "15 <-> 24",
-            "15 <-> 20",
-            "16 <-> 20",
-            "11 <-> 18",
-            "14 <-> 21",
-            "12 <-> 16"
+            "50 <-> 52",
+            "7 <-> 6",
+            "7 <-> 6"
         ]
     },
     {
@@ -143,868 +43,276 @@
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
         "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "ingesteu.quantummetric.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52878",
-        "ip_destination": "34.110.200.92",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "mr.eu1.fullstory.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "54302",
+        "ip_destination": "34.111.143.237",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 2,
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
         "exchanged_packets": [
-            "365 <-> 353",
-            "226 <-> 204"
+            "39 <-> 29"
         ]
     },
     {
-        "ip_field": "467/Akamai",
+        "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d2014h2_a09f3c656075_14788d8d241b",
-        "sni": "www.lufthansa.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52775",
-        "ip_destination": "104.103.79.188",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "app-api.klarna.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "59970",
+        "ip_destination": "3.160.212.50",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "120 <-> 135",
+            "14 <-> 15",
+            "10 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "ctf.klarna.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "45544",
+        "ip_destination": "108.157.194.121",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "27 <-> 44",
+            "12 <-> 12"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "content.blackhawknetwork.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "60090",
+        "ip_destination": "108.157.194.84",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 4,
         "exchanged_packets": [
-            "79 <-> 175",
-            "72 <-> 176",
-            "71 <-> 173",
-            "67 <-> 172"
+            "18 <-> 31",
+            "9 <-> 10",
+            "9 <-> 10",
+            "8 <-> 9"
         ]
     },
     {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "www.lufthansa.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52753",
-        "ip_destination": "104.103.79.188",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "72 <-> 172"
-        ]
-    },
-    {
-        "ip_field": "464/AWS_Cloudfront",
+        "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
         "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "tags.tiqcdn.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52849",
-        "ip_destination": "3.174.255.126",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "owp.klarna.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "46480",
+        "ip_destination": "3.165.255.106",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 4,
         "exchanged_packets": [
-            "75 <-> 158"
+            "27 <-> 40",
+            "12 <-> 12",
+            "11 <-> 11",
+            "12 <-> 11"
         ]
     },
     {
-        "ip_field": "464/AWS_Cloudfront",
+        "ip_field": "284/GoogleCloud",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "tags.tiqcdn.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52810",
-        "ip_destination": "3.174.255.60",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "edge.eu1.fullstory.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "42672",
+        "ip_destination": "34.120.240.48",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "16 <-> 24"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
+        "sni": "x.klarnacdn.net",
+        "ip_source": "10.215.173.1",
+        "port_source": "56760",
+        "ip_destination": "108.139.243.78",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 2,
         "exchanged_packets": [
-            "61 <-> 146",
-            "10 <-> 16"
+            "18 <-> 19",
+            "11 <-> 12"
         ]
     },
     {
-        "ip_field": "467/Akamai",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "api.lh.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52802",
-        "ip_destination": "104.103.79.188",
+        "tls_version": "TLSv1.2",
+        "ja3s": "a885fb01204bc11cc58efc02fe640899",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "servernames": "nativesdks.mparticle.com,www.nativesdks.mparticle.com,tracking-nativesdks.mparticle.com",
+        "issuer": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2",
+        "subject": "CN=nativesdks.mparticle.com",
+        "certificate": "SHA-1: 39:FE:13:30:9D:62:4D:B9:96:28:35:53:59:C1:CE:D2:0D:F4:75:7B",
+        "sni": "nativesdks.mparticle.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "42744",
+        "ip_destination": "151.101.242.133",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 8,
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
         "exchanged_packets": [
-            "81 <-> 141",
-            "18 <-> 30",
-            "18 <-> 32",
-            "17 <-> 16",
-            "17 <-> 23",
-            "16 <-> 19",
-            "15 <-> 20",
             "11 <-> 13"
         ]
     },
     {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "api.travelid.lufthansa.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52813",
-        "ip_destination": "104.103.79.188",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "62 <-> 123",
-            "13 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d2014h2_a09f3c656075_14788d8d241b",
-        "sni": "ingesteu.quantummetric.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52790",
-        "ip_destination": "34.110.200.92",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 3,
-        "exchanged_packets": [
-            "208 <-> 197",
-            "153 <-> 142",
-            "64 <-> 53"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "assets.adobedtm.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52755",
-        "ip_destination": "92.122.16.238",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "38 <-> 104"
-        ]
-    },
-    {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "UDP",
-        "proto_field": "188/QUIC",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h3_55b375c5d22e_0e9637bee5d3",
-        "quic_version": "V-1",
-        "plain_text": "zw92.0",
-        "sni": "cdn.quantummetric.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "59451",
-        "ip_destination": "104.20.36.39",
-        "port_destination": "443",
-        "similar_flows_count": 7,
-        "exchanged_packets": [
-            "25 <-> 98",
-            "40 <-> 94",
-            "29 <-> 95",
-            "27 <-> 95",
-            "19 <-> 94",
-            "11 <-> 15",
-            "10 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "s.go-mpulse.net",
-        "ip_source": "192.168.2.4",
-        "port_source": "52811",
-        "ip_destination": "92.122.16.138",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "45 <-> 60"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "se.monetate.net",
-        "ip_source": "192.168.2.4",
-        "port_source": "52856",
-        "ip_destination": "23.209.21.100",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "35 <-> 69",
-            "31 <-> 63"
-        ]
-    },
-    {
-        "ip_field": "461/AWS_EC2",
+        "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
         "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "collect-eu-central-1.tealiumiq.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52884",
-        "ip_destination": "3.73.7.244",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "x.klarnacdn.net",
+        "ip_source": "10.215.173.1",
+        "port_source": "34354",
+        "ip_destination": "108.139.243.78",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "67 <-> 45"
+            "19 <-> 20"
         ]
     },
     {
-        "ip_field": "220/Cloudflare",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "et.austrian.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52862",
-        "ip_destination": "141.101.90.29",
+        "tls_version": "TLSv1.2",
+        "ja3s": "a885fb01204bc11cc58efc02fe640899",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "servernames": "tracking-identity.mparticle.com,identity.mparticle.com,www.identity.mparticle.com,identity.aw2.mparticle.com,identity.ae1.mparticle.com",
+        "issuer": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2",
+        "subject": "CN=identity.mparticle.com",
+        "certificate": "SHA-1: EA:B6:B2:3E:C1:F0:FF:49:71:DE:EC:B8:27:EA:09:3B:D5:10:80:04",
+        "sni": "identity.mparticle.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "55528",
+        "ip_destination": "151.101.242.133",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "56 <-> 57",
-            "27 <-> 34"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "p11.techlab-cdn.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52754",
-        "ip_destination": "104.117.76.96",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "33 <-> 59"
+            "12 <-> 13"
         ]
     },
     {
-        "ip_field": "467/Akamai",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d2014h2_a09f3c656075_14788d8d241b",
-        "sni": "api.miles-and-more.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52787",
-        "ip_destination": "104.103.102.207",
+        "tls_version": "TLSv1.2",
+        "ja3s": "a885fb01204bc11cc58efc02fe640899",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "servernames": "config2.mparticle.com,www.config2.mparticle.com",
+        "issuer": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2",
+        "subject": "CN=config2.mparticle.com",
+        "certificate": "SHA-1: 1B:FE:A0:D2:84:49:DB:7F:15:60:49:2B:50:6A:88:DB:9A:09:BE:F8",
+        "sni": "config2.mparticle.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "60854",
+        "ip_destination": "151.101.130.133",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 4,
-        "exchanged_packets": [
-            "51 <-> 64",
-            "36 <-> 45",
-            "24 <-> 34",
-            "28 <-> 33"
-        ]
-    },
-    {
-        "ip_field": "464/AWS_Cloudfront",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "uk.cdn-net.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52853",
-        "ip_destination": "143.204.11.48",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "21 <-> 35"
-        ]
-    },
-    {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d2014h2_a09f3c656075_14788d8d241b",
-        "sni": "lufthansa.slgnt.eu",
-        "ip_source": "192.168.2.4",
-        "port_source": "52788",
-        "ip_destination": "104.17.121.18",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "18 <-> 35"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "api.miles-and-more.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52883",
-        "ip_destination": "104.103.102.207",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 3,
-        "exchanged_packets": [
-            "35 <-> 44",
-            "26 <-> 29",
-            "6 <-> 7"
-        ]
-    },
-    {
-        "ip_field": "461/AWS_EC2",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h1_f57a46bbacb6_14788d8d241b",
-        "sni": "f.monetate.net",
-        "ip_source": "192.168.2.4",
-        "port_source": "52881",
-        "ip_destination": "99.80.96.190",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 3,
-        "exchanged_packets": [
-            "34 <-> 28",
-            "14 <-> 16",
-            "15 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "461/AWS_EC2",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "collect.tealiumiq.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52893",
-        "ip_destination": "18.193.172.145",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "23 <-> 24"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "rl.quantummetric.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52877",
-        "ip_destination": "34.121.25.40",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 6,
-        "exchanged_packets": [
-            "50 <-> 50",
-            "28 <-> 33",
-            "27 <-> 22",
-            "22 <-> 23",
-            "17 <-> 21",
             "12 <-> 14"
         ]
     },
     {
-        "ip_field": "220/Cloudflare",
+        "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "lufthansa.slgnt.eu",
-        "ip_source": "192.168.2.4",
-        "port_source": "52863",
-        "ip_destination": "104.17.121.18",
+        "tls_version": "TLSv1.2",
+        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
+        "ja4": "t13d1513ht_8daaf6152771_eca864cca44a",
+        "servernames": "pusher.com,*.pusher.com",
+        "issuer": "C=US, O=Amazon, CN=Amazon RSA 2048 M02",
+        "subject": "CN=pusher.com",
+        "certificate": "SHA-1: 96:9F:4A:4B:40:24:05:F3:E5:34:7F:17:21:9A:D4:19:F0:8D:7F:39",
+        "sni": "ws-eu.pusher.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "60712",
+        "ip_destination": "34.251.227.102",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 2,
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
         "exchanged_packets": [
-            "19 <-> 25",
-            "10 <-> 16"
+            "12 <-> 13"
         ]
     },
     {
-        "ip_field": "0/Unknown",
+        "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
         "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "digital-logging.saas.amadeus.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52857",
-        "ip_destination": "45.60.124.29",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "zecig2-cdn-settings.appsflyersdk.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "57708",
+        "ip_destination": "3.165.247.124",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "34 <-> 38",
-            "30 <-> 36"
-        ]
-    },
-    {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d2014h2_a09f3c656075_14788d8d241b",
-        "sni": "lufthansa.slgnt.eu",
-        "ip_source": "192.168.2.4",
-        "port_source": "52745",
-        "ip_destination": "104.17.122.18",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "13 <-> 21",
-            "10 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d2014h2_a09f3c656075_14788d8d241b",
-        "sni": "api.travelid.austrian.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52783",
-        "ip_destination": "23.192.90.237",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 4,
-        "exchanged_packets": [
-            "16 <-> 23",
-            "16 <-> 22",
-            "17 <-> 19",
-            "14 <-> 22"
-        ]
-    },
-    {
-        "ip_field": "464/AWS_Cloudfront",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "prod-eu.accdab.net",
-        "ip_source": "192.168.2.4",
-        "port_source": "52850",
-        "ip_destination": "18.66.161.89",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "15 <-> 22"
-        ]
-    },
-    {
-        "ip_field": "461/AWS_EC2",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "f.monetate.net",
-        "ip_source": "192.168.2.4",
-        "port_source": "52858",
-        "ip_destination": "52.213.34.91",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "21 <-> 24"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d2014h2_a09f3c656075_14788d8d241b",
-        "sni": "api.travelid.lufthansa.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52795",
-        "ip_destination": "104.103.79.188",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 17"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188/QUIC",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h3_55b375c5d22e_0e9637bee5d3",
-        "quic_version": "V-1",
-        "plain_text": "@3FGNHg",
-        "sni": "region1.app-analytics-services-att.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "58490",
-        "ip_destination": "216.239.34.36",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "15 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "UDP",
-        "proto_field": "188/QUIC",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h3_55b375c5d22e_0e9637bee5d3",
-        "quic_version": "V-1",
-        "sni": "cdn.quantummetric.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "61772",
-        "ip_destination": "172.66.150.204",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "461/AWS_EC2",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "f.monetate.net",
-        "ip_source": "192.168.2.4",
-        "port_source": "52818",
-        "ip_destination": "52.214.104.135",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 16"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d2014h2_a09f3c656075_14788d8d241b",
-        "sni": "rl.quantummetric.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52748",
-        "ip_destination": "34.121.25.40",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "21 <-> 21",
-            "18 <-> 21"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d2014h2_a09f3c656075_14788d8d241b",
-        "sni": "api.travelid.swiss.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52796",
-        "ip_destination": "104.103.79.68",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "smetrics.miles-and-more.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52751",
-        "ip_destination": "63.140.62.236",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "19 <-> 16"
-        ]
-    },
-    {
-        "ip_field": "461/AWS_EC2",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "visitor-service-eu-central-1.tealiumiq.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52885",
-        "ip_destination": "3.69.191.108",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "17 <-> 20"
-        ]
-    },
-    {
-        "ip_field": "461/AWS_EC2",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "dpm.demdex.net",
-        "ip_source": "192.168.2.4",
-        "port_source": "52756",
-        "ip_destination": "54.229.190.235",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "15 <-> 17"
-        ]
-    },
-    {
-        "ip_field": "464/AWS_Cloudfront",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "tags.tiqcdn.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52767",
-        "ip_destination": "3.174.255.63",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "15 <-> 16",
-            "14 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "461/AWS_EC2",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "collect.tealiumiq.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52836",
-        "ip_destination": "35.159.47.59",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 19"
-        ]
-    },
-    {
-        "ip_field": "461/AWS_EC2",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "collect.tealiumiq.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52879",
-        "ip_destination": "3.65.136.91",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 17"
-        ]
-    },
-    {
-        "ip_field": "464/AWS_Cloudfront",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "tags.tiqcdn.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52770",
-        "ip_destination": "3.174.255.128",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "13 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "rum.hlx.page",
-        "ip_source": "192.168.2.4",
-        "port_source": "52809",
-        "ip_destination": "151.101.1.91",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 1,
         "exchanged_packets": [
             "10 <-> 11"
         ]
     },
     {
-        "ip_field": "461/AWS_EC2",
+        "ip_field": "284/GoogleCloud",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h1_f57a46bbacb6_14788d8d241b",
-        "sni": "f.monetate.net",
-        "ip_source": "192.168.2.4",
-        "port_source": "52837",
-        "ip_destination": "52.214.104.135",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "sentry.io",
+        "ip_source": "10.215.173.1",
+        "port_source": "60214",
+        "ip_destination": "35.186.247.156",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "11 <-> 16"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d2014h2_a09f3c656075_14788d8d241b",
-        "sni": "api.travelid.brusselsairlines.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52797",
-        "ip_destination": "104.117.76.121",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "464/AWS_Cloudfront",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "tags.tiqcdn.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52734",
-        "ip_destination": "143.204.11.127",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "c.go-mpulse.net",
-        "ip_source": "192.168.2.4",
-        "port_source": "52814",
-        "ip_destination": "104.85.12.135",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 14"
+            "8 <-> 9"
         ]
     },
     {
@@ -1012,248 +320,73 @@
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d2014h2_a09f3c656075_14788d8d241b",
-        "sni": "smetrics.miles-and-more.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52760",
-        "ip_destination": "63.140.62.200",
+        "ja3s": "15af977ce25de452b96affa2addb1036",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "imp.mt48.net",
+        "ip_source": "10.215.173.1",
+        "port_source": "53418",
+        "ip_destination": "95.100.171.136",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "17 <-> 16"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d2014h2_a09f3c656075_14788d8d241b",
-        "sni": "smetrics.miles-and-more.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52774",
-        "ip_destination": "63.140.62.139",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 2,
         "exchanged_packets": [
-            "17 <-> 16",
-            "16 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d2014h2_a09f3c656075_14788d8d241b",
-        "sni": "smetrics.miles-and-more.com",
-        "ip_source": "192.168.2.4",
-        "port_source": "52742",
-        "ip_destination": "63.140.62.236",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "17 <-> 16"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
-        "sni": "milesandmore.tt.omtrdc.net",
-        "ip_source": "192.168.2.4",
-        "port_source": "52752",
-        "ip_destination": "66.235.152.111",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "119/Facebook",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "ip_source": "157.240.234.40",
-        "port_source": "443",
-        "ip_destination": "192.168.2.3",
-        "port_destination": "40732",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "13 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "ip_source": "142.251.141.42",
-        "port_source": "443",
-        "ip_destination": "192.168.2.3",
-        "port_destination": "36012",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "5 <-> 5"
+            "9 <-> 10",
+            "9 <-> 9"
         ]
     },
     {
         "ip_field": "284/GoogleCloud",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
-        "ip_source": "34.121.25.40",
-        "port_source": "443",
-        "ip_destination": "192.168.2.4",
-        "port_destination": "52727",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "7 <-> 5"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "ip_source": "104.103.79.188",
-        "port_source": "443",
-        "ip_destination": "192.168.2.4",
-        "port_destination": "52718",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "5 <-> 4"
-        ]
-    },
-    {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "ip_source": "192.168.2.4",
-        "port_source": "52723",
-        "ip_destination": "104.17.121.18",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
+        "sni": "mr.eu1.fullstory.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "43962",
+        "ip_destination": "34.111.143.237",
         "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "4 <-> 4"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "ip_source": "192.168.2.4",
-        "port_source": "52724",
-        "ip_destination": "142.251.141.35",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "4 <-> 4"
+            "10 <-> 10"
         ]
     },
     {
         "ip_field": "284/GoogleCloud",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
-        "ip_source": "192.168.2.4",
-        "port_source": "52725",
-        "ip_destination": "34.110.200.92",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
+        "sni": "sentry.io",
+        "ip_source": "10.215.173.1",
+        "port_source": "60224",
+        "ip_destination": "35.186.247.156",
         "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "4 <-> 4"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "ip_source": "23.192.90.237",
-        "port_source": "443",
-        "ip_destination": "192.168.2.4",
-        "port_destination": "52715",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "4 <-> 3"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "ip_source": "104.103.102.207",
-        "port_source": "443",
-        "ip_destination": "192.168.2.4",
-        "port_destination": "52716",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 2,
         "exchanged_packets": [
-            "4 <-> 3",
-            "4 <-> 3"
+            "8 <-> 9",
+            "9 <-> 9"
         ]
     },
     {
-        "ip_field": "126/Google",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
-        "ip_source": "108.177.127.188",
-        "port_source": "5228",
-        "ip_destination": "192.168.2.3",
-        "port_destination": "35624",
-        "risk": "** Known Proto on Non Std Port **",
-        "risk_score": "50",
-        "risk_info": "Expected on port 443",
+        "tls_version": "TLSv1.2",
+        "ja3s": "5b94af9bf6efc9dea416841602004fbb",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "config2.mparticle.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "56220",
+        "ip_destination": "151.101.130.133",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "3 <-> 3"
-        ]
-    },
-    {
-        "ip_field": "140/Apple",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "ip_source": "17.253.15.206",
-        "port_source": "443",
-        "ip_destination": "192.168.2.4",
-        "port_destination": "52722",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "3 <-> 3"
-        ]
-    },
-    {
-        "ip_field": "467/Akamai",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "ip_source": "2.23.154.131",
-        "port_source": "443",
-        "ip_destination": "192.168.2.3",
-        "port_destination": "53188",
-        "similar_flows_count": 5,
-        "exchanged_packets": [
-            "3 <-> 3",
-            "3 <-> 3",
-            "4 <-> 1",
-            "3 <-> 2",
-            "3 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "UDP",
-        "proto_field": "188/QUIC",
-        "risk": "** Susp Entropy **** Unidirectional Traffic **",
-        "risk_score": "20",
-        "risk_info": "No server to client traffic / Entropy: 5.041 (Executable?)",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 0"
+            "9 <-> 9"
         ]
     }
 ]

@@ -1,0 +1,43 @@
+host:"strava.com"@Strava
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+#     [+] content-a.strava.com
+#     [+] tiles.strava.com
+#     [+] www.strava.com
+
+--------------------------------------------------------------
+host:"strava.com"@Strava
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+#     [+] c.strava.com
+#     [+] dorado.strava.com
+#     [+] heatmap-external-a.strava.com
+#     [+] phoots.strava.com
+
+--------------------------------------------------------------
+
+# Coverage statistics for filtered flows:
+
+# [+] Total packets: 3668
+# [+] Recognized packets: 2564
+# [+] Coverage (%): 69.9
+# [+] Total flows: 74
+# [+] Recognized flows: 47
+# [+] Flow coverage (%): 63.51
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 4430
+# [+] Recognized packets: 2592
+# [+] Coverage (%): 58.51
+# [+] Total flows: 126
+# [+] Recognized flows: 61
+# [+] Flow coverage (%): 48.41

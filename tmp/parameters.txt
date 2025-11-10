@@ -2,7 +2,7 @@
 >> Here there are all parameters set by user:
 
 
-[+] PROTOCOLS: {'HTTP', 'TLS', 'HTTP.WebSocket', 'QUIC', 'HTTP_Connect'}
+[+] PROTOCOLS: {'HTTP_Connect', 'HTTP', 'QUIC', 'TLS', 'HTTP.WebSocket'}
 [+] KEYS_BY_PROTOCOL: {'TLS': ['ip_source', 'tcp_fingerprint', 'ip_destination', 'sni', 'ja3s', 'ja4', 'tls_version', 'proto_field', 'transport_protocol'], 'HTTP': ['ip_source', 'tcp_fingerprint', 'ip_destination', 'sni', 'url', 'user_agent', 'proto_field', 'transport_protocol'], 'QUIC': ['ip_source', 'tcp_fingerprint', 'ip_destination', 'sni', 'ja3s', 'ja4', 'quic_version', 'proto_field', 'transport_protocol']}
 [+] TOP_PERCENT: 0.05
 [+] SNI_MAX_DOMAIN: 4

@@ -1,7 +1,7 @@
 [
     {
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "f57a46bbacb6_14788d8d241b",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "5b57614c22b0_eca864cca44a",
         "certificate": [
             [
                 "certificate",
@@ -21,143 +21,22 @@
             ]
         ],
         "sni_list": [
-            "austrian.com",
-            "miles-and-more.com",
-            "lufthansa.com",
-            "rl.quantummetric.com",
-            "s.go-mpulse.net",
-            "se.monetate.net"
+            "eu1.fullstory.com",
+            "sentry.io"
         ],
-        "flow_count": 30,
-        "packets": 20200,
+        "flow_count": 3,
+        "packets": 125,
         "all_ja4_variants": [
-            "t13d1314h2_f57a46bbacb6_14788d8d241b",
-            "t13d1314h1_f57a46bbacb6_14788d8d241b"
+            "t13d1713ht_5b57614c22b0_eca864cca44a"
         ],
         "sni_list_removed": [
-            "api-shop.austrian.com",
-            "api.travelid.austrian.com",
-            "shop.austrian.com",
-            "www.austrian.com",
-            "api.miles-and-more.com",
-            "www.miles-and-more.com",
-            "api.travelid.lufthansa.com",
-            "www.lufthansa.com"
+            "edge.eu1.fullstory.com",
+            "mr.eu1.fullstory.com"
         ]
-    },
-    {
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "a09f3c656075_14788d8d241b",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "miles-and-more.com",
-            "api.travelid.austrian.com",
-            "api.travelid.brusselsairlines.com",
-            "lufthansa.com",
-            "api.travelid.swiss.com",
-            "rl.quantummetric.com"
-        ],
-        "flow_count": 21,
-        "packets": 7450,
-        "all_ja4_variants": [
-            "t13d2014h2_a09f3c656075_14788d8d241b"
-        ],
-        "sni_list_removed": [
-            "api.miles-and-more.com",
-            "austrian.miles-and-more.com",
-            "api.travelid.lufthansa.com",
-            "www.lufthansa.com"
-        ]
-    },
-    {
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "f57a46bbacb6_14788d8d241b",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "et.austrian.com",
-            "ingesteu.quantummetric.com",
-            "lufthansa.slgnt.eu",
-            "milesandmore.tt.omtrdc.net",
-            "smetrics.miles-and-more.com"
-        ],
-        "flow_count": 8,
-        "packets": 1454,
-        "all_ja4_variants": [
-            "t13d1314h2_f57a46bbacb6_14788d8d241b",
-            "t13d1314h1_f57a46bbacb6_14788d8d241b"
-        ],
-        "sni_list_removed": []
-    },
-    {
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "a09f3c656075_14788d8d241b",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [
-            "ingesteu.quantummetric.com",
-            "lufthansa.slgnt.eu",
-            "smetrics.miles-and-more.com"
-        ],
-        "flow_count": 10,
-        "packets": 1058,
-        "all_ja4_variants": [
-            "t13d2014h2_a09f3c656075_14788d8d241b"
-        ],
-        "sni_list_removed": []
     },
     {
         "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "f57a46bbacb6_14788d8d241b",
+        "ja4": "8daaf6152771_eca864cca44a",
         "certificate": [
             [
                 "certificate",
@@ -177,22 +56,56 @@
             ]
         ],
         "sni_list": [
-            "digital-logging.saas.amadeus.com",
-            "f.monetate.net",
-            "prod-eu.accdab.net",
-            "rum.hlx.page"
+            "klarna.com",
+            "content.blackhawknetwork.com"
         ],
-        "flow_count": 10,
-        "packets": 419,
+        "flow_count": 13,
+        "packets": 638,
         "all_ja4_variants": [
-            "t13d1314h2_f57a46bbacb6_14788d8d241b",
-            "t13d1314h1_f57a46bbacb6_14788d8d241b"
+            "t13d1513h2_8daaf6152771_eca864cca44a",
+            "t13d1513ht_8daaf6152771_eca864cca44a"
+        ],
+        "sni_list_removed": [
+            "app-api.klarna.com",
+            "ctf.klarna.com",
+            "owp.klarna.com"
+        ]
+    },
+    {
+        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
+        "ja4": "8daaf6152771_eca864cca44a",
+        "certificate": [
+            [
+                "certificate",
+                "SHA-1: 96:9F:4A:4B:40:24:05:F3:E5:34:7F:17:21:9A:D4:19:F0:8D:7F:39"
+            ],
+            [
+                "issuer",
+                "C=US, O=Amazon, CN=Amazon RSA 2048 M02"
+            ],
+            [
+                "servernames",
+                "pusher.com,*.pusher.com"
+            ],
+            [
+                "subject",
+                "CN=pusher.com"
+            ]
+        ],
+        "sni_list": [
+            "ws-eu.pusher.com"
+        ],
+        "flow_count": 1,
+        "packets": 25,
+        "all_ja4_variants": [
+            "t13d1513h2_8daaf6152771_eca864cca44a",
+            "t13d1513ht_8daaf6152771_eca864cca44a"
         ],
         "sni_list_removed": []
     },
     {
-        "ja3s": null,
-        "ja4": "55b375c5d22e_0e9637bee5d3",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "5b57614c22b0_352634941f3a",
         "certificate": [
             [
                 "certificate",
@@ -212,12 +125,13 @@
             ]
         ],
         "sni_list": [
-            "region1.app-analytics-services-att.com"
+            "mr.eu1.fullstory.com",
+            "sentry.io"
         ],
-        "flow_count": 1,
-        "packets": 28,
+        "flow_count": 3,
+        "packets": 55,
         "all_ja4_variants": [
-            "q13d0311h3_55b375c5d22e_0e9637bee5d3"
+            "t13d1713ht_5b57614c22b0_352634941f3a"
         ],
         "sni_list_removed": []
     }

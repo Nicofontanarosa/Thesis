@@ -1,0 +1,71 @@
+host:"just-eat-prod-eu-res.cloudinary.com"@Justeat
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+host:"api.just-eat.io"@Justeat
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+host:"w.usabilla.com"@Justeat
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+host:"sdk.out.usbla.net"@Justeat
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+trusted_issuer_dn:"CN=*.je-apis.com"@"Justeat"
+
+# To add this rule based on CERTIFICATE:
+#   [+] Open `nDPI/src/include/ndpi_protocol_ids.h`
+#      >> Add at the end of the typedef enum:
+#         [+] NDPI_PROTOCOL_JUSTEAT = 453,
+#         [+] Replace 453 with an available protocol number.
+#   [+] Open `nDPI/src/lib/ndpi_main.c`
+#      >> Inside `static void init_protocol_defaults`, add:
+#         [+] ndpi_set_proto_defaults(ndpi_str, 0, 1, NDPI_PROTOCOL_ACCEPTABLE, NDPI_PROTOCOL_JUSTEAT, Justeat, NDPI_PROTOCOL_CATEGORY_NETWORK, NDPI_PROTOCOL_QOE_CATEGORY_UNSPECIFIED, ndpi_build_default_ports(ports_a, 0,0,0,0,0), ndpi_build_default_ports(ports_b, 0,0,0,0,0), 0);
+#   [+] Open `nDPI/src/lib/ndpi_content_match.c.inc`
+#      >> In `static ndpi_tls_cert_name_match tls_certificate_match[]`, add:
+#         [+] { "CN=*.je-apis.com", NDPI_PROTOCOL_JUSTEAT },
+
+#   [+] Use this file when executing nDPI with -p `this file`
+
+--------------------------------------------------------------
+
+# Coverage statistics for filtered flows:
+
+# [+] Total packets: 1020
+# [+] Recognized packets: 723
+# [+] Coverage (%): 70.88
+# [+] Total flows: 25
+# [+] Recognized flows: 13
+# [+] Flow coverage (%): 52.0
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 1420
+# [+] Recognized packets: 731
+# [+] Coverage (%): 51.48
+# [+] Total flows: 63
+# [+] Recognized flows: 17
+# [+] Flow coverage (%): 26.98

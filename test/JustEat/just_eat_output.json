@@ -1,0 +1,283 @@
+[
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "859f6823b97b45a15c06bd21bd2f318d",
+        "ja4": "t12d1209h2_d34a8e72043a_b39be8c56a14",
+        "servernames": "*.cloudinary.com",
+        "issuer": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign Atlas R3 DV TLS CA 2025 Q3",
+        "subject": "CN=*.cloudinary.com",
+        "certificate": "SHA-1: 77:6B:7C:56:E5:E7:51:42:ED:61:04:B9:D9:26:38:05:21:1C:F9:06",
+        "sni": "just-eat-prod-eu-res.cloudinary.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "47528",
+        "ip_destination": "151.101.241.137",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 5,
+        "exchanged_packets": [
+            "161 <-> 173",
+            "10 <-> 11",
+            "8 <-> 9",
+            "9 <-> 9",
+            "8 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "9ebc57def2efb523f25c77af13aa6d48",
+        "ja4": "t12d1209h2_d34a8e72043a_b39be8c56a14",
+        "servernames": "i18n.api.just-eat.io",
+        "issuer": "C=US, O=Google Trust Services, CN=WE1",
+        "subject": "CN=i18n.api.just-eat.io",
+        "certificate": "SHA-1: AA:E8:10:97:62:43:6B:EC:39:26:B8:DC:29:22:8E:7E:66:D7:D2:3D",
+        "sni": "i18n.api.just-eat.io",
+        "ip_source": "10.215.173.1",
+        "port_source": "40118",
+        "ip_destination": "104.18.34.15",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "71 <-> 77"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "9ebc57def2efb523f25c77af13aa6d48",
+        "ja4": "t12d1209ht_d34a8e72043a_b39be8c56a14",
+        "servernames": "justeattakeaway.com,*.api.justeattakeaway.com",
+        "issuer": "C=US, O=Google Trust Services, CN=WE1",
+        "subject": "CN=justeattakeaway.com",
+        "certificate": "SHA-1: 7F:2A:C4:DF:80:58:D6:67:A5:F9:D6:3E:73:BA:A2:F1:21:C7:31:39",
+        "sni": "features.api.justeattakeaway.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "53572",
+        "ip_destination": "172.64.152.13",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "15 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "servernames": "w.usabilla.com,*.w.usabilla.com,*.w.usbla.net,w.usbla.net",
+        "issuer": "C=US, O=Amazon, CN=Amazon RSA 2048 M04",
+        "subject": "CN=w.usabilla.com",
+        "certificate": "SHA-1: F3:B9:24:EF:24:1D:2C:9B:23:14:E6:E5:A1:94:CD:E5:E8:BF:11:73",
+        "sni": "w.usabilla.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "56818",
+        "ip_destination": "52.211.140.67",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "10 <-> 11",
+            "11 <-> 11",
+            "10 <-> 10"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "sdk.out.usbla.net",
+        "ip_source": "10.215.173.1",
+        "port_source": "37668",
+        "ip_destination": "108.139.243.36",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "17 <-> 17",
+            "13 <-> 14",
+            "12 <-> 13",
+            "10 <-> 10"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "9ebc57def2efb523f25c77af13aa6d48",
+        "ja4": "t12d1209h2_d34a8e72043a_b39be8c56a14",
+        "servernames": "auth.justeat.it",
+        "issuer": "C=US, O=Google Trust Services, CN=WE1",
+        "subject": "CN=auth.justeat.it",
+        "certificate": "SHA-1: 80:FD:65:31:46:60:85:5F:87:33:92:50:2D:8F:95:D1:86:1A:77:23",
+        "sni": "auth.justeat.it",
+        "ip_source": "10.215.173.1",
+        "port_source": "41402",
+        "ip_destination": "104.18.39.217",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "20276646585c81d93770671389cac340",
+        "ja4": "t12d1209h2_d34a8e72043a_b39be8c56a14",
+        "servernames": "*.je-apis.com,je-apis.com",
+        "issuer": "C=US, O=Amazon, CN=Amazon RSA 2048 M02",
+        "subject": "CN=*.je-apis.com",
+        "certificate": "SHA-1: C9:D7:A9:97:D3:F7:92:B1:D7:27:20:63:5F:8C:15:69:65:C9:C3:AE",
+        "sni": "splashscreenapi-production.je-apis.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "43146",
+        "ip_destination": "108.157.188.14",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "20276646585c81d93770671389cac340",
+        "ja4": "t12d1209h2_d34a8e72043a_b39be8c56a14",
+        "servernames": "*.je-apis.com,je-apis.com",
+        "issuer": "C=US, O=Amazon, CN=Amazon RSA 2048 M02",
+        "subject": "CN=*.je-apis.com",
+        "certificate": "SHA-1: C9:D7:A9:97:D3:F7:92:B1:D7:27:20:63:5F:8C:15:69:65:C9:C3:AE",
+        "sni": "appupdateapi-production.je-apis.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "38372",
+        "ip_destination": "3.165.239.105",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "13 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "20276646585c81d93770671389cac340",
+        "ja4": "t12d1209h2_d34a8e72043a_b39be8c56a14",
+        "servernames": "*.je-apis.com,je-apis.com",
+        "issuer": "C=US, O=Amazon, CN=Amazon RSA 2048 M02",
+        "subject": "CN=*.je-apis.com",
+        "certificate": "SHA-1: C9:D7:A9:97:D3:F7:92:B1:D7:27:20:63:5F:8C:15:69:65:C9:C3:AE",
+        "sni": "offlinestatusapi-production.je-apis.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "55522",
+        "ip_destination": "108.138.192.19",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "12 <-> 13"
+        ]
+    },
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.2",
+        "ja3s": "20276646585c81d93770671389cac340",
+        "ja4": "t12d1209h2_d34a8e72043a_b39be8c56a14",
+        "servernames": "static.pyszne.pl,static.lieferando.de,static.lieferando.at,static.takeaway.com,static.thuisbezorgd.nl,static.lieferservice.at",
+        "issuer": "C=US, O=Amazon, CN=Amazon RSA 2048 M04",
+        "subject": "CN=static.pyszne.pl",
+        "certificate": "SHA-1: 19:3A:87:A1:16:77:C7:25:70:C0:2E:38:B0:E9:A7:E4:FD:22:4D:AD",
+        "sni": "static.takeaway.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "34966",
+        "ip_destination": "3.160.212.123",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "12 <-> 13",
+            "8 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "jabo.iad.appboy.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "36096",
+        "ip_destination": "172.64.148.188",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "9 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
+        "sni": "analytics.api.justeattakeaway.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "53564",
+        "ip_destination": "172.64.152.13",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "220/Cloudflare",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
+        "sni": "jabo.iad.appboy.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "38676",
+        "ip_destination": "172.64.148.188",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "7 <-> 6",
+            "7 <-> 6"
+        ]
+    }
+]

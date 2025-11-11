@@ -1,7 +1,10 @@
 >> Lists of protocols read:
 
    [+] DNS
+   [+] Google
+   [+] HTTP
    [+] TLS
+   [+] Unknown
 
 >> Lists of protocols supported:
 
@@ -14,3 +17,5 @@
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
    [red][+] DNS[/red]
+   [red][+] Google[/red]
+   [red][+] Unknown[/red]

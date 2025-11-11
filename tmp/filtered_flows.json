@@ -1,196 +1,57 @@
 [
     {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "mr.eu1.fullstory.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "54302",
-        "ip_destination": "34.111.143.237",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "39 <-> 29"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
         "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "app-api.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "59970",
-        "ip_destination": "3.160.212.50",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 3,
+        "ja4": "t13d1511h2_8daaf6152771_40271e0a5736",
+        "ip_source": "10.231.254.96",
+        "port_source": "61269",
+        "ip_destination": "88.99.164.231",
+        "port_destination": "432",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **",
+        "risk_score": "150",
+        "risk_info": "h2 / SNI should always be present / Expected on port 443",
+        "similar_flows_count": 1,
         "exchanged_packets": [
-            "120 <-> 135",
-            "14 <-> 15",
+            "17 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
+        "sni": "api.hide.me",
+        "ip_source": "10.231.254.96",
+        "port_source": "61268",
+        "ip_destination": "45.76.88.89",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
             "10 <-> 9"
         ]
     },
     {
-        "ip_field": "265/AmazonAWS",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "ctf.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "45544",
-        "ip_destination": "108.157.194.121",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "27 <-> 44",
-            "12 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "content.blackhawknetwork.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "60090",
-        "ip_destination": "108.157.194.84",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 4,
-        "exchanged_packets": [
-            "18 <-> 31",
-            "9 <-> 10",
-            "9 <-> 10",
-            "8 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "owp.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "46480",
-        "ip_destination": "3.165.255.106",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 4,
-        "exchanged_packets": [
-            "27 <-> 40",
-            "12 <-> 12",
-            "11 <-> 11",
-            "12 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "edge.eu1.fullstory.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "42672",
-        "ip_destination": "34.120.240.48",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "proto_field": "7/HTTP",
+        "url": "www.msftncsi.com/ncsi.txt",
+        "user_agent": "okhttp/4.11.0",
+        "plain_text": "GET /ncsi.t",
+        "sni": "www.msftncsi.com",
+        "ip_source": "10.231.254.96",
+        "port_source": "61255",
+        "ip_destination": "151.29.122.81",
+        "port_destination": "80",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "16 <-> 24"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
-        "ja4": "t13d1513ht_8daaf6152771_eca864cca44a",
-        "servernames": "pusher.com,*.pusher.com",
-        "issuer": "C=US, O=Amazon, CN=Amazon RSA 2048 M02",
-        "subject": "CN=pusher.com",
-        "certificate": "SHA-1: 96:9F:4A:4B:40:24:05:F3:E5:34:7F:17:21:9A:D4:19:F0:8D:7F:39",
-        "sni": "ws-eu.pusher.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "60712",
-        "ip_destination": "34.251.227.102",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "sentry.io",
-        "ip_source": "10.215.173.1",
-        "port_source": "60214",
-        "ip_destination": "35.186.247.156",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "8 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
-        "sni": "mr.eu1.fullstory.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "43962",
-        "ip_destination": "34.111.143.237",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
-        "sni": "sentry.io",
-        "ip_source": "10.215.173.1",
-        "port_source": "60224",
-        "ip_destination": "35.186.247.156",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "8 <-> 9",
-            "9 <-> 9"
+            "2 <-> 2"
         ]
     }
 ]

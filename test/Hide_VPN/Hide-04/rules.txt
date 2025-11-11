@@ -1,21 +1,42 @@
-host:"api.hide.me"@
+ja4:t13d1511h2_8daaf6152771_40271e0a5736@Hidevpn
 
->> To add this rule based on SNI:
-   [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"api.hide.me"@
-
---------------------------------------------------------------
-host:"www.msftncsi.com"@
-
->> To add this rule based on SNI:
-   [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"www.msftncsi.com"@
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
 
 --------------------------------------------------------------
-ja4:8daaf6152771_40271e0a5736@
+host:"api.hide.me"@Hidevpn
 
->> To add this rule based on JA4:
-   [+] Open `nDPI/example/protos.txt`
-   [+] Paste the following rule: ja4:8daaf6152771_40271e0a5736@
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
 
 --------------------------------------------------------------
+host:"msftncsi.com"@Hidevpn
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+
+# Coverage statistics for filtered flows:
+
+# [+] Total packets: 57
+# [+] Recognized packets: 57
+# [+] Coverage (%): 100.0
+# [+] Total flows: 3
+# [+] Recognized flows: 3
+# [+] Flow coverage (%): 100.0
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 3939
+# [+] Recognized packets: 57
+# [+] Coverage (%): 1.45
+# [+] Total flows: 17
+# [+] Recognized flows: 3
+# [+] Flow coverage (%): 17.65

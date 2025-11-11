@@ -1,7 +1,24 @@
-ja4:9dc949149365_6e36e74388e1@
+ja4:t13d1913h2_9dc949149365_6e36e74388e1@Ultravpn
 
->> To add this rule based on JA4:
-   [+] Open `nDPI/example/protos.txt`
-   [+] Paste the following rule: ja4:9dc949149365_6e36e74388e1@
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
 
 --------------------------------------------------------------
+
+# Coverage statistics for filtered flows:
+
+# [+] Total packets: 9774
+# [+] Recognized packets: 8355
+# [+] Coverage (%): 85.48
+# [+] Total flows: 9
+# [+] Recognized flows: 1
+# [+] Flow coverage (%): 11.11
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 43504
+# [+] Recognized packets: 8355
+# [+] Coverage (%): 19.21
+# [+] Total flows: 103
+# [+] Recognized flows: 1
+# [+] Flow coverage (%): 0.97

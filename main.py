@@ -133,6 +133,8 @@ def run_pipeline(pcap_file, ndpi_path, output_dir, protoname, log_file, log_file
 
     config.log_message(f"\n\n>> All removed flows save in: .\\tmp\\removed_flows.json", log_file)
 
+    return coverage_result
+
 def main_pipeline(pcap, ndpi, output, protoname):
 
     # at the beginning of run_pipeline or right after the imports
@@ -143,7 +145,9 @@ def main_pipeline(pcap, ndpi, output, protoname):
     config.clear_log(log_file_error)
     config.clear_log(log_params)
 
-    run_pipeline(pcap, ndpi, output, protoname, log_file, log_file_error, log_params)
+    coverage_result = run_pipeline(pcap, ndpi, output, protoname, log_file, log_file_error, log_params)
+
+    return coverage_result
 
 #################################################################
 # End of main.py

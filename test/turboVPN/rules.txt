@@ -1,7 +1,24 @@
-host:"api.entclass.tech",host:"code.jquery.com",host:"unity3d.com"@
+ja4:t13d1713ht_5b57614c22b0_eca864cca44a@Turbovpn
 
->> To add this rule based on SNI:
-   [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"api.entclass.tech",host:"code.jquery.com",host:"unity3d.com"@
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
 
 --------------------------------------------------------------
+
+# Coverage statistics for filtered flows:
+
+# [+] Total packets: 7841
+# [+] Recognized packets: 0
+# [+] Coverage (%): 0.0
+# [+] Total flows: 101
+# [+] Recognized flows: 0
+# [+] Flow coverage (%): 0.0
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 30625
+# [+] Recognized packets: 0
+# [+] Coverage (%): 0.0
+# [+] Total flows: 338
+# [+] Recognized flows: 0
+# [+] Flow coverage (%): 0.0

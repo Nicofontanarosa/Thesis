@@ -4,48 +4,19 @@
 
 >> All SNIs seen:
 
-   [+] [green]app-api.klarna.com[/green]
-   [+] [green]assets.klarnacdn.net[/green]
-   [+] [green]config2.mparticle.com[/green]
-   [+] [green]content.blackhawknetwork.com[/green]
-   [+] [green]ctf.klarna.com[/green]
-   [+] [green]edge.eu1.fullstory.com[/green]
-   [+] [green]identity.mparticle.com[/green]
-   [+] [green]imp.mt48.net[/green]
-   [+] [green]mr.eu1.fullstory.com[/green]
-   [+] [green]nativesdks.mparticle.com[/green]
-   [+] [green]owp.klarna.com[/green]
-   [+] [green]sentry.io[/green]
-   [+] [green]ws-eu.pusher.com[/green]
-   [+] [green]x.klarnacdn.net[/green]
-   [+] [green]zecig2-cdn-settings.appsflyersdk.com[/green]
+   [+] [green]api.hide.me[/green]
+   [+] [green]www.msftncsi.com[/green]
 
 
 >> Removed flows 1° filtering ( Exclude words and know domains ):
 
-   [+] [red]assets.klarnacdn.net[/red]
-   [+] [red]assets.klarnacdn.net[/red]
-   [+] [red]x.klarnacdn.net[/red]
-   [+] [red]x.klarnacdn.net[/red]
-   [+] [red]zecig2-cdn-settings.appsflyersdk.com[/red]
 
 
 >> Removed flows 2° filtering ( Remove known suffixes, not_protocols domains and ad domains ):
 
-   [+] [red]nativesdks.mparticle.com[/red]
-   [+] [red]identity.mparticle.com[/red]
-   [+] [red]config2.mparticle.com[/red]
-   [+] [red]imp.mt48.net[/red]
-   [+] [red]config2.mparticle.com[/red]
 
 
 >> Remaining SNIs:
 
-   [+] [green]app-api.klarna.com[/green]
-   [+] [green]content.blackhawknetwork.com[/green]
-   [+] [green]ctf.klarna.com[/green]
-   [+] [green]edge.eu1.fullstory.com[/green]
-   [+] [green]mr.eu1.fullstory.com[/green]
-   [+] [green]owp.klarna.com[/green]
-   [+] [green]sentry.io[/green]
-   [+] [green]ws-eu.pusher.com[/green]
+   [+] [green]api.hide.me[/green]
+   [+] [green]www.msftncsi.com[/green]

@@ -1,0 +1,20 @@
+
+
+>> Risky Flow:
+
+  + ip_field: 0/Unknown
+  + transport_protocol: TCP
+  + proto_field: 91/TLS
+  + tls_version: TLSv1.3
+  + ja3s: f4febc55ea12b31ae17cfb7e614afda8
+  + ja4: t13d1511h2_8daaf6152771_40271e0a5736
+  + ip_source: 10.231.254.96
+  + port_source: 61269
+  + ip_destination: 88.99.164.231
+  + port_destination: 432
+  + tcp_fingerprint: 2_64_65535_41a9d5af7dd3/Android
+  + [red]risk: ** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **[/red]
+  + [red]risk_score: 150[/red]
+  + [red]risk_info: h2 / SNI should always be present / Expected on port 443[/red]
+  + similar_flows_count: 1
+  + exchanged_packets: \['17 <-> 17'\]

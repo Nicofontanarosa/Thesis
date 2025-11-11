@@ -298,24 +298,24 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
                     continue
 
             else:
-
+                
                 # 1) remove snis present in the main dataset and ad dataset
                 remove_sni = False
                 for d in sorted_dataset:
-                    if sni_proc.endswith(d):
+                    if sni_proc == d or sni_proc.endswith("." + d):
                         remove_sni = True
                         break
                 if remove_sni:
-                    config.log_message(f"   [+] [red]{sni}[/red]\n", sni_stats_file)
+                    config.log_message(f"   [+] main [red]{sni}[/red]\n", sni_stats_file)
                     removed_flows.append(flow)
                     continue
                 
                 for d in ad_dataset:
-                    if sni_proc.endswith(d):
+                    if sni_proc == d or sni_proc.endswith("." + d):
                         remove_sni = True
                         break
                 if remove_sni:
-                    config.log_message(f"   [+] [red]{sni}[/red]\n", sni_stats_file)
+                    config.log_message(f"   [+] ad [red]{sni}[/red]\n", sni_stats_file)
                     removed_flows.append(flow)
                     continue
 
@@ -338,8 +338,8 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
             new_parts = []
 
             # 3) remove unwanted parts: numeric, too short, or present in datasetTLD
-            for p in parts:
-                if len(p) <= constants.N_MIN or re.search(r"\d", p) or p in datasetTLD_domains:
+            for p in parts: # re.search(r"\d", p) or
+                if len(p) <= constants.N_MIN or p in datasetTLD_domains:
                     continue
                 else:
                     new_parts.append(p)
@@ -392,8 +392,10 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
 
     for (ja3s, ja4, certificate), elements in groups.items():
 
+        certificate_s = {item[0]: item[1] for item in certificate if len(item) == 2}
+
         # --- Case 1: group with only SNI ( no JA3S, JA4, and no certificate ) ---
-        if ja3s is None and ja4 is None and not any(certificate.values()):
+        if ja3s is None and ja4 is None and not certificate_s.get('subject'):
             # create a separate object for each flow/SNI instead of aggregating
             for flow in elements:
 
@@ -450,14 +452,15 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
             })
 
     for rc in raw_groups:
-        rc["all_ja4_variants"] = find_ja4_by_suffix(rc.get("ja4"), final_flows)
-
-    # merge groups based on SNI
-    sni_to_use = group_sni.merge_flows(raw_groups)
+        if rc.get("ja4"):
+            rc["all_ja4_variants"] = find_ja4_by_suffix(rc["ja4"], final_flows)
 
     # save the raw groups
     with open("tmp/raw_groups.json", "w", encoding="utf-8") as f:
-        json.dump(sni_to_use, f, indent=4)
+        json.dump(raw_groups, f, indent=4)
+
+    # merge groups based on SNI
+    sni_to_use = group_sni.merge_flows(raw_groups)
 
     #print(f"\n[DEBUG] Merged Cluster: {sni_to_use}")
 

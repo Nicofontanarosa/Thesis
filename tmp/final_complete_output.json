@@ -1,338 +1,35 @@
 [
     {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91.265/TLS.AmazonAWS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "d2r76poigfg60j.cloudfront.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "55586",
-        "ip_destination": "3.166.8.169",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "694 <-> 1742"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
-        "sni": "assets.klarnacdn.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "35116",
-        "ip_destination": "3.165.239.87",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "40 <-> 76"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "assets.klarnacdn.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "56462",
-        "ip_destination": "3.165.239.87",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "50 <-> 52"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "mr.eu1.fullstory.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "54302",
-        "ip_destination": "34.111.143.237",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "39 <-> 29"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "app-api.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "59970",
-        "ip_destination": "3.160.212.50",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "120 <-> 135"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "ctf.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "45544",
-        "ip_destination": "108.157.194.121",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "27 <-> 44"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "content.blackhawknetwork.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "60090",
-        "ip_destination": "108.157.194.84",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "18 <-> 31"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "owp.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "46480",
-        "ip_destination": "3.165.255.106",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "27 <-> 40"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "edge.eu1.fullstory.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "42672",
-        "ip_destination": "34.120.240.48",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "16 <-> 24"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "content.blackhawknetwork.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "60076",
-        "ip_destination": "108.157.194.84",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "9 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
-        "sni": "x.klarnacdn.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "56760",
-        "ip_destination": "108.139.243.78",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "18 <-> 19"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "content.blackhawknetwork.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "60094",
-        "ip_destination": "108.157.194.84",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "9 <-> 10"
-        ]
-    },
-    {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "a885fb01204bc11cc58efc02fe640899",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "servernames": "nativesdks.mparticle.com,www.nativesdks.mparticle.com,tracking-nativesdks.mparticle.com",
-        "issuer": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2",
-        "subject": "CN=nativesdks.mparticle.com",
-        "certificate": "SHA-1: 39:FE:13:30:9D:62:4D:B9:96:28:35:53:59:C1:CE:D2:0D:F4:75:7B",
-        "sni": "nativesdks.mparticle.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "42744",
-        "ip_destination": "151.101.242.133",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
         "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "content.blackhawknetwork.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "60068",
-        "ip_destination": "108.157.194.84",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "ja4": "t13d1511h2_8daaf6152771_40271e0a5736",
+        "ip_source": "10.231.254.96",
+        "port_source": "61269",
+        "ip_destination": "88.99.164.231",
+        "port_destination": "432",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **",
+        "risk_score": "150",
+        "risk_info": "h2 / SNI should always be present / Expected on port 443",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "8 <-> 9"
+            "17 <-> 17"
         ]
     },
     {
-        "ip_field": "265/AmazonAWS",
+        "ip_field": "126/Google",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "x.klarnacdn.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "34354",
-        "ip_destination": "108.139.243.78",
+        "ip_source": "10.231.254.96",
+        "port_source": "58071",
+        "ip_destination": "142.250.180.170",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "19 <-> 20"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
-        "sni": "x.klarnacdn.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "56754",
-        "ip_destination": "108.139.243.78",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "a885fb01204bc11cc58efc02fe640899",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "servernames": "tracking-identity.mparticle.com,identity.mparticle.com,www.identity.mparticle.com,identity.aw2.mparticle.com,identity.ae1.mparticle.com",
-        "issuer": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2",
-        "subject": "CN=identity.mparticle.com",
-        "certificate": "SHA-1: EA:B6:B2:3E:C1:F0:FF:49:71:DE:EC:B8:27:EA:09:3B:D5:10:80:04",
-        "sni": "identity.mparticle.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "55528",
-        "ip_destination": "151.101.242.133",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "a885fb01204bc11cc58efc02fe640899",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "servernames": "config2.mparticle.com,www.config2.mparticle.com",
-        "issuer": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2",
-        "subject": "CN=config2.mparticle.com",
-        "certificate": "SHA-1: 1B:FE:A0:D2:84:49:DB:7F:15:60:49:2B:50:6A:88:DB:9A:09:BE:F8",
-        "sni": "config2.mparticle.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "60854",
-        "ip_destination": "151.101.130.133",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 14"
+            "6 <-> 8"
         ]
     },
     {
@@ -340,1026 +37,228 @@
         "transport_protocol": "TCP",
         "proto_field": "91.239/TLS.GoogleServices",
         "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "firebaseinstallations.googleapis.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "41698",
-        "ip_destination": "142.251.140.106",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
+        "ja4": "t13d171200_5b57614c22b0_352634941f3a",
+        "sni": "mtalk.google.com",
+        "ip_source": "10.231.254.96",
+        "port_source": "61272",
+        "ip_destination": "108.177.96.188",
+        "port_destination": "5228",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** Known Proto on Non Std Port **** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "60",
+        "risk_info": "No ALPN / Expected on port 443",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "11 <-> 11"
+            "11 <-> 9"
         ]
     },
     {
-        "ip_field": "265/AmazonAWS",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "app-api.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "59962",
-        "ip_destination": "3.160.212.50",
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
+        "sni": "api.hide.me",
+        "ip_source": "10.231.254.96",
+        "port_source": "61268",
+        "ip_destination": "45.76.88.89",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91.265/TLS.AmazonAWS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "d2r76poigfg60j.cloudfront.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "55612",
-        "ip_destination": "3.166.8.169",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "13 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91.265/TLS.AmazonAWS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "d2r76poigfg60j.cloudfront.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "55588",
-        "ip_destination": "3.166.8.169",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
-        "ja4": "t13d1513ht_8daaf6152771_eca864cca44a",
-        "servernames": "pusher.com,*.pusher.com",
-        "issuer": "C=US, O=Amazon, CN=Amazon RSA 2048 M02",
-        "subject": "CN=pusher.com",
-        "certificate": "SHA-1: 96:9F:4A:4B:40:24:05:F3:E5:34:7F:17:21:9A:D4:19:F0:8D:7F:39",
-        "sni": "ws-eu.pusher.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "60712",
-        "ip_destination": "34.251.227.102",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "zecig2-cdn-settings.appsflyersdk.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "57708",
-        "ip_destination": "3.165.247.124",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91.265/TLS.AmazonAWS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "d2r76poigfg60j.cloudfront.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "55596",
-        "ip_destination": "3.166.8.169",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "8 <-> 7"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91.265/TLS.AmazonAWS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "d2r76poigfg60j.cloudfront.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "55604",
-        "ip_destination": "3.166.8.169",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "8 <-> 7"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "sentry.io",
-        "ip_source": "10.215.173.1",
-        "port_source": "60214",
-        "ip_destination": "35.186.247.156",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "8 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "ctf.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "45552",
-        "ip_destination": "108.157.194.121",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "owp.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "46494",
-        "ip_destination": "3.165.255.106",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "owp.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "46500",
-        "ip_destination": "3.165.255.106",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "owp.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "46510",
-        "ip_destination": "3.165.255.106",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "app-api.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "59984",
-        "ip_destination": "3.160.212.50",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
         "similar_flows_count": 1,
         "exchanged_packets": [
             "10 <-> 9"
         ]
     },
     {
-        "ip_field": "265/AmazonAWS",
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "assets.klarnacdn.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "35126",
-        "ip_destination": "3.165.239.87",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "proto_field": "7.212/HTTP.Microsoft",
+        "url": "www.msftconnecttest.com/connecttest.txt",
+        "user_agent": "Microsoft NCSI",
+        "plain_text": "GET /connecttest.txt HTTP/1.1",
+        "sni": "www.msftconnecttest.com",
+        "ip_source": "10.231.254.96",
+        "port_source": "58074",
+        "ip_destination": "151.5.18.105",
+        "port_destination": "80",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "7 <-> 6"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "assets.klarnacdn.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "35136",
-        "ip_destination": "3.165.239.87",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "7 <-> 6"
+            "6 <-> 5"
         ]
     },
     {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "imp.mt48.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "53418",
-        "ip_destination": "95.100.171.136",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "proto_field": "7/HTTP",
+        "url": "www.msftncsi.com/ncsi.txt",
+        "user_agent": "okhttp/4.11.0",
+        "plain_text": "GET /ncsi.t",
+        "sni": "www.msftncsi.com",
+        "ip_source": "10.231.254.96",
+        "port_source": "61255",
+        "ip_destination": "151.29.122.81",
+        "port_destination": "80",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "9 <-> 10"
+            "2 <-> 2"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "plain_text": "myipstack",
+        "sni": "www.msftconnecttest.com",
+        "ip_source": "10.231.254.96",
+        "port_source": "50506",
+        "ip_destination": "10.231.254.147",
+        "port_destination": "53",
+        "risk": "** Error Code **",
+        "risk_score": "10",
+        "risk_info": "DNS Error Code NXDOMAIN",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "3 <-> 2"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "5/DNS",
+        "plain_text": "myipstack",
+        "sni": "free-de-v4.hideservers.net",
+        "ip_source": "10.231.254.96",
+        "port_source": "52712",
+        "ip_destination": "10.231.254.147",
+        "port_destination": "53",
+        "risk": "** Minor Issues **",
+        "risk_score": "10",
+        "risk_info": "DNS Record with zero TTL",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "3 <-> 2"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "ip_source": "142.251.209.10",
+        "port_source": "443",
+        "ip_destination": "10.231.254.96",
+        "port_destination": "58054",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "ip_source": "142.251.209.10",
+        "port_source": "443",
+        "ip_destination": "10.231.254.96",
+        "port_destination": "58057",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "ip_source": "142.251.209.10",
+        "port_source": "443",
+        "ip_destination": "10.231.254.96",
+        "port_destination": "60392",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "ip_source": "216.58.209.42",
+        "port_source": "443",
+        "ip_destination": "10.231.254.96",
+        "port_destination": "60367",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 1"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "126/Google",
+        "risk": "** Unidirectional Traffic **",
+        "risk_score": "10",
+        "risk_info": "No server to client traffic",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 0"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "risk": "** Unidirectional Traffic **",
+        "risk_score": "10",
+        "risk_info": "No server to client traffic",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 0"
+        ]
+    },
+    {
+        "ip_field": "119/Facebook",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "risk": "** Unidirectional Traffic **",
+        "risk_score": "10",
+        "risk_info": "No server to client traffic",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1 <-> 0"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "0/Unknown",
+        "plain_text": "p@UTac",
+        "ip_source": "10.231.254.96",
+        "port_source": "61271",
+        "ip_destination": "88.99.164.231",
+        "port_destination": "412",
+        "risk": "** Susp Entropy **",
+        "risk_score": "10",
+        "risk_info": "Entropy: 6.169 (Executable?)",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1690 <-> 2124"
         ]
     },
     {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "imp.mt48.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "53414",
-        "ip_destination": "95.100.171.136",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "9 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
-        "sni": "mr.eu1.fullstory.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "43962",
-        "ip_destination": "34.111.143.237",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
-        "sni": "sentry.io",
-        "ip_source": "10.215.173.1",
-        "port_source": "60224",
-        "ip_destination": "35.186.247.156",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "8 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
-        "sni": "sentry.io",
-        "ip_source": "10.215.173.1",
-        "port_source": "60240",
-        "ip_destination": "35.186.247.156",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "9 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "5b94af9bf6efc9dea416841602004fbb",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "config2.mparticle.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "56220",
-        "ip_destination": "151.101.130.133",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "9 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "assets",
-        "sni": "assets.klarnacdn.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "6678",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "content",
-        "sni": "content.blackhawknetwork.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "17132",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "content",
-        "sni": "content.blackhawknetwork.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "24930",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "content",
-        "sni": "content.blackhawknetwork.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "32655",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "firebaseinstallations",
-        "sni": "firebaseinstallations.googleapis.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "44122",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "assets",
-        "sni": "assets.klarnacdn.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "57138",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "content",
-        "sni": "content.blackhawknetwork.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "61561",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "klarna",
-        "sni": "ctf.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "18039",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "klarna",
-        "sni": "owp.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "18281",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "klarna",
-        "sni": "owp.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "42590",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "klarna",
-        "sni": "ctf.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "53738",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "klarna",
-        "sni": "owp.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "57192",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "klarna",
-        "sni": "owp.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "59218",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "edgesuite",
-        "sni": "imp.mt48.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "27118",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "edgesuite",
-        "sni": "imp.mt48.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "43410",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "klarna",
-        "sni": "app-api.klarna.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "64461",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "klarnacdn",
-        "sni": "x.klarnacdn.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "27406",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "klarnacdn",
-        "sni": "x.klarnacdn.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "38397",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "klarnacdn",
-        "sni": "x.klarnacdn.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "56080",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "pusher",
-        "sni": "ws-eu.pusher.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "62139",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "settings",
-        "sni": "zecig2-cdn-settings.appsflyersdk.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "7326",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "76poigfg60j",
-        "sni": "d2r76poigfg60j.cloudfront.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "2668",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "76poigfg60j",
-        "sni": "d2r76poigfg60j.cloudfront.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "19010",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "76poigfg60j",
-        "sni": "d2r76poigfg60j.cloudfront.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "28464",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "76poigfg60j",
-        "sni": "d2r76poigfg60j.cloudfront.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "43815",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "76poigfg60j",
-        "sni": "d2r76poigfg60j.cloudfront.net",
-        "ip_source": "10.215.173.1",
-        "port_source": "51445",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "nativesdks",
-        "sni": "nativesdks.mparticle.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "21275",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "identity",
-        "sni": "identity.mparticle.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "64090",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "fullstory",
-        "sni": "mr.eu1.fullstory.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "46144",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "fullstory",
-        "sni": "mr.eu1.fullstory.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "51994",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "config2",
-        "sni": "config2.mparticle.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "29996",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "config2",
-        "sni": "config2.mparticle.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "31791",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "fullstory",
-        "sni": "edge.eu1.fullstory.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "6036",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "sentry",
-        "sni": "sentry.io",
-        "ip_source": "10.215.173.1",
-        "port_source": "10288",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "sentry",
-        "sni": "sentry.io",
-        "ip_source": "10.215.173.1",
-        "port_source": "13184",
-        "ip_destination": "10.215.173.2",
-        "port_destination": "53",
-        "risk": "** Minor Issues **",
-        "risk_score": "10",
-        "risk_info": "DNS Record with zero TTL",
+        "proto_field": "0/Unknown",
+        "ip_source": "10.231.254.96",
+        "port_source": "61270",
+        "ip_destination": "148.251.75.238",
+        "port_destination": "8443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "risk": "** TCP Connection Issues **** Probing Attempt **",
+        "risk_score": "100",
+        "risk_info": "TCP probing attempt / Connection refused (server)",
         "similar_flows_count": 1,
         "exchanged_packets": [
             "1 <-> 1"

@@ -1,10 +1,10 @@
 >> Lists of protocols read:
 
    [+] DNS
-   [+] Google
    [+] HTTP
+   [+] QUIC
    [+] TLS
-   [+] Unknown
+   [+] Telegram
 
 >> Lists of protocols supported:
 
@@ -17,5 +17,4 @@
 [red]>> WARNING PROTOCOLS NOT ANALYZED[/red]
 
    [red][+] DNS[/red]
-   [red][+] Google[/red]
-   [red][+] Unknown[/red]
+   [red][+] Telegram[/red]

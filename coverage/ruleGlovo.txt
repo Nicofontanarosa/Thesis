@@ -1,0 +1,19 @@
+host:"api.glovoapp.com",host:"glovo.dhmedia.io"@Glovo
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 2597
+# [+] Recognized packets: 1513
+# [+] Coverage (%): 58.26
+# [+] Total flows: 42
+# [+] Recognized flows: 14
+# [+] Flow coverage (%): 33.33

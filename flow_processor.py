@@ -20,39 +20,6 @@ log_file_flows = "tmp/flows.txt"
 
 # -------------------------------------------
 
-def fill_missing_ja_from_groups(final_flows, tshark_groups_file):
-
-    # load the TLS groups previously extracted by tshark
-    with open(tshark_groups_file, "r", encoding="utf-8") as f:
-        tshark_groups = json.load(f)
-
-    # build a mapping from SNI → (JA4, JA3S)
-    sni_to_ja = {}
-    for group in tshark_groups:
-        ja4 = group.get('ja4')
-        ja3s = group.get('ja3s')
-        for sni in group.get('sni_list', []):
-            sni_to_ja[sni.lower()] = (ja4, ja3s)
-
-    # update HTTP (or other) flows that are missing JA4/JA3S
-    for flow in final_flows:
-        # skip flows that already have JA3 or JA4 values
-        if flow.get('ja4') or flow.get('ja3s'):
-            continue
-
-        # get the flow SNI in lowercase (if present)
-        sni = flow.get('sni', '').lower()
-        if not sni:
-            continue
-
-        # if the SNI was seen in the tshark groups, fill in the missing values
-        if sni in sni_to_ja:
-            flow["ja4"], flow["ja3s"] = sni_to_ja[sni]
-
-    return final_flows
-
-# -------------------------------------------
-
 def remove_flows_maxsin(final_flows, sni_stats_file="tmp/sni_stats.txt"):
 
     config.clear_log(sni_stats_file)

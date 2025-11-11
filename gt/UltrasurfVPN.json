@@ -1,0 +1,29 @@
+[
+    {
+        "ja3s": "",
+        "ja4": "t13d1913h2_9dc949149365_6e36e74388e1",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [],
+        "flow_count": 0,
+        "packets": 0,
+        "all_ja4_variants": ["t13d1913h2_9dc949149365_6e36e74388e1"],
+        "sni_list_removed": []
+    }
+]

@@ -1,17 +1,17 @@
 >> Using existing nDPI JSON:
 
- [+] .\test\Hide_VPN\Hide-04\Hide.me_VPN_Connection_04.json
+ [+] .\test\MapsOffline\MapsOffline.json
 
 >> Running initial filtering ...
 
- [+] input file: .\test\Hide_VPN\Hide-04\Hide.me_VPN_Connection_04.json
- [+] output file: .\test\Hide_VPN\Hide-04\Hide.me_VPN_Connection_04_filtered.json
+ [+] input file: .\test\MapsOffline\MapsOffline.json
+ [+] output file: .\test\MapsOffline\MapsOffline_filtered.json
 
 >> Running flows filtering ...
 
- [+] input file: .\test\Hide_VPN\Hide-04\Hide.me_VPN_Connection_04_filtered.json
- [+] output file: .\test\Hide_VPN\Hide-04\Hide.me_VPN_Connection_04_output.json
+ [+] input file: .\test\MapsOffline\MapsOffline_filtered.json
+ [+] output file: .\test\MapsOffline\MapsOffline_output.json
 
->> Coverage statistics save in: .\test\Hide_VPN\Hide-04\coverage.txt
+>> Coverage statistics save in: .\test\MapsOffline\coverage.txt
 
 >> All removed flows save in: .\tmp\removed_flows.json

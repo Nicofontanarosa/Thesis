@@ -157,28 +157,6 @@ def protocols_summary(flows):
 
 # -------------------------------------------
 
-def print_risky_flows(final_flows, log_risky_flows="tmp/log_risky_flows.txt"):
-
-    config.clear_log(log_risky_flows)
-
-    for flow in final_flows:
-        # check if the flow has any key containing "risk"
-        risk_keys = [k for k in flow.keys() if "risk" in k.lower()]
-        if not risk_keys:
-            continue  # skip flows without risk
-
-        config.log_message("\n\n>> Risky Flow:\n\n", log_risky_flows)
-        for k, v in flow.items():
-            if k in risk_keys:
-                config.log_message(f"  + [red]{k}: {v}[/red]\n", log_risky_flows)  # red for risk
-            elif "sni" in k.lower() or "hostname" in k.lower():
-                config.log_message(f"  + [green]{k}: {v}[/green]\n", log_risky_flows)  # green for SNI/hostname
-            else:
-                v = str(v).replace('[', '\\[').replace(']', '\\]')
-                config.log_message(f"  + {k}: {v}\n", log_risky_flows)
-
-# -------------------------------------------
-
 def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_stats.txt", log_file_removed_flows="tmp/removed_flows.json", log_file_filtered_flows="tmp/filtered_flows.json", dataset_file="dataset/dataset.json", datasetTLD_file="dataset/datasetTLD.json", dataset_not_protocols_file="dataset/dataset_not_protocols_domains.json", ad_dataset_file="dataset/ad.json"):
 
     # load the main dataset of known domains
@@ -310,6 +288,8 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
                     removed_flows.append(flow)
                     continue
                 
+                #print(f"\n[DEBUG] Processing: {sni_proc}")
+
                 for d in ad_dataset:
                     if sni_proc == d or sni_proc.endswith("." + d):
                         remove_sni = True
@@ -338,8 +318,8 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
             new_parts = []
 
             # 3) remove unwanted parts: numeric, too short, or present in datasetTLD
-            for p in parts: # re.search(r"\d", p) or
-                if len(p) <= constants.N_MIN or p in datasetTLD_domains:
+            for p in parts:
+                if len(p) <= constants.N_MIN or re.search(r"\d", p) or p in datasetTLD_domains:
                     continue
                 else:
                     new_parts.append(p)
@@ -456,11 +436,15 @@ def generate_rules(final_flows, output_file, protoname, sni_stats_file="tmp/sni_
             rc["all_ja4_variants"] = find_ja4_by_suffix(rc["ja4"], final_flows)
 
     # save the raw groups
-    with open("tmp/raw_groups.json", "w", encoding="utf-8") as f:
-        json.dump(raw_groups, f, indent=4)
+    #with open("tmp/raw_groups.json", "w", encoding="utf-8") as f:
+    #    json.dump(raw_groups, f, indent=4)
 
     # merge groups based on SNI
     sni_to_use = group_sni.merge_flows(raw_groups)
+
+    # save the raw groups
+    with open("tmp/raw_groups.json", "w", encoding="utf-8") as f:
+        json.dump(raw_groups, f, indent=4)
 
     #print(f"\n[DEBUG] Merged Cluster: {sni_to_use}")
 

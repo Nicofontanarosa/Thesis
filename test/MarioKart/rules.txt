@@ -1,0 +1,19 @@
+host:"api.mariokarttour.com"@Mariokart
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 3303
+# [+] Recognized packets: 952
+# [+] Coverage (%): 28.82
+# [+] Total flows: 63
+# [+] Recognized flows: 50
+# [+] Flow coverage (%): 79.37

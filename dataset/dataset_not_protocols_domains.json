@@ -4,7 +4,11 @@
     "Vinted",
     "Subito",
     "Trenitalia",
-    "Glovo"
+    "Glovo",
+    "Strava",
+    "MarinoBus",
+    "justeat",
+    "PlanetVPN"
   ],
   
   "domains": [
@@ -31,6 +35,14 @@
 
     "brave.com",
     "cybernews.com",
-    "samsungcloud.com"
+    "samsungcloud.com",
+
+    "mapbox.com",
+
+    "expo.dev",
+
+    "usbla.net",
+
+    "assets.remerge.io"
   ]
 }

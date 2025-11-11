@@ -176,6 +176,22 @@
     },
     {
         "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310ap_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "risk": "** Known Proto on Non Std Port **** Missing SNI TLS Extn **** Uncommon TLS ALPN **",
+        "risk_score": "150",
+        "risk_info": "No server to client traffic / application-servic / SNI should always be present / Expected on port 443",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "38 <-> 38",
+            "38 <-> 37"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "130/HTTP_Connect",
         "url": "api.iterable.com:443",

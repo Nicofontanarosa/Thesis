@@ -1,0 +1,19 @@
+host:"api.marinobus.it"@Marinobus
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 744
+# [+] Recognized packets: 648
+# [+] Coverage (%): 87.1
+# [+] Total flows: 22
+# [+] Recognized flows: 8
+# [+] Flow coverage (%): 36.36

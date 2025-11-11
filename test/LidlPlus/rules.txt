@@ -1,0 +1,40 @@
+host:"lidl.it",host:"lidlplus.com"@Lidlplus
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+#     [+] appgateway.lidlplus.com
+#     [+] brochures.lidlplus.com
+#     [+] localization.lidlplus.com
+#     [+] opengift.lidlplus.com
+#     [+] segments.lidlplus.com
+#     [+] shopping-list.lidlplus.com
+#     [+] shortcuts.lidlplus.com
+#     [+] static-coupons.lidlplus.com
+#     [+] surveys.lidlplus.com
+
+--------------------------------------------------------------
+host:"leaflets.schwarz",host:"lidl.it"@Lidlplus
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+#     [+] endpoints.leaflets.schwarz
+#     [+] imgproxy.leaflets.schwarz
+#     [+] lidl.leaflets.schwarz
+
+--------------------------------------------------------------
+
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 4458
+# [+] Recognized packets: 3968
+# [+] Coverage (%): 89.01
+# [+] Total flows: 83
+# [+] Recognized flows: 52
+# [+] Flow coverage (%): 62.65

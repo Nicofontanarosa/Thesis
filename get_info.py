@@ -3,53 +3,13 @@
 # File: get_info.py
 #################################################################
 
-import requests
-import whois as whois
-import json
-import os
 # my file
-import constants
 import config
 
 # -------------------------------------------
 
 log_file_rules = "tmp/rules.txt"
 config.clear_log(log_file_rules)
-
-# -------------------------------------------
-
-def classify_domain_AI(domain):
-
-    # set up the base URL for the local Ollama API
-    url = "http://localhost:11434/api/chat"
-
-    # define the model and the input prompt
-    prompt = f"You are a traffic monitoring assistant. Tell me in a COUPLE OF WORD the name of the service / application to which this domain belongs: {domain}"
-
-    # define the payload
-    payload = {
-        "model": "gemma3",  # replace with the model name you're using
-        "messages": [{"role": "user", "content": prompt}]
-    }
-
-    # send the HTTP POST request with streaming enabled
-    response = requests.post(url, json=payload)
-    message = ""
-    # check the response status
-    if response.status_code == 200:
-        for line in response.iter_lines(decode_unicode=True):
-            if line:  # ignore empty lines
-                try:
-                    json_data = json.loads(line)
-                    if "message" in json_data and "content" in json_data["message"]:
-                        content = json_data["message"]["content"]
-                        # keep only letters, numbers, and spaces
-                        filtered = "".join(c for c in content if c.isalnum() or c.isspace())
-                        message += filtered + ""
-                except json.JSONDecodeError:
-                    print(f"\nFailed to parse line: {line}")
-
-    return message
 
 # -------------------------------------------
 
@@ -75,22 +35,6 @@ def classify_domains(groups, rules_file, protoname):
         instructions = ""
         rule = ""
         
-        if constants.SHOW_NAME_HINT:
-
-            for d in snis:
-                try:
-                    w = whois.whois(d)
-                    protoname = w.get('registrant_organization') or w.get('admin_organization') or w.get('org')
-                    #print(f"\n---{org.lower()}---{ 'true' if org.lower() in constants.REDACTED_ORGS else 'false'}----")
-
-                    if protoname is None or protoname.lower() in constants.REDACTED_ORGS:
-                        protoname = classify_domain_AI(d)
-                    else:
-                        protoname = classify_domain_AI(d)
-
-                except Exception as e:
-                    protoname = classify_domain_AI(d)
-
         # === Prefer SNI if available ===
         if snis:
             removed_snis = [f"\n#     [+] {j}" for j in snis_removed]

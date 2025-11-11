@@ -1,7 +1,0 @@
-host:"img.notionusercontent.com",host:"notion.so",host:"o324374.ingest.sentry.io"@
-
->> To add this rule based on SNI:
-   [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"img.notionusercontent.com",host:"notion.so",host:"o324374.ingest.sentry.io"@
-
---------------------------------------------------------------

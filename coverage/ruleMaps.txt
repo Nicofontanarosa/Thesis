@@ -1,0 +1,19 @@
+host:"mobilemaps.googleapis.com"@Maps
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 6309
+# [+] Recognized packets: 6127
+# [+] Coverage (%): 97.12
+# [+] Total flows: 73
+# [+] Recognized flows: 55
+# [+] Flow coverage (%): 75.34

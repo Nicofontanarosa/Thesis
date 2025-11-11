@@ -1,0 +1,28 @@
+host:"portal.seafy.com"@Xrptunnelvpn
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+host:"aliavpn.xyz"@Xrptunnelvpn
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 3339
+# [+] Recognized packets: 3207
+# [+] Coverage (%): 96.05
+# [+] Total flows: 43
+# [+] Recognized flows: 18
+# [+] Flow coverage (%): 41.86

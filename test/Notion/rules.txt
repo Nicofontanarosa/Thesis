@@ -1,0 +1,31 @@
+host:"notion.so"@Notion
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+#     [+] msgstore.www.notion.so
+
+--------------------------------------------------------------
+host:"notion.so"@Notion
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+#     [+] exp.notion.so
+#     [+] www.notion.so
+
+--------------------------------------------------------------
+
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 33538
+# [+] Recognized packets: 32859
+# [+] Coverage (%): 97.98
+# [+] Total flows: 59
+# [+] Recognized flows: 31
+# [+] Flow coverage (%): 52.54

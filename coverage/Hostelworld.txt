@@ -1,0 +1,10 @@
+
+
+>> Coverage statistics for using nDPI only:
+
+ [+] Total packets: 49482
+ [+] Recognized packets: 32532
+ [+] Coverage (%): 65.75
+ [+] Total flows: 233
+ [+] Recognized flows: 108
+ [+] Flow coverage (%): 46.35

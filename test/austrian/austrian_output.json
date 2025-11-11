@@ -255,6 +255,24 @@
         ]
     },
     {
+        "ip_field": "461/AWS_EC2",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
+        "sni": "collect-eu-central-1.tealiumiq.com",
+        "ip_source": "192.168.2.4",
+        "port_source": "52884",
+        "ip_destination": "3.73.7.244",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "67 <-> 45"
+        ]
+    },
+    {
         "ip_field": "220/Cloudflare",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -350,6 +368,24 @@
             "34 <-> 28",
             "14 <-> 16",
             "15 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "461/AWS_EC2",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
+        "sni": "collect.tealiumiq.com",
+        "ip_source": "192.168.2.4",
+        "port_source": "52893",
+        "ip_destination": "18.193.172.145",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "23 <-> 24"
         ]
     },
     {
@@ -596,6 +632,60 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "19 <-> 16"
+        ]
+    },
+    {
+        "ip_field": "461/AWS_EC2",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
+        "sni": "visitor-service-eu-central-1.tealiumiq.com",
+        "ip_source": "192.168.2.4",
+        "port_source": "52885",
+        "ip_destination": "3.69.191.108",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "461/AWS_EC2",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
+        "sni": "collect.tealiumiq.com",
+        "ip_source": "192.168.2.4",
+        "port_source": "52836",
+        "ip_destination": "35.159.47.59",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 19"
+        ]
+    },
+    {
+        "ip_field": "461/AWS_EC2",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1314h2_f57a46bbacb6_14788d8d241b",
+        "sni": "collect.tealiumiq.com",
+        "ip_source": "192.168.2.4",
+        "port_source": "52879",
+        "ip_destination": "3.65.136.91",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_d29295416479/macOS",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 17"
         ]
     },
     {

@@ -1,9 +1,0 @@
-
->> Coverage statistics:
-
- [+] Total packets: 62149
- [+] Recognized packets: 7184
- [+] Coverage (%): 11.56
- [+] Total flows: 32
- [+] Recognized flows: 18
- [+] Flow coverage (%): 56.25

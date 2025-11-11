@@ -1,0 +1,31 @@
+host:"offline-maps.gvt1.com"@Mapsoffline
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+#     [+] rr1---sn-uv2pm-ugol.offline-maps.gvt1.com
+#     [+] rr2---sn-uv2pm-ugol.offline-maps.gvt1.com
+#     [+] rr4---sn-hpa7kn76.offline-maps.gvt1.com
+
+--------------------------------------------------------------
+host:"rr1---sn-uv2pm-ugol.offline-maps.gvt1.com"@Mapsoffline
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 53621
+# [+] Recognized packets: 49321
+# [+] Coverage (%): 91.98
+# [+] Total flows: 68
+# [+] Recognized flows: 43
+# [+] Flow coverage (%): 63.24

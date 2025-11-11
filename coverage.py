@@ -4,8 +4,6 @@
 #################################################################
 
 import json
-# my file
-import functions
 
 # ------------- Helper functions ------------
 
@@ -35,7 +33,17 @@ def count_packets(flow):
 
 # -------------------------------------------
 
-def calculate_coverage(flows_file, recognized_file):
+NDPI_PROTOCOLS = ["youtube", "facebook", "whatsapp", "instagram",
+                  "netflix", "twitch", "discord", "google", "googleservices",
+                  "cloudflare", "yahoo", "xiaomi", "crashlytics", "windowsupdate",
+                  "microsoft", "microsoft365", "msdo", "ssdp", "amazonaws", "temu",
+                  "tiktok", "spotify", "dropbox", "skype", "zoom", "linkedin", "telegram",
+                  "wireguard", "googlecloud", "whatsappfiles", "nintendo", "playstore",
+                  "azure", "salesforce", "tuyalp", "icloudprivaterelay",
+                  "soap", "applepush", "appleitunes", "apple", "appleicloud", "ocsp",
+                  "netbios", "applestore", "cybersec", "doh_dot", "openvpn", "stun", "ms_onedrive", "github"]
+
+def calculate_coverage(flows_file, recognized_file, nDPI = False):
 
     # load flow data and recognized SNI rules
     with open(flows_file, "r") as f:
@@ -49,7 +57,7 @@ def calculate_coverage(flows_file, recognized_file):
     recognized_certs = []
     for rule in recognized_rules:
         recognized_sni.update(rule.get('sni_list', []))
-        recognized_ja4.add(rule.get('ja4'))
+        recognized_ja4.update(rule.get('all_ja4_variants', []))
         # store certificates as dict for easy comparison
         cert_dict = {k: v for k, v in rule.get('certificate', []) if v is not None}
         recognized_certs.append(cert_dict)
@@ -67,41 +75,56 @@ def calculate_coverage(flows_file, recognized_file):
     recognized_packets = 0
     recognized_flows = 0
 
-    for flow in final_flows:
+    # --- Step 2.1: Add nDPI recognized packets and flows ---
+    for flow in list(final_flows):  # usa una copia per evitare errori di modifica durante l'iterazione
+        proto_field = (flow.get("proto_field") or "").lower()
+        #print(f"\n[DEBUG] proto_field: {proto_field}")
 
-        flow_sni = (flow.get('sni'))
-        if flow_sni: flow_sni = flow_sni.lower()
-        flow_ja4 = functions.normalize_ja4(flow.get('ja4'))
-        flow_cert = {
-            "certificate": flow.get('certificate'),
-            "issuer": flow.get('issuer'),
-            "servernames": flow.get('servernames'),
-            "subject": flow.get('subject')
-        }
+        for p in NDPI_PROTOCOLS:
+            if proto_field.endswith(p) or p in proto_field:
+                #print(f"[DEBUG] Matched NDPI protocol pattern: {p}")
+                recognized_packets += count_packets(flow)
+                recognized_flows += flow.get('similar_flows_count', 0)
+                final_flows.remove(flow)  # evita doppio conteggio
+                break  # esci dal ciclo interno per evitare più match sullo stesso flow
 
-        #print(f"\n[DEBUG] SNI flow: {flow_sni}, JA4 flow: {flow_ja4}, CERT flow: {flow_sni or flow_ja4 or flow_cert["certificate"] or flow_cert["issuer"] or flow_cert["servernames"] or flow_cert["subject"]}")
+    if not nDPI:
+    
+        for flow in final_flows:
 
-        recognized = False
+            flow_sni = (flow.get('sni'))
+            if flow_sni: flow_sni = flow_sni.lower()
+            flow_ja4 = flow.get('ja4')
+            flow_cert = {
+                "certificate": flow.get('certificate'),
+                "issuer": flow.get('issuer'),
+                "servernames": flow.get('servernames'),
+                "subject": flow.get('subject')
+            }
 
-        # --- Priority 1: SNI ---
-        if flow_sni:
-            if matches_any_sni(flow_sni, recognized_sni):
-                recognized = True
+            #print(f"\n[DEBUG] SNI flow: {flow_sni}, JA4 flow: {flow_ja4}, CERT flow: {flow_sni or flow_ja4 or flow_cert["certificate"] or flow_cert["issuer"] or flow_cert["servernames"] or flow_cert["subject"]}")
 
-        # --- Priority 2: Certificate ---
-        elif any(flow_cert.values()):
-            if matches_any_cert(flow_cert, recognized_certs):
-                recognized = True
+            recognized = False
 
-        # --- Priority 3: JA4 ---
-        elif flow_ja4:
-            if flow_ja4 in recognized_ja4:
-                recognized = True
+            # --- Priority 1: SNI ---
+            if flow_sni:
+                if matches_any_sni(flow_sni, recognized_sni):
+                    recognized = True
 
-        # --- Count recognized flows ---
-        if recognized:
-            recognized_packets += count_packets(flow)
-            recognized_flows += flow.get('similar_flows_count', 0)
+            # --- Priority 2: Certificate ---
+            elif any(flow_cert.values()):
+                if matches_any_cert(flow_cert, recognized_certs):
+                    recognized = True
+
+            # --- Priority 3: JA4 ---
+            elif flow_ja4:
+                if recognized_ja4 and flow_ja4 in recognized_ja4:
+                    recognized = True
+
+            # --- Count recognized flows ---
+            if recognized:
+                recognized_packets += count_packets(flow)
+                recognized_flows += flow.get('similar_flows_count', 0)
 
     # --- Step 3: Compute percentages ---
     packet_coverage = (recognized_packets / total_packets * 100) if total_packets > 0 else 0.0

@@ -4,8 +4,7 @@
 
 >> All SNIs seen:
 
-   [+] [green]api.hide.me[/green]
-   [+] [green]www.msftncsi.com[/green]
+   [+] [green]dsadata.intel.com[/green]
 
 
 >> Removed flows 1° filtering ( Exclude words and know domains ):
@@ -18,5 +17,4 @@
 
 >> Remaining SNIs:
 
-   [+] [green]api.hide.me[/green]
-   [+] [green]www.msftncsi.com[/green]
+   [+] [green]dsadata.intel.com[/green]

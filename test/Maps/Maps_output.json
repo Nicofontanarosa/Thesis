@@ -1,0 +1,22 @@
+[
+    {
+        "ip_field": "265/AmazonAWS",
+        "transport_protocol": "TCP",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "t13d1812ht_e8a523a41297_3d739a8c35e1",
+        "sni": "sgepodownload.mediatek.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61728",
+        "ip_destination": "108.138.192.63",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 3,
+        "exchanged_packets": [
+            "14 <-> 14",
+            "14 <-> 14",
+            "13 <-> 13"
+        ]
+    }
+]

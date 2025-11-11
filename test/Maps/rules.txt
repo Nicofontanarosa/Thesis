@@ -1,0 +1,19 @@
+host:"sgepodownload.mediatek.com"@Maps
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 6309
+# [+] Recognized packets: 6197
+# [+] Coverage (%): 98.22
+# [+] Total flows: 73
+# [+] Recognized flows: 57
+# [+] Flow coverage (%): 78.08

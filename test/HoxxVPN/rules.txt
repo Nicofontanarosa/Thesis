@@ -1,0 +1,19 @@
+host:"hoxx.com"@Hoxxvpn
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 6851
+# [+] Recognized packets: 69
+# [+] Coverage (%): 1.01
+# [+] Total flows: 191
+# [+] Recognized flows: 9
+# [+] Flow coverage (%): 4.71

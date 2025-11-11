@@ -1,0 +1,58 @@
+[
+    {
+        "ja3s": "",
+        "ja4": "",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "hide.me"
+        ],
+        "flow_count": 0,
+        "packets": 0,
+        "all_ja4_variants": [],
+        "sni_list_removed": []
+    },
+    {
+        "ja3s": "",
+        "ja4": "t13d1511h2_8daaf6152771_40271e0a5736",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [],
+        "flow_count": 0,
+        "packets": 0,
+        "all_ja4_variants": ["t13d1511h2_8daaf6152771_40271e0a5736"],
+        "sni_list_removed": []
+    }
+]

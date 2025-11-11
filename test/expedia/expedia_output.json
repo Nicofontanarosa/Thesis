@@ -1618,26 +1618,6 @@
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "130/HTTP_Connect",
-        "url": "znbbf46ejn8vkhysu-expediaxm.siteintercept.qualtrics.com:443",
-        "plain_text": "CONNECT z",
-        "sni": "znbbf46ejn8vkhysu-expediaxm.siteintercept.qualtrics.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "65039",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **** Susp Entropy **",
-        "risk_score": "160",
-        "risk_info": "Entropy: 5.064 (Executable?) / Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "48 <-> 54"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130/HTTP_Connect",
         "url": "static.pay.expedia.com:443",
         "plain_text": "CONNECT static.pay.expedia.com",
         "sni": "static.pay.expedia.com",
@@ -1652,28 +1632,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "32 <-> 37"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130/HTTP_Connect",
-        "url": "mpsnare.iesnare.com:443",
-        "plain_text": "/aCONNECT mpsnare.iesnare.com",
-        "sni": "mpsnare.iesnare.com",
-        "ip_source": "192.168.0.86",
-        "port_source": "49669",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 3,
-        "exchanged_packets": [
-            "21 <-> 38",
-            "16 <-> 16",
-            "16 <-> 16"
         ]
     },
     {
@@ -1719,6 +1677,22 @@
     },
     {
         "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0310ap_55b375c5d22e_f2a83c8e78ae",
+        "quic_version": "V-1",
+        "plain_text": "DB21WWd",
+        "risk": "** Known Proto on Non Std Port **** Missing SNI TLS Extn **** Uncommon TLS ALPN **",
+        "risk_score": "150",
+        "risk_info": "No server to client traffic / application-servic / SNI should always be present / Expected on port 443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "38 <-> 38"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "130/HTTP_Connect",
         "url": "ep2.adtrafficquality.google:443",
@@ -1755,6 +1729,29 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "18 <-> 25"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "130/HTTP_Connect",
+        "url": "www.trvl-px.com:443",
+        "plain_text": "CONNECT www.trvl",
+        "sni": "www.trvl-px.com",
+        "ip_source": "192.168.0.86",
+        "port_source": "49849",
+        "ip_destination": "192.168.0.21",
+        "port_destination": "9000",
+        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
+        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
+        "risk_score": "150",
+        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "25 <-> 29",
+            "20 <-> 22",
+            "16 <-> 19",
+            "17 <-> 18"
         ]
     },
     {
@@ -1925,26 +1922,6 @@
         "exchanged_packets": [
             "18 <-> 19",
             "13 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130/HTTP_Connect",
-        "url": "h.online-metrix.net:443",
-        "plain_text": "CONNECT h.online",
-        "sni": "h.online-metrix.net",
-        "ip_source": "192.168.0.86",
-        "port_source": "49728",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "18 <-> 19"
         ]
     },
     {
@@ -2134,47 +2111,6 @@
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "130/HTTP_Connect",
-        "url": "insight.adsrvr.org:443",
-        "plain_text": "CONNECT insight.adsrvr.org",
-        "sni": "insight.adsrvr.org",
-        "ip_source": "192.168.0.86",
-        "port_source": "49844",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "15 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130/HTTP_Connect",
-        "url": "match.adsrvr.org:443",
-        "plain_text": "CONNECT match.adsrvr.org",
-        "sni": "match.adsrvr.org",
-        "ip_source": "192.168.0.86",
-        "port_source": "49674",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "17 <-> 17",
-            "13 <-> 13"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130/HTTP_Connect",
         "url": "www.homeaway.com:443",
         "plain_text": "CONNECT www.homeaway.com",
         "sni": "www.homeaway.com",
@@ -2230,26 +2166,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "13 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "130/HTTP_Connect",
-        "url": "c.go-mpulse.net:443",
-        "plain_text": "CONNECT c.go",
-        "sni": "c.go-mpulse.net",
-        "ip_source": "192.168.0.86",
-        "port_source": "49879",
-        "ip_destination": "192.168.0.21",
-        "port_destination": "9000",
-        "tcp_fingerprint": "194_64_65535_d29295416479/macOS",
-        "risk": "** Known Proto on Non Std Port **** HTTP Susp User-Agent **",
-        "risk_score": "150",
-        "risk_info": "Empty or missing User-Agent / Expected on port 8080",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 16"
         ]
     },
     {

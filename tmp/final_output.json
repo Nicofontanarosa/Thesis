@@ -1,57 +1,37 @@
 [
     {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1511h2_8daaf6152771_40271e0a5736",
-        "ip_source": "10.231.254.96",
-        "port_source": "61269",
-        "ip_destination": "88.99.164.231",
-        "port_destination": "432",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "risk": "** Known Proto on Non Std Port **** Missing SNI TLS Extn **** ALPN/SNI Mismatch **",
-        "risk_score": "150",
-        "risk_info": "h2 / SNI should always be present / Expected on port 443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "17 <-> 17"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
-        "sni": "api.hide.me",
-        "ip_source": "10.231.254.96",
-        "port_source": "61268",
-        "ip_destination": "45.76.88.89",
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "plain_text": "bwAHTf",
+        "ip_source": "10.131.200.96",
+        "port_source": "61781",
+        "ip_destination": "216.239.38.135",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "10 <-> 9"
+            "2327 <-> 1746"
         ]
     },
     {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
-        "proto_field": "7/HTTP",
-        "url": "www.msftncsi.com/ncsi.txt",
-        "user_agent": "okhttp/4.11.0",
-        "plain_text": "GET /ncsi.t",
-        "sni": "www.msftncsi.com",
-        "ip_source": "10.231.254.96",
-        "port_source": "61255",
-        "ip_destination": "151.29.122.81",
-        "port_destination": "80",
+        "proto_field": "91/TLS",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "ja4": "t13d201200_2b729b4bf6f3_89322cc15493",
+        "sni": "dsadata.intel.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "52030",
+        "ip_destination": "83.224.69.211",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "2 <-> 2"
+            "6 <-> 6"
         ]
     }
 ]

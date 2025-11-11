@@ -1,0 +1,19 @@
+host:"api.phantom.avira-vpn.com"@Aviravpn
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 7750
+# [+] Recognized packets: 6977
+# [+] Coverage (%): 90.03
+# [+] Total flows: 102
+# [+] Recognized flows: 55
+# [+] Flow coverage (%): 53.92

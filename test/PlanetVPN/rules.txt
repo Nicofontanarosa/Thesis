@@ -1,0 +1,19 @@
+host:"fuck.rkn"@Planetvpn
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 31109
+# [+] Recognized packets: 25673
+# [+] Coverage (%): 82.53
+# [+] Total flows: 307
+# [+] Recognized flows: 231
+# [+] Flow coverage (%): 75.24

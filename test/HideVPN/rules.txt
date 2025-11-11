@@ -1,0 +1,25 @@
+ja4:t13d1511h2_8daaf6152771_40271e0a5736@Hidevpn
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+--------------------------------------------------------------
+host:"api.hide.me"@Hidevpn
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
+--------------------------------------------------------------
+
+
+# Coverage statistics for all flows:
+
+# [+] Total packets: 4361
+# [+] Recognized packets: 98
+# [+] Coverage (%): 2.25
+# [+] Total flows: 49
+# [+] Recognized flows: 6
+# [+] Flow coverage (%): 12.24

@@ -12,16 +12,8 @@
 # -------------------------------------------
 # parameters used by all scripts 
 
-# show name hints in the output (requires whois and AI classification)
-SHOW_NAME_HINT = False
-# redacted organization names for whois
-REDACTED_ORGS = {"redacted for privacy", "data redacted", "hidden", "not disclosed", "domains by proxy, llc", "identity protection service", "registration private"}
-# check and fill missing JA3/JA4 for HTTP flows and others using tshark groups
-CHECK_JA_MISSING = False
 # remove all SNI domains shorter than 3 characters
 N_MIN = 3
-
-# -------------------------------------------
 
 # show nDPI protocol in the output
 SHOW_NDPI_PROTOCOLS = False
@@ -56,9 +48,6 @@ EXCLUDE_WORDS = [
     "edgekey",
     "edgesuite",
     "azureedge",
-    "googleusercontent",
-    "googleapis",
-    "googleusercontent",
     "stackpath",
     "cdnetworks",
     "incap",

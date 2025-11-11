@@ -1,7 +1,0 @@
-host:"atlassian.com",host:"featureassets.org",host:"mapy.cz",host:"sentry.io"@
-
->> To add this rule based on SNI:
-   [+] Open the file: `nDPI/example/protos.txt`
-   [+] Paste the following rule: host:"atlassian.com",host:"featureassets.org",host:"mapy.cz",host:"sentry.io"@
-
---------------------------------------------------------------

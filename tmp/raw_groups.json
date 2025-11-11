@@ -1,35 +1,7 @@
 [
     {
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "8daaf6152771_40271e0a5736",
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
-        ],
-        "sni_list": [],
-        "flow_count": 1,
-        "packets": 34,
-        "all_ja4_variants": [
-            "t13d1511h2_8daaf6152771_40271e0a5736"
-        ]
-    },
-    {
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "8daaf6152771_fadfdae04b4e",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "ja4": "2b729b4bf6f3_89322cc15493",
         "certificate": [
             [
                 "certificate",
@@ -49,39 +21,13 @@
             ]
         ],
         "sni_list": [
-            "api.hide.me"
+            "dsadata.intel.com"
         ],
         "flow_count": 1,
-        "packets": 19,
+        "packets": 12,
         "all_ja4_variants": [
-            "t13d1514h2_8daaf6152771_fadfdae04b4e"
-        ]
-    },
-    {
-        "ja3s": null,
-        "ja4": null,
-        "certificate": [
-            [
-                "certificate",
-                null
-            ],
-            [
-                "issuer",
-                null
-            ],
-            [
-                "servernames",
-                null
-            ],
-            [
-                "subject",
-                null
-            ]
+            "t13d201200_2b729b4bf6f3_89322cc15493"
         ],
-        "sni_list": [
-            "www.msftncsi.com"
-        ],
-        "flow_count": 1,
-        "packets": 4
+        "sni_list_removed": []
     }
 ]

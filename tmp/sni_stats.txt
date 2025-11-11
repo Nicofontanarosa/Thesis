@@ -4,17 +4,72 @@
 
 >> All SNIs seen:
 
+   [+] [green]android.googleapis.com[/green]
+   [+] [green]drivefrontend-pa.googleapis.com[/green]
    [+] [green]dsadata.intel.com[/green]
+   [+] [green]encrypted-tbn0.gstatic.com[/green]
+   [+] [green]encrypted-tbn2.gstatic.com[/green]
+   [+] [green]feedback-pa.googleapis.com[/green]
+   [+] [green]firebaselogging.googleapis.com[/green]
+   [+] [green]fonts.gstatic.com[/green]
+   [+] [green]geller-pa.googleapis.com[/green]
+   [+] [green]gz0.googleusercontent.com[/green]
+   [+] [green]lh3.googleusercontent.com[/green]
+   [+] [green]notifications-pa.googleapis.com[/green]
+   [+] [green]op-de.storage.googleapis.com[/green]
+   [+] [green]or-se.storage.googleapis.com[/green]
+   [+] [green]play.googleapis.com[/green]
+   [+] [green]rr1---sn-uv2pm-ugol.offline-maps.gvt1.com[/green]
+   [+] [green]rr2---sn-uv2pm-ugol.offline-maps.gvt1.com[/green]
+   [+] [green]rr4---sn-hpa7kn76.offline-maps.gvt1.com[/green]
+   [+] [green]signaler-pa.googleapis.com[/green]
+   [+] [green]t0.gstatic.com[/green]
+   [+] [green]t2.gstatic.com[/green]
+   [+] [green]www.googleapis.com[/green]
+   [+] [green]www.gstatic.com[/green]
+   [+] [green]www.msftconnecttest.com[/green]
 
 
 >> Removed flows 1° filtering ( Exclude words and know domains ):
 
+   [+] [red]play.googleapis.com[/red]
 
 
 >> Removed flows 2° filtering ( Remove known suffixes, not_protocols domains and ad domains ):
 
+   [+] [red]or-se.storage.googleapis.com[/red]
+   [+] [red]op-de.storage.googleapis.com[/red]
+   [+] [red]or-se.storage.googleapis.com[/red]
+   [+] [red]encrypted-tbn0.gstatic.com[/red]
+   [+] [red]gz0.googleusercontent.com[/red]
+   [+] [red]lh3.googleusercontent.com[/red]
+   [+] [red]encrypted-tbn2.gstatic.com[/red]
+   [+] [red]notifications-pa.googleapis.com[/red]
+   [+] [red]feedback-pa.googleapis.com[/red]
+   [+] [red]geller-pa.googleapis.com[/red]
+   [+] [red]www.gstatic.com[/red]
+   [+] [red]android.googleapis.com[/red]
+   [+] [red]fonts.gstatic.com[/red]
+   [+] [red]lh3.googleusercontent.com[/red]
+   [+] [red]gz0.googleusercontent.com[/red]
+   [+] [red]t2.gstatic.com[/red]
+   [+] [red]www.googleapis.com[/red]
+   [+] [red]encrypted-tbn0.gstatic.com[/red]
+   [+] [red]t0.gstatic.com[/red]
+   [+] [red]feedback-pa.googleapis.com[/red]
+   [+] [red]geller-pa.googleapis.com[/red]
+   [+] [red]fonts.gstatic.com[/red]
+   [+] [red]encrypted-tbn2.gstatic.com[/red]
+   [+] [red]www.gstatic.com[/red]
+   [+] [red]firebaselogging.googleapis.com[/red]
+   [+] [red]signaler-pa.googleapis.com[/red]
+   [+] [red]drivefrontend-pa.googleapis.com[/red]
+   [+] [red]www.msftconnecttest.com[/red]
 
 
 >> Remaining SNIs:
 
    [+] [green]dsadata.intel.com[/green]
+   [+] [green]rr1---sn-uv2pm-ugol.offline-maps.gvt1.com[/green]
+   [+] [green]rr2---sn-uv2pm-ugol.offline-maps.gvt1.com[/green]
+   [+] [green]rr4---sn-hpa7kn76.offline-maps.gvt1.com[/green]

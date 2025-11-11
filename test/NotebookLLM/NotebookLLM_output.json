@@ -1,1 +1,31 @@
-[]
+[
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "d75f9129bb5d05492a65ff78e081bcb2",
+        "ja4": "t13d1712gr_5b57614c22b0_ef7df7f74e48",
+        "sni": "notebooklm-pa.googleapis.com",
+        "ip_source": "10.215.173.1",
+        "port_source": "39138",
+        "ip_destination": "216.58.204.138",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_b8d6cf600040/Unknown",
+        "risk": "** Uncommon TLS ALPN **",
+        "risk_score": "50",
+        "risk_info": "grpc-ex",
+        "similar_flows_count": 9,
+        "exchanged_packets": [
+            "31 <-> 35",
+            "14 <-> 14",
+            "14 <-> 14",
+            "13 <-> 14",
+            "13 <-> 13",
+            "13 <-> 13",
+            "13 <-> 13",
+            "11 <-> 12",
+            "11 <-> 11"
+        ]
+    }
+]

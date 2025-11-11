@@ -1,6 +1,23 @@
-# unknown@UnknownProto
+host:"offline-maps.gvt1.com"@Mapsoffline
 
-# [red]>> NOT ENOUGH INFORMATION TO GENERATE A RULE[/red]
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+#     [+] rr1---sn-uv2pm-ugol.offline-maps.gvt1.com
+#     [+] rr2---sn-uv2pm-ugol.offline-maps.gvt1.com
+#     [+] rr4---sn-hpa7kn76.offline-maps.gvt1.com
+
+--------------------------------------------------------------
+host:"rr1---sn-uv2pm-ugol.offline-maps.gvt1.com"@Mapsoffline
+
+# To add this rule based on SNI:
+#   [+] Use this file when executing nDPI with -p `this file`
+
+#   >> All removed SNI based on aggregation:
+ 
+
 --------------------------------------------------------------
 
 

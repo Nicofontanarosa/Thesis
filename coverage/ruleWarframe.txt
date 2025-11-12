@@ -36,9 +36,9 @@ ja4:t13d1516h2_8daaf6152771_d8a2da3f94cd@Warframe
 
 # Coverage statistics for all flows:
 
-# [+] Total packets: 8896
-# [+] Recognized packets: 2793
-# [+] Coverage (%): 31.4
-# [+] Total flows: 653
-# [+] Recognized flows: 76
-# [+] Flow coverage (%): 11.64
+# [+] Total packets: 8083
+# [+] Recognized packets: 7682
+# [+] Coverage (%): 95.04
+# [+] Total flows: 248
+# [+] Recognized flows: 233
+# [+] Flow coverage (%): 93.95

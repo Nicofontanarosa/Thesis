@@ -17,9 +17,9 @@ host:"api.hide.me"@Hidevpn
 
 # Coverage statistics for all flows:
 
-# [+] Total packets: 4361
+# [+] Total packets: 4354
 # [+] Recognized packets: 98
 # [+] Coverage (%): 2.25
-# [+] Total flows: 49
+# [+] Total flows: 48
 # [+] Recognized flows: 6
-# [+] Flow coverage (%): 12.24
+# [+] Flow coverage (%): 12.5

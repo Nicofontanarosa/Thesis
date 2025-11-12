@@ -16,7 +16,7 @@
 N_MIN = 3
 
 # show nDPI protocol in the output
-SHOW_NDPI_PROTOCOLS = False
+SHOW_NDPI_PROTOCOLS = True
 
 # percentage of total packets to use as threshold for top SNI selection
 TOP_PERCENT = 0.05

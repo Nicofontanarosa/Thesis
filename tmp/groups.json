@@ -25,9 +25,7 @@
         ],
         "flow_count": 3,
         "packets": 17369,
-        "all_ja4_variants": [
-            "q13d0311h0_55b375c5d22e_653d80c3fe9d"
-        ],
+        "all_ja4_variants": [],
         "sni_list_removed": [
             "rr1---sn-uv2pm-ugol.offline-maps.gvt1.com",
             "rr2---sn-uv2pm-ugol.offline-maps.gvt1.com",
@@ -60,9 +58,7 @@
         ],
         "flow_count": 1,
         "packets": 8841,
-        "all_ja4_variants": [
-            "t13d1516h2_8daaf6152771_d8a2da3f94cd"
-        ],
+        "all_ja4_variants": [],
         "sni_list_removed": []
     }
 ]

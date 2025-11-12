@@ -6,6 +6,10 @@ import shutil
 
 def run_coverage_tests():
     # Tutte le applicazioni da testare
+    applications1 = [
+        "FireNetVPN"
+    ]
+
     applications = [
         "Doctor_App", "Trenitalia", "Subito", "Strava", "Notion", "MarioKart", "MarinoBus", "Ryanair", "Crunchyroll",
         "Mapy",  "LidlPlus", "Klarna", "JustEat", "Glovo", "Alza", "Vinted", "Expedia", "Hostelworld",

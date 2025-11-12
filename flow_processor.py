@@ -13,9 +13,7 @@ import functions
 # -------------------------------------------
 
 log_file_filtered_flows = "tmp/filtered_flows.json"
-log_file_all_flows = "tmp/all_flows.json"
 config.clear_log(log_file_filtered_flows)
-config.clear_log(log_file_all_flows)
 log_file_flows = "tmp/flows.txt"
 
 # -------------------------------------------
@@ -37,7 +35,7 @@ def remove_flows_maxsin(final_flows, sni_stats_file="tmp/sni_stats.txt"):
 
 # -------------------------------------------
 
-def flow_processor(input_file, tmp = True):
+def flow_processor(input_file, tmp):
     
     # flows read
     flows = []
@@ -220,8 +218,9 @@ def flow_processor(input_file, tmp = True):
         summary = ", ".join([f"{v} flows {k}" for k, v in protocol_counts.items()])
         config.log_message(f"\n\n>> Flows detected after aggregation:\n\n   [+] {summary}", log_file_flows)
     else: 
-        final_flows = flows
-        config.log_message(final_flows, log_file_all_flows)
+        for flow in flows:
+            if not "dns" in flow.get('proto_field', "").lower():
+                final_flows.append(flow)
 
     return final_flows
 

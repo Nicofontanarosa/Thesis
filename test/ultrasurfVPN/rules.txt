@@ -8,9 +8,9 @@ ja4:t13d1913h2_9dc949149365_6e36e74388e1@Ultrasurfvpn
 
 # Coverage statistics for all flows:
 
-# [+] Total packets: 43504
+# [+] Total packets: 43376
 # [+] Recognized packets: 41856
-# [+] Coverage (%): 96.21
-# [+] Total flows: 103
+# [+] Coverage (%): 96.5
+# [+] Total flows: 90
 # [+] Recognized flows: 49
-# [+] Flow coverage (%): 47.57
+# [+] Flow coverage (%): 54.44

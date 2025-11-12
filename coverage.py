@@ -91,7 +91,7 @@ def calculate_coverage(flows_file, recognized_file, nDPI = False):
     if not nDPI:
     
         for flow in final_flows:
-
+    
             flow_sni = (flow.get('sni'))
             if flow_sni: flow_sni = flow_sni.lower()
             flow_ja4 = flow.get('ja4')
@@ -112,13 +112,13 @@ def calculate_coverage(flows_file, recognized_file, nDPI = False):
                     recognized = True
 
             # --- Priority 2: Certificate ---
-            elif any(flow_cert.values()):
+            if any(flow_cert.values()):
                 if matches_any_cert(flow_cert, recognized_certs):
                     recognized = True
 
             # --- Priority 3: JA4 ---
-            elif flow_ja4:
-                if recognized_ja4 and flow_ja4 in recognized_ja4:
+            if flow_ja4:
+                if flow_ja4 in recognized_ja4:
                     recognized = True
 
             # --- Count recognized flows ---

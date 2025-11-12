@@ -22,9 +22,9 @@ host:"subito.it"@Subito
 
 # Coverage statistics for all flows:
 
-# [+] Total packets: 3233
-# [+] Recognized packets: 2585
-# [+] Coverage (%): 79.96
-# [+] Total flows: 65
-# [+] Recognized flows: 32
-# [+] Flow coverage (%): 49.23
+# [+] Total packets: 3171
+# [+] Recognized packets: 2571
+# [+] Coverage (%): 81.08
+# [+] Total flows: 59
+# [+] Recognized flows: 31
+# [+] Flow coverage (%): 52.54

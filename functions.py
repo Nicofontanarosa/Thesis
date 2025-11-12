@@ -124,9 +124,12 @@ def filter_top_groups(final_flows, groups, total_packets):
         if group.get('packets', 0) >= pkt_threshold:
             snis = group.get('sni_list', [])
             top_group_snis = [sni for sni in snis if is_sub_or_same_domain(sni.lower(), top_snis)]
-
             new_group = group.copy()
             new_group["sni_list"] = top_group_snis
+            
+            if top_group_snis:
+               new_group["all_ja4_variants"] = []
+
             filtered_groups.append(new_group)
 
     #print(f"[DEBUG] Final top groups: {filtered_groups}")

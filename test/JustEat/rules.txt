@@ -37,9 +37,9 @@ trusted_issuer_dn:"CN=*.je-apis.com"@"Justeat"
 
 # Coverage statistics for all flows:
 
-# [+] Total packets: 1420
-# [+] Recognized packets: 814
-# [+] Coverage (%): 57.32
-# [+] Total flows: 63
-# [+] Recognized flows: 19
-# [+] Flow coverage (%): 30.16
+# [+] Total packets: 1374
+# [+] Recognized packets: 1066
+# [+] Coverage (%): 77.58
+# [+] Total flows: 40
+# [+] Recognized flows: 26
+# [+] Flow coverage (%): 65.0

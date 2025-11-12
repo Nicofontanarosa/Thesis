@@ -83,8 +83,8 @@ def run_pipeline(pcap_file, ndpi_path, output_dir, protoname, log_file, log_file
     # Step 3: flow_processor.py
     final_output = os.path.join(output_dir, os.path.basename(json_ndpi).replace(".json", "_output.json"))
     config.log_message(f"\n\n>> Running flows filtering ...\n\n [+] input file: {filtered_json}\n [+] output file: {final_output}", log_file)
-    final_flows = flow_processor.flow_processor(filtered_json, tmp = True)
-    final_all_flows = flow_processor.flow_processor(json_ndpi, tmp = False)  
+    final_flows = flow_processor.flow_processor(filtered_json, True)
+    final_all_flows = flow_processor.flow_processor(json_ndpi, False)  
 
     with open("tmp/final_complete_output.json", 'w') as f_out:
         json.dump(final_all_flows, f_out, indent=4)

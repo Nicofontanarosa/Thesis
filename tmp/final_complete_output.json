@@ -820,36 +820,6 @@
         ]
     },
     {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "notifications",
-        "sni": "notifications-pa.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "55257",
-        "ip_destination": "10.131.200.79",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "7 <-> 6"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "gstatic",
-        "sni": "t0.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "55099",
-        "ip_destination": "10.131.200.79",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "6 <-> 6"
-        ]
-    },
-    {
         "ip_field": "185/Telegram",
         "transport_protocol": "TCP",
         "proto_field": "185/Telegram",
@@ -868,21 +838,6 @@
     },
     {
         "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "gstatic",
-        "sni": "t2.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "52238",
-        "ip_destination": "10.131.200.79",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "4 <-> 4"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "7.212/HTTP.Microsoft",
         "url": "www.msftconnecttest.com/connecttest.txt",
@@ -897,21 +852,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "5 <-> 5"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "encrypted",
-        "sni": "encrypted-tbn2.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "58879",
-        "ip_destination": "10.131.200.79",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "4 <-> 3"
         ]
     },
     {
@@ -951,21 +891,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "3 <-> 2"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "firebaselogging",
-        "sni": "firebaselogging.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "57773",
-        "ip_destination": "10.131.200.79",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "2 <-> 1"
         ]
     },
     {
@@ -1070,21 +995,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "2 <-> 1"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "UDP",
-        "proto_field": "5/DNS",
-        "plain_text": "gstatic",
-        "sni": "fonts.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "55885",
-        "ip_destination": "10.131.200.79",
-        "port_destination": "53",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1 <-> 1"
         ]
     },
     {

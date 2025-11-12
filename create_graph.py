@@ -4,7 +4,7 @@ import os
 import re
 import numpy as np
 
-def plot_and_save_coverage_graphs(stats, output_dir="validation_results"):
+def plot_and_save_coverage_graphs(name, stats, output_dir="validation_results"):
     # Crea la cartella se non esiste
     os.makedirs(output_dir, exist_ok=True)
 
@@ -40,13 +40,13 @@ def plot_and_save_coverage_graphs(stats, output_dir="validation_results"):
         plt.tight_layout()
 
         # 🔹 Salva l'immagine come screenshot
-        output_path = os.path.join(output_dir, f"coverage_{method}.png")
+        output_path = os.path.join(output_dir, f"coverage{name}_{method}.png")
         plt.savefig(output_path, dpi=300)
         plt.close(fig)
 
         print(f"[+] Saved: {output_path}")
 
-def plot_combined_coverage(stats, output_dir="validation_results"):
+def plot_combined_coverage(name, stats, output_dir="validation_results"):
     os.makedirs(output_dir, exist_ok=True)
 
     methods = ["ndpi", "gt", "system"]
@@ -55,12 +55,12 @@ def plot_combined_coverage(stats, output_dir="validation_results"):
 
     apps = list(stats.keys())
     x = np.arange(len(apps))
-    bar_width = 0.25
-    alpha = 0.6  # trasparenza
+    bar_width = 0.14  # più stretto per lasciare spazio ai 3 gruppi
+    alpha = 0.8
 
     fig, ax = plt.subplots(figsize=(18, 7))
 
-    # Disegna i 3 metodi sovrapposti
+    # Ogni metodo sarà affiancato
     for i, method in enumerate(methods):
         packet_cov = []
         flow_cov = []
@@ -70,42 +70,50 @@ def plot_combined_coverage(stats, output_dir="validation_results"):
             packet_cov.append(app_data.get("packet_coverage", 0))
             flow_cov.append(app_data.get("flow_coverage", 0))
 
-        # le barre saranno leggermente spostate per non coprirsi completamente
-        offset = (i - 1) * bar_width / 2
+        # offset per posizionare i gruppi affiancati
+        offset = (i - 1) * (2 * bar_width + 0.02)
 
+        # barre Packets e Flows per il metodo corrente
         ax.bar(
-            x + offset - bar_width/2, packet_cov, bar_width,
+            x + offset - bar_width / 2, packet_cov, bar_width,
             label=f"{method_labels[i]} – Packets", color=colors[i], alpha=alpha
         )
         ax.bar(
-            x + offset + bar_width/2, flow_cov, bar_width,
-            label=f"{method_labels[i]} – Flows", color=colors[i], alpha=alpha/1.5
+            x + offset + bar_width / 2, flow_cov, bar_width,
+            label=f"{method_labels[i]} – Flows", color=colors[i], alpha=alpha * 0.7
         )
 
     ax.set_xlabel("Applications")
     ax.set_ylabel("Coverage (%)")
-    ax.set_title("Coverage Comparison: nDPI vs GT vs My System")
+    ax.set_title(f"Coverage Comparison – {name}")
     ax.set_xticks(x)
     ax.set_xticklabels(apps, rotation=45, ha="right", fontsize=9)
-    ax.legend(fontsize=9)
+    ax.legend(fontsize=9, ncol=2)
     ax.grid(axis='y', linestyle='--', alpha=0.5)
 
     plt.tight_layout()
 
-    # 🔹 Salva l’immagine combinata
-    output_path = os.path.join(output_dir, "coverage_combined.png")
+    output_path = os.path.join(output_dir, f"coverage_{name}_combined.png")
     plt.savefig(output_path, dpi=300)
     plt.close(fig)
 
     print(f"[+] Saved combined coverage graph: {output_path}")
 
-def extract_coverage_stats(base_dir="coverage"):
-    applications = [
-        "Doctor_App", "Trenitalia", "Subito", "Strava", "Notion", "MarioKart", "MarinoBus", 
-        "Mapy", "LidlPlus", "Klarna", "JustEat", "Glovo", "Alza", "Vinted", "Expedia", "Hostelworld",
-        "Austrian", "Warframe", "AviraVPN", "FireNetVPN", "HideVPN", "HoxxVPN",
-        "PlanetVPN", "UltrasurfVPN", "XrpTunnelVPN"
+applications = [
+        "Doctor_App", "Trenitalia", "Subito", "Strava", "Notion", "MarioKart", "MarinoBus", "Ryanair", "Crunchyroll",
+        "Mapy",  "LidlPlus", "Klarna", "JustEat", "Glovo", "Alza", "Vinted"
     ]
+applicationsSub = [
+    "NotebookLLM", "Maps", "MapsOffline"
+]
+applicationsWeb = [
+    "Expedia", "Hostelworld", "Austrian", "Warframe"
+]
+applicationsVPN = [
+    "AviraVPN", "FireNetVPN", "HideVPN", "HoxxVPN", "PlanetVPN", "UltrasurfVPN", "XrpTunnelVPN"
+]
+
+def extract_coverage_stats(applications, base_dir="coverage"):
 
     # sottocartelle dove cercare i file
     subdirs = {
@@ -147,6 +155,18 @@ def extract_coverage_stats(base_dir="coverage"):
 
     return data
 
-stats = extract_coverage_stats()
-plot_and_save_coverage_graphs(stats)
-plot_combined_coverage(stats)
+stats = extract_coverage_stats(applications)
+plot_and_save_coverage_graphs("Main", stats)
+plot_combined_coverage("Main", stats)
+
+stats = extract_coverage_stats(applicationsSub)
+plot_and_save_coverage_graphs("Sub", stats)
+plot_combined_coverage("Sub", stats)
+
+stats = extract_coverage_stats(applicationsWeb)
+plot_and_save_coverage_graphs("Web", stats)
+plot_combined_coverage("Web", stats)
+
+stats = extract_coverage_stats(applicationsVPN)
+plot_and_save_coverage_graphs("VPN", stats)
+plot_combined_coverage("VPN", stats)

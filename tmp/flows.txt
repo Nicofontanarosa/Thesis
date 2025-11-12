@@ -1,13 +1,13 @@
->> Flows read: 44
->> Flows kept: 23
->> Flows removed: 21
+>> Flows read: 68
+>> Flows kept: 44
+>> Flows removed: 24
 
-   [+] General flows removed: 21
+   [+] General flows removed: 7
 
-   [+] Empty flows removed: 0
+   [+] Empty flows removed: 4
 
-   [+] Incomplete TLS flows removed: 0
+   [+] Incomplete TLS flows removed: 13
 
 >> Flows detected after aggregation:
 
-   [+] 17 flows TLS
+   [+] 15 flows QUIC, 17 flows TLS, 3 flows HTTP

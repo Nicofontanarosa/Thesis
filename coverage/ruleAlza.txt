@@ -20,15 +20,6 @@ host:"alza.cz"@Alza
 #     [+] www.alza.cz
 
 --------------------------------------------------------------
-host:"d.clarity.ms"@Alza
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-
---------------------------------------------------------------
 host:"alza.cz"@Alza
 
 # To add this rule based on SNI:
@@ -47,8 +38,8 @@ host:"alza.cz"@Alza
 # Coverage statistics for all flows:
 
 # [+] Total packets: 6953
-# [+] Recognized packets: 5133
-# [+] Coverage (%): 73.82
+# [+] Recognized packets: 4893
+# [+] Coverage (%): 70.37
 # [+] Total flows: 104
-# [+] Recognized flows: 68
-# [+] Flow coverage (%): 65.38
+# [+] Recognized flows: 64
+# [+] Flow coverage (%): 61.54

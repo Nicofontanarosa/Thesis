@@ -1,23 +1,5 @@
 [
     {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "mr.eu1.fullstory.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "54302",
-        "ip_destination": "34.111.143.237",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "39 <-> 29"
-        ]
-    },
-    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -99,24 +81,6 @@
         ]
     },
     {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "edge.eu1.fullstory.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "42672",
-        "ip_destination": "34.120.240.48",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "16 <-> 24"
-        ]
-    },
-    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -154,24 +118,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "8 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "284/GoogleCloud",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2b0648ab686ee45e0e7c35fcfb0eea7e",
-        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
-        "sni": "mr.eu1.fullstory.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "43962",
-        "ip_destination": "34.111.143.237",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 10"
         ]
     },
     {

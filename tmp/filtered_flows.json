@@ -1,286 +1,95 @@
 [
     {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
         "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "www.ryanair.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "55426",
-        "ip_destination": "18.66.218.70",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "mWzeCRoq8",
+        "sni": "rr4---sn-hpa7kn76.offline-maps.gvt1.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61903",
+        "ip_destination": "74.125.99.137",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "36 <-> 81"
+            "955 <-> 8519"
         ]
     },
     {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
         "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "mntappsa.ryanair.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "36066",
-        "ip_destination": "99.86.171.99",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "/0jUfy",
+        "sni": "rr1---sn-uv2pm-ugol.offline-maps.gvt1.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61901",
+        "ip_destination": "194.116.104.8",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "33 <-> 56"
+            "875 <-> 6996"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "rr1---sn-uv2pm-ugol.offline-maps.gvt1.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61897",
+        "ip_destination": "194.116.104.8",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "3099 <-> 5742"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "xDou3 ",
+        "sni": "rr2---sn-uv2pm-ugol.offline-maps.gvt1.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61902",
+        "ip_destination": "194.116.104.9",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "12 <-> 12"
         ]
     },
     {
         "ip_field": "0/Unknown",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "1c9537b8108487575f2043b84071412d",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "servernames": "risk-api.inauth.com,www.risk-api.inauth.com",
-        "issuer": "C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication CA OV R36",
-        "subject": "C=US, ST=Illinois, O=Accertify, CN=risk-api.inauth.com",
-        "certificate": "SHA-1: FF:CF:EA:6B:11:2C:7A:7B:E2:0F:92:67:60:A6:66:75:B1:12:9B:75",
-        "sni": "risk-api.inauth.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "44698",
-        "ip_destination": "199.189.160.77",
+        "tls_version": "TLSv1.3",
+        "ja3s": "2253c82f03b621c5144709b393fde2c9",
+        "ja4": "t13d201200_2b729b4bf6f3_89322cc15493",
+        "sni": "dsadata.intel.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "52030",
+        "ip_destination": "83.224.69.211",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "28 <-> 30"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "www.ryanair.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "55418",
-        "ip_destination": "18.66.218.70",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "16 <-> 24",
-            "9 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "nativeapps.ryanair.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "35826",
-        "ip_destination": "3.165.239.47",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "38 <-> 41"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
-        "ja4": "t13d1513ht_8daaf6152771_eca864cca44a",
-        "servernames": "sync.ryanair.com,sync-oat.ryanair.com,sync-cho.ryanair.com,sync-dev.ryanair.com",
-        "issuer": "C=US, O=DigiCert Inc, CN=DigiCert EV RSA CA G2",
-        "subject": "C=IE, L=Swords, O=RYANAIR DAC, CN=sync.ryanair.com",
-        "certificate": "SHA-1: E6:E1:3E:71:E7:E2:0F:97:3F:F3:EA:D2:BE:CE:64:68:8C:88:A7:C1",
-        "sni": "sync.ryanair.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "60130",
-        "ip_destination": "34.255.230.191",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "21 <-> 32"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "services-api.ryanair.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "36666",
-        "ip_destination": "3.165.255.26",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "22 <-> 24",
-            "14 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "mntappas.ryanair.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "54074",
-        "ip_destination": "54.194.101.249",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "35 <-> 37"
-        ]
-    },
-    {
-        "ip_field": "220/Cloudflare",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "storifyme.xyz",
-        "ip_source": "10.215.173.1",
-        "port_source": "58782",
-        "ip_destination": "172.66.161.180",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 12"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "t13d1714ht_5b57614c22b0_fadfdae04b4e",
-        "sni": "6178.eu-api.swrve.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "52168",
-        "ip_destination": "108.157.188.18",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 5,
-        "exchanged_packets": [
-            "13 <-> 12",
-            "9 <-> 11",
-            "9 <-> 10",
-            "9 <-> 10",
-            "9 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "sni": "sdk.rentalcars.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "54580",
-        "ip_destination": "99.86.171.85",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "15 <-> 16"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "6178.eu-content.swrve.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "46120",
-        "ip_destination": "108.157.188.101",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "6178.eu-api.swrve.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "52518",
-        "ip_destination": "108.157.188.18",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
-        "sni": "mntappas.ryanair.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "54090",
-        "ip_destination": "54.194.101.249",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "9 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "t13d1714ht_5b57614c22b0_fadfdae04b4e",
-        "sni": "6178.eu-content.swrve.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "46134",
-        "ip_destination": "108.157.188.101",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 10"
+            "6 <-> 6"
         ]
     }
 ]

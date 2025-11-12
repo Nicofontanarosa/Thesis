@@ -1,15 +1,5 @@
 {
-  "__comment": [
-    "List of third-party analytics or tracking domains excluded from recognition",
-    "Vinted",
-    "Subito",
-    "Trenitalia",
-    "Glovo",
-    "Strava",
-    "MarinoBus",
-    "justeat",
-    "PlanetVPN"
-  ],
+  "__comment": ["List of third-party analytics, marketing or tracking domains excluded from recognition"],
   
   "domains": [
     "datadome.co",
@@ -17,32 +7,25 @@
     "inner-active.mobi",
     "sng.link",
     "rokt.com",
-
     "advgo.net",
     "privacy-center.org",
     "marketingcloudapis.com",
     "privacymanager.io",
     "liveramp.com",
     "kampyle.com",
-
-    "oraclersys.com",
     "adobedc.net",
     "demdex.net",
-
     "mparticle.com",
     "usercentrics.eu",
     "ravelin.click",
-
-    "brave.com",
-    "cybernews.com",
-    "samsungcloud.com",
-
     "mapbox.com",
-
-    "expo.dev",
-
     "usbla.net",
-
-    "assets.remerge.io"
+    "assets.remerge.io",
+    "swrve.com",
+    "inauth.com",
+    "www.recaptcha.net",
+    "clarity.ms",
+    "usabilla.com",
+    "fullstory.com"
   ]
 }

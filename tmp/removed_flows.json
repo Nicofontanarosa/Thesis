@@ -1,78 +1,597 @@
 
 >> General flows removed [DEBUG]:
 
-11	TCP 10.215.173.1:40246 <-> 142.251.140.110:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: DNS][DPI packets: 6][cat: Advertisement/101][9 pkts/1230 bytes <-> 9 pkts/13708 bytes][Goodput ratio: 69/97][2.22 sec][Hostname/SNI: www.google-analytics.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.835 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 299/365 2025/2070 705/763][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 137/1523 557/8659 166/2921][TCP Fingerprint: 2_64_65535_6fd296f068e7/Unknown][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 16,0,16,0,0,0,0,16,0,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34]
-13	TCP 10.215.173.1:44620 <-> 157.240.203.14:443 [proto: 91.119/TLS.Facebook][IP: 119/Facebook][Encrypted][Confidence: DPI][FPC: 119/Facebook, Confidence: DNS][DPI packets: 6][cat: SocialNetwork/6][15 pkts/2882 bytes <-> 16 pkts/8916 bytes][Goodput ratio: 78/93][15.94 sec][Hostname/SNI: graph.facebook.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.511 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 1315/1322 15376/15424 4240/4252][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 192/557 868/1954 252/764][TCP Fingerprint: 2_64_65535_6fd296f068e7/Unknown][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: f4febc55ea12b31ae17cfb7e614afda8][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 15,0,7,0,0,7,0,0,0,0,0,0,7,7,0,0,7,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,7,0,0,0,24]
-15	TCP 10.215.173.1:38740 <-> 216.58.204.138:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][8 pkts/2795 bytes <-> 9 pkts/6440 bytes][Goodput ratio: 88/94][11.68 sec][Hostname/SNI: firebaseremoteconfig.googleapis.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.395 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 1938/1942 11580/11581 4312/4311][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 349/716 1914/4537 614/1434][TCP Fingerprint: 2_64_65535_6fd296f068e7/Unknown][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 16,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51]
-19	TCP 10.215.173.1:51678 <-> 142.251.140.99:443 [proto: 91.275/TLS.Crashlytics][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 275/Crashlytics, Confidence: DNS][DPI packets: 6][cat: DataTransfer/4][10 pkts/1620 bytes <-> 10 pkts/6328 bytes][Goodput ratio: 74/94][0.58 sec][Hostname/SNI: firebase-settings.crashlytics.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.592 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 71/75 397/443 125/151][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 162/633 635/2765 219/954][TCP Fingerprint: 2_64_65535_6fd296f068e7/Unknown][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 14,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,14,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,0,0,0,28]
-22	TCP 10.215.173.1:44630 <-> 157.240.203.14:443 [proto: 91.119/TLS.Facebook][IP: 119/Facebook][Encrypted][Confidence: DPI][FPC: 119/Facebook, Confidence: DNS][DPI packets: 6][cat: SocialNetwork/6][12 pkts/1515 bytes <-> 11 pkts/5751 bytes][Goodput ratio: 67/92][2.54 sec][Hostname/SNI: graph.facebook.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.583 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 281/22 2333/116 726/39][Pkt Len c2s/s2c min/avg/max/stddev: 40/40 126/523 557/1956 171/684][TCP Fingerprint: 2_64_65535_6fd296f068e7/Unknown][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: f4febc55ea12b31ae17cfb7e614afda8][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 11,0,11,0,0,11,0,0,0,0,0,0,11,11,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,0,0,0,11]
-29	UDP 10.215.173.1:35245 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/66 bytes <-> 1 pkts/266 bytes][Goodput ratio: 57/89][0.02 sec][Hostname/SNI: mntappas.ryanair.com][54.194.101.249][DNS Id: 0x3910][PLAIN TEXT (mntappas)][Plen Bins: 0,50,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-30	UDP 10.215.173.1:39627 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/81 bytes <-> 1 pkts/209 bytes][Goodput ratio: 65/86][0.02 sec][Hostname/SNI: firebaseremoteconfig.googleapis.com][216.58.204.138][DNS Id: 0xf687][PLAIN TEXT (firebaseremoteconfig)][Plen Bins: 0,50,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-31	UDP 10.215.173.1:63509 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/65 bytes <-> 1 pkts/193 bytes][Goodput ratio: 56/85][0.02 sec][Hostname/SNI: assets.adobedtm.com][23.60.189.88][DNS Id: 0x12ec][PLAIN TEXT (assets)][Plen Bins: 0,50,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-32	UDP 10.215.173.1:32989 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/62 bytes <-> 1 pkts/193 bytes][Goodput ratio: 54/85][0.02 sec][Hostname/SNI: sync.ryanair.com][34.255.230.191][DNS Id: 0xc9b2][PLAIN TEXT (ryanair)][Plen Bins: 0,50,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-33	UDP 10.215.173.1:16299 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/68 bytes <-> 1 pkts/174 bytes][Goodput ratio: 58/83][0.02 sec][Hostname/SNI: nativeapps.ryanair.com][3.165.239.47][DNS Id: 0x0ddd][PLAIN TEXT (nativeapps)][Plen Bins: 0,50,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-34	UDP 10.215.173.1:5237 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/66 bytes <-> 1 pkts/173 bytes][Goodput ratio: 57/83][0.02 sec][Hostname/SNI: mntappsa.ryanair.com][99.86.171.99][DNS Id: 0x3677][PLAIN TEXT (mntappsa)][Plen Bins: 0,50,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-35	UDP 10.215.173.1:13411 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/64 bytes <-> 1 pkts/171 bytes][Goodput ratio: 55/83][0.04 sec][Hostname/SNI: sdk.rentalcars.com][99.86.171.85][DNS Id: 0xc28c][PLAIN TEXT (rentalcars)][Plen Bins: 0,50,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-36	UDP 10.215.173.1:33224 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/61 bytes <-> 1 pkts/168 bytes][Goodput ratio: 53/83][0.02 sec][Hostname/SNI: www.ryanair.com][18.66.218.70][DNS Id: 0xd4df][PLAIN TEXT (ryanair)][Plen Bins: 0,50,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-37	UDP 10.215.173.1:23067 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/71 bytes <-> 1 pkts/135 bytes][Goodput ratio: 60/79][0.02 sec][Hostname/SNI: 6178.eu-content.swrve.com][108.157.188.101][DNS Id: 0x51cf][PLAIN TEXT (content)][Plen Bins: 0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-38	UDP 10.215.173.1:4065 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/70 bytes <-> 1 pkts/134 bytes][Goodput ratio: 59/79][0.02 sec][Hostname/SNI: services-api.ryanair.com][3.165.255.26][DNS Id: 0xcf0a][PLAIN TEXT (services)][Plen Bins: 0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-39	UDP 10.215.173.1:58167 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/67 bytes <-> 1 pkts/131 bytes][Goodput ratio: 57/78][0.02 sec][Hostname/SNI: 6178.eu-api.swrve.com][108.157.188.18][DNS Id: 0xe0f2][Plen Bins: 0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-40	UDP 10.215.173.1:25727 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/64 bytes <-> 1 pkts/116 bytes][Goodput ratio: 55/75][0.02 sec][Hostname/SNI: graph.facebook.com][157.240.203.14][DNS Id: 0x38a8][PLAIN TEXT (facebook)][Plen Bins: 0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-41	UDP 10.215.173.1:29423 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/79 bytes <-> 1 pkts/95 bytes][Goodput ratio: 64/70][0.02 sec][Hostname/SNI: firebase-settings.crashlytics.com][142.251.140.99][DNS Id: 0xa1db][PLAIN TEXT (firebase)][Plen Bins: 0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-42	UDP 10.215.173.1:64780 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/65 bytes <-> 1 pkts/108 bytes][Goodput ratio: 56/73][0.03 sec][Hostname/SNI: risk-api.inauth.com][199.189.160.77][DNS Id: 0xee6a][PLAIN TEXT (inauth)][Plen Bins: 0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-43	UDP 10.215.173.1:22578 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/70 bytes <-> 1 pkts/86 bytes][Goodput ratio: 59/67][0.02 sec][Hostname/SNI: www.google-analytics.com][142.251.140.110][DNS Id: 0x892f][PLAIN TEXT (google)][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-44	UDP 10.215.173.1:55916 <-> 10.215.173.2:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/59 bytes <-> 1 pkts/91 bytes][Goodput ratio: 52/68][0.02 sec][Hostname/SNI: storifyme.xyz][172.66.161.180][DNS Id: 0x998b][PLAIN TEXT (storifyme)][Plen Bins: 50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+47	UDP 10.131.200.96:55257 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][7 pkts/645 bytes <-> 6 pkts/992 bytes][Goodput ratio: 54/75][34.84 sec][Hostname/SNI: notifications-pa.googleapis.com][216.58.204.138][DNS Id: 0x164f][bytes ratio: -0.212 (Download)][IAT c2s/s2c min/avg/max/stddev: 121/248 5568/6944 13974/13981 5228/4983][Pkt Len c2s/s2c min/avg/max/stddev: 86/102 92/165 99/219 5/49][PLAIN TEXT (notifications)][Plen Bins: 0,62,7,7,7,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+48	UDP 10.131.200.96:55099 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][6 pkts/546 bytes <-> 6 pkts/1010 bytes][Goodput ratio: 54/75][54.76 sec][Hostname/SNI: t0.gstatic.com][216.58.204.228][DNS Id: 0x1ae7][bytes ratio: -0.298 (Download)][IAT c2s/s2c min/avg/max/stddev: 3360/3395 9660/9664 14180/14164 3977/3955][Pkt Len c2s/s2c min/avg/max/stddev: 74/90 91/168 101/219 9/44][PLAIN TEXT (gstatic)][Plen Bins: 0,59,0,16,8,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+49	TCP 10.131.200.96:61876 <-> 149.154.167.92:5222 [proto: 185/Telegram][IP: 185/Telegram][Encrypted][Confidence: Match by IP][FPC: 185/Telegram, Confidence: IP address][DPI packets: 4][cat: Chat/9][5 pkts/788 bytes <-> 2 pkts/318 bytes][Goodput ratio: 57/56][6.85 sec][bytes ratio: 0.425 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/97 1711/97 6667/97 2861/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/74 158/159 516/244 179/85][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.555 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,50,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+50	UDP 10.131.200.96:52238 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][4 pkts/333 bytes <-> 4 pkts/749 bytes][Goodput ratio: 49/77][17.40 sec][Hostname/SNI: t2.gstatic.com][216.58.204.228][DNS Id: 0x2102][bytes ratio: -0.384 (Download)][IAT c2s/s2c min/avg/max/stddev: 124/22 5787/5781 10263/10306 4223/4288][Pkt Len c2s/s2c min/avg/max/stddev: 74/90 83/187 88/227 6/56][PLAIN TEXT (gstatic)][Plen Bins: 0,62,0,0,0,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+52	UDP 10.131.200.96:58879 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][4 pkts/339 bytes <-> 3 pkts/504 bytes][Goodput ratio: 50/75][14.33 sec][Hostname/SNI: encrypted-tbn2.gstatic.com][142.250.180.174][DNS Id: 0xf33b][bytes ratio: -0.196 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 126/5681 4770/7137 8524/8593 3486/1456][Pkt Len c2s/s2c min/avg/max/stddev: 77/102 85/168 88/216 5/48][PLAIN TEXT (encrypted)][Plen Bins: 0,71,0,0,14,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+56	UDP 10.131.200.96:57773 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 3][cat: Network/14][2 pkts/180 bytes <-> 1 pkts/202 bytes][Goodput ratio: 53/79][0.13 sec][Hostname/SNI: firebaselogging.googleapis.com][216.58.205.42][DNS Id: 0xb068][PLAIN TEXT (firebaselogging)][Plen Bins: 0,66,0,0,0,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+65	UDP 10.131.200.96:55885 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/77 bytes <-> 1 pkts/93 bytes][Goodput ratio: 45/54][0.05 sec][Hostname/SNI: fonts.gstatic.com][142.250.180.131][DNS Id: 0xc35a][PLAIN TEXT (gstatic)][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 
 >> Empty flows removed [DEBUG]:
 
+64	TCP 10.131.200.96:61695 <-> 216.58.205.42:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 126/Google, Confidence: IP address][DPI packets: 3][cat: Web/5][2 pkts/132 bytes <-> 1 pkts/66 bytes][Goodput ratio: 0/0][0.10 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+66	TCP 216.58.205.42:443 <-> 10.131.200.96:51923 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 2][cat: Web/5][1 pkts/54 bytes <-> 1 pkts/54 bytes][Goodput ratio: 0/0][0.00 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+67	TCP 216.239.36.223:443 <-> 10.131.200.96:51895 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 126/Google, Confidence: IP address][DPI packets: 2][cat: Web/5][1 pkts/54 bytes <-> 1 pkts/54 bytes][Goodput ratio: 0/0][< 1 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+68	TCP 216.239.38.223:443 <-> 10.131.200.96:51959 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: Match by port][FPC: 126/Google, Confidence: IP address][DPI packets: 2][cat: Web/5][1 pkts/54 bytes <-> 1 pkts/54 bytes][Goodput ratio: 0/0][< 1 sec][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 >> Incomplete TLS flows removed [DEBUG]:
 
+12	TCP 10.131.200.96:61780 <-> 216.58.204.138:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 6][cat: Web/5][32 pkts/7109 bytes <-> 53 pkts/57791 bytes][Goodput ratio: 70/94][61.11 sec][bytes ratio: -0.781 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 2523/695 30258/30192 8359/4498][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 222/1090 1454/1454 400/590][Plen Bins: 0,12,0,0,0,7,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77,0,0,0,0]
+44	TCP 216.58.204.138:443 <-> 10.131.200.96:51888 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 4][cat: Web/5][8 pkts/1444 bytes <-> 5 pkts/1516 bytes][Goodput ratio: 70/82][27.79 sec][bytes ratio: -0.024 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/263 4629/9190 17269/17162 6772/6932][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 180/303 489/720 159/306][Plen Bins: 12,25,12,0,0,0,0,0,0,0,0,12,0,12,0,0,0,0,12,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+46	TCP 10.131.200.96:51807 <-> 142.250.180.138:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 4][cat: Web/5][3 pkts/1583 bytes <-> 3 pkts/996 bytes][Goodput ratio: 90/84][0.39 sec][bytes ratio: 0.228 (Upload)][IAT c2s/s2c min/avg/max/stddev: 393/1 196/150 393/298 196/148][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 528/332 1454/861 655/374][Plen Bins: 50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0]
+53	TCP 216.58.204.138:443 <-> 10.131.200.96:61706 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 3][cat: Web/5][5 pkts/427 bytes <-> 5 pkts/393 bytes][Goodput ratio: 17/16][0.10 sec][bytes ratio: 0.041 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/1 24/31 96/88 41/40][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 85/79 139/105 27/16][Plen Bins: 33,33,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+54	TCP 142.251.209.42:443 <-> 10.131.200.96:52020 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 6][cat: Web/5][3 pkts/525 bytes <-> 3 pkts/162 bytes][Goodput ratio: 69/0][40.58 sec][bytes ratio: 0.528 (Upload)][IAT c2s/s2c min/avg/max/stddev: 20151/20138 20272/20265 20394/20392 121/127][Pkt Len c2s/s2c min/avg/max/stddev: 175/54 175/54 175/54 0/0][Plen Bins: 0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+55	TCP 216.58.204.138:443 <-> 10.131.200.96:51887 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 5][cat: Web/5][3 pkts/431 bytes <-> 2 pkts/108 bytes][Goodput ratio: 62/0][20.29 sec][Plen Bins: 33,0,0,66,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+57	TCP 216.58.204.234:443 <-> 10.131.200.96:51792 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 4][cat: Web/5][2 pkts/256 bytes <-> 2 pkts/108 bytes][Goodput ratio: 58/0][30.07 sec][Plen Bins: 0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+58	TCP 10.131.200.96:51808 <-> 142.250.180.138:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 6][cat: Web/5][3 pkts/186 bytes <-> 3 pkts/174 bytes][Goodput ratio: 13/0][0.06 sec][bytes ratio: 0.033 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 59/0 30/0 59/0 30/0][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 62/58 78/66 11/6][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+59	TCP 10.131.200.96:51965 <-> 216.239.36.223:443 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 6][cat: Web/5][3 pkts/186 bytes <-> 3 pkts/174 bytes][Goodput ratio: 13/0][0.11 sec][bytes ratio: 0.033 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 110/0 55/0 110/0 55/0][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 62/58 78/66 11/6][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+60	TCP 142.250.180.138:443 <-> 10.131.200.96:51948 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][3 pkts/162 bytes <-> 3 pkts/186 bytes][Goodput ratio: 0/13][16.56 sec][bytes ratio: -0.069 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 56/16445 8278/16445 16499/16445 8222/0][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 54/62 54/78 0/11][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+61	TCP 216.58.204.138:443 <-> 10.131.200.96:51839 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][3 pkts/162 bytes <-> 3 pkts/186 bytes][Goodput ratio: 0/13][5.99 sec][bytes ratio: -0.069 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/5916 2996/5916 5993/5916 2996/0][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 54/62 54/78 0/11][Plen Bins: 100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+62	TCP 216.58.204.234:443 <-> 10.131.200.96:51815 [proto: 91/TLS][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 4][cat: Web/5][2 pkts/235 bytes <-> 2 pkts/108 bytes][Goodput ratio: 54/0][30.05 sec][Plen Bins: 0,50,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+63	TCP 10.131.200.96:61710 <-> 157.240.203.33:443 [proto: 91/TLS][IP: 119/Facebook][Encrypted][Confidence: DPI][FPC: 91/TLS, Confidence: DPI][DPI packets: 3][cat: Web/5][2 pkts/169 bytes <-> 2 pkts/173 bytes][Goodput ratio: 22/24][0.13 sec][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 >> Removed flows after 1° SNI filtering [DEBUG]:
 
 [
     {
-        "ip_field": "0/Unknown",
+        "ip_field": "126/Google",
         "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
+        "proto_field": "91.228/TLS.PlayStore",
         "tls_version": "TLSv1.3",
-        "ja3s": "15af977ce25de452b96affa2addb1036",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "assets.adobedtm.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "53168",
-        "ip_destination": "23.60.189.88",
+        "ja3s": "f590053ff246338aff7c203dbe7164d6",
+        "ja4": "t13d201300_2b729b4bf6f3_1ea369dc5faa",
+        "sni": "play.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "52029",
+        "ip_destination": "216.239.38.223",
         "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
         "similar_flows_count": 1,
         "exchanged_packets": [
-            "13 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "2253c82f03b621c5144709b393fde2c9",
-        "ja4": "t13d1713ht_5b57614c22b0_352634941f3a",
-        "sni": "assets.adobedtm.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "53176",
-        "ip_destination": "23.60.189.88",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "9 <-> 9"
+            "8 <-> 10"
         ]
     }
 ]
 >> Removed flows after SNI filtering ( Remove known suffixes and not_protocols domains ) [DEBUG]:
 
-[]
+[
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.239/QUIC.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "yMmCUT",
+        "sni": "or-se.storage.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61900",
+        "ip_destination": "216.58.204.155",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "1076 <-> 9287"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "op-de.storage.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61899",
+        "ip_destination": "216.58.205.59",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "3425 <-> 6529"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "or-se.storage.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61898",
+        "ip_destination": "216.58.204.155",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "534 <-> 708"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "KUjo.3",
+        "sni": "encrypted-tbn0.gstatic.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61879",
+        "ip_destination": "142.250.180.174",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "66 <-> 166"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "aD/jRx",
+        "sni": "gz0.googleusercontent.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61877",
+        "ip_destination": "216.239.38.135",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "71 <-> 159"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "havapW",
+        "sni": "lh3.googleusercontent.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61878",
+        "ip_destination": "216.58.204.225",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "68 <-> 121"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "wmNNyK",
+        "sni": "encrypted-tbn2.gstatic.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61880",
+        "ip_destination": "142.251.209.14",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "41 <-> 73"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "notifications-pa.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61875",
+        "ip_destination": "216.58.204.138",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "29 <-> 24"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.239/QUIC.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "sni": "feedback-pa.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61868",
+        "ip_destination": "142.251.209.42",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "23 <-> 23"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.239/QUIC.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "plain_text": "rsSKPA0",
+        "sni": "geller-pa.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61866",
+        "ip_destination": "216.58.209.42",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "19 <-> 22"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "sni": "www.gstatic.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61873",
+        "ip_destination": "142.251.209.35",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 17"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.239/QUIC.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "sni": "android.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61871",
+        "ip_destination": "216.58.204.234",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 21"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.126/QUIC.Google",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
+        "quic_version": "V-1",
+        "sni": "fonts.gstatic.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61881",
+        "ip_destination": "142.250.180.131",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "14 <-> 15"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "lh3.googleusercontent.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61894",
+        "ip_destination": "216.58.204.225",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 6,
+        "exchanged_packets": [
+            "14 <-> 12",
+            "14 <-> 12",
+            "14 <-> 12",
+            "14 <-> 11",
+            "14 <-> 11",
+            "14 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "gz0.googleusercontent.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61883",
+        "ip_destination": "216.239.38.135",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 4,
+        "exchanged_packets": [
+            "14 <-> 12",
+            "14 <-> 12",
+            "14 <-> 11",
+            "14 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "7.126/HTTP.Google",
+        "url": "t2.gstatic.com/images?q=tbn:ANd9GcSdxbH5I53aTSnWqvD8uEXzDw5LT8z6bWP7d6Dp-GhmAEqvlT8rPuya7g",
+        "user_agent": "com.google.android.apps.maps/1068215109 (Linux; U; Android 15; en_US; moto g54 5G; Build/V1TDS35H.83-20-5-5; Cronet/140.0.7289.0)",
+        "plain_text": "GET /images",
+        "sni": "t2.gstatic.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61882",
+        "ip_destination": "216.58.204.228",
+        "port_destination": "80",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 10"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188.239/QUIC.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
+        "quic_version": "V-1",
+        "plain_text": "NHRLRJ",
+        "sni": "www.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61870",
+        "ip_destination": "142.251.209.10",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "17 <-> 20"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "encrypted-tbn0.gstatic.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61896",
+        "ip_destination": "216.58.205.46",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "7.126/HTTP.Google",
+        "url": "t0.gstatic.com/images?q=tbn:ANd9GcTbYYB-wdE9xL9gXdm8NhuYCSvmrdsMijUAHa0GSqYBb1KKztSH42qk2g",
+        "user_agent": "com.google.android.apps.maps/1068215109 (Linux; U; Android 15; en_US; moto g54 5G; Build/V1TDS35H.83-20-5-5; Cronet/140.0.7289.0)",
+        "plain_text": "GET /images",
+        "sni": "t0.gstatic.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61890",
+        "ip_destination": "216.58.204.228",
+        "port_destination": "80",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "10 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "feedback-pa.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61869",
+        "ip_destination": "142.251.209.42",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "geller-pa.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61867",
+        "ip_destination": "142.251.209.10",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 9"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "fonts.gstatic.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61895",
+        "ip_destination": "142.250.180.131",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "10 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "encrypted-tbn2.gstatic.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61887",
+        "ip_destination": "142.250.180.174",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "10 <-> 7"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.126/TLS.Google",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
+        "sni": "www.gstatic.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61874",
+        "ip_destination": "216.58.209.35",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "10 <-> 8"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
+        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
+        "sni": "firebaselogging.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "61872",
+        "ip_destination": "216.58.205.42",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "12 <-> 11"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f590053ff246338aff7c203dbe7164d6",
+        "ja4": "t13d201300_2b729b4bf6f3_1ea369dc5faa",
+        "sni": "signaler-pa.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "52034",
+        "ip_destination": "142.251.209.42",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "11 <-> 14"
+        ]
+    },
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "TCP",
+        "proto_field": "91.239/TLS.GoogleServices",
+        "tls_version": "TLSv1.3",
+        "ja3s": "f590053ff246338aff7c203dbe7164d6",
+        "ja4": "t13d201300_2b729b4bf6f3_1ea369dc5faa",
+        "sni": "drivefrontend-pa.googleapis.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "52039",
+        "ip_destination": "142.250.180.138",
+        "port_destination": "443",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
+        "risk": "** TLS (probably) Not Carrying HTTPS **",
+        "risk_score": "10",
+        "risk_info": "No ALPN",
+        "similar_flows_count": 2,
+        "exchanged_packets": [
+            "6 <-> 7",
+            "6 <-> 6"
+        ]
+    },
+    {
+        "ip_field": "0/Unknown",
+        "transport_protocol": "TCP",
+        "proto_field": "7.212/HTTP.Microsoft",
+        "url": "www.msftconnecttest.com/connecttest.txt",
+        "user_agent": "Microsoft NCSI",
+        "plain_text": "GET /connecttest.txt HTTP/1.1",
+        "sni": "www.msftconnecttest.com",
+        "ip_source": "10.131.200.96",
+        "port_source": "52031",
+        "ip_destination": "83.224.69.202",
+        "port_destination": "80",
+        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "5 <-> 5"
+        ]
+    }
+]
 >> Removed flows after JA3S/JA4/Certificate filtering [DEBUG]:
 
-[]
+[
+    {
+        "ip_field": "126/Google",
+        "transport_protocol": "UDP",
+        "proto_field": "188/QUIC",
+        "plain_text": "bwAHTf",
+        "ip_source": "10.131.200.96",
+        "port_source": "61781",
+        "ip_destination": "216.239.38.135",
+        "port_destination": "443",
+        "similar_flows_count": 1,
+        "exchanged_packets": [
+            "2327 <-> 1746"
+        ]
+    }
+]

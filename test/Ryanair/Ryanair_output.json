@@ -36,28 +36,6 @@
         ]
     },
     {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "1c9537b8108487575f2043b84071412d",
-        "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
-        "servernames": "risk-api.inauth.com,www.risk-api.inauth.com",
-        "issuer": "C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication CA OV R36",
-        "subject": "C=US, ST=Illinois, O=Accertify, CN=risk-api.inauth.com",
-        "certificate": "SHA-1: FF:CF:EA:6B:11:2C:7A:7B:E2:0F:92:67:60:A6:66:75:B1:12:9B:75",
-        "sni": "risk-api.inauth.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "44698",
-        "ip_destination": "199.189.160.77",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "28 <-> 30"
-        ]
-    },
-    {
         "ip_field": "265/AmazonAWS",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
@@ -176,28 +154,6 @@
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "t13d1714ht_5b57614c22b0_fadfdae04b4e",
-        "sni": "6178.eu-api.swrve.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "52168",
-        "ip_destination": "108.157.188.18",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 5,
-        "exchanged_packets": [
-            "13 <-> 12",
-            "9 <-> 11",
-            "9 <-> 10",
-            "9 <-> 10",
-            "9 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
         "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
         "ja4": "t13d1513h2_8daaf6152771_eca864cca44a",
         "sni": "sdk.rentalcars.com",
@@ -216,42 +172,6 @@
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",
         "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "6178.eu-content.swrve.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "46120",
-        "ip_destination": "108.157.188.101",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "6178.eu-api.swrve.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "52518",
-        "ip_destination": "108.157.188.18",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
         "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
         "ja4": "t13d1514h2_8daaf6152771_fadfdae04b4e",
         "sni": "mntappas.ryanair.com",
@@ -263,24 +183,6 @@
         "similar_flows_count": 1,
         "exchanged_packets": [
             "9 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.3",
-        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
-        "ja4": "t13d1714ht_5b57614c22b0_fadfdae04b4e",
-        "sni": "6178.eu-content.swrve.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "46134",
-        "ip_destination": "108.157.188.101",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 10"
         ]
     }
 ]

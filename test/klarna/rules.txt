@@ -1,14 +1,3 @@
-host:"fullstory.com"@Klarna
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-#     [+] edge.eu1.fullstory.com
-#     [+] mr.eu1.fullstory.com
-
---------------------------------------------------------------
 host:"content.blackhawknetwork.com",host:"klarna.com"@Klarna
 
 # To add this rule based on SNI:
@@ -26,8 +15,8 @@ host:"content.blackhawknetwork.com",host:"klarna.com"@Klarna
 # Coverage statistics for all flows:
 
 # [+] Total packets: 3941
-# [+] Recognized packets: 3328
-# [+] Coverage (%): 84.45
+# [+] Recognized packets: 3194
+# [+] Coverage (%): 81.05
 # [+] Total flows: 75
-# [+] Recognized flows: 36
-# [+] Flow coverage (%): 48.0
+# [+] Recognized flows: 30
+# [+] Flow coverage (%): 40.0

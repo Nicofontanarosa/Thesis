@@ -21,6 +21,8 @@ GT = {
     "Glovo": {"sni": ["glovo.dhmedia.io", "glovoapp.com"], "ja4": [""], "cert": [""]},
     "Alza": {"sni": ["alza.cz"], "ja4": [""], "cert": [""]},
     "Vinted": {"sni": ["vinted.fr", "vinted.com", "vinted.net", "vintedapp.com"], "ja4": [""], "cert": [""]},
+    "Ryanair": {"sni": ["ryanair.com"], "ja4": [""], "cert": [""]},
+    "Crunchyroll": {"sni": ["crunchyroll.com", "vrv.co"], "ja4": [""], "cert": [""]},
     "Expedia": {"sni": ["expedia.com", "travel-assets.com"], "ja4": [""], "cert": [""]},
     "HostelWorld": {"sni": ["hwstatic.com", "hostelworld.com"], "ja4": [""], "cert": [""]},
     "Austrian": {"sni": ["austrian.com", "austrian.miles-and-more.com"], "ja4": [""], "cert": [""]},

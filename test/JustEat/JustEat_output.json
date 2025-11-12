@@ -70,30 +70,6 @@
         ]
     },
     {
-        "ip_field": "265/AmazonAWS",
-        "transport_protocol": "TCP",
-        "proto_field": "91/TLS",
-        "tls_version": "TLSv1.2",
-        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "servernames": "w.usabilla.com,*.w.usabilla.com,*.w.usbla.net,w.usbla.net",
-        "issuer": "C=US, O=Amazon, CN=Amazon RSA 2048 M04",
-        "subject": "CN=w.usabilla.com",
-        "certificate": "SHA-1: F3:B9:24:EF:24:1D:2C:9B:23:14:E6:E5:A1:94:CD:E5:E8:BF:11:73",
-        "sni": "w.usabilla.com",
-        "ip_source": "10.215.173.1",
-        "port_source": "56818",
-        "ip_destination": "52.211.140.67",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_6fd296f068e7/Unknown",
-        "similar_flows_count": 3,
-        "exchanged_packets": [
-            "10 <-> 11",
-            "11 <-> 11",
-            "10 <-> 10"
-        ]
-    },
-    {
         "ip_field": "220/Cloudflare",
         "transport_protocol": "TCP",
         "proto_field": "91/TLS",

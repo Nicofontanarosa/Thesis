@@ -7,7 +7,7 @@ import shutil
 def run_coverage_tests():
     # Tutte le applicazioni da testare
     applications = [
-        "Doctor_App", "Trenitalia", "Subito", "Strava", "Notion", "MarioKart", "MarinoBus", 
+        "Doctor_App", "Trenitalia", "Subito", "Strava", "Notion", "MarioKart", "MarinoBus", "Ryanair", "Crunchyroll",
         "Mapy",  "LidlPlus", "Klarna", "JustEat", "Glovo", "Alza", "Vinted", "Expedia", "Hostelworld",
         "Austrian", "Warframe", "AviraVPN", "FireNetVPN", "HideVPN", "HoxxVPN",
         "PlanetVPN", "UltrasurfVPN", "XrpTunnelVPN", "NotebookLLM", "Maps", "MapsOffline"

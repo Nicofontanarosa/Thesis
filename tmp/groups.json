@@ -1,7 +1,7 @@
 [
     {
-        "ja3s": null,
-        "ja4": "55b375c5d22e_653d80c3fe9d",
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "8daaf6152771_eca864cca44a",
         "certificate": [
             [
                 "certificate",
@@ -21,22 +21,57 @@
             ]
         ],
         "sni_list": [
-            "offline-maps.gvt1.com"
+            "ryanair.com"
         ],
-        "flow_count": 3,
-        "packets": 17369,
+        "flow_count": 7,
+        "packets": 462,
         "all_ja4_variants": [
-            "q13d0311h0_55b375c5d22e_653d80c3fe9d"
+            "t13d1513h2_8daaf6152771_eca864cca44a",
+            "t13d1513ht_8daaf6152771_eca864cca44a"
         ],
         "sni_list_removed": [
-            "rr1---sn-uv2pm-ugol.offline-maps.gvt1.com",
-            "rr2---sn-uv2pm-ugol.offline-maps.gvt1.com",
-            "rr4---sn-hpa7kn76.offline-maps.gvt1.com"
+            "mntappas.ryanair.com",
+            "mntappsa.ryanair.com",
+            "nativeapps.ryanair.com",
+            "services-api.ryanair.com",
+            "www.ryanair.com"
         ]
     },
     {
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "8daaf6152771_d8a2da3f94cd",
+        "ja3s": "1c9537b8108487575f2043b84071412d",
+        "ja4": "8daaf6152771_eca864cca44a",
+        "certificate": [
+            [
+                "certificate",
+                "SHA-1: FF:CF:EA:6B:11:2C:7A:7B:E2:0F:92:67:60:A6:66:75:B1:12:9B:75"
+            ],
+            [
+                "issuer",
+                "C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication CA OV R36"
+            ],
+            [
+                "servernames",
+                "risk-api.inauth.com,www.risk-api.inauth.com"
+            ],
+            [
+                "subject",
+                "C=US, ST=Illinois, O=Accertify, CN=risk-api.inauth.com"
+            ]
+        ],
+        "sni_list": [
+            "risk-api.inauth.com"
+        ],
+        "flow_count": 1,
+        "packets": 58,
+        "all_ja4_variants": [
+            "t13d1513h2_8daaf6152771_eca864cca44a",
+            "t13d1513ht_8daaf6152771_eca864cca44a"
+        ],
+        "sni_list_removed": []
+    },
+    {
+        "ja3s": "f4febc55ea12b31ae17cfb7e614afda8",
+        "ja4": "5b57614c22b0_eca864cca44a",
         "certificate": [
             [
                 "certificate",
@@ -56,13 +91,83 @@
             ]
         ],
         "sni_list": [
-            "rr1---sn-uv2pm-ugol.offline-maps.gvt1.com"
+            "swrve.com",
+            "ryanair.com"
+        ],
+        "flow_count": 4,
+        "packets": 103,
+        "all_ja4_variants": [
+            "t13d1713ht_5b57614c22b0_eca864cca44a"
+        ],
+        "sni_list_removed": [
+            "6178.eu-api.swrve.com",
+            "6178.eu-content.swrve.com"
+        ]
+    },
+    {
+        "ja3s": "bfc90d56141386ee83b56cda231cccfc",
+        "ja4": "8daaf6152771_eca864cca44a",
+        "certificate": [
+            [
+                "certificate",
+                "SHA-1: E6:E1:3E:71:E7:E2:0F:97:3F:F3:EA:D2:BE:CE:64:68:8C:88:A7:C1"
+            ],
+            [
+                "issuer",
+                "C=US, O=DigiCert Inc, CN=DigiCert EV RSA CA G2"
+            ],
+            [
+                "servernames",
+                "sync.ryanair.com,sync-oat.ryanair.com,sync-cho.ryanair.com,sync-dev.ryanair.com"
+            ],
+            [
+                "subject",
+                "C=IE, L=Swords, O=RYANAIR DAC, CN=sync.ryanair.com"
+            ]
+        ],
+        "sni_list": [
+            "sync.ryanair.com"
         ],
         "flow_count": 1,
-        "packets": 8841,
+        "packets": 53,
         "all_ja4_variants": [
-            "t13d1516h2_8daaf6152771_d8a2da3f94cd"
+            "t13d1513h2_8daaf6152771_eca864cca44a",
+            "t13d1513ht_8daaf6152771_eca864cca44a"
         ],
         "sni_list_removed": []
+    },
+    {
+        "ja3s": "fcb2d4d0991292272fcb1e464eedfd43",
+        "ja4": "5b57614c22b0_fadfdae04b4e",
+        "certificate": [
+            [
+                "certificate",
+                null
+            ],
+            [
+                "issuer",
+                null
+            ],
+            [
+                "servernames",
+                null
+            ],
+            [
+                "subject",
+                null
+            ]
+        ],
+        "sni_list": [
+            "swrve.com"
+        ],
+        "flow_count": 6,
+        "packets": 122,
+        "all_ja4_variants": [
+            "t13d1714ht_5b57614c22b0_fadfdae04b4e"
+        ],
+        "sni_list_removed": [
+            "6178.eu-api.swrve.com",
+            "6178.eu-content.swrve.com"
+        ]
     }
 ]

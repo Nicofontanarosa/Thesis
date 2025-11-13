@@ -7,40 +7,13 @@ host:"vinted.net"@Vinted
  
 
 --------------------------------------------------------------
-host:"vinted.net"@Vinted
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-
---------------------------------------------------------------
-host:"vinted.net"@Vinted
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-
---------------------------------------------------------------
-host:"vinted.fr"@Vinted
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-
---------------------------------------------------------------
 
 
 # Coverage statistics for all flows:
 
 # [+] Total packets: 10680
-# [+] Recognized packets: 7840
-# [+] Coverage (%): 73.41
+# [+] Recognized packets: 7427
+# [+] Coverage (%): 69.54
 # [+] Total flows: 114
-# [+] Recognized flows: 58
-# [+] Flow coverage (%): 50.88
+# [+] Recognized flows: 52
+# [+] Flow coverage (%): 45.61

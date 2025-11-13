@@ -1,19 +1,14 @@
-host:"tilecache.mapy.cz"@Mapy
+# unknown@UnknownProto
 
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-
+# [red]>> NOT ENOUGH INFORMATION TO GENERATE A RULE[/red]
 --------------------------------------------------------------
 
 
 # Coverage statistics for all flows:
 
 # [+] Total packets: 62248
-# [+] Recognized packets: 6278
-# [+] Coverage (%): 10.09
+# [+] Recognized packets: 110
+# [+] Coverage (%): 0.18
 # [+] Total flows: 52
-# [+] Recognized flows: 12
-# [+] Flow coverage (%): 23.08
+# [+] Recognized flows: 7
+# [+] Flow coverage (%): 13.46

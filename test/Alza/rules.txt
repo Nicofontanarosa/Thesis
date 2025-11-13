@@ -9,30 +9,6 @@ host:"alza.cz"@Alza
 #     [+] logapi.alza.cz
 
 --------------------------------------------------------------
-host:"alza.cz"@Alza
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-#     [+] webapi.alza.cz
-#     [+] www.alza.cz
-
---------------------------------------------------------------
-host:"alza.cz"@Alza
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-#     [+] alza-tm.addai.cz
-#     [+] websocket-assistant-alza.addai.cz
-#     [+] i18n.alza.cz
-#     [+] logapi.alza.cz
-
---------------------------------------------------------------
 
 
 # Coverage statistics for all flows:

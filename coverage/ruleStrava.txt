@@ -10,19 +10,6 @@ host:"strava.com"@Strava
 #     [+] www.strava.com
 
 --------------------------------------------------------------
-host:"strava.com"@Strava
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-#     [+] c.strava.com
-#     [+] dorado.strava.com
-#     [+] heatmap-external-a.strava.com
-#     [+] phoots.strava.com
-
---------------------------------------------------------------
 
 
 # Coverage statistics for all flows:

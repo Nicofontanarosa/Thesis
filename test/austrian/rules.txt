@@ -1,4 +1,4 @@
-host:"austrian.com",host:"miles-and-more.com"@Austrian
+host:"austrian.com"@Austrian
 
 # To add this rule based on SNI:
 #   [+] Use this file when executing nDPI with -p `this file`
@@ -15,17 +15,10 @@ host:"austrian.com",host:"miles-and-more.com"@Austrian
 #     [+] www.lufthansa.com
 
 --------------------------------------------------------------
-host:"miles-and-more.com"@Austrian
+ja4:t13d2014h2_a09f3c656075_14788d8d241b@Austrian
 
 # To add this rule based on SNI:
 #   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-#     [+] api.miles-and-more.com
-#     [+] austrian.miles-and-more.com
-#     [+] api.travelid.lufthansa.com
-#     [+] www.lufthansa.com
 
 --------------------------------------------------------------
 
@@ -33,8 +26,8 @@ host:"miles-and-more.com"@Austrian
 # Coverage statistics for all flows:
 
 # [+] Total packets: 40491
-# [+] Recognized packets: 30033
-# [+] Coverage (%): 74.17
+# [+] Recognized packets: 30956
+# [+] Coverage (%): 76.45
 # [+] Total flows: 247
-# [+] Recognized flows: 116
-# [+] Flow coverage (%): 46.96
+# [+] Recognized flows: 126
+# [+] Flow coverage (%): 51.01

@@ -8,17 +8,6 @@ host:"notion.so"@Notion
 #     [+] msgstore.www.notion.so
 
 --------------------------------------------------------------
-host:"notion.so"@Notion
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-#     [+] exp.notion.so
-#     [+] www.notion.so
-
---------------------------------------------------------------
 
 
 # Coverage statistics for all flows:

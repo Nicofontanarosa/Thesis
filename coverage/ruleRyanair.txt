@@ -1,33 +1,8 @@
-host:"ryanair.com"@Ryanair
+ja4:t13d1513h2_8daaf6152771_eca864cca44a@Ryanair
+ja4:t13d1513ht_8daaf6152771_eca864cca44a@Ryanair
 
 # To add this rule based on SNI:
 #   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-#     [+] mntappas.ryanair.com
-#     [+] mntappsa.ryanair.com
-#     [+] nativeapps.ryanair.com
-#     [+] services-api.ryanair.com
-#     [+] www.ryanair.com
-
---------------------------------------------------------------
-host:"ryanair.com"@Ryanair
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-
---------------------------------------------------------------
-host:"sync.ryanair.com"@Ryanair
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
 
 --------------------------------------------------------------
 
@@ -35,8 +10,8 @@ host:"sync.ryanair.com"@Ryanair
 # Coverage statistics for all flows:
 
 # [+] Total packets: 994
-# [+] Recognized packets: 671
-# [+] Coverage (%): 67.51
+# [+] Recognized packets: 682
+# [+] Coverage (%): 68.61
 # [+] Total flows: 28
-# [+] Recognized flows: 15
-# [+] Flow coverage (%): 53.57
+# [+] Recognized flows: 14
+# [+] Flow coverage (%): 50.0

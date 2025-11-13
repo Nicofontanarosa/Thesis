@@ -1,10 +1,52 @@
 
 >> General flows removed [DEBUG]:
 
+1	UDP 10.131.200.96:61900 <-> 216.58.204.155:443 [proto: 188.239/QUIC.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][1076 pkts/87247 bytes <-> 9287 pkts/11975865 bytes][Goodput ratio: 48/97][16.01 sec][Hostname/SNI: or-se.storage.googleapis.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.986 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 14/1 4089/4149 184/46][Pkt Len c2s/s2c min/avg/max/stddev: 71/67 81/1290 1292/1292 75/51][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][ECH: version 0xfe0d][PLAIN TEXT (yMmCUT)][Plen Bins: 9,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,0,0,0,0,0,0,0,0]
+2	UDP 10.131.200.96:61903 <-> 74.125.99.137:443 [proto: 188.126/QUIC.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][955 pkts/75216 bytes <-> 8519 pkts/10991809 bytes][Goodput ratio: 47/97][10.47 sec][Hostname/SNI: rr4---sn-hpa7kn76.offline-maps.gvt1.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.986 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 4/1 195/354 18/5][Pkt Len c2s/s2c min/avg/max/stddev: 71/66 79/1290 1292/1292 61/45][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][ECH: version 0xfe0d][PLAIN TEXT (mWzeCRoq8)][Plen Bins: 12,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,72,0,0,0,0,0,0,0,0]
+3	TCP 10.131.200.96:61899 <-> 216.58.205.59:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 8][cat: Web/5][3425 pkts/228750 bytes <-> 6529 pkts/9472931 bytes][Goodput ratio: 1/95][11.47 sec][Hostname/SNI: op-de.storage.googleapis.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.953 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 2/1 1851/1917 35/26][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 67/1451 1454/1454 25/62][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,97,0,0,0,0]
+4	UDP 10.131.200.96:61901 <-> 194.116.104.8:443 [proto: 188.126/QUIC.Google][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][875 pkts/70933 bytes <-> 6996 pkts/9024819 bytes][Goodput ratio: 48/97][19.94 sec][Hostname/SNI: rr1---sn-uv2pm-ugol.offline-maps.gvt1.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.984 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 20/2 4495/4650 225/59][Pkt Len c2s/s2c min/avg/max/stddev: 71/68 81/1290 1292/1292 76/47][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][ECH: version 0xfe0d][PLAIN TEXT (/0jUfy)][Plen Bins: 9,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,0,0,0,0,0,0,0,0]
+5	TCP 10.131.200.96:61897 <-> 194.116.104.8:443 [proto: 91.126/TLS.Google][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 7][cat: Web/5][3099 pkts/207363 bytes <-> 5742 pkts/8241532 bytes][Goodput ratio: 1/95][5.62 sec][Hostname/SNI: rr1---sn-uv2pm-ugol.offline-maps.gvt1.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.951 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 0/0 74/139 3/3][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 67/1435 1454/1454 30/105][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,0,0,0,0]
+7	TCP 10.131.200.96:61898 <-> 216.58.204.155:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 8][cat: Web/5][534 pkts/37818 bytes <-> 708 pkts/1009795 bytes][Goodput ratio: 7/95][8.56 sec][Hostname/SNI: or-se.storage.googleapis.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.928 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 16/2 5221/90 254/5][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 71/1426 1454/1454 64/181][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 1,2,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,94,0,0,0,0]
+8	UDP 10.131.200.96:61879 <-> 142.250.180.174:443 [proto: 188.126/QUIC.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][66 pkts/8901 bytes <-> 166 pkts/207162 bytes][Goodput ratio: 69/97][14.53 sec][Hostname/SNI: encrypted-tbn0.gstatic.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.918 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 314/2 13837/80 2039/7][Pkt Len c2s/s2c min/avg/max/stddev: 73/67 135/1248 1292/1292 254/213][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][ECH: version 0xfe0d][PLAIN TEXT (KUjo.3)][Plen Bins: 11,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,71,0,0,0,0,0,0,0,0]
+9	UDP 10.131.200.96:61877 <-> 216.239.38.135:443 [proto: 188.126/QUIC.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][71 pkts/10368 bytes <-> 159 pkts/198242 bytes][Goodput ratio: 71/97][0.56 sec][Hostname/SNI: gz0.googleusercontent.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.901 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 6/2 60/43 14/5][Pkt Len c2s/s2c min/avg/max/stddev: 73/65 146/1247 1292/1292 255/214][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][ECH: version 0xfe0d][PLAIN TEXT (aD/jRx)][Plen Bins: 5,23,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,67,0,0,0,0,0,0,0,0]
+10	UDP 10.131.200.96:61878 <-> 216.58.204.225:443 [proto: 188.126/QUIC.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][68 pkts/10638 bytes <-> 121 pkts/142920 bytes][Goodput ratio: 73/96][0.70 sec][Hostname/SNI: lh3.googleusercontent.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.861 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 6/3 118/102 19/11][Pkt Len c2s/s2c min/avg/max/stddev: 73/66 156/1181 1292/1292 258/331][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][ECH: version 0xfe0d][PLAIN TEXT (havapW)][Plen Bins: 15,17,1,1,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,4,55,0,0,0,0,0,0,0,0]
+11	UDP 10.131.200.96:61880 <-> 142.251.209.14:443 [proto: 188.126/QUIC.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][41 pkts/7013 bytes <-> 73 pkts/87168 bytes][Goodput ratio: 75/96][0.55 sec][Hostname/SNI: encrypted-tbn2.gstatic.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.851 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 9/4 119/86 23/13][Pkt Len c2s/s2c min/avg/max/stddev: 73/65 171/1194 1292/1292 317/317][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][ECH: version 0xfe0d][PLAIN TEXT (wmNNyK)][Plen Bins: 24,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,62,0,0,0,0,0,0,0,0]
+13	TCP 10.131.200.96:61875 <-> 216.58.204.138:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][29 pkts/27887 bytes <-> 24 pkts/8016 bytes][Goodput ratio: 93/80][1.03 sec][Hostname/SNI: notifications-pa.googleapis.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: 0.553 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 17/41 141/511 37/117][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 962/334 1454/1454 639/515][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 3,0,3,0,0,0,0,0,0,0,3,0,3,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,80,0,0,0,0]
+14	UDP 10.131.200.96:61868 <-> 142.251.209.42:443 [proto: 188.239/QUIC.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][23 pkts/8532 bytes <-> 23 pkts/12170 bytes][Goodput ratio: 89/92][5.51 sec][Hostname/SNI: feedback-pa.googleapis.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.176 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 288/34 4770/135 1088/44][Pkt Len c2s/s2c min/avg/max/stddev: 72/66 371/529 1292/1292 465/541][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][ECH: version 0xfe0d][Plen Bins: 22,24,8,2,0,6,0,0,2,0,0,2,2,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,24,0,0,0,0,0,0,0,0]
+15	UDP 10.131.200.96:61866 <-> 216.58.209.42:443 [proto: 188.239/QUIC.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][19 pkts/7666 bytes <-> 22 pkts/12463 bytes][Goodput ratio: 90/93][1.51 sec][Hostname/SNI: geller-pa.googleapis.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.238 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 69/49 233/341 90/89][Pkt Len c2s/s2c min/avg/max/stddev: 71/66 403/566 1292/1292 510/541][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][ECH: version 0xfe0d][PLAIN TEXT (rsSKPA0)][Plen Bins: 27,20,4,4,0,2,2,0,0,2,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,27,0,0,0,0,0,0,0,0]
+16	UDP 10.131.200.96:61873 <-> 142.251.209.35:443 [proto: 188.126/QUIC.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][14 pkts/5096 bytes <-> 17 pkts/14148 bytes][Goodput ratio: 88/95][5.97 sec][Hostname/SNI: www.gstatic.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.470 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 528/438 5530/5569 1583/1481][Pkt Len c2s/s2c min/avg/max/stddev: 73/66 364/832 1292/1292 488/541][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][ECH: version 0xfe0d][Plen Bins: 16,19,6,6,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,3,0,0,0,0,0,0,0,0,6,32,0,0,0,0,0,0,0,0]
+17	UDP 10.131.200.96:61871 <-> 216.58.204.234:443 [proto: 188.239/QUIC.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][14 pkts/6733 bytes <-> 21 pkts/12421 bytes][Goodput ratio: 91/93][0.59 sec][Hostname/SNI: android.googleapis.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.297 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 10/7 65/73 20/18][Pkt Len c2s/s2c min/avg/max/stddev: 73/65 481/591 1292/1292 532/548][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][Plen Bins: 27,18,5,2,0,0,0,0,0,5,2,0,0,0,0,0,0,2,0,0,0,0,0,0,2,0,0,0,0,2,0,0,0,0,0,0,0,0,5,27,0,0,0,0,0,0,0,0]
+18	UDP 10.131.200.96:61881 <-> 142.250.180.131:443 [proto: 188.126/QUIC.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][14 pkts/5121 bytes <-> 15 pkts/10866 bytes][Goodput ratio: 89/94][0.40 sec][Hostname/SNI: fonts.gstatic.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.359 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 31/18 110/128 38/36][Pkt Len c2s/s2c min/avg/max/stddev: 73/66 366/724 1292/1292 487/571][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][ECH: version 0xfe0d][Plen Bins: 13,25,6,6,6,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,6,28,0,0,0,0,0,0,0,0]
+19	TCP 10.131.200.96:61894 <-> 216.58.204.225:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 8][cat: Web/5][14 pkts/2837 bytes <-> 12 pkts/12271 bytes][Goodput ratio: 67/93][0.38 sec][Hostname/SNI: lh3.googleusercontent.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.624 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 21/13 151/84 46/27][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 203/1023 1454/1454 365/582][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,8,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,67,0,0,0,0]
+20	TCP 10.131.200.96:61893 <-> 216.58.204.225:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 8][cat: Web/5][14 pkts/2837 bytes <-> 12 pkts/12270 bytes][Goodput ratio: 67/93][0.44 sec][Hostname/SNI: lh3.googleusercontent.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.624 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 26/18 184/86 54/29][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 203/1022 1454/1454 365/582][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,8,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,67,0,0,0,0]
+21	TCP 10.131.200.96:61888 <-> 216.58.204.225:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 8][cat: Web/5][14 pkts/2805 bytes <-> 12 pkts/12272 bytes][Goodput ratio: 67/93][0.40 sec][Hostname/SNI: lh3.googleusercontent.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.628 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 21/12 156/91 47/29][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 200/1023 1454/1454 363/582][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,8,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,67,0,0,0,0]
+22	TCP 10.131.200.96:61883 <-> 216.239.38.135:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 8][cat: Web/5][14 pkts/2773 bytes <-> 12 pkts/12271 bytes][Goodput ratio: 66/93][0.42 sec][Hostname/SNI: gz0.googleusercontent.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.631 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 24/14 150/85 50/28][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 198/1023 1454/1454 362/582][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,8,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,67,0,0,0,0]
+23	TCP 10.131.200.96:61886 <-> 216.239.38.135:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 8][cat: Web/5][14 pkts/2741 bytes <-> 12 pkts/12271 bytes][Goodput ratio: 66/93][0.41 sec][Hostname/SNI: gz0.googleusercontent.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.635 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 22/14 151/92 48/30][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 196/1023 1454/1454 360/582][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,8,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,67,0,0,0,0]
+24	TCP 10.131.200.96:61884 <-> 216.239.38.135:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 7][cat: Web/5][14 pkts/2773 bytes <-> 11 pkts/12206 bytes][Goodput ratio: 66/94][0.42 sec][Hostname/SNI: gz0.googleusercontent.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.630 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 23/15 152/93 49/31][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 198/1110 1454/1454 362/528][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,8,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,67,0,0,0,0]
+25	TCP 10.131.200.96:61885 <-> 216.239.38.135:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 7][cat: Web/5][14 pkts/2773 bytes <-> 11 pkts/12205 bytes][Goodput ratio: 66/94][0.41 sec][Hostname/SNI: gz0.googleusercontent.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.630 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 23/15 156/93 49/31][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 198/1110 1454/1454 362/528][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,8,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,67,0,0,0,0]
+26	TCP 10.131.200.96:61891 <-> 216.58.204.225:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 7][cat: Web/5][14 pkts/2773 bytes <-> 11 pkts/12205 bytes][Goodput ratio: 66/94][0.38 sec][Hostname/SNI: lh3.googleusercontent.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.630 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 20/14 146/88 45/29][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 198/1110 1454/1454 362/528][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,8,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,67,0,0,0,0]
+27	TCP 10.131.200.96:61889 <-> 216.58.204.225:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 7][cat: Web/5][14 pkts/2741 bytes <-> 11 pkts/12205 bytes][Goodput ratio: 66/94][0.38 sec][Hostname/SNI: lh3.googleusercontent.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.633 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 20/14 146/91 44/30][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 196/1110 1454/1454 360/528][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,8,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,67,0,0,0,0]
+28	TCP 10.131.200.96:61892 <-> 216.58.204.225:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 7][cat: Web/5][14 pkts/2741 bytes <-> 11 pkts/12204 bytes][Goodput ratio: 66/94][0.39 sec][Hostname/SNI: lh3.googleusercontent.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.633 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 21/14 152/84 47/28][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 196/1109 1454/1454 360/528][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,8,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,67,0,0,0,0]
+29	TCP 10.131.200.96:61882 <-> 216.58.204.228:80 [proto: 7.126/HTTP.Google][IP: 126/Google][ClearText][Confidence: DPI][FPC: 126/Google, Confidence: DNS][DPI packets: 6][cat: Web/5][11 pkts/1048 bytes <-> 10 pkts/11426 bytes][Goodput ratio: 30/94][0.16 sec][Hostname/SNI: t2.gstatic.com][bytes ratio: -0.832 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 11/10 63/79 21/26][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 95/1143 380/1454 90/546][URL: t2.gstatic.com/images?q=tbn:ANd9GcSdxbH5I53aTSnWqvD8uEXzDw5LT8z6bWP7d6Dp-GhmAEqvlT8rPuya7g][StatusCode: 200][Content-Type: image/jpeg][Server: sffe][User-Agent: com.google.android.apps.maps/1068215109 (Linux; U; Android 15; en_US; moto g54 5G; Build/V1TDS35H.83-20-5-5; Cronet/140.0.7289.0)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (GET /images)][Plen Bins: 0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,77,0,0,0,0]
+30	UDP 10.131.200.96:61902 <-> 194.116.104.9:443 [proto: 188.126/QUIC.Google][IP: 0/Unknown][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][12 pkts/4074 bytes <-> 12 pkts/8138 bytes][Goodput ratio: 88/94][0.41 sec][Hostname/SNI: rr2---sn-uv2pm-ugol.offline-maps.gvt1.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: -0.333 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 44/1 162/7 57/2][Pkt Len c2s/s2c min/avg/max/stddev: 74/63 340/678 1292/1292 459/541][TLSv1.3][QUIC ver: V-1][JA4: q13d0311h0_55b375c5d22e_653d80c3fe9d][ECH: version 0xfe0d][PLAIN TEXT (xDou3 )][Plen Bins: 12,33,8,4,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,4,0,0,4,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,25,0,0,0,0,0,0,0,0]
+31	UDP 10.131.200.96:61870 <-> 142.251.209.10:443 [proto: 188.239/QUIC.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 188/QUIC, Confidence: DPI][DPI packets: 2][cat: Web/5][17 pkts/6126 bytes <-> 20 pkts/5842 bytes][Goodput ratio: 88/86][1.02 sec][Hostname/SNI: www.googleapis.com][(Advertised) ALPNs: h3][TLS Supported Versions: TLSv1.3][bytes ratio: 0.024 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 44/46 169/192 60/60][Pkt Len c2s/s2c min/avg/max/stddev: 73/66 360/292 1292/1292 496/389][TLSv1.3][QUIC ver: V-1][JA4: q13d0313h0_55b375c5d22e_226f3f127bbe][ECH: version 0xfe0d][PLAIN TEXT (NHRLRJ)][Plen Bins: 22,30,10,10,0,0,5,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,2,0,0,0,0,13,0,0,0,0,0,0,0,0]
+32	TCP 10.131.200.96:61896 <-> 216.58.205.46:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 8][cat: Web/5][11 pkts/2556 bytes <-> 9 pkts/8210 bytes][Goodput ratio: 71/93][0.32 sec][Hostname/SNI: encrypted-tbn0.gstatic.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.525 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 20/37 104/126 35/46][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 232/912 1454/1454 399/608][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,11,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,22,0,0,0,0,44,0,0,0,0]
+33	TCP 10.131.200.96:61890 <-> 216.58.204.228:80 [proto: 7.126/HTTP.Google][IP: 126/Google][ClearText][Confidence: DPI][FPC: 126/Google, Confidence: DNS][DPI packets: 6][cat: Web/5][10 pkts/982 bytes <-> 9 pkts/9209 bytes][Goodput ratio: 32/93][0.17 sec][Hostname/SNI: t0.gstatic.com][bytes ratio: -0.807 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 10/14 68/96 22/34][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 98/1023 380/1454 94/614][URL: t0.gstatic.com/images?q=tbn:ANd9GcTbYYB-wdE9xL9gXdm8NhuYCSvmrdsMijUAHa0GSqYBb1KKztSH42qk2g][StatusCode: 200][Content-Type: image/jpeg][Server: sffe][User-Agent: com.google.android.apps.maps/1068215109 (Linux; U; Android 15; en_US; moto g54 5G; Build/V1TDS35H.83-20-5-5; Cronet/140.0.7289.0)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][PLAIN TEXT (GET /images)][Plen Bins: 0,0,0,0,0,0,0,0,12,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,0,0,0,0]
+34	TCP 10.131.200.96:61869 <-> 142.251.209.42:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 7][cat: Web/5][11 pkts/2608 bytes <-> 8 pkts/7272 bytes][Goodput ratio: 72/93][0.42 sec][Hostname/SNI: feedback-pa.googleapis.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.472 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 26/42 120/140 47/53][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 237/909 1454/1454 402/615][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,11,0,0,0,11,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,55,0,0,0,0]
+35	TCP 10.131.200.96:61867 <-> 142.251.209.10:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 8][cat: Web/5][11 pkts/2542 bytes <-> 9 pkts/7333 bytes][Goodput ratio: 71/92][0.68 sec][Hostname/SNI: geller-pa.googleapis.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.485 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 51/61 263/228 96/91][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 231/815 1454/1454 399/637][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,11,0,0,0,11,0,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,55,0,0,0,0]
+36	TCP 10.131.200.96:61895 <-> 142.250.180.131:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: DNS][DPI packets: 8][cat: Web/5][10 pkts/2533 bytes <-> 8 pkts/6886 bytes][Goodput ratio: 74/92][0.37 sec][Hostname/SNI: fonts.gstatic.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.462 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 27/43 151/148 52/54][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 253/861 1454/1454 418/627][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,12,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,12,0,0,0,0,51,0,0,0,0]
+37	TCP 10.131.200.96:61887 <-> 142.250.180.174:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: DNS][DPI packets: 7][cat: Web/5][10 pkts/2510 bytes <-> 7 pkts/6847 bytes][Goodput ratio: 73/93][0.40 sec][Hostname/SNI: encrypted-tbn2.gstatic.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.464 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 29/22 156/89 54/34][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 251/978 1454/1454 416/590][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,12,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,12,0,0,0,0,51,0,0,0,0]
+38	TCP 10.131.200.96:61874 <-> 216.58.209.35:443 [proto: 91.126/TLS.Google][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 8][cat: Web/5][10 pkts/2467 bytes <-> 8 pkts/6879 bytes][Goodput ratio: 73/92][0.26 sec][Hostname/SNI: www.gstatic.com][(Advertised) ALPNs: h2;http/1.1][TLS Supported Versions: GREASE;TLSv1.3;TLSv1.2][bytes ratio: -0.472 (Download)][IAT c2s/s2c min/avg/max/stddev: 0/0 21/25 100/73 37/29][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 247/860 1454/1454 415/627][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1516h2_8daaf6152771_d8a2da3f94cd][JA3S: eb1d94daa7e0344597e756a1fb6e7054][ECH: version 0xfe0d][Chrome][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 0,0,12,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,12,0,0,0,0,51,0,0,0,0]
+39	TCP 10.131.200.96:61872 <-> 216.58.205.42:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][12 pkts/2286 bytes <-> 11 pkts/6782 bytes][Goodput ratio: 65/89][10.54 sec][Hostname/SNI: firebaselogging.googleapis.com][(Advertised) ALPNs: http/1.1][TLS Supported Versions: TLSv1.3;TLSv1.2][bytes ratio: -0.496 (Download)][IAT c2s/s2c min/avg/max/stddev: 1/0 1157/31 10003/145 3128/49][Pkt Len c2s/s2c min/avg/max/stddev: 66/66 190/617 971/1454 275/640][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][TLSv1.3][JA4: t13d1713ht_5b57614c22b0_eca864cca44a][JA3S: eb1d94daa7e0344597e756a1fb6e7054][Safari][Cipher: TLS_AES_128_GCM_SHA256][Plen Bins: 10,0,10,0,10,0,0,0,0,0,10,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,0,0,0,0]
+40	TCP 10.131.200.96:52034 <-> 142.251.209.42:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 6][cat: Web/5][11 pkts/4186 bytes <-> 14 pkts/4430 bytes][Goodput ratio: 86/83][11.03 sec][Hostname/SNI: signaler-pa.googleapis.com][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: -0.028 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 2/0 1334/971 9074/9167 2948/2606][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 381/316 1171/1454 396/372][Risk: ** TLS (probably) Not Carrying HTTPS **][Risk Score: 10][Risk Info: No ALPN][TCP Fingerprint: 2_128_65535_6bb88f5575fd/Windows][TLSv1.3][JA4: t13d201300_2b729b4bf6f3_1ea369dc5faa][JA3S: f590053ff246338aff7c203dbe7164d6][Firefox][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 0,0,7,0,0,7,7,0,0,16,0,7,0,0,0,7,0,7,0,0,7,0,0,7,7,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,7,0,0,0,0]
+41	TCP 10.131.200.96:52029 <-> 216.239.38.223:443 [proto: 91.228/TLS.PlayStore][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 126/Google, Confidence: IP address][DPI packets: 6][cat: SoftwareUpdate/19][8 pkts/5197 bytes <-> 10 pkts/2339 bytes][Goodput ratio: 91/76][0.63 sec][Hostname/SNI: play.googleapis.com][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: 0.379 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/0 87/23 368/131 134/41][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 650/234 1454/1454 602/413][Risk: ** TLS (probably) Not Carrying HTTPS **][Risk Score: 10][Risk Info: No ALPN][TCP Fingerprint: 2_128_65535_6bb88f5575fd/Windows][TLSv1.3][JA4: t13d201300_2b729b4bf6f3_1ea369dc5faa][JA3S: f590053ff246338aff7c203dbe7164d6][Firefox][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 11,0,11,0,11,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,33,0,0,0,0]
+42	TCP 10.131.200.96:52039 <-> 142.250.180.138:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][6 pkts/1922 bytes <-> 7 pkts/1850 bytes][Goodput ratio: 82/79][0.53 sec][Hostname/SNI: drivefrontend-pa.googleapis.com][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: 0.019 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 4/0 38/50 70/165 33/61][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 320/264 829/1268 345/416][Risk: ** TLS (probably) Not Carrying HTTPS **][Risk Score: 10][Risk Info: No ALPN][TCP Fingerprint: 2_128_65535_6bb88f5575fd/Windows][TLSv1.3][JA4: t13d201300_2b729b4bf6f3_1ea369dc5faa][JA3S: f590053ff246338aff7c203dbe7164d6][Firefox][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 16,0,16,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,16,0,0,0,0,0,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0]
+43	TCP 10.131.200.96:52040 <-> 142.250.180.138:443 [proto: 91.239/TLS.GoogleServices][IP: 126/Google][Encrypted][Confidence: DPI][FPC: 239/GoogleServices, Confidence: DNS][DPI packets: 6][cat: Web/5][6 pkts/1922 bytes <-> 6 pkts/1674 bytes][Goodput ratio: 82/80][0.69 sec][Hostname/SNI: drivefrontend-pa.googleapis.com][TLS Supported Versions: TLSv1.3;TLSv1.2;TLSv1.1;TLSv1][bytes ratio: 0.069 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 3/22 64/148 169/215 68/77][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 320/279 829/1146 345/395][Risk: ** TLS (probably) Not Carrying HTTPS **][Risk Score: 10][Risk Info: No ALPN][TCP Fingerprint: 2_128_65535_6bb88f5575fd/Windows][TLSv1.3][JA4: t13d201300_2b729b4bf6f3_1ea369dc5faa][JA3S: f590053ff246338aff7c203dbe7164d6][Firefox][Cipher: TLS_AES_256_GCM_SHA384][Plen Bins: 16,0,16,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,16,0,0,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0]
 47	UDP 10.131.200.96:55257 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][7 pkts/645 bytes <-> 6 pkts/992 bytes][Goodput ratio: 54/75][34.84 sec][Hostname/SNI: notifications-pa.googleapis.com][216.58.204.138][DNS Id: 0x164f][bytes ratio: -0.212 (Download)][IAT c2s/s2c min/avg/max/stddev: 121/248 5568/6944 13974/13981 5228/4983][Pkt Len c2s/s2c min/avg/max/stddev: 86/102 92/165 99/219 5/49][PLAIN TEXT (notifications)][Plen Bins: 0,62,7,7,7,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 48	UDP 10.131.200.96:55099 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][6 pkts/546 bytes <-> 6 pkts/1010 bytes][Goodput ratio: 54/75][54.76 sec][Hostname/SNI: t0.gstatic.com][216.58.204.228][DNS Id: 0x1ae7][bytes ratio: -0.298 (Download)][IAT c2s/s2c min/avg/max/stddev: 3360/3395 9660/9664 14180/14164 3977/3955][Pkt Len c2s/s2c min/avg/max/stddev: 74/90 91/168 101/219 9/44][PLAIN TEXT (gstatic)][Plen Bins: 0,59,0,16,8,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 49	TCP 10.131.200.96:61876 <-> 149.154.167.92:5222 [proto: 185/Telegram][IP: 185/Telegram][Encrypted][Confidence: Match by IP][FPC: 185/Telegram, Confidence: IP address][DPI packets: 4][cat: Chat/9][5 pkts/788 bytes <-> 2 pkts/318 bytes][Goodput ratio: 57/56][6.85 sec][bytes ratio: 0.425 (Upload)][IAT c2s/s2c min/avg/max/stddev: 0/97 1711/97 6667/97 2861/0][Pkt Len c2s/s2c min/avg/max/stddev: 66/74 158/159 516/244 179/85][Risk: ** Susp Entropy **][Risk Score: 10][Risk Info: Entropy: 7.555 (Encrypted or Random?)][TCP Fingerprint: 2_64_65535_41a9d5af7dd3/Android][Plen Bins: 0,0,0,0,0,50,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 50	UDP 10.131.200.96:52238 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][4 pkts/333 bytes <-> 4 pkts/749 bytes][Goodput ratio: 49/77][17.40 sec][Hostname/SNI: t2.gstatic.com][216.58.204.228][DNS Id: 0x2102][bytes ratio: -0.384 (Download)][IAT c2s/s2c min/avg/max/stddev: 124/22 5787/5781 10263/10306 4223/4288][Pkt Len c2s/s2c min/avg/max/stddev: 74/90 83/187 88/227 6/56][PLAIN TEXT (gstatic)][Plen Bins: 0,62,0,0,0,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+51	TCP 10.131.200.96:52031 <-> 83.224.69.202:80 [proto: 7.212/HTTP.Microsoft][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 0/Unknown, Confidence: Unknown][DPI packets: 6][cat: Web/5][5 pkts/393 bytes <-> 5 pkts/469 bytes][Goodput ratio: 28/40][0.25 sec][Hostname/SNI: www.msftconnecttest.com][bytes ratio: -0.088 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 0/0 47/52 100/99 47/41][Pkt Len c2s/s2c min/avg/max/stddev: 54/54 79/94 165/241 43/74][URL: www.msftconnecttest.com/connecttest.txt][StatusCode: 200][Content-Type: text/plain][User-Agent: Microsoft NCSI][TCP Fingerprint: 2_128_65535_6bb88f5575fd/Windows][PLAIN TEXT (GET /connecttest.txt HTTP/1.1)][Plen Bins: 0,0,0,50,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 52	UDP 10.131.200.96:58879 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][4 pkts/339 bytes <-> 3 pkts/504 bytes][Goodput ratio: 50/75][14.33 sec][Hostname/SNI: encrypted-tbn2.gstatic.com][142.250.180.174][DNS Id: 0xf33b][bytes ratio: -0.196 (Mixed)][IAT c2s/s2c min/avg/max/stddev: 126/5681 4770/7137 8524/8593 3486/1456][Pkt Len c2s/s2c min/avg/max/stddev: 77/102 85/168 88/216 5/48][PLAIN TEXT (encrypted)][Plen Bins: 0,71,0,0,14,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 56	UDP 10.131.200.96:57773 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 3][cat: Network/14][2 pkts/180 bytes <-> 1 pkts/202 bytes][Goodput ratio: 53/79][0.13 sec][Hostname/SNI: firebaselogging.googleapis.com][216.58.205.42][DNS Id: 0xb068][PLAIN TEXT (firebaselogging)][Plen Bins: 0,66,0,0,0,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 65	UDP 10.131.200.96:55885 <-> 10.131.200.79:53 [proto: 5/DNS][IP: 0/Unknown][ClearText][Confidence: DPI][FPC: 5/DNS, Confidence: DPI][DPI packets: 2][cat: Network/14][1 pkts/77 bytes <-> 1 pkts/93 bytes][Goodput ratio: 45/54][0.05 sec][Hostname/SNI: fonts.gstatic.com][142.250.180.131][DNS Id: 0xc35a][PLAIN TEXT (gstatic)][Plen Bins: 0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
@@ -35,548 +77,10 @@
 
 >> Removed flows after 1° SNI filtering [DEBUG]:
 
-[
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.228/TLS.PlayStore",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f590053ff246338aff7c203dbe7164d6",
-        "ja4": "t13d201300_2b729b4bf6f3_1ea369dc5faa",
-        "sni": "play.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "52029",
-        "ip_destination": "216.239.38.223",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
-        "risk": "** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "10",
-        "risk_info": "No ALPN",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "8 <-> 10"
-        ]
-    }
-]
+[]
 >> Removed flows after SNI filtering ( Remove known suffixes and not_protocols domains ) [DEBUG]:
 
-[
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.239/QUIC.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "plain_text": "yMmCUT",
-        "sni": "or-se.storage.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61900",
-        "ip_destination": "216.58.204.155",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "1076 <-> 9287"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "op-de.storage.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61899",
-        "ip_destination": "216.58.205.59",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "3425 <-> 6529"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "or-se.storage.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61898",
-        "ip_destination": "216.58.204.155",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "534 <-> 708"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "plain_text": "KUjo.3",
-        "sni": "encrypted-tbn0.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61879",
-        "ip_destination": "142.250.180.174",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "66 <-> 166"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "plain_text": "aD/jRx",
-        "sni": "gz0.googleusercontent.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61877",
-        "ip_destination": "216.239.38.135",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "71 <-> 159"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "plain_text": "havapW",
-        "sni": "lh3.googleusercontent.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61878",
-        "ip_destination": "216.58.204.225",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "68 <-> 121"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "plain_text": "wmNNyK",
-        "sni": "encrypted-tbn2.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61880",
-        "ip_destination": "142.251.209.14",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "41 <-> 73"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "notifications-pa.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61875",
-        "ip_destination": "216.58.204.138",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "29 <-> 24"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.239/QUIC.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "sni": "feedback-pa.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61868",
-        "ip_destination": "142.251.209.42",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "23 <-> 23"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.239/QUIC.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "plain_text": "rsSKPA0",
-        "sni": "geller-pa.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61866",
-        "ip_destination": "216.58.209.42",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "19 <-> 22"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "sni": "www.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61873",
-        "ip_destination": "142.251.209.35",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 17"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.239/QUIC.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
-        "quic_version": "V-1",
-        "sni": "android.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61871",
-        "ip_destination": "216.58.204.234",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 21"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.126/QUIC.Google",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0311h0_55b375c5d22e_653d80c3fe9d",
-        "quic_version": "V-1",
-        "sni": "fonts.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61881",
-        "ip_destination": "142.250.180.131",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "14 <-> 15"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "lh3.googleusercontent.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61894",
-        "ip_destination": "216.58.204.225",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 6,
-        "exchanged_packets": [
-            "14 <-> 12",
-            "14 <-> 12",
-            "14 <-> 12",
-            "14 <-> 11",
-            "14 <-> 11",
-            "14 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "gz0.googleusercontent.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61883",
-        "ip_destination": "216.239.38.135",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 4,
-        "exchanged_packets": [
-            "14 <-> 12",
-            "14 <-> 12",
-            "14 <-> 11",
-            "14 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "7.126/HTTP.Google",
-        "url": "t2.gstatic.com/images?q=tbn:ANd9GcSdxbH5I53aTSnWqvD8uEXzDw5LT8z6bWP7d6Dp-GhmAEqvlT8rPuya7g",
-        "user_agent": "com.google.android.apps.maps/1068215109 (Linux; U; Android 15; en_US; moto g54 5G; Build/V1TDS35H.83-20-5-5; Cronet/140.0.7289.0)",
-        "plain_text": "GET /images",
-        "sni": "t2.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61882",
-        "ip_destination": "216.58.204.228",
-        "port_destination": "80",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 10"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "UDP",
-        "proto_field": "188.239/QUIC.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja4": "q13d0313h0_55b375c5d22e_226f3f127bbe",
-        "quic_version": "V-1",
-        "plain_text": "NHRLRJ",
-        "sni": "www.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61870",
-        "ip_destination": "142.251.209.10",
-        "port_destination": "443",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "17 <-> 20"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "encrypted-tbn0.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61896",
-        "ip_destination": "216.58.205.46",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "7.126/HTTP.Google",
-        "url": "t0.gstatic.com/images?q=tbn:ANd9GcTbYYB-wdE9xL9gXdm8NhuYCSvmrdsMijUAHa0GSqYBb1KKztSH42qk2g",
-        "user_agent": "com.google.android.apps.maps/1068215109 (Linux; U; Android 15; en_US; moto g54 5G; Build/V1TDS35H.83-20-5-5; Cronet/140.0.7289.0)",
-        "plain_text": "GET /images",
-        "sni": "t0.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61890",
-        "ip_destination": "216.58.204.228",
-        "port_destination": "80",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "feedback-pa.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61869",
-        "ip_destination": "142.251.209.42",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "geller-pa.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61867",
-        "ip_destination": "142.251.209.10",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 9"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "fonts.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61895",
-        "ip_destination": "142.250.180.131",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "encrypted-tbn2.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61887",
-        "ip_destination": "142.250.180.174",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 7"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.126/TLS.Google",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1516h2_8daaf6152771_d8a2da3f94cd",
-        "sni": "www.gstatic.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61874",
-        "ip_destination": "216.58.209.35",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "10 <-> 8"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "eb1d94daa7e0344597e756a1fb6e7054",
-        "ja4": "t13d1713ht_5b57614c22b0_eca864cca44a",
-        "sni": "firebaselogging.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "61872",
-        "ip_destination": "216.58.205.42",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_64_65535_41a9d5af7dd3/Android",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "12 <-> 11"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f590053ff246338aff7c203dbe7164d6",
-        "ja4": "t13d201300_2b729b4bf6f3_1ea369dc5faa",
-        "sni": "signaler-pa.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "52034",
-        "ip_destination": "142.251.209.42",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
-        "risk": "** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "10",
-        "risk_info": "No ALPN",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "11 <-> 14"
-        ]
-    },
-    {
-        "ip_field": "126/Google",
-        "transport_protocol": "TCP",
-        "proto_field": "91.239/TLS.GoogleServices",
-        "tls_version": "TLSv1.3",
-        "ja3s": "f590053ff246338aff7c203dbe7164d6",
-        "ja4": "t13d201300_2b729b4bf6f3_1ea369dc5faa",
-        "sni": "drivefrontend-pa.googleapis.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "52039",
-        "ip_destination": "142.250.180.138",
-        "port_destination": "443",
-        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
-        "risk": "** TLS (probably) Not Carrying HTTPS **",
-        "risk_score": "10",
-        "risk_info": "No ALPN",
-        "similar_flows_count": 2,
-        "exchanged_packets": [
-            "6 <-> 7",
-            "6 <-> 6"
-        ]
-    },
-    {
-        "ip_field": "0/Unknown",
-        "transport_protocol": "TCP",
-        "proto_field": "7.212/HTTP.Microsoft",
-        "url": "www.msftconnecttest.com/connecttest.txt",
-        "user_agent": "Microsoft NCSI",
-        "plain_text": "GET /connecttest.txt HTTP/1.1",
-        "sni": "www.msftconnecttest.com",
-        "ip_source": "10.131.200.96",
-        "port_source": "52031",
-        "ip_destination": "83.224.69.202",
-        "port_destination": "80",
-        "tcp_fingerprint": "2_128_65535_6bb88f5575fd/Windows",
-        "similar_flows_count": 1,
-        "exchanged_packets": [
-            "5 <-> 5"
-        ]
-    }
-]
+[]
 >> Removed flows after JA3S/JA4/Certificate filtering [DEBUG]:
 
 [

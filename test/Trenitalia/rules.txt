@@ -7,22 +7,13 @@ host:"app.lefrecce.it"@Trenitalia
  
 
 --------------------------------------------------------------
-host:"oraclersys.com"@Trenitalia
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-
---------------------------------------------------------------
 
 
 # Coverage statistics for all flows:
 
 # [+] Total packets: 1029
-# [+] Recognized packets: 761
-# [+] Coverage (%): 73.96
+# [+] Recognized packets: 719
+# [+] Coverage (%): 69.87
 # [+] Total flows: 33
-# [+] Recognized flows: 17
-# [+] Flow coverage (%): 51.52
+# [+] Recognized flows: 16
+# [+] Flow coverage (%): 48.48

@@ -1,8 +1,8 @@
 >> Flows read: 68
->> Flows kept: 44
->> Flows removed: 24
+>> Flows kept: 2
+>> Flows removed: 66
 
-   [+] General flows removed: 7
+   [+] General flows removed: 49
 
    [+] Empty flows removed: 4
 
@@ -10,4 +10,4 @@
 
 >> Flows detected after aggregation:
 
-   [+] 15 flows QUIC, 17 flows TLS, 3 flows HTTP
+   [+] 1 flows QUIC, 1 flows TLS

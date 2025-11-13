@@ -1,44 +1,14 @@
-host:"warframe.market"@Warframe
+# unknown@UnknownProto
 
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-#     [+] api.btloader.com
-#     [+] api.warframe.market
-#     [+] floors.nitropay.com
-#     [+] pbs.nitropay.com
-#     [+] s.nitropay.com
-#     [+] navvy.media.net
-#     [+] prebid.media.net
-
---------------------------------------------------------------
-ja4:t13d1516h2_8daaf6152771_d8a2da3f94cd@Warframe
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
---------------------------------------------------------------
-ja4:q13d0311h0_55b375c5d22e_653d80c3fe9d@Warframe
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
---------------------------------------------------------------
-ja4:t13d1516h2_8daaf6152771_d8a2da3f94cd@Warframe
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
+# [red]>> NOT ENOUGH INFORMATION TO GENERATE A RULE[/red]
 --------------------------------------------------------------
 
 
 # Coverage statistics for all flows:
 
 # [+] Total packets: 8083
-# [+] Recognized packets: 7682
-# [+] Coverage (%): 95.04
+# [+] Recognized packets: 2348
+# [+] Coverage (%): 29.05
 # [+] Total flows: 248
-# [+] Recognized flows: 233
-# [+] Flow coverage (%): 93.95
+# [+] Recognized flows: 63
+# [+] Flow coverage (%): 25.4

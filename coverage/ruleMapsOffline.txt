@@ -10,15 +10,6 @@ host:"offline-maps.gvt1.com"@Mapsoffline
 #     [+] rr4---sn-hpa7kn76.offline-maps.gvt1.com
 
 --------------------------------------------------------------
-host:"rr1---sn-uv2pm-ugol.offline-maps.gvt1.com"@Mapsoffline
-
-# To add this rule based on SNI:
-#   [+] Use this file when executing nDPI with -p `this file`
-
-#   >> All removed SNI based on aggregation:
- 
-
---------------------------------------------------------------
 
 
 # Coverage statistics for all flows:

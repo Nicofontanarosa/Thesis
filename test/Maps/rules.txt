@@ -1,4 +1,4 @@
-host:"mobilemaps.googleapis.com"@Maps
+host:"sgepodownload.mediatek.com"@Maps
 
 # To add this rule based on SNI:
 #   [+] Use this file when executing nDPI with -p `this file`
@@ -12,8 +12,8 @@ host:"mobilemaps.googleapis.com"@Maps
 # Coverage statistics for all flows:
 
 # [+] Total packets: 6265
-# [+] Recognized packets: 6115
-# [+] Coverage (%): 97.61
+# [+] Recognized packets: 6197
+# [+] Coverage (%): 98.91
 # [+] Total flows: 69
-# [+] Recognized flows: 54
-# [+] Flow coverage (%): 78.26
+# [+] Recognized flows: 57
+# [+] Flow coverage (%): 82.61

@@ -1,4 +1,4 @@
-ja4:t13d1511h2_8daaf6152771_40271e0a5736@Hidevpn
+ja4:t13i1511h2_8daaf6152771_40271e0a5736@Hidevpn
 
 # To add this rule based on SNI:
 #   [+] Use this file when executing nDPI with -p `this file`

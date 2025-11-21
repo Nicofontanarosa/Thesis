@@ -1,4 +1,4 @@
-# Extracting Metadata from Encrypted Network Traffic to Generate nDPI Detection Rules — Master’s Thesis
+# Encrypted Traffic Parser ETP — Master’s Thesis
 
 ### Overview
 

@@ -101,7 +101,6 @@ This project is distributed under the terms of the MIT License. A complete copy 
 - Academic project developed for educational and research purposes in the field of cybersecurity
 - Author: Nicolò Fontanarosa
 - Email: nickcompanyofficial@gmail.com
-- University: University of Pisa
 - Year: 2025
 
 ## 🙌 DISCLAIMER
